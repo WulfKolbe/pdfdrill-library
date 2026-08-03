@@ -8,12 +8,11 @@
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 19,
@@ -56,14 +55,15 @@
       "Page": 19,
       "Citation": 8,
       "ListItem": 10,
-      "Paragraph": 19,
+      "Equation": 36,
+      "Paragraph": 46,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
     "model_source": "pdfminer-chars",
     "model_caps": {
       "geometry": true,
-      "math": false,
+      "math": true,
       "source": "pdfminer-chars"
     },
     "bibliography_entries": 22,
@@ -72,7 +72,7 @@
     "bibliography_authoryear_citations": 1,
     "bibliography_cites": 35,
     "tiddlers_path": "0503219.tiddlers.json",
-    "tiddlers_count": 90,
+    "tiddlers_count": 130,
     "tiddlers_svg_mode": "inline",
     "fonts": [
       "EKMWLA+CMTI10",
@@ -116,7 +116,9 @@
         "page": 1,
         "url": "http://arXiv.org/abs/math/0503219v3"
       }
-    ]
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": ""
   },
   "pdfinfo": {
     "title": "A variational principle for hyperideal circle patterns",
@@ -2949,17 +2951,81 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3632.4,
       "detail": "108 images, 54 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 42.7,
+      "detail": "23 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 42.2,
+      "detail": "23 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 45.7,
+      "detail": "23 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 44.5,
+      "detail": "23 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 47.1,
+      "detail": "23 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 46.5,
+      "detail": "23 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T18:12:56Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 59.4,
+      "detail": "120 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:12:56Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.5,
+      "detail": "130 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/0503219/0503219.lines.json": "sha256:5a425201bb11e8c9b970a24da55e7301b60a91d8fdfc5c6ea2757a57319bbee2"
+        "/home/wkolbe/pdfdrill-library/0503219/0503219.lines.json": "sha256:cccd0265fea4869b8e7d584df592700bd0d4138aa226fef786239f1634583ddc"
       },
       "params_hash": "sha256:47c249b05f3d38f3dad0a38f9d42608105eead0346fa7d26fa3e7f813a3c0481",
       "algo": "sha256",
-      "ts": "2026-07-30T14:05:19Z",
+      "ts": "2026-08-03T18:12:56Z",
       "provenance": "pdfminer-chars"
     }
   }

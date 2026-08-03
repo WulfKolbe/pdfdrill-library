@@ -4,12 +4,14 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 23,
@@ -78,7 +80,29 @@
         "url": "www.engon.de/protosimplex",
         "kind": "text"
       }
-    ]
+    ],
+    "bibkey": "04 posdzech - maps to elementary structures",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 23,
+      "ListItem": 94,
+      "Equation": 30,
+      "Formula": 2,
+      "Paragraph": 52,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 76 unmapped private-use character(s) remain (U+F8E7×4, U+F8EB×3, U+F8EC×9, U+F8ED×3, U+F8EE×3, U+F8EF×15, U+F8F0×3, U+F8F6×3, U+F8F7×9, U+F8F8×3, U+F8F9×3, U+F8FA×15, U+F8FB×3) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "04 posdzech - maps to elementary structures.tiddlers.json",
+    "tiddlers_count": 223,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "short 1-1.doc",
@@ -442,6 +466,82 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3452.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 16.7,
+      "detail": "19 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 17.2,
+      "detail": "19 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 18.2,
+      "detail": "19 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 17.4,
+      "detail": "19 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 18.5,
+      "detail": "19 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 18.5,
+      "detail": "19 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T18:12:47Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 82.1,
+      "detail": "202 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:12:47Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.0,
+      "detail": "223 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/04 posdzech - maps to elementary structures/04 posdzech - maps to elementary structures.lines.json": "sha256:ab0abffb8238bf8a78516acdc91c40957fdd494ad62fcd87350e722100452629"
+      },
+      "params_hash": "sha256:fbdc10f00647ab58d13e63c13f2b43e5cf1431363b0c142014291a33c1c42355",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:12:47Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

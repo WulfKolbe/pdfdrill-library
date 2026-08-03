@@ -2,7 +2,8 @@
   "pdf": "zen_poster07.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -34,13 +35,110 @@
     "text_layer": true,
     "font_count": 6,
     "first_page_chars": 3819,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "BAAAAA+ArialMT",
+      "CAAAAA+Arial-BoldMT",
+      "DAAAAA+Arial-BoldItalicMT",
+      "EAAAAA+OpenSymbol",
+      "CenturySchL-Ital",
+      "CenturySchL-BoldItal"
+    ],
+    "math_fonts": [
+      "EAAAAA+OpenSymbol"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "BAAAAA+ArialMT",
+      "base_name": "ArialMT",
+      "family": "ArialMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "45 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "CAAAAA+Arial-BoldMT",
+      "base_name": "Arial-BoldMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "55 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "DAAAAA+Arial-BoldItalicMT",
+      "base_name": "Arial-BoldItalicMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "50 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "EAAAAA+OpenSymbol",
+      "base_name": "OpenSymbol",
+      "family": "OpenSymbol",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "40 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "CenturySchL-Ital",
+      "base_name": "CenturySchL-Ital",
+      "family": "CenturySchL",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "65 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "CenturySchL-BoldItal",
+      "base_name": "CenturySchL-BoldItal",
+      "family": "CenturySchL",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "60 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +150,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 41.5,
       "detail": "pdfinfo: 1 pages, 951722 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:49:24Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 15.6,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:24Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.2,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:34Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.6,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:34Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 16.2,
+      "detail": "6 fonts, 1 math"
     }
   ]
 }

@@ -2,7 +2,8 @@
   "pdf": "Massenformel_nach_B_Heim_1982.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 10,
@@ -35,13 +36,126 @@
     "text_layer": true,
     "font_count": 7,
     "first_page_chars": 210,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "TimesNewRoman",
+      "Symbol",
+      "TimesNewRoman,Bold",
+      "TimesNewRoman,Italic",
+      "TimesNewRoman,BoldItalic",
+      "Symbol,Italic",
+      "ABILGG+MTExtra"
+    ],
+    "math_fonts": [
+      "Symbol",
+      "Symbol,Italic"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "TimesNewRoman",
+      "base_name": "TimesNewRoman",
+      "family": "TimesNewRoman",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "6 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Symbol",
+      "base_name": "Symbol",
+      "family": "Symbol",
+      "type": "TrueType",
+      "encoding": "Symbol",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRoman,Bold",
+      "base_name": "TimesNewRoman,Bold",
+      "family": "TimesNewRoman,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRoman,Italic",
+      "base_name": "TimesNewRoman,Italic",
+      "family": "TimesNewRoman,Italic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "15 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "TimesNewRoman,BoldItalic",
+      "base_name": "TimesNewRoman,BoldItalic",
+      "family": "TimesNewRoman,BoldItalic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "17 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "Symbol,Italic",
+      "base_name": "Symbol,Italic",
+      "family": "Symbol,Italic",
+      "type": "TrueType",
+      "encoding": "Symbol",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "24 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "ABILGG+MTExtra",
+      "base_name": "MTExtra",
+      "family": "MTExtra",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "27 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -53,6 +167,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 59.1,
       "detail": "pdfinfo: 10 pages, 52427 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:38:42Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 38.9,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:38:42Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 40.9,
+      "detail": "7 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:40:08Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 40.6,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:40:08Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 40.3,
+      "detail": "7 fonts, 1 math"
     }
   ]
 }

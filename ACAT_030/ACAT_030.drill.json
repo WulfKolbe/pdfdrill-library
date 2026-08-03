@@ -2,7 +2,8 @@
   "pdf": "ACAT_030.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -36,13 +37,170 @@
     "text_layer": true,
     "font_count": 10,
     "first_page_chars": 1487,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "RHIVTD+SymbolMT",
+      "ArialMT",
+      "CourierNewPS-ItalicMT",
+      "TimesNewRomanPS-ItalicMT",
+      "Arial-BoldMT",
+      "TimesNewRomanPSMT",
+      "TRLKTT+Courier",
+      "Courier",
+      "TimesNewRomanPS-BoldMT",
+      "CourierNewPSMT"
+    ],
+    "math_fonts": [
+      "RHIVTD+SymbolMT"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "RHIVTD+SymbolMT CID",
+      "base_name": "SymbolMT CID",
+      "family": "SymbolMT CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "35 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ArialMT",
+      "base_name": "ArialMT",
+      "family": "ArialMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "36 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "CourierNewPS-ItalicMT",
+      "base_name": "CourierNewPS-ItalicMT",
+      "family": "CourierNewPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "128 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "TimesNewRomanPS-ItalicMT",
+      "base_name": "TimesNewRomanPS-ItalicMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "24 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "Arial-BoldMT",
+      "base_name": "Arial-BoldMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "21 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRomanPSMT",
+      "base_name": "TimesNewRomanPSMT",
+      "family": "TimesNewRomanPSMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "23 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TRLKTT+Courier",
+      "base_name": "Courier",
+      "family": "Courier",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "129 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Courier",
+      "base_name": "Courier",
+      "family": "Courier",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "5 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRomanPS-BoldMT",
+      "base_name": "TimesNewRomanPS-BoldMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "22 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "CourierNewPSMT",
+      "base_name": "CourierNewPSMT",
+      "family": "CourierNewPSMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "39 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +212,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 64.3,
       "detail": "pdfinfo: 12 pages, 114416 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:19:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 40.6,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:19:03Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 39.4,
+      "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:30:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 42.4,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:30:00Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 42.3,
+      "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:31:21Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 45.4,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:31:21Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 44.5,
+      "detail": "10 fonts, 0 math"
     }
   ]
 }

@@ -3,11 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_KNOWN",
     "MD_BUILT",
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 10,
@@ -93,7 +93,92 @@
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "TimesNewRomanPS-BoldMT",
+      "base_name": "TimesNewRomanPS-BoldMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "216 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRomanPSMT",
+      "base_name": "TimesNewRomanPSMT",
+      "family": "TimesNewRomanPSMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "217 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRomanPS-ItalicMT",
+      "base_name": "TimesNewRomanPS-ItalicMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "223 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "ArialMT",
+      "base_name": "ArialMT",
+      "family": "ArialMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "24 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRomanPS-BoldItalicMT",
+      "base_name": "TimesNewRomanPS-BoldItalicMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "27 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "KNHEHF+SymbolMT CID",
+      "base_name": "SymbolMT CID",
+      "family": "SymbolMT CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "28 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "pix2tex_results": null,
   "tsv_layer": null,
@@ -155,6 +240,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.9,
       "detail": "101 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-03T14:48:07Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 37.0,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:07Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 35.9,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:21Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 37.4,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:21Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 37.9,
+      "detail": "6 fonts, 0 math"
     }
   ]
 }

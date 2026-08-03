@@ -2,7 +2,8 @@
   "pdf": "DESCRIPTION_obsgermany-climate-daily-solar_en.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 3,
@@ -33,13 +34,63 @@
     "text_layer": true,
     "font_count": 3,
     "first_page_chars": 1382,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "Helvetica",
+      "Helvetica-Bold",
+      "Helvetica-BoldOblique"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "2 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica-Bold",
+      "base_name": "Helvetica-Bold",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "3 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica-BoldOblique",
+      "base_name": "Helvetica-BoldOblique",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "4 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -51,6 +102,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 42.7,
       "detail": "pdfinfo: 3 pages, 30923 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:21:58Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 23.4,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:21:58Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 23.6,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:27Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.5,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:27Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 28.9,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:48Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 27.0,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:48Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 28.2,
+      "detail": "3 fonts, 0 math"
     }
   ]
 }

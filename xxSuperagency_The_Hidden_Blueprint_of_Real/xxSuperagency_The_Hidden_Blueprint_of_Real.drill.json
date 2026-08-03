@@ -2,7 +2,8 @@
   "pdf": "xxSuperagency_The_Hidden_Blueprint_of_Real.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 181,
@@ -38,13 +39,110 @@
     "text_layer": true,
     "font_count": 6,
     "first_page_chars": 1401,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "GUFUHU+CambriaMath",
+      "NNVXSA+ArialMT",
+      "RKGLSL+Helvetica-Oblique",
+      "SHJFKN+Helvetica-Bold",
+      "ARVRVT+Helvetica",
+      "JUZHPD+Arial-BoldMT"
+    ],
+    "math_fonts": [
+      "GUFUHU+CambriaMath"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "GUFUHU+CambriaMath CID",
+      "base_name": "CambriaMath CID",
+      "family": "CambriaMath CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "19 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "NNVXSA+ArialMT CID",
+      "base_name": "ArialMT CID",
+      "family": "ArialMT CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "15 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "RKGLSL+Helvetica-Oblique",
+      "base_name": "Helvetica-Oblique",
+      "family": "Helvetica",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "SHJFKN+Helvetica-Bold",
+      "base_name": "Helvetica-Bold",
+      "family": "Helvetica",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "12 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "ARVRVT+Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "JUZHPD+Arial-BoldMT CID",
+      "base_name": "Arial-BoldMT CID",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "38 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -56,6 +154,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 123.9,
       "detail": "pdfinfo: 181 pages, 992845 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:49:22Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 118.9,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:22Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 120.8,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 112.8,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:33Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 108.3,
+      "detail": "6 fonts, 1 math"
     }
   ]
 }

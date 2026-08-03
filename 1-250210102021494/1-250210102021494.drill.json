@@ -4,13 +4,15 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 23,
@@ -56,7 +58,33 @@
     "has_math_fonts": false,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "bibkey": "1-250210102021494",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 23,
+      "Citation": 4,
+      "ListItem": 17,
+      "Paragraph": 23,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "1-250210102021494.tiddlers.json",
+    "tiddlers_count": 82,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "CENMATE-804U3RAID3G 说明书  95x135mm",
@@ -785,6 +813,90 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3614.3,
       "detail": "26 images, 21 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:19Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 15.8,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:19Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 17.1,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:54Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 15.3,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:54Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 16.7,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:06Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 17.6,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:06Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 18.4,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T18:17:18Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 30.8,
+      "detail": "68 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:17:18Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-03T18:17:18Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.0,
+      "detail": "82 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1-250210102021494/1-250210102021494.lines.json": "sha256:f5cdb1fe09658416e941df61ef76601bb0bd7d37ee20f961637bdb919f48107e"
+      },
+      "params_hash": "sha256:2cd4fe99dbe2b7fd25009c99a47c7f1787051a3ac849b0b6e26089df770efd4b",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:17:18Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

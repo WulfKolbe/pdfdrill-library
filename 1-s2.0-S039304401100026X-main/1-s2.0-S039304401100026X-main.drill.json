@@ -4,13 +4,17 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -127,7 +131,57 @@
         "page": 16,
         "url": "http://www.emis.de/proceedings/QSMP94/"
       }
-    ]
+    ],
+    "fonts": [
+      "AKFFXN+t1-gul-bold",
+      "EZDIQQ+MSBM10",
+      "IXKIGV+MTMS",
+      "MKDXJN+RMTMI",
+      "ZBJJMC+MTSYN",
+      "TVKUSW+t1-gul-regular",
+      "QDTHNW+t1-gul-regular-smallcaps",
+      "HWNAVD+t1-gul-symbol",
+      "USCGMP+t1-uni-regular",
+      "YNWRAN+t1-gul-regular-italic",
+      "DYRRTF+MSAM10",
+      "HFPLKQ+MTEX",
+      "BYWQSX+t1-gul-bold-italic",
+      "MXFEAG+EUFM10"
+    ],
+    "math_fonts": [
+      "EZDIQQ+MSBM10",
+      "HWNAVD+t1-gul-symbol",
+      "DYRRTF+MSAM10",
+      "MXFEAG+EUFM10"
+    ],
+    "has_math_fonts": true,
+    "bibkey": "1-s2.0-S039304401100026X-main",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 16,
+      "Citation": 6,
+      "ListItem": 30,
+      "Equation": 4,
+      "Paragraph": 20,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 12 unmapped private-use character(s) remain (U+ED0A×2, U+ED4E×4, U+ED5D×1, U+ED61×1, U+F8E6×4) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 43,
+    "bibliography_with_year": 40,
+    "bibliography_numeric_citations": 56,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 56,
+    "tiddlers_path": "1-s2.0-S039304401100026X-main.tiddlers.json",
+    "tiddlers_count": 132,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Manifolds with parallel differential forms and K&#x00E4;hler identities for G2-manifolds",
@@ -1963,6 +2017,90 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5191.9,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:20Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 32.7,
+      "detail": "14 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:20Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 32.3,
+      "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:55Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 32.8,
+      "detail": "14 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:55Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 33.5,
+      "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:08Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 37.7,
+      "detail": "14 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:08Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 40.4,
+      "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T18:18:34Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 70.3,
+      "detail": "77 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:18:34Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "43 entries, 56+0 cites detected, 56 linked"
+    },
+    {
+      "ts": "2026-08-03T18:18:34Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.4,
+      "detail": "132 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1-s2.0-S039304401100026X-main/1-s2.0-S039304401100026X-main.lines.json": "sha256:4c963743faa5d2bbf6a05a6523d62a5255e2275a4caa026792d282ae27b07b78"
+      },
+      "params_hash": "sha256:79497450590f98fcb1f74cb674545474abfd11c5aa1027b12e834dd776fbb64f",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:18:34Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -2,7 +2,8 @@
   "pdf": "lecture01.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -38,13 +39,63 @@
     "text_layer": true,
     "font_count": 3,
     "first_page_chars": 123,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "DWKVFD+LMRoman17-Regular",
+      "BUKSDG+LMRoman12-Bold",
+      "ISVQOW+LMRoman10-Regular"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "DWKVFD+LMRoman17-Regular",
+      "base_name": "LMRoman17-Regular",
+      "family": "LMRoman17",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BUKSDG+LMRoman12-Bold",
+      "base_name": "LMRoman12-Bold",
+      "family": "LMRoman12",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "ISVQOW+LMRoman10-Regular",
+      "base_name": "LMRoman10-Regular",
+      "family": "LMRoman10",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "12 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -56,6 +107,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 32.0,
       "detail": "pdfinfo: 1 pages, 74948 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:47:43Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.3,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:43Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.9,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:56Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.0,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:56Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.7,
+      "detail": "3 fonts, 0 math"
     }
   ]
 }

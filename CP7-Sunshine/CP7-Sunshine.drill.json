@@ -2,7 +2,8 @@
   "pdf": "CP7-Sunshine.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 15,
@@ -36,13 +37,125 @@
     "text_layer": true,
     "font_count": 7,
     "first_page_chars": 2515,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "IFBAFJ+TimesNewRomanPSMT",
+      "ArialMT",
+      "Arial-BoldMT",
+      "TimesNewRomanPS-BoldMT",
+      "IFBCEE+SymbolMT",
+      "IFBGDN+MS-Mincho",
+      "IFBAEI+TimesNewRomanPSMT"
+    ],
+    "math_fonts": [
+      "IFBCEE+SymbolMT"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "IFBAFJ+TimesNewRomanPSMT",
+      "base_name": "TimesNewRomanPSMT",
+      "family": "TimesNewRomanPSMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "267 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ArialMT",
+      "base_name": "ArialMT",
+      "family": "ArialMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "269 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Arial-BoldMT",
+      "base_name": "Arial-BoldMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "271 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRomanPS-BoldMT",
+      "base_name": "TimesNewRomanPS-BoldMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "227 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "IFBCEE+SymbolMT CID",
+      "base_name": "SymbolMT CID",
+      "family": "SymbolMT CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "236 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "IFBGDN+MS-Mincho CID",
+      "base_name": "MS-Mincho CID",
+      "family": "MS",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "240 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "IFBAEI+TimesNewRomanPSMT CID",
+      "base_name": "TimesNewRomanPSMT CID",
+      "family": "TimesNewRomanPSMT CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "243 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +167,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 52.8,
       "detail": "pdfinfo: 15 pages, 385904 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:21:07Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 25.3,
+      "detail": "7 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:21:08Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 25.0,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:32:25Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 35.9,
+      "detail": "7 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:32:25Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 35.7,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:52Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 30.2,
+      "detail": "7 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:52Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 31.8,
+      "detail": "7 fonts, 0 math"
     }
   ]
 }

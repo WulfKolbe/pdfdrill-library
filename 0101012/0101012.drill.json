@@ -4,10 +4,13 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 34,
@@ -40,7 +43,67 @@
     "text_layer": true,
     "font_count": 22,
     "first_page_chars": 2614,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "MTEAVL+CMR12",
+      "SHWKKN+CMBX12",
+      "FRMNEM+CMTT8",
+      "Times-Roman",
+      "UCERTV+CMSY6",
+      "WPXKGA+CMR10",
+      "ERGREJ+CMTI12",
+      "UCERTV+CMSY8",
+      "CTSXSO+CMMI10",
+      "BIWKNB+CMBX10",
+      "ZFRAOA+CMMI7",
+      "KNWZHR+CMR7",
+      "QEDUEE+CMTI10",
+      "WFGZCP+CMSY10",
+      "SBOKOY+CMEX10",
+      "SFZXMT+CMBX7",
+      "OAFNBH+CMSY7",
+      "BAWWGS+CMMI5",
+      "KFDIHA+CMMI8",
+      "SPOBPO+CMMI12",
+      "AUSSOU+CMSY5",
+      "YWLKJZ+CMR5"
+    ],
+    "math_fonts": [
+      "UCERTV+CMSY6",
+      "UCERTV+CMSY8",
+      "CTSXSO+CMMI10",
+      "ZFRAOA+CMMI7",
+      "WFGZCP+CMSY10",
+      "SBOKOY+CMEX10",
+      "OAFNBH+CMSY7",
+      "BAWWGS+CMMI5",
+      "KFDIHA+CMMI8",
+      "SPOBPO+CMMI12",
+      "AUSSOU+CMSY5"
+    ],
+    "has_math_fonts": true,
+    "bibkey": "0101012",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 34,
+      "ListItem": 34,
+      "Equation": 71,
+      "Formula": 6,
+      "Paragraph": 99,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 300 unmapped private-use character(s) remain (U+F8EB×26, U+F8EC×98, U+F8ED×26, U+F8F6×26, U+F8F7×98, U+F8F8×26) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "0101012.tiddlers.json",
+    "tiddlers_count": 265,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:quant-ph/0101012v4  25 Sep 2001",
@@ -2723,6 +2786,98 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4236.7,
       "detail": "138 images, 69 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:11Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 59.6,
+      "detail": "22 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:11Z",
+      "node": "fonts_layer",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 59.0,
+      "detail": "22 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:45Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 62.4,
+      "detail": "22 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:45Z",
+      "node": "fonts_layer",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 63.6,
+      "detail": "22 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:57Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 67.3,
+      "detail": "22 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:57Z",
+      "node": "fonts_layer",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 68.3,
+      "detail": "22 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T18:10:04Z",
+      "node": "model",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 143.5,
+      "detail": "245 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:10:04Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.8,
+      "detail": "265 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-03T18:11:51Z",
+      "node": "model",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 149.4,
+      "detail": "245 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:11:51Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.8,
+      "detail": "265 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/0101012/0101012.lines.json": "sha256:d38cc784678092bba65f21770052d66265b64439d0a58fb75ac1e1486d9352f5"
+      },
+      "params_hash": "sha256:48d4acb7de9248136fa2ff9c6a604b93afa376d07a7cd444370bd15b08b4edd1",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:11:51Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -2,7 +2,8 @@
   "pdf": "produktblatt_signaturkarte_5.1.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -36,13 +37,93 @@
     "text_layer": true,
     "font_count": 5,
     "first_page_chars": 1009,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "EOBYKP+bdrText-Medium",
+      "EOBYKP+bdrText-Regular",
+      "EOBYKP+bdrHeadline-SemiBold",
+      "EOBYKP+bdrText-Bold",
+      "EOBYKP+bdrText-SemiBold"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "EOBYKP+bdrText-Medium",
+      "base_name": "bdrText-Medium",
+      "family": "bdrText",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "281 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "EOBYKP+bdrText-Regular",
+      "base_name": "bdrText-Regular",
+      "family": "bdrText",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "283 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "EOBYKP+bdrHeadline-SemiBold",
+      "base_name": "bdrHeadline-SemiBold",
+      "family": "bdrHeadline",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "285 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "EOBYKP+bdrText-Bold",
+      "base_name": "bdrText-Bold",
+      "family": "bdrText",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "26 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "EOBYKP+bdrText-SemiBold",
+      "base_name": "bdrText-SemiBold",
+      "family": "bdrText",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "27 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +135,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 35.9,
       "detail": "pdfinfo: 2 pages, 122335 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:48:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.1,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:13Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.5,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:28Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 16.3,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:28Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 16.4,
+      "detail": "5 fonts, 0 math"
     }
   ]
 }

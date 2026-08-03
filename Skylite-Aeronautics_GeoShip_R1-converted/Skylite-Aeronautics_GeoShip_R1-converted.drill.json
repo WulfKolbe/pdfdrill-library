@@ -2,7 +2,8 @@
   "pdf": "Skylite-Aeronautics_GeoShip_R1-converted.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 9,
@@ -34,13 +35,155 @@
     "text_layer": true,
     "font_count": 9,
     "first_page_chars": 665,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "ArialMT",
+      "Arial-BoldMT",
+      "Arial-ItalicMT",
+      "ArialMT",
+      "SymbolMT",
+      "BCDEEE+CourierNewPSMT",
+      "Arial-ItalicMT",
+      "BCDFEE+Cambria",
+      "Arial-BoldItalicMT"
+    ],
+    "math_fonts": [
+      "SymbolMT"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "ArialMT",
+      "base_name": "ArialMT",
+      "family": "ArialMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "5 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Arial-BoldMT",
+      "base_name": "Arial-BoldMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Arial-ItalicMT",
+      "base_name": "Arial-ItalicMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "12 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "ArialMT CID",
+      "base_name": "ArialMT CID",
+      "family": "ArialMT CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "18 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "SymbolMT CID",
+      "base_name": "SymbolMT CID",
+      "family": "SymbolMT CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "31 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BCDEEE+CourierNewPSMT",
+      "base_name": "CourierNewPSMT",
+      "family": "CourierNewPSMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "36 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Arial-ItalicMT CID",
+      "base_name": "Arial-ItalicMT CID",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "46 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "BCDFEE+Cambria",
+      "base_name": "Cambria",
+      "family": "Cambria",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "54 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Arial-BoldItalicMT",
+      "base_name": "Arial-BoldItalicMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "63 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +195,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 58.6,
       "detail": "pdfinfo: 9 pages, 568382 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:42:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 32.3,
+      "detail": "9 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:42:33Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 35.3,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:55Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 33.7,
+      "detail": "9 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:55Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 34.2,
+      "detail": "9 fonts, 0 math"
     }
   ]
 }

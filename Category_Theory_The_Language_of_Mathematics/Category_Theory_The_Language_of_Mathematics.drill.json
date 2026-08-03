@@ -2,7 +2,8 @@
   "pdf": "Category_Theory_The_Language_of_Mathematics.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 14,
@@ -37,13 +38,170 @@
     "text_layer": true,
     "font_count": 10,
     "first_page_chars": 429,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "SourceSansPro-Regular",
+      "Martel-Regular",
+      "SourceSansPro-Semibold",
+      "SourceSansPro-It",
+      "Times-Bold",
+      "Times-BoldItalic",
+      "Times-Roman",
+      "Times-Italic",
+      "Symbol",
+      "Helvetica"
+    ],
+    "math_fonts": [
+      "Symbol"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "SourceSansPro-Regular CID",
+      "base_name": "SourceSansPro-Regular CID",
+      "family": "SourceSansPro",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "27 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Martel-Regular CID",
+      "base_name": "Martel-Regular CID",
+      "family": "Martel",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "28 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "SourceSansPro-Semibold CID",
+      "base_name": "SourceSansPro-Semibold CID",
+      "family": "SourceSansPro",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "29 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "SourceSansPro-It CID",
+      "base_name": "SourceSansPro-It CID",
+      "family": "SourceSansPro",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "30 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "Times-Bold",
+      "base_name": "Times-Bold",
+      "family": "Times",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "40 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Times-BoldItalic",
+      "base_name": "Times-BoldItalic",
+      "family": "Times",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "41 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "Times-Roman",
+      "base_name": "Times-Roman",
+      "family": "Times",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "42 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Italic",
+      "base_name": "Times-Italic",
+      "family": "Times",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "43 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "Symbol",
+      "base_name": "Symbol",
+      "family": "Symbol",
+      "type": "TrueType",
+      "encoding": "Symbol",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "54 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "57 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -55,6 +213,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 58.0,
       "detail": "pdfinfo: 14 pages, 89767 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:21:14Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 31.4,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:21:14Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 31.6,
+      "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:32:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 41.4,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:32:33Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 42.8,
+      "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 32.3,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:59Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 33.7,
+      "detail": "10 fonts, 0 math"
     }
   ]
 }

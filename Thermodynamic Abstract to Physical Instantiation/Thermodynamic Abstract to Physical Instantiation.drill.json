@@ -2,7 +2,8 @@
   "pdf": "Thermodynamic Abstract to Physical Instantiation.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 18,
@@ -38,13 +39,81 @@
     "text_layer": true,
     "font_count": 4,
     "first_page_chars": 2835,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "JVUEMP+DejaVuSerif-Bold",
+      "IHIIKX+DejaVuSerif",
+      "JEUWBM+LatinModernMath-Regular",
+      "FFCHAP+LatinModernMath-Regular"
+    ],
+    "math_fonts": [
+      "JEUWBM+LatinModernMath-Regular",
+      "FFCHAP+LatinModernMath-Regular"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "JVUEMP+DejaVuSerif-Bold CID",
+      "base_name": "DejaVuSerif-Bold CID",
+      "family": "DejaVuSerif",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "IHIIKX+DejaVuSerif CID",
+      "base_name": "DejaVuSerif CID",
+      "family": "DejaVuSerif CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "JEUWBM+LatinModernMath-Regular CID",
+      "base_name": "LatinModernMath-Regular CID",
+      "family": "LatinModernMath",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "19 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FFCHAP+LatinModernMath-Regular CID",
+      "base_name": "LatinModernMath-Regular CID",
+      "family": "LatinModernMath",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "44 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -56,6 +125,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 38.5,
       "detail": "pdfinfo: 18 pages, 121766 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:45:34Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 17.7,
+      "detail": "4 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:45:34Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 18.7,
+      "detail": "4 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:46:50Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 16.3,
+      "detail": "4 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:46:50Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 16.4,
+      "detail": "4 fonts, 2 math"
     }
   ]
 }

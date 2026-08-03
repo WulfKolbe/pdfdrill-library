@@ -2,7 +2,8 @@
   "pdf": "US6364946.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 5,
@@ -34,13 +35,33 @@
     "text_layer": true,
     "font_count": 1,
     "first_page_chars": 1983,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "Courier"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "Courier",
+      "base_name": "Courier",
+      "family": "Courier",
+      "type": "Type",
+      "encoding": "1",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "no [none]",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +73,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 48.5,
       "detail": "pdfinfo: 5 pages, 604370 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:45:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 22.6,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:45:46Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 24.0,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:01Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 21.3,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:01Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 22.8,
+      "detail": "1 fonts, 0 math"
     }
   ]
 }

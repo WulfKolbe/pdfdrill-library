@@ -2,7 +2,8 @@
   "pdf": "MDS Nutrition and the eye.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -36,13 +37,93 @@
     "text_layer": true,
     "font_count": 5,
     "first_page_chars": 579,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "OGAGIP+HelveticaNeue-Roman",
+      "OGAGHL+Helvetica",
+      "OGAGIO+HelveticaNeue-Medium",
+      "OGAGHM+Helvetica-Bold",
+      "Times-Roman"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "OGAGIP+HelveticaNeue-Roman",
+      "base_name": "HelveticaNeue-Roman",
+      "family": "HelveticaNeue",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "479 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "OGAGHL+Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "482 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "OGAGIO+HelveticaNeue-Medium",
+      "base_name": "HelveticaNeue-Medium",
+      "family": "HelveticaNeue",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "486 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "OGAGHM+Helvetica-Bold",
+      "base_name": "Helvetica-Bold",
+      "family": "Helvetica",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "66 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Roman",
+      "base_name": "Times-Roman",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": false,
+      "subset": false,
+      "unicode": true,
+      "object_id": "67 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +135,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 51.3,
       "detail": "pdfinfo: 12 pages, 253620 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:38:32Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 27.8,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:38:32Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 28.1,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:39:57Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 29.9,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:39:57Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 26.6,
+      "detail": "5 fonts, 0 math"
     }
   ]
 }

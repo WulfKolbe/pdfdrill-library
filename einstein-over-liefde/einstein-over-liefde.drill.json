@@ -2,7 +2,8 @@
   "pdf": "einstein-over-liefde.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -38,13 +39,48 @@
     "text_layer": true,
     "font_count": 2,
     "first_page_chars": 1278,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "CRDUZC+TimesNewRomanPSMT",
+      "UUSHVG+Helvetica"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "CRDUZC+TimesNewRomanPSMT",
+      "base_name": "TimesNewRomanPSMT",
+      "family": "TimesNewRomanPSMT",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "UUSHVG+Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -56,6 +92,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 30.5,
       "detail": "pdfinfo: 2 pages, 42442 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:47:12Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.5,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:12Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 10.5,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:24Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.5,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:24Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.7,
+      "detail": "2 fonts, 0 math"
     }
   ]
 }

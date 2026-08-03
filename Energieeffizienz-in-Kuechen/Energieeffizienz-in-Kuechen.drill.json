@@ -2,7 +2,8 @@
   "pdf": "Energieeffizienz-in-Kuechen.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 16,
@@ -36,13 +37,140 @@
     "text_layer": true,
     "font_count": 8,
     "first_page_chars": 44,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "ABCDEE+ArialNarrow",
+      "ABCDEE+ArialNarrow-Bold",
+      "ArialMT",
+      "ABCDEE+ArialNarrow",
+      "ABCDEE+Calibri",
+      "Arial-BoldMT",
+      "SymbolMT",
+      "ABCDEE+ArialNarrow-Bold"
+    ],
+    "math_fonts": [
+      "SymbolMT"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "ABCDEE+ArialNarrow",
+      "base_name": "ArialNarrow",
+      "family": "ArialNarrow",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "5 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+ArialNarrow-Bold",
+      "base_name": "ArialNarrow-Bold",
+      "family": "ArialNarrow",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "13 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "ArialMT",
+      "base_name": "ArialMT",
+      "family": "ArialMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "23 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+ArialNarrow CID",
+      "base_name": "ArialNarrow CID",
+      "family": "ArialNarrow CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "26 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Calibri",
+      "base_name": "Calibri",
+      "family": "Calibri",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "38 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Arial-BoldMT",
+      "base_name": "Arial-BoldMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "78 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "SymbolMT CID",
+      "base_name": "SymbolMT CID",
+      "family": "SymbolMT CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "82 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+ArialNarrow-Bold CID",
+      "base_name": "ArialNarrow-Bold CID",
+      "family": "ArialNarrow",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "117 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +182,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 57.3,
       "detail": "pdfinfo: 16 pages, 1026723 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:23:17Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 24.0,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:23:17Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 24.7,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:53Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 29.5,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:53Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 29.4,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:36:10Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 27.8,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:36:11Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 27.3,
+      "detail": "8 fonts, 0 math"
     }
   ]
 }

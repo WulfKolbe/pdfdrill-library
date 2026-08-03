@@ -2,7 +2,8 @@
   "pdf": "ziegenhagen.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 10,
@@ -38,13 +39,95 @@
     "text_layer": true,
     "font_count": 5,
     "first_page_chars": 102,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "QJLJZT+NimbusSanL-Bold",
+      "WXLYDX+NimbusSanL-Regu",
+      "FAVETQ+NimbusSanL-ReguItal",
+      "OMFALU+CMMI12",
+      "MFCXTE+NimbusSanL-BoldItal"
+    ],
+    "math_fonts": [
+      "OMFALU+CMMI12"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "QJLJZT+NimbusSanL-Bold",
+      "base_name": "NimbusSanL-Bold",
+      "family": "NimbusSanL",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "WXLYDX+NimbusSanL-Regu",
+      "base_name": "NimbusSanL-Regu",
+      "family": "NimbusSanL",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FAVETQ+NimbusSanL-ReguItal",
+      "base_name": "NimbusSanL-ReguItal",
+      "family": "NimbusSanL",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "15 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "OMFALU+CMMI12",
+      "base_name": "CMMI12",
+      "family": "CMMI12",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "28 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "MFCXTE+NimbusSanL-BoldItal",
+      "base_name": "NimbusSanL-BoldItal",
+      "family": "NimbusSanL",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "74 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -56,6 +139,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 45.4,
       "detail": "pdfinfo: 10 pages, 64324 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:49:24Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 19.3,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:24Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 17.7,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:34Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 20.2,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:34Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 17.8,
+      "detail": "5 fonts, 1 math"
     }
   ]
 }

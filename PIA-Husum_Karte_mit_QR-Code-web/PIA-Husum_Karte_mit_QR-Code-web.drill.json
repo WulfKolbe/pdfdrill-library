@@ -2,7 +2,8 @@
   "pdf": "PIA-Husum_Karte_mit_QR-Code-web.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -34,13 +35,108 @@
     "text_layer": true,
     "font_count": 6,
     "first_page_chars": 69,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "TCILUL+TheSans-SemiBoldCaps-SC700",
+      "OFTCCV+TheSerif-Regular",
+      "NJHWOX+Calibri",
+      "YKUFMB+Calibri-Bold",
+      "EYRPSP+Calibri",
+      "TFHBUL+Calibri-Bold"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "TCILUL+TheSans-SemiBoldCaps-SC700",
+      "base_name": "TheSans-SemiBoldCaps-SC700",
+      "family": "TheSans",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "106 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "OFTCCV+TheSerif-Regular",
+      "base_name": "TheSerif-Regular",
+      "family": "TheSerif",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "107 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "NJHWOX+Calibri CID",
+      "base_name": "Calibri CID",
+      "family": "Calibri CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "31 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "YKUFMB+Calibri-Bold CID",
+      "base_name": "Calibri-Bold CID",
+      "family": "Calibri",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "28 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "EYRPSP+Calibri",
+      "base_name": "Calibri",
+      "family": "Calibri",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "29 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TFHBUL+Calibri-Bold",
+      "base_name": "Calibri-Bold",
+      "family": "Calibri",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "30 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +148,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 40.9,
       "detail": "pdfinfo: 2 pages, 399233 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:40:32Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.8,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:40:32Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.1,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:52Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.8,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:52Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.8,
+      "detail": "6 fonts, 0 math"
     }
   ]
 }

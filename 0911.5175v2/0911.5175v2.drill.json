@@ -4,12 +4,15 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -57,7 +60,79 @@
         "page": 1,
         "url": "http://arxiv.org/abs/0911.5175v2"
       }
-    ]
+    ],
+    "fonts": [
+      "Helvetica",
+      "Times-Roman",
+      "TNCKBV+CMSY7",
+      "LHEAZV+CMSY6",
+      "IEIYIV+CMSY10",
+      "HLSECW+CMR7",
+      "AJUGQV+CMR10",
+      "TJVYVT+CMMI7",
+      "AHZEUJ+CMMI10",
+      "Times-Italic",
+      "Times-Bold",
+      "RTLUXQ+CMMI9",
+      "HTUMJK+CMEX10",
+      "HXFHDC+CMBX10",
+      "SKVLCT+CMSY5",
+      "UNXJMV+EUFM7",
+      "OXCSWW+EUFM10",
+      "BGFRYR+CMMI6",
+      "PNCLZG+CMR8",
+      "MZTVHM+CMMI8",
+      "WGFXHR+CMR5",
+      "VXQWXQ+CMR6",
+      "PWXISX+CMSY9",
+      "PGRORW+CMR9"
+    ],
+    "math_fonts": [
+      "TNCKBV+CMSY7",
+      "LHEAZV+CMSY6",
+      "IEIYIV+CMSY10",
+      "TJVYVT+CMMI7",
+      "AHZEUJ+CMMI10",
+      "RTLUXQ+CMMI9",
+      "HTUMJK+CMEX10",
+      "SKVLCT+CMSY5",
+      "UNXJMV+EUFM7",
+      "OXCSWW+EUFM10",
+      "BGFRYR+CMMI6",
+      "MZTVHM+CMMI8",
+      "PWXISX+CMSY9"
+    ],
+    "has_math_fonts": true,
+    "bibkey": "0911.5175v2",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Paragraph": 59,
+      "Formula": 100,
+      "Abstract": 1,
+      "Section": 9,
+      "Equation": 15,
+      "LtxCommand": 2,
+      "Citation": 57
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "merged_geometry": {
+      "pages": 9,
+      "placed": 36,
+      "regions": 36,
+      "sections": 9,
+      "children": 171,
+      "numbered": 9,
+      "roots": 1
+    },
+    "bibliography_entries": 39,
+    "bibliography_with_year": 36,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 57,
+    "tiddlers_path": "0911.5175v2.tiddlers.json",
+    "tiddlers_count": 252,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:0911.5175v2  [physics.class-ph]  27 Jan 2010",
@@ -1258,6 +1333,88 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2826.6,
       "detail": "46 images, 14 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:19Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.6,
+      "detail": "24 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:19Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 28.7,
+      "detail": "24 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:53Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 32.2,
+      "detail": "24 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:53Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 33.5,
+      "detail": "24 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:06Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 37.2,
+      "detail": "24 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:06Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 38.3,
+      "detail": "24 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-03T18:17:07Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "243 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T18:17:07Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "39 entries, 0+0 cites detected, 57 linked"
+    },
+    {
+      "ts": "2026-08-03T18:17:07Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.6,
+      "detail": "252 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:dbc9818662c7e81928732e334cc3e0222debf944f906fcc93d3186af9563e973",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:17:07Z",
+      "provenance": "latex-source"
+    }
+  }
 }

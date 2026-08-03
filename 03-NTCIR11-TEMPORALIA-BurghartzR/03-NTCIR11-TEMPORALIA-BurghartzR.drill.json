@@ -3,15 +3,14 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_KNOWN",
     "MD_BUILT",
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -110,7 +109,7 @@
       }
     ],
     "bibkey": "03-NTCIR11-TEMPORALIA-BurghartzR",
-    "model_path": "03-NTCIR11-TEMPORALIA-BurghartzR.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 8,
       "Table": 7,
@@ -128,7 +127,7 @@
       "Document": 1
     },
     "model_equations_with_cdn": 7,
-    "tiddlers_path": "03-NTCIR11-TEMPORALIA-BurghartzR.pdf.drill/03-NTCIR11-TEMPORALIA-BurghartzR.tiddlers.json",
+    "tiddlers_path": "03-NTCIR11-TEMPORALIA-BurghartzR.tiddlers.json",
     "tiddlers_count": 200,
     "tiddlers_svg_mode": "inline",
     "links": [
@@ -157,7 +156,15 @@
         "url": "http://www.dmoz.org/",
         "kind": "text"
       }
-    ]
+    ],
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": {
     "title": "",
@@ -799,7 +806,82 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3316.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 33.5,
+      "detail": "37 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts_layer",
+      "from": "IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 33.1,
+      "detail": "37 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 37.3,
+      "detail": "37 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts_layer",
+      "from": "IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 36.6,
+      "detail": "37 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 38.4,
+      "detail": "37 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts_layer",
+      "from": "IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 40.4,
+      "detail": "37 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T18:12:40Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 203.1,
+      "detail": "349 objects, 7 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:12:40Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.6,
+      "detail": "200 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/03-NTCIR11-TEMPORALIA-BurghartzR/03-NTCIR11-TEMPORALIA-BurghartzR.lines.json": "sha256:d5cff01614787c1e8620d5ec06a073441016a74efd0b83d6bf25b80efbc9fb0e"
+      },
+      "params_hash": "sha256:142a8b8972bf1797fd2c0ec984152824203822714bdb222b4c519e6200174d31",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:12:40Z",
+      "provenance": "mathpix"
+    }
+  }
 }

@@ -2,7 +2,8 @@
   "pdf": "wellness-7minuteworkout.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -34,13 +35,108 @@
     "text_layer": true,
     "font_count": 6,
     "first_page_chars": 1781,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "BZZOLY+PFDinTextCompStd-Regular",
+      "BZZOLY+PFDinTextStd-Regular",
+      "BZZOLY+PFDinTextCompStd-Light",
+      "BZZOLY+SourceSansPro-Regular",
+      "BZZOLY+SourceSansPro-Bold",
+      "BZZOLY+SourceSansPro-Semibold"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "BZZOLY+PFDinTextCompStd-Regular",
+      "base_name": "PFDinTextCompStd-Regular",
+      "family": "PFDinTextCompStd",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "192 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BZZOLY+PFDinTextStd-Regular",
+      "base_name": "PFDinTextStd-Regular",
+      "family": "PFDinTextStd",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "193 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BZZOLY+PFDinTextCompStd-Light",
+      "base_name": "PFDinTextCompStd-Light",
+      "family": "PFDinTextCompStd",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "202 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BZZOLY+SourceSansPro-Regular",
+      "base_name": "SourceSansPro-Regular",
+      "family": "SourceSansPro",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "203 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BZZOLY+SourceSansPro-Bold",
+      "base_name": "SourceSansPro-Bold",
+      "family": "SourceSansPro",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "204 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "BZZOLY+SourceSansPro-Semibold",
+      "base_name": "SourceSansPro-Semibold",
+      "family": "SourceSansPro",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "206 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +148,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 49.9,
       "detail": "pdfinfo: 1 pages, 718198 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:49:18Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.4,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:18Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.9,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:29Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.3,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:29Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.7,
+      "detail": "6 fonts, 0 math"
     }
   ]
 }

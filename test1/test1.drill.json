@@ -2,7 +2,8 @@
   "pdf": "test1.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -35,13 +36,63 @@
     "text_layer": true,
     "font_count": 3,
     "first_page_chars": 1308,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "Times-BoldItalic",
+      "Times-Roman",
+      "Times-Bold"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "Times-BoldItalic",
+      "base_name": "Times-BoldItalic",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": true,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "Times-Roman",
+      "base_name": "Times-Roman",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": true,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Bold",
+      "base_name": "Times-Bold",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": true,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -53,6 +104,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 51.2,
       "detail": "pdfinfo: 1 pages, 5522 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:49:01Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 30.3,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:01Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 29.5,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:14Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 27.3,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:14Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 25.8,
+      "detail": "3 fonts, 0 math"
     }
   ]
 }

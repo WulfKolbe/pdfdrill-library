@@ -6,7 +6,8 @@
     "MODEL_BUILT",
     "REPORT_BUILT",
     "TABLES_KNOWN",
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "mathpix_pdf_id": "843edf11-fb78-4496-b62a-720b978f52d1",
@@ -75,13 +76,126 @@
     "text_layer": true,
     "font_count": 7,
     "first_page_chars": 4846,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "Times-Bold",
+      "Times-Roman",
+      "YHMAAA+CMSY10",
+      "MVUPWA+CMMI10",
+      "PCLDAA+CMR10",
+      "WUAAAA+CMBX10",
+      "WCAAAA+EUSM10"
+    ],
+    "math_fonts": [
+      "YHMAAA+CMSY10",
+      "MVUPWA+CMMI10"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "Times-Bold",
+      "base_name": "Times-Bold",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "5 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Roman",
+      "base_name": "Times-Roman",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "6 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "YHMAAA+CMSY10",
+      "base_name": "CMSY10",
+      "family": "CMSY10",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "7 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "MVUPWA+CMMI10",
+      "base_name": "CMMI10",
+      "family": "CMMI10",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "8 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "PCLDAA+CMR10",
+      "base_name": "CMR10",
+      "family": "CMR10",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "30 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "WUAAAA+CMBX10",
+      "base_name": "CMBX10",
+      "family": "CMBX10",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "102 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "WCAAAA+EUSM10",
+      "base_name": "EUSM10",
+      "family": "EUSM10",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "274 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "pix2tex_results": null,
   "tsv_layer": null,
@@ -134,6 +248,38 @@
       "to": "REPORT_BUILT",
       "cost_ms": 0,
       "detail": "124 inline, 0 equations"
+    },
+    {
+      "ts": "2026-08-03T14:46:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 69.5,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:46:59Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MODEL_BUILT,REPORT_BUILT,SIZE_KNOWN,TABLES_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 69.0,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:12Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 72.3,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:12Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MODEL_BUILT,REPORT_BUILT,SIZE_KNOWN,TABLES_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 75.7,
+      "detail": "7 fonts, 2 math"
     }
   ],
   "capabilities": {}

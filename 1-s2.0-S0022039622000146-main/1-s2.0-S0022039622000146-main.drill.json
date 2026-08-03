@@ -4,13 +4,17 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 40,
@@ -215,7 +219,55 @@
         "page": 40,
         "url": "http://refhub.elsevier.com/S0022-0396(22)00014-6/bib9B521B589AE9036C09FFCC8A25A82456s1"
       }
-    ]
+    ],
+    "fonts": [
+      "BNHHOB+Helvetica",
+      "BNHHOC+VAGRoundedStd-Bold",
+      "BNHHOD+Times-Roman",
+      "BNHHOE+MTMI",
+      "BNHHPE+MTSYN",
+      "BNHHPF+Times-Italic",
+      "BNHHPG+Times-Bold",
+      "BNHIAH+Symbol",
+      "BNHIBI+CMSY10",
+      "BNHIBJ+MTEX",
+      "BNHIAI+MT2HRBT",
+      "BNHIDK+MSBM10",
+      "BNHIEK+rsfs10",
+      "BNHIJJ+wasy10"
+    ],
+    "math_fonts": [
+      "BNHIAH+Symbol",
+      "BNHIBI+CMSY10",
+      "BNHIDK+MSBM10"
+    ],
+    "has_math_fonts": true,
+    "bibkey": "1-s2.0-S0022039622000146-main",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 40,
+      "Citation": 31,
+      "ListItem": 121,
+      "Paragraph": 40,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 38,
+    "bibliography_with_year": 35,
+    "bibliography_numeric_citations": 106,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 106,
+    "tiddlers_path": "1-s2.0-S0022039622000146-main.tiddlers.json",
+    "tiddlers_count": 284,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Geometric analysis of nonlinear differential-algebraic equations via nonlinear control theory",
@@ -562,6 +614,90 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 14152.3,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:20Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 59.9,
+      "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:20Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 60.0,
+      "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:55Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 59.5,
+      "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:55Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 62.3,
+      "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:07Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 68.6,
+      "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:07Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 68.2,
+      "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T18:18:12Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 164.0,
+      "detail": "233 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:18:13Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "38 entries, 106+0 cites detected, 106 linked"
+    },
+    {
+      "ts": "2026-08-03T18:18:13Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.2,
+      "detail": "284 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1-s2.0-S0022039622000146-main/1-s2.0-S0022039622000146-main.lines.json": "sha256:62936a1d8ef7ab0691060da7763380ab801b7254971f15b24d79040c7229a433"
+      },
+      "params_hash": "sha256:d2d0f514f1a3120ac706d12175fd259ebe3ee9aa2973016347acdfeefc0dcca1",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:18:12Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

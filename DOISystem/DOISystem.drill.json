@@ -2,7 +2,8 @@
   "pdf": "DOISystem.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -35,13 +36,140 @@
     "text_layer": true,
     "font_count": 8,
     "first_page_chars": 2882,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "DIEBGM+AdvPS405B8",
+      "DIEBHN+AdvPS405B6",
+      "DIEBIO+AdvPS405B7",
+      "DIEBJO+AdvPS7DA6",
+      "DIEBMO+AdvPS586D",
+      "DIEBNP+AdvP4C4E51",
+      "DIEDOD+AdvMathSymb",
+      "DIEFFL+AdvPi1"
+    ],
+    "math_fonts": [
+      "DIEDOD+AdvMathSymb"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "DIEBGM+AdvPS405B8",
+      "base_name": "AdvPS405B8",
+      "family": "AdvPS405B8",
+      "type": "Type 1C",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "58 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DIEBHN+AdvPS405B6",
+      "base_name": "AdvPS405B6",
+      "family": "AdvPS405B6",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "54 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DIEBIO+AdvPS405B7",
+      "base_name": "AdvPS405B7",
+      "family": "AdvPS405B7",
+      "type": "Type 1C",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "53 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DIEBJO+AdvPS7DA6",
+      "base_name": "AdvPS7DA6",
+      "family": "AdvPS7DA6",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "66 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DIEBMO+AdvPS586D",
+      "base_name": "AdvPS586D",
+      "family": "AdvPS586D",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "77 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DIEBNP+AdvP4C4E51",
+      "base_name": "AdvP4C4E51",
+      "family": "AdvP4C4E51",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "28 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DIEDOD+AdvMathSymb",
+      "base_name": "AdvMathSymb",
+      "family": "AdvMathSymb",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "29 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DIEFFL+AdvPi1",
+      "base_name": "AdvPi1",
+      "family": "AdvPi1",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "30 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -53,6 +181,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 44.9,
       "detail": "pdfinfo: 8 pages, 469038 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:22:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.6,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:22:00Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.4,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:29Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 16.5,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:29Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 15.2,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:50Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 15.3,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:50Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 16.3,
+      "detail": "8 fonts, 1 math"
     }
   ]
 }

@@ -2,7 +2,8 @@
   "pdf": "Harwood - Joe Flynn's Parallel Path Magnetic Technology (2003).pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 9,
@@ -32,13 +33,63 @@
     "text_layer": true,
     "font_count": 3,
     "first_page_chars": 2562,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "BAAAAA+TimesNewRomanPS-BoldMT",
+      "CAAAAA+TimesNewRomanPSMT",
+      "DAAAAA+TimesNewRomanPS-ItalicMT"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "BAAAAA+TimesNewRomanPS-BoldMT",
+      "base_name": "TimesNewRomanPS-BoldMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "62 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "CAAAAA+TimesNewRomanPSMT",
+      "base_name": "TimesNewRomanPSMT",
+      "family": "TimesNewRomanPSMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "52 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DAAAAA+TimesNewRomanPS-ItalicMT",
+      "base_name": "TimesNewRomanPS-ItalicMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "57 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -50,6 +101,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 35.8,
       "detail": "pdfinfo: 9 pages, 214048 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:25:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.8,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:25:33Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.7,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:37:22Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.3,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:37:22Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.0,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:38:41Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 15.4,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:38:41Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.5,
+      "detail": "3 fonts, 0 math"
     }
   ]
 }

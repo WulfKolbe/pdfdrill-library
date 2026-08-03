@@ -2,7 +2,8 @@
   "pdf": "ws-19-20-category-theory-hw4.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -36,13 +37,65 @@
     "text_layer": true,
     "font_count": 3,
     "first_page_chars": 1008,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "TIHVMC+TeXGyrePagella-Regular",
+      "EHUAYM+TeXGyrePagellaMath-Regular",
+      "EPDNLE+TeXGyrePagella-Italic"
+    ],
+    "math_fonts": [
+      "EHUAYM+TeXGyrePagellaMath-Regular"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "TIHVMC+TeXGyrePagella-Regular CID",
+      "base_name": "TeXGyrePagella-Regular CID",
+      "family": "TeXGyrePagella",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "1 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "EHUAYM+TeXGyrePagellaMath-Regular CID",
+      "base_name": "TeXGyrePagellaMath-Regular CID",
+      "family": "TeXGyrePagellaMath",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "2 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "EPDNLE+TeXGyrePagella-Italic CID",
+      "base_name": "TeXGyrePagella-Italic CID",
+      "family": "TeXGyrePagella",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "3 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +107,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 29.7,
       "detail": "pdfinfo: 2 pages, 31799 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:49:18Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.7,
+      "detail": "3 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:18Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.0,
+      "detail": "3 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:29Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.7,
+      "detail": "3 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:29Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.3,
+      "detail": "3 fonts, 1 math"
     }
   ]
 }

@@ -8,12 +8,11 @@
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 28,
@@ -54,15 +53,16 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 28,
-      "Citation": 73,
-      "Paragraph": 28,
+      "Citation": 71,
+      "Equation": 281,
+      "Paragraph": 210,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
     "model_source": "pdfminer-chars",
     "model_caps": {
       "geometry": true,
-      "math": false,
+      "math": true,
       "source": "pdfminer-chars"
     },
     "bibliography_entries": 31,
@@ -71,7 +71,7 @@
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 8,
     "tiddlers_path": "0210081.tiddlers.json",
-    "tiddlers_count": 135,
+    "tiddlers_count": 566,
     "tiddlers_svg_mode": "inline",
     "fonts": [
       "NDSPCE+CMR8",
@@ -123,7 +123,9 @@
         "page": 1,
         "url": "http://arxiv.org/abs/math/0210081v2"
       }
-    ]
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 6 unmapped private-use character(s) remain (U+F6BE×3, U+F8F1×1, U+F8F2×1, U+F8F3×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified."
   },
   "pdfinfo": {
     "title": "",
@@ -21987,17 +21989,81 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5084.4,
       "detail": "1230 images, 627 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:12Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 51.8,
+      "detail": "25 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:12Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 52.4,
+      "detail": "25 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 56.1,
+      "detail": "25 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:46Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 54.2,
+      "detail": "25 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:58Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 61.1,
+      "detail": "25 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:58Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 62.6,
+      "detail": "25 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-03T18:12:35Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 142.5,
+      "detail": "591 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:12:35Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.6,
+      "detail": "566 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/0210081/0210081.lines.json": "sha256:db0881febb8a6aa25d81893ce32cd8527296518c2d3b79d2c1958d578f2784e3"
+        "/home/wkolbe/pdfdrill-library/0210081/0210081.lines.json": "sha256:70ddaca8f82283c1b6541c2194b2009f72d6b41cc54b3236b68320b197d35fb0"
       },
       "params_hash": "sha256:8a18a3273a49313425c236577f2368065aebc9909450df3c90a63de48db0ab9b",
       "algo": "sha256",
-      "ts": "2026-07-30T14:05:05Z",
+      "ts": "2026-08-03T18:12:35Z",
       "provenance": "pdfminer-chars"
     }
   }

@@ -2,7 +2,8 @@
   "pdf": "asis_legal.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 17,
@@ -35,13 +36,155 @@
     "text_layer": true,
     "font_count": 9,
     "first_page_chars": 42,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "ABCDEE+Calibri",
+      "ABCDEE+SegoeUI-Light",
+      "ABCDEE+Calibri-Bold",
+      "ABCDEE+Calibri-Light",
+      "ABCDEE+SegoeUI-Light",
+      "ArialMT",
+      "Arial-BoldMT",
+      "ABCDEE+Calibri",
+      "SymbolMT"
+    ],
+    "math_fonts": [
+      "SymbolMT"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "ABCDEE+Calibri",
+      "base_name": "Calibri",
+      "family": "Calibri",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "5 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+SegoeUI-Light",
+      "base_name": "SegoeUI-Light",
+      "family": "SegoeUI",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Calibri-Bold",
+      "base_name": "Calibri-Bold",
+      "family": "Calibri",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Calibri-Light",
+      "base_name": "Calibri-Light",
+      "family": "Calibri",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "17 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+SegoeUI-Light CID",
+      "base_name": "SegoeUI-Light CID",
+      "family": "SegoeUI",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "19 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ArialMT",
+      "base_name": "ArialMT",
+      "family": "ArialMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "66 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Arial-BoldMT",
+      "base_name": "Arial-BoldMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "70 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Calibri CID",
+      "base_name": "Calibri CID",
+      "family": "Calibri CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "75 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "SymbolMT CID",
+      "base_name": "SymbolMT CID",
+      "family": "SymbolMT CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "87 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -53,6 +196,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 46.8,
       "detail": "pdfinfo: 17 pages, 843190 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:46:40Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.2,
+      "detail": "9 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:46:40Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 29.2,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:51Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.9,
+      "detail": "9 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:51Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 27.5,
+      "detail": "9 fonts, 0 math"
     }
   ]
 }

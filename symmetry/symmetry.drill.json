@@ -2,7 +2,8 @@
   "pdf": "symmetry.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 17,
@@ -31,13 +32,168 @@
     "text_layer": true,
     "font_count": 10,
     "first_page_chars": 819,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "A",
+      "XFDFQI+Palatino-Roman",
+      "GLMFBG+Helvetica-Bold",
+      "VHXXHY+Helvetica-Bold~1b",
+      "BGHACB+Palatino-Roman~18",
+      "LSGAOV+Helvetica-Bold~15",
+      "LPBGMW+Courier-Bold",
+      "B",
+      "WHDFJV+Helvetica",
+      "C"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "A",
+      "base_name": "A",
+      "family": "A",
+      "type": "Type 3",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": false,
+      "unicode": false,
+      "object_id": "15 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "XFDFQI+Palatino-Roman",
+      "base_name": "Palatino-Roman",
+      "family": "Palatino",
+      "type": "Type 1C",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "13 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "GLMFBG+Helvetica-Bold",
+      "base_name": "Helvetica-Bold",
+      "family": "Helvetica",
+      "type": "Type 1C",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "VHXXHY+Helvetica-Bold~1b",
+      "base_name": "Helvetica-Bold~1b",
+      "family": "Helvetica",
+      "type": "Type 1C",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "28 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "BGHACB+Palatino-Roman~18",
+      "base_name": "Palatino-Roman~18",
+      "family": "Palatino",
+      "type": "Type 1C",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "25 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "LSGAOV+Helvetica-Bold~15",
+      "base_name": "Helvetica-Bold~15",
+      "family": "Helvetica",
+      "type": "Type 1C",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "22 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "LPBGMW+Courier-Bold",
+      "base_name": "Courier-Bold",
+      "family": "Courier",
+      "type": "Type 1C",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "225 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "B",
+      "base_name": "B",
+      "family": "B",
+      "type": "Type 3",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": false,
+      "unicode": false,
+      "object_id": "317 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "WHDFJV+Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1C",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "321 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "C",
+      "base_name": "C",
+      "family": "C",
+      "type": "Type 3",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": false,
+      "unicode": false,
+      "object_id": "539 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -49,6 +205,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 53.1,
       "detail": "pdfinfo: 17 pages, 214391 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:48:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 33.5,
+      "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:59Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 29.9,
+      "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 21.0,
+      "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:13Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 20.3,
+      "detail": "10 fonts, 0 math"
     }
   ]
 }

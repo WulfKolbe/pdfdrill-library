@@ -5,8 +5,8 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "SIZE_KNOWN",
-    "FONTS_KNOWN",
-    "MD_BUILT"
+    "MD_BUILT",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "mathpix_pdf_id": "b2d6746a-5e84-4746-a543-ddbf39e8e259",
@@ -101,7 +101,148 @@
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "ABCDEE+Cambria CID",
+      "base_name": "Cambria CID",
+      "family": "Cambria CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "333 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "GDDEXH+Cambria CID",
+      "base_name": "Cambria CID",
+      "family": "Cambria CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "338 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Cambria",
+      "base_name": "Cambria",
+      "family": "Cambria",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "341 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Cambria,Bold",
+      "base_name": "Cambria,Bold",
+      "family": "Cambria,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "344 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Cambria,Italic",
+      "base_name": "Cambria,Italic",
+      "family": "Cambria,Italic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "66 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "Symbol CID",
+      "base_name": "Symbol CID",
+      "family": "Symbol CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "70 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Cambria,Bold CID",
+      "base_name": "Cambria,Bold CID",
+      "family": "Cambria,Bold CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "81 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Cambria Math CID",
+      "base_name": "Cambria Math CID",
+      "family": "Cambria Math CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "82 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Cambria,Italic CID",
+      "base_name": "Cambria,Italic CID",
+      "family": "Cambria,Italic CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "92 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "ABCDEE+Cambria,BoldItalic",
+      "base_name": "Cambria,BoldItalic",
+      "family": "Cambria,BoldItalic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "95 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {
@@ -143,6 +284,54 @@
       "from": "SIZE_KNOWN",
       "to": "FONTS_KNOWN",
       "cost_ms": 16.5,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:21:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 17.9,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:21:46Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 16.6,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 21.3,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:13Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 21.5,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:34Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 18.3,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:34Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 18.2,
       "detail": "10 fonts, 1 math"
     }
   ],

@@ -3,11 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_KNOWN",
     "MD_BUILT",
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 4,
@@ -101,7 +101,134 @@
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "MAWRTK+NimbusSanL-Bold",
+      "base_name": "NimbusSanL-Bold",
+      "family": "NimbusSanL",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "46 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "IETEKE+NimbusSanL-Regu",
+      "base_name": "NimbusSanL-Regu",
+      "family": "NimbusSanL",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "47 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DGMPUX+NimbusRomNo9L-Medi",
+      "base_name": "NimbusRomNo9L-Medi",
+      "family": "NimbusRomNo9L",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "50 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "ABHCLA+NimbusRomNo9L-Regu",
+      "base_name": "NimbusRomNo9L-Regu",
+      "family": "NimbusRomNo9L",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "51 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "QCSCRN+NimbusRomNo9L-ReguItal",
+      "base_name": "NimbusRomNo9L-ReguItal",
+      "family": "NimbusRomNo9L",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "52 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "WEIJUK+CMSY9",
+      "base_name": "CMSY9",
+      "family": "CMSY9",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "53 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "RUSCSV+CMTT8",
+      "base_name": "CMTT8",
+      "family": "CMTT8",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "81 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "WHCHFU+CMTT9",
+      "base_name": "CMTT9",
+      "family": "CMTT9",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "82 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "GFAWRG+CMSY10",
+      "base_name": "CMSY10",
+      "family": "CMSY10",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "83 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "pix2tex_results": null,
   "tsv_layer": null,
@@ -163,6 +290,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.7,
       "detail": "90 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-03T14:46:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 18.4,
+      "detail": "9 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:46:00Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 18.9,
+      "detail": "9 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:14Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 16.0,
+      "detail": "9 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:14Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.7,
+      "detail": "9 fonts, 2 math"
     }
   ],
   "capabilities": {}

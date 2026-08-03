@@ -2,7 +2,8 @@
   "pdf": "DeVitoOehrlepaper.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -31,13 +32,16 @@
     "text_layer": false,
     "font_count": 0,
     "first_page_chars": 0,
-    "needs_ocr": true
+    "needs_ocr": true,
+    "fonts": [],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -49,6 +53,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 43.6,
       "detail": "pdfinfo: 8 pages, 904839 bytes, text_layer=False"
+    },
+    {
+      "ts": "2026-08-03T14:22:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.1,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:22:03Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 9.9,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:34Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.0,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:34Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.9,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:54Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.8,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:54Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 10.4,
+      "detail": "0 fonts, 0 math"
     }
   ]
 }

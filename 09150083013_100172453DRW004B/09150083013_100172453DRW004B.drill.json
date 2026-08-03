@@ -4,13 +4,15 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -51,7 +53,44 @@
     "has_math_fonts": false,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "ocr_lang": "eng",
+    "ocr_lang_effective": "eng",
+    "ocr_pages": 1,
+    "ocr_lines": 21,
+    "ocr_units": "pt",
+    "ocr_render_dpi": 400,
+    "ocr_type_counts": {
+      "section_header": 0,
+      "page_info": 1,
+      "diagram": 0,
+      "absorbed_lines": 0,
+      "table": 1,
+      "equation": 0,
+      "equation_lines_merged": 0,
+      "toc_rows": 0,
+      "barcodes": 0
+    },
+    "bibkey": "09150083013_100172453DRW004B",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "Table": 1,
+      "Paragraph": 6,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "tesseract",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "tesseract"
+    },
+    "tiddlers_path": "09150083013_100172453DRW004B.tiddlers.json",
+    "tiddlers_count": 25,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "TB_09150083013_BL01  Release No. B",
@@ -159,6 +198,90 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2045.7,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:19Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 9.5,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:19Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 9.3,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:53Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.0,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:53Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 9.8,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:06Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.3,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:06Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.3,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T18:17:15Z",
+      "node": "ocr",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "OCR_BUILT",
+      "cost_ms": 3791.3,
+      "detail": "1 pages, 21 lines, lang=eng"
+    },
+    {
+      "ts": "2026-08-03T18:17:15Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 4.5,
+      "detail": "9 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:17:15Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 0.5,
+      "detail": "25 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/09150083013_100172453DRW004B/09150083013_100172453DRW004B.lines.json": "sha256:e0ef6767dfb64ea20baecc5417a96aeda1f7532de95e801c7a0321622433a617"
+      },
+      "params_hash": "sha256:e2052f27c5980d453b8494afa4f2a24f47ddd63eaa5990c218bce2bcfdcf3565",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:17:15Z",
+      "provenance": "tesseract"
+    }
+  }
 }

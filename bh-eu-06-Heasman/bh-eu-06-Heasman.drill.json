@@ -2,7 +2,8 @@
   "pdf": "bh-eu-06-Heasman.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 36,
@@ -34,13 +35,93 @@
     "text_layer": true,
     "font_count": 5,
     "first_page_chars": 71,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "ZVHHXQ+ArialMS",
+      "BFVTVK+Wingdings",
+      "VVWYFP+Arial-ItalicMS",
+      "PAWPSR+Arial-BoldMS",
+      "HKZWKZ+CourierNewPS-BoldMT"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "ZVHHXQ+ArialMS",
+      "base_name": "ArialMS",
+      "family": "ArialMS",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "143 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BFVTVK+Wingdings",
+      "base_name": "Wingdings",
+      "family": "Wingdings",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "110 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "VVWYFP+Arial-ItalicMS",
+      "base_name": "Arial-ItalicMS",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "117 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "PAWPSR+Arial-BoldMS",
+      "base_name": "Arial-BoldMS",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "119 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "HKZWKZ+CourierNewPS-BoldMT",
+      "base_name": "CourierNewPS-BoldMT",
+      "family": "CourierNewPS",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "126 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +133,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 47.9,
       "detail": "pdfinfo: 36 pages, 381892 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:46:42Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 16.6,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:46:42Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 17.3,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:53Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 17.4,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:53Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 17.8,
+      "detail": "5 fonts, 0 math"
     }
   ]
 }

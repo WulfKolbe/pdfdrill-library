@@ -4,14 +4,17 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -80,7 +83,33 @@
         "page": 1,
         "url": "http://www.elsevier.com/locate/laa"
       }
-    ]
+    ],
+    "bibkey": "1-s2.0-S0024379507002820-main",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 11,
+      "Citation": 65,
+      "ListItem": 12,
+      "Paragraph": 11,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 16,
+    "bibliography_with_year": 16,
+    "bibliography_numeric_citations": 19,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 19,
+    "tiddlers_path": "1-s2.0-S0024379507002820-main.tiddlers.json",
+    "tiddlers_count": 83,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "doi:10.1016/j.laa.2007.06.015",
@@ -434,6 +463,90 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2022.0,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:20Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 21.0,
+      "detail": "13 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:20Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 24.2,
+      "detail": "13 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:55Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 21.6,
+      "detail": "13 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:55Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 21.2,
+      "detail": "13 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:08Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 25.3,
+      "detail": "13 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:08Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 25.0,
+      "detail": "13 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T18:18:15Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 36.5,
+      "detail": "100 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:18:15Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "16 entries, 19+0 cites detected, 19 linked"
+    },
+    {
+      "ts": "2026-08-03T18:18:15Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.5,
+      "detail": "83 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1-s2.0-S0024379507002820-main/1-s2.0-S0024379507002820-main.lines.json": "sha256:55921ba12327603327fd1a301519d199e8b9fb8b5321bdefc3fd6d292fc9298f"
+      },
+      "params_hash": "sha256:6ee246370a54820604b8d1b7c90445c85d189fca7a42f592b555ac959e316d8a",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:18:15Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

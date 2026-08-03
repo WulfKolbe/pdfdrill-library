@@ -2,7 +2,8 @@
   "pdf": "Fersch_Auftrag_2023.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -38,13 +39,63 @@
     "text_layer": true,
     "font_count": 3,
     "first_page_chars": 592,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "TMSNKT+CMR12",
+      "LCZELO+CMSS8",
+      "TPWMWI+CMBX12"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "TMSNKT+CMR12",
+      "base_name": "CMR12",
+      "family": "CMR12",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "LCZELO+CMSS8",
+      "base_name": "CMSS8",
+      "family": "CMSS8",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "12 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TPWMWI+CMBX12",
+      "base_name": "CMBX12",
+      "family": "CMBX12",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "13 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -56,6 +107,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 39.0,
       "detail": "pdfinfo: 1 pages, 43909 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:23:35Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.3,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:23:35Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 9.9,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:35:14Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.7,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:35:14Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.7,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:36:31Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.7,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:36:31Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.1,
+      "detail": "3 fonts, 0 math"
     }
   ]
 }

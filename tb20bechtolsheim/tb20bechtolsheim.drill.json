@@ -2,7 +2,8 @@
   "pdf": "tb20bechtolsheim.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 5,
@@ -33,13 +34,138 @@
     "text_layer": true,
     "font_count": 8,
     "first_page_chars": 0,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "PXOOQP+Courier-BoldOblique",
+      "GFSUHK+Courier",
+      "IRRSXM+Times-Bold",
+      "DHQUZH+Times-Roman",
+      "EIUUUE+Times-BoldItalic",
+      "IADSWF+Helvetica",
+      "HQUSPM+Courier-Bold",
+      "GNEVYA+Times-Italic"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "PXOOQP+Courier-BoldOblique",
+      "base_name": "Courier-BoldOblique",
+      "family": "Courier",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "23 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "GFSUHK+Courier",
+      "base_name": "Courier",
+      "family": "Courier",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "15 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "IRRSXM+Times-Bold",
+      "base_name": "Times-Bold",
+      "family": "Times",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "25 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "DHQUZH+Times-Roman",
+      "base_name": "Times-Roman",
+      "family": "Times",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "17 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "EIUUUE+Times-BoldItalic",
+      "base_name": "Times-BoldItalic",
+      "family": "Times",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "27 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "IADSWF+Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "19 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "HQUSPM+Courier-Bold",
+      "base_name": "Courier-Bold",
+      "family": "Courier",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "21 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "GNEVYA+Times-Italic",
+      "base_name": "Times-Italic",
+      "family": "Times",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "29 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -51,6 +177,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 62.2,
       "detail": "pdfinfo: 5 pages, 576900 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:48:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 18.1,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:00Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 15.5,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 16.0,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:13Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.2,
+      "detail": "8 fonts, 0 math"
     }
   ]
 }

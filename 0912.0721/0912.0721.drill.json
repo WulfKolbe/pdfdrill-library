@@ -8,12 +8,12 @@
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 7,
@@ -53,15 +53,17 @@
     "bibkey": "0912.0721",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 7,
-      "Citation": 35,
-      "ListItem": 5,
-      "Paragraph": 7,
-      "Document": 1,
-      "Equation": 26
+      "Paragraph": 52,
+      "Abstract": 1,
+      "Section": 5,
+      "Formula": 84,
+      "Equation": 26,
+      "Theorem": 9,
+      "LtxCommand": 2,
+      "Citation": 9
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -82,7 +84,7 @@
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 0,
     "tiddlers_path": "0912.0721.tiddlers.json",
-    "tiddlers_count": 82,
+    "tiddlers_count": 211,
     "tiddlers_svg_mode": "inline",
     "abstract": "We prove that there is an absolute constant $c&gt;0$ with the following property: if $Z/pZ$ denotes the group of prime order $p$, and a subset $A\\subset Z/pZ$ satisfies $1&lt;|A|&lt;p/2$, then for any positive integer $m&lt;\\min\\{c|A|/\\ln|A|,\\sqrt{p/8}\\}$ there are at most $2m$ non-zero elements $b\\in Z/pZ$ with $|(A+b)\\setminus A|\\le m$. This (partially) extends onto prime-order groups the result, established earlier by S. Konyagin and the present author for the group of integers. We notice that if $A\\subset Z/pZ$ is an arithmetic progression and $m&lt;|A|&lt;p/2$, then there are exactly $2m$ non-zero elements $b\\in Z/pZ$ with $|(A+b)\\setminus A|\\le m$. Furthermore, the bound $c|A|/\\ln|A|$ is best possible up to the value of the constant $c$. On the other hand, it is likely that the assumption $m&lt;\\sqrt{p/8}$ can be dropped or substantially relaxed.",
     "abstract_method": "arxiv-abs-page",
@@ -97,7 +99,50 @@
         "page": 1,
         "url": "http://arxiv.org/abs/0912.0721v1"
       }
-    ]
+    ],
+    "fonts": [
+      "MELCUD+CMEX10",
+      "MELMNL+CMSY10",
+      "KSKHHD+MSBM10",
+      "KUCBKS+CMBX12",
+      "BVDOVM+CMR8",
+      "BTCAGS+CMMI12",
+      "UWIMGQ+CMMI10",
+      "Times-Roman",
+      "QSWFDZ+CMCSC10",
+      "QRHTRX+CMR9",
+      "CLIRPG+CMR10",
+      "EJTMRL+CMR12",
+      "PCAAOY+CMTI10",
+      "EJRITX+CMMI8",
+      "AFUGMB+CMTI12",
+      "BVSBRI+CMSY8",
+      "AQPOJV+CMMI9",
+      "LBDTNX+CMTT10",
+      "EGNZMU+CMMI7",
+      "VDTBHM+CMBX10"
+    ],
+    "math_fonts": [
+      "MELCUD+CMEX10",
+      "MELMNL+CMSY10",
+      "KSKHHD+MSBM10",
+      "BTCAGS+CMMI12",
+      "UWIMGQ+CMMI10",
+      "EJRITX+CMMI8",
+      "BVSBRI+CMSY8",
+      "AQPOJV+CMMI9",
+      "EGNZMU+CMMI7"
+    ],
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 7,
+      "placed": 21,
+      "regions": 21,
+      "sections": 5,
+      "children": 160,
+      "numbered": 5,
+      "roots": 1
+    }
   },
   "pdfinfo": {
     "title": "",
@@ -1835,18 +1880,80 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1482.7,
       "detail": "64 images, 32 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:19Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 27.7,
+      "detail": "20 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:19Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 26.3,
+      "detail": "20 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:53Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.1,
+      "detail": "20 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:53Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 29.0,
+      "detail": "20 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:06Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 31.8,
+      "detail": "20 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:06Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 32.3,
+      "detail": "20 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-03T18:17:10Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "188 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T18:17:10Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.7,
+      "detail": "211 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/0912.0721/0912.0721.lines.json": "sha256:8a8e49c2f84b40977cba4442ca445c5b1bc68ed0e2efffbc97a4efb8045eb0ea"
-      },
+      "inputs": {},
       "params_hash": "sha256:120f9e813d533b651ea639af53e6ac6a040dbfee6bc5a495e42a09803c99829e",
       "algo": "sha256",
-      "ts": "2026-07-30T14:12:46Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T18:17:10Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

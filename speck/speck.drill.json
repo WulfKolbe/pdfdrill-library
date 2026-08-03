@@ -2,7 +2,8 @@
   "pdf": "speck.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -37,13 +38,93 @@
     "text_layer": true,
     "font_count": 5,
     "first_page_chars": 3506,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "MAJLOC+FuturaDemiE",
+      "MAJMIC+Century-BookCondensed",
+      "MAJLLB+TimesNewRoman",
+      "MAJMAC+TimesNewRoman,Bold",
+      "MAJMEC+TimesNewRoman,Italic"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "MAJLOC+FuturaDemiE",
+      "base_name": "FuturaDemiE",
+      "family": "FuturaDemiE",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "6 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "MAJMIC+Century-BookCondensed",
+      "base_name": "Century-BookCondensed",
+      "family": "Century",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "7 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "MAJLLB+TimesNewRoman",
+      "base_name": "TimesNewRoman",
+      "family": "TimesNewRoman",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "MAJMAC+TimesNewRoman,Bold",
+      "base_name": "TimesNewRoman,Bold",
+      "family": "TimesNewRoman,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "MAJMEC+TimesNewRoman,Italic",
+      "base_name": "TimesNewRoman,Italic",
+      "family": "TimesNewRoman,Italic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -55,6 +136,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 42.2,
       "detail": "pdfinfo: 6 pages, 329516 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:48:56Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.3,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:56Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.4,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:11Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 20.9,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:11Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.2,
+      "detail": "5 fonts, 0 math"
     }
   ]
 }

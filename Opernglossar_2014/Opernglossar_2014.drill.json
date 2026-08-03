@@ -2,7 +2,8 @@
   "pdf": "Opernglossar_2014.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -36,13 +37,108 @@
     "text_layer": true,
     "font_count": 6,
     "first_page_chars": 2282,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "ABCDEE+Calibri",
+      "ABCDEE+Calibri,Bold",
+      "ABCDEE+Calibri",
+      "ABCDEE+Calibri,BoldItalic",
+      "ABCDEE+Calibri,Italic",
+      "ABCDEE+Calibri,Italic"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "ABCDEE+Calibri",
+      "base_name": "Calibri",
+      "family": "Calibri",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "5 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Calibri,Bold",
+      "base_name": "Calibri,Bold",
+      "family": "Calibri,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "7 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Calibri CID",
+      "base_name": "Calibri CID",
+      "family": "Calibri CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Calibri,BoldItalic",
+      "base_name": "Calibri,BoldItalic",
+      "family": "Calibri,BoldItalic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "16 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "ABCDEE+Calibri,Italic CID",
+      "base_name": "Calibri,Italic CID",
+      "family": "Calibri,Italic CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "21 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "ABCDEE+Calibri,Italic",
+      "base_name": "Calibri,Italic",
+      "family": "Calibri,Italic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "32 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +150,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 44.4,
       "detail": "pdfinfo: 8 pages, 477665 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:40:25Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.4,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:40:25Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.9,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:45Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.5,
+      "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:45Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.6,
+      "detail": "6 fonts, 0 math"
     }
   ]
 }

@@ -2,7 +2,8 @@
   "pdf": "Intelligent-Internet-Whitepaper.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 17,
@@ -38,13 +39,126 @@
     "text_layer": true,
     "font_count": 7,
     "first_page_chars": 1132,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "ZSVDOY+NimbusRomNo9L-Medi",
+      "PTCLER+NimbusRomNo9L-Regu",
+      "GHVFGU+NimbusRomNo9L-ReguItal",
+      "PDTLUH+CMSY10",
+      "DMNYZZ+CMMI10",
+      "OQYHPQ+CMR10",
+      "EVCLUL+SFRM1095"
+    ],
+    "math_fonts": [
+      "PDTLUH+CMSY10",
+      "DMNYZZ+CMMI10"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "ZSVDOY+NimbusRomNo9L-Medi",
+      "base_name": "NimbusRomNo9L-Medi",
+      "family": "NimbusRomNo9L",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "140 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "PTCLER+NimbusRomNo9L-Regu",
+      "base_name": "NimbusRomNo9L-Regu",
+      "family": "NimbusRomNo9L",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "141 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "GHVFGU+NimbusRomNo9L-ReguItal",
+      "base_name": "NimbusRomNo9L-ReguItal",
+      "family": "NimbusRomNo9L",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "143 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "PDTLUH+CMSY10",
+      "base_name": "CMSY10",
+      "family": "CMSY10",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "144 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DMNYZZ+CMMI10",
+      "base_name": "CMMI10",
+      "family": "CMMI10",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "147 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "OQYHPQ+CMR10",
+      "base_name": "CMR10",
+      "family": "CMR10",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "146 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "EVCLUL+SFRM1095",
+      "base_name": "SFRM1095",
+      "family": "SFRM1095",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "148 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -56,6 +170,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 52.6,
       "detail": "pdfinfo: 17 pages, 131699 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:25:56Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 20.1,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:25:56Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 20.5,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:37:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 24.2,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:37:46Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 23.9,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:39:08Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 26.3,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:39:08Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 25.2,
+      "detail": "7 fonts, 2 math"
     }
   ]
 }

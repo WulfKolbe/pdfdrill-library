@@ -2,7 +2,8 @@
   "pdf": "1703.01192.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -38,13 +39,126 @@
     "text_layer": true,
     "font_count": 7,
     "first_page_chars": 2958,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "MVJJYF+CMSY10",
+      "LLVMNB+NimbusRomNo9L-Regu",
+      "QVCFWU+NimbusRomNo9L-MediItal",
+      "VJARGP+NimbusRomNo9L-Medi",
+      "FTRZOG+NimbusRomNo9L-ReguItal",
+      "Times-Roman",
+      "BMOKBI+CMSY8"
+    ],
+    "math_fonts": [
+      "MVJJYF+CMSY10",
+      "BMOKBI+CMSY8"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "MVJJYF+CMSY10",
+      "base_name": "CMSY10",
+      "family": "CMSY10",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "65 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "LLVMNB+NimbusRomNo9L-Regu",
+      "base_name": "NimbusRomNo9L-Regu",
+      "family": "NimbusRomNo9L",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "60 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "QVCFWU+NimbusRomNo9L-MediItal",
+      "base_name": "NimbusRomNo9L-MediItal",
+      "family": "NimbusRomNo9L",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "62 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "VJARGP+NimbusRomNo9L-Medi",
+      "base_name": "NimbusRomNo9L-Medi",
+      "family": "NimbusRomNo9L",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "63 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "FTRZOG+NimbusRomNo9L-ReguItal",
+      "base_name": "NimbusRomNo9L-ReguItal",
+      "family": "NimbusRomNo9L",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "77 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "Times-Roman",
+      "base_name": "Times-Roman",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "161 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BMOKBI+CMSY8",
+      "base_name": "CMSY8",
+      "family": "CMSY8",
+      "type": "Type 1",
+      "encoding": "Builtin",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "121 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -56,6 +170,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 41.7,
       "detail": "pdfinfo: 2 pages, 174222 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:16:56Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 20.0,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:56Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 19.6,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:34Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 21.3,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:34Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 20.2,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:54Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 26.6,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:54Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 26.0,
+      "detail": "7 fonts, 2 math"
     }
   ]
 }

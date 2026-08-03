@@ -4,14 +4,16 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 37,
@@ -64,7 +66,28 @@
     "has_math_fonts": true,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "bibkey": "02MaxwellChains",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 37,
+      "ListItem": 9,
+      "Equation": 1,
+      "Paragraph": 36,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 12 unmapped private-use character(s) remain (U+F03D×1, U+F03E×10, U+F0B6×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "02MaxwellChains.tiddlers.json",
+    "tiddlers_count": 100,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Atomistic Picture: Chains",
@@ -1660,6 +1683,82 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2684.6,
       "detail": "67 images, 65 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:12Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 40.3,
+      "detail": "9 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 42.1,
+      "detail": "9 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 45.0,
+      "detail": "9 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 46.5,
+      "detail": "9 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 46.9,
+      "detail": "9 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 49.8,
+      "detail": "9 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T18:12:40Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 20.5,
+      "detail": "84 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:12:40Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.6,
+      "detail": "100 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/02MaxwellChains/02MaxwellChains.lines.json": "sha256:e423f335e02077d26d90e98df31a4a52541dc9179e41020a90bee265b63b99b4"
+      },
+      "params_hash": "sha256:4500e5dfd75ec7d17191199dc1dd666d29a67fa4970cc3c657f50b2a3fab86a3",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:12:40Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

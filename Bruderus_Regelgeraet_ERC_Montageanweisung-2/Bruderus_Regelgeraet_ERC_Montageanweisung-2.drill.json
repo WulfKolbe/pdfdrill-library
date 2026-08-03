@@ -2,7 +2,8 @@
   "pdf": "Bruderus_Regelgeraet_ERC_Montageanweisung-2.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 20,
@@ -35,13 +36,170 @@
     "text_layer": true,
     "font_count": 10,
     "first_page_chars": 115,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "Helvetica-Bold",
+      "Helvetica-Bold",
+      "Helvetica",
+      "Helvetica",
+      "LLIBCN+BUDSymbol",
+      "LLIEMN+Wingdings083",
+      "Helvetica-Oblique",
+      "LLIKHH+Gen_Arial",
+      "BUDNewDigital",
+      "Helvetica-Oblique"
+    ],
+    "math_fonts": [
+      "LLIBCN+BUDSymbol"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "Helvetica-Bold",
+      "base_name": "Helvetica-Bold",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "110 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica-Bold",
+      "base_name": "Helvetica-Bold",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "122 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "72 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "73 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "LLIBCN+BUDSymbol",
+      "base_name": "BUDSymbol",
+      "family": "BUDSymbol",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "74 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "LLIEMN+Wingdings083",
+      "base_name": "Wingdings083",
+      "family": "Wingdings083",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "75 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica-Oblique",
+      "base_name": "Helvetica-Oblique",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "76 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "LLIKHH+Gen_Arial",
+      "base_name": "Gen_Arial",
+      "family": "Gen_Arial",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "77 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BUDNewDigital",
+      "base_name": "BUDNewDigital",
+      "family": "BUDNewDigital",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "78 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "Helvetica-Oblique",
+      "base_name": "Helvetica-Oblique",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "79 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -53,6 +211,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 65.1,
       "detail": "pdfinfo: 20 pages, 224324 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:21:02Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 33.3,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:21:02Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 32.9,
+      "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:32:18Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 41.8,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:32:18Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 41.5,
+      "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 39.5,
+      "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:33:46Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 39.7,
+      "detail": "10 fonts, 0 math"
     }
   ]
 }

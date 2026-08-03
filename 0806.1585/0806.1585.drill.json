@@ -8,13 +8,13 @@
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 52,
@@ -51,15 +51,18 @@
     "bibkey": "0806.1585",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 52,
-      "Citation": 33,
-      "ListItem": 17,
-      "Paragraph": 52,
-      "Document": 1,
-      "Equation": 235
+      "Paragraph": 272,
+      "Formula": 575,
+      "LtxCommand": 2,
+      "Abstract": 1,
+      "Section": 36,
+      "Equation": 235,
+      "Theorem": 37,
+      "Proof": 11,
+      "Citation": 49
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -80,7 +83,7 @@
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 48,
     "tiddlers_path": "0806.1585.tiddlers.json",
-    "tiddlers_count": 409,
+    "tiddlers_count": 1261,
     "tiddlers_svg_mode": "inline",
     "abstract": "Moduli spaces of polygons have been studied since the nineties for their topological and symplectic properties. Under generic assumptions, these are symplectic manifolds with natural global action-angle coordinates. This paper is concerned with the quantization of these manifolds and of their action coordinates. Applying the geometric quantization procedure, one is lead to consider invariant subspaces of a tensor product of irreducible representations of SU(2). These quantum spaces admit natural sets of commuting observables. We prove that these operators form a semi-classical integrable system, in the sense that they are Toeplitz operators with principal symbol the square of the action coordinates. As a consequence, the quantum spaces admit bases whose vectors concentrate on the Lagrangian submanifolds of constant action. The coefficients of the change of basis matrices can be estimated in terms of geometric quantities. We recover this way the already known asymptotics of the classical 6j-symbols.",
     "abstract_method": "arxiv-abs-page",
@@ -96,7 +99,77 @@
         "page": 1,
         "url": "http://arxiv.org/abs/0806.1585v1"
       }
-    ]
+    ],
+    "fonts": [
+      "DLKDUW+CMSY6",
+      "BCTFFU+CMMI9",
+      "MCPRTG+CMSY8",
+      "JMLGGI+CMSY10",
+      "GHGEVC+CMR12",
+      "DVGHRA+CMR9",
+      "HTLLCV+CMMI8",
+      "WIQTXW+CMR17",
+      "KSZYZZ+CMBX12",
+      "UOZMEB+CMMI10",
+      "IYZOBQ+CMR10",
+      "RNCFEM+CMBX10",
+      "RHQNKX+CMBX9",
+      "FJVQGS+CMR8",
+      "Times-Roman",
+      "JLKFZR+CMR6",
+      "LUOCVI+CMSY7",
+      "UGIXDW+CMEX10",
+      "KGDDXH+CMMI7",
+      "LUEJUZ+CMMI6",
+      "WYSWPH+CMR7",
+      "ETZKES+MSBM10",
+      "JNPIXZ+EUFM10",
+      "PYKXWL+MSAM10",
+      "RYFOFB+CMTI10",
+      "ACEYXL+CMSY9",
+      "GEYTRU+CMR5",
+      "[none]",
+      "[none]",
+      "[none]",
+      "DKKLXP+CMMI12",
+      "[none]",
+      "[none]",
+      "[none]",
+      "[none]",
+      "SPFZEJ+MSBM7",
+      "RCYLHZ+EUFM7",
+      "RKNWPO+MSAM7"
+    ],
+    "math_fonts": [
+      "DLKDUW+CMSY6",
+      "BCTFFU+CMMI9",
+      "MCPRTG+CMSY8",
+      "JMLGGI+CMSY10",
+      "HTLLCV+CMMI8",
+      "UOZMEB+CMMI10",
+      "LUOCVI+CMSY7",
+      "UGIXDW+CMEX10",
+      "KGDDXH+CMMI7",
+      "LUEJUZ+CMMI6",
+      "ETZKES+MSBM10",
+      "JNPIXZ+EUFM10",
+      "PYKXWL+MSAM10",
+      "ACEYXL+CMSY9",
+      "DKKLXP+CMMI12",
+      "SPFZEJ+MSBM7",
+      "RCYLHZ+EUFM7",
+      "RKNWPO+MSAM7"
+    ],
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 52,
+      "placed": 100,
+      "regions": 100,
+      "sections": 36,
+      "children": 1107,
+      "numbered": 36,
+      "roots": 1
+    }
   },
   "pdfinfo": {
     "title": "arXiv:0806.1585v1  [math.SG]  10 Jun 2008",
@@ -11573,18 +11646,80 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 9278.3,
       "detail": "654 images, 327 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:17Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 94.2,
+      "detail": "38 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:17Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 93.4,
+      "detail": "38 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:51Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 104.5,
+      "detail": "38 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:51Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 104.4,
+      "detail": "38 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:04Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 115.4,
+      "detail": "38 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:04Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 114.0,
+      "detail": "38 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T18:15:09Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "1218 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T18:15:09Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 17.1,
+      "detail": "1261 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/0806.1585/0806.1585.lines.json": "sha256:59249cb99441ac98480f6511754170e48aa71c713a5ba0b49386c61ee2f73133"
-      },
+      "inputs": {},
       "params_hash": "sha256:10557a4635b58bd7c97ad16d95a8d41cda183fc629647fb4965276fe91f8a482",
       "algo": "sha256",
-      "ts": "2026-07-30T14:08:53Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T18:15:09Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

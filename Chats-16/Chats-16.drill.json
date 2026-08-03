@@ -2,7 +2,8 @@
   "pdf": "Chats-16.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -38,13 +39,112 @@
     "text_layer": true,
     "font_count": 6,
     "first_page_chars": 1262,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "DHWOIM+DejaVuSerif-Bold",
+      "HUHWLR+DejaVuSerif",
+      "BDDFCB+LatinModernMath-Regular",
+      "ZCGOTD+LatinModernMath-Regular",
+      "QDAWUC+LatinModernMath-Regular",
+      "GDDNTX+DejaVuSerif"
+    ],
+    "math_fonts": [
+      "BDDFCB+LatinModernMath-Regular",
+      "ZCGOTD+LatinModernMath-Regular",
+      "QDAWUC+LatinModernMath-Regular"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "DHWOIM+DejaVuSerif-Bold CID",
+      "base_name": "DejaVuSerif-Bold CID",
+      "family": "DejaVuSerif",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "HUHWLR+DejaVuSerif CID",
+      "base_name": "DejaVuSerif CID",
+      "family": "DejaVuSerif CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BDDFCB+LatinModernMath-Regular CID",
+      "base_name": "LatinModernMath-Regular CID",
+      "family": "LatinModernMath",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "18 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ZCGOTD+LatinModernMath-Regular CID",
+      "base_name": "LatinModernMath-Regular CID",
+      "family": "LatinModernMath",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "19 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "QDAWUC+LatinModernMath-Regular CID",
+      "base_name": "LatinModernMath-Regular CID",
+      "family": "LatinModernMath",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "20 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "GDDNTX+DejaVuSerif CID",
+      "base_name": "DejaVuSerif CID",
+      "family": "DejaVuSerif CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "22 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -56,6 +156,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 41.6,
       "detail": "pdfinfo: 2 pages, 52905 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:21:15Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.3,
+      "detail": "6 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:21:15Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 10.6,
+      "detail": "6 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:32:35Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 15.2,
+      "detail": "6 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:32:35Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 15.1,
+      "detail": "6 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.8,
+      "detail": "6 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:00Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.6,
+      "detail": "6 fonts, 3 math"
     }
   ]
 }

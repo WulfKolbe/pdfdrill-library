@@ -3,18 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_KNOWN",
     "MD_BUILT",
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "TOC_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -78,17 +77,17 @@
       }
     ],
     "bibkey": "040123",
-    "model_path": "040123.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 6,
-      "Footnote": 3,
+      "Footnote": 6,
       "Citation": 11,
       "Abstract": 1,
       "Diagram": 1,
       "Section": 9,
       "ListItem": 10,
       "Formula": 6,
-      "Paragraph": 19,
+      "Paragraph": 16,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
@@ -97,8 +96,8 @@
     "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 0,
-    "tiddlers_path": "040123.pdf.drill/040123.tiddlers.json",
-    "tiddlers_count": 86,
+    "tiddlers_path": "040123.tiddlers.json",
+    "tiddlers_count": 78,
     "tiddlers_svg_mode": "inline",
     "toc": [
       {
@@ -168,7 +167,15 @@
         "level": 2
       }
     ],
-    "toc_search_scope": "markdown"
+    "toc_search_scope": "markdown",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": {
     "title": "",
@@ -452,7 +459,82 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1274.4,
       "detail": "1 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 26.5,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 26.6,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.2,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 28.6,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 31.3,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 30.9,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T18:12:47Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 49.7,
+      "detail": "67 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:12:47Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.0,
+      "detail": "78 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/040123/040123.lines.json": "sha256:0accc42c5abbc673c066b1ab5f4e6c0e07b660eb6b2a207b945a83755cb83471"
+      },
+      "params_hash": "sha256:7d952a0ed32a07a7c5584548359e4276175a8686cf3d1969e73c30245d651b1f",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:12:47Z",
+      "provenance": "mathpix"
+    }
+  }
 }

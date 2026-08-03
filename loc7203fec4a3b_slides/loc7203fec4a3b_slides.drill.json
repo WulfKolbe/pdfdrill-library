@@ -2,7 +2,8 @@
   "pdf": "loc7203fec4a3b_slides.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 4,
@@ -34,13 +35,78 @@
     "text_layer": true,
     "font_count": 4,
     "first_page_chars": 113,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "FGPHSM+GlyphLessFont",
+      "ZEFOJJ+GlyphLessFont",
+      "YENMRM+GlyphLessFont",
+      "TXAFNT+GlyphLessFont"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "FGPHSM+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ZEFOJJ+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "20 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "YENMRM+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "30 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TXAFNT+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "40 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +118,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 36.2,
       "detail": "pdfinfo: 4 pages, 775938 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:47:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 17.9,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:46Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 15.6,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 22.0,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:59Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 20.4,
+      "detail": "4 fonts, 0 math"
     }
   ]
 }
