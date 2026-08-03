@@ -1,0 +1,167 @@
+{
+  "pdf": "2606.14243.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "SIZE_KNOWN",
+    "FONTS_KNOWN",
+    "MD_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "2606.14243",
+    "source_kind": "arxiv",
+    "ocr_lang": "eng",
+    "ocr_pages": 16,
+    "ocr_lines": 1321,
+    "bibkey": "2606.14243",
+    "model_path": "2606.14243.pdf.drill/model.docmodel.json",
+    "model_object_counts": {
+      "Page": 16,
+      "Citation": 4,
+      "ListItem": 13,
+      "Paragraph": 16,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "latex_source": "2606.14243.tgz",
+    "latex_macros": 1,
+    "latex_src_equations": 10,
+    "latex_attached": 0,
+    "latex_graphics": 9,
+    "pages": 16,
+    "bytes": 593720,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "producer": "pikepdf 8.15.1",
+    "creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "Decoupled Mixture-of-Experts for Parametric Knowledge Injection",
+      "Author": "Baoqing Yue; Weihang Su; Qingyao Ai; Yichen Tang; Changyue Wang; Jiacheng Kang; Jingtao Zhan; Yiqun Liu",
+      "Creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "593720 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "text_layer": true,
+    "font_count": 23,
+    "first_page_chars": 3072,
+    "needs_ocr": false,
+    "fonts": [
+      "AXTGMU+NimbusRomNo9L-Medi",
+      "ILKPYP+NimbusRomNo9L-Regu",
+      "Times-Roman",
+      "AAAAAA+LiberationSans",
+      "QNQZQP+CMMI10",
+      "CTVIDI+CMSY10",
+      "HZGBVS+CMEX10",
+      "DIFDKZ+NimbusRomNo9L-ReguItal",
+      "TLCTAC+CMR10",
+      "FHOGWR+CMR8",
+      "OTZSBH+CMMI8",
+      "QIYNYZ+CMSY8",
+      "VKVSNG+MSBM10",
+      "KRNYCH+CMR6",
+      "AAAAAA+ArialMT",
+      "AAAAAA+ArialMT",
+      "EFDLOV+CMMI6",
+      "AAAAAA+ArialMT",
+      "BMQQDV+DejaVuSans",
+      "EVICAO+DejaVuSans-Bold",
+      "GOFYPY+ArialMT",
+      "GOFYPY+Arial-BoldMT",
+      "BMQQDV+DejaVuSans"
+    ],
+    "math_fonts": [
+      "QNQZQP+CMMI10",
+      "CTVIDI+CMSY10",
+      "HZGBVS+CMEX10",
+      "OTZSBH+CMMI8",
+      "QIYNYZ+CMSY8",
+      "VKVSNG+MSBM10",
+      "EFDLOV+CMMI6"
+    ],
+    "has_math_fonts": true
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {
+    "md": {
+      "blob": "2606.14243.pdf.drill/md.md",
+      "words": 9544,
+      "math_inline": 106,
+      "math_display": 4,
+      "references": 29,
+      "built_at": "2026-06-16T16:34:14Z"
+    }
+  },
+  "transitions": [
+    {
+      "ts": "2026-06-16T16:33:52Z",
+      "node": "ocr",
+      "from": "INIT",
+      "to": "OCR_BUILT",
+      "cost_ms": 55146.4,
+      "detail": "16 pages, 1321 lines, lang=eng"
+    },
+    {
+      "ts": "2026-06-16T16:33:52Z",
+      "node": "model",
+      "from": "OCR_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 91.3,
+      "detail": "50 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-06-16T16:33:52Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,OCR_BUILT",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/10 eqs matched, 9 graphics, 1 macros"
+    },
+    {
+      "ts": "2026-06-16T16:34:09Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 63.1,
+      "detail": "pdfinfo: 16 pages, 593720 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-06-16T16:34:09Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 39.5,
+      "detail": "23 fonts, 7 math"
+    },
+    {
+      "ts": "2026-06-16T16:34:14Z",
+      "node": "md",
+      "from": "FONTS_KNOWN",
+      "to": "MD_BUILT",
+      "cost_ms": 5312.0,
+      "detail": "9544 words, 106+4 math, 29 refs"
+    }
+  ]
+}

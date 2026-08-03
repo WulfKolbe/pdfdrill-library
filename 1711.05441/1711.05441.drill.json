@@ -1,0 +1,129 @@
+{
+  "pdf": "1711.05441.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "SIZE_KNOWN",
+    "BIBSOURCE_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "1711.05441",
+    "source_kind": "arxiv",
+    "bibkey": "1711.05441",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Paragraph": 22,
+      "LtxCommand": 3,
+      "Abstract": 1,
+      "Section": 7
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "bibliography_entries": 53,
+    "bibliography_with_year": 53,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 4,
+    "pages": 15,
+    "bytes": 886496,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "LaTeX with hyperref package",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Tue Dec  3 02:18:48 2019 CET",
+      "ModDate": "Tue Dec  3 02:18:48 2019 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "886496 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "text_layer": true,
+    "font_count": 127,
+    "first_page_chars": 4776,
+    "needs_ocr": false,
+    "bibsource_references": 300,
+    "bibsource_enriched": 300,
+    "bibsource_citations_linked": 0
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-06-25T17:11:21Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "104 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-06-25T17:11:21Z",
+      "node": "bibliography",
+      "from": "MODEL_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "53 entries, 0+0 cites detected, 4 linked"
+    },
+    {
+      "ts": "2026-07-08T15:11:42Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 102.1,
+      "detail": "pdfinfo: 15 pages, 886496 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T08:33:55Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "33 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T08:33:55Z",
+      "node": "bibsource",
+      "from": "BIBLIOGRAPHY_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBSOURCE_BUILT",
+      "cost_ms": 0,
+      "detail": "300 refs, 0/0 citations linked"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1711.05441/texsrc/main.tex": "sha256:fa2e44c8aa01afa3f3657961a0aeddd3ea8805fa84490018724cf173412135bd"
+      },
+      "params_hash": "sha256:f1f47562aeddeda49f69d4f43c19083e5b9d19021bf1ebbb56df10656b919a9b",
+      "algo": "sha256",
+      "ts": "2026-08-03T08:33:55Z",
+      "provenance": "latex-source"
+    }
+  }
+}

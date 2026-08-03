@@ -1,0 +1,161 @@
+{
+  "pdf": "1410.3916.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "pages": 15,
+    "bytes": 202727,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+    "creator": "LaTeX with hyperref package",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Feb 22 09:04:14 2021 CET",
+      "ModDate": "Mon Feb 22 09:04:14 2021 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "202727 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "text_layer": true,
+    "font_count": 20,
+    "first_page_chars": 2644,
+    "needs_ocr": false,
+    "bibkey": "1410.3916",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 15,
+      "Citation": 47,
+      "ListItem": 8,
+      "Paragraph": 15,
+      "Document": 1,
+      "Equation": 13,
+      "Table": 6
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars",
+      "merged": "latex"
+    },
+    "latex_source": "1410.3916.tgz",
+    "latex_macros": 6,
+    "latex_src_equations": 13,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "merge_latex_source": "1410.3916.tgz",
+    "merge_paragraphs_changed": 14,
+    "bibliography_entries": 29,
+    "bibliography_with_year": 28,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 20,
+    "bibliography_cites": 19,
+    "tiddlers_path": "1410.3916.tiddlers.json",
+    "tiddlers_count": 112,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-08T15:11:27Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 51.6,
+      "detail": "pdfinfo: 15 pages, 202727 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-07-30T14:18:46Z",
+      "node": "model",
+      "from": "SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 55.5,
+      "detail": "86 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-30T14:18:46Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/13 eqs matched, 13 created, 6 graphics, 6 macros"
+    },
+    {
+      "ts": "2026-07-30T14:18:47Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/13 eqs matched, 0 created, 0 graphics, 6 macros"
+    },
+    {
+      "ts": "2026-07-30T14:18:47Z",
+      "node": "bibliography",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "29 entries, 0+20 cites detected, 19 linked"
+    },
+    {
+      "ts": "2026-07-30T14:18:47Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.6,
+      "detail": "112 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1410.3916/1410.3916.lines.json": "sha256:5cb0526045fdad9352e086cb4f76ef9a291786d7d6458e5c96bbfbec67d1620e"
+      },
+      "params_hash": "sha256:1d6e6bebdb13fcfacf508d6d8b65ea39f555e6ab0942528f3581febc4a496580",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:18:46Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "1410.3916.tgz": "sha256:543c3413d9fd9a4bddb272f5a8b54256eeba3bc637f9bfca89e3d376f544bc3a"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:18:47Z"
+    }
+  }
+}

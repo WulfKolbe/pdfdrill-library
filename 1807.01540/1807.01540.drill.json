@@ -1,0 +1,104 @@
+{
+  "pdf": "1807.01540.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "MATHPIX_KNOWN"
+  ],
+  "evidence": {
+    "source_arxiv_id": "1807.01540",
+    "source_kind": "arxiv",
+    "bibkey": "1807.01540",
+    "model_path": "1807.01540.pdf.drill/model.docmodel.json",
+    "model_object_counts": {
+      "Page": 26,
+      "Footnote": 4,
+      "Citation": 10,
+      "Abstract": 1,
+      "Diagram": 4,
+      "Section": 17,
+      "ListItem": 8,
+      "Equation": 73,
+      "Formula": 276,
+      "Paragraph": 118,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 73,
+    "model_source": "mathpix",
+    "latex_source": "1807.01540.tgz",
+    "latex_macros": 29,
+    "latex_src_equations": 80,
+    "latex_attached": 80,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "inspect_path": "1807.01540.pdf.drill/1807.01540.inspect.html",
+    "mathpix_pdf_id": "0e687494-925b-42da-856d-0c828495d446",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1807.01540.lines.json",
+        "bytes": 949242
+      },
+      {
+        "format": "md",
+        "path": "1807.01540.md",
+        "bytes": 70198
+      },
+      {
+        "format": "tex.zip",
+        "path": "1807.01540.tex.zip",
+        "bytes": 160759
+      }
+    ],
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-10T08:00:20Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "441 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-07-10T08:00:24Z",
+      "node": "latex",
+      "from": "MODEL_BUILT",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "80/80 eqs matched, 0 created, 0 graphics, 29 macros"
+    },
+    {
+      "ts": "2026-07-10T08:01:23Z",
+      "node": "mathpix",
+      "from": "LATEX_INGESTED,MODEL_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9716.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-07-10T08:01:35Z",
+      "node": "model",
+      "from": "LATEX_INGESTED,MATHPIX_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 218.5,
+      "detail": "538 objects, 73 eq w/ cdn"
+    }
+  ],
+  "capabilities": {}
+}

@@ -1,0 +1,169 @@
+{
+  "pdf": "1211.3375.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "SIZE_KNOWN",
+    "LATEX_INGESTED",
+    "TIDDLERS_BUILT",
+    "BIBSOURCE_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "1211.3375",
+    "source_kind": "arxiv",
+    "bibkey": "1211.3375",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Paragraph": 149,
+      "Abstract": 1,
+      "Section": 30,
+      "Formula": 274,
+      "Equation": 23,
+      "Table": 1,
+      "LtxCommand": 33,
+      "Diagram": 12,
+      "Theorem": 3,
+      "Citation": 72
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "bibliography_entries": 22,
+    "bibliography_with_year": 22,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 72,
+    "pages": 30,
+    "bytes": 370510,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+    "creator": "LaTeX with hyperref package",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Wed Mar  2 23:05:49 2022 CET",
+      "ModDate": "Wed Mar  2 23:05:49 2022 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "30",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "370510 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "text_layer": true,
+    "font_count": 32,
+    "first_page_chars": 2380,
+    "needs_ocr": false,
+    "latex_source": "1211.3375.tgz",
+    "latex_macros": 38,
+    "latex_src_equations": 23,
+    "latex_attached": 23,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "tiddlers_path": "1211.3375.tiddlers.json",
+    "tiddlers_count": 837,
+    "tiddlers_svg_mode": "inline",
+    "bibsource_references": 22,
+    "bibsource_enriched": 0,
+    "bibsource_citations_linked": 72
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-06-25T16:36:08Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "869 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-06-25T16:36:08Z",
+      "node": "bibliography",
+      "from": "MODEL_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "22 entries, 0+0 cites detected, 72 linked"
+    },
+    {
+      "ts": "2026-07-08T15:11:25Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 66.5,
+      "detail": "pdfinfo: 30 pages, 370510 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-07-30T14:17:39Z",
+      "node": "latex",
+      "from": "BIBLIOGRAPHY_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "23/23 eqs matched, 0 created, 0 graphics, 38 macros"
+    },
+    {
+      "ts": "2026-07-30T14:17:39Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.6,
+      "detail": "837 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-03T08:33:47Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "598 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T08:33:47Z",
+      "node": "bibsource",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBSOURCE_BUILT",
+      "cost_ms": 0,
+      "detail": "22 refs, 72/72 citations linked"
+    }
+  ],
+  "capabilities": {
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "1211.3375.tgz": "sha256:9d8a538c46e815f67b5f33374560c0113d08b7743acb74a8d9526d195c2aa83e"
+      },
+      "params_hash": "sha256:bf1e8dad63dab52a67d912b6fc7f1ea1311bf5df2e9b3e30f18c827ecd6dbdbc",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:17:39Z"
+    },
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:6c966b5976f6a8210932ba25186e334b768c1982569f6ba15b07c0fa3b66bccf",
+      "algo": "sha256",
+      "ts": "2026-08-03T08:33:47Z",
+      "provenance": "latex-source"
+    }
+  }
+}

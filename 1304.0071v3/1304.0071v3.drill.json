@@ -1,0 +1,143 @@
+{
+  "pdf": "1304.0071v3.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "pages": 16,
+    "bytes": 780810,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "Mac OS X 10.7.2 Quartz PDFContext",
+    "creator": "Pages",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "CliffordfromCl8pagesMay2013",
+      "Keywords": "",
+      "Author": "Frank Smith",
+      "Creator": "Pages",
+      "Producer": "Mac OS X 10.7.2 Quartz PDFContext",
+      "CreationDate": "Wed May 22 18:45:45 2013 CEST",
+      "ModDate": "Sat May 23 08:57:37 2015 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "AcroForm",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "780810 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.6"
+    },
+    "text_layer": true,
+    "font_count": 5,
+    "first_page_chars": 1297,
+    "needs_ocr": false,
+    "bibkey": "1304.0071v3",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 16,
+      "Paragraph": 16,
+      "Document": 1,
+      "Equation": 38
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars",
+      "merged": "latex"
+    },
+    "latex_source": "1304.0071v3.tgz",
+    "latex_macros": 86,
+    "latex_src_equations": 38,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "merge_latex_source": "1304.0071v3.tgz",
+    "merge_paragraphs_changed": 11,
+    "tiddlers_path": "1304.0071v3.tiddlers.json",
+    "tiddlers_count": 87,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-08T15:11:25Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 37.3,
+      "detail": "pdfinfo: 16 pages, 780810 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-07-30T14:17:41Z",
+      "node": "model",
+      "from": "SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 26.0,
+      "detail": "33 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-30T14:17:42Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/38 eqs matched, 38 created, 0 graphics, 86 macros"
+    },
+    {
+      "ts": "2026-07-30T14:17:42Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/38 eqs matched, 0 created, 0 graphics, 86 macros"
+    },
+    {
+      "ts": "2026-07-30T14:17:42Z",
+      "node": "tiddlers",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.6,
+      "detail": "87 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1304.0071v3/1304.0071v3.lines.json": "sha256:87462c86e0eec1c288a5d930f16ae781bbce1902db14b765eda7fdda9f053fa4"
+      },
+      "params_hash": "sha256:08078e60420b84218733ef33104c8c64a569cf8a8e95326992efd4f0fa5c6e56",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:17:41Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "1304.0071v3.tgz": "sha256:932e15542974613bcfa06562cf9bf73bc8ee9dfb633b2eed18bbdece1fbe4c11"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:17:42Z"
+    }
+  }
+}

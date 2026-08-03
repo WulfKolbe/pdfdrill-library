@@ -1,0 +1,130 @@
+{
+  "pdf": "1709.03544.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "SIZE_KNOWN",
+    "BIBSOURCE_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "1709.03544",
+    "source_kind": "arxiv",
+    "bibkey": "1709.03544",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Paragraph": 74,
+      "Abstract": 1,
+      "Section": 15,
+      "Table": 10,
+      "Formula": 20,
+      "Equation": 2,
+      "Citation": 97
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "bibliography_entries": 10,
+    "bibliography_with_year": 10,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "pages": 8,
+    "bytes": 622058,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "LaTeX with hyperref package",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "KnowNER: Incremental Multilingual Knowledge in Named Entity Recognition",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Dominic Seyler, Tatiana Dembelova, Luciano Del Corro, Johannes Hoffart, and Gerhard Weikum",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Mon Jun 21 05:04:26 2021 CEST",
+      "ModDate": "Mon Jun 21 05:04:26 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "622058 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "text_layer": true,
+    "font_count": 22,
+    "first_page_chars": 4714,
+    "needs_ocr": false,
+    "bibsource_references": 10,
+    "bibsource_enriched": 0,
+    "bibsource_citations_linked": 0
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-06-25T17:11:13Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "15 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-06-25T17:11:13Z",
+      "node": "bibliography",
+      "from": "MODEL_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "10 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-07-08T15:11:41Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 77.9,
+      "detail": "pdfinfo: 8 pages, 622058 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T08:33:54Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "219 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T08:33:54Z",
+      "node": "bibsource",
+      "from": "BIBLIOGRAPHY_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBSOURCE_BUILT",
+      "cost_ms": 0,
+      "detail": "10 refs, 0/97 citations linked"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:8254e2e4582b0f44a537a1fc1c255820d0a509493fd8f808e476cabea98a8946",
+      "algo": "sha256",
+      "ts": "2026-08-03T08:33:54Z",
+      "provenance": "latex-source"
+    }
+  }
+}

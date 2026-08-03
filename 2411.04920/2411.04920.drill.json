@@ -1,0 +1,131 @@
+{
+  "pdf": "2411.04920.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "SIZE_KNOWN",
+    "BIBSOURCE_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "2411.04920",
+    "source_kind": "arxiv",
+    "bibkey": "2411.04920",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Paragraph": 92,
+      "Abstract": 1,
+      "Section": 20,
+      "Table": 3,
+      "Formula": 6,
+      "LtxCommand": 2,
+      "Diagram": 6,
+      "Citation": 84,
+      "Algorithm": 2,
+      "AlgorithmStep": 33
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "bibliography_entries": 55,
+    "bibliography_with_year": 55,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 84,
+    "pages": 14,
+    "bytes": 778281,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "producer": "pikepdf 8.15.1",
+    "creator": "arXiv GenPDF (tex2pdf:)",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "Enabling LLM Knowledge Analysis via Extensive Materialization",
+      "Author": "Yujia Hu; Tuan-Phong Nguyen; Shrestha Ghosh; Simon Razniewski",
+      "Creator": "arXiv GenPDF (tex2pdf:)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "778281 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "text_layer": true,
+    "font_count": 24,
+    "first_page_chars": 3500,
+    "needs_ocr": false,
+    "bibsource_references": 55,
+    "bibsource_enriched": 0,
+    "bibsource_citations_linked": 84
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-06-25T17:19:23Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "251 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-06-25T17:19:23Z",
+      "node": "bibliography",
+      "from": "MODEL_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "55 entries, 0+0 cites detected, 84 linked"
+    },
+    {
+      "ts": "2026-07-08T15:12:15Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 59.5,
+      "detail": "pdfinfo: 14 pages, 778281 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T08:51:39Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "249 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T08:51:39Z",
+      "node": "bibsource",
+      "from": "BIBLIOGRAPHY_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBSOURCE_BUILT",
+      "cost_ms": 0,
+      "detail": "55 refs, 84/84 citations linked"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2411.04920/texsrc/main.tex": "sha256:d0919ad8a4f05a52482289e23caa7df12be1c3a5a8fc71f2264acf7fa425c32a"
+      },
+      "params_hash": "sha256:0314524a88f9aaee004001a83e011618641c2e19d281c3407c6be53ac7eea319",
+      "algo": "sha256",
+      "ts": "2026-08-03T08:51:39Z",
+      "provenance": "latex-source"
+    }
+  }
+}

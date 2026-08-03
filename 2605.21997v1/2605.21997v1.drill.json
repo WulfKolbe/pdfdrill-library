@@ -1,0 +1,107 @@
+{
+  "pdf": "2605.21997v1.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "MD_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "2605.21997v1",
+    "source_kind": "arxiv",
+    "bibkey": "2605.21997v1",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 11,
+      "ListItem": 4,
+      "Paragraph": 11,
+      "Document": 1,
+      "Table": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars",
+      "merged": "latex"
+    },
+    "latex_source": "2605.21997v1.tgz",
+    "latex_macros": 0,
+    "latex_src_equations": 0,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 1,
+    "merge_latex_source": "2605.21997v1.tgz",
+    "merge_paragraphs_changed": 11,
+    "bibliography_entries": 7,
+    "bibliography_with_year": 6,
+    "bibliography_numeric_citations": 7,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 7
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {
+    "md": {
+      "blob": "2605.21997v1.md",
+      "words": 3974,
+      "source": "latex",
+      "built_at": "2026-07-30T06:57:58Z"
+    }
+  },
+  "transitions": [
+    {
+      "ts": "2026-07-30T06:57:47Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 36.8,
+      "detail": "27 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-30T06:57:47Z",
+      "node": "latex",
+      "from": "MODEL_BUILT",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/0 eqs matched, 0 created, 1 graphics, 0 macros"
+    },
+    {
+      "ts": "2026-07-30T06:57:58Z",
+      "node": "bibliography",
+      "from": "LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "7 entries, 7+0 cites detected, 7 linked"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2605.21997v1/2605.21997v1.lines.json": "sha256:40c28f4435bf0468206db40cca920fe2eac56ee249e4b0cf5470bd86911d224c"
+      },
+      "params_hash": "sha256:4bab8dc0811031b80ab8a5ab0a91ea9922f27202d79ddd71a008fb4a46ce4634",
+      "algo": "sha256",
+      "ts": "2026-07-30T06:57:47Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2605.21997v1/2605.21997v1.tgz": "sha256:5ad4093143829d2c2fee9ad86904f93363303432f86508beb8fb82aaf533f1c5"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-07-30T06:57:47Z"
+    }
+  }
+}

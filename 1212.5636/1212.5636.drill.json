@@ -1,0 +1,130 @@
+{
+  "pdf": "1212.5636.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "SIZE_KNOWN",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "1212.5636",
+    "source_kind": "arxiv",
+    "ocr_lang": "eng",
+    "ocr_pages": 12,
+    "ocr_lines": 982,
+    "bibkey": "1212.5636",
+    "model_path": "1212.5636.pdf.drill/model.docmodel.json",
+    "model_object_counts": {
+      "Page": 12,
+      "ListItem": 11,
+      "Paragraph": 12,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "pages": 12,
+    "bytes": 605408,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "pdfTeX-1.40.12",
+    "creator": "LaTeX with hyperref package",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.12",
+      "CreationDate": "Fri Jun 29 13:24:41 2018 CEST",
+      "ModDate": "Fri Jun 29 13:24:41 2018 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "605408 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "text_layer": true,
+    "font_count": 27,
+    "first_page_chars": 4234,
+    "needs_ocr": false,
+    "tiddlers_path": "1212.5636.tiddlers.json",
+    "tiddlers_count": 52,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-06-25T16:37:08Z",
+      "node": "ocr",
+      "from": "INIT",
+      "to": "OCR_BUILT",
+      "cost_ms": 59493.4,
+      "detail": "12 pages, 982 lines, lang=eng"
+    },
+    {
+      "ts": "2026-06-25T16:37:51Z",
+      "node": "model",
+      "from": "OCR_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 63.8,
+      "detail": "36 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-06-25T16:37:51Z",
+      "node": "bibliography",
+      "from": "MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-06-25T17:10:23Z",
+      "node": "bibliography",
+      "from": "MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-07-08T15:11:25Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 68.6,
+      "detail": "pdfinfo: 12 pages, 605408 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-07-30T14:17:40Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.1,
+      "detail": "52 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {}
+}

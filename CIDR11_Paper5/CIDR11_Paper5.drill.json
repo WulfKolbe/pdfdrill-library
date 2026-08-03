@@ -1,0 +1,176 @@
+{
+  "pdf": "CIDR11_Paper5.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "FONTS_KNOWN",
+    "MD_BUILT",
+    "MATHPIX_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "pages": 7,
+    "bytes": 989619,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "producer": "Acrobat 10.0.0",
+    "creator": "Acrobat 10.0.0",
+    "encrypted": false,
+    "pdfinfo": {
+      "Creator": "Acrobat 10.0.0",
+      "Producer": "Acrobat 10.0.0",
+      "CreationDate": "Fri Jan  7 06:43:49 2011 CET",
+      "ModDate": "Fri Jan  7 06:43:49 2011 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "AcroForm",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "989619 bytes",
+      "Optimized": "no",
+      "PDF version": "1.6"
+    },
+    "text_layer": true,
+    "font_count": 18,
+    "first_page_chars": 4492,
+    "needs_ocr": false,
+    "fonts": [
+      "PZZDVF+NimbusSanL-Bold",
+      "HCFZOB+NimbusSanL-Regu",
+      "MQTNQY+CMR6",
+      "WCSXEY+CMMI6",
+      "JSLPLT+NimbusRomNo9L-Medi",
+      "KSNFOV+CMR9",
+      "HTAWME+NimbusRomNo9L-Regu",
+      "VESCYR+NimbusRomNo9L-ReguItal",
+      "LSTHWT+CMTI9",
+      "Arial",
+      "WQOHJH+CMBX9",
+      "ABCDEE+Calibri",
+      "ABCDEE+Calibri,Bold",
+      "CZLPNW+CMSS8",
+      "UCZWYO+CMR8",
+      "DHXINH+CMSY8",
+      "UBDBCM+CMTI8",
+      "VHQDLG+CMMI9"
+    ],
+    "math_fonts": [
+      "WCSXEY+CMMI6",
+      "DHXINH+CMSY8",
+      "VHQDLG+CMMI9"
+    ],
+    "has_math_fonts": true,
+    "mathpix_pdf_id": "ed2db921-48d0-42f3-bf07-da4138a07c81",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "CIDR11_Paper5.lines.json",
+        "bytes": 799432
+      },
+      {
+        "format": "md",
+        "path": "CIDR11_Paper5.md",
+        "bytes": 38977
+      },
+      {
+        "format": "tex.zip",
+        "path": "CIDR11_Paper5.tex.zip",
+        "bytes": 189727
+      }
+    ],
+    "bibkey": "CIDR11_Paper5",
+    "model_path": "CIDR11_Paper5.pdf.drill/model.docmodel.json",
+    "model_object_counts": {
+      "Page": 7,
+      "Footnote": 1,
+      "Sidenote": 16,
+      "Abstract": 1,
+      "Diagram": 9,
+      "Section": 8,
+      "ListItem": 20,
+      "Formula": 6,
+      "Paragraph": 34,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "tiddlers_path": "CIDR11_Paper5.pdf.drill/CIDR11_Paper5.tiddlers.json",
+    "tiddlers_count": 120,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {
+    "md": {
+      "blob": "CIDR11_Paper5.pdf.drill/md.md",
+      "words": 6057,
+      "math_inline": 14,
+      "math_display": 0,
+      "references": 38,
+      "built_at": "2026-06-26T17:40:14Z"
+    }
+  },
+  "transitions": [
+    {
+      "ts": "2026-06-26T17:40:11Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 43.9,
+      "detail": "pdfinfo: 7 pages, 989619 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-06-26T17:40:11Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 18.9,
+      "detail": "18 fonts, 3 math"
+    },
+    {
+      "ts": "2026-06-26T17:40:14Z",
+      "node": "md",
+      "from": "FONTS_KNOWN",
+      "to": "MD_BUILT",
+      "cost_ms": 3001.6,
+      "detail": "6057 words, 14+0 math, 38 refs"
+    },
+    {
+      "ts": "2026-06-26T18:25:43Z",
+      "node": "mathpix",
+      "from": "FONTS_KNOWN,MD_BUILT,SIZE_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13438.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-06-26T18:25:44Z",
+      "node": "model",
+      "from": "FONTS_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 68.3,
+      "detail": "103 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-06-26T19:00:03Z",
+      "node": "tiddlers",
+      "from": "FONTS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.2,
+      "detail": "120 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {}
+}

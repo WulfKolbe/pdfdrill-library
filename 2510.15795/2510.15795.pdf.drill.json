@@ -1,0 +1,80 @@
+{
+  "pdf": "2510.15795.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "2510.15795",
+    "source_kind": "arxiv",
+    "ocr_lang": "eng",
+    "ocr_pages": 20,
+    "ocr_lines": 839,
+    "bibkey": "2510.15795",
+    "model_path": "2510.15795.pdf.drill/model.docmodel.json",
+    "model_object_counts": {
+      "Page": 20,
+      "Citation": 19,
+      "ListItem": 5,
+      "Paragraph": 20,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "latex_source": "2510.15795.tgz",
+    "latex_macros": 47,
+    "latex_src_equations": 56,
+    "latex_attached": 0,
+    "latex_graphics": 55,
+    "svg_rendered": 32,
+    "svg_errors": 23,
+    "svg_skipped": 0,
+    "tiddlers_path": "2510.15795.pdf.drill/2510.15795.tiddlers.json",
+    "tiddlers_count": 134
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-06-08T18:20:37Z",
+      "node": "ocr",
+      "from": "INIT",
+      "to": "OCR_BUILT",
+      "cost_ms": 58918.3,
+      "detail": "20 pages, 839 lines, lang=eng"
+    },
+    {
+      "ts": "2026-06-08T18:20:37Z",
+      "node": "model",
+      "from": "OCR_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 62.1,
+      "detail": "65 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-06-08T18:20:37Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,OCR_BUILT",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/56 eqs matched, 55 graphics, 47 macros"
+    },
+    {
+      "ts": "2026-06-08T18:21:31Z",
+      "node": "tiddlers",
+      "from": "LATEX_INGESTED,MODEL_BUILT,OCR_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.7,
+      "detail": "134 tiddlers"
+    }
+  ]
+}

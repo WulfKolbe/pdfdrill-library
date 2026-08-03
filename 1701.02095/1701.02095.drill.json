@@ -1,0 +1,145 @@
+{
+  "pdf": "1701.02095.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "pages": 15,
+    "bytes": 195664,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.08",
+    "creator": "LaTeX with hyperref package",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.08",
+      "CreationDate": "Fri Jan 20 07:08:15 2017 CET",
+      "ModDate": "Fri Jan 20 07:08:15 2017 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "195664 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "text_layer": true,
+    "font_count": 18,
+    "first_page_chars": 2405,
+    "needs_ocr": false,
+    "bibkey": "1701.02095",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 15,
+      "ListItem": 17,
+      "Paragraph": 15,
+      "Document": 1,
+      "Equation": 12
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars",
+      "merged": "latex"
+    },
+    "latex_source": "1701.02095.tgz",
+    "latex_macros": 18,
+    "latex_src_equations": 12,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "merge_latex_source": "1701.02095.tgz",
+    "merge_paragraphs_changed": 9,
+    "tiddlers_path": "1701.02095.tiddlers.json",
+    "tiddlers_count": 76,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-08T15:11:39Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 52.7,
+      "detail": "pdfinfo: 15 pages, 195664 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-07-30T14:33:57Z",
+      "node": "model",
+      "from": "SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 66.6,
+      "detail": "48 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-30T14:33:58Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/12 eqs matched, 12 created, 0 graphics, 18 macros"
+    },
+    {
+      "ts": "2026-07-30T14:33:58Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/12 eqs matched, 0 created, 0 graphics, 18 macros"
+    },
+    {
+      "ts": "2026-07-30T14:33:59Z",
+      "node": "tiddlers",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.8,
+      "detail": "76 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1701.02095/1701.02095.lines.json": "sha256:1670f37640f81a8dad06a5ab39aeca197b7d945d89322e6cc8d225283f02b4b7"
+      },
+      "params_hash": "sha256:d6c8685b90c89757712ccbb571ad25c016dee168a8dd5157a71762de9cfc4b65",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:33:57Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "1701.02095.tgz": "sha256:77df0c3f37792b84236ba5934ee428fc83fdc0bc4759c7a840e5ce6df285e0b7"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:33:58Z"
+    }
+  }
+}
