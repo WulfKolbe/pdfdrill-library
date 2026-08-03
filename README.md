@@ -13,7 +13,10 @@ that matters for that question — probes that passed yesterday and fail today.
 
 | Path | What it is |
 |---|---|
-| `audit/pdfdrill_audit.py` | The audit program (sweep, probe, diff, report) |
+| `audit/pdfdrill_audit.py` | The nightly audit (sweep, probe, diff, report) |
+| `audit/soak_test.py` | The long soak test — invariant checking over hours |
+| `audit/cloud_bootstrap.sh` | Installs pdfdrill + deps on a bare machine |
+| `.claude/skills/pdfdrill-soak/` | SKILL driving install → run → write-up |
 | `audit/select_corpus.py` | Decides which documents may be committed |
 | `audit/run_nightly.sh` | Nightly driver: audit → commit → push |
 | `audit/systemd/` | Timer + service unit for the nightly run |
@@ -107,6 +110,48 @@ AUDIT_PUSH=0 ./audit/run_nightly.sh
 
 Exit status is `0` when nothing regressed and `1` when it did, so a bad night
 leaves a failed unit.
+
+## The soak test — a different question
+
+The nightly asks *what broke since yesterday?* The soak asks *does pdfdrill
+hold its own invariants when you hammer the whole corpus for half a day?*
+
+```bash
+./audit/cloud_bootstrap.sh                    # bare machine: install everything
+nohup ./audit/soak_test.py --hours 12 > reports/soak-run.log 2>&1 &
+./audit/soak_test.py --hours 0.1 --limit 5    # six-minute sanity check
+./audit/soak_test.py --hours 12 --resume      # continue after an interruption
+```
+
+It checks five properties, each a stronger signal than an exit code:
+
+| Oracle | A violation means |
+|---|---|
+| `MONOTONIC` | a command **removed** facts — enrichment destroyed |
+| `PDF_FROZEN` | the source PDF changed on disk — it is read-only input |
+| `JSON_VALID` | the sidecar stopped parsing after a command |
+| `IDEMPOTENT` | the same command run twice gave a different fact set |
+| `NO_CRASH` | an unhandled Python traceback |
+
+The scheduler **fills** the budget — light, idempotency, medium and sandboxed
+deep phases, then reshuffled repeat passes until the time is spent — so
+`--hours 12` really does take about twelve hours, and a shorter budget is a
+complete run with fewer repeats rather than a truncated one. Progress is
+checkpointed per document to `reports/soak.jsonl`, so an interrupted run
+resumes without losing work.
+
+Commands run **per document sequentially** by design: the oracles compare
+sidecar state around each command and would race otherwise. Parallelism is
+across documents.
+
+These oracles are verified, not assumed — a deliberately sabotaged pdfdrill
+shim (one that strips a fact and appends a byte to the PDF) triggers
+`MONOTONIC`, `PDF_FROZEN` and `IDEMPOTENT` as expected.
+
+On a fresh cloud machine, the `pdfdrill-soak` SKILL in `.claude/skills/`
+walks an agent through install, backgrounded run, polling and write-up —
+including the part that trips people up, which is that a 12-hour run cannot
+live inside a single tool call.
 
 ## Scheduling
 
