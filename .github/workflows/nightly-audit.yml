@@ -1,0 +1,98 @@
+name: pdfdrill nightly audit
+
+# ---------------------------------------------------------------------------
+# THIS WORKFLOW REQUIRES A SELF-HOSTED RUNNER.
+#
+# It cannot run on a GitHub-hosted runner, and that is not a tuning problem:
+#
+#   * the audit reads a 34 GB local corpus that exists only on your machine;
+#     a hosted runner has 14 GB of total disk
+#   * pdfdrill needs TeX Live, ghostscript, tesseract, poppler and dvisvgm --
+#     roughly 4 GB of apt packages to install on every single run
+#   * the MathPix / OpenAI / Perplexity keys live in your local environment
+#
+# A hosted runner is not merely slow (as you saw with Codespaces); it
+# structurally cannot do this job. The self-hosted runner below executes on
+# your own 16-core box, so it is exactly as fast as the systemd timer while
+# also giving you the Actions UI, logs and failure notifications.
+#
+# Setup, once:
+#   Settings -> Actions -> Runners -> New self-hosted runner, follow the
+#   shown commands, then:  sudo ./svc.sh install && sudo ./svc.sh start
+#
+# If you would rather not run a runner daemon at all, use the systemd timer
+# in audit/systemd/ instead and delete this file.
+# ---------------------------------------------------------------------------
+
+on:
+  schedule:
+    - cron: "30 2 * * *"      # 02:30 UTC nightly
+  workflow_dispatch:
+    inputs:
+      cohort:
+        description: "Documents to probe"
+        default: "120"
+      deep:
+        description: "Also run mutating commands in a throwaway copy"
+        type: boolean
+        default: false
+
+concurrency:
+  group: nightly-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: [self-hosted, pdfdrill]
+    timeout-minutes: 240
+
+    steps:
+      - name: Check out harness
+        uses: actions/checkout@v4
+        with:
+          # The runner works directly in the library, so keep history shallow.
+          fetch-depth: 1
+
+      - name: Verify toolchain
+        run: |
+          command -v pdfdrill || { echo "pdfdrill not on PATH"; exit 2; }
+          pdfdrill doctor || true
+
+      - name: Run audit
+        id: audit
+        continue-on-error: true
+        env:
+          AUDIT_COHORT: ${{ github.event.inputs.cohort || '120' }}
+          AUDIT_PUSH: "0"          # the workflow commits, not the script
+          PDFDRILL_NO_PREFLIGHT: "1"
+        run: |
+          ./audit/run_nightly.sh ${{ github.event.inputs.deep == 'true' && '--deep' || '' }}
+
+      - name: Publish report to the job summary
+        if: always()
+        run: cat reports/latest.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit report
+        if: always()
+        run: |
+          git config user.name  "pdfdrill-audit"
+          git config user.email "audit@localhost"
+          git add reports/latest.md reports/latest.json reports/history/ || true
+          git diff --cached --quiet || git commit -m "audit $(date -I)"
+          git push || echo "push failed; report committed locally"
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-report
+          path: |
+            reports/latest.md
+            reports/latest.json
+          retention-days: 90
+
+      - name: Fail the run when regressions were found
+        if: steps.audit.outcome == 'failure'
+        run: |
+          echo "::error::Regressions detected - see the job summary"
+          exit 1

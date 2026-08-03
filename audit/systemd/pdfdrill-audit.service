@@ -1,0 +1,31 @@
+[Unit]
+Description=pdfdrill nightly corpus audit
+Documentation=https://github.com/WulfKolbe/pdfdrill-library
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/pdfdrill-library
+ExecStart=%h/pdfdrill-library/audit/run_nightly.sh
+
+# The audit must never compete with interactive work.
+Nice=10
+IOSchedulingClass=idle
+CPUQuota=600%
+
+# 16-core box: 12 workers leaves headroom.
+Environment=AUDIT_COHORT=120
+Environment=AUDIT_WORKERS=12
+Environment=AUDIT_TIMEOUT=120
+Environment=PDFDRILL_NO_PREFLIGHT=1
+
+# API keys live in the user environment; pull them in if present.
+EnvironmentFile=-%h/.config/pdfdrill/audit.env
+
+TimeoutStartSec=4h
+StandardOutput=append:%h/pdfdrill-library/reports/nightly.log
+StandardError=append:%h/pdfdrill-library/reports/nightly.log
+
+[Install]
+WantedBy=default.target

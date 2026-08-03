@@ -1,0 +1,17 @@
+[Unit]
+Description=Run the pdfdrill corpus audit nightly at 02:30
+Documentation=https://github.com/WulfKolbe/pdfdrill-library
+
+[Timer]
+OnCalendar=*-*-* 02:30:00
+
+# If the machine was asleep at 02:30, run as soon as it is back. This is the
+# main reason to prefer a systemd timer over a plain crontab entry, which
+# would simply skip the missed night.
+Persistent=true
+
+# Avoid every machine hitting GitHub at the same second.
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

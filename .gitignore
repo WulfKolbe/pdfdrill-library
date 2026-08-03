@@ -1,0 +1,54 @@
+# ------------------------------------------------------------------
+# DENY BY DEFAULT.
+#
+# This working tree is a 34 GB document library containing copyrighted
+# books and personal scanned mail. Nothing is committed unless it is
+# explicitly un-ignored below, so an accidental `git add -A` cannot
+# publish anything.
+#
+# The audit corpus is added deliberately with `git add -f` by
+# audit/select_corpus.py, which enforces the eligibility rules
+# (PDF <= 1 MB, no Z-Library books, no scan_* folders).
+# ------------------------------------------------------------------
+
+# ignore everything at the root
+/*
+
+# ...except the harness and its outputs
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/CLAUDE.md
+!/LICENSE
+!/audit/
+!/.github/
+!/reports/
+
+# never commit these, wherever they appear
+*.docmodel.json
+*.docpack.json
+chars.json
+*.lines.json
+*.tgz
+*.zip
+**/rasterize/
+**/inspect/
+**/visionocr/
+**/viewer/
+**/images_extracted/
+**/okf/
+**/latex/
+*.inspect.html
+*.spoken.tiddlers.json
+
+# audit state: the rolling state file is large and machine-only.
+# Reports and history ARE committed - they are the day-over-day record.
+/reports/state.json
+/reports/nightly.log
+
+# local noise
+.codegraph/
+.env
+__pycache__/
+*.pyc
+.DS_Store
