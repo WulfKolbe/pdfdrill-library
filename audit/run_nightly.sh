@@ -42,6 +42,13 @@ if [[ "$PUSH" == "1" ]] && [[ -d .git ]]; then
     DATE="$(date -I)"
     git add reports/latest.md reports/latest.json "reports/history/${DATE}.md" 2>/dev/null
 
+    # The probes write cached facts back into the sidecars, so tracked
+    # sidecars drift every night. Stage those too, which both keeps the tree
+    # clean and turns `git log` into a record of how the corpus state moved.
+    # `-u` only touches already-tracked files, so no PDF, book or scan can
+    # enter the repository through this line.
+    git add -u 2>/dev/null
+
     if git diff --cached --quiet; then
         echo "no report changes to commit"
     else
