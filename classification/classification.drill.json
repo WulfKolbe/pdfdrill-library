@@ -1,0 +1,140 @@
+{
+  "pdf": "classification.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MATHPIX_KNOWN",
+    "MODEL_BUILT",
+    "REPORT_BUILT",
+    "TABLES_KNOWN",
+    "SIZE_KNOWN"
+  ],
+  "evidence": {
+    "mathpix_pdf_id": "843edf11-fb78-4496-b62a-720b978f52d1",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "classification.lines.json",
+        "bytes": 22347574
+      },
+      {
+        "format": "md",
+        "path": "classification.md",
+        "bytes": 320087
+      },
+      {
+        "format": "tex.zip",
+        "path": "classification.tex.zip",
+        "bytes": 374239
+      }
+    ],
+    "bibkey": "classification",
+    "model_path": "classification.pdf.drill/model.docmodel.json",
+    "model_object_counts": {
+      "Page": 69,
+      "Citation": 831,
+      "Table": 94,
+      "TableRow": 3976,
+      "TableCell": 10034,
+      "Sidenote": 41,
+      "Section": 16,
+      "Picture": 8,
+      "Formula": 124,
+      "Paragraph": 1545,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "report_path": "classification.pdf.drill/formula-report.html",
+    "tables_count": 0,
+    "tables_path": "classification.pdf.drill/tables.json",
+    "pages": 69,
+    "bytes": 781474,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "pdfTeX-0.12o",
+    "creator": "TeX",
+    "encrypted": false,
+    "pdfinfo": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-0.12o",
+      "CreationDate": "Thu Nov  4 11:55:00 1999 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "69",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "781474 bytes",
+      "Optimized": "no",
+      "PDF version": "1.2"
+    },
+    "text_layer": true,
+    "font_count": 7,
+    "first_page_chars": 4846,
+    "needs_ocr": false
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-06-15T12:24:21Z",
+      "node": "mathpix",
+      "from": "INIT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 24829.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-06-15T12:25:25Z",
+      "node": "model",
+      "from": "MATHPIX_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 2285.5,
+      "detail": "16739 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-06-15T12:25:26Z",
+      "node": "report",
+      "from": "MATHPIX_KNOWN,MODEL_BUILT",
+      "to": "REPORT_BUILT",
+      "cost_ms": 0,
+      "detail": "124 inline, 0 equations"
+    },
+    {
+      "ts": "2026-06-15T12:25:49Z",
+      "node": "tables",
+      "from": "MATHPIX_KNOWN,MODEL_BUILT,REPORT_BUILT",
+      "to": "TABLES_KNOWN",
+      "cost_ms": 7870.2,
+      "detail": "0 table(s)"
+    },
+    {
+      "ts": "2026-06-15T12:26:20Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 84.0,
+      "detail": "pdfinfo: 69 pages, 781474 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-06-15T12:26:48Z",
+      "node": "report",
+      "from": "MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN,TABLES_KNOWN",
+      "to": "REPORT_BUILT",
+      "cost_ms": 0,
+      "detail": "124 inline, 0 equations"
+    }
+  ],
+  "capabilities": {}
+}

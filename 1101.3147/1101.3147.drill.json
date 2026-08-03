@@ -1,0 +1,142 @@
+{
+  "pdf": "1101.3147.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "pages": 83,
+    "bytes": 708085,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "Microsoft® Word 2010",
+    "creator": "Microsoft® Word 2010",
+    "encrypted": false,
+    "pdfinfo": {
+      "Author": "MRT",
+      "Creator": "Microsoft® Word 2010",
+      "Producer": "Microsoft® Word 2010",
+      "CreationDate": "Mon Jan 17 09:09:25 2011 CET",
+      "ModDate": "Mon Jan 17 09:09:25 2011 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "yes",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "83",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "708085 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "text_layer": true,
+    "font_count": 6,
+    "first_page_chars": 969,
+    "needs_ocr": false,
+    "bibkey": "1101.3147",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 83,
+      "ListItem": 119,
+      "Paragraph": 83,
+      "Document": 1,
+      "Equation": 7
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars",
+      "merged": "latex"
+    },
+    "latex_source": "1101.3147.tgz",
+    "latex_macros": 0,
+    "latex_src_equations": 7,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "merge_latex_source": "1101.3147.tgz",
+    "merge_paragraphs_changed": 14,
+    "tiddlers_path": "1101.3147.tiddlers.json",
+    "tiddlers_count": 309,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-08T15:11:24Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 67.3,
+      "detail": "pdfinfo: 83 pages, 708085 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-07-30T14:16:26Z",
+      "node": "model",
+      "from": "SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 143.6,
+      "detail": "286 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-30T14:16:28Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/7 eqs matched, 7 created, 0 graphics, 0 macros"
+    },
+    {
+      "ts": "2026-07-30T14:16:29Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/7 eqs matched, 0 created, 0 graphics, 0 macros"
+    },
+    {
+      "ts": "2026-07-30T14:16:29Z",
+      "node": "tiddlers",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.0,
+      "detail": "309 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1101.3147/1101.3147.lines.json": "sha256:c0bf3bd1bc64fd036295a721a080a7b4a109322d63603849a55a0d011cf87cad"
+      },
+      "params_hash": "sha256:04256edd2acd92f9f3617cac3a4f1788112fc72b15819ec41e514a3a650d7226",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:16:26Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "1101.3147.tgz": "sha256:d01c0b4d3a933529c663cdcd272f80f3acc14b3898e5e38c370f5cfc73341f4d"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:16:29Z"
+    }
+  }
+}

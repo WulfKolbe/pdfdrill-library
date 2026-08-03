@@ -1,0 +1,146 @@
+{
+  "pdf": "1608.06622.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "pages": 11,
+    "bytes": 473453,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "pdfTeX-1.40.12",
+    "creator": "LaTeX with hyperref package",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.12",
+      "CreationDate": "Wed Aug 31 03:56:50 2016 CEST",
+      "ModDate": "Wed Aug 31 03:56:50 2016 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "473453 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "text_layer": true,
+    "font_count": 26,
+    "first_page_chars": 1800,
+    "needs_ocr": false,
+    "bibkey": "1608.06622",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 11,
+      "ListItem": 7,
+      "Paragraph": 11,
+      "Document": 1,
+      "Equation": 15,
+      "Table": 3
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars",
+      "merged": "latex"
+    },
+    "latex_source": "1608.06622.tgz",
+    "latex_macros": 8,
+    "latex_src_equations": 15,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "merge_latex_source": "1608.06622.tgz",
+    "merge_paragraphs_changed": 11,
+    "tiddlers_path": "1608.06622.tiddlers.json",
+    "tiddlers_count": 64,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-08T15:11:38Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 64.2,
+      "detail": "pdfinfo: 11 pages, 473453 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-07-30T14:33:28Z",
+      "node": "model",
+      "from": "SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 34.5,
+      "detail": "30 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-30T14:33:29Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/15 eqs matched, 15 created, 3 graphics, 8 macros"
+    },
+    {
+      "ts": "2026-07-30T14:33:29Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/15 eqs matched, 0 created, 0 graphics, 8 macros"
+    },
+    {
+      "ts": "2026-07-30T14:33:29Z",
+      "node": "tiddlers",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.7,
+      "detail": "64 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1608.06622/1608.06622.lines.json": "sha256:6c29c7ac8fbde7ed832da387c3f35fcdd882add7972842e3af88343f123d807f"
+      },
+      "params_hash": "sha256:18bb5cd19f15807c1853a9616123d79960c99eec65b987526db48742e7bcd044",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:33:28Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "1608.06622.tgz": "sha256:98a19260b878347e6d24f61fc2b3eadd90fa40bd000b273953626eb824792bba"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:33:29Z"
+    }
+  }
+}

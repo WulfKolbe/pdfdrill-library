@@ -1,0 +1,150 @@
+{
+  "pdf": "2209.00445.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "BIBLIOGRAPHY_BUILT",
+    "MD_BUILT",
+    "BIBSOURCE_BUILT",
+    "CES_BUILT",
+    "NEEDS_VISION_OCR"
+  ],
+  "evidence": {
+    "source_arxiv_id": "2209.00445",
+    "source_kind": "arxiv",
+    "bibkey": "2209.00445",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 16,
+      "ListItem": 15,
+      "Paragraph": 16,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "latex_source": "2209.00445.tgz",
+    "latex_macros": 2,
+    "latex_src_equations": 1,
+    "latex_attached": 0,
+    "latex_created": 1,
+    "latex_graphics": 16,
+    "merge_latex_source": "2209.00445.tgz",
+    "merge_paragraphs_changed": 12,
+    "bibliography_entries": 25,
+    "bibliography_with_year": 23,
+    "bibliography_numeric_citations": 1,
+    "bibliography_authoryear_citations": 10,
+    "bibliography_cites": 2,
+    "bibsource_references": 46,
+    "bibsource_enriched": 46,
+    "bibsource_citations_linked": 60,
+    "ces_path": "/home/wkolbe/pdfdrill-library/2209.00445/model.ces.json",
+    "ces_sections": 24,
+    "ces_paragraphs": 144,
+    "ces_summaries": 24,
+    "ces_content_hash": "af4fea6728faf8a67ec8aed4c4cd20b88da68ba9513e6307b92ba1c7a769dde7",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": ""
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {
+    "md": {
+      "blob": "2209.00445.md",
+      "words": 7045,
+      "source": "latex",
+      "built_at": "2026-07-28T08:13:34Z"
+    }
+  },
+  "transitions": [
+    {
+      "ts": "2026-07-28T08:13:22Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 65.4,
+      "detail": "48 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-28T08:13:23Z",
+      "node": "latex",
+      "from": "MODEL_BUILT",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/1 eqs matched, 1 created, 16 graphics, 2 macros"
+    },
+    {
+      "ts": "2026-07-28T08:13:34Z",
+      "node": "bibliography",
+      "from": "LATEX_INGESTED,MODEL_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "25 entries, 1+10 cites detected, 2 linked"
+    },
+    {
+      "ts": "2026-07-28T09:41:31Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MD_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "270 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-07-28T09:41:31Z",
+      "node": "bibsource",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MD_BUILT,MODEL_BUILT",
+      "to": "BIBSOURCE_BUILT",
+      "cost_ms": 0,
+      "detail": "46 refs, 60/60 citations linked"
+    },
+    {
+      "ts": "2026-08-03T08:55:03Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,CES_BUILT,LATEX_INGESTED,MD_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 81.3,
+      "detail": "48 objects, 0 eq w/ cdn"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2209.00445/2209.00445.lines.json": "sha256:7a49bf56d59bd766f763ce25dcf7901c8fa6a5164031ed3713a9c18ec5b09928"
+      },
+      "params_hash": "sha256:878cbcd96bc225acba1f3072bbf7e126256dd6f96b960bbcd7716588211436e7",
+      "algo": "sha256",
+      "ts": "2026-08-03T08:55:03Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2209.00445/2209.00445.tgz": "sha256:1e15c77c2d3bd663d3e264aa464271fa09dc372d43573797070bcd6372db4ab0"
+      },
+      "params_hash": "sha256:5a63caa631fa79de0c6ead2180aba6d9d193d85ef1a722cca3a3f9b43f58117b",
+      "algo": "sha256",
+      "ts": "2026-07-28T08:13:23Z"
+    },
+    "CES_BUILT": {
+      "produced_by": "conceptdrill",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2209.00445/model.docmodel.json": "sha256:34e2dde34d5320d7d00d4ba67568704ad87459831066a9a37f0242116e7008db"
+      },
+      "params_hash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "algo": "sha256",
+      "ts": "2026-07-29T14:49:19Z"
+    }
+  }
+}

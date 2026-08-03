@@ -1,0 +1,119 @@
+{
+  "pdf": "gr-qc_0012035.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "gr-qc/0012035",
+    "source_kind": "arxiv",
+    "bibkey": "gr-qc_0012035",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 30,
+      "Citation": 3,
+      "ListItem": 3,
+      "Paragraph": 30,
+      "Document": 1,
+      "Equation": 56
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars",
+      "merged": "latex"
+    },
+    "latex_source": "gr-qc_0012035.tgz",
+    "latex_macros": 16,
+    "latex_src_equations": 56,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "merge_latex_source": "gr-qc_0012035.tgz",
+    "merge_paragraphs_changed": 25,
+    "bibliography_entries": 109,
+    "bibliography_with_year": 95,
+    "bibliography_numeric_citations": 134,
+    "bibliography_authoryear_citations": 5,
+    "bibliography_cites": 134,
+    "tiddlers_path": "gr-qc_0012035.tiddlers.json",
+    "tiddlers_count": 251,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-30T14:04:11Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 89.1,
+      "detail": "67 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-30T14:04:12Z",
+      "node": "latex",
+      "from": "MODEL_BUILT",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/56 eqs matched, 56 created, 0 graphics, 16 macros"
+    },
+    {
+      "ts": "2026-07-30T14:04:13Z",
+      "node": "latex",
+      "from": "MODEL_BUILT",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/56 eqs matched, 0 created, 0 graphics, 16 macros"
+    },
+    {
+      "ts": "2026-07-30T14:04:13Z",
+      "node": "bibliography",
+      "from": "LATEX_INGESTED,MODEL_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "109 entries, 134+5 cites detected, 134 linked"
+    },
+    {
+      "ts": "2026-07-30T14:04:13Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.6,
+      "detail": "251 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/gr-qc_0012035/gr-qc_0012035.lines.json": "sha256:d71241bcc8c7f39cf80989df0b793a3d96c7c1219424f07e27fd219d472f4f32"
+      },
+      "params_hash": "sha256:aecb7b158c5ee20616aa65f748de3cd0778efd7906ad9f35e5571ff1436eacf5",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:04:11Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "gr-qc_0012035.tgz": "sha256:2cbb9e1b445b459e08f18efff8791fd2770d9a937a0c3c0d6a9e6c46944849a4"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:04:13Z"
+    }
+  }
+}

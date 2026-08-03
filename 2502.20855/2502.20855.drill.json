@@ -1,0 +1,76 @@
+{
+  "pdf": "2502.20855.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "BIBSOURCE_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "2502.20855",
+    "source_kind": "arxiv",
+    "bibkey": "2502.20855",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Paragraph": 100,
+      "Abstract": 1,
+      "Section": 39,
+      "Diagram": 7,
+      "Formula": 110,
+      "Table": 22,
+      "Equation": 6,
+      "LtxCommand": 2,
+      "Citation": 103
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "bibsource_references": 57,
+    "bibsource_enriched": 57,
+    "bibsource_citations_linked": 103
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-13T10:00:06Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "390 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T08:51:46Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "390 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T08:51:46Z",
+      "node": "bibsource",
+      "from": "MODEL_BUILT",
+      "to": "BIBSOURCE_BUILT",
+      "cost_ms": 0,
+      "detail": "57 refs, 103/103 citations linked"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2502.20855/texsrc/main.tex": "sha256:b81d020014fddad852db92a756a4ed31fe1474cead4b18572166c06df30c94bc"
+      },
+      "params_hash": "sha256:98267297b2b371e3949b813d5f54d03e6a351564d451c52d3bbabfed43d171a4",
+      "algo": "sha256",
+      "ts": "2026-08-03T08:51:46Z",
+      "provenance": "latex-source"
+    }
+  }
+}

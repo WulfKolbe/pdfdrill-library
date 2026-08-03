@@ -1,0 +1,177 @@
+{
+  "pdf": "2602.14075v1.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "BIBSOURCE_BUILT",
+    "NEEDS_VISION_OCR"
+  ],
+  "evidence": {
+    "pages": 26,
+    "bytes": 601086,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "producer": "pikepdf 8.15.1",
+    "creator": "arXiv GenPDF (tex2pdf:57610bf)",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "Similarity Algebra: A Framework for Approximate Algebraic and Lie Structures with Collapse to Classical Algebra",
+      "Author": "Benyamin Ghojogh; Golbahar Amanpour",
+      "Creator": "arXiv GenPDF (tex2pdf:57610bf)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "26",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "601086 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "text_layer": true,
+    "font_count": 29,
+    "first_page_chars": 2871,
+    "needs_ocr": false,
+    "source_arxiv_id": "2602.14075v1",
+    "source_kind": "arxiv",
+    "bibkey": "2602.14075v1",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 26,
+      "Citation": 126,
+      "ListItem": 155,
+      "Paragraph": 26,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "latex_source": "2602.14075v1.tgz",
+    "latex_macros": 1,
+    "latex_src_equations": 201,
+    "latex_attached": 0,
+    "latex_created": 201,
+    "latex_graphics": 0,
+    "merge_latex_source": "2602.14075v1.tgz",
+    "merge_paragraphs_changed": 25,
+    "bibsource_references": 28,
+    "bibsource_enriched": 28,
+    "bibsource_citations_linked": 39,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": ""
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-08T15:12:19Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 108.9,
+      "detail": "pdfinfo: 26 pages, 601086 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-07-23T13:48:15Z",
+      "node": "model",
+      "from": "SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 83.1,
+      "detail": "334 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-23T13:48:16Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/201 eqs matched, 201 created, 0 graphics, 1 macros"
+    },
+    {
+      "ts": "2026-07-23T13:48:30Z",
+      "node": "model",
+      "from": "LATEX_INGESTED,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "417 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-07-23T13:48:30Z",
+      "node": "bibsource",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBSOURCE_BUILT",
+      "cost_ms": 0,
+      "detail": "28 refs, 39/39 citations linked"
+    },
+    {
+      "ts": "2026-07-23T14:15:34Z",
+      "node": "model",
+      "from": "BIBSOURCE_BUILT,LATEX_INGESTED,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 86.6,
+      "detail": "334 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-23T14:15:34Z",
+      "node": "model",
+      "from": "BIBSOURCE_BUILT,LATEX_INGESTED,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "417 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-07-23T14:15:34Z",
+      "node": "bibsource",
+      "from": "LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBSOURCE_BUILT",
+      "cost_ms": 0,
+      "detail": "28 refs, 39/39 citations linked"
+    },
+    {
+      "ts": "2026-08-03T08:55:03Z",
+      "node": "model",
+      "from": "BIBSOURCE_BUILT,LATEX_INGESTED,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 108.0,
+      "detail": "334 objects, 0 eq w/ cdn"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2602.14075v1/2602.14075v1.lines.json": "sha256:08ab41394a064115bbdd86c4b83a9f7e8fe2264af169d218b437317ed9b2cb09"
+      },
+      "params_hash": "sha256:7f988477601bbd344dbe35db53fa0b83a2804d41044587df8d5d9ef138a1d1c8",
+      "algo": "sha256",
+      "ts": "2026-08-03T08:55:03Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2602.14075v1/2602.14075v1.tgz": "sha256:4488509f08fc75497c47efcfcceacde8fe35742580a3d1cc57d9a241920e5e69"
+      },
+      "params_hash": "sha256:f1633db4a3fb4911aeb1b54c86b3e1d2c7c09acbeefdbc9e817d59dbe0d366c1",
+      "algo": "sha256",
+      "ts": "2026-07-23T13:48:16Z"
+    }
+  }
+}

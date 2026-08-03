@@ -1,0 +1,142 @@
+{
+  "pdf": "1506.0005v1.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "pages": 5,
+    "bytes": 135635,
+    "page_size": "595 x 842 pts (A4)",
+    "producer": "OpenOffice 4.1.0",
+    "creator": "Writer",
+    "encrypted": false,
+    "pdfinfo": {
+      "Author": "Herbert Weidner",
+      "Creator": "Writer",
+      "Producer": "OpenOffice 4.1.0",
+      "CreationDate": "Mon Jun  1 20:25:15 2015 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "5",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "135635 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "text_layer": true,
+    "font_count": 6,
+    "first_page_chars": 2343,
+    "needs_ocr": false,
+    "bibkey": "1506.0005v1",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 5,
+      "ListItem": 1,
+      "Paragraph": 5,
+      "Document": 1,
+      "Equation": 2,
+      "Table": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars",
+      "merged": "latex"
+    },
+    "latex_source": "1506.0005v1.tgz",
+    "latex_macros": 76,
+    "latex_src_equations": 2,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "merge_latex_source": "1506.0005v1.tgz",
+    "merge_paragraphs_changed": 4,
+    "tiddlers_path": "1506.0005v1.tiddlers.json",
+    "tiddlers_count": 31,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-08T15:11:28Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 33.6,
+      "detail": "pdfinfo: 5 pages, 135635 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-07-30T14:19:57Z",
+      "node": "model",
+      "from": "SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 17.5,
+      "detail": "12 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-30T14:20:06Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/2 eqs matched, 2 created, 1 graphics, 76 macros"
+    },
+    {
+      "ts": "2026-07-30T14:20:06Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/2 eqs matched, 0 created, 0 graphics, 76 macros"
+    },
+    {
+      "ts": "2026-07-30T14:20:06Z",
+      "node": "tiddlers",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.9,
+      "detail": "31 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1506.0005v1/1506.0005v1.lines.json": "sha256:e0e1de6407ab920840024da59fd4606aba6ee0c0e8b3d65950f281445fcbbdda"
+      },
+      "params_hash": "sha256:b363d83e7e4214e68e8ce1cd979b52aff93134e01387bbf456a34517cbce8362",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:19:57Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "1506.0005v1.tgz": "sha256:8e049eb97043606dde8c3916d240ac524f7aa8f54cd306f7f1960448ecbad7fd"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:20:06Z"
+    }
+  }
+}

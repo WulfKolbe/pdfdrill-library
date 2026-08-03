@@ -1,0 +1,180 @@
+{
+  "pdf": "STS018-P2-S.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "FONTS_KNOWN",
+    "MD_BUILT",
+    "MATHPIX_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "pages": 6,
+    "bytes": 806519,
+    "page_size": "595.32 x 841.92 pts (A4)",
+    "producer": "Microsoft® Word 2010",
+    "creator": "Microsoft® Word 2010",
+    "encrypted": false,
+    "pdfinfo": {
+      "Author": "Tech Sec",
+      "Creator": "Microsoft® Word 2010",
+      "Producer": "Microsoft® Word 2010",
+      "CreationDate": "Mon Apr 15 16:08:03 2013 CEST",
+      "ModDate": "Mon Apr 15 16:08:03 2013 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "yes",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "595.32 x 841.92 pts (A4)",
+      "Page rot": "0",
+      "File size": "806519 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "text_layer": true,
+    "font_count": 8,
+    "first_page_chars": 2543,
+    "needs_ocr": false,
+    "fonts": [
+      "Times",
+      "Times",
+      "Times",
+      "Symbol",
+      "ABCDEE+Cambria",
+      "Times",
+      "Times",
+      "Arial"
+    ],
+    "math_fonts": [
+      "Symbol"
+    ],
+    "has_math_fonts": true,
+    "mathpix_pdf_id": "895347ab-4d68-4013-9ff1-e90559de70d6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "STS018-P2-S.lines.json",
+        "bytes": 254546
+      },
+      {
+        "format": "md",
+        "path": "STS018-P2-S.md",
+        "bytes": 18590
+      },
+      {
+        "format": "tex.zip",
+        "path": "STS018-P2-S.tex.zip",
+        "bytes": 339887
+      }
+    ],
+    "bibkey": "STS018-P2-S",
+    "model_path": "STS018-P2-S.pdf.drill/model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "Footnote": 2,
+      "Citation": 1,
+      "Abstract": 1,
+      "Diagram": 3,
+      "Section": 9,
+      "ListItem": 8,
+      "Equation": 4,
+      "Formula": 12,
+      "Paragraph": 22,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 4,
+    "bibliography_entries": 5,
+    "bibliography_with_year": 5,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 0,
+    "tiddlers_path": "STS018-P2-S.pdf.drill/STS018-P2-S.tiddlers.json",
+    "tiddlers_count": 92,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {
+    "md": {
+      "blob": "STS018-P2-S.pdf.drill/md.md",
+      "words": 2500,
+      "math_inline": 0,
+      "math_display": 0,
+      "references": 5,
+      "built_at": "2026-06-26T17:41:41Z"
+    }
+  },
+  "transitions": [
+    {
+      "ts": "2026-06-26T17:41:39Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 47.9,
+      "detail": "pdfinfo: 6 pages, 806519 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-06-26T17:41:39Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 27.5,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-06-26T17:41:41Z",
+      "node": "md",
+      "from": "FONTS_KNOWN",
+      "to": "MD_BUILT",
+      "cost_ms": 1789.1,
+      "detail": "2500 words, 0+0 math, 5 refs"
+    },
+    {
+      "ts": "2026-06-26T18:27:55Z",
+      "node": "mathpix",
+      "from": "FONTS_KNOWN,MD_BUILT,SIZE_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5525.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-06-26T18:27:55Z",
+      "node": "model",
+      "from": "FONTS_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 32.4,
+      "detail": "69 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-06-26T19:00:17Z",
+      "node": "bibliography",
+      "from": "FONTS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "5 entries, 0+1 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-06-26T19:00:17Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.4,
+      "detail": "92 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {}
+}

@@ -1,0 +1,195 @@
+{
+  "pdf": "2302.07629.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT",
+    "MD_BUILT",
+    "SEMANTIC_BUILT",
+    "SIZE_KNOWN",
+    "BIBSOURCE_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "2302.07629",
+    "source_kind": "arxiv",
+    "bibkey": "2302.07629",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Paragraph": 107,
+      "Abstract": 1,
+      "Section": 14,
+      "Formula": 191,
+      "Theorem": 27,
+      "Equation": 40,
+      "LtxCommand": 30,
+      "Citation": 45
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "latex_source": "2302.07629.tgz",
+    "latex_macros": 11,
+    "latex_src_equations": 40,
+    "latex_attached": 40,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "bibliography_entries": 21,
+    "bibliography_with_year": 21,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 45,
+    "tiddlers_path": "2302.07629.pdf.drill/2302.07629.tiddlers.json",
+    "tiddlers_count": 449,
+    "tiddlers_svg_mode": "inline",
+    "semantic_scientific": {
+      "sections": 14,
+      "equations": 40,
+      "formulas": 191,
+      "tables": 0,
+      "figures": 0,
+      "references": 21,
+      "citations": 0,
+      "occurrences": 273,
+      "concepts": 5
+    },
+    "semantic_entities": 272,
+    "semantic_relations": 287,
+    "semantic_validity": "valid",
+    "semantic_warnings": 0,
+    "margin_markers": [],
+    "semantic_path": "2302.07629.pdf.drill/2302.07629.semantic.json",
+    "language": "und",
+    "pages": 10,
+    "bytes": 298402,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "pdfTeX-1.40.21",
+    "creator": "LaTeX with hyperref",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Thu Feb 16 02:45:54 2023 CET",
+      "ModDate": "Thu Feb 16 02:45:54 2023 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "298402 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "text_layer": true,
+    "font_count": 17,
+    "first_page_chars": 4724,
+    "needs_ocr": false,
+    "bibsource_references": 21,
+    "bibsource_enriched": 21,
+    "bibsource_citations_linked": 45
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {
+    "md": {
+      "blob": "md.md",
+      "words": 11380,
+      "source": "latex",
+      "built_at": "2026-07-01T15:54:08Z"
+    }
+  },
+  "transitions": [
+    {
+      "ts": "2026-07-01T15:53:54Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "455 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-07-01T15:54:04Z",
+      "node": "latex",
+      "from": "MODEL_BUILT",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "40/40 eqs matched, 0 created, 0 graphics, 11 macros"
+    },
+    {
+      "ts": "2026-07-01T15:54:07Z",
+      "node": "bibliography",
+      "from": "LATEX_INGESTED,MODEL_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "21 entries, 0+0 cites detected, 45 linked"
+    },
+    {
+      "ts": "2026-07-01T15:54:07Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.7,
+      "detail": "449 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-07-02T10:16:47Z",
+      "node": "semantic",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "SEMANTIC_BUILT",
+      "cost_ms": 0,
+      "detail": "272 entities, 287 relations, valid"
+    },
+    {
+      "ts": "2026-07-08T15:12:08Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 54.8,
+      "detail": "pdfinfo: 10 pages, 298402 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T08:51:35Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MD_BUILT,SEMANTIC_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "455 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T08:51:35Z",
+      "node": "bibsource",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,SEMANTIC_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBSOURCE_BUILT",
+      "cost_ms": 0,
+      "detail": "21 refs, 45/45 citations linked"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2302.07629/texsrc/main.tex": "sha256:1a2a725585955cd82bfe100536d791ad2a40b7875af4af18a25fd8eb771fcc07"
+      },
+      "params_hash": "sha256:f8a3ac23619600229ec54b5137562463b91009b54b8a5800e260979341545e1b",
+      "algo": "sha256",
+      "ts": "2026-08-03T08:51:35Z",
+      "provenance": "latex-source"
+    }
+  }
+}

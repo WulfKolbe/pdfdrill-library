@@ -1,0 +1,166 @@
+{
+  "pdf": "p100.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "FONTS_KNOWN",
+    "MD_BUILT",
+    "MATHPIX_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "pages": 2,
+    "bytes": 54381,
+    "page_size": "612 x 792 pts (letter)",
+    "producer": "GPL Ghostscript 9.22",
+    "creator": "Word",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "officers",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Craig H Macdonald",
+      "Creator": "Word",
+      "Producer": "GPL Ghostscript 9.22",
+      "CreationDate": "Tue Dec  3 17:33:55 2019 CET",
+      "ModDate": "Tue Dec  3 17:33:55 2019 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "2",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "54381 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "text_layer": true,
+    "font_count": 11,
+    "first_page_chars": 2778,
+    "needs_ocr": false,
+    "fonts": [
+      "IXAQLP+CMITT10",
+      "OODZBL+CMR12",
+      "BNELCV+CMTI12",
+      "JEOTRV+CMR10",
+      "JBDUTA+ComputerModernSans-SCRegular10pt",
+      "TXHCTS+CMBX10",
+      "IKKRQL+ComputerModernSans-Regular10pt",
+      "WARPYS+CMBX12",
+      "JCAUQM+CMTT10",
+      "MUQRRF+CMSS10",
+      "HFFTKO+ComputerModernSans-MathitalicRegular10pt"
+    ],
+    "math_fonts": [
+      "HFFTKO+ComputerModernSans-MathitalicRegular10pt"
+    ],
+    "has_math_fonts": true,
+    "mathpix_pdf_id": "abd5527f-66b8-4e1a-879b-1434b2977f0d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "p100.lines.json",
+        "bytes": 101595
+      },
+      {
+        "format": "md",
+        "path": "p100.md",
+        "bytes": 7294
+      },
+      {
+        "format": "tex.zip",
+        "path": "p100.tex.zip",
+        "bytes": 8816
+      }
+    ],
+    "bibkey": "p100",
+    "model_path": "p100.pdf.drill/model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "Abstract": 1,
+      "Formula": 4,
+      "Paragraph": 3,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "tiddlers_path": "p100.pdf.drill/p100.tiddlers.json",
+    "tiddlers_count": 27,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {
+    "md": {
+      "blob": "p100.pdf.drill/md.md",
+      "words": 1033,
+      "math_inline": 3,
+      "math_display": 0,
+      "references": 0,
+      "built_at": "2026-06-26T17:37:09Z"
+    }
+  },
+  "transitions": [
+    {
+      "ts": "2026-06-26T17:37:09Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 32.7,
+      "detail": "pdfinfo: 2 pages, 54381 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-06-26T17:37:09Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.7,
+      "detail": "11 fonts, 1 math"
+    },
+    {
+      "ts": "2026-06-26T17:37:09Z",
+      "node": "md",
+      "from": "FONTS_KNOWN",
+      "to": "MD_BUILT",
+      "cost_ms": 703.1,
+      "detail": "1033 words, 3+0 math, 0 refs"
+    },
+    {
+      "ts": "2026-06-26T18:21:38Z",
+      "node": "mathpix",
+      "from": "FONTS_KNOWN,MD_BUILT,SIZE_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5566.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-06-26T18:21:39Z",
+      "node": "model",
+      "from": "FONTS_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 13.6,
+      "detail": "11 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-06-26T18:59:56Z",
+      "node": "tiddlers",
+      "from": "FONTS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.7,
+      "detail": "27 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {}
+}

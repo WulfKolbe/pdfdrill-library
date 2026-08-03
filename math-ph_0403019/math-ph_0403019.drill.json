@@ -1,0 +1,119 @@
+{
+  "pdf": "math-ph_0403019.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "MODEL_BUILT",
+    "LATEX_INGESTED",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "source_arxiv_id": "math-ph/0403019",
+    "source_kind": "arxiv",
+    "bibkey": "math-ph_0403019",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 14,
+      "Citation": 2,
+      "ListItem": 6,
+      "Paragraph": 14,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars",
+      "merged": "latex"
+    },
+    "latex_source": "math-ph_0403019.tgz",
+    "latex_macros": 306,
+    "latex_src_equations": 0,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "merge_latex_source": "math-ph_0403019.tgz",
+    "merge_paragraphs_changed": 12,
+    "bibliography_entries": 16,
+    "bibliography_with_year": 11,
+    "bibliography_numeric_citations": 16,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 16,
+    "tiddlers_path": "math-ph_0403019.tiddlers.json",
+    "tiddlers_count": 69,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "tsv_layer": null,
+  "layers": {},
+  "transitions": [
+    {
+      "ts": "2026-07-30T14:05:12Z",
+      "node": "model",
+      "from": "INIT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 34.4,
+      "detail": "37 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-07-30T14:05:13Z",
+      "node": "latex",
+      "from": "MODEL_BUILT",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/0 eqs matched, 0 created, 0 graphics, 306 macros"
+    },
+    {
+      "ts": "2026-07-30T14:05:13Z",
+      "node": "latex",
+      "from": "MODEL_BUILT,NEEDS_VISION_OCR",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/0 eqs matched, 0 created, 0 graphics, 306 macros"
+    },
+    {
+      "ts": "2026-07-30T14:05:13Z",
+      "node": "bibliography",
+      "from": "LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "16 entries, 16+0 cites detected, 16 linked"
+    },
+    {
+      "ts": "2026-07-30T14:05:13Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.0,
+      "detail": "69 tiddlers, svg=inline"
+    }
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/math-ph_0403019/math-ph_0403019.lines.json": "sha256:95bb2a2aec295bcf53f1b0fae8beae7899773d1281e7158a227303d0b37ae985"
+      },
+      "params_hash": "sha256:04d5b1e9d9552ee542629133c7f85c0a00d2ec309acff95df52ff584165a32d9",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:05:12Z",
+      "provenance": "pdfminer-chars"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "math-ph_0403019.tgz": "sha256:baf29f399706b679db48d930dac6ee7d68a55603a2a29dafbc6dcf4e85a21658"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-07-30T14:05:13Z"
+    }
+  }
+}

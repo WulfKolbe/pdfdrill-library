@@ -1,0 +1,160 @@
+{
+  "pdf": "p03.pdf",
+  "pdfdrill_version": "0.4.0",
+  "facts": [
+    "SIZE_KNOWN",
+    "FONTS_KNOWN",
+    "MD_BUILT",
+    "MATHPIX_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
+  ],
+  "evidence": {
+    "pages": 10,
+    "bytes": 404414,
+    "page_size": "595.22 x 842 pts (A4)",
+    "producer": "Acrobat Distiller 8.0.0 (Windows)",
+    "creator": "Acrobat PDFMaker 8.0 for Word",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "sv-lncs",
+      "Author": "Springer-SBM",
+      "Creator": "Acrobat PDFMaker 8.0 for Word",
+      "Producer": "Acrobat Distiller 8.0.0 (Windows)",
+      "CreationDate": "Mon Aug 25 16:06:34 2008 CEST",
+      "ModDate": "Mon Aug 25 16:06:40 2008 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "yes",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "595.22 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "404414 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.3"
+    },
+    "text_layer": true,
+    "font_count": 6,
+    "first_page_chars": 2206,
+    "needs_ocr": false,
+    "fonts": [
+      "TimesNewRomanPS-BoldMT",
+      "TimesNewRomanPSMT",
+      "TimesNewRomanPS-ItalicMT",
+      "ArialMT",
+      "TimesNewRomanPS-BoldItalicMT",
+      "KNHEHF+SymbolMT"
+    ],
+    "math_fonts": [
+      "KNHEHF+SymbolMT"
+    ],
+    "has_math_fonts": true,
+    "mathpix_pdf_id": "16e7abe8-095b-409d-a163-7cda53c0982f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "p03.lines.json",
+        "bytes": 428124
+      },
+      {
+        "format": "md",
+        "path": "p03.md",
+        "bytes": 29331
+      },
+      {
+        "format": "tex.zip",
+        "path": "p03.tex.zip",
+        "bytes": 182742
+      }
+    ],
+    "bibkey": "p03",
+    "model_path": "p03.pdf.drill/model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "Abstract": 1,
+      "Diagram": 3,
+      "Section": 13,
+      "ListItem": 30,
+      "Paragraph": 26,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "tiddlers_path": "p03.pdf.drill/p03.tiddlers.json",
+    "tiddlers_count": 101,
+    "tiddlers_svg_mode": "inline"
+  },
+  "pdfinfo": null,
+  "bibtex": null,
+  "urls": null,
+  "dests": null,
+  "fonts_layer": null,
+  "images_layer": null,
+  "pix2tex_results": null,
+  "tsv_layer": null,
+  "layers": {
+    "md": {
+      "blob": "p03.pdf.drill/md.md",
+      "words": 4230,
+      "math_inline": 2,
+      "math_display": 0,
+      "references": 30,
+      "built_at": "2026-06-26T17:28:09Z"
+    }
+  },
+  "transitions": [
+    {
+      "ts": "2026-06-26T17:28:06Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 48.6,
+      "detail": "pdfinfo: 10 pages, 404414 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-06-26T17:28:06Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 27.8,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-06-26T17:28:09Z",
+      "node": "md",
+      "from": "FONTS_KNOWN",
+      "to": "MD_BUILT",
+      "cost_ms": 2498.2,
+      "detail": "4230 words, 2+0 math, 30 refs"
+    },
+    {
+      "ts": "2026-06-26T18:16:30Z",
+      "node": "mathpix",
+      "from": "FONTS_KNOWN,MD_BUILT,SIZE_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9114.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-06-26T18:16:30Z",
+      "node": "model",
+      "from": "FONTS_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 42.7,
+      "detail": "84 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-06-26T18:59:24Z",
+      "node": "tiddlers",
+      "from": "FONTS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.9,
+      "detail": "101 tiddlers, svg=inline"
+    }
+  ]
+}
