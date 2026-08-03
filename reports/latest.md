@@ -7,10 +7,18 @@
 - **Sidecars newly corrupted:** 0
 - **Documents vanished:** 0
 
-Ran 72 probes over 6 documents in 0.2 min. Corpus: 3318 documents (26 unreadable sidecars). pdfdrill 0.4.0.
+Ran 1440 probes over 120 documents in 5.1 min. Corpus: 3318 documents (26 unreadable sidecars). pdfdrill 0.4.0.
+
+## ⚪ Pre-existing failures (10) — not new today
+
+| Command | Docs | Signature | Example |
+|---|---|---|---|
+| `images` | 6 | `timeout-images` | exceeded 120s |
+| `bibtex, dests, toc` | 3 | `978049f31861` | Error [JSONDecodeError]: Expecting value: line 1 column 1 (char 0) |
+| `images` | 1 | `0a013dded0f5` | Error [TypeError]: 'NoneType' object is not iterable |
 
 ## Coverage
 
-- 16/3318 documents have been probed at least once (0%)
-- At 6 documents/night the full corpus is covered every 553 days
-- Probe pass rate tonight: 72/72 (100.0%)
+- 132/3318 documents have been probed at least once (4%)
+- At 120 documents/night the full corpus is covered every 28 days
+- Probe pass rate tonight: 1430/1440 (99.3%)
