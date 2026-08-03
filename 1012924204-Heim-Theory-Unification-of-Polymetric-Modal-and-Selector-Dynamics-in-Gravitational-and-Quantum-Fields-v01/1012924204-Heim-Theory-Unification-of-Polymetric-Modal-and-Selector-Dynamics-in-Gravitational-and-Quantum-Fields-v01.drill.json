@@ -4,12 +4,16 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 102,
@@ -81,7 +85,71 @@
         "page": "53"
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "fonts": [
+      "GSYKUZ+CMR17",
+      "HSNWOG+CMR12",
+      "IQNVDY+CMR10",
+      "QZKRDM+CMBX10",
+      "EKDVQQ+CMBX12",
+      "MHMOVS+CMR8",
+      "ERNIKC+CMMI12",
+      "XNMNGY+CMMI8",
+      "KEFILV+CMSY10",
+      "DHNEBJ+SFRM1200",
+      "JUPFKT+MSBM10",
+      "ZFDXPI+CMTI12",
+      "GMVOPC+rsfs10",
+      "REGBPZ+CMMI10",
+      "PRBAFC+CMSY8",
+      "KCIIQS+CMEX10",
+      "GUKIAP+EUFM10",
+      "ILCEUH+CMMI6",
+      "RHLGQM+CMR6",
+      "QIFWKK+CMSY6",
+      "JHQMEQ+MSAM10"
+    ],
+    "math_fonts": [
+      "ERNIKC+CMMI12",
+      "XNMNGY+CMMI8",
+      "KEFILV+CMSY10",
+      "JUPFKT+MSBM10",
+      "REGBPZ+CMMI10",
+      "PRBAFC+CMSY8",
+      "KCIIQS+CMEX10",
+      "GUKIAP+EUFM10",
+      "ILCEUH+CMMI6",
+      "QIFWKK+CMSY6",
+      "JHQMEQ+MSAM10"
+    ],
+    "has_math_fonts": true,
+    "bibkey": "1012924204-Heim-Theory-Unification-of-Polymetric-Modal-and-Selector-Dynamics-in-Gravitational-and-Quantum-Fields-v01",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 102,
+      "Citation": 4,
+      "ListItem": 354,
+      "Equation": 124,
+      "Paragraph": 202,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 69 unmapped private-use character(s) remain (U+F8EB×1, U+F8ED×1, U+F8F1×5, U+F8F2×5, U+F8F3×5, U+F8F4×50, U+F8F6×1, U+F8F8×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "1012924204-Heim-Theory-Unification-of-Polymetric-Modal-and-Selector-Dynamics-in-Gravitational-and-Quantum-Fields-v01.tiddlers.json",
+    "tiddlers_count": 803,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1998,6 +2066,90 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7095.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:26Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 188.1,
+      "detail": "21 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:27Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 187.6,
+      "detail": "21 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:02Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 209.0,
+      "detail": "21 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:02Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 211.4,
+      "detail": "21 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 241.3,
+      "detail": "21 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:16Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 249.1,
+      "detail": "21 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-03T18:27:08Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 214.7,
+      "detail": "787 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:27:09Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-03T18:27:09Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 15.4,
+      "detail": "803 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1012924204-Heim-Theory-Unification-of-Polymetric-Modal-and-Selector-Dynamics-in-Gravitational-and-Quantum-Fields-v01/1012924204-Heim-Theory-Unification-of-Polymetric-Modal-and-Selector-Dynamics-in-Gravitational-and-Quantum-Fields-v01.lines.json": "sha256:d0361f38c985402972cc22135c7afd14f1bc181ae3461b2828200be8f8d0a30d"
+      },
+      "params_hash": "sha256:66e7bf3c284fa4b54c715477ac79b88ea24bedc371ecb782ee8fc01aa2f1f2a0",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:27:08Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

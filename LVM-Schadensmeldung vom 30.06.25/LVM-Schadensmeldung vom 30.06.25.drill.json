@@ -2,7 +2,8 @@
   "pdf": "LVM-Schadensmeldung vom 30.06.25.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -32,13 +33,33 @@
     "text_layer": true,
     "font_count": 1,
     "first_page_chars": 728,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "VNVJAO+Roboto-Regular"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "VNVJAO+Roboto-Regular",
+      "base_name": "Roboto-Regular",
+      "family": "Roboto",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "2 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -50,6 +71,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 30.8,
       "detail": "pdfinfo: 2 pages, 47811 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:38:12Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.9,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:38:12Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.5,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:39:36Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.8,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:39:36Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.6,
+      "detail": "1 fonts, 0 math"
     }
   ]
 }

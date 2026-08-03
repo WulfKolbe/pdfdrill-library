@@ -2,7 +2,8 @@
   "pdf": "typsttest.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -33,13 +34,48 @@
     "text_layer": true,
     "font_count": 2,
     "first_page_chars": 197,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "KHFNJS+NewCM10-Bold-Identity-H",
+      "TQCUWD+NewCM10-Regular-Identity-H"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "KHFNJS+NewCM10-Bold-Identity-H CID",
+      "base_name": "NewCM10-Bold-Identity-H CID",
+      "family": "NewCM10",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "4 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "TQCUWD+NewCM10-Regular-Identity-H CID",
+      "base_name": "NewCM10-Regular-Identity-H CID",
+      "family": "NewCM10",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -51,6 +87,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 39.3,
       "detail": "pdfinfo: 1 pages, 10787 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:49:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.9,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:13Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.4,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:25Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.9,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:25Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.6,
+      "detail": "2 fonts, 0 math"
     }
   ]
 }

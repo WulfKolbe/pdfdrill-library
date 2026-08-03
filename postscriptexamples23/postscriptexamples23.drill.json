@@ -2,7 +2,8 @@
   "pdf": "postscriptexamples23.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 14,
@@ -33,13 +34,183 @@
     "text_layer": true,
     "font_count": 11,
     "first_page_chars": 2521,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "MTSY",
+      "Times-Roman",
+      "Times-Bold",
+      "Courier",
+      "Times-Italic",
+      "T3",
+      "Helvetica",
+      "Times-Italic",
+      "RMTMI",
+      "Courier",
+      "Times-Bold"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "MTSY",
+      "base_name": "MTSY",
+      "family": "MTSY",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": false,
+      "unicode": false,
+      "object_id": "85 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Roman",
+      "base_name": "Times-Roman",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "58 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Bold",
+      "base_name": "Times-Bold",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "57 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Courier",
+      "base_name": "Courier",
+      "family": "Courier",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "92 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Italic",
+      "base_name": "Times-Italic",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "59 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "T3",
+      "base_name": "T3",
+      "family": "T3",
+      "type": "Type 3",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": false,
+      "unicode": false,
+      "object_id": "67 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "47 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Italic",
+      "base_name": "Times-Italic",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "42 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "RMTMI",
+      "base_name": "RMTMI",
+      "family": "RMTMI",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": false,
+      "unicode": false,
+      "object_id": "43 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Courier",
+      "base_name": "Courier",
+      "family": "Courier",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "40 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Bold",
+      "base_name": "Times-Bold",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "41 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -51,6 +222,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 71.7,
       "detail": "pdfinfo: 14 pages, 163871 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:48:12Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 49.9,
+      "detail": "11 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:12Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 49.6,
+      "detail": "11 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:27Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 52.4,
+      "detail": "11 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:27Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 52.3,
+      "detail": "11 fonts, 0 math"
     }
   ]
 }

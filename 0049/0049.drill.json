@@ -3,18 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_KNOWN",
     "MD_BUILT",
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -91,10 +90,10 @@
       }
     ],
     "bibkey": "0049",
-    "model_path": "0049.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 12,
-      "Footnote": 4,
+      "Footnote": 8,
       "Citation": 26,
       "Abstract": 1,
       "Diagram": 6,
@@ -102,7 +101,7 @@
       "ListItem": 1,
       "Equation": 1,
       "Formula": 27,
-      "Paragraph": 27,
+      "Paragraph": 23,
       "Document": 1
     },
     "model_equations_with_cdn": 1,
@@ -111,8 +110,8 @@
     "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 3,
     "bibliography_cites": 0,
-    "tiddlers_path": "0049.pdf.drill/0049.tiddlers.json",
-    "tiddlers_count": 129,
+    "tiddlers_path": "0049.tiddlers.json",
+    "tiddlers_count": 119,
     "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "markdown",
     "links": [
@@ -161,7 +160,15 @@
         "url": "http://code.google.com/apis/youtube/overview.html",
         "kind": "text"
       }
-    ]
+    ],
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": {
     "title": "article.dvi",
@@ -1115,7 +1122,98 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1702.8,
       "detail": "36 images, 19 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:11Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 25.4,
+      "detail": "12 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:11Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 24.1,
+      "detail": "12 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:45Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 25.9,
+      "detail": "12 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:45Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 26.6,
+      "detail": "12 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:57Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.4,
+      "detail": "12 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:57Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 28.9,
+      "detail": "12 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T18:09:58Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 90.7,
+      "detail": "116 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:09:58Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.2,
+      "detail": "119 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-03T18:11:45Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 106.2,
+      "detail": "116 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:11:46Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.2,
+      "detail": "119 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/0049/0049.lines.json": "sha256:79644882ca334e376079e1f8363de8ab5f26dc5eb29a9bb1b272e29d984e8bbe"
+      },
+      "params_hash": "sha256:bb8b93550a186494d653b24471a9512b6995682559211e8932544005dfb8375e",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:11:45Z",
+      "provenance": "mathpix"
+    }
+  }
 }

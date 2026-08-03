@@ -8,12 +8,12 @@
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 5,
@@ -53,15 +53,16 @@
     "bibkey": "0803.2924",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 5,
-      "Citation": 8,
-      "ListItem": 1,
-      "Paragraph": 5,
-      "Document": 1,
-      "Equation": 23
+      "Paragraph": 17,
+      "Abstract": 1,
+      "Formula": 44,
+      "Equation": 23,
+      "Theorem": 7,
+      "Proof": 5,
+      "Citation": 3
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -82,7 +83,7 @@
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 0,
     "tiddlers_path": "0803.2924.tiddlers.json",
-    "tiddlers_count": 58,
+    "tiddlers_count": 122,
     "tiddlers_svg_mode": "inline",
     "abstract": "Eigenfunctions of the Laplace-Beltrami operator on a hyperboloid are studied in the spirit of the treatment of the spherical harmonics by Stein and Weiss. As a special case, a simple self-contained proof of Laplace&#39;s integral for a Legendre function is obtained.",
     "abstract_method": "arxiv-abs-page",
@@ -98,7 +99,42 @@
         "page": 1,
         "url": "http://arxiv.org/abs/0803.2924v1"
       }
-    ]
+    ],
+    "fonts": [
+      "SJIPAK+CMMI8",
+      "TDUVRI+CMR10",
+      "Times-Roman",
+      "UCMCIC+CMCSC10",
+      "WARXEO+CMTI9",
+      "NHRIVY+CMSY10",
+      "PKXBCI+CMR9",
+      "XSJKBT+CMR8",
+      "NIXHWR+CMMI10",
+      "SSHRHV+CMBX10",
+      "PYHNJS+CMSY8",
+      "ISLSSR+CMEX10",
+      "CKGDDG+CMMI6",
+      "VKHDRR+MSAM10",
+      "AAHWXY+CMTI10",
+      "VPZZYH+CMR6"
+    ],
+    "math_fonts": [
+      "SJIPAK+CMMI8",
+      "NHRIVY+CMSY10",
+      "NIXHWR+CMMI10",
+      "PYHNJS+CMSY8",
+      "ISLSSR+CMEX10",
+      "CKGDDG+CMMI6",
+      "VKHDRR+MSAM10"
+    ],
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 5,
+      "placed": 5,
+      "regions": 5,
+      "sections": 0,
+      "children": 0
+    }
   },
   "pdfinfo": {
     "title": "",
@@ -944,18 +980,80 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1049.0,
       "detail": "18 images, 9 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 23.0,
+      "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:17Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 23.0,
+      "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:51Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 23.4,
+      "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:51Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 26.1,
+      "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.2,
+      "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:03Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 27.9,
+      "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T18:15:01Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "100 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T18:15:01Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.7,
+      "detail": "122 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/0803.2924/0803.2924.lines.json": "sha256:ccd000ce311c6b4aedad10b314600731c93348c7fff5aec9071924270c4546f6"
-      },
+      "inputs": {},
       "params_hash": "sha256:b7ae2ad3cf43594c31223600888f9db4abb5136b415369fc89ec531fa9eeefb4",
       "algo": "sha256",
-      "ts": "2026-07-30T14:08:45Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T18:15:01Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

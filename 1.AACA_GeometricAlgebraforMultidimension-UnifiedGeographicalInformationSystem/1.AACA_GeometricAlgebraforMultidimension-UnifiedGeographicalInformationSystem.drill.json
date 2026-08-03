@@ -4,12 +4,15 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 23,
@@ -126,7 +129,77 @@
         "page": 23,
         "url": "https://www.researchgate.net/publication/257315026"
       }
-    ]
+    ],
+    "fonts": [
+      "SourceSansPro-Regular",
+      "Martel-Regular",
+      "SourceSansPro-Semibold",
+      "SourceSansPro-It",
+      "CMR8",
+      "Times-Roman",
+      "CMTI8",
+      "CNLKDE+CMB10",
+      "CNLKDF+CMR12",
+      "CNLKDG+CMR9",
+      "CNLKDH+CMR10",
+      "CNLKDI+CMR8",
+      "CMSSBX10",
+      "CNLKHI+CMR10",
+      "CNLKIJ+CMR10",
+      "CNLKPH+CMMI10",
+      "CNLKPI+CMMI7",
+      "CNLKPJ+CMSY7",
+      "CNLKPK+CMSY10",
+      "CNLKPL+CMR7",
+      "CNLLCL+CMCSC10",
+      "CNLLEL+TimesNewRomanPSMT",
+      "CNLLMJ+TimesNewRomanPS-BoldMT",
+      "CNLLNK+SymbolMT",
+      "STXingkai-GBK-EUC-H-Identity-H",
+      "SimSun-GBK-EUC-H-Identity-H",
+      "CNMKLC+TimesNewRomanPS-ItalicMT",
+      "SimSun-GBK-EUC-H-Identity-H",
+      "CNNLFN+TimesNewRomanPS-BoldItalicMT",
+      "CNNLFO+EuclidSymbol",
+      "CNNLFP+TimesNewRomanPSMT",
+      "CNNLHA+EuclidSymbol-Italic",
+      "CNNLPO+MT-Extra",
+      "CNNLPP+EuclidMathTwo",
+      "CNNOAD+CMTI9",
+      "CNNOHC+CMTT9",
+      "Helvetica"
+    ],
+    "math_fonts": [
+      "CNLKPH+CMMI10",
+      "CNLKPI+CMMI7",
+      "CNLKPJ+CMSY7",
+      "CNLKPK+CMSY10",
+      "CNLLNK+SymbolMT",
+      "CNNLFO+EuclidSymbol",
+      "CNNLHA+EuclidSymbol-Italic",
+      "CNNLPP+EuclidMathTwo"
+    ],
+    "has_math_fonts": true,
+    "bibkey": "1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 23,
+      "ListItem": 24,
+      "Paragraph": 23,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem.tiddlers.json",
+    "tiddlers_count": 87,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1240,6 +1313,82 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7828.4,
       "detail": "24 images, 24 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:22Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 42.7,
+      "detail": "37 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:22Z",
+      "node": "fonts_layer",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 42.5,
+      "detail": "37 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:56Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 48.0,
+      "detail": "37 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:57Z",
+      "node": "fonts_layer",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 46.9,
+      "detail": "37 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:10Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 57.2,
+      "detail": "37 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:10Z",
+      "node": "fonts_layer",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 58.0,
+      "detail": "37 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T18:20:20Z",
+      "node": "model",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 92.7,
+      "detail": "71 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:20:20Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.7,
+      "detail": "87 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem/1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem.lines.json": "sha256:09c60b46df5f6f7e1d20deb94fe2cb9d52920aee541cda7f366826ff8ffc7255"
+      },
+      "params_hash": "sha256:f2a9fd9acc1c661e84d41c07e156994b4c5ea0bf014391ae05a922cf83e51db8",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:20:20Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

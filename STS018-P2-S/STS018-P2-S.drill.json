@@ -3,12 +3,12 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_KNOWN",
     "MD_BUILT",
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -104,7 +104,120 @@
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "Times New Roman,Bold",
+      "base_name": "Times New Roman,Bold",
+      "family": "Times New Roman,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "5 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Times New Roman",
+      "base_name": "Times New Roman",
+      "family": "Times New Roman",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "7 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times New Roman CID",
+      "base_name": "Times New Roman CID",
+      "family": "Times New Roman CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Symbol CID",
+      "base_name": "Symbol CID",
+      "family": "Symbol CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "29 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Cambria Math CID",
+      "base_name": "Cambria Math CID",
+      "family": "Cambria Math CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "34 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times New Roman,Italic",
+      "base_name": "Times New Roman,Italic",
+      "family": "Times New Roman,Italic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "43 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "Times New Roman,Bold CID",
+      "base_name": "Times New Roman,Bold CID",
+      "family": "Times New Roman,Bold CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "45 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Arial",
+      "base_name": "Arial",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "56 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "pix2tex_results": null,
   "tsv_layer": null,
@@ -174,6 +287,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "92 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-03T14:42:14Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 29.7,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:42:14Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 29.5,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:35Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 35.1,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:35Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 32.5,
+      "detail": "8 fonts, 1 math"
     }
   ],
   "capabilities": {}

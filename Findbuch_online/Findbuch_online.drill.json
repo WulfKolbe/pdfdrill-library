@@ -2,7 +2,8 @@
   "pdf": "Findbuch_online.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 83,
@@ -36,13 +37,78 @@
     "text_layer": true,
     "font_count": 4,
     "first_page_chars": 969,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "MXXPGP+TrebuchetMS",
+      "Times-Roman",
+      "RCISND+TrebuchetMS,Bold",
+      "Helvetica"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "MXXPGP+TrebuchetMS",
+      "base_name": "TrebuchetMS",
+      "family": "TrebuchetMS",
+      "type": "TrueType",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Roman",
+      "base_name": "Times-Roman",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "RCISND+TrebuchetMS,Bold",
+      "base_name": "TrebuchetMS,Bold",
+      "family": "TrebuchetMS,Bold",
+      "type": "TrueType",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "18 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +120,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 61.6,
       "detail": "pdfinfo: 83 pages, 196173 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:23:35Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 29.3,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:23:35Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 29.8,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:35:14Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 32.6,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:35:14Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 33.7,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:36:31Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 35.3,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:36:31Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 34.3,
+      "detail": "4 fonts, 0 math"
     }
   ]
 }

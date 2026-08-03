@@ -2,7 +2,8 @@
   "pdf": "numinf_3_linear_ausgleich.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 22,
@@ -35,13 +36,157 @@
     "text_layer": true,
     "font_count": 9,
     "first_page_chars": 28,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "AUQQNY+LCMSS8",
+      "RPSZPS+LCMSSB8",
+      "MGBBWQ+CMSY8",
+      "EYIBPG+CMMI8",
+      "QTBUVJ+CMEX10",
+      "HESGQG+CMTT8",
+      "KWDXUM+CMBX12",
+      "QCBAPE+LCMSSI8",
+      "Helvetica"
+    ],
+    "math_fonts": [
+      "MGBBWQ+CMSY8",
+      "EYIBPG+CMMI8",
+      "QTBUVJ+CMEX10"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "AUQQNY+LCMSS8",
+      "base_name": "LCMSS8",
+      "family": "LCMSS8",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "RPSZPS+LCMSSB8",
+      "base_name": "LCMSSB8",
+      "family": "LCMSSB8",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "MGBBWQ+CMSY8",
+      "base_name": "CMSY8",
+      "family": "CMSY8",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "19 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "EYIBPG+CMMI8",
+      "base_name": "CMMI8",
+      "family": "CMMI8",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "17 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "QTBUVJ+CMEX10",
+      "base_name": "CMEX10",
+      "family": "CMEX10",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "26 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "HESGQG+CMTT8",
+      "base_name": "CMTT8",
+      "family": "CMTT8",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "44 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "KWDXUM+CMBX12",
+      "base_name": "CMBX12",
+      "family": "CMBX12",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "57 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "QCBAPE+LCMSSI8",
+      "base_name": "LCMSSI8",
+      "family": "LCMSSI8",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "64 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "126 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -53,6 +198,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 58.0,
       "detail": "pdfinfo: 22 pages, 88236 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:48:05Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 37.2,
+      "detail": "9 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:05Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 37.0,
+      "detail": "9 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:20Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 39.9,
+      "detail": "9 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:20Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 38.6,
+      "detail": "9 fonts, 3 math"
     }
   ]
 }

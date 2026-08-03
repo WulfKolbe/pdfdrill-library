@@ -2,7 +2,8 @@
   "pdf": "Qwen_postscript_20260228_9m965qm4z.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -35,13 +36,16 @@
     "text_layer": false,
     "font_count": 0,
     "first_page_chars": 0,
-    "needs_ocr": true
+    "needs_ocr": true,
+    "fonts": [],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -53,6 +57,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 45.3,
       "detail": "pdfinfo: 1 pages, 2424 bytes, text_layer=False"
+    },
+    {
+      "ts": "2026-08-03T14:41:56Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.4,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:56Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 10.9,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.4,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:16Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.0,
+      "detail": "0 fonts, 0 math"
     }
   ]
 }

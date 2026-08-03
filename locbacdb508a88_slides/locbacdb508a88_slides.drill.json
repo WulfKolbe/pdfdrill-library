@@ -2,7 +2,8 @@
   "pdf": "locbacdb508a88_slides.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -34,13 +35,33 @@
     "text_layer": true,
     "font_count": 1,
     "first_page_chars": 28,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "DVRMXT+GlyphLessFont"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "DVRMXT+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +73,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 43.6,
       "detail": "pdfinfo: 2 pages, 291988 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:47:48Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.0,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:48Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.6,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:02Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.5,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:02Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.8,
+      "detail": "1 fonts, 0 math"
     }
   ]
 }

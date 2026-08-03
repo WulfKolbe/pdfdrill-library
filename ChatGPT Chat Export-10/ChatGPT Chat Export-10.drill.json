@@ -2,7 +2,8 @@
   "pdf": "ChatGPT Chat Export-10.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -38,13 +39,48 @@
     "text_layer": true,
     "font_count": 2,
     "first_page_chars": 674,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "TQSFIO+DejaVuSerif-Bold",
+      "QDKNWL+DejaVuSerif"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "TQSFIO+DejaVuSerif-Bold CID",
+      "base_name": "DejaVuSerif-Bold CID",
+      "family": "DejaVuSerif",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "9 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "QDKNWL+DejaVuSerif CID",
+      "base_name": "DejaVuSerif CID",
+      "family": "DejaVuSerif CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -56,6 +92,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 39.1,
       "detail": "pdfinfo: 1 pages, 37288 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:21:15Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.8,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:21:15Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.0,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:32:34Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.4,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:32:34Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.3,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.0,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:34:00Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.0,
+      "detail": "2 fonts, 0 math"
     }
   ]
 }

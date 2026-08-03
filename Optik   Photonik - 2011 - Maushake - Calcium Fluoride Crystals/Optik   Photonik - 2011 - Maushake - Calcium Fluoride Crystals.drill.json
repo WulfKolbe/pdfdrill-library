@@ -2,7 +2,8 @@
   "pdf": "Optik   Photonik - 2011 - Maushake - Calcium Fluoride Crystals.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -36,13 +37,78 @@
     "text_layer": true,
     "font_count": 4,
     "first_page_chars": 4170,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "ZapfDingbatsITC-Identity-H",
+      "EODOFN+StoneSans-Semibold",
+      "EODOFO+StoneSans",
+      "Times-Roman"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "ZapfDingbatsITC-Identity-H CID",
+      "base_name": "ZapfDingbatsITC-Identity-H CID",
+      "family": "ZapfDingbatsITC",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": false,
+      "object_id": "31 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "EODOFN+StoneSans-Semibold",
+      "base_name": "StoneSans-Semibold",
+      "family": "StoneSans",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "12 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "EODOFO+StoneSans",
+      "base_name": "StoneSans",
+      "family": "StoneSans",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "13 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Roman",
+      "base_name": "Times-Roman",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "2 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +120,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 50.5,
       "detail": "pdfinfo: 2 pages, 56942 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:40:29Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 24.6,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:40:29Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 25.1,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:48Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 23.0,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:48Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 22.5,
+      "detail": "4 fonts, 0 math"
     }
   ]
 }

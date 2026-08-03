@@ -2,7 +2,8 @@
   "pdf": "JV2080perf.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -32,13 +33,95 @@
     "text_layer": true,
     "font_count": 5,
     "first_page_chars": 1311,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "ALLDEA+MSTT31c79e00",
+      "Symbol",
+      "ALLDEA+MSTT31c7c600",
+      "Helvetica",
+      "Helvetica-Bold"
+    ],
+    "math_fonts": [
+      "Symbol"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "ALLDEA+MSTT31c79e00",
+      "base_name": "MSTT31c79e00",
+      "family": "MSTT31c79e00",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "4 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Symbol",
+      "base_name": "Symbol",
+      "family": "Symbol",
+      "type": "Type 1",
+      "encoding": "Symbol",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "5 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ALLDEA+MSTT31c7c600",
+      "base_name": "MSTT31c7c600",
+      "family": "MSTT31c7c600",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "6 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "7 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Helvetica-Bold",
+      "base_name": "Helvetica-Bold",
+      "family": "Helvetica",
+      "type": "Type 1",
+      "encoding": "Custom",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -50,6 +133,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 53.3,
       "detail": "pdfinfo: 1 pages, 11949 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:26:09Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 23.0,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:10Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 21.6,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:38:02Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 24.6,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:38:02Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 24.5,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:39:24Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 27.5,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:39:24Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 28.8,
+      "detail": "5 fonts, 0 math"
     }
   ]
 }

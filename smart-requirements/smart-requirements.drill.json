@@ -2,7 +2,8 @@
   "pdf": "smart-requirements.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -32,13 +33,123 @@
     "text_layer": true,
     "font_count": 7,
     "first_page_chars": 3552,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "Arial,Bold",
+      "Arial,BoldItalic",
+      "TimesNewRoman",
+      "TimesNewRoman,Bold",
+      "CourierNew,Bold",
+      "CourierNew",
+      "Arial"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "Arial,Bold",
+      "base_name": "Arial,Bold",
+      "family": "Arial,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "274 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Arial,BoldItalic",
+      "base_name": "Arial,BoldItalic",
+      "family": "Arial,BoldItalic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "281 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "TimesNewRoman",
+      "base_name": "TimesNewRoman",
+      "family": "TimesNewRoman",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "275 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRoman,Bold",
+      "base_name": "TimesNewRoman,Bold",
+      "family": "TimesNewRoman,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "276 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "CourierNew,Bold",
+      "base_name": "CourierNew,Bold",
+      "family": "CourierNew,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "250 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "CourierNew",
+      "base_name": "CourierNew",
+      "family": "CourierNew",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "251 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Arial",
+      "base_name": "Arial",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "252 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -50,6 +161,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 65.3,
       "detail": "pdfinfo: 6 pages, 491175 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:48:56Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 38.0,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:56Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 39.3,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:10Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 34.5,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:10Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 35.0,
+      "detail": "7 fonts, 0 math"
     }
   ]
 }

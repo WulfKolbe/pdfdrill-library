@@ -4,12 +4,15 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 14,
@@ -69,7 +72,34 @@
         "page": 1,
         "url": "http://arxiv.org/abs/math-ph/0403019v1"
       }
-    ]
+    ],
+    "bibkey": "0403019 (1)",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 14,
+      "Citation": 2,
+      "ListItem": 6,
+      "Equation": 9,
+      "Paragraph": 23,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 16,
+    "bibliography_with_year": 11,
+    "bibliography_numeric_citations": 16,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 16,
+    "tiddlers_path": "0403019 (1).tiddlers.json",
+    "tiddlers_count": 87,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:math-ph/0403019v1  12 Mar 2004",
@@ -652,6 +682,90 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1754.6,
       "detail": "20 images, 10 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 26.2,
+      "detail": "11 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:13Z",
+      "node": "fonts_layer",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 26.9,
+      "detail": "11 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.3,
+      "detail": "11 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:47Z",
+      "node": "fonts_layer",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 28.8,
+      "detail": "11 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 29.4,
+      "detail": "11 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts_layer",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 28.5,
+      "detail": "11 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T18:12:49Z",
+      "node": "model",
+      "from": "DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 31.2,
+      "detail": "55 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:12:49Z",
+      "node": "bibliography",
+      "from": "DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "16 entries, 16+0 cites detected, 16 linked"
+    },
+    {
+      "ts": "2026-08-03T18:12:49Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.4,
+      "detail": "87 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/0403019 (1)/0403019 (1).lines.json": "sha256:9f2b507a4297544282ee0dba2430daba8ae0b6aac121c649dfe1d0902bce7678"
+      },
+      "params_hash": "sha256:56ce4cc6e26bcb335e9f36b51683f1d88c20ef67aca7a28e47f3cfe144ff6c3e",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:12:49Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

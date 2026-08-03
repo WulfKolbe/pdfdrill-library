@@ -2,7 +2,8 @@
   "pdf": "Manfred Spitzer. Lernen.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 61,
@@ -36,13 +37,153 @@
     "text_layer": true,
     "font_count": 9,
     "first_page_chars": 1825,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "GECLKB+PalatinoLinotype-Roman",
+      "GECMCA+Wingdings-Regular",
+      "TimesNewRoman,Bold",
+      "GECLMB+PalatinoLinotype-Roman",
+      "TimesNewRoman",
+      "BookmanOldStyle",
+      "TimesNewRoman,Italic",
+      "TimesNewRoman,BoldItalic",
+      "TimesNewRoman,Italic"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "GECLKB+PalatinoLinotype-Roman CID",
+      "base_name": "PalatinoLinotype-Roman CID",
+      "family": "PalatinoLinotype",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "278 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "GECMCA+Wingdings-Regular CID",
+      "base_name": "Wingdings-Regular CID",
+      "family": "Wingdings",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "271 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRoman,Bold",
+      "base_name": "TimesNewRoman,Bold",
+      "family": "TimesNewRoman,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "276 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "GECLMB+PalatinoLinotype-Roman",
+      "base_name": "PalatinoLinotype-Roman",
+      "family": "PalatinoLinotype",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "279 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRoman",
+      "base_name": "TimesNewRoman",
+      "family": "TimesNewRoman",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "199 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "BookmanOldStyle",
+      "base_name": "BookmanOldStyle",
+      "family": "BookmanOldStyle",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "201 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRoman,Italic",
+      "base_name": "TimesNewRoman,Italic",
+      "family": "TimesNewRoman,Italic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "202 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "TimesNewRoman,BoldItalic",
+      "base_name": "TimesNewRoman,BoldItalic",
+      "family": "TimesNewRoman,BoldItalic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "203 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "TimesNewRoman,Italic",
+      "base_name": "TimesNewRoman,Italic",
+      "family": "TimesNewRoman,Italic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "80 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +195,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 59.4,
       "detail": "pdfinfo: 61 pages, 698614 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:38:42Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 41.9,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:38:42Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 42.6,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:40:08Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 44.8,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:40:08Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 45.4,
+      "detail": "9 fonts, 0 math"
     }
   ]
 }

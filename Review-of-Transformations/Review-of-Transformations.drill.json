@@ -2,7 +2,8 @@
   "pdf": "Review-of-Transformations.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -35,13 +36,185 @@
     "text_layer": true,
     "font_count": 11,
     "first_page_chars": 2158,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "Times",
+      "Times",
+      "Times",
+      "Times",
+      "Times",
+      "Times",
+      "Times",
+      "ABCDEE+Wingdings",
+      "Arial",
+      "ABCDEE+Calibri",
+      "Symbol"
+    ],
+    "math_fonts": [
+      "Symbol"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "Times New Roman",
+      "base_name": "Times New Roman",
+      "family": "Times New Roman",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "5 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times New Roman CID",
+      "base_name": "Times New Roman CID",
+      "family": "Times New Roman CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "7 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times New Roman,Bold",
+      "base_name": "Times New Roman,Bold",
+      "family": "Times New Roman,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "12 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Times New Roman,BoldItalic",
+      "base_name": "Times New Roman,BoldItalic",
+      "family": "Times New Roman,BoldItalic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "14 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "Times New Roman,Italic CID",
+      "base_name": "Times New Roman,Italic CID",
+      "family": "Times New Roman,Italic CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "16 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "Times New Roman,Italic",
+      "base_name": "Times New Roman,Italic",
+      "family": "Times New Roman,Italic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "21 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "Times New Roman,BoldItalic CID",
+      "base_name": "Times New Roman,BoldItalic CID",
+      "family": "Times New Roman,BoldItalic CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "23 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "ABCDEE+Wingdings CID",
+      "base_name": "Wingdings CID",
+      "family": "Wingdings CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "38 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Arial",
+      "base_name": "Arial",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "44 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ABCDEE+Calibri",
+      "base_name": "Calibri",
+      "family": "Calibri",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "51 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Symbol CID",
+      "base_name": "Symbol CID",
+      "family": "Symbol CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "31 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -53,6 +226,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 59.8,
       "detail": "pdfinfo: 1 pages, 288654 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:42:05Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 29.5,
+      "detail": "11 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:42:06Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 30.2,
+      "detail": "11 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:26Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 34.5,
+      "detail": "11 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:26Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 35.6,
+      "detail": "11 fonts, 0 math"
     }
   ]
 }

@@ -8,13 +8,12 @@
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 11,
@@ -51,15 +50,15 @@
     "bibkey": "0707.2676",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 11,
-      "Citation": 1,
-      "ListItem": 3,
-      "Paragraph": 11,
-      "Document": 1,
-      "Equation": 1
+      "LtxCommand": 3,
+      "Paragraph": 17,
+      "Abstract": 1,
+      "Formula": 61,
+      "Equation": 1,
+      "Citation": 18
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -80,7 +79,7 @@
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 17,
     "tiddlers_path": "0707.2676.tiddlers.json",
-    "tiddlers_count": 64,
+    "tiddlers_count": 127,
     "tiddlers_svg_mode": "inline",
     "fonts": [
       "TISHWK+CMTI12",
@@ -122,7 +121,14 @@
         "page": 1,
         "url": "http://arxiv.org/abs/0707.2676v1"
       }
-    ]
+    ],
+    "merged_geometry": {
+      "pages": 11,
+      "placed": 5,
+      "regions": 5,
+      "sections": 0,
+      "children": 0
+    }
   },
   "pdfinfo": {
     "title": "arXiv:0707.2676v1  [gr-qc]  18 Jul 2007",
@@ -3588,18 +3594,80 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1660.1,
       "detail": "188 images, 94 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 29.9,
+      "detail": "15 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:16Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 26.6,
+      "detail": "15 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:51Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.7,
+      "detail": "15 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:51Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 27.8,
+      "detail": "15 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 31.3,
+      "detail": "15 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:03Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 31.5,
+      "detail": "15 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T18:14:46Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "101 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T18:14:46Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.9,
+      "detail": "127 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/0707.2676/0707.2676.lines.json": "sha256:933c402adacc06859f6e8960067ba2fbd17a4cd2f9ad9ae97a63fbc9fe33e8c8"
-      },
+      "inputs": {},
       "params_hash": "sha256:177f97a9dab1b4f5749b08129f451e64c139cf9bea2d7a6cecdb9b17bc40d50c",
       "algo": "sha256",
-      "ts": "2026-07-30T14:08:25Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T18:14:46Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

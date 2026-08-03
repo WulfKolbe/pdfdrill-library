@@ -2,7 +2,8 @@
   "pdf": "Oral Sadism and the Vegetarian Personality_trial.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 24,
@@ -35,13 +36,63 @@
     "text_layer": true,
     "font_count": 3,
     "first_page_chars": 740,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "AAAAAA+LiberationSerif",
+      "AAAAAB+LiberationSerif-Bold",
+      "AAAAAC+LiberationSerif-Italic"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "AAAAAA+LiberationSerif CID",
+      "base_name": "LiberationSerif CID",
+      "family": "LiberationSerif CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "AAAAAB+LiberationSerif-Bold CID",
+      "base_name": "LiberationSerif-Bold CID",
+      "family": "LiberationSerif",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "17 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "AAAAAC+LiberationSerif-Italic CID",
+      "base_name": "LiberationSerif-Italic CID",
+      "family": "LiberationSerif",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "52 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -53,6 +104,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 41.9,
       "detail": "pdfinfo: 24 pages, 140785 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:40:29Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 17.7,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:40:29Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 16.5,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:48Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.5,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:48Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 15.4,
+      "detail": "3 fonts, 0 math"
     }
   ]
 }

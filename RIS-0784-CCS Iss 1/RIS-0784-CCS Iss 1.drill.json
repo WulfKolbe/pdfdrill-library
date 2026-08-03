@@ -2,7 +2,8 @@
   "pdf": "RIS-0784-CCS Iss 1.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 27,
@@ -35,13 +36,78 @@
     "text_layer": true,
     "font_count": 4,
     "first_page_chars": 1213,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "EBKALD+FSAlbert-Bold",
+      "EBKALD+FSAlbert",
+      "Arial",
+      "EBKALD+FSAlbert-Italic"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "EBKALD+FSAlbert-Bold CID",
+      "base_name": "FSAlbert-Bold CID",
+      "family": "FSAlbert",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "281 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "EBKALD+FSAlbert CID",
+      "base_name": "FSAlbert CID",
+      "family": "FSAlbert CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "284 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Arial",
+      "base_name": "Arial",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": false,
+      "unicode": false,
+      "object_id": "326 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "EBKALD+FSAlbert-Italic CID",
+      "base_name": "FSAlbert-Italic CID",
+      "family": "FSAlbert",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "145 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -53,6 +119,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 52.2,
       "detail": "pdfinfo: 27 pages, 845613 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:41:57Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 18.9,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:57Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 19.3,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:17Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 19.2,
+      "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:17Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 20.5,
+      "detail": "4 fonts, 0 math"
     }
   ]
 }

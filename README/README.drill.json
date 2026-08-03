@@ -2,7 +2,8 @@
   "pdf": "README.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 34,
@@ -34,13 +35,138 @@
     "text_layer": true,
     "font_count": 8,
     "first_page_chars": 918,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "SegoeUI-Semibold",
+      "SegoeUI-Italic",
+      "SegoeUI-SemiboldItalic",
+      "SegoeUI",
+      "SegoeUI-Bold",
+      "Consolas",
+      "NotoColorEmoji",
+      "NotoColorEmoji"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "SegoeUI-Semibold CID",
+      "base_name": "SegoeUI-Semibold CID",
+      "family": "SegoeUI",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "4 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "SegoeUI-Italic CID",
+      "base_name": "SegoeUI-Italic CID",
+      "family": "SegoeUI",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "5 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "SegoeUI-SemiboldItalic CID",
+      "base_name": "SegoeUI-SemiboldItalic CID",
+      "family": "SegoeUI",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "6 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "SegoeUI CID",
+      "base_name": "SegoeUI CID",
+      "family": "SegoeUI CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "7 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "SegoeUI-Bold CID",
+      "base_name": "SegoeUI-Bold CID",
+      "family": "SegoeUI",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "Consolas CID",
+      "base_name": "Consolas CID",
+      "family": "Consolas CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "85 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "NotoColorEmoji",
+      "base_name": "NotoColorEmoji",
+      "family": "NotoColorEmoji",
+      "type": "Type 3",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "109 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "NotoColorEmoji",
+      "base_name": "NotoColorEmoji",
+      "family": "NotoColorEmoji",
+      "type": "Type 3",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": false,
+      "unicode": true,
+      "object_id": "202 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +178,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 54.8,
       "detail": "pdfinfo: 34 pages, 299982 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:41:57Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 26.7,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:41:57Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 26.6,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:17Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 25.4,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:43:17Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 24.1,
+      "detail": "8 fonts, 0 math"
     }
   ]
 }

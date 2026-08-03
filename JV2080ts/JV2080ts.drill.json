@@ -2,7 +2,8 @@
   "pdf": "JV2080ts.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -36,13 +37,93 @@
     "text_layer": true,
     "font_count": 5,
     "first_page_chars": 2662,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "RbioformPlain",
+      "FranklinGothic-Roman",
+      "FDJBDA+ArialMT",
+      "FDJBIG+Arial-BoldItalicMT",
+      "FDJBJI+Arial-ItalicMT"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "RbioformPlain",
+      "base_name": "RbioformPlain",
+      "family": "RbioformPlain",
+      "type": "Type 1C",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": false,
+      "unicode": false,
+      "object_id": "16 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FranklinGothic-Roman",
+      "base_name": "FranklinGothic-Roman",
+      "family": "FranklinGothic",
+      "type": "Type 1C",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": false,
+      "unicode": false,
+      "object_id": "14 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FDJBDA+ArialMT",
+      "base_name": "ArialMT",
+      "family": "ArialMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "13 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FDJBIG+Arial-BoldItalicMT",
+      "base_name": "Arial-BoldItalicMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "25 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": true
+    },
+    {
+      "name": "FDJBJI+Arial-ItalicMT",
+      "base_name": "Arial-ItalicMT",
+      "family": "Arial",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "21 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +135,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 40.8,
       "detail": "pdfinfo: 2 pages, 80021 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:26:10Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.5,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:10Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.0,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:38:02Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 10.8,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:38:02Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.4,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:39:24Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.3,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:39:24Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.3,
+      "detail": "5 fonts, 0 math"
     }
   ]
 }

@@ -2,7 +2,8 @@
   "pdf": "ggb_3_2022_054_057_PBGuitarsOrion_low.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 4,
@@ -40,13 +41,93 @@
     "text_layer": true,
     "font_count": 5,
     "first_page_chars": 1398,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "FKFMJD+ClearfaceStd-Regular",
+      "FKFMJE+FrutigerLTStd-Cn",
+      "FKFLBD+FrutigerLTStd-LightCn",
+      "FKFLBC+FrutigerLTStd-BoldCn",
+      "FKGGBH+ZapfDingbatsITC"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "FKFMJD+ClearfaceStd-Regular",
+      "base_name": "ClearfaceStd-Regular",
+      "family": "ClearfaceStd",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "269 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FKFMJE+FrutigerLTStd-Cn",
+      "base_name": "FrutigerLTStd-Cn",
+      "family": "FrutigerLTStd",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "270 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FKFLBD+FrutigerLTStd-LightCn",
+      "base_name": "FrutigerLTStd-LightCn",
+      "family": "FrutigerLTStd",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "271 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FKFLBC+FrutigerLTStd-BoldCn",
+      "base_name": "FrutigerLTStd-BoldCn",
+      "family": "FrutigerLTStd",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "22 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "FKGGBH+ZapfDingbatsITC",
+      "base_name": "ZapfDingbatsITC",
+      "family": "ZapfDingbatsITC",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "25 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -58,6 +139,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 54.8,
       "detail": "pdfinfo: 4 pages, 1014468 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:47:24Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.7,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:24Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.4,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:37Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.5,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:37Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.6,
+      "detail": "5 fonts, 0 math"
     }
   ]
 }

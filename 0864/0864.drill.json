@@ -3,19 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_KNOWN",
     "MD_BUILT",
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 5,
@@ -159,10 +158,10 @@
       }
     ],
     "bibkey": "0864",
-    "model_path": "0864.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 5,
-      "Footnote": 1,
+      "Footnote": 3,
       "Citation": 28,
       "Table": 1,
       "TableRow": 4,
@@ -175,7 +174,7 @@
       "ListItem": 12,
       "Equation": 5,
       "Formula": 138,
-      "Paragraph": 32,
+      "Paragraph": 30,
       "Document": 1
     },
     "model_equations_with_cdn": 5,
@@ -184,8 +183,8 @@
     "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 0,
-    "tiddlers_path": "0864.pdf.drill/0864.tiddlers.json",
-    "tiddlers_count": 288,
+    "tiddlers_path": "0864.tiddlers.json",
+    "tiddlers_count": 267,
     "tiddlers_svg_mode": "inline",
     "toc": [
       {
@@ -496,7 +495,15 @@
         "url": "https://github.com/pmandros/fodiscovery",
         "kind": "text"
       }
-    ]
+    ],
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": {
     "title": "Discovering Reliable Dependencies from Data: Hardness and Improved Algorithms",
@@ -1496,7 +1503,82 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2034.7,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:17Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 21.5,
+      "detail": "59 fonts, 25 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:17Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 20.0,
+      "detail": "59 fonts, 25 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:52Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 21.9,
+      "detail": "59 fonts, 25 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:52Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 21.8,
+      "detail": "59 fonts, 25 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:05Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 24.0,
+      "detail": "59 fonts, 25 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:05Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 24.9,
+      "detail": "59 fonts, 25 math"
+    },
+    {
+      "ts": "2026-08-03T18:15:49Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 147.5,
+      "detail": "262 objects, 5 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:15:49Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.4,
+      "detail": "267 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/0864/0864.lines.json": "sha256:74536c9cdfa1bc933cdb35595edc236c5460c65ccf61951d9f86957287447db6"
+      },
+      "params_hash": "sha256:5f2475564d99d4009e9a5945d0fb2074e065f2ace4ba3b9b2342d1ad949a97c8",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:15:49Z",
+      "provenance": "mathpix"
+    }
+  }
 }

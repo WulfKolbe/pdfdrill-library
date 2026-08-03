@@ -2,7 +2,8 @@
   "pdf": "loca53200d078e_slides.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -34,13 +35,93 @@
     "text_layer": true,
     "font_count": 5,
     "first_page_chars": 105,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "GAFHBR+GlyphLessFont",
+      "KNXGDN+GlyphLessFont",
+      "EYOJGF+GlyphLessFont",
+      "MDZJVL+GlyphLessFont",
+      "RSBUMD+GlyphLessFont"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "GAFHBR+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "KNXGDN+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "25 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "EYOJGF+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "35 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "MDZJVL+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "45 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "RSBUMD+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "55 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +133,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 48.8,
       "detail": "pdfinfo: 6 pages, 330641 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:47:48Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 17.4,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:48Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 18.3,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:01Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 20.6,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:01Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 21.9,
+      "detail": "5 fonts, 0 math"
     }
   ]
 }

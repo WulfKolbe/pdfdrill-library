@@ -2,7 +2,8 @@
   "pdf": "d41586-024-00327-x.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -34,13 +35,153 @@
     "text_layer": true,
     "font_count": 9,
     "first_page_chars": 650,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "NHIJPS+HardingText-Regular",
+      "XJGRZY+GraphikXCond-Bold",
+      "XJGRZY+HardingText-RegularItalic",
+      "XJGRZY+GraphikNaturel-Semibold",
+      "XJGRZY+Harding-Medium",
+      "XJGRZY+GraphikNaturel-Bold",
+      "XJGRZY+GraphikNaturel-Regular",
+      "XJGRZY+Harding-Extrabold",
+      "XJGRZY+GraphikNaturel-RegularItalic"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "NHIJPS+HardingText-Regular",
+      "base_name": "HardingText-Regular",
+      "family": "HardingText",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "53 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "XJGRZY+GraphikXCond-Bold",
+      "base_name": "GraphikXCond-Bold",
+      "family": "GraphikXCond",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "54 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "XJGRZY+HardingText-RegularItalic",
+      "base_name": "HardingText-RegularItalic",
+      "family": "HardingText",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "62 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "XJGRZY+GraphikNaturel-Semibold",
+      "base_name": "GraphikNaturel-Semibold",
+      "family": "GraphikNaturel",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "65 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "XJGRZY+Harding-Medium",
+      "base_name": "Harding-Medium",
+      "family": "Harding",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "70 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "XJGRZY+GraphikNaturel-Bold",
+      "base_name": "GraphikNaturel-Bold",
+      "family": "GraphikNaturel",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "77 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "XJGRZY+GraphikNaturel-Regular",
+      "base_name": "GraphikNaturel-Regular",
+      "family": "GraphikNaturel",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "78 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "XJGRZY+Harding-Extrabold",
+      "base_name": "Harding-Extrabold",
+      "family": "Harding",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "80 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "XJGRZY+GraphikNaturel-RegularItalic",
+      "base_name": "GraphikNaturel-RegularItalic",
+      "family": "GraphikNaturel",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "41 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +193,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 43.0,
       "detail": "pdfinfo: 2 pages, 402859 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:47:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.6,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:03Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.9,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.6,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:16Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.4,
+      "detail": "9 fonts, 0 math"
     }
   ]
 }

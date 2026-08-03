@@ -4,13 +4,15 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 7,
@@ -115,7 +117,46 @@
         "page": 7,
         "url": "https://www.researchgate.net/publication/283523880"
       }
-    ]
+    ],
+    "fonts": [
+      "SourceSansPro-Regular",
+      "Martel-Regular",
+      "SourceSansPro-Semibold",
+      "FEMJMA+TimesNewRoman",
+      "FEMJNC+TimesNewRoman,BoldItalic",
+      "FEMJOH+TimesNewRoman,Italic",
+      "FEMJNE+TimesNewRoman,Bold",
+      "FEMJNG+Arial",
+      "FEMJOJ+Arial,Italic",
+      "FEMKAL+Calibri",
+      "FEMLKC+Symbol",
+      "Helvetica"
+    ],
+    "math_fonts": [
+      "FEMLKC+Symbol"
+    ],
+    "has_math_fonts": true,
+    "bibkey": "07165428",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 7,
+      "ListItem": 34,
+      "Formula": 1,
+      "Paragraph": 7,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "07165428.tiddlers.json",
+    "tiddlers_count": 66,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "untitled",
@@ -548,6 +589,82 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2613.8,
       "detail": "7 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 21.0,
+      "detail": "12 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:16Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 18.6,
+      "detail": "12 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:51Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 20.3,
+      "detail": "12 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:51Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 19.8,
+      "detail": "12 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 23.8,
+      "detail": "12 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:03Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 23.6,
+      "detail": "12 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T18:14:57Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 29.0,
+      "detail": "50 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:14:57Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.3,
+      "detail": "66 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/07165428/07165428.lines.json": "sha256:936de1409e4d9310245653dfed1ba14d047c9cddb74934653a77910f2e7fa0b6"
+      },
+      "params_hash": "sha256:fe2522de383a7cd11b3db3f56804dc9bf60a24cac2bdaf291768df49799d6a82",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:14:57Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

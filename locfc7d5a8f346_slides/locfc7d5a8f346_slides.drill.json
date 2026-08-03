@@ -2,7 +2,8 @@
   "pdf": "locfc7d5a8f346_slides.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 5,
@@ -34,13 +35,33 @@
     "text_layer": true,
     "font_count": 1,
     "first_page_chars": 14,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "XIUEHX+GlyphLessFont"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "XIUEHX+GlyphLessFont CID",
+      "base_name": "GlyphLessFont CID",
+      "family": "GlyphLessFont CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -52,6 +73,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 34.4,
       "detail": "pdfinfo: 5 pages, 485372 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:47:51Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.2,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:51Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.8,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:05Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.9,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:05Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 15.1,
+      "detail": "1 fonts, 0 math"
     }
   ]
 }

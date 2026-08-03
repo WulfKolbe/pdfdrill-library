@@ -5,7 +5,9 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_LAYER_KNOWN",
+    "BIBLIOGRAPHY_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -44,13 +46,18 @@
     "bibkey": "1304.0071v3",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 16,
-      "Paragraph": 16,
-      "Document": 1,
-      "Equation": 38
+      "Paragraph": 44,
+      "LtxCommand": 9,
+      "Abstract": 1,
+      "Section": 7,
+      "Theorem": 24,
+      "Formula": 211,
+      "Equation": 38,
+      "Proof": 9,
+      "Citation": 70
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -66,14 +73,108 @@
     "merge_latex_source": "1304.0071v3.tgz",
     "merge_paragraphs_changed": 11,
     "tiddlers_path": "1304.0071v3.tiddlers.json",
-    "tiddlers_count": 87,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_count": 401,
+    "tiddlers_svg_mode": "inline",
+    "fonts": [
+      "HPXKMS+Helvetica",
+      "XXOVJF+Helvetica-Bold",
+      "NTUQYM+Helvetica",
+      "EVWDRH+Helvetica",
+      "RSXMPP+Helvetica-Bold"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false,
+    "merged_geometry": {
+      "pages": 16,
+      "placed": 1,
+      "regions": 1,
+      "sections": 7,
+      "children": 289,
+      "numbered": 7,
+      "roots": 1
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "HPXKMS+Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "145 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "XXOVJF+Helvetica-Bold",
+      "base_name": "Helvetica-Bold",
+      "family": "Helvetica",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "147 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "NTUQYM+Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "110 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "EVWDRH+Helvetica",
+      "base_name": "Helvetica",
+      "family": "Helvetica",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "113 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "RSXMPP+Helvetica-Bold",
+      "base_name": "Helvetica-Bold",
+      "family": "Helvetica",
+      "type": "TrueType",
+      "encoding": "MacRoman",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "116 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -117,18 +218,88 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.6,
       "detail": "87 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-03T14:16:29Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.3,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:29Z",
+      "node": "fonts_layer",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.5,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:05Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.6,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:05Z",
+      "node": "fonts_layer",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.1,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:19Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.9,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:19Z",
+      "node": "fonts_layer",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.8,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T18:29:19Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "413 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T18:29:19Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-03T18:29:19Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.2,
+      "detail": "401 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/1304.0071v3/1304.0071v3.lines.json": "sha256:87462c86e0eec1c288a5d930f16ae781bbce1902db14b765eda7fdda9f053fa4"
-      },
+      "inputs": {},
       "params_hash": "sha256:08078e60420b84218733ef33104c8c64a569cf8a8e95326992efd4f0fa5c6e56",
       "algo": "sha256",
-      "ts": "2026-07-30T14:17:41Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T18:29:19Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

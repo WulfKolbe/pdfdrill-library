@@ -4,12 +4,15 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 27,
@@ -47,7 +50,99 @@
     "first_page_chars": 641,
     "needs_ocr": false,
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "fonts": [
+      "SourceSansPro-Regular",
+      "Martel-Regular",
+      "SourceSansPro-Semibold",
+      "SourceSansPro-It",
+      "EUFYJJ+Springnew-Regular",
+      "Helvetica-Bold",
+      "EABAID+MyriadPro-Bold",
+      "EABAIE+MyriadPro-Regular",
+      "EABAIG+MinionPro-Regular",
+      "EABAIF+MinionPro-It",
+      "EABAIH+MinionPro-Bold",
+      "YVSFQU+CMR10",
+      "EOQVGU+CMTI10",
+      "OPRSMT+CMR12",
+      "NEQNFM+CMR8",
+      "NLAQHF+CMSY8",
+      "FPDPMB+CMSSBX10",
+      "UFBOEP+CMR9",
+      "GHTHPV+CMB10",
+      "LPHKWB+MSBM7",
+      "WUMSEJ+CMMI12",
+      "SHQQVO+CMR17",
+      "XWDGQU+MSBM10",
+      "EPDOBK+CMMI10",
+      "XJTAQS+CMR6",
+      "YKXBGN+CMMI9",
+      "KFYIPN+CMSY10",
+      "UCAQGH+CMSY6",
+      "SMyriad-Italic",
+      "QGEJVH+CMSY7",
+      "FKHLDD+CMBX12",
+      "FURTAC+CMMIB10",
+      "UAHSES+CMMI7",
+      "HTROUM+CMEX10",
+      "LYRPMI+CMMI8",
+      "DYELKW+CMR7",
+      "NUIKYL+CMR5",
+      "WRHNTK+CMTI8",
+      "RNOFOO+MSAM10",
+      "FDGBKD+CMBSY10",
+      "EJCXRD+CMBSY7",
+      "PSUDHT+CMSY5",
+      "NMFGNP+CMCSC10",
+      "DCYXRP+CMSY9",
+      "WDOJEP+CMMI6",
+      "ACDMDX+CMMI5",
+      "KSONOD+CMTT9",
+      "Helvetica"
+    ],
+    "math_fonts": [
+      "NLAQHF+CMSY8",
+      "LPHKWB+MSBM7",
+      "WUMSEJ+CMMI12",
+      "XWDGQU+MSBM10",
+      "EPDOBK+CMMI10",
+      "YKXBGN+CMMI9",
+      "KFYIPN+CMSY10",
+      "UCAQGH+CMSY6",
+      "QGEJVH+CMSY7",
+      "FURTAC+CMMIB10",
+      "UAHSES+CMMI7",
+      "HTROUM+CMEX10",
+      "LYRPMI+CMMI8",
+      "RNOFOO+MSAM10",
+      "PSUDHT+CMSY5",
+      "DCYXRP+CMSY9",
+      "WDOJEP+CMMI6",
+      "ACDMDX+CMMI5"
+    ],
+    "has_math_fonts": true,
+    "bibkey": "10.1007_s00006-017-0798-7",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 27,
+      "ListItem": 45,
+      "Equation": 103,
+      "Paragraph": 89,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "10.1007_s00006-017-0798-7.tiddlers.json",
+    "tiddlers_count": 281,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Modeling 3D Geometry in the Clifford Algebra R(4, 4)",
@@ -2276,6 +2371,82 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6890.3,
       "detail": "31 images, 29 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:23Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 56.5,
+      "detail": "48 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:23Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 58.4,
+      "detail": "48 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:58Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 64.3,
+      "detail": "48 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:58Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 62.2,
+      "detail": "48 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:11Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 75.8,
+      "detail": "48 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:11Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 72.5,
+      "detail": "48 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T18:20:52Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 108.7,
+      "detail": "265 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:20:52Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.8,
+      "detail": "281 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/10.1007_s00006-017-0798-7/10.1007_s00006-017-0798-7.lines.json": "sha256:c94c88653fa3698b90056e9833c36e10e189e9b092cb7d7897b7674415780613"
+      },
+      "params_hash": "sha256:533419b715138db504c72708aada80206f3f84fafcdfda8929e64b584a42c1d3",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:20:52Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

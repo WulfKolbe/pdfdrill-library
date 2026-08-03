@@ -2,7 +2,8 @@
   "pdf": "Pagès, Frédéric - Frühstück bei Sokrates.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 173,
@@ -36,13 +37,48 @@
     "text_layer": true,
     "font_count": 2,
     "first_page_chars": 0,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "KOABKG+TimesNewRoman",
+      "KOACAM+TimesNewRoman,Italic"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "KOABKG+TimesNewRoman",
+      "base_name": "TimesNewRoman",
+      "family": "TimesNewRoman",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "517 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "KOACAM+TimesNewRoman,Italic",
+      "base_name": "TimesNewRoman,Italic",
+      "family": "TimesNewRoman,Italic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "521 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +90,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 66.2,
       "detail": "pdfinfo: 173 pages, 582589 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:40:43Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 33.3,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:40:43Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 32.7,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:42:01Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 32.8,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:42:01Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 32.2,
+      "detail": "2 fonts, 0 math"
     }
   ]
 }

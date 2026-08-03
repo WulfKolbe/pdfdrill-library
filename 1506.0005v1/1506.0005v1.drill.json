@@ -5,7 +5,9 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_LAYER_KNOWN",
+    "BIBLIOGRAPHY_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -41,15 +43,17 @@
     "bibkey": "1506.0005v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 5,
-      "ListItem": 1,
-      "Paragraph": 5,
-      "Document": 1,
+      "Formula": 104,
+      "LtxCommand": 1,
+      "Paragraph": 82,
+      "Abstract": 1,
+      "Section": 12,
+      "Table": 1,
       "Equation": 2,
-      "Table": 1
+      "Citation": 173
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -65,14 +69,117 @@
     "merge_latex_source": "1506.0005v1.tgz",
     "merge_paragraphs_changed": 4,
     "tiddlers_path": "1506.0005v1.tiddlers.json",
-    "tiddlers_count": 31,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_count": 330,
+    "tiddlers_svg_mode": "inline",
+    "fonts": [
+      "BAAAAA+TimesNewRomanPS-BoldMT",
+      "CAAAAA+TimesNewRomanPSMT",
+      "DAAAAA+TimesNewRomanPS-ItalicMT",
+      "EAAAAA+OpenSymbol",
+      "FAAAAA+CourierNewPS-ItalicMT",
+      "GAAAAA+CourierNewPSMT"
+    ],
+    "math_fonts": [
+      "EAAAAA+OpenSymbol"
+    ],
+    "has_math_fonts": true,
+    "lane_policy": "Producer is 'OpenOffice 4.1.0' (openoffice): the pdfminer text-layer lane is DECLINED for this family (it emits font subsets with no /Encoding, mapping only via /ToUnicode). pdftotext, MathPix and tesseract handle it correctly and are used instead.",
+    "bibliography_entries": 109,
+    "bibliography_with_year": 101,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 173
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "BAAAAA+TimesNewRomanPS-BoldMT",
+      "base_name": "TimesNewRomanPS-BoldMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "60 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "CAAAAA+TimesNewRomanPSMT",
+      "base_name": "TimesNewRomanPSMT",
+      "family": "TimesNewRomanPSMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "50 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "DAAAAA+TimesNewRomanPS-ItalicMT",
+      "base_name": "TimesNewRomanPS-ItalicMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "55 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "EAAAAA+OpenSymbol",
+      "base_name": "OpenSymbol",
+      "family": "OpenSymbol",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "45 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FAAAAA+CourierNewPS-ItalicMT",
+      "base_name": "CourierNewPS-ItalicMT",
+      "family": "CourierNewPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "40 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "GAAAAA+CourierNewPSMT",
+      "base_name": "CourierNewPSMT",
+      "family": "CourierNewPSMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "35 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -116,18 +223,88 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.9,
       "detail": "31 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-03T14:16:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.0,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:33Z",
+      "node": "fonts_layer",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.9,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:09Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.7,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:09Z",
+      "node": "fonts_layer",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.8,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:25Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 14.7,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:25Z",
+      "node": "fonts_layer",
+      "from": "LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 14.9,
+      "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T18:31:44Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "376 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T18:31:44Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "109 entries, 0+0 cites detected, 173 linked"
+    },
+    {
+      "ts": "2026-08-03T18:31:44Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.2,
+      "detail": "330 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/1506.0005v1/1506.0005v1.lines.json": "sha256:e0e1de6407ab920840024da59fd4606aba6ee0c0e8b3d65950f281445fcbbdda"
-      },
+      "inputs": {},
       "params_hash": "sha256:b363d83e7e4214e68e8ce1cd979b52aff93134e01387bbf456a34517cbce8362",
       "algo": "sha256",
-      "ts": "2026-07-30T14:19:57Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T18:31:44Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

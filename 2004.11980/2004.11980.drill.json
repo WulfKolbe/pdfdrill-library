@@ -4,17 +4,18 @@
   "facts": [
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "2004.11980",
     "source_kind": "arxiv",
     "bibkey": "2004.11980",
-    "model_path": "2004.11980.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Paragraph": 45,
       "Abstract": 1,
-      "Section": 12,
+      "Section": 18,
       "LtxCommand": 10,
       "Formula": 1,
       "Citation": 186
@@ -59,13 +60,161 @@
     "text_layer": true,
     "font_count": 9,
     "first_page_chars": 5205,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "merged_geometry": {
+      "pages": 5,
+      "placed": 18,
+      "sections": 18,
+      "children": 50,
+      "numbered": 18,
+      "roots": 1
+    },
+    "fonts": [
+      "LAXVJD+LinLibertineTB",
+      "XOUSQO+LinLibertineT",
+      "MVKUUW+LinBiolinumTB",
+      "Times-Roman",
+      "GLVZRI+LinLibertineTI",
+      "ZYCMTX+LinLibertineI",
+      "FNEXNU+LinBiolinumTI",
+      "FADLOX+LinBiolinumT",
+      "PVDRCN+txsys"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "LAXVJD+LinLibertineTB",
+      "base_name": "LinLibertineTB",
+      "family": "LinLibertineTB",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "34 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "XOUSQO+LinLibertineT",
+      "base_name": "LinLibertineT",
+      "family": "LinLibertineT",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "14 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "MVKUUW+LinBiolinumTB",
+      "base_name": "LinBiolinumTB",
+      "family": "LinBiolinumTB",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "12 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "Times-Roman",
+      "base_name": "Times-Roman",
+      "family": "Times",
+      "type": "Type 1",
+      "encoding": "Standard",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "GLVZRI+LinLibertineTI",
+      "base_name": "LinLibertineTI",
+      "family": "LinLibertineTI",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "53 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "ZYCMTX+LinLibertineI",
+      "base_name": "LinLibertineI",
+      "family": "LinLibertineI",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "213 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FNEXNU+LinBiolinumTI",
+      "base_name": "LinBiolinumTI",
+      "family": "LinBiolinumTI",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "179 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "FADLOX+LinBiolinumT",
+      "base_name": "LinBiolinumT",
+      "family": "LinBiolinumT",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "97 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "PVDRCN+txsys",
+      "base_name": "txsys",
+      "family": "txsys",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "262 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "pix2tex_results": null,
   "tsv_layer": null,
@@ -94,7 +243,72 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 51.3,
       "detail": "pdfinfo: 5 pages, 180289 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T13:23:43Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "261 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T14:17:17Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 22.8,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:17:17Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 23.6,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:57Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 26.3,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:57Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 26.4,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:29:21Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 27.6,
+      "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:29:21Z",
+      "node": "fonts_layer",
+      "from": "BIBLIOGRAPHY_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 27.6,
+      "detail": "9 fonts, 0 math"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:9a7131f20477fa2cb2f1a8837f158f3310f2a894f26a33fff44bbe0e6a9cb876",
+      "algo": "sha256",
+      "ts": "2026-08-03T13:23:43Z",
+      "provenance": "latex-source"
+    }
+  }
 }

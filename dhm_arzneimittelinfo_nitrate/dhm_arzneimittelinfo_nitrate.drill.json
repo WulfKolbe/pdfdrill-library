@@ -2,7 +2,8 @@
   "pdf": "dhm_arzneimittelinfo_nitrate.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -39,13 +40,48 @@
     "text_layer": true,
     "font_count": 2,
     "first_page_chars": 2285,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "GBUPRM+MetaCondBold-Roman",
+      "QDXXBS+MetaCondNormal-Roman"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "GBUPRM+MetaCondBold-Roman",
+      "base_name": "MetaCondBold-Roman",
+      "family": "MetaCondBold",
+      "type": "Type 1C",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "QDXXBS+MetaCondNormal-Roman",
+      "base_name": "MetaCondNormal-Roman",
+      "family": "MetaCondNormal",
+      "type": "Type 1C",
+      "encoding": "Custom",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "11 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -57,6 +93,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 50.1,
       "detail": "pdfinfo: 1 pages, 428252 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:47:04Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.4,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:47:04Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.5,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:17Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.3,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:48:17Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.3,
+      "detail": "2 fonts, 0 math"
     }
   ]
 }

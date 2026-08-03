@@ -2,7 +2,8 @@
   "pdf": "twconcept.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 3,
@@ -33,13 +34,138 @@
     "text_layer": true,
     "font_count": 8,
     "first_page_chars": 2483,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "HUZPKV+LMRoman17-Regular-Identity-H",
+      "MABHLD+LMRoman12-Regular-Identity-H",
+      "TWKDUD+LMRoman9-Bold-Identity-H",
+      "DZFMCV+LMRoman9-Regular-Identity-H",
+      "UPFZOL+LMRoman12-Bold-Identity-H",
+      "WECKLN+LMRoman10-Regular-Identity-H",
+      "WSRMTA+LMMono10-Regular-Identity-H",
+      "NXVVGS+LMRoman10-Bold-Identity-H"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "HUZPKV+LMRoman17-Regular-Identity-H CID",
+      "base_name": "LMRoman17-Regular-Identity-H CID",
+      "family": "LMRoman17",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "4 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "MABHLD+LMRoman12-Regular-Identity-H CID",
+      "base_name": "LMRoman12-Regular-Identity-H CID",
+      "family": "LMRoman12",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "6 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TWKDUD+LMRoman9-Bold-Identity-H CID",
+      "base_name": "LMRoman9-Bold-Identity-H CID",
+      "family": "LMRoman9",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "8 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "DZFMCV+LMRoman9-Regular-Identity-H CID",
+      "base_name": "LMRoman9-Regular-Identity-H CID",
+      "family": "LMRoman9",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "10 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "UPFZOL+LMRoman12-Bold-Identity-H CID",
+      "base_name": "LMRoman12-Bold-Identity-H CID",
+      "family": "LMRoman12",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "12 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "WECKLN+LMRoman10-Regular-Identity-H CID",
+      "base_name": "LMRoman10-Regular-Identity-H CID",
+      "family": "LMRoman10",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "14 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "WSRMTA+LMMono10-Regular-Identity-H CID",
+      "base_name": "LMMono10-Regular-Identity-H CID",
+      "family": "LMMono10",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "16 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "NXVVGS+LMRoman10-Bold-Identity-H CID",
+      "base_name": "LMRoman10-Bold-Identity-H CID",
+      "family": "LMRoman10",
+      "type": "Type 0C",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "22 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -51,6 +177,38 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 40.8,
       "detail": "pdfinfo: 3 pages, 47801 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:49:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.4,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:49:13Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.8,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:24Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.4,
+      "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:50:24Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.0,
+      "detail": "8 fonts, 0 math"
     }
   ]
 }

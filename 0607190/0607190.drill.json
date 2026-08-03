@@ -7,14 +7,13 @@
     "NEEDS_VISION_OCR",
     "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
-    "FONTS_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 9,
@@ -55,18 +54,19 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "Paragraph": 9,
+      "Equation": 20,
+      "Paragraph": 24,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
     "model_source": "pdfminer-chars",
     "model_caps": {
       "geometry": true,
-      "math": false,
+      "math": true,
       "source": "pdfminer-chars"
     },
     "tiddlers_path": "0607190.tiddlers.json",
-    "tiddlers_count": 35,
+    "tiddlers_count": 70,
     "tiddlers_svg_mode": "inline",
     "fonts": [
       "PMNFIV+CMR10",
@@ -113,7 +113,9 @@
         "page": 9,
         "url": "http://arxiv.org/abs/math-ph/0411085"
       }
-    ]
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 16 unmapped private-use character(s) remain (U+F8EE×2, U+F8EF×4, U+F8F0×2, U+F8F9×2, U+F8FA×4, U+F8FB×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified."
   },
   "pdfinfo": {
     "title": "",
@@ -1769,17 +1771,81 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1211.1,
       "detail": "62 images, 31 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:15Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 26.3,
+      "detail": "17 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:15Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 25.2,
+      "detail": "17 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:50Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 28.2,
+      "detail": "17 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:50Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 28.5,
+      "detail": "17 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:02Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 30.2,
+      "detail": "17 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T14:28:02Z",
+      "node": "fonts_layer",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 31.6,
+      "detail": "17 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-03T18:14:14Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 23.7,
+      "detail": "54 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:14:14Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.6,
+      "detail": "70 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/0607190/0607190.lines.json": "sha256:4e8731591589aa23b1de0d89202f1d5909c9a57eaa056964092044cdaf301667"
+        "/home/wkolbe/pdfdrill-library/0607190/0607190.lines.json": "sha256:893e512d5edcae13429b75290e95e2e26f1c27a4524fab2259842f0fb6f79907"
       },
       "params_hash": "sha256:a619471e6946fab9b2f8c16e026dca257b5648601eb6abed44bf2752d0384126",
       "algo": "sha256",
-      "ts": "2026-07-30T14:07:54Z",
+      "ts": "2026-08-03T18:14:14Z",
       "provenance": "pdfminer-chars"
     }
   }

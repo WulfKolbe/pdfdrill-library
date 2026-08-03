@@ -4,11 +4,15 @@
   "facts": [
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
-    "FONTS_LAYER_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -59,7 +63,60 @@
         "page": 4,
         "url": "http://arxiv.org/abs/hep-th/0103137"
       }
-    ]
+    ],
+    "fonts": [
+      "HWPXAV+CMR7",
+      "AXFAVB+CMR10",
+      "AETIAV+CMMI10",
+      "Times-Bold",
+      "LHEAZV+CMSY6",
+      "JWUFYC+CMEX10",
+      "MUUBUW+CMMI7",
+      "MNQJXJ+CMSY7",
+      "QRSTVC+CMMI5",
+      "OOSZLR+CMSY10",
+      "IBKDQL+CMSY8",
+      "Times-Roman",
+      "Times-Italic"
+    ],
+    "math_fonts": [
+      "AETIAV+CMMI10",
+      "LHEAZV+CMSY6",
+      "JWUFYC+CMEX10",
+      "MUUBUW+CMMI7",
+      "MNQJXJ+CMSY7",
+      "QRSTVC+CMMI5",
+      "OOSZLR+CMSY10",
+      "IBKDQL+CMSY8"
+    ],
+    "has_math_fonts": true,
+    "bibkey": "0212041",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 4,
+      "Citation": 10,
+      "ListItem": 6,
+      "Equation": 54,
+      "Paragraph": 35,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 3,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 3,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 3,
+    "tiddlers_path": "0212041.tiddlers.json",
+    "tiddlers_count": 128,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:gr-qc/0212041v3  14 Dec 2002",
@@ -2196,6 +2253,90 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1301.5,
       "detail": "112 images, 56 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-03T14:16:12Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 25.1,
+      "detail": "13 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:16:12Z",
+      "node": "fonts_layer",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 24.6,
+      "detail": "13 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 26.4,
+      "detail": "13 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:26:46Z",
+      "node": "fonts_layer",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 27.6,
+      "detail": "13 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 29.3,
+      "detail": "13 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T14:27:59Z",
+      "node": "fonts_layer",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 29.8,
+      "detail": "13 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T18:12:39Z",
+      "node": "model",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 29.0,
+      "detail": "110 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T18:12:39Z",
+      "node": "bibliography",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "3 entries, 3+0 cites detected, 3 linked"
+    },
+    {
+      "ts": "2026-08-03T18:12:39Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.6,
+      "detail": "128 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/0212041/0212041.lines.json": "sha256:0e2ca645daefd0fdf3c9b8c223e906f2686eefb8715ac655f3be477f62552078"
+      },
+      "params_hash": "sha256:76ae9b48b5a6b0e988e01848e4264023cb6376803028c4f44969412bc438822b",
+      "algo": "sha256",
+      "ts": "2026-08-03T18:12:39Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MATHPIX_KNOWN",
-    "MODEL_BUILT"
+    "MODEL_BUILT",
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "mathpix_pdf_id": null,
@@ -40,13 +42,97 @@
       "geometry": true,
       "math": false,
       "source": "mathpix"
-    }
+    },
+    "pages": 2,
+    "bytes": 18543,
+    "page_size": "594.96 x 842.04 pts (A4)",
+    "producer": "Adobe PDF Library 15.0",
+    "creator": "Acrobat PDFMaker 15 for Word",
+    "encrypted": false,
+    "pdfinfo": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Peter Gärdenfors",
+      "Creator": "Acrobat PDFMaker 15 for Word",
+      "Producer": "Adobe PDF Library 15.0",
+      "CreationDate": "Tue Sep  5 15:34:16 2017 CEST",
+      "ModDate": "Mon Apr 29 12:00:30 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "yes",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "2",
+      "Encrypted": "no",
+      "Page size": "594.96 x 842.04 pts (A4)",
+      "Page rot": "0",
+      "File size": "18543 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "text_layer": true,
+    "font_count": 3,
+    "first_page_chars": 2657,
+    "needs_ocr": false,
+    "fonts": [
+      "TimesNewRomanPS-BoldMT",
+      "TimesNewRomanPSMT",
+      "TimesNewRomanPS-ItalicMT"
+    ],
+    "math_fonts": [],
+    "has_math_fonts": false
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "TimesNewRomanPS-BoldMT",
+      "base_name": "TimesNewRomanPS-BoldMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "84 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRomanPSMT",
+      "base_name": "TimesNewRomanPSMT",
+      "family": "TimesNewRomanPSMT",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "86 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "TimesNewRomanPS-ItalicMT",
+      "base_name": "TimesNewRomanPS-ItalicMT",
+      "family": "TimesNewRomanPS",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": false,
+      "subset": false,
+      "unicode": false,
+      "object_id": "88 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -74,6 +160,62 @@
       "to": "MATHPIX_KNOWN",
       "cost_ms": 0.1,
       "detail": "cached"
+    },
+    {
+      "ts": "2026-08-03T14:23:58Z",
+      "node": "size",
+      "from": "INIT",
+      "to": "SIZE_KNOWN",
+      "cost_ms": 46.2,
+      "detail": "pdfinfo: 2 pages, 18543 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:23:58Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 22.4,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:23:58Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 21.8,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:35:40Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 24.4,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:35:40Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 24.4,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:36:57Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 26.6,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T14:36:57Z",
+      "node": "fonts_layer",
+      "from": "MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 27.3,
+      "detail": "3 fonts, 0 math"
     }
   ],
   "capabilities": {

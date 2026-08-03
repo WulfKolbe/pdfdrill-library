@@ -2,7 +2,8 @@
   "pdf": "A_Massenformel_Kurzfassung.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "FONTS_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 5,
@@ -36,13 +37,95 @@
     "text_layer": true,
     "font_count": 5,
     "first_page_chars": 3089,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "fonts": [
+      "JENOGG+TimesNewRoman",
+      "JENOHI+TimesNewRoman,Bold",
+      "JENPBF+SymbolMT",
+      "JENPCH+TimesNewRoman,Italic",
+      "JENPDH+MT-Extra"
+    ],
+    "math_fonts": [
+      "JENPBF+SymbolMT"
+    ],
+    "has_math_fonts": true
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
-  "fonts_layer": null,
+  "fonts_layer": [
+    {
+      "name": "JENOGG+TimesNewRoman",
+      "base_name": "TimesNewRoman",
+      "family": "TimesNewRoman",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "374 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "JENOHI+TimesNewRoman,Bold",
+      "base_name": "TimesNewRoman,Bold",
+      "family": "TimesNewRoman,Bold",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "376 0",
+      "is_math": false,
+      "is_bold": true,
+      "is_italic": false
+    },
+    {
+      "name": "JENPBF+SymbolMT CID",
+      "base_name": "SymbolMT CID",
+      "family": "SymbolMT CID",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "385 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": false
+    },
+    {
+      "name": "JENPCH+TimesNewRoman,Italic",
+      "base_name": "TimesNewRoman,Italic",
+      "family": "TimesNewRoman,Italic",
+      "type": "TrueType",
+      "encoding": "WinAnsi",
+      "embedded": true,
+      "subset": true,
+      "unicode": false,
+      "object_id": "392 0",
+      "is_math": false,
+      "is_bold": false,
+      "is_italic": true
+    },
+    {
+      "name": "JENPDH+MT-Extra CID",
+      "base_name": "MT-Extra CID",
+      "family": "MT",
+      "type": "TrueType",
+      "encoding": "Identity-H",
+      "embedded": true,
+      "subset": true,
+      "unicode": true,
+      "object_id": "397 0",
+      "is_math": true,
+      "is_bold": false,
+      "is_italic": false
+    }
+  ],
   "images_layer": null,
   "tsv_layer": null,
   "layers": {},
@@ -54,6 +137,54 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 39.3,
       "detail": "pdfinfo: 5 pages, 158285 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T14:19:10Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 11.3,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:19:10Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 11.1,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:30:08Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 12.4,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:30:08Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 12.6,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:31:30Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 13.2,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-03T14:31:30Z",
+      "node": "fonts_layer",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_LAYER_KNOWN",
+      "cost_ms": 13.5,
+      "detail": "5 fonts, 1 math"
     }
   ]
 }
