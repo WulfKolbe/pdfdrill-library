@@ -5,7 +5,8 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1809.05467",
@@ -69,7 +70,8 @@
     "needs_ocr": false,
     "merged_geometry": {
       "pages": 10,
-      "placed": 19,
+      "placed": 31,
+      "regions": 31,
       "sections": 11,
       "children": 292,
       "numbered": 11,
@@ -173,7 +175,10 @@
       "BCXPUD+CMSY7",
       "MIMRDW+CMMI9"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "tiddlers_path": "1809.05467.tiddlers.json",
+    "tiddlers_count": 375,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -1211,6 +1216,22 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 63.8,
       "detail": "67 fonts, 27 math"
+    },
+    {
+      "ts": "2026-08-03T19:41:46Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "382 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T19:41:46Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.2,
+      "detail": "375 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
@@ -1219,7 +1240,7 @@
       "inputs": {},
       "params_hash": "sha256:f593174e82441ad656ea446e6a840830457259cb3e86998e19e573906ac62c7a",
       "algo": "sha256",
-      "ts": "2026-08-03T13:21:56Z",
+      "ts": "2026-08-03T19:41:46Z",
       "provenance": "latex-source"
     }
   }

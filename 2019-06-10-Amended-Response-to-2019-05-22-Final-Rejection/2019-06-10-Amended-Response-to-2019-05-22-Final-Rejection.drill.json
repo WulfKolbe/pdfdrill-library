@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 14,
@@ -51,7 +53,27 @@
       "Helvetica"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "2019-06-10-Amended-Response-to-2019-05-22-Final-Rejection",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 14,
+      "ListItem": 2,
+      "Paragraph": 14,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "2019-06-10-Amended-Response-to-2019-05-22-Final-Rejection.tiddlers.json",
+    "tiddlers_count": 47,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -258,6 +280,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 24.9,
       "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T20:43:59Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 30.6,
+      "detail": "31 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T20:43:59Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.6,
+      "detail": "47 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2019-06-10-Amended-Response-to-2019-05-22-Final-Rejection/2019-06-10-Amended-Response-to-2019-05-22-Final-Rejection.lines.json": "sha256:e41397f44dfa5a4b49fad107a7f8e9ab4e73ddfe2226d2f4099317cfa68591f5"
+      },
+      "params_hash": "sha256:1d107d0dad1c983d66305e57448b633405d75d70215c1cf7ba04f9909a3596a7",
+      "algo": "sha256",
+      "ts": "2026-08-03T20:43:59Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

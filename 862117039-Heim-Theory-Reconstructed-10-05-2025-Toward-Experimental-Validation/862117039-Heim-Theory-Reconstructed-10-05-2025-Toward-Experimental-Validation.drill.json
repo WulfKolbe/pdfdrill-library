@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 23,
@@ -67,7 +70,28 @@
       "EWOGKR+CMMI6",
       "UYVLXV+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 23,
+      "ListItem": 161,
+      "Equation": 12,
+      "Paragraph": 34,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation.tiddlers.json",
+    "tiddlers_count": 247,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -358,6 +382,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 45.3,
       "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T22:26:07Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 55.6,
+      "detail": "231 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T22:26:07Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.6,
+      "detail": "247 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation/862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation.lines.json": "sha256:b9a219113b90790e6078189004d6080b7f954eb4d53fb70399b5ca7ad70db1e3"
+      },
+      "params_hash": "sha256:36cdf0b5b82247bf3a0d36802d958353655549ab5dc78393a25d09c829f2fe11",
+      "algo": "sha256",
+      "ts": "2026-08-03T22:26:07Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

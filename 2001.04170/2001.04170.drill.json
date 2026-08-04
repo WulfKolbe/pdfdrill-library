@@ -5,15 +5,23 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2001.04170",
     "source_kind": "arxiv",
     "bibkey": "2001.04170",
-    "model_path": "2001.04170.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Diagram": 1
+      "Abstract": 1,
+      "Paragraph": 205,
+      "Section": 22,
+      "Formula": 103,
+      "Table": 15,
+      "LtxCommand": 11,
+      "Equation": 16,
+      "Citation": 72
     },
     "model_equations_with_cdn": 0,
     "model_source": "latex",
@@ -80,7 +88,19 @@
       "IOFHGE+LinLibertineTBI"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "merged_geometry": {
+      "pages": 11,
+      "placed": 115,
+      "regions": 115,
+      "sections": 22,
+      "children": 352,
+      "numbered": 22,
+      "roots": 1
+    },
+    "tiddlers_path": "2001.04170.tiddlers.json",
+    "tiddlers_count": 454,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -458,6 +478,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 76.0,
       "detail": "21 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T19:51:26Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "445 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T19:51:26Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.9,
+      "detail": "454 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2001.04170/texsrc/main.tex": "sha256:5cf3328c47688b58cad8392988c33c0beeeb84d15e2d79390b46a6440b656107"
+      },
+      "params_hash": "sha256:c88c638e79fe707088b4fc800554e996416f98679f0eee63359dbea7a1fece42",
+      "algo": "sha256",
+      "ts": "2026-08-03T19:51:26Z",
+      "provenance": "latex-source"
+    }
+  }
 }

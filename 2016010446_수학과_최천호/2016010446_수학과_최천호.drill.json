@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -69,7 +73,34 @@
       "MZSWVF+CMMI6",
       "SDVCAT+CMSY7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "2016010446_수학과_최천호",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 17,
+      "Citation": 54,
+      "ListItem": 2,
+      "Equation": 5,
+      "Paragraph": 21,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 88 unmapped private-use character(s) remain (U+F8EB×19, U+F8ED×19, U+F8F1×2, U+F8F2×2, U+F8F3×2, U+F8F6×19, U+F8F8×19, U+F8FC×2, U+F8FD×2, U+F8FE×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 7,
+    "bibliography_with_year": 4,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "2016010446_수학과_최천호.tiddlers.json",
+    "tiddlers_count": 79,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -374,6 +405,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 36.2,
       "detail": "17 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T20:40:37Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 19.7,
+      "detail": "100 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T20:40:37Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "7 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-03T20:40:37Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.1,
+      "detail": "79 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2016010446_수학과_최천호/2016010446_수학과_최천호.lines.json": "sha256:26373798202c0bc09ee682469c8f0e784ef30c231bdb1256ce7774f26c9b830f"
+      },
+      "params_hash": "sha256:c73c27ca782696305c4c8016bbdecf286e88147468faa875d3332c6272b24974",
+      "algo": "sha256",
+      "ts": "2026-08-03T20:40:37Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

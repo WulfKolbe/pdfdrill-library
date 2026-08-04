@@ -5,7 +5,9 @@
     "MODEL_BUILT",
     "BIBSOURCE_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2602.23211",
@@ -32,7 +34,8 @@
     "bibsource_citations_linked": 80,
     "merged_geometry": {
       "pages": 44,
-      "placed": 65,
+      "placed": 118,
+      "regions": 118,
       "sections": 20,
       "children": 418,
       "numbered": 20,
@@ -126,7 +129,15 @@
       "CFZRNI+TeX-mathb7",
       "LEGNCR+TeX-mathb5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibliography_entries": 51,
+    "bibliography_with_year": 35,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 80,
+    "tiddlers_path": "2602.23211.tiddlers.json",
+    "tiddlers_count": 616,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -729,6 +740,30 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 137.9,
       "detail": "36 fonts, 18 math"
+    },
+    {
+      "ts": "2026-08-03T21:44:19Z",
+      "node": "model",
+      "from": "BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "583 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T21:44:19Z",
+      "node": "bibliography",
+      "from": "BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "51 entries, 0+0 cites detected, 80 linked"
+    },
+    {
+      "ts": "2026-08-03T21:44:19Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.1,
+      "detail": "616 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
@@ -737,7 +772,7 @@
       "inputs": {},
       "params_hash": "sha256:5554cee41da31b2eae28d3aec7db43f3af431df0858d91aa5aff251134a87b2c",
       "algo": "sha256",
-      "ts": "2026-08-03T13:28:10Z",
+      "ts": "2026-08-03T21:44:19Z",
       "provenance": "latex-source"
     }
   }

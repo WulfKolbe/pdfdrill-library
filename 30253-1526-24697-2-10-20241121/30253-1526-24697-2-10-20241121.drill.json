@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -64,7 +68,34 @@
       "LWBPZV+LibertineMathMI5",
       "ADCPGJ+LibertineMathRM"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "30253-1526-24697-2-10-20241121",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 9,
+      "Citation": 46,
+      "ListItem": 4,
+      "Equation": 15,
+      "Paragraph": 23,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 13,
+    "bibliography_with_year": 13,
+    "bibliography_numeric_citations": 20,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 20,
+    "tiddlers_path": "30253-1526-24697-2-10-20241121.tiddlers.json",
+    "tiddlers_count": 88,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -383,6 +414,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 63.3,
       "detail": "18 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T21:48:38Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 73.6,
+      "detail": "98 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T21:48:38Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "13 entries, 20+0 cites detected, 20 linked"
+    },
+    {
+      "ts": "2026-08-03T21:48:38Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.8,
+      "detail": "88 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/30253-1526-24697-2-10-20241121/30253-1526-24697-2-10-20241121.lines.json": "sha256:04380b0400ed29c5c4c272bda96b84487c9a4b746f6b86aa53ab8be9d1874855"
+      },
+      "params_hash": "sha256:1a9404cfe83043b80d7b28597b6091e68a88b6b693e8f1d1c053f9cedd9a3381",
+      "algo": "sha256",
+      "ts": "2026-08-03T21:48:38Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -81,7 +84,36 @@
       "KKJMAC+CMSY7",
       "LYLVYS+CMEX7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "2112.10133",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Formula": 153,
+      "Paragraph": 86,
+      "Section": 18,
+      "Equation": 32,
+      "Theorem": 1,
+      "Citation": 130
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "merged_geometry": {
+      "pages": 8,
+      "placed": 22,
+      "regions": 22,
+      "sections": 18,
+      "children": 280,
+      "numbered": 18,
+      "roots": 1
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "2112.10133.tiddlers.json",
+    "tiddlers_count": 370,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -540,6 +572,40 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 34.3,
       "detail": "28 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-03T20:56:29Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "420 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T20:56:29Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-03T20:56:29Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.0,
+      "detail": "370 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:75c8318fc920d58476ee07a0fe6fb318edb01a0f74f4ab62d4c99a8ba8634689",
+      "algo": "sha256",
+      "ts": "2026-08-03T20:56:29Z",
+      "provenance": "latex-source"
+    }
+  }
 }

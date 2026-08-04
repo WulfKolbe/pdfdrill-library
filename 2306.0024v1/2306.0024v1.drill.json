@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -72,7 +75,36 @@
       "OEQQSG+MSAM10",
       "PXBGHL+CMSY7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "2306.0024v1",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Paragraph": 38,
+      "LtxCommand": 2,
+      "Abstract": 1,
+      "Section": 11,
+      "Table": 5,
+      "Citation": 55
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "merged_geometry": {
+      "pages": 11,
+      "placed": 0,
+      "regions": 0,
+      "sections": 11,
+      "children": 41,
+      "numbered": 11,
+      "roots": 1
+    },
+    "bibliography_entries": 45,
+    "bibliography_with_year": 45,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 55,
+    "tiddlers_path": "2306.0024v1.tiddlers.json",
+    "tiddlers_count": 131,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -419,6 +451,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 33.7,
       "detail": "20 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-03T21:05:13Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "112 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T21:05:13Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "45 entries, 0+0 cites detected, 55 linked"
+    },
+    {
+      "ts": "2026-08-03T21:05:13Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.0,
+      "detail": "131 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2306.0024v1/texsrc/main.tex": "sha256:be91a55466173a3ae09441865295671ffb79eb4562eca954abdf8800227c43b6"
+      },
+      "params_hash": "sha256:5ff0844954913200bd6b2c641aa0b8109e2cac228ee6b6e7754555528b859829",
+      "algo": "sha256",
+      "ts": "2026-08-03T21:05:13Z",
+      "provenance": "latex-source"
+    }
+  }
 }

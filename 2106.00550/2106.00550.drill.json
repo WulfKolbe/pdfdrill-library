@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 41,
@@ -73,7 +76,36 @@
       "BGRXOX+CMSY8",
       "VPNCQV+CMMI6"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "2106.00550",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Abstract": 1,
+      "Paragraph": 256,
+      "Section": 48,
+      "Formula": 281,
+      "Equation": 74,
+      "Citation": 91
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "merged_geometry": {
+      "pages": 41,
+      "placed": 198,
+      "regions": 198,
+      "sections": 48,
+      "children": 647,
+      "numbered": 48,
+      "roots": 1
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "2106.00550.tiddlers.json",
+    "tiddlers_count": 787,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -420,6 +452,40 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 60.0,
       "detail": "20 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-03T20:54:54Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "751 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T20:54:54Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-03T20:54:54Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.3,
+      "detail": "787 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:976ae81446dea852d02f2d5b66197992e45b4c3d4d5a6be5337b352060c98241",
+      "algo": "sha256",
+      "ts": "2026-08-03T20:54:54Z",
+      "provenance": "latex-source"
+    }
+  }
 }

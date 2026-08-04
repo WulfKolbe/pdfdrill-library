@@ -6,7 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "PDFINFO_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 26,
@@ -81,10 +88,53 @@
     },
     "tiddlers_path": "1414674613.tiddlers.json",
     "tiddlers_count": 778,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Eigenvalues of the Laplace-Beltrami operator on a spherical cap is considered under\n      the homogeneous Robin condition. The asymptotic behavior of eigenvalues and the\n      inﬂuence of the eigenvalues by the boundary conditions are discussed as the cap becomes\n      large so that the domain covers almost the whole sphere.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "KMJ_37-3_08 620..645",
+    "author": "",
+    "producer": "Acrobat Distiller 5.0.5 (Windows)",
+    "creator": "3B2 Total Publishing System 7.51a/W",
+    "creation_date": "2014-10-21T03:21:55Z",
+    "mod_date": "2014-10-21T11:38:49+08",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 26,
+    "encrypted": false,
+    "page_size": "516 x 728 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 178200,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "kmj2014",
+    "title": "KMJ_37-3_08 620..645",
+    "author": "",
+    "year": "2014",
+    "pages": 26,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -285,7 +335,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -360,6 +410,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 12.3,
       "detail": "778 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-04T05:36:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 93.7,
+      "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-04T05:36:33Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 33.8,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-04T05:36:33Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 38.4,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-04T05:36:34Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 217.6,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-04T05:36:34Z",
+      "node": "pdfinfo",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 45.7,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-08-04T05:36:34Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=kmj2014"
+    },
+    {
+      "ts": "2026-08-04T05:36:37Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3490.5,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

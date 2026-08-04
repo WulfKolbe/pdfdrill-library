@@ -7,7 +7,12 @@
     "SIZE_KNOWN",
     "LATEX_INGESTED",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "1501.00696",
@@ -158,10 +163,61 @@
       "NQLEEW+CMSY6",
       "PEYQTU+CMMI8"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "abstract": "Tensor factorizations are computationally hard problems, and in particular, are often significantly harder than their matrix counterparts. In case of Boolean tensor factorizations -- where the input tensor and all the factors are required to be binary and we use Boolean algebra -- much of that hardness comes from the possibility of overlapping components. Yet, in many applications we are perfectly happy to partition at least one of the modes. In this paper we investigate what consequences does this partitioning have on the computational complexity of the Boolean tensor factorizations and present a new algorithm for the resulting clustering problem. This algorithm can alternatively be seen as a particularly regularized clustering algorithm that can handle extremely high-dimensional observations. We analyse our algorithms with the goal of maximizing the similarity and argue that this is more meaningful than minimizing the dissimilarity. As a by-product we obtain a PTAS and an efficient 0.828-approximation algorithm for rank-1 binary factorizations. Our algorithm for Boolean tensor clustering achieves high scalability, high similarity, and good generalization to unseen data with both synthetic and real-world data sets.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Clustering Boolean Tensors",
+    "arxiv_authors": [
+      "Saskia Metzler",
+      "Pauli Miettinen"
+    ],
+    "arxiv_primary_category": "math.NA"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.12",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2021-07-27T23:01:45Z",
+    "mod_date": "2021-07-27T23:01:45Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 21,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 707902,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) kpathsea version 6.0.1",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "metzler2021",
+    "title": "Clustering Boolean Tensors",
+    "author": "Saskia Metzler and Pauli Miettinen",
+    "year": "2021",
+    "pages": 21,
+    "doi": "",
+    "arxiv_id": "1501.00696",
+    "url": "https://arxiv.org/abs/1501.00696",
+    "license": "",
+    "publisher": "",
+    "eprint": "1501.00696",
+    "archive_prefix": "arXiv",
+    "primary_class": "math.NA"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -894,7 +950,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {},
@@ -1010,6 +1066,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.7,
       "detail": "395 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-04T05:36:40Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 50.1,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-04T05:36:40Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 171.2,
+      "detail": "52 fonts, 15 math"
+    },
+    {
+      "ts": "2026-08-04T05:36:40Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "citekey=metzler2021"
+    },
+    {
+      "ts": "2026-08-04T05:36:45Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 5011.8,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

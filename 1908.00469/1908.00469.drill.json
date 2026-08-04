@@ -5,16 +5,22 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1908.00469",
     "source_kind": "arxiv",
     "bibkey": "1908.00469",
-    "model_path": "1908.00469.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Formula": 1,
-      "Paragraph": 3
+      "Paragraph": 361,
+      "Formula": 97,
+      "LtxCommand": 13,
+      "Abstract": 1,
+      "Section": 20,
+      "Table": 5,
+      "Citation": 129
     },
     "model_equations_with_cdn": 0,
     "model_source": "latex",
@@ -86,7 +92,19 @@
       "XKEAZI+LibertineMathMI5",
       "FQKGJX+LibertineMathBMI"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 10,
+      "placed": 185,
+      "regions": 185,
+      "sections": 20,
+      "children": 447,
+      "numbered": 20,
+      "roots": 1
+    },
+    "tiddlers_path": "1908.00469.tiddlers.json",
+    "tiddlers_count": 598,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -464,7 +482,32 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 80.8,
       "detail": "21 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-03T19:48:06Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "626 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T19:48:06Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.9,
+      "detail": "598 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:3aa299527ef2d1c949164117fc028a066084ad6f7cf4f54dd8ba7400b66a5830",
+      "algo": "sha256",
+      "ts": "2026-08-03T19:48:06Z",
+      "provenance": "latex-source"
+    }
+  }
 }

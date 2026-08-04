@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 100,
@@ -64,7 +67,28 @@
       "JDMFDO+CMSY10",
       "FQQCOL+MSAM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "640104037-Heim-Theory-Syntrometrische-Maximentelezentrik",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 100,
+      "ListItem": 9,
+      "Equation": 313,
+      "Paragraph": 331,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "640104037-Heim-Theory-Syntrometrische-Maximentelezentrik.tiddlers.json",
+    "tiddlers_count": 770,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -341,6 +365,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 184.7,
       "detail": "15 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-03T22:18:09Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 591.8,
+      "detail": "754 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T22:18:10Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 26.6,
+      "detail": "770 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/640104037-Heim-Theory-Syntrometrische-Maximentelezentrik/640104037-Heim-Theory-Syntrometrische-Maximentelezentrik.lines.json": "sha256:bc628de42701a2334d03e950b026c016232d0f851947921c0637b8303b0d5240"
+      },
+      "params_hash": "sha256:48d00ad6d1a2559b57d27cabc8a28dd1b46ba4997c2dc102f92a118dac3b9528",
+      "algo": "sha256",
+      "ts": "2026-08-03T22:18:09Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

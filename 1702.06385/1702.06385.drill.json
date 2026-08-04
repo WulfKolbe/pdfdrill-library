@@ -13,7 +13,12 @@
     "MD_BUILT",
     "BIBSOURCE_BUILT",
     "LATEX_INGESTED",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "TOC_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "1702.06385",
@@ -21,16 +26,19 @@
     "bibkey": "1702.06385",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 9,
-      "Citation": 1,
-      "ListItem": 7,
-      "Paragraph": 9,
-      "Document": 1,
+      "LtxCommand": 4,
+      "Paragraph": 88,
+      "Abstract": 1,
+      "Section": 25,
+      "Formula": 157,
       "Equation": 19,
-      "Table": 1
+      "Table": 1,
+      "Citation": 78,
+      "Algorithm": 1,
+      "AlgorithmStep": 23
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "bibliography_entries": 34,
     "bibliography_with_year": 34,
     "bibliography_numeric_citations": 0,
@@ -177,7 +185,148 @@
       "PCWAIW+CMMI7",
       "PCWAIW+CMMI7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 9,
+      "placed": 54,
+      "regions": 54,
+      "sections": 25,
+      "children": 276,
+      "numbered": 25,
+      "roots": 1
+    },
+    "tiddlers_path": "1702.06385.tiddlers.json",
+    "tiddlers_count": 356,
+    "tiddlers_svg_mode": "inline",
+    "toc": [
+      {
+        "number": "0.1",
+        "title": "Abstract",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.2",
+        "title": "Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.3",
+        "title": "Preliminaries",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.3.1",
+        "title": "Notation",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "0.3.2",
+        "title": "Kolmogorov Complexity, a brief primer",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "0.3.3",
+        "title": "MDL, a brief primer",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "0.4",
+        "title": "Causal Inference by Compression",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.4.1",
+        "title": "Causal Inference by Complexity",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "0.4.2",
+        "title": "Causal Inference by MDL",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "0.4.3",
+        "title": "Normalized Causal Indicator",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "0.5",
+        "title": "MDL for Tree Models",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.6",
+        "title": "The \\ourmethod Algorithm",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.7",
+        "title": "Related Work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.8",
+        "title": "Experiments",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.8.1",
+        "title": "Synthetic data",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "0.8.2",
+        "title": "Real world data",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "0.9",
+        "title": "Conclusion",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.10",
+        "title": "Acknowledgements",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.11",
+        "title": "Glossary",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.11.1",
+        "title": "Inline formulas",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "0.11.2",
+        "title": "Display equations",
+        "page": "",
+        "level": 3
+      }
+    ],
+    "toc_search_scope": "markdown"
   },
   "pdfinfo": {
     "title": "Causal Inference on Multivariate and Mixed-Type Data",
@@ -224,7 +373,715 @@
     "primary_class": "stat.ML"
   },
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 62.0,
+      "y": 615.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 61.0,
+      "y": 745.0,
+      "name": "page.1",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 1,
+      "x": 62.0,
+      "y": 617.0,
+      "name": "section*.1",
+      "kind": "section"
+    },
+    {
+      "page": 1,
+      "x": 62.0,
+      "y": 343.0,
+      "name": "section.1",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 312.0,
+      "y": 283.0,
+      "name": "equation.3.1",
+      "kind": "equation"
+    },
+    {
+      "page": 2,
+      "x": 61.0,
+      "y": 745.0,
+      "name": "page.2",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 2,
+      "x": 62.0,
+      "y": 715.0,
+      "name": "section.2",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 312.0,
+      "y": 607.0,
+      "name": "section.3",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 62.0,
+      "y": 664.0,
+      "name": "subsection.2.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 2,
+      "x": 62.0,
+      "y": 402.0,
+      "name": "subsection.2.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 2,
+      "x": 62.0,
+      "y": 226.0,
+      "name": "subsection.2.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 2,
+      "x": 312.0,
+      "y": 557.0,
+      "name": "subsection.3.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 2,
+      "x": 312.0,
+      "y": 111.0,
+      "name": "subsection.3.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 61.0,
+      "y": 745.0,
+      "name": "page.3",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 3,
+      "x": 312.0,
+      "y": 222.0,
+      "name": "section.4",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 62.0,
+      "y": 416.0,
+      "name": "subsection.3.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 62.0,
+      "y": 721.0,
+      "name": "figure.caption.2",
+      "kind": "figure"
+    },
+    {
+      "page": 4,
+      "x": 61.0,
+      "y": 745.0,
+      "name": "page.4",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 4,
+      "x": 62.0,
+      "y": 235.0,
+      "name": "section*.3",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 312.0,
+      "y": 717.0,
+      "name": "section*.4",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 312.0,
+      "y": 562.0,
+      "name": "section*.5",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 312.0,
+      "y": 348.0,
+      "name": "section*.6",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 312.0,
+      "y": 125.0,
+      "name": "section*.7",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 312.0,
+      "y": 198.0,
+      "name": "algocfline.1",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 61.0,
+      "y": 745.0,
+      "name": "page.5",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 5,
+      "x": 312.0,
+      "y": 128.0,
+      "name": "section*.11",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 62.0,
+      "y": 567.0,
+      "name": "section*.8",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 312.0,
+      "y": 594.0,
+      "name": "section*.9",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 312.0,
+      "y": 715.0,
+      "name": "section.5",
+      "kind": "section"
+    },
+    {
+      "page": 6,
+      "x": 79.0,
+      "y": 664.0,
+      "name": "AlgoLine.1.1",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 125.0,
+      "y": 556.0,
+      "name": "AlgoLine.1.10",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 141.0,
+      "y": 532.0,
+      "name": "AlgoLine.1.11",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 141.0,
+      "y": 520.0,
+      "name": "AlgoLine.1.12",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 156.0,
+      "y": 508.0,
+      "name": "AlgoLine.1.13",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 95.0,
+      "y": 481.0,
+      "name": "AlgoLine.1.14",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 95.0,
+      "y": 469.0,
+      "name": "AlgoLine.1.15",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 110.0,
+      "y": 457.0,
+      "name": "AlgoLine.1.16",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 110.0,
+      "y": 445.0,
+      "name": "AlgoLine.1.17",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 79.0,
+      "y": 425.0,
+      "name": "AlgoLine.1.18",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 79.0,
+      "y": 652.0,
+      "name": "AlgoLine.1.2",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 79.0,
+      "y": 640.0,
+      "name": "AlgoLine.1.3",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 79.0,
+      "y": 628.0,
+      "name": "AlgoLine.1.4",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 79.0,
+      "y": 616.0,
+      "name": "AlgoLine.1.5",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 79.0,
+      "y": 604.0,
+      "name": "AlgoLine.1.6",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 95.0,
+      "y": 592.0,
+      "name": "AlgoLine.1.7",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 110.0,
+      "y": 580.0,
+      "name": "AlgoLine.1.8",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 110.0,
+      "y": 568.0,
+      "name": "AlgoLine.1.9",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 79.0,
+      "y": 694.0,
+      "name": "algocf.1",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 62.0,
+      "y": 721.0,
+      "name": "algocf.caption.10",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 61.0,
+      "y": 745.0,
+      "name": "page.6",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 6,
+      "x": 62.0,
+      "y": 306.0,
+      "name": "section.6",
+      "kind": "section"
+    },
+    {
+      "page": 6,
+      "x": 312.0,
+      "y": 273.0,
+      "name": "section.7",
+      "kind": "section"
+    },
+    {
+      "page": 7,
+      "x": 312.0,
+      "y": 721.0,
+      "name": "figure.caption.13",
+      "kind": "figure"
+    },
+    {
+      "page": 7,
+      "x": 312.0,
+      "y": 569.0,
+      "name": "figure.caption.15",
+      "kind": "figure"
+    },
+    {
+      "page": 7,
+      "x": 61.0,
+      "y": 745.0,
+      "name": "page.7",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 7,
+      "x": 62.0,
+      "y": 370.0,
+      "name": "section*.12",
+      "kind": "section"
+    },
+    {
+      "page": 7,
+      "x": 62.0,
+      "y": 191.0,
+      "name": "section*.14",
+      "kind": "section"
+    },
+    {
+      "page": 7,
+      "x": 312.0,
+      "y": 192.0,
+      "name": "section*.16",
+      "kind": "section"
+    },
+    {
+      "page": 7,
+      "x": 62.0,
+      "y": 715.0,
+      "name": "subsection.7.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 312.0,
+      "y": 250.0,
+      "name": "subsection.7.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 8,
+      "x": 62.0,
+      "y": 721.0,
+      "name": "figure.caption.17",
+      "kind": "figure"
+    },
+    {
+      "page": 8,
+      "x": 61.0,
+      "y": 745.0,
+      "name": "page.8",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 8,
+      "x": 62.0,
+      "y": 331.0,
+      "name": "section*.18",
+      "kind": "section"
+    },
+    {
+      "page": 8,
+      "x": 62.0,
+      "y": 114.0,
+      "name": "section.8",
+      "kind": "section"
+    },
+    {
+      "page": 8,
+      "x": 312.0,
+      "y": 721.0,
+      "name": "table.caption.19",
+      "kind": "table"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 571.0,
+      "name": "cite.budhathoki:16:origo",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 547.0,
+      "name": "cite.chen:13:ktr",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 514.0,
+      "name": "cite.fisher:36:dataset",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 492.0,
+      "name": "cite.ghiringhelli:15:octet",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 459.0,
+      "name": "cite.grunwald:07:book",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 437.0,
+      "name": "cite.haberman:76:dataset",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 404.0,
+      "name": "cite.heikinheimo:07:mammals",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 361.0,
+      "name": "cite.hoyer:09:nonlinear",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 251.0,
+      "name": "cite.janzing:10:algomarkov",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 218.0,
+      "name": "cite.janzing:10:justifyanm",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 328.0,
+      "name": "cite.janzing:10:ltr",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 295.0,
+      "name": "cite.janzing:12:igci",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 185.0,
+      "name": "cite.kolmogorov:65:information",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 152.0,
+      "name": "cite.kontkanen:07:histo",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 692.0,
+      "name": "cite.liu:16:dc",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 661.0,
+      "name": "cite.marx:17:slope",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 629.0,
+      "name": "cite.mooij:10:mml",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 596.0,
+      "name": "cite.mooij:16:pairs",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 552.0,
+      "name": "cite.murthy:97:decision-trees",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 530.0,
+      "name": "cite.pearl:09:book",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 508.0,
+      "name": "cite.peters:10:discreteanm",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 475.0,
+      "name": "cite.peters:11:dr",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 442.0,
+      "name": "cite.peters:14:continuousanm",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 410.0,
+      "name": "cite.quinlan:86:id3",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 387.0,
+      "name": "cite.rissanen:78:mdl",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 365.0,
+      "name": "cite.rissanen:83:integers",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 332.0,
+      "name": "cite.sgouritsa:15:cure",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 300.0,
+      "name": "cite.shimizu:06:anm",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 267.0,
+      "name": "cite.spirtes:00:book",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 245.0,
+      "name": "cite.vechten:69:quantum",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 212.0,
+      "name": "cite.verma:90:markov-equiv",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 715.0,
+      "name": "cite.vitanyi:93:book",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 190.0,
+      "name": "cite.vreeken:15:ergo",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 312.0,
+      "y": 169.0,
+      "name": "cite.zhang:09:ipcm",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 61.0,
+      "y": 745.0,
+      "name": "page.9",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 9,
+      "x": 62.0,
+      "y": 717.0,
+      "name": "section*.20",
+      "kind": "section"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "TDYOQT+CMMI10",
@@ -899,7 +1756,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -1054,18 +1911,64 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 53.2,
       "detail": "48 fonts, 20 math"
+    },
+    {
+      "ts": "2026-08-03T19:37:58Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,LISTS_BUILT,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "397 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T19:37:58Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,LISTS_BUILT,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.6,
+      "detail": "356 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-04T05:37:40Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 105.4,
+      "detail": "48 fonts, 20 math"
+    },
+    {
+      "ts": "2026-08-04T05:37:40Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,LISTS_BUILT,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 9.9,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-04T05:37:40Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,LISTS_BUILT,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 23.5,
+      "detail": "101 dests across 8 kinds"
+    },
+    {
+      "ts": "2026-08-04T05:37:43Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,LISTS_BUILT,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2888.0,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/1702.06385/1702.06385.lines.json": "sha256:359c9a2d751e81b9c28bda0e0c2116b50afe5f58e8876b3117779804ee8c9092"
-      },
+      "inputs": {},
       "params_hash": "sha256:9d269f46b3fa24f46b87098f56dd52259ba355f326b4d7ae4a6341c8b0ff546e",
       "algo": "sha256",
-      "ts": "2026-08-03T08:55:02Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T19:37:58Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

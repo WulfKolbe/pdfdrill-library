@@ -6,7 +6,13 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 28,
@@ -81,9 +87,52 @@
     ],
     "has_math_fonts": true,
     "lines_upgraded_from_ocr": false,
-    "pua_note": ""
+    "pua_note": "",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 20,
+        "url": "www.cantera.org",
+        "kind": "text"
+      },
+      {
+        "page": 21,
+        "url": "www.lxcat.net",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "bedickc",
+    "producer": "Adobe PDF Library 15.0",
+    "creator": "Acrobat PDFMaker 15 for Word",
+    "creation_date": "2018-06-12T12:53:18-04",
+    "mod_date": "2018-06-12T12:53:27-04",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": true,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 28,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 557604,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Comments": "",
+      "Company": "Hewlett-Packard Company",
+      "Keywords": "",
+      "SourceModified": "D:20180612165238",
+      "Subject": ""
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -243,7 +292,48 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 23,
+      "x0": 129.96,
+      "y0": 193.74,
+      "x1": 199.02,
+      "y1": 212.28,
+      "w_pt": 69.06,
+      "h_pt": 18.54,
+      "name": "Im0",
+      "imagemask": false,
+      "width_px": 144,
+      "height_px": 39,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 150,
+      "y_ppi": 151,
+      "size_bytes": 30,
+      "object_id": "51 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 23,
+      "x0": 169.56,
+      "y0": 383.34,
+      "x1": 238.62,
+      "y1": 401.88,
+      "w_pt": 69.06,
+      "h_pt": 18.54,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 144,
+      "height_px": 39,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 150,
+      "y_ppi": 151,
+      "size_bytes": 30,
+      "object_id": "51 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -334,6 +424,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.8,
       "detail": "135 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-04T05:36:36Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 51.3,
+      "detail": "title=False author=True"
+    },
+    {
+      "ts": "2026-08-04T05:36:36Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 83.3,
+      "detail": "11 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-04T05:36:36Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 38.0,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-04T05:36:36Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 40.6,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-04T05:36:37Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 214.7,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-04T05:36:45Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 7619.1,
+      "detail": "2 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {

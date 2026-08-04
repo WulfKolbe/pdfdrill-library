@@ -8,7 +8,12 @@
     "LATEX_INGESTED",
     "TIDDLERS_BUILT",
     "BIBSOURCE_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "1408.0838",
@@ -163,9 +168,38 @@
       "ZKMYMN+CMMI10",
       "KNRCNP+CMSY7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "Estimating Maximally Probable Constrained Relations by Mathematical Programming",
+    "author": "Lizhen Qu, Bjoern Andres",
+    "producer": "pdfTeX-1.40.12",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2022-03-02T18:05:27Z",
+    "mod_date": "2022-03-02T18:05:27Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 16,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 534206,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "Clustering, Combinatorial Optimization, Convex Optimization, Graphical Models, Mathematical Programming, Mixed-Integer Nonlinear Programming, Ranking",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) kpathsea version 6.0.1",
+      "Subject": ""
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -815,7 +849,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {},
@@ -947,6 +981,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.9,
       "detail": "373 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-04T05:36:26Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 48.2,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-04T05:36:26Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 141.7,
+      "detail": "46 fonts, 23 math"
+    },
+    {
+      "ts": "2026-08-04T05:36:27Z",
+      "node": "toc",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 46.1,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-04T05:36:27Z",
+      "node": "links",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 215.2,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-04T05:36:32Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4594.4,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
