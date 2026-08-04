@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -79,7 +82,28 @@
       "UMSSDA+CMMI12",
       "IGFUFG+CMSY9"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "49_learning_lie_group_symmetry_tr",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 9,
+      "ListItem": 20,
+      "Equation": 33,
+      "Paragraph": 35,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 4 unmapped private-use character(s) remain (U+F8EE×1, U+F8F0×1, U+F8F9×1, U+F8FB×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "49_learning_lie_group_symmetry_tr.tiddlers.json",
+    "tiddlers_count": 114,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -482,6 +506,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 32.7,
       "detail": "24 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T22:15:15Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 56.2,
+      "detail": "98 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T22:15:15Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.5,
+      "detail": "114 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/49_learning_lie_group_symmetry_tr/49_learning_lie_group_symmetry_tr.lines.json": "sha256:68d2b1b9177ee4c41ddb7ac6e540333291b1649a88864a5ae56b3058b103f8e5"
+      },
+      "params_hash": "sha256:010a6f8c44c8c188470242cae9f24d6bd25be43c30eec51d758249e1c0455d62",
+      "algo": "sha256",
+      "ts": "2026-08-03T22:15:15Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

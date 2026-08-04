@@ -10,7 +10,8 @@
     "CES_BUILT",
     "NEEDS_VISION_OCR",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2209.00445",
@@ -18,13 +19,18 @@
     "bibkey": "2209.00445",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 16,
-      "ListItem": 15,
-      "Paragraph": 16,
-      "Document": 1
+      "Paragraph": 85,
+      "Abstract": 1,
+      "Section": 24,
+      "Formula": 73,
+      "Equation": 1,
+      "Table": 16,
+      "Citation": 60,
+      "Algorithm": 1,
+      "AlgorithmStep": 9
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": false,
@@ -177,7 +183,19 @@
       "YNZKNP+CMMI6",
       "BBGDFV+CMMI12"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 16,
+      "placed": 72,
+      "regions": 72,
+      "sections": 24,
+      "children": 184,
+      "numbered": 24,
+      "roots": 1
+    },
+    "tiddlers_path": "2209.00445.tiddlers.json",
+    "tiddlers_count": 280,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -1139,18 +1157,32 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 66.4,
       "detail": "60 fonts, 26 math"
+    },
+    {
+      "ts": "2026-08-03T20:59:29Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,CES_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "270 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T20:59:29Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,CES_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.2,
+      "detail": "280 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/2209.00445/2209.00445.lines.json": "sha256:7a49bf56d59bd766f763ce25dcf7901c8fa6a5164031ed3713a9c18ec5b09928"
-      },
+      "inputs": {},
       "params_hash": "sha256:878cbcd96bc225acba1f3072bbf7e126256dd6f96b960bbcd7716588211436e7",
       "algo": "sha256",
-      "ts": "2026-08-03T08:55:03Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T20:59:29Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

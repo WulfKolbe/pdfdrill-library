@@ -5,16 +5,20 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2103.02280",
     "source_kind": "arxiv",
     "bibkey": "2103.02280",
-    "model_path": "2103.02280.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Table": 1,
-      "Citation": 92
+      "Paragraph": 68,
+      "Abstract": 1,
+      "Section": 15,
+      "Table": 4,
+      "Citation": 136
     },
     "model_equations_with_cdn": 0,
     "model_source": "latex",
@@ -72,7 +76,19 @@
       "DOCPFL+Inconsolatazi4-Regular"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "merged_geometry": {
+      "pages": 8,
+      "placed": 37,
+      "regions": 37,
+      "sections": 15,
+      "children": 71,
+      "numbered": 15,
+      "roots": 1
+    },
+    "tiddlers_path": "2103.02280.tiddlers.json",
+    "tiddlers_count": 208,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -352,6 +368,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 55.5,
       "detail": "14 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T20:52:25Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "224 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T20:52:25Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.1,
+      "detail": "208 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2103.02280/texsrc/main.tex": "sha256:cbedd42b94d178aa715363dd0aea7908c74d406e6a355d250c0072e6394091ce"
+      },
+      "params_hash": "sha256:3a776c49fe0f611a92309a7d2bc515893e79cac3242287d6cbf9df2189ed6db0",
+      "algo": "sha256",
+      "ts": "2026-08-03T20:52:25Z",
+      "provenance": "latex-source"
+    }
+  }
 }

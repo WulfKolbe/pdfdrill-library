@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 41,
@@ -76,7 +80,34 @@
       "TMHVPV+MSAM10",
       "NCLTVY+MSBM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "2022_AACA_ComplexityOnGA_final",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 41,
+      "Citation": 11,
+      "ListItem": 7,
+      "Equation": 159,
+      "Paragraph": 167,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 3 unmapped private-use character(s) remain (U+F8F1×1, U+F8F2×1, U+F8F3×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 27,
+    "bibliography_with_year": 23,
+    "bibliography_numeric_citations": 65,
+    "bibliography_authoryear_citations": 5,
+    "bibliography_cites": 65,
+    "tiddlers_path": "2022_AACA_ComplexityOnGA_final.tiddlers.json",
+    "tiddlers_count": 426,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -451,6 +482,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 96.3,
       "detail": "22 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-03T20:45:19Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 178.7,
+      "detail": "386 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T20:45:19Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "27 entries, 65+5 cites detected, 65 linked"
+    },
+    {
+      "ts": "2026-08-03T20:45:19Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.0,
+      "detail": "426 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2022_AACA_ComplexityOnGA_final/2022_AACA_ComplexityOnGA_final.lines.json": "sha256:a1f1c01bf10b0371e02a7e8d7e861f71859cba79fe4c346b06f42acb264cda09"
+      },
+      "params_hash": "sha256:4ebd5fd7a6b209e668af043a4c638c0674efdc85dd5055e08bb18d1eadc0c2e6",
+      "algo": "sha256",
+      "ts": "2026-08-03T20:45:19Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

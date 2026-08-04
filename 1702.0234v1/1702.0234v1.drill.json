@@ -6,7 +6,12 @@
     "MODEL_BUILT",
     "LATEX_INGESTED",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "NEEDS_VISION_OCR",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -44,17 +49,16 @@
     "model_object_counts": {
       "Page": 8,
       "ListItem": 2,
-      "Paragraph": 8,
-      "Document": 1,
-      "Equation": 36
+      "Equation": 4,
+      "Paragraph": 12,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
     "model_source": "pdfminer-chars",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "pdfminer-chars"
     },
     "latex_source": "1702.0234v1.tgz",
     "latex_macros": 0,
@@ -65,7 +69,7 @@
     "merge_latex_source": "1702.0234v1.tgz",
     "merge_paragraphs_changed": 7,
     "tiddlers_path": "1702.0234v1.tiddlers.json",
-    "tiddlers_count": 71,
+    "tiddlers_count": 43,
     "tiddlers_svg_mode": "inline",
     "fonts": [
       "AAAAAD+EuropeanComputerModern-BoldExtended17pt",
@@ -109,9 +113,35 @@
       "AAAAAR+CMMI6",
       "AAAABB+CMSY6"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "On the k-MACGA Mother Algebras of Conformal Geometric Algebras and the k-CGA Algebras",
+    "author": "Robert Benjamin Easter",
+    "producer": "TeXmacs 1.99.4 + Hummus",
+    "creator": "TeXmacs 1.99.4",
+    "creation_date": null,
+    "mod_date": null,
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 8,
+    "encrypted": false,
+    "page_size": "595.279 x 841.895 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 192270,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -509,7 +539,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -600,17 +630,65 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 29.1,
       "detail": "28 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-03T19:37:56Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 42.1,
+      "detail": "27 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T19:37:56Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.4,
+      "detail": "43 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-04T05:37:39Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 44.5,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-04T05:37:39Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 62.9,
+      "detail": "28 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-04T05:37:39Z",
+      "node": "links",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 125.0,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-04T05:37:43Z",
+      "node": "images",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3593.3,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1702.0234v1/1702.0234v1.lines.json": "sha256:e95b2830d8b02e94274a2934a7a6e4777713d6a262fcc3bcbf2eef0fdd20a24a"
+        "/home/wkolbe/pdfdrill-library/1702.0234v1/1702.0234v1.lines.json": "sha256:dce41c30ee9b020c59fe18e47f23d375b59a0f2d102b3590995eb8fd758ca24c"
       },
       "params_hash": "sha256:325957e06438c6152f7bfdb5de099f8050005ddcbc56364e5452b58a59e0b7f5",
       "algo": "sha256",
-      "ts": "2026-07-30T14:34:02Z",
+      "ts": "2026-08-03T19:37:56Z",
       "provenance": "pdfminer-chars"
     },
     "LATEX_INGESTED": {

@@ -6,7 +6,12 @@
     "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "LINKS_KNOWN",
+    "PDFINFO_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "1709.03544",
@@ -68,7 +73,8 @@
     "bibsource_citations_linked": 0,
     "merged_geometry": {
       "pages": 8,
-      "placed": 17,
+      "placed": 46,
+      "regions": 46,
       "sections": 15,
       "children": 108,
       "numbered": 15,
@@ -99,9 +105,45 @@
       "BTOPTN+LinLibertineI5"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "tiddlers_path": "1709.03544.tiddlers.json",
+    "tiddlers_count": 172,
+    "tiddlers_svg_mode": "inline",
+    "links": [
+      {
+        "page": 8,
+        "url": "http://www.chokkan.org/software/crfsuite/"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "KnowNER: Incremental Multilingual Knowledge in Named Entity Recognition",
+    "author": "Dominic Seyler, Tatiana Dembelova, Luciano Del Corro, Johannes Hoffart, and Gerhard Weikum",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2021-06-21T03:04:26Z",
+    "mod_date": "2021-06-21T03:04:26Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 8,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 622058,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) kpathsea version 6.2.2",
+      "Subject": ""
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -415,7 +457,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {},
@@ -515,6 +557,54 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 69.7,
       "detail": "22 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-03T19:39:22Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "219 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T19:39:22Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.7,
+      "detail": "172 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-04T05:37:58Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 127.7,
+      "detail": "22 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-04T05:37:58Z",
+      "node": "links",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 23.7,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-04T05:37:59Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 40.7,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-04T05:38:00Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1466.1,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
@@ -523,7 +613,7 @@
       "inputs": {},
       "params_hash": "sha256:8254e2e4582b0f44a537a1fc1c255820d0a509493fd8f808e476cabea98a8946",
       "algo": "sha256",
-      "ts": "2026-08-03T13:21:11Z",
+      "ts": "2026-08-03T19:39:22Z",
       "provenance": "latex-source"
     }
   }

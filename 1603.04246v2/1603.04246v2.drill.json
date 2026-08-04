@@ -7,7 +7,13 @@
     "LATEX_INGESTED",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 24,
@@ -47,15 +53,18 @@
     "bibkey": "1603.04246v2",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 24,
-      "Citation": 2,
-      "ListItem": 6,
-      "Paragraph": 24,
-      "Document": 1,
-      "Equation": 120
+      "Paragraph": 79,
+      "Abstract": 1,
+      "LtxCommand": 2,
+      "Section": 6,
+      "Formula": 137,
+      "Equation": 120,
+      "Theorem": 12,
+      "Proof": 8,
+      "Citation": 31
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -76,7 +85,7 @@
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 18,
     "tiddlers_path": "1603.04246v2.tiddlers.json",
-    "tiddlers_count": 215,
+    "tiddlers_count": 426,
     "tiddlers_svg_mode": "inline",
     "fonts": [
       "CAUQDN+CMR10",
@@ -121,10 +130,70 @@
       "Mathematica2",
       "Mathematica1"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 24,
+      "placed": 30,
+      "regions": 30,
+      "sections": 6,
+      "children": 334,
+      "numbered": 6,
+      "roots": 1
+    },
+    "abstract": "In this paper we prove that no packing of unit balls in Euclidean space $\\mathbb{R}^8$ has density greater than that of the $E_8$-lattice packing.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "The sphere packing problem in dimension 8",
+    "arxiv_authors": [
+      "Maryna Viazovska"
+    ],
+    "arxiv_primary_category": "math.NT",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2017-04-05T00:08:03Z",
+    "mod_date": "2017-04-05T00:08:03Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 24,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 835011,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) kpathsea version 6.2.2",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "viazovska2017",
+    "title": "The sphere packing problem in dimension 8",
+    "author": "Maryna Viazovska",
+    "year": "2017",
+    "pages": 24,
+    "doi": "",
+    "arxiv_id": "1603.04246v2",
+    "url": "https://arxiv.org/abs/1603.04246v2",
+    "license": "",
+    "publisher": "",
+    "eprint": "1603.04246v2",
+    "archive_prefix": "arXiv",
+    "primary_class": "math.NT"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -507,7 +576,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -606,18 +675,72 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 93.5,
       "detail": "27 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-03T19:36:49Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "396 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T19:36:49Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.3,
+      "detail": "426 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-04T05:37:17Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 43.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-04T05:37:18Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 174.0,
+      "detail": "27 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-04T05:37:18Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 287.8,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-04T05:37:18Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "citekey=viazovska2017"
+    },
+    {
+      "ts": "2026-08-04T05:37:22Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3395.9,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/1603.04246v2/1603.04246v2.lines.json": "sha256:116501283df6adcc7899873b5ab15c973d4c18fbf752aa24b0e3a4d3fc8797ab"
-      },
+      "inputs": {},
       "params_hash": "sha256:dca530bdf46738229579231b2f4fe2d7cbc0507f64c692480a6d41bb463653d0",
       "algo": "sha256",
-      "ts": "2026-07-30T14:33:05Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T19:36:49Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

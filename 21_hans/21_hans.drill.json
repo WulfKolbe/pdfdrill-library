@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -73,7 +76,28 @@
       "CMBPMI+MSBM10",
       "CMBPNK+CMSY5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "21_hans",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 11,
+      "ListItem": 14,
+      "Equation": 74,
+      "Paragraph": 67,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "21_hans.tiddlers.json",
+    "tiddlers_count": 183,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -434,6 +458,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 32.5,
       "detail": "21 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T20:56:40Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 48.3,
+      "detail": "167 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T20:56:40Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.7,
+      "detail": "183 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/21_hans/21_hans.lines.json": "sha256:13a2ef38f5aa8c298a085b081af34c2682349be54d8c3db8f324ff4beab14224"
+      },
+      "params_hash": "sha256:08b3320af2887bd895bd5c65f3db645db0a7be40932f37553498ec0c8325b849",
+      "algo": "sha256",
+      "ts": "2026-08-03T20:56:40Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -100,28 +100,36 @@
       }
     ],
     "bibkey": "2020.findings-emnlp.424",
-    "model_path": "2020.findings-emnlp.424.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 11,
-      "Footnote": 4,
+      "Footnote": 9,
       "Table": 7,
       "TableRow": 39,
       "TableCell": 315,
       "Sidenote": 22,
       "Abstract": 1,
       "Diagram": 2,
-      "Section": 26,
+      "Section": 27,
       "Picture": 1,
       "ListItem": 18,
       "Equation": 6,
       "Formula": 73,
-      "Paragraph": 59,
+      "Paragraph": 51,
       "Document": 1
     },
     "model_equations_with_cdn": 6,
-    "tiddlers_path": "2020.findings-emnlp.424.pdf.drill/2020.findings-emnlp.424.tiddlers.json",
-    "tiddlers_count": 249,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_path": "2020.findings-emnlp.424.tiddlers.json",
+    "tiddlers_count": 247,
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -532,7 +540,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 34.0,
       "detail": "21 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-03T20:44:03Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 335.4,
+      "detail": "583 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T20:44:03Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.3,
+      "detail": "247 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2020.findings-emnlp.424/2020.findings-emnlp.424.lines.json": "sha256:e002f997c0cdbbfcec60292fdf3dd7e27171243f1802b70979ea0d29e003cf9d"
+      },
+      "params_hash": "sha256:6aa6c520eea2d94a01a99649f77ac120ae8e0239be09ef76682f2b5f83e8da36",
+      "algo": "sha256",
+      "ts": "2026-08-03T20:44:03Z",
+      "provenance": "mathpix"
+    }
+  }
 }

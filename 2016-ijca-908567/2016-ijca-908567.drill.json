@@ -3,7 +3,12 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -71,7 +76,51 @@
       "Symbol",
       "Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "ocr_lang": "eng",
+    "ocr_lang_effective": "eng",
+    "ocr_pages": 5,
+    "ocr_lines": 350,
+    "ocr_units": "pt",
+    "ocr_render_dpi": 400,
+    "ocr_type_counts": {
+      "section_header": 13,
+      "page_info": 8,
+      "diagram": 0,
+      "absorbed_lines": 0,
+      "table": 3,
+      "equation": 0,
+      "equation_lines_merged": 0,
+      "toc_rows": 0,
+      "barcodes": 0
+    },
+    "bibkey": "2016-ijca-908567",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 5,
+      "Citation": 12,
+      "Table": 3,
+      "ListItem": 19,
+      "Paragraph": 98,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "tesseract",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "tesseract"
+    },
+    "bibliography_entries": 13,
+    "bibliography_with_year": 12,
+    "bibliography_numeric_citations": 1,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 2,
+    "tiddlers_path": "2016-ijca-908567.tiddlers.json",
+    "tiddlers_count": 158,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -502,6 +551,50 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 51.3,
       "detail": "26 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T20:40:36Z",
+      "node": "ocr",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "OCR_BUILT",
+      "cost_ms": 27497.1,
+      "detail": "5 pages, 350 lines, lang=eng"
+    },
+    {
+      "ts": "2026-08-03T20:40:36Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,OCR_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 74.4,
+      "detail": "138 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T20:40:36Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "13 entries, 1+1 cites detected, 2 linked"
+    },
+    {
+      "ts": "2026-08-03T20:40:36Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.3,
+      "detail": "158 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2016-ijca-908567/2016-ijca-908567.lines.json": "sha256:9e6dd4fe68375c8728fe6a927c43c0abd7aaf6d49326b8d2647a078a058e88e3"
+      },
+      "params_hash": "sha256:26dc81f7a66a07a5863c68baa27ee0754ff5e92d41c6299efa4b1c34a960345d",
+      "algo": "sha256",
+      "ts": "2026-08-03T20:40:36Z",
+      "provenance": "tesseract"
+    }
+  }
 }

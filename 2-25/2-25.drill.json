@@ -2,7 +2,9 @@
   "pdf": "2-25.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -35,7 +37,26 @@
     "text_layer": true,
     "font_count": 0,
     "first_page_chars": 2051,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "bibkey": "2-25",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 4,
+      "Paragraph": 4,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "2-25.tiddlers.json",
+    "tiddlers_count": 25,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -53,6 +74,34 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 61.4,
       "detail": "pdfinfo: 4 pages, 36349 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-03T19:51:07Z",
+      "node": "model",
+      "from": "SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 12.8,
+      "detail": "9 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T19:51:07Z",
+      "node": "tiddlers",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 0.8,
+      "detail": "25 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2-25/2-25.lines.json": "sha256:f921c067cf272d1a232c893c1e8a4f2a081206ea636eace7e4ffbd52e90d5f41"
+      },
+      "params_hash": "sha256:da0d540b8490a702dd5d4cb05afe0d0692e809ec400d096d7f229e3fca45b1d8",
+      "algo": "sha256",
+      "ts": "2026-08-03T19:51:07Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 75,
@@ -86,7 +89,37 @@
       "HBIEHQ+CMSY6",
       "FSFYYG+CMSY9"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "1901.10147",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "LtxCommand": 256,
+      "Paragraph": 293,
+      "Section": 49,
+      "Formula": 278,
+      "Equation": 50,
+      "Table": 15,
+      "Citation": 132
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "merged_geometry": {
+      "pages": 75,
+      "placed": 139,
+      "regions": 139,
+      "sections": 49,
+      "children": 673,
+      "numbered": 49,
+      "roots": 1
+    },
+    "bibliography_entries": 82,
+    "bibliography_with_year": 76,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 132,
+    "tiddlers_path": "1901.10147.tiddlers.json",
+    "tiddlers_count": 1116,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -559,6 +592,40 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 190.5,
       "detail": "29 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-03T19:45:32Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "1073 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T19:45:32Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "82 entries, 0+0 cites detected, 132 linked"
+    },
+    {
+      "ts": "2026-08-03T19:45:32Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.6,
+      "detail": "1116 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:343364fd1d375397c14a24a4119d7dfe43a5b3e4771545971e97411b95784374",
+      "algo": "sha256",
+      "ts": "2026-08-03T19:45:32Z",
+      "provenance": "latex-source"
+    }
+  }
 }

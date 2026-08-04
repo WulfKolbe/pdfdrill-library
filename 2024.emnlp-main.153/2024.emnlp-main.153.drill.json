@@ -108,10 +108,10 @@
       }
     ],
     "bibkey": "2024.emnlp-main.153",
-    "model_path": "2024.emnlp-main.153.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 19,
-      "Footnote": 7,
+      "Footnote": 14,
       "Citation": 2,
       "Table": 6,
       "TableRow": 52,
@@ -119,12 +119,12 @@
       "Sidenote": 36,
       "Abstract": 1,
       "Diagram": 6,
-      "Section": 37,
+      "Section": 38,
       "Picture": 11,
       "ListItem": 8,
       "Equation": 12,
       "Formula": 167,
-      "Paragraph": 96,
+      "Paragraph": 89,
       "Document": 1
     },
     "model_equations_with_cdn": 12,
@@ -133,9 +133,17 @@
     "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 22,
     "bibliography_cites": 3,
-    "tiddlers_path": "2024.emnlp-main.153.pdf.drill/2024.emnlp-main.153.tiddlers.json",
-    "tiddlers_count": 455,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_path": "2024.emnlp-main.153.tiddlers.json",
+    "tiddlers_count": 429,
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -638,7 +646,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 66.3,
       "detail": "27 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-03T20:45:22Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 520.6,
+      "detail": "698 objects, 12 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-03T20:45:22Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.5,
+      "detail": "429 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2024.emnlp-main.153/2024.emnlp-main.153.lines.json": "sha256:c403442c8a6065bc66882706cc68a96811da9830d836d3a53229fabfababf646"
+      },
+      "params_hash": "sha256:8a65ff7d1d4604a9c9c81b0cbf87516509a08a4e4a0367848c5689b403c9ffaf",
+      "algo": "sha256",
+      "ts": "2026-08-03T20:45:22Z",
+      "provenance": "mathpix"
+    }
+  }
 }

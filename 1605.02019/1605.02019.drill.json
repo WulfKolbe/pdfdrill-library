@@ -6,7 +6,14 @@
     "MODEL_BUILT",
     "LATEX_INGESTED",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -42,15 +49,16 @@
     "bibkey": "1605.02019",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 8,
-      "ListItem": 2,
-      "Paragraph": 8,
-      "Document": 1,
+      "Paragraph": 26,
+      "Abstract": 1,
+      "Section": 11,
+      "Formula": 56,
       "Equation": 4,
-      "Table": 5
+      "Table": 5,
+      "Citation": 34
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -66,7 +74,7 @@
     "merge_latex_source": "1605.02019.tgz",
     "merge_paragraphs_changed": 8,
     "tiddlers_path": "1605.02019.tiddlers.json",
-    "tiddlers_count": 44,
+    "tiddlers_count": 149,
     "tiddlers_svg_mode": "inline",
     "fonts": [
       "HOMQFW+NimbusRomNo9L-Medi",
@@ -93,12 +101,64 @@
       "QDTWCG+MSBM10",
       "TMCDBM+CMSY8"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 8,
+      "placed": 17,
+      "regions": 17,
+      "sections": 11,
+      "children": 98,
+      "numbered": 11,
+      "roots": 1
+    },
+    "bibliography_entries": 20,
+    "bibliography_with_year": 17,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 34,
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 5,
+        "url": "https://news.ycombinator.com/",
+        "kind": "text"
+      },
+      {
+        "page": 5,
+        "url": "https://github.com/cemoody/lda2vec/blob/",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.12",
+    "creator": "TeX",
+    "creation_date": "2016-05-09T00:33:06Z",
+    "mod_date": "2016-05-09T00:33:06Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 8,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 223058,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) kpathsea version 6.0.1"
+    }
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "HOMQFW+NimbusRomNo9L-Medi",
@@ -325,7 +385,108 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 493.83,
+      "y0": 329.91,
+      "x1": 499.88,
+      "y1": 335.37,
+      "w_pt": 6.05,
+      "h_pt": 5.46,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 51,
+      "height_px": 46,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 607,
+      "y_ppi": 607,
+      "size_bytes": 264,
+      "object_id": "56 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 427.43,
+      "y0": 535.48,
+      "x1": 434.65,
+      "y1": 538.55,
+      "w_pt": 7.22,
+      "h_pt": 3.07,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 87,
+      "height_px": 37,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 868,
+      "y_ppi": 868,
+      "size_bytes": 374,
+      "object_id": "57 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 318.87,
+      "y0": 626.28,
+      "x1": 324.92,
+      "y1": 631.74,
+      "w_pt": 6.05,
+      "h_pt": 5.46,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 51,
+      "height_px": 46,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 607,
+      "y_ppi": 607,
+      "size_bytes": 264,
+      "object_id": "56 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 337.97,
+      "y0": 642.65,
+      "x1": 344.02,
+      "y1": 648.11,
+      "w_pt": 6.05,
+      "h_pt": 5.46,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 51,
+      "height_px": 46,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 607,
+      "y_ppi": 607,
+      "size_bytes": 264,
+      "object_id": "56 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 362.18,
+      "y0": 659.02,
+      "x1": 368.23,
+      "y1": 664.48,
+      "w_pt": 6.05,
+      "h_pt": 5.46,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 51,
+      "height_px": 46,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 607,
+      "y_ppi": 607,
+      "size_bytes": 264,
+      "object_id": "56 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -416,18 +577,88 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 34.6,
       "detail": "16 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-03T19:36:53Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "137 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T19:36:53Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "20 entries, 0+0 cites detected, 34 linked"
+    },
+    {
+      "ts": "2026-08-03T19:36:53Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.7,
+      "detail": "149 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-04T05:37:20Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 44.3,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-04T05:37:20Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 65.9,
+      "detail": "16 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-04T05:37:21Z",
+      "node": "toc",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 49.0,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-04T05:37:21Z",
+      "node": "links",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 97.8,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-04T05:37:21Z",
+      "node": "dests",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 23.0,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-04T05:37:23Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2023.6,
+      "detail": "5 images, 5 pix2latex candidates"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/1605.02019/1605.02019.lines.json": "sha256:f8f2f9b7b68eed65ddaed7505d269ce2efb2bfcd75724417e82722c52ab77dab"
-      },
+      "inputs": {},
       "params_hash": "sha256:8a378bec5bf16c4231bcee61157fe167cc4ba15ff62d21227261216b104af20e",
       "algo": "sha256",
-      "ts": "2026-07-30T14:33:08Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T19:36:53Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

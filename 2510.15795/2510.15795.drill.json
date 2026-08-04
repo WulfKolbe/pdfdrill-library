@@ -27,7 +27,8 @@
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "FONTS_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "2510.15795",
@@ -36,21 +37,25 @@
     "ocr_pages": 20,
     "ocr_lines": 839,
     "bibkey": "2510.15795",
-    "model_path": "2510.15795.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 20,
-      "Citation": 19,
-      "ListItem": 5,
-      "Paragraph": 20,
-      "Document": 1
+      "Paragraph": 159,
+      "Abstract": 1,
+      "Section": 23,
+      "Formula": 236,
+      "Equation": 56,
+      "Diagram": 55,
+      "Theorem": 2,
+      "Proof": 1,
+      "Citation": 105
     },
     "model_equations_with_cdn": 0,
     "latex_source": "2510.15795.tgz",
     "latex_macros": 47,
     "latex_src_equations": 56,
     "latex_attached": 0,
-    "tiddlers_path": "2510.15795.pdf.drill/2510.15795.tiddlers.json",
-    "tiddlers_count": 204,
+    "tiddlers_path": "2510.15795.tiddlers.json",
+    "tiddlers_count": 641,
     "report_path": "2510.15795.pdf.drill/formula-report.html",
     "mathpix_pdf_id": "11876094-29ea-47b1-b907-7131f2944d99",
     "mathpix_status": "downloaded",
@@ -849,7 +854,17 @@
     "tables_count": 7,
     "tables_path": "2510.15795.pdf.drill/tables.json",
     "compare_path": "2510.15795.pdf.drill/compare.html",
-    "compare_rows": 0
+    "compare_rows": 0,
+    "model_source": "latex",
+    "merged_geometry": {
+      "pages": 20,
+      "placed": 83,
+      "regions": 83,
+      "sections": 23,
+      "children": 515,
+      "numbered": 23,
+      "roots": 1
+    }
   },
   "pdfinfo": {
     "title": "Synthetic perspectives on spaces and categories",
@@ -7174,6 +7189,40 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 127.4,
       "detail": "44 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-03T21:41:13Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,COMPARE_BUILT,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,OCR_BUILT,PDFINFO_KNOWN,REPORT_BUILT,SCORED,SEMANTIC_BUILT,SIZE_KNOWN,TABLES_KNOWN,TIDDLERS_BUILT,TOC_KNOWN,URLS_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "638 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T21:41:13Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,COMPARE_BUILT,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,REPORT_BUILT,SCORED,SEMANTIC_BUILT,SIZE_KNOWN,TABLES_KNOWN,TOC_KNOWN,URLS_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.5,
+      "detail": "641 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-04T05:35:32Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 219.4,
+      "detail": "44 fonts, 13 math"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:51398e298bb4b1932e60e8286f7850f9b28838c54c990df346dbadd6abb874aa",
+      "algo": "sha256",
+      "ts": "2026-08-03T21:41:13Z",
+      "provenance": "latex-source"
+    }
+  }
 }

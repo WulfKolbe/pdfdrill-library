@@ -7,7 +7,9 @@
     "LATEX_INGESTED",
     "SIZE_KNOWN",
     "MD_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2606.14243",
@@ -16,13 +18,16 @@
     "ocr_pages": 16,
     "ocr_lines": 1321,
     "bibkey": "2606.14243",
-    "model_path": "2606.14243.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 16,
-      "Citation": 4,
-      "ListItem": 13,
-      "Paragraph": 16,
-      "Document": 1
+      "Paragraph": 94,
+      "Abstract": 1,
+      "Section": 37,
+      "Formula": 49,
+      "Equation": 10,
+      "LtxCommand": 6,
+      "Table": 9,
+      "Citation": 72
     },
     "model_equations_with_cdn": 0,
     "latex_source": "2606.14243.tgz",
@@ -94,7 +99,25 @@
       "VKVSNG+MSBM10",
       "EFDLOV+CMMI6"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "model_source": "latex",
+    "merged_geometry": {
+      "pages": 16,
+      "placed": 57,
+      "regions": 57,
+      "sections": 37,
+      "children": 188,
+      "numbered": 37,
+      "roots": 1
+    },
+    "bibliography_entries": 62,
+    "bibliography_with_year": 62,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 72,
+    "tiddlers_path": "2606.14243.tiddlers.json",
+    "tiddlers_count": 302,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -533,6 +556,40 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 47.2,
       "detail": "23 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-03T21:46:50Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "278 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T21:46:50Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "62 entries, 0+0 cites detected, 72 linked"
+    },
+    {
+      "ts": "2026-08-03T21:46:50Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.1,
+      "detail": "302 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:18265bc77310f79632c5e841b00ba876b631408d3b5f8e54b0501f0d9f2db88d",
+      "algo": "sha256",
+      "ts": "2026-08-03T21:46:50Z",
+      "provenance": "latex-source"
+    }
+  }
 }

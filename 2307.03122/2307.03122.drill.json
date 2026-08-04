@@ -5,16 +5,22 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2307.03122",
     "source_kind": "arxiv",
     "bibkey": "2307.03122",
-    "model_path": "2307.03122.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
+      "Paragraph": 28,
+      "Abstract": 1,
+      "Section": 8,
       "Formula": 8,
-      "Paragraph": 1
+      "LtxCommand": 4,
+      "Table": 15,
+      "Citation": 31
     },
     "model_equations_with_cdn": 0,
     "model_source": "latex",
@@ -77,7 +83,19 @@
       "LDYRDF+CMSY10",
       "VIGIUD+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 16,
+      "placed": 20,
+      "regions": 20,
+      "sections": 8,
+      "children": 50,
+      "numbered": 8,
+      "roots": 1
+    },
+    "tiddlers_path": "2307.03122.tiddlers.json",
+    "tiddlers_count": 121,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -343,7 +361,32 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 41.8,
       "detail": "13 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-03T21:06:22Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "95 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T21:06:22Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.9,
+      "detail": "121 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:4e6ae37fc155d157b4e65ed0171f01cf585e1feb27ae53c99d12bc744b4d9cda",
+      "algo": "sha256",
+      "ts": "2026-08-03T21:06:22Z",
+      "provenance": "latex-source"
+    }
+  }
 }

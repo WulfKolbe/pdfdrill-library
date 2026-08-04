@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 55,
@@ -78,7 +82,34 @@
       "KVFVTG+CMMI6",
       "Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "9812017",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 55,
+      "Citation": 101,
+      "ListItem": 17,
+      "Equation": 117,
+      "Paragraph": 146,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 88,
+    "bibliography_with_year": 81,
+    "bibliography_numeric_citations": 98,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 98,
+    "tiddlers_path": "9812017.tiddlers.json",
+    "tiddlers_count": 448,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -509,6 +540,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 82.7,
       "detail": "26 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-04T05:37:03Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 451.8,
+      "detail": "437 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-04T05:37:04Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "88 entries, 98+0 cites detected, 98 linked"
+    },
+    {
+      "ts": "2026-08-04T05:37:04Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 23.4,
+      "detail": "448 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/9812017/9812017.lines.json": "sha256:45097bc2edf8bf8c62651f546d03a6fa85da063ee3a7c3f3f053e747cb539b51"
+      },
+      "params_hash": "sha256:9a363474910cd943a4359f115291fd6d1164f42eb59d27195bff6207b7fee4b6",
+      "algo": "sha256",
+      "ts": "2026-08-04T05:37:03Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

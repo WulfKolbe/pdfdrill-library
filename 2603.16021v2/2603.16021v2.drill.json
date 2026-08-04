@@ -23,14 +23,16 @@
     "bibkey": "2603.16021v2",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 21,
-      "Citation": 1,
-      "ListItem": 49,
-      "Paragraph": 21,
-      "Document": 1
+      "Abstract": 1,
+      "Paragraph": 124,
+      "Section": 27,
+      "Table": 2,
+      "Diagram": 5,
+      "Formula": 2,
+      "Citation": 61
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "pages": 21,
     "bytes": 600063,
     "page_size": "612 x 792 pts (letter)",
@@ -113,8 +115,8 @@
     "abstract": "Current approaches to AI agent orchestration typically involve building multi-agent frameworks that manage context passing, memory, error handling, and step coordination through code. These frameworks work well for complex, concurrent systems. But for sequential workflows where a human reviews output at each step, they introduce engineering overhead that the problem does not require. This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. Numbered folders represent stages. Plain markdown files carry the prompts and context that tell a single AI agent what role to play at each step. Local scripts handle the mechanical work that does not need AI at all. The result is a system where one agent, reading the right files at the right moment, does the work that would otherwise require a multi-agent framework. This approach applies ideas from Unix pipeline design, modular decomposition, multi-pass compilation, and literate programming to the specific problem of structuring context for AI agents. The protocol is open source under the MIT license.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
-    "tiddlers_path": "2603.16021v2.pdf.drill/2603.16021v2.tiddlers.json",
-    "tiddlers_count": 178,
+    "tiddlers_path": "2603.16021v2.tiddlers.json",
+    "tiddlers_count": 243,
     "tiddlers_svg_mode": "inline",
     "classification": {
       "present": [
@@ -326,6 +328,15 @@
       "geometry": true,
       "math": false,
       "source": "pdfminer-chars"
+    },
+    "merged_geometry": {
+      "pages": 21,
+      "placed": 151,
+      "regions": 151,
+      "sections": 27,
+      "children": 152,
+      "numbered": 27,
+      "roots": 1
     }
   },
   "pdfinfo": {
@@ -829,18 +840,32 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 111.3,
       "detail": "15 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-03T21:45:09Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SEMANTIC_BUILT,SIZE_KNOWN,TABLES_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "222 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T21:45:09Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SEMANTIC_BUILT,SIZE_KNOWN,TABLES_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.1,
+      "detail": "243 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/2603.16021v2/2603.16021v2.lines.json": "sha256:92ebc2e7e5e401acfa30d6bd5eaf49e400d037303f7b1b8542118bd0b445c546"
-      },
+      "inputs": {},
       "params_hash": "sha256:1e89e0df76cf6e0594b1516405bdd7a5e372e5a2d5694c1ce8b740301607f304",
       "algo": "sha256",
-      "ts": "2026-08-03T08:54:29Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-03T21:45:09Z",
+      "provenance": "latex-source"
     }
   }
 }

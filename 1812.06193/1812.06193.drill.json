@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -62,7 +65,35 @@
       "IWTKDS+CMSY7",
       "EDTDMK+MSBM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "1812.06193",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Paragraph": 63,
+      "Section": 9,
+      "LtxCommand": 4,
+      "Formula": 16,
+      "Citation": 118
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "latex",
+    "merged_geometry": {
+      "pages": 16,
+      "placed": 42,
+      "regions": 42,
+      "sections": 9,
+      "children": 86,
+      "numbered": 9,
+      "roots": 1
+    },
+    "bibliography_entries": 102,
+    "bibliography_with_year": 100,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 118,
+    "tiddlers_path": "1812.06193.tiddlers.json",
+    "tiddlers_count": 228,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -353,6 +384,40 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 34.8,
       "detail": "16 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-03T19:42:54Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "210 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-03T19:42:55Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "102 entries, 0+0 cites detected, 118 linked"
+    },
+    {
+      "ts": "2026-08-03T19:42:55Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.5,
+      "detail": "228 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {},
+      "params_hash": "sha256:7f24b3bdaf1c80738377ef1bcf593119732c79c724375d059640cc1a4d648e0c",
+      "algo": "sha256",
+      "ts": "2026-08-03T19:42:54Z",
+      "provenance": "latex-source"
+    }
+  }
 }
