@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 24,
@@ -133,7 +136,33 @@
       "NUQLRI+Symbol",
       "WCUFNY+Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "A_brief_introduction_to_Clifford_algebra",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 24,
+      "Citation": 2,
+      "ListItem": 18,
+      "Paragraph": 24,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 22,
+    "bibliography_with_year": 18,
+    "bibliography_numeric_citations": 9,
+    "bibliography_authoryear_citations": 4,
+    "bibliography_cites": 9,
+    "tiddlers_path": "A_brief_introduction_to_Clifford_algebra.tiddlers.json",
+    "tiddlers_count": 113,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -1166,6 +1195,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 26.9,
       "detail": "69 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-04T07:29:52Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 57.0,
+      "detail": "69 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-04T07:29:52Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "22 entries, 9+4 cites detected, 9 linked"
+    },
+    {
+      "ts": "2026-08-04T07:29:52Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.5,
+      "detail": "113 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/A_brief_introduction_to_Clifford_algebra/A_brief_introduction_to_Clifford_algebra.lines.json": "sha256:1b937ab7919527de605510446e1ac7ed7c6ed9fcf8add5988d1d95ef3762a1c6"
+      },
+      "params_hash": "sha256:aac87fe83d4ed94833a2ca7232c38686a815e8c900fe76c782fe5114bed199d3",
+      "algo": "sha256",
+      "ts": "2026-08-04T07:29:52Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

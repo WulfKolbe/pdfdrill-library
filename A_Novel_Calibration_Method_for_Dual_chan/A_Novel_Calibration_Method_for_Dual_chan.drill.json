@@ -2,7 +2,9 @@
   "pdf": "A_Novel_Calibration_Method_for_Dual_chan.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -38,7 +40,27 @@
     "text_layer": true,
     "font_count": 0,
     "first_page_chars": 296,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "bibkey": "A_Novel_Calibration_Method_for_Dual_chan",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 5,
+      "ListItem": 7,
+      "Paragraph": 5,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 153 unmapped private-use character(s) remain (U+F028×22, U+F029×22, U+F02B×4, U+F02D×8, U+F03D×16, U+F044×6, U+F05B×4, U+F05D×4, U+F06A×15, U+F070×8, U+F071×8, U+F0D7×14, U+F0EC×4, U+F0ED×4, U+F0EE×4, U+F0EF×10) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "A_Novel_Calibration_Method_for_Dual_chan.tiddlers.json",
+    "tiddlers_count": 34,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -56,6 +78,34 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 35.6,
       "detail": "pdfinfo: 5 pages, 609037 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-04T07:29:33Z",
+      "node": "model",
+      "from": "SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 14.6,
+      "detail": "18 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-04T07:29:34Z",
+      "node": "tiddlers",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.0,
+      "detail": "34 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/A_Novel_Calibration_Method_for_Dual_chan/A_Novel_Calibration_Method_for_Dual_chan.lines.json": "sha256:8d97df6d00ae003ba58cb8ea3ffd7002db6cd5e4e733f5e8c005d87fd208d56a"
+      },
+      "params_hash": "sha256:45e5410316cb204d243e6819119f21a5ff94298c040c4ad661ca3318cc1a2873",
+      "algo": "sha256",
+      "ts": "2026-08-04T07:29:33Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -6,7 +6,13 @@
     "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "1806.05258",
@@ -99,10 +105,78 @@
     "has_math_fonts": true,
     "tiddlers_path": "1806.05258.tiddlers.json",
     "tiddlers_count": 49,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 4,
+        "url": "https://files.pushshift.io/reddit/",
+        "kind": "text"
+      },
+      {
+        "page": 4,
+        "url": "http://ir.cs.georgetown.edu/data/smhd/",
+        "kind": "text"
+      },
+      {
+        "page": 7,
+        "url": "http://ir.cs.georgetown.edu/resources/",
+        "kind": "text"
+      }
+    ],
+    "arxiv_title": "SMHD: A Large-Scale Resource for Exploring Online Language Usage for Multiple Mental Health Conditions",
+    "arxiv_authors": [
+      "Arman Cohan",
+      "Bart Desmet",
+      "Andrew Yates",
+      "Luca Soldaini",
+      "Sean MacAvaney",
+      "Nazli Goharian"
+    ],
+    "arxiv_primary_category": "cs.CL"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "TeX",
+    "creation_date": "2018-07-12T00:15:50Z",
+    "mod_date": "2018-07-12T00:15:50Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 13,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 258660,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) kpathsea version 6.2.2"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "cohan2018",
+    "title": "SMHD: A Large-Scale Resource for Exploring Online Language Usage for Multiple Mental Health Conditions",
+    "author": "Arman Cohan and Bart Desmet and Andrew Yates and Luca Soldaini and Sean MacAvaney and Nazli Goharian",
+    "year": "2018",
+    "pages": 13,
+    "doi": "",
+    "arxiv_id": "1806.05258",
+    "url": "https://arxiv.org/abs/1806.05258",
+    "license": "",
+    "publisher": "",
+    "eprint": "1806.05258",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.CL"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -373,7 +447,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 5,
+      "x0": 495.13,
+      "y0": 347.74,
+      "x1": 498.23,
+      "y1": 405.46,
+      "w_pt": 3.09,
+      "h_pt": 57.72,
+      "name": "I1",
+      "imagemask": false,
+      "width_px": 12,
+      "height_px": 224,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 279,
+      "y_ppi": 279,
+      "size_bytes": 234,
+      "object_id": "128 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {},
@@ -473,6 +568,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 0.9,
       "detail": "49 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-05T00:37:10Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 28.2,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-05T00:37:11Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 153.5,
+      "detail": "19 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-05T00:37:11Z",
+      "node": "toc",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 29.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-05T00:37:11Z",
+      "node": "links",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 116.8,
+      "detail": "3 external urls"
+    },
+    {
+      "ts": "2026-08-05T00:37:11Z",
+      "node": "bibtex",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 82.9,
+      "detail": "citekey=cohan2018"
+    },
+    {
+      "ts": "2026-08-05T00:37:15Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4003.6,
+      "detail": "1 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {

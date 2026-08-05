@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -60,7 +63,27 @@
       "GVHJSZ+CMMI9",
       "YMIDUN+CMMI7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "A_method_for_tokenizing_text",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "ListItem": 25,
+      "Paragraph": 10,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "A_method_for_tokenizing_text.tiddlers.json",
+    "tiddlers_count": 62,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -281,6 +304,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 36.0,
       "detail": "11 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-04T07:30:16Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 31.0,
+      "detail": "46 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-04T07:30:16Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.8,
+      "detail": "62 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/A_method_for_tokenizing_text/A_method_for_tokenizing_text.lines.json": "sha256:b7e3306638007bde0ebc61ffb7d47da1464a670eb12bf6b6af103d56d0e30d36"
+      },
+      "params_hash": "sha256:d5c6be7a3738acafa64657c28343e88e902c236606a763626082d4441031859c",
+      "algo": "sha256",
+      "ts": "2026-08-04T07:30:16Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 19,
@@ -45,7 +48,33 @@
       "CAAAAA+GoogleSans-Regular"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Agentic Research to Publication Workflow",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 19,
+      "Citation": 2,
+      "ListItem": 89,
+      "Paragraph": 19,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 52,
+    "bibliography_with_year": 52,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "Agentic Research to Publication Workflow.tiddlers.json",
+    "tiddlers_count": 198,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -224,6 +253,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 24.2,
       "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-04T08:14:54Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 40.4,
+      "detail": "130 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-04T08:14:54Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "52 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-04T08:14:54Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.7,
+      "detail": "198 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Agentic Research to Publication Workflow/Agentic Research to Publication Workflow.lines.json": "sha256:88951272981b46fe5f1763e8ee8f06428e54a2fee9cb375d408f42708976708d"
+      },
+      "params_hash": "sha256:2d01cd5e47574bb676c9f494a56833015eee9aacee4ba8a7acd94ac2d7e5b54b",
+      "algo": "sha256",
+      "ts": "2026-08-04T08:14:54Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

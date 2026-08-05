@@ -7,7 +7,12 @@
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "PDFINFO_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "1910.06048",
@@ -116,10 +121,63 @@
     "has_math_fonts": true,
     "tiddlers_path": "1910.06048.tiddlers.json",
     "tiddlers_count": 137,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Controversial claims are abundant in online media and discussion forums. A better understanding of such claims requires analyzing them from different perspectives. Stance classification is a necessary step for inferring these perspectives in terms of supporting or opposing the claim. In this work, we present a neural network model for stance classification leveraging BERT representations and augmenting them with a novel consistency constraint. Experiments on the Perspectrum dataset, consisting of claims and users&#39; perspectives from various debate websites, demonstrate the effectiveness of our approach over state-of-the-art baselines.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "STANCY: Stance Classification Based on Consistency Cues",
+    "arxiv_authors": [
+      "Kashyap Popat",
+      "Subhabrata Mukherjee",
+      "Andrew Yates",
+      "Gerhard Weikum"
+    ],
+    "arxiv_primary_category": "cs.CL"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2019-10-15T01:31:26Z",
+    "mod_date": "2019-10-15T01:31:26Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 6,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 430418,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) kpathsea version 6.2.2",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "popat2019",
+    "title": "STANCY: Stance Classification Based on Consistency Cues",
+    "author": "Kashyap Popat and Subhabrata Mukherjee and Andrew Yates and Gerhard Weikum",
+    "year": "2019",
+    "pages": 6,
+    "doi": "",
+    "arxiv_id": "1910.06048",
+    "url": "https://arxiv.org/abs/1910.06048",
+    "license": "",
+    "publisher": "",
+    "eprint": "1910.06048",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.CL"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -446,7 +504,7 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {},
@@ -562,6 +620,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.1,
       "detail": "137 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-05T00:38:44Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 107.5,
+      "detail": "23 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-05T00:38:45Z",
+      "node": "pdfinfo",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 86.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-05T00:38:45Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "citekey=popat2019"
+    },
+    {
+      "ts": "2026-08-05T00:38:48Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2796.5,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

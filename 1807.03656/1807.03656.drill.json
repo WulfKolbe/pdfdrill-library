@@ -7,7 +7,12 @@
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "PDFINFO_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "1807.03656",
@@ -105,10 +110,63 @@
     "has_math_fonts": true,
     "tiddlers_path": "1807.03656.tiddlers.json",
     "tiddlers_count": 328,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Information extraction traditionally focuses on extracting relations between identifiable entities, such as &lt;Monterey, locatedIn, California&gt;. Yet, texts often also contain Counting information, stating that a subject is in a specific relation with a number of objects, without mentioning the objects themselves, for example, &#34;California is divided into 58 counties&#34;. Such counting quantifiers can help in a variety of tasks such as query answering or knowledge base curation, but are neglected by prior work. This paper develops the first full-fledged system for extracting counting information from text, called CINEX. We employ distant supervision using fact counts from a knowledge base as training seeds, and develop novel techniques for dealing with several challenges: (i) non-maximal training seeds due to the incompleteness of knowledge bases, (ii) sparse and skewed observations in text sources, and (iii) high diversity of linguistic patterns. Experiments with five human-evaluated relations show that CINEX can achieve 60% average precision for extracting counting information. In a large-scale experiment, we demonstrate the potential for knowledge base enrichment by applying CINEX to 2,474 frequent relations in Wikidata. CINEX can assert the existence of 2.5M facts for 110 distinct relations, which is 28% more than the existing Wikidata facts for these relations.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Enriching Knowledge Bases with Counting Quantifiers",
+    "arxiv_authors": [
+      "Paramita Mirza",
+      "Simon Razniewski",
+      "Fariz Darari",
+      "Gerhard Weikum"
+    ],
+    "arxiv_primary_category": "cs.CL"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2018-07-11T00:32:29Z",
+    "mod_date": "2018-07-11T00:32:29Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 16,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 395514,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) kpathsea version 6.2.2",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "mirza2018",
+    "title": "Enriching Knowledge Bases with Counting Quantifiers",
+    "author": "Paramita Mirza and Simon Razniewski and Fariz Darari and Gerhard Weikum",
+    "year": "2018",
+    "pages": 16,
+    "doi": "",
+    "arxiv_id": "1807.03656",
+    "url": "https://arxiv.org/abs/1807.03656",
+    "license": "",
+    "publisher": "",
+    "eprint": "1807.03656",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.CL"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -337,7 +395,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 4,
+      "x0": 212.57,
+      "y0": 115.84,
+      "x1": 402.78,
+      "y1": 197.68,
+      "w_pt": 190.21,
+      "h_pt": 81.84,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 839,
+      "height_px": 361,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 318,
+      "y_ppi": 318,
+      "size_bytes": 610,
+      "object_id": "89 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 5,
+      "x0": 169.35,
+      "y0": 115.84,
+      "x1": 446.01,
+      "y1": 202.7,
+      "w_pt": 276.66,
+      "h_pt": 86.87,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 2325,
+      "height_px": 730,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 605,
+      "y_ppi": 605,
+      "size_bytes": 88985,
+      "object_id": "105 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {},
@@ -453,6 +552,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.1,
       "detail": "328 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-05T00:37:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 114.7,
+      "detail": "16 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-05T00:37:14Z",
+      "node": "pdfinfo",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 83.3,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-05T00:37:14Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=mirza2018"
+    },
+    {
+      "ts": "2026-08-05T00:37:19Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4610.7,
+      "detail": "2 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {

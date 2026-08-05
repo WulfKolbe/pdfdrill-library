@@ -6,7 +6,11 @@
     "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "1908.11682",
@@ -240,10 +244,62 @@
     "has_math_fonts": true,
     "tiddlers_path": "1908.11682.tiddlers.json",
     "tiddlers_count": 392,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "In many scientific tasks we are interested in discovering whether there exist any correlations in our data. This raises many questions, such as how to reliably and interpretably measure correlation between a multivariate set of attributes, how to do so without having to make assumptions on distribution of the data or the type of correlation, and, how to efficiently discover the top-most reliably correlated attribute sets from data. In this paper we answer these questions for discovery tasks in categorical data. In particular, we propose a corrected-for-chance, consistent, and efficient estimator for normalized total correlation, by which we obtain a reliable, naturally interpretable, non-parametric measure for correlation over multivariate sets. For the discovery of the top-k correlated sets, we derive an effective algorithmic framework based on a tight bounding function. This framework offers exact, approximate, and heuristic search. Empirical evaluation shows that already for small sample sizes the estimator leads to low-regret optimization outcomes, while the algorithms are shown to be highly effective for both large and high-dimensional data. Through two case studies we confirm that our discovery framework identifies interesting and meaningful correlations.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Discovering Reliable Correlations in Categorical Data",
+    "arxiv_authors": [
+      "Panagiotis Mandros",
+      "Mario Boley",
+      "Jilles Vreeken"
+    ],
+    "arxiv_primary_category": "cs.LG"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2019-09-02T00:49:21Z",
+    "mod_date": "2019-09-02T00:49:21Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 10,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 502035,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) kpathsea version 6.2.2",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "mandros2019",
+    "title": "Discovering Reliable Correlations in Categorical Data",
+    "author": "Panagiotis Mandros and Mario Boley and Jilles Vreeken",
+    "year": "2019",
+    "pages": 10,
+    "doi": "",
+    "arxiv_id": "1908.11682",
+    "url": "https://arxiv.org/abs/1908.11682",
+    "license": "",
+    "publisher": "",
+    "eprint": "1908.11682",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.LG"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -1704,7 +1760,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {},
@@ -1812,6 +1868,30 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.6,
       "detail": "392 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-05T00:38:33Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 76.0,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-05T00:38:34Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "citekey=mandros2019"
+    },
+    {
+      "ts": "2026-08-05T00:38:41Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 6675.2,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -70,7 +73,33 @@
       "Helvetica"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "A_Method_for_Character_String_Extraction_from_Bina",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 5,
+      "Citation": 1,
+      "ListItem": 4,
+      "Paragraph": 5,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 6,
+    "bibliography_with_year": 5,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "A_Method_for_Character_String_Extraction_from_Bina.tiddlers.json",
+    "tiddlers_count": 38,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -571,6 +600,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 85.5,
       "detail": "31 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-04T07:29:33Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 19.5,
+      "detail": "16 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-04T07:29:33Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "6 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-04T07:29:33Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.2,
+      "detail": "38 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/A_Method_for_Character_String_Extraction_from_Bina/A_Method_for_Character_String_Extraction_from_Bina.lines.json": "sha256:abfce0cde5dab4ea90c4edd2f54eeb56d09b21210f101149ffe7d1e97866d5ca"
+      },
+      "params_hash": "sha256:011ac8f7087fa5a28be6441cb1ebb119f2fef3581ab1df8958376d0f2c37dd93",
+      "algo": "sha256",
+      "ts": "2026-08-04T07:29:33Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

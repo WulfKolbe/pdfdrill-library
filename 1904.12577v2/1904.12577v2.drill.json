@@ -6,7 +6,12 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 7,
@@ -95,10 +100,63 @@
     "bibliography_cites": 36,
     "tiddlers_path": "1904.12577v2.tiddlers.json",
     "tiddlers_count": 150,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Abstract--- Table detection and extraction has been studied in the context of documents like reports, where tables are clearly outlined and stand out from the document structure visually. We study this topic in a rather more challenging domain of layout-heavy business documents, particularly invoices. Invoices present the novel challenges of tables being often without outlines - either in the form of borders or surrounding text flow - with ragged columns and widely varying data content. We will also show, that we can extract specific information from structurally different tables or table-like structures with one model. We present a comprehensive representation of a page using graph over word boxes, positional embeddings, trainable textual features and rephrase the table detection as a text box labeling problem. We will work on our newly presented dataset of pro forma invoices, invoices and debit note documents using this representation and propose multiple baselines to solve this labeling problem. We then propose a novel neural network model that achieves strong, practical results on the presented dataset and analyze the model performance and effects of graph convolutions and self-attention in detail.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Table understanding in structured documents",
+    "arxiv_authors": [
+      "Martin Holeček",
+      "Antonín Hoskovec",
+      "Petr Baudiš",
+      "Pavel Klinger"
+    ],
+    "arxiv_primary_category": "cs.IR"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Your Title",
+    "author": "Your Name",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2019-07-10T00:41:26Z",
+    "mod_date": "2019-07-10T00:41:26Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 7,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 799474,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) kpathsea version 6.2.2",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "holeek2019",
+    "title": "Table understanding in structured documents",
+    "author": "Martin Holeček and Antonín Hoskovec and Petr Baudiš and Pavel Klinger",
+    "year": "2019",
+    "pages": 7,
+    "doi": "",
+    "arxiv_id": "1904.12577v2",
+    "url": "https://arxiv.org/abs/1904.12577v2",
+    "license": "",
+    "publisher": "",
+    "eprint": "1904.12577v2",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.IR"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -299,7 +357,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 3,
+      "x0": 311.98,
+      "y0": 296.6,
+      "x1": 563.03,
+      "y1": 584.86,
+      "w_pt": 251.05,
+      "h_pt": 288.26,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 904,
+      "height_px": 1038,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 259,
+      "y_ppi": 259,
+      "size_bytes": 1843,
+      "object_id": "125 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 4,
+      "x0": 311.98,
+      "y0": 50.54,
+      "x1": 588.18,
+      "y1": 468.63,
+      "w_pt": 276.2,
+      "h_pt": 418.1,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 2400,
+      "height_px": 3633,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 626,
+      "y_ppi": 626,
+      "size_bytes": 459776,
+      "object_id": "143 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -382,6 +481,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.0,
       "detail": "150 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-05T00:38:05Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 80.3,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-05T00:38:05Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 102.8,
+      "detail": "14 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-05T00:38:06Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=holeek2019"
+    },
+    {
+      "ts": "2026-08-05T00:38:09Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2897.4,
+      "detail": "2 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

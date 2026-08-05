@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -62,7 +65,28 @@
       "BVPKEC+CMMI10",
       "PKHHAQ+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "AIAA2010-021-NFF-1",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 17,
+      "ListItem": 26,
+      "Equation": 4,
+      "Paragraph": 21,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "AIAA2010-021-NFF-1.tiddlers.json",
+    "tiddlers_count": 85,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -339,6 +363,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 38.9,
       "detail": "15 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-04T07:23:53Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 70.0,
+      "detail": "69 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-04T07:23:53Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.5,
+      "detail": "85 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/AIAA2010-021-NFF-1/AIAA2010-021-NFF-1.lines.json": "sha256:1ec0a07667695721684d178773c71734399e8f7e801a415529f578932c96a532"
+      },
+      "params_hash": "sha256:e8bb41f9899ef5432cc1ba1bbaa759e305dc2292e2d070075b5fb4aefce5c6d9",
+      "algo": "sha256",
+      "ts": "2026-08-04T07:23:53Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }
