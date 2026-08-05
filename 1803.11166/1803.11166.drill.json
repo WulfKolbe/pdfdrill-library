@@ -6,7 +6,10 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 9,
@@ -131,7 +134,19 @@
     "bibliography_cites": 0,
     "tiddlers_path": "1803.11166.tiddlers.json",
     "tiddlers_count": 330,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Lattice gauge theories are fundamental to our understanding of high-energy physics. Nevertheless, the search for suitable platforms for their quantum simulation has proven difficult. We show that the Abelian Higgs model in 1+1 dimensions is a prime candidate for an experimental quantum simulation of a lattice gauge theory. To this end, we use a discrete tensor reformulation to smoothly connect the space-time isotropic version used in most numerical lattice simulations to the continuous-time limit corresponding to the Hamiltonian formulation. The eigenstates of the Hamiltonian are neutral for periodic boundary conditions, but we probe the nonzero charge sectors by either introducing a Polyakov loop or an external electric field. In both cases we obtain universal functions relating the mass gap, the gauge coupling, and the spatial size which are invariant under the deformation of the temporal lattice spacing. We propose to use a physical multi-leg ladder of atoms trapped in optical lattices and interacting with Rydberg-dressed interactions to quantum simulate the model and check the universal features. Our results provide a path to the analog quantum simulation of lattice gauge theories with atoms in optical lattices.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Quantum simulation of the universal features of the Polyakov loop",
+    "arxiv_authors": [
+      "Jin Zhang",
+      "J. Unmuth-Yockey",
+      "J. Zeiher",
+      "A. Bazavov",
+      "S.-W. Tsai",
+      "Y. Meurice"
+    ]
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -699,7 +714,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -782,6 +797,22 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.0,
       "detail": "330 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-05T00:36:58Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 124.8,
+      "detail": "40 fonts, 15 math"
+    },
+    {
+      "ts": "2026-08-05T00:37:04Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4994.0,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
