@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 22,
@@ -75,7 +78,28 @@
       "RKJJVB+CMMI6",
       "BHTMXB+CMSY6"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "IDG1+2handout",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 22,
+      "ListItem": 72,
+      "Equation": 2,
+      "Paragraph": 24,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "IDG1+2handout.tiddlers.json",
+    "tiddlers_count": 137,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -450,6 +474,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 72.8,
       "detail": "22 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-05T21:16:36Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 63.4,
+      "detail": "121 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T21:16:36Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.9,
+      "detail": "137 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/IDG1+2handout/IDG1+2handout.lines.json": "sha256:715c71398da33c890c8f9e736ff8469f764121d652ecbf2e6fcc9bb88b8abdc3"
+      },
+      "params_hash": "sha256:006dbd68e2bc5596d3a5361ced71ece4b62edde3824a968230ed294b35442621",
+      "algo": "sha256",
+      "ts": "2026-08-05T21:16:36Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

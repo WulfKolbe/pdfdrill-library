@@ -82,7 +82,7 @@
       }
     ],
     "bibkey": "CIDR11_Paper26",
-    "model_path": "CIDR11_Paper26.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 4,
       "Sidenote": 8,
@@ -91,13 +91,22 @@
       "Section": 7,
       "ListItem": 6,
       "Formula": 6,
-      "Paragraph": 18,
-      "Document": 1
+      "Paragraph": 17,
+      "Document": 1,
+      "Footnote": 1
     },
     "model_equations_with_cdn": 0,
-    "tiddlers_path": "CIDR11_Paper26.pdf.drill/CIDR11_Paper26.tiddlers.json",
+    "tiddlers_path": "CIDR11_Paper26.tiddlers.json",
     "tiddlers_count": 69,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -410,7 +419,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 18.0,
       "detail": "14 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-05T06:47:56Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 108.7,
+      "detail": "52 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:47:56Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.6,
+      "detail": "69 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/CIDR11_Paper26/CIDR11_Paper26.lines.json": "sha256:bafe60d223e6ffd2242a50d7b331a11ae5466676cf88fefeefb88533a321e838"
+      },
+      "params_hash": "sha256:ec5cf18a40081d32710d23768632d79baf83919dd5d28a051511c09dfa22553a",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:47:56Z",
+      "provenance": "mathpix"
+    }
+  }
 }

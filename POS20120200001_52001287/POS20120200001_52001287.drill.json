@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -56,7 +59,27 @@
     "math_fonts": [
       "MHAGAP+Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "POS20120200001_52001287",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 8,
+      "ListItem": 11,
+      "Paragraph": 8,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 1012 unmapped private-use character(s) remain (U+F025×5, U+F026×16, U+F028×64, U+F029×64, U+F02B×75, U+F02D×81, U+F03A×1, U+F03D×134, U+F044×16, U+F046×1, U+F04C×4, U+F051×128, U+F057×36, U+F05B×4, U+F05D×4, U+F071×133, U+F074×4, U+F075×8, U+F077×18, U+F0A3×2, U+F0A5×33, U+F0B4×24, U+F0D7×15, U+F0D9×14, U+F0E5×34, U+F0E6×14, U+F0E7×14, U+F0E8×14, U+F0E9×1, U+F0EB×1, U+F0F2×6, U+F0F6×14, U+F0F7×14, U+F0F8×14, U+F0F9×1, U+F0FB×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "POS20120200001_52001287.tiddlers.json",
+    "tiddlers_count": 44,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -261,6 +284,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 34.0,
       "detail": "11 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-05T22:33:52Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 37.4,
+      "detail": "28 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:33:52Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.6,
+      "detail": "44 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/POS20120200001_52001287/POS20120200001_52001287.lines.json": "sha256:8630b7246d42a8db0000bc04b23b2e64da1bf7572dcb5a9d09ce36db9a88f397"
+      },
+      "params_hash": "sha256:51a48707aaa1c6085d5288fda9d30dbd1560204e933764264d4f806cbfd8df78",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:33:52Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

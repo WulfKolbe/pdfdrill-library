@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 21,
@@ -80,7 +84,56 @@
     "math_fonts": [
       "Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "ocr_lang": "eng",
+    "ocr_lang_effective": "eng",
+    "ocr_pages": 21,
+    "ocr_lines": 812,
+    "ocr_units": "pt",
+    "ocr_render_dpi": 400,
+    "ocr_type_counts": {
+      "section_header": 6,
+      "page_info": 0,
+      "diagram": 1,
+      "absorbed_lines": 22,
+      "table": 9,
+      "equation": 0,
+      "equation_lines_merged": 0,
+      "toc_rows": 0,
+      "text_layer_lines": 778,
+      "barcodes": 0
+    },
+    "ocr_warnings": [
+      "document carries an embedded text layer (OCR overlay or born-digital) — it is invisible to this re-OCR but may be higher quality; consider the born-digital route (pdfminer/pdfdrill model) or cross-checking against it"
+    ],
+    "bibkey": "RoutledgeHandbooks-9781420035315-chapter3",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 21,
+      "Citation": 126,
+      "Table": 9,
+      "Diagram": 1,
+      "ListItem": 82,
+      "Paragraph": 319,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "tesseract",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "tesseract"
+    },
+    "bibliography_entries": 66,
+    "bibliography_with_year": 66,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "RoutledgeHandbooks-9781420035315-chapter3.tiddlers.json",
+    "tiddlers_count": 590,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -677,6 +730,50 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 49.2,
       "detail": "39 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T23:15:03Z",
+      "node": "ocr",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "OCR_BUILT",
+      "cost_ms": 161407.1,
+      "detail": "21 pages, 812 lines, lang=eng"
+    },
+    {
+      "ts": "2026-08-05T23:15:04Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,OCR_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 199.7,
+      "detail": "559 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:15:04Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "66 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-05T23:15:04Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.8,
+      "detail": "590 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/RoutledgeHandbooks-9781420035315-chapter3/RoutledgeHandbooks-9781420035315-chapter3.lines.json": "sha256:06e29a9abd4be91c98bd681bbdf1028463d92a405a2c74e897523ae0786ab32e"
+      },
+      "params_hash": "sha256:d12282a26535aa988de3a87ac0960768aebb6630bddf915b36080408306c5efd",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:15:04Z",
+      "provenance": "tesseract"
+    }
+  }
 }

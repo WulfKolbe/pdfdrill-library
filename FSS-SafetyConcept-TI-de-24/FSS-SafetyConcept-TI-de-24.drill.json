@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -45,7 +47,27 @@
       "HDBHPL+SMAFuturaGlobal-Regular"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "FSS-SafetyConcept-TI-de-24",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "ListItem": 43,
+      "Paragraph": 6,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "FSS-SafetyConcept-TI-de-24.tiddlers.json",
+    "tiddlers_count": 72,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -154,6 +176,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 12.4,
       "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T20:22:09Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 25.1,
+      "detail": "56 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T20:22:09Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.3,
+      "detail": "72 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/FSS-SafetyConcept-TI-de-24/FSS-SafetyConcept-TI-de-24.lines.json": "sha256:3e5f7b1e63c35312453231d07d6fd544f8836db4f0a8dab1daa243f402f244fb"
+      },
+      "params_hash": "sha256:87f70546ce09bc1bd74974d42735e71b86538fe949dc212b5d8a7a10981a4dff",
+      "algo": "sha256",
+      "ts": "2026-08-05T20:22:09Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -44,7 +46,26 @@
       "JJBFLO+Cambria-Italic"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Hill-Effect_8-04-21",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "Paragraph": 6,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Hill-Effect_8-04-21.tiddlers.json",
+    "tiddlers_count": 29,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -153,6 +174,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 13.9,
       "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T21:14:48Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 19.2,
+      "detail": "13 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T21:14:48Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.5,
+      "detail": "29 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Hill-Effect_8-04-21/Hill-Effect_8-04-21.lines.json": "sha256:ddee0ad611d2911add75e7971cc1fac796d90f0d7ffba5e8331f59ac2ab46d0c"
+      },
+      "params_hash": "sha256:48583c92f6733b8d85c0f4a42cb7c114b4d48f8999060dabf55c08c30ce1e8ca",
+      "algo": "sha256",
+      "ts": "2026-08-05T21:14:48Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

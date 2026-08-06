@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -50,7 +52,27 @@
       "Helvetica"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "RaytrixEngl",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "ListItem": 2,
+      "Paragraph": 10,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "RaytrixEngl.tiddlers.json",
+    "tiddlers_count": 39,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -227,6 +249,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 32.5,
       "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T23:07:38Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 26.5,
+      "detail": "23 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:07:38Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.6,
+      "detail": "39 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/RaytrixEngl/RaytrixEngl.lines.json": "sha256:11fadfc08c24d5f17a3f2f4fefb28591962ee4812a039c6d85b6225039976c74"
+      },
+      "params_hash": "sha256:0d96775b66061aa0a67603e3f50fbb50853d79d5fe62dcb3f59e4df26cae5b5d",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:07:38Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

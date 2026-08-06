@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 12,
@@ -46,7 +48,27 @@
       "Times-Roman"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "MDS Nutrition and the eye",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 12,
+      "ListItem": 6,
+      "Paragraph": 12,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "MDS Nutrition and the eye.tiddlers.json",
+    "tiddlers_count": 47,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -167,6 +189,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 26.6,
       "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T21:59:01Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 28.8,
+      "detail": "31 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T21:59:01Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.1,
+      "detail": "47 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/MDS Nutrition and the eye/MDS Nutrition and the eye.lines.json": "sha256:9581f88160de78c15fae702907fee660e6626218cf6b35c6138389a33803a4d6"
+      },
+      "params_hash": "sha256:36580adcdbdd5a3775f2eed5ed2f84b25f94cac6e6bcd2424b8ef15e0a24ba82",
+      "algo": "sha256",
+      "ts": "2026-08-05T21:59:01Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 61,
@@ -50,7 +52,27 @@
       "TimesNewRoman,Italic"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Manfred Spitzer. Lernen",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 61,
+      "ListItem": 4,
+      "Paragraph": 61,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Manfred Spitzer. Lernen.tiddlers.json",
+    "tiddlers_count": 143,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -227,6 +249,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 45.4,
       "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:01:01Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 205.0,
+      "detail": "127 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:01:01Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.0,
+      "detail": "143 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Manfred Spitzer. Lernen/Manfred Spitzer. Lernen.lines.json": "sha256:fc01ea021dea703d9137ee5dec9e43e90e096bd08ff2c9ad75593109c1eb980c"
+      },
+      "params_hash": "sha256:abdd702fecc6e36a98de866e9427e7d6b6fda934248181834c35d93612f224f0",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:01:01Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

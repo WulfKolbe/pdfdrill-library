@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -51,7 +53,26 @@
     "math_fonts": [
       "SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Energieeffizienz-in-Kuechen",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 16,
+      "Paragraph": 16,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 31 unmapped private-use character(s) remain (U+F0B7×31) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Energieeffizienz-in-Kuechen.tiddlers.json",
+    "tiddlers_count": 49,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -230,6 +251,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 27.3,
       "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T20:19:35Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 38.3,
+      "detail": "33 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T20:19:35Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.8,
+      "detail": "49 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Energieeffizienz-in-Kuechen/Energieeffizienz-in-Kuechen.lines.json": "sha256:264222e421833e685565122d894056e6fe03edbdd3b6f3c37635a135d518e6a1"
+      },
+      "params_hash": "sha256:617a4cd6088c4c43a029d4182d8663d2d1fe205ef5d6610cb91764bf436c172e",
+      "algo": "sha256",
+      "ts": "2026-08-05T20:19:35Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

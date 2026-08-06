@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -85,7 +88,28 @@
       "QDTWCG+MSBM10",
       "VLQMQY+MSAM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "COSIT_2009_Adams_Raubal_CameraFinal",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 18,
+      "ListItem": 51,
+      "Equation": 44,
+      "Paragraph": 41,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 42 unmapped private-use character(s) remain (U+F6BE×12, U+F8EB×3, U+F8EC×9, U+F8ED×3, U+F8F6×3, U+F8F7×9, U+F8F8×3) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "COSIT_2009_Adams_Raubal_CameraFinal.tiddlers.json",
+    "tiddlers_count": 171,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -572,6 +596,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 33.5,
       "detail": "30 fonts, 15 math"
+    },
+    {
+      "ts": "2026-08-05T06:48:15Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 92.4,
+      "detail": "155 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:48:16Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.5,
+      "detail": "171 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/COSIT_2009_Adams_Raubal_CameraFinal/COSIT_2009_Adams_Raubal_CameraFinal.lines.json": "sha256:0e3a280b0d993da60b7357acf7553b10bf52cca47de64809e8e1ed5a41c338ce"
+      },
+      "params_hash": "sha256:765ffe073935ed5653290a29f62c9fe3d77c8c5fd0b9bf3e3ec31011391569ac",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:48:15Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

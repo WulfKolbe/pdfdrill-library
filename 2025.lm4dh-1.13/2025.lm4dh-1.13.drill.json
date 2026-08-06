@@ -8,7 +8,14 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 10,
@@ -129,12 +136,823 @@
       "geometry": true,
       "math": true,
       "source": "mathpix"
+    },
+    "abstract": "Language models can generate lists of salient literary characters for specific relations but struggle with long, complete lists spanning entire novels. This paper studies the non-standard setting of extracting complete entity lists from full-length books, such as identifying all 50+ friends of Harry Potter across the 7-volume book series. We construct a benchmark dataset with meticulously compiled ground-truth, posing it as a challenge for the research community. We present a first-cut method to tackle this task, based on RAG with LLMs. Our method introduces the novel contribution of harnessing IRstyle pseudo-relevance feedback for effective passage retrieval from literary texts. Experimental results show that our approach clearly outperforms both LLM-only and standard RAG baselines, achieving higher recall while maintaining acceptable precision.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Recall Them All: Long List G",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "1.1",
+        "title": "Sneha Singhania Simon Ra",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.2",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.3",
+        "title": "Motivation and Problem. Analyzing literary texts",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2",
+        "title": "eneration from Long Novels",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "zniewski Gerhard Weikum",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "RQ1: Howwell are LLMs performing on this chal-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "RQ2: How can the outcome of LLM/RAG meth-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.4",
+        "title": "Hagen spoke quietly. “ … The police",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.5",
+        "title": "captain, McCluskey, is a guy who’s",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.6",
+        "title": "been on the take very heavy …",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.7",
+        "title": "And he’s greedy and untrustworthy to",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.8",
+        "title": "do business with. But Sollozzo must For example, the late R",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.9",
+        "title": "have paid him a big price. “ Lampone … would hav",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.10",
+        "title": "… pretty handy at times li",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.11",
+        "title": "“I’m OK,” Michael said. “What was except that for who kn",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.12",
+        "title": "that police captain’s name?” reason Michael had us",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.13",
+        "title": "“McCluskey,” Hagen said. take out Hyman Roth.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.14",
+        "title": "Michael had last seen him that fatal a capo to do a hit like t",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.15",
+        "title": "night when Clemenza had planted the",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.16",
+        "title": "gun he had used to assassinate the",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.17",
+        "title": "police captain and the Turk, Sollozzo.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.18",
+        "title": "Approach and Contributions. We devise a",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.19",
+        "title": "Stage 1: Recall-oriented Generation. An LLM",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.20",
+        "title": "Stage 2: Precision-oriented Scrutinization.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.21",
+        "title": "And then Don Tommasino had told Michael that",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.22",
+        "title": "the two shepherds, Fabrizzio and Calo, would go",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.23",
+        "title": "with him as bodyguards in the Alfa Romeo.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.24",
+        "title": "“Get the car,” Michael called down to him. “I’ll",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.25",
+        "title": "occo be leaving in five minutes.” “Calo is having a cup",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.26",
+        "title": "e come in of coffee,” Fabrizzio said. “Is your wife coming",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.27",
+        "title": "ke this, with you?”",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.28",
+        "title": "ows what",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.29",
+        "title": "ed him to Apollonia was sitting in the car … Michael was",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.30",
+        "title": "Who sends annoyed to see Fabrizzio disappearing through",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.31",
+        "title": "hat? the gates. What the hell was he doing?",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.32",
+        "title": "Michael shouted to the girl, “No! No!” But his",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.33",
+        "title": "shout was drowned in the roar of the tremendous",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.34",
+        "title": "explosion as Apollonia switched on the ignition.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.35",
+        "title": "2 L3X Methodology",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.35.1",
+        "title": "2.1 Passage Retrieval",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.36",
+        "title": "Retriever Ranking Batching",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.37",
+        "title": "Stage 1: Recall-oriented Generation",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.37.1",
+        "title": "2.2 Passage Ranking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.38",
+        "title": "Default Ranking (def). The default passage rank-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.39",
+        "title": "Amplification (amp). For this novel re-ranking of",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.40",
+        "title": "E(Q′) = αE(Q) + (1 − α)(cid:80)s E(S ) with",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.41",
+        "title": "LLM support",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.42",
+        "title": "(RAG Ensemble) passages",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.43",
+        "title": "Classifier",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown"
+  },
+  "pdfinfo": {
+    "title": "Recall Them All: Long List Generation from Long Novels",
+    "author": "Sneha Singhania ; Simon Razniewski ; Gerhard Weikum",
+    "producer": "pdfTeX-1.40.26",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2025-08-22T16:00:18Z",
+    "mod_date": "2025-08-22T16:00:18Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 10,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 454407,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.3",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) kpathsea version 6.4.0",
+      "Subject": "LM4DH 2025"
     }
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "singhania2025",
+    "title": "Recall Them All: Long List Generation from Long Novels",
+    "author": "Sneha Singhania ; Simon Razniewski ; Gerhard Weikum",
+    "year": "2025",
+    "pages": 10,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 72.0,
+      "y": 619.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.1",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 1,
+      "x": 72.0,
+      "y": 357.0,
+      "name": "section.1",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 327.0,
+      "y": 89.0,
+      "name": "Hfootnote.1",
+      "kind": "other"
+    },
+    {
+      "page": 2,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "figure.caption.1",
+      "kind": "figure"
+    },
+    {
+      "page": 2,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.2",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 2,
+      "x": 307.0,
+      "y": 472.0,
+      "name": "section.2",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 307.0,
+      "y": 345.0,
+      "name": "subsection.2.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "figure.caption.2",
+      "kind": "figure"
+    },
+    {
+      "page": 3,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.3",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 3,
+      "x": 72.0,
+      "y": 566.0,
+      "name": "subsection.2.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 307.0,
+      "y": 605.0,
+      "name": "subsection.2.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 307.0,
+      "y": 300.0,
+      "name": "subsection.2.4",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 327.0,
+      "y": 140.0,
+      "name": "Hfootnote.2",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 327.0,
+      "y": 99.0,
+      "name": "Hfootnote.3",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.4",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 4,
+      "x": 307.0,
+      "y": 479.0,
+      "name": "section.3",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 72.0,
+      "y": 700.0,
+      "name": "subsection.2.5",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 327.0,
+      "y": 110.0,
+      "name": "Hfootnote.4",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 327.0,
+      "y": 99.0,
+      "name": "Hfootnote.5",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.5",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 5,
+      "x": 72.0,
+      "y": 564.0,
+      "name": "section.4",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 307.0,
+      "y": 398.0,
+      "name": "section.5",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 307.0,
+      "y": 341.0,
+      "name": "subsection.5.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.6",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 6,
+      "x": 307.0,
+      "y": 443.0,
+      "name": "section.6",
+      "kind": "section"
+    },
+    {
+      "page": 6,
+      "x": 72.0,
+      "y": 671.0,
+      "name": "subsection.5.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 307.0,
+      "y": 423.0,
+      "name": "subsection.6.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.7",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 7,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "table.caption.3",
+      "kind": "table"
+    },
+    {
+      "page": 7,
+      "x": 72.0,
+      "y": 653.0,
+      "name": "table.caption.4",
+      "kind": "table"
+    },
+    {
+      "page": 7,
+      "x": 72.0,
+      "y": 456.0,
+      "name": "table.caption.5",
+      "kind": "table"
+    },
+    {
+      "page": 8,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.8",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 8,
+      "x": 72.0,
+      "y": 262.0,
+      "name": "section.7",
+      "kind": "section"
+    },
+    {
+      "page": 8,
+      "x": 307.0,
+      "y": 345.0,
+      "name": "section.8",
+      "kind": "section"
+    },
+    {
+      "page": 8,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "subsection.6.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 9,
+      "x": 67.0,
+      "y": 523.0,
+      "name": "cite.DBLP:conf/emnlp/CabotN21",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 134.0,
+      "name": "cite.DBLP:conf/emnlp/PiperSB21",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 67.0,
+      "y": 436.0,
+      "name": "cite.DBLP:conf/sigir/0002WL022",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 67.0,
+      "y": 263.0,
+      "name": "cite.DBLP:journals/corr/abs-2312-10997",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 241.0,
+      "name": "cite.DBLP:journals/corr/abs-2402-06196",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 67.0,
+      "y": 134.0,
+      "name": "cite.HanGLPYXLLZS20",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 639.0,
+      "name": "cite.Ji2022SurveyOH",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 424.0,
+      "name": "cite.NEURIPS2020_6b493230",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 67.0,
+      "y": 761.0,
+      "name": "cite.asai-etal-2023-retrieval-tutorial",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 67.0,
+      "y": 610.0,
+      "name": "cite.bamman-etal-2019-annotated",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 67.0,
+      "y": 663.0,
+      "name": "cite.bamman2024classification",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 67.0,
+      "y": 350.0,
+      "name": "cite.chang-etal-2023-speak",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 704.0,
+      "name": "cite.contriever",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 575.0,
+      "name": "cite.josifoski-etal-2022-genie",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 478.0,
+      "name": "cite.kejriwal2024quantifying",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 327.0,
+      "name": "cite.ma-etal-2023-dreeam",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 187.0,
+      "name": "cite.piper2024using",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 67.0,
+      "y": 198.0,
+      "name": "cite.realm",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.9",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 9,
+      "x": 72.0,
+      "y": 782.0,
+      "name": "section*.6",
+      "kind": "section"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 352.0,
+      "name": "cite.DBLP:conf/acl/YaoYLHLLLHZS19",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 571.0,
+      "name": "cite.DBLP:conf/emnlp/WangHCS20",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 199.0,
+      "name": "cite.DBLP:journals/corr/abs-2303-18223",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 659.0,
+      "name": "cite.DBLP:journals/corr/abs-2310-07521",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 101.0,
+      "name": "cite.DBLP:journals/csur/ZhaoDYWZCLSX24",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 418.0,
+      "name": "cite.DBLP:journals/fcsc/XuCPZXZWZWC24",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 243.0,
+      "name": "cite.DBLP:journals/ftir/Zhai08",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 746.0,
+      "name": "cite.stammbach-etal-2022-heroes",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 484.0,
+      "name": "cite.wilkens2024small",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.10",
+      "kind": "page_anchor"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "GDFWNS+NimbusRomNo9L-Medi",
@@ -417,7 +1235,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 3,
+      "x0": 370.67,
+      "y0": 60.55,
+      "x1": 391.67,
+      "y1": 81.55,
+      "w_pt": 21.0,
+      "h_pt": 21.0,
+      "name": "Image11",
+      "imagemask": false,
+      "width_px": 160,
+      "height_px": 160,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 549,
+      "y_ppi": 549,
+      "size_bytes": 3580,
+      "object_id": "275 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 3,
+      "x0": 123.17,
+      "y0": 60.85,
+      "x1": 144.17,
+      "y1": 81.85,
+      "w_pt": 21.0,
+      "h_pt": 21.0,
+      "name": "Image11",
+      "imagemask": false,
+      "width_px": 160,
+      "height_px": 160,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 549,
+      "y_ppi": 549,
+      "size_bytes": 3580,
+      "object_id": "275 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -550,6 +1409,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.6,
       "detail": "201 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:40:05Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 90.7,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-06T00:40:05Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 77.7,
+      "detail": "20 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-06T00:40:05Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 2.3,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-06T00:40:05Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 4.9,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-06T00:40:06Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 84.8,
+      "detail": "66 dests across 7 kinds"
+    },
+    {
+      "ts": "2026-08-06T00:40:06Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=singhania2025"
+    },
+    {
+      "ts": "2026-08-06T00:40:11Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 5055.8,
+      "detail": "2 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {

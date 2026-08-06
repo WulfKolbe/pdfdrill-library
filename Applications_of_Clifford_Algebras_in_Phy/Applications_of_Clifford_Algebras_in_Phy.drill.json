@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 54,
@@ -122,7 +125,28 @@
       "VFQSVG+Cmmib10",
       "VAEJCJ+Cmmi5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Applications_of_Clifford_Algebras_in_Phy",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 54,
+      "ListItem": 36,
+      "Equation": 228,
+      "Paragraph": 216,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 21 unmapped private-use character(s) remain (U+F074×2, U+F8EB×3, U+F8ED×3, U+F8EE×1, U+F8F0×1, U+F8F1×1, U+F8F2×1, U+F8F3×1, U+F8F6×3, U+F8F8×3, U+F8F9×1, U+F8FB×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Applications_of_Clifford_Algebras_in_Phy.tiddlers.json",
+    "tiddlers_count": 551,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -987,6 +1011,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 93.6,
       "detail": "57 fonts, 20 math"
+    },
+    {
+      "ts": "2026-08-05T05:11:09Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 204.2,
+      "detail": "535 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T05:11:09Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.1,
+      "detail": "551 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Applications_of_Clifford_Algebras_in_Phy/Applications_of_Clifford_Algebras_in_Phy.lines.json": "sha256:6d3b631512b160fc6027b960e2d7b83fe5c14cf7a61d65520711d944567d30b4"
+      },
+      "params_hash": "sha256:48f8720b5bbefb2ce4e23b00a24313c6d7ece5d839d54c1d24e85c3626e865f8",
+      "algo": "sha256",
+      "ts": "2026-08-05T05:11:09Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

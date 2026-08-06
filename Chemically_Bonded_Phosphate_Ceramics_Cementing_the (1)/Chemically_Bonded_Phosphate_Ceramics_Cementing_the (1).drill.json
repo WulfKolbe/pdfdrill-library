@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 25,
@@ -54,7 +56,27 @@
     "math_fonts": [
       "Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Chemically_Bonded_Phosphate_Ceramics_Cementing_the (1)",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 25,
+      "ListItem": 32,
+      "Paragraph": 25,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Chemically_Bonded_Phosphate_Ceramics_Cementing_the (1).tiddlers.json",
+    "tiddlers_count": 99,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -275,6 +297,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 43.0,
       "detail": "11 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T06:50:12Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 59.7,
+      "detail": "83 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:50:13Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.9,
+      "detail": "99 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Chemically_Bonded_Phosphate_Ceramics_Cementing_the (1)/Chemically_Bonded_Phosphate_Ceramics_Cementing_the (1).lines.json": "sha256:3cae0a9d44a1d2bc60f8e4da53e8353beb81ff72fb47928ade718e7b1ae3773b"
+      },
+      "params_hash": "sha256:a5202b1d87254a94329fb66f8e1f7afb4bf5f4840f1a53e561d0b2c829c2b8ee",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:50:12Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

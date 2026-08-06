@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -84,7 +87,27 @@
       "DGNBPX+MSBM10",
       "KTKTEK+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "TabulaROSA_Tabular_Operating_System_Arch",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 9,
+      "ListItem": 24,
+      "Paragraph": 9,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "TabulaROSA_Tabular_Operating_System_Arch.tiddlers.json",
+    "tiddlers_count": 59,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -583,6 +606,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 31.7,
       "detail": "32 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-05T23:58:08Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 57.4,
+      "detail": "43 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:58:08Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.3,
+      "detail": "59 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/TabulaROSA_Tabular_Operating_System_Arch/TabulaROSA_Tabular_Operating_System_Arch.lines.json": "sha256:f13113f4e9d8a070ddad06e68583bafffe34d396d1b65731ee82df548918f212"
+      },
+      "params_hash": "sha256:c3eb6d9ef1239b7406d796d3e2fc311e3b482ed584e0087c005b472f128760c0",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:58:08Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

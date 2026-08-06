@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -97,7 +100,28 @@
       "TMHVPV+MSAM10",
       "PFAIHY+CMSY9"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "QCGA2018",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 16,
+      "ListItem": 36,
+      "Equation": 43,
+      "Paragraph": 44,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "QCGA2018.tiddlers.json",
+    "tiddlers_count": 156,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -652,6 +676,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 49.1,
       "detail": "36 fonts, 17 math"
+    },
+    {
+      "ts": "2026-08-05T23:01:50Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 99.9,
+      "detail": "140 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:01:50Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.7,
+      "detail": "156 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/QCGA2018/QCGA2018.lines.json": "sha256:4dfc24370663a7062f40ee6ad4b04e904b4b1a244ed690247ad2627eaf5f1ecb"
+      },
+      "params_hash": "sha256:76c3d98c4105e1efa55443a9d2b78fd19837c7a1c30c1747b23852afabbe6b9e",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:01:50Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

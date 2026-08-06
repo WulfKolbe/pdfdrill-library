@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -54,7 +57,28 @@
       "VFTBTC+OpenSymbol",
       "OJIXHX+SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "The_Size_and_Energy_of_a_Wave_Packet",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 13,
+      "ListItem": 21,
+      "Equation": 10,
+      "Paragraph": 22,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "The_Size_and_Energy_of_a_Wave_Packet.tiddlers.json",
+    "tiddlers_count": 83,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -217,6 +241,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 24.0,
       "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-06T00:24:16Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 52.1,
+      "detail": "67 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:24:16Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.0,
+      "detail": "83 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/The_Size_and_Energy_of_a_Wave_Packet/The_Size_and_Energy_of_a_Wave_Packet.lines.json": "sha256:ade71dfea9296bc5296e12cceaa256d76ba6812734263d8db033cdc277a8e1fe"
+      },
+      "params_hash": "sha256:0e2cf833ed36d803d3860e998a24f0ac6ce313f2cefbd78e1e12af388a0b5861",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:24:16Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 47,
@@ -43,7 +45,27 @@
       "AAAAAC+LiberationSerif-Italic"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Prelude to Mathematics (Dover Books on Mathematics)_trial",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 47,
+      "ListItem": 9,
+      "Paragraph": 47,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Prelude to Mathematics (Dover Books on Mathematics)_trial.tiddlers.json",
+    "tiddlers_count": 120,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -136,6 +158,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 19.6,
       "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:46:18Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 109.4,
+      "detail": "104 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:46:18Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.2,
+      "detail": "120 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Prelude to Mathematics (Dover Books on Mathematics)_trial/Prelude to Mathematics (Dover Books on Mathematics)_trial.lines.json": "sha256:25a4fb5e27e5bfb60aba1eb9e45cff8a129ee724c3294c74743efc091d48ecdb"
+      },
+      "params_hash": "sha256:a42ba3d273cf3511f12295a3999d4b8a22c8f54a776bebb391c6d5ae7d862b17",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:46:18Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

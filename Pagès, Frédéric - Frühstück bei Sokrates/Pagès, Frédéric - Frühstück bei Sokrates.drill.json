@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 173,
@@ -43,7 +45,27 @@
       "KOACAM+TimesNewRoman,Italic"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Pagès, Frédéric - Frühstück bei Sokrates",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 173,
+      "ListItem": 18,
+      "Paragraph": 172,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Pagès, Frédéric - Frühstück bei Sokrates.tiddlers.json",
+    "tiddlers_count": 380,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -122,6 +144,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 32.2,
       "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:34:30Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 438.2,
+      "detail": "364 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:34:30Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 27.2,
+      "detail": "380 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Pagès, Frédéric - Frühstück bei Sokrates/Pagès, Frédéric - Frühstück bei Sokrates.lines.json": "sha256:fef806d7fa6add5f7c2a3c19c2947ad33553e3af7e84a0be25387705581989b6"
+      },
+      "params_hash": "sha256:7a4a2de1d8402120d64062d234208d783998d3fe75669ab25a45df1e9efb7987",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:34:30Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

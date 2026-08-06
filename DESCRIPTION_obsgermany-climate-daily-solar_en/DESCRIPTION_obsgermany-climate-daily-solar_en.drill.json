@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 3,
@@ -41,7 +43,26 @@
       "Helvetica-BoldOblique"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "DESCRIPTION_obsgermany-climate-daily-solar_en",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 3,
+      "Paragraph": 3,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "DESCRIPTION_obsgermany-climate-daily-solar_en.tiddlers.json",
+    "tiddlers_count": 23,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -150,6 +171,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 28.2,
       "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T06:57:09Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 14.1,
+      "detail": "7 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:57:09Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.0,
+      "detail": "23 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/DESCRIPTION_obsgermany-climate-daily-solar_en/DESCRIPTION_obsgermany-climate-daily-solar_en.lines.json": "sha256:3b677d128328c1bb1b99ed7f84d4f734c4ee1ac4bf9eb02bdce9fe54627696e9"
+      },
+      "params_hash": "sha256:97389ea59ed8fcc9e3297d437b4a0a3a97a3510161b4a1720c8dd9d1e034e975",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:57:09Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

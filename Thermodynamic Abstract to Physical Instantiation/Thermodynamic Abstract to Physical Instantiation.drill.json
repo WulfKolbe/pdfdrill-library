@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -50,7 +53,28 @@
       "JEUWBM+LatinModernMath-Regular",
       "FFCHAP+LatinModernMath-Regular"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Thermodynamic Abstract to Physical Instantiation",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 18,
+      "ListItem": 92,
+      "Equation": 1,
+      "Paragraph": 19,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Thermodynamic Abstract to Physical Instantiation.tiddlers.json",
+    "tiddlers_count": 147,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -157,6 +181,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 16.4,
       "detail": "4 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-06T00:38:54Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 107.9,
+      "detail": "131 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:38:54Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.7,
+      "detail": "147 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Thermodynamic Abstract to Physical Instantiation/Thermodynamic Abstract to Physical Instantiation.lines.json": "sha256:b86d56bf1dcbb5bf36cf8f96041fbe46395f858528f717f0b847edce098faa4b"
+      },
+      "params_hash": "sha256:0fdde9b1656acb2ddeab8d05d761590a3378ec679f33b00bef7cc09bc2fe6373",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:38:54Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

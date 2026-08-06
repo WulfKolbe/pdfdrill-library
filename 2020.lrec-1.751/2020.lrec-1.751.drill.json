@@ -8,7 +8,15 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "LINKS_KNOWN",
+    "TOC_KNOWN",
+    "BIBTEX_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 9,
@@ -118,12 +126,976 @@
       "geometry": true,
       "math": true,
       "source": "mathpix"
+    },
+    "abstract": "Social media is a rich source of assertions about personal traits, such as *I am a doctor* or *my hobby is playing tennis.* Precisely identifying explicit assertions is difficult, though, because of the users’ highly varied vocabulary and language expressions. Identifying personal traits from implicit assertions like *I’ve been at work treating patients all day* is even more challenging. This paper presents *RedDust*, a large-scale annotated resource for user profiling for over 300k Reddit users across five attributes: *profession*, *hobby*, *family status*, *age*, and *gender*. We construct RedDust using a diverse set of high-precision patterns and demonstrate its use as a resource for developing learning models to deal with implicit assertions. RedDust consists of users’ personal traits, which are (attribute, value) pairs, along with users’ post ids, which may be used to retrieve the posts from a publicly available crawl or from the Reddit API. We discuss the construction of the resource and show interesting statistics and insights into the data. We also compare different classifiers, which can be learned from RedDust. To the best of our knowledge, RedDust is the first annotated language resource about Reddit users at large scale. We envision further use cases of RedDust for providing background knowledge about user traits, to enhance personalized search and recommendation as well as conversational agents.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "links": [
+      {
+        "page": 1,
+        "url": "https://redditblog.com/2018/11/13/holiday-on-reddit/"
+      },
+      {
+        "page": 1,
+        "url": "https://www.digitaltrends.com/social-media/reddit-ads-promoted-posts/"
+      },
+      {
+        "page": 1,
+        "url": "https://pkb.mpi-inf.mpg.de/reddust"
+      },
+      {
+        "page": 2,
+        "url": "https://www.reddit.com/"
+      },
+      {
+        "page": 2,
+        "url": "https://files.pushshift.io/reddit/"
+      },
+      {
+        "page": 3,
+        "url": "https://en.wikipedia.org/wiki/Category:Lists_of_occupations"
+      },
+      {
+        "page": 4,
+        "url": "https://en.wikipedia.org/wiki/List_of_hobbies"
+      },
+      {
+        "page": 5,
+        "url": "https://www.techjunkie.com/demographics-reddit/"
+      },
+      {
+        "page": 7,
+        "url": "https://github.com/Anna146/HiddenAttributeModels/"
+      }
+    ],
+    "toc": [
+      {
+        "number": "1",
+        "title": "RedDust: a Large Reusable Dataset of Reddit User Traits",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "1.1",
+        "title": "Anna Tigunova, Andrew Yates, Paramita Mirza, Gerhard Weikum",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.2",
+        "title": "Keywords:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.3",
+        "title": "1 Introduction users’ attribute values expressed implicitly (e.g., I’ve been",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.4",
+        "title": "conversational agents. 2 Related work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.5",
+        "title": "User Profiling in Online Communication: The popular-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.6",
+        "title": "Dataset for User Profiling: Automatic methods, particu-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.7",
+        "title": "3 Background",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.8",
+        "title": "Posts and Comments: Discussions on Reddit are orga-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.9",
+        "title": "Subreddits: Reddit is organized into subreddits, which are",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.10",
+        "title": "Flairs:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.11",
+        "title": "4 Dataset Creation",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.11.1",
+        "title": "4.1 Gender",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.11.2",
+        "title": "4.2 Age",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.11.3",
+        "title": "4.3 Family status",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.11.4",
+        "title": "4.4 Profession",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.12",
+        "title": "attribute pattern(s)",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.13",
+        "title": "attribute value word/phrase indicators",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.13.1",
+        "title": "4.5 Hobby",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.13.2",
+        "title": "4.6 Labeling evaluation",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.14",
+        "title": "attribute #users #posts #subreddits",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.14.1",
+        "title": "4.7 Privacy and licensing",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.15",
+        "title": "5 Data statistics and analysis",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.15.1",
+        "title": "5.1 Analysis of multiple personal attributes",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.15.2",
+        "title": "5.2 Subreddit analysis",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.16",
+        "title": "nurse photographer web developer gender family status",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.17",
+        "title": "6 Use Cases",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.18",
+        "title": "age",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.19",
+        "title": "MFR AUROC nDCG MFR",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.19.1",
+        "title": "6.1 Trait-specific characteristic terms",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.19.2",
+        "title": "6.2 Learning predictive models",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.20",
+        "title": "profession hobby",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.21",
+        "title": "AUROC nDCG MFR AUROC nDCG",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.21.1",
+        "title": "0.85 0.47 18.3 0.80 0.30",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.21.2",
+        "title": "6.21. Experimental setup",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.22",
+        "title": "Logistic regression (LogReg). We built a multinomial lo-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.23",
+        "title": "Multilayer Perceptron (MLP). We applied a shallowMLP",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.24",
+        "title": "Convolutional Neural Network (CNN). We leveraged the",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.25",
+        "title": "Hidden Attribute Models (HAM). We used a pub-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.26",
+        "title": "writer bartender",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.26.1",
+        "title": "6.22. Evaluation metrics",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.27",
+        "title": "Binary attributes. We computed accuracy and area under",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.28",
+        "title": "Multi-valued attributes. For the age attribute, we put age",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.28.1",
+        "title": "6.23. Experiment Results",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.29",
+        "title": "musician web developer lawyer",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.30",
+        "title": "7 Conclusion",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.31",
+        "title": "8 Bibliographical References",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown"
+  },
+  "pdfinfo": {
+    "title": "RedDust: a Large Reusable Dataset of Reddit User Traits",
+    "author": "Anna Tigunova ; Paramita Mirza ; Andrew Yates ; Gerhard Weikum",
+    "producer": "pdfTeX-1.40.19",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2020-03-11T12:05:50Z",
+    "mod_date": "2020-03-11T12:05:50Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 9,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 740747,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.3",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) kpathsea version 6.3.0",
+      "Subject": "LREC 2020"
     }
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "tigunova2020",
+    "title": "RedDust: a Large Reusable Dataset of Reddit User Traits",
+    "author": "Anna Tigunova ; Paramita Mirza ; Andrew Yates ; Gerhard Weikum",
+    "year": "2020",
+    "pages": 9,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 52.0,
+      "y": 491.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 68.0,
+      "y": 84.0,
+      "name": "Hfootnote.1",
+      "kind": "other"
+    },
+    {
+      "page": 1,
+      "x": 68.0,
+      "y": 73.0,
+      "name": "Hfootnote.2",
+      "kind": "other"
+    },
+    {
+      "page": 1,
+      "x": 51.0,
+      "y": 774.0,
+      "name": "page.1",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 1,
+      "x": 52.0,
+      "y": 491.0,
+      "name": "section.1",
+      "kind": "section"
+    },
+    {
+      "page": 1,
+      "x": 305.0,
+      "y": 303.0,
+      "name": "section.2",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 321.0,
+      "y": 75.0,
+      "name": "Hfootnote.3",
+      "kind": "other"
+    },
+    {
+      "page": 2,
+      "x": 321.0,
+      "y": 64.0,
+      "name": "Hfootnote.4",
+      "kind": "other"
+    },
+    {
+      "page": 2,
+      "x": 51.0,
+      "y": 774.0,
+      "name": "page.2",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 2,
+      "x": 305.0,
+      "y": 706.0,
+      "name": "section.3",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 305.0,
+      "y": 324.0,
+      "name": "section.4",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 321.0,
+      "y": 64.0,
+      "name": "Hfootnote.5",
+      "kind": "other"
+    },
+    {
+      "page": 3,
+      "x": 51.0,
+      "y": 774.0,
+      "name": "page.3",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 3,
+      "x": 52.0,
+      "y": 548.0,
+      "name": "subsection.4.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 305.0,
+      "y": 603.0,
+      "name": "subsection.4.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 305.0,
+      "y": 361.0,
+      "name": "subsection.4.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 305.0,
+      "y": 112.0,
+      "name": "subsection.4.4",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 68.0,
+      "y": 64.0,
+      "name": "Hfootnote.6",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 51.0,
+      "y": 774.0,
+      "name": "page.4",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 4,
+      "x": 52.0,
+      "y": 253.0,
+      "name": "subsection.4.5",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 52.0,
+      "y": 126.0,
+      "name": "subsection.4.6",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 52.0,
+      "y": 779.0,
+      "name": "table.caption.1",
+      "kind": "table"
+    },
+    {
+      "page": 4,
+      "x": 52.0,
+      "y": 580.0,
+      "name": "table.caption.2",
+      "kind": "table"
+    },
+    {
+      "page": 4,
+      "x": 305.0,
+      "y": 410.0,
+      "name": "table.caption.3",
+      "kind": "table"
+    },
+    {
+      "page": 5,
+      "x": 68.0,
+      "y": 64.0,
+      "name": "Hfootnote.7",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 321.0,
+      "y": 64.0,
+      "name": "Hfootnote.8",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 52.0,
+      "y": 282.0,
+      "name": "figure.caption.5",
+      "kind": "figure"
+    },
+    {
+      "page": 5,
+      "x": 51.0,
+      "y": 774.0,
+      "name": "page.5",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 5,
+      "x": 52.0,
+      "y": 407.0,
+      "name": "section.5",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 52.0,
+      "y": 637.0,
+      "name": "subsection.4.7",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 305.0,
+      "y": 703.0,
+      "name": "subsection.5.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 305.0,
+      "y": 381.0,
+      "name": "subsection.5.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 52.0,
+      "y": 779.0,
+      "name": "table.caption.4",
+      "kind": "table"
+    },
+    {
+      "page": 6,
+      "x": 52.0,
+      "y": 779.0,
+      "name": "figure.caption.6",
+      "kind": "figure"
+    },
+    {
+      "page": 6,
+      "x": 52.0,
+      "y": 534.0,
+      "name": "figure.caption.7",
+      "kind": "figure"
+    },
+    {
+      "page": 6,
+      "x": 51.0,
+      "y": 774.0,
+      "name": "page.6",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 6,
+      "x": 52.0,
+      "y": 11.0,
+      "name": "section.6",
+      "kind": "section"
+    },
+    {
+      "page": 6,
+      "x": 305.0,
+      "y": 262.0,
+      "name": "table.caption.10",
+      "kind": "table"
+    },
+    {
+      "page": 6,
+      "x": 52.0,
+      "y": 262.0,
+      "name": "table.caption.9",
+      "kind": "table"
+    },
+    {
+      "page": 7,
+      "x": 321.0,
+      "y": 62.0,
+      "name": "Hfootnote.9",
+      "kind": "other"
+    },
+    {
+      "page": 7,
+      "x": 52.0,
+      "y": 655.0,
+      "name": "figure.caption.8",
+      "kind": "figure"
+    },
+    {
+      "page": 7,
+      "x": 51.0,
+      "y": 774.0,
+      "name": "page.7",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 7,
+      "x": 52.0,
+      "y": 357.0,
+      "name": "subsection.6.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 52.0,
+      "y": 93.0,
+      "name": "subsection.6.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 305.0,
+      "y": 474.0,
+      "name": "subsubsection.6.2.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 52.0,
+      "y": 779.0,
+      "name": "table.caption.11",
+      "kind": "table"
+    },
+    {
+      "page": 8,
+      "x": 300.0,
+      "y": 403.0,
+      "name": "cite.basile:2017",
+      "kind": "other"
+    },
+    {
+      "page": 8,
+      "x": 300.0,
+      "y": 343.0,
+      "name": "cite.bayot:MOD17",
+      "kind": "other"
+    },
+    {
+      "page": 8,
+      "x": 300.0,
+      "y": 294.0,
+      "name": "cite.burger:EMNLP11",
+      "kind": "other"
+    },
+    {
+      "page": 8,
+      "x": 300.0,
+      "y": 258.0,
+      "name": "cite.cohan2018smhd",
+      "kind": "other"
+    },
+    {
+      "page": 8,
+      "x": 300.0,
+      "y": 186.0,
+      "name": "cite.fabian2015privacy",
+      "kind": "other"
+    },
+    {
+      "page": 8,
+      "x": 300.0,
+      "y": 149.0,
+      "name": "cite.finlay2014age",
+      "kind": "other"
+    },
+    {
+      "page": 8,
+      "x": 300.0,
+      "y": 125.0,
+      "name": "cite.flekova:ACL16:long",
+      "kind": "other"
+    },
+    {
+      "page": 8,
+      "x": 300.0,
+      "y": 77.0,
+      "name": "cite.flekova:ACL16:short",
+      "kind": "other"
+    },
+    {
+      "page": 8,
+      "x": 51.0,
+      "y": 774.0,
+      "name": "page.8",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 8,
+      "x": 305.0,
+      "y": 551.0,
+      "name": "section.7",
+      "kind": "section"
+    },
+    {
+      "page": 8,
+      "x": 305.0,
+      "y": 418.0,
+      "name": "section.8",
+      "kind": "section"
+    },
+    {
+      "page": 8,
+      "x": 52.0,
+      "y": 498.0,
+      "name": "subsubsection.6.2.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 8,
+      "x": 52.0,
+      "y": 172.0,
+      "name": "subsubsection.6.2.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 8,
+      "x": 52.0,
+      "y": 779.0,
+      "name": "table.caption.12",
+      "kind": "table"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 159.0,
+      "name": "cite.Rao:2010",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 641.0,
+      "name": "cite.Schwartz2013PersonalityGA",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 364.0,
+      "name": "cite.Varma:2018:ECT:3184558.3193136",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 291.0,
+      "name": "cite.Vasilev2018",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 690.0,
+      "name": "cite.fuhr2018some",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 654.0,
+      "name": "cite.gjurkovic-EtAl:2018",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 593.0,
+      "name": "cite.gyrard2018personalized",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 545.0,
+      "name": "cite.kim:ACL17:short",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 437.0,
+      "name": "cite.pennacchiotti:ICWSM11",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 400.0,
+      "name": "cite.pennebaker2001linguistic",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 292.0,
+      "name": "cite.pietro:ACL15",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 207.0,
+      "name": "cite.pietro:ACL17:long",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 243.0,
+      "name": "cite.pietro:COLING18",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 750.0,
+      "name": "cite.sap:EMNLP14",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 702.0,
+      "name": "cite.schrading2015analysis",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 569.0,
+      "name": "cite.schwartz2013personality",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 497.0,
+      "name": "cite.sloan2015tweets",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 364.0,
+      "name": "cite.stein:2017l",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 750.0,
+      "name": "cite.stein:2017o",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 448.0,
+      "name": "cite.thelwall2018she",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 400.0,
+      "name": "cite.tigunova2019listening",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 255.0,
+      "name": "cite.vijayaraghavan:ACL17:short",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 300.0,
+      "y": 206.0,
+      "name": "cite.wallace2014humans",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 47.0,
+      "y": 497.0,
+      "name": "cite.word2vec",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 51.0,
+      "y": 774.0,
+      "name": "page.9",
+      "kind": "page_anchor"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "EEMYTN+CMSY10",
@@ -280,7 +1252,88 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 5,
+      "x0": 52.57,
+      "y0": 566.23,
+      "x1": 286.6,
+      "y1": 741.75,
+      "w_pt": 234.03,
+      "h_pt": 175.52,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 640,
+      "height_px": 480,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 197,
+      "y_ppi": 197,
+      "size_bytes": 1363,
+      "object_id": "108 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 6,
+      "x0": 132.6,
+      "y0": 69.16,
+      "x1": 459.29,
+      "y1": 280.25,
+      "w_pt": 326.69,
+      "h_pt": 211.09,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 1820,
+      "height_px": 1176,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 401,
+      "y_ppi": 401,
+      "size_bytes": 9356,
+      "object_id": "79 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 6,
+      "x0": 132.6,
+      "y0": 314.13,
+      "x1": 459.29,
+      "y1": 544.07,
+      "w_pt": 326.69,
+      "h_pt": 229.94,
+      "name": "Im3",
+      "imagemask": false,
+      "width_px": 1820,
+      "height_px": 1281,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 401,
+      "y_ppi": 401,
+      "size_bytes": 10188,
+      "object_id": "80 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 7,
+      "x0": 52.16,
+      "y0": 192.66,
+      "x1": 287.02,
+      "y1": 441.9,
+      "w_pt": 234.86,
+      "h_pt": 249.24,
+      "name": "Im4",
+      "imagemask": false,
+      "width_px": 490,
+      "height_px": 520,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 150,
+      "y_ppi": 150,
+      "size_bytes": 1135,
+      "object_id": "58 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -413,6 +1466,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.9,
       "detail": "185 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:39:33Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 109.8,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-06T00:39:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 90.1,
+      "detail": "11 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-06T00:39:34Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 2.1,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-06T00:39:34Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 23.7,
+      "detail": "9 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:39:34Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 4.8,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-06T00:39:34Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 2.2,
+      "detail": "citekey=tigunova2020"
+    },
+    {
+      "ts": "2026-08-06T00:39:34Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 48.5,
+      "detail": "85 dests across 7 kinds"
+    },
+    {
+      "ts": "2026-08-06T00:39:39Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4613.2,
+      "detail": "4 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

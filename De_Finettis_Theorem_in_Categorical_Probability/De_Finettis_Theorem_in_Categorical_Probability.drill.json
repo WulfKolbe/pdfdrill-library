@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 32,
@@ -89,7 +93,34 @@
       "RGCUIZ+CMSY8",
       "DDHUAA+MSBM7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "De_Finettis_Theorem_in_Categorical_Probability",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 32,
+      "Citation": 10,
+      "ListItem": 28,
+      "Equation": 83,
+      "Paragraph": 94,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 47,
+    "bibliography_with_year": 34,
+    "bibliography_numeric_citations": 50,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 50,
+    "tiddlers_path": "De_Finettis_Theorem_in_Categorical_Probability.tiddlers.json",
+    "tiddlers_count": 307,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -646,6 +677,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 70.3,
       "detail": "35 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-05T06:58:29Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 144.3,
+      "detail": "248 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:58:29Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "47 entries, 50+0 cites detected, 50 linked"
+    },
+    {
+      "ts": "2026-08-05T06:58:29Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.2,
+      "detail": "307 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/De_Finettis_Theorem_in_Categorical_Probability/De_Finettis_Theorem_in_Categorical_Probability.lines.json": "sha256:fd49e9b352bb3588a3267d4e9d4ff06dd4df66204cc3d8613b34c3747ef53567"
+      },
+      "params_hash": "sha256:09a9080dc2da11488c51266d82e92d2ab6189cb800e092ecc3c9531ddba96a8a",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:58:29Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

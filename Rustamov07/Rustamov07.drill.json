@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -63,7 +67,34 @@
       "HQMFKS+CMEX10",
       "FRNFVM+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Rustamov07",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 9,
+      "Citation": 63,
+      "ListItem": 10,
+      "Equation": 13,
+      "Paragraph": 19,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 3 unmapped private-use character(s) remain (U+F8F1×1, U+F8F2×1, U+F8F3×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 24,
+    "bibliography_with_year": 24,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "Rustamov07.tiddlers.json",
+    "tiddlers_count": 116,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -310,6 +341,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 35.5,
       "detail": "14 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-05T23:14:21Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 69.6,
+      "detail": "115 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:14:21Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "24 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-05T23:14:21Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.9,
+      "detail": "116 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Rustamov07/Rustamov07.lines.json": "sha256:8047047e63ff7d11c75b02e3d0607f8fbd7ce2402fd8c4c7446188b1d5005c7b"
+      },
+      "params_hash": "sha256:8594be8933b7748782069ded30bfbc341137796c2e1634b94f1af17a45768d22",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:14:21Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

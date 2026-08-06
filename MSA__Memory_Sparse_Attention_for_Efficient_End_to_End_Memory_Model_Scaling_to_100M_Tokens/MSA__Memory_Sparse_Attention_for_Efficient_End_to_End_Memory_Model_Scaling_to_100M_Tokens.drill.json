@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 20,
@@ -82,7 +85,28 @@
       "AAJQWJ+CMEX10",
       "BCDGEE+CambriaMath"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 20,
+      "ListItem": 15,
+      "Equation": 5,
+      "Paragraph": 24,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens.tiddlers.json",
+    "tiddlers_count": 81,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -511,6 +535,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 50.2,
       "detail": "27 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-05T21:59:33Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 85.8,
+      "detail": "65 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T21:59:33Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.8,
+      "detail": "81 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens/MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens.lines.json": "sha256:1edb2fb48f8cd78049cbb23917c5a8decde9a2eb525d94129e324c7eafd4a061"
+      },
+      "params_hash": "sha256:1a431628dd6460b0c210ce6e08eb9eb2053cb96c80c8f62fe02cb5caadef7e78",
+      "algo": "sha256",
+      "ts": "2026-08-05T21:59:33Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

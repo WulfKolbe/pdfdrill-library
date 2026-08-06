@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 61,
@@ -118,7 +121,28 @@
       "KJUARH+CMMI6",
       "RQDIRT+CMSY10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Book-Chapter",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 61,
+      "ListItem": 9,
+      "Equation": 314,
+      "Paragraph": 310,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 44 unmapped private-use character(s) remain (U+F8EB×3, U+F8EC×6, U+F8ED×3, U+F8F1×4, U+F8F2×4, U+F8F3×4, U+F8F4×8, U+F8F6×3, U+F8F7×6, U+F8F8×3) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Book-Chapter.tiddlers.json",
+    "tiddlers_count": 711,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -997,6 +1021,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 124.0,
       "detail": "58 fonts, 20 math"
+    },
+    {
+      "ts": "2026-08-05T06:42:15Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 237.0,
+      "detail": "695 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:42:15Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 15.8,
+      "detail": "711 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Book-Chapter/Book-Chapter.lines.json": "sha256:8f02957be64e8a1447ff6f232a683207e19a4377de216fe55da5311043840a7c"
+      },
+      "params_hash": "sha256:58541f6628b0512bc4e570ef04f7ad5062f792120ec4d212130ab14440e8cf06",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:42:15Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

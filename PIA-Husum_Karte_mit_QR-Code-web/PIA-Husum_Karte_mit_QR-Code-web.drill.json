@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -45,7 +47,26 @@
       "TFHBUL+Calibri-Bold"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "PIA-Husum_Karte_mit_QR-Code-web",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "Paragraph": 2,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "PIA-Husum_Karte_mit_QR-Code-web.tiddlers.json",
+    "tiddlers_count": 21,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -180,6 +201,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 11.8,
       "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:32:57Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 12.2,
+      "detail": "5 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:32:57Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 0.9,
+      "detail": "21 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/PIA-Husum_Karte_mit_QR-Code-web/PIA-Husum_Karte_mit_QR-Code-web.lines.json": "sha256:26bb2fbb9c24bb8d30c01859cb27b7d46f77e286e97569798a0c5e5a458a2a6a"
+      },
+      "params_hash": "sha256:f7eb20495722ce1b9670aad431ddeee820a3c661988be332c78960884e7fdddc",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:32:57Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

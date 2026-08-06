@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 3,
@@ -43,7 +46,32 @@
       "GNOLZM+MyriadPro-BoldCond"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "REAPER Quick Start",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 3,
+      "Citation": 44,
+      "Paragraph": 3,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "REAPER Quick Start.tiddlers.json",
+    "tiddlers_count": 45,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -150,6 +178,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 13.9,
       "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T23:07:26Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 22.3,
+      "detail": "51 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:07:26Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-05T23:07:27Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.5,
+      "detail": "45 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/REAPER Quick Start/REAPER Quick Start.lines.json": "sha256:ed6220091c17ee7c161a3c313b91943e4102d6cfc334b6876e7f3c13ec811ce2"
+      },
+      "params_hash": "sha256:d22f6eca52c8011ef9c9a2fed310f6db44155e16546081f198fff0fc6759683e",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:07:26Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

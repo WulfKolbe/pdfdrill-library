@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -51,7 +54,33 @@
       "QVYWEE+SFSS1095"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Qwen_latex_20250812_lac5gdl62",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 16,
+      "Citation": 7,
+      "Formula": 1,
+      "Paragraph": 16,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "Qwen_latex_20250812_lac5gdl62.tiddlers.json",
+    "tiddlers_count": 55,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -214,6 +243,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 44.1,
       "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T23:06:19Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 29.6,
+      "detail": "41 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:06:19Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-05T23:06:19Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.7,
+      "detail": "55 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Qwen_latex_20250812_lac5gdl62/Qwen_latex_20250812_lac5gdl62.lines.json": "sha256:9d7198558ff1c9464c37a7a0215c8bc24ccb0dcde3e58609b9ea2f2e0f6fc487"
+      },
+      "params_hash": "sha256:0b680a99c190aff3a325e31eccd06bd77cba666b8a62b3275b661d878f34ea8f",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:06:19Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

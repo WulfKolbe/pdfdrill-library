@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 12,
@@ -61,7 +64,28 @@
       "KNQYAN+CMEX10",
       "HAHTLG+MSAM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Einstein_Cartan_Evans_ECE_Unified_Field",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 12,
+      "ListItem": 6,
+      "Equation": 35,
+      "Paragraph": 41,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Einstein_Cartan_Evans_ECE_Unified_Field.tiddlers.json",
+    "tiddlers_count": 111,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -296,6 +320,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 19.7,
       "detail": "12 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-05T20:10:22Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 52.0,
+      "detail": "95 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T20:10:22Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.6,
+      "detail": "111 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Einstein_Cartan_Evans_ECE_Unified_Field/Einstein_Cartan_Evans_ECE_Unified_Field.lines.json": "sha256:fbf597c19166fb9d6994ed4fb798d02d9256914318f02103006908aeaecf220a"
+      },
+      "params_hash": "sha256:c43e182f45d16f79742a381ce3cff9db3b830338278ac3784436a3ddd6cc031e",
+      "algo": "sha256",
+      "ts": "2026-08-05T20:10:22Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

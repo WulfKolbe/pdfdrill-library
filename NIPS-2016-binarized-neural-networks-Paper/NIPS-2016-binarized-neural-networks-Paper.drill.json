@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -62,7 +65,28 @@
       "HRNJIE+CMSY7",
       "ZQFAXC+CMMI5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "NIPS-2016-binarized-neural-networks-Paper",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 9,
+      "ListItem": 13,
+      "Equation": 7,
+      "Paragraph": 16,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "NIPS-2016-binarized-neural-networks-Paper.tiddlers.json",
+    "tiddlers_count": 62,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -309,6 +333,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 30.0,
       "detail": "14 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-05T22:16:58Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 48.2,
+      "detail": "46 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:16:58Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.4,
+      "detail": "62 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/NIPS-2016-binarized-neural-networks-Paper/NIPS-2016-binarized-neural-networks-Paper.lines.json": "sha256:4b672fa9feaf181d150a739a18d97f8df259bc916790af006e2206e76612cb77"
+      },
+      "params_hash": "sha256:2823bd0c9f97f90d6e7c876afe3f8cd97bc9b17935782182678123abb79ec831",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:16:58Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

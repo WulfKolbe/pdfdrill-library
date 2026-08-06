@@ -6,7 +6,9 @@
     "MODEL_BUILT",
     "SIZE_KNOWN",
     "MD_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "mathpix_pdf_id": "b2d6746a-5e84-4746-a543-ddbf39e8e259",
@@ -29,20 +31,20 @@
       }
     ],
     "bibkey": "Conceptual_spaces_in_object-oriented_framework",
-    "model_path": "Conceptual_spaces_in_object-oriented_framework.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 22,
-      "Footnote": 1,
+      "Footnote": 2,
       "Citation": 14,
       "Table": 1,
       "Abstract": 1,
       "Diagram": 5,
-      "Section": 16,
+      "Section": 20,
       "Picture": 1,
       "ListItem": 1,
       "Equation": 5,
       "Formula": 27,
-      "Paragraph": 38,
+      "Paragraph": 33,
       "Document": 1
     },
     "model_equations_with_cdn": 5,
@@ -95,7 +97,23 @@
     "math_fonts": [
       "Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "bibliography_entries": 13,
+    "bibliography_with_year": 12,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 1,
+    "tiddlers_path": "Conceptual_spaces_in_object-oriented_framework.tiddlers.json",
+    "tiddlers_count": 160,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -333,7 +351,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 18.2,
       "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-05T06:53:57Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 209.0,
+      "detail": "133 objects, 5 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:53:57Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "13 entries, 0+0 cites detected, 1 linked"
+    },
+    {
+      "ts": "2026-08-05T06:53:57Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.8,
+      "detail": "160 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Conceptual_spaces_in_object-oriented_framework/Conceptual_spaces_in_object-oriented_framework.lines.json": "sha256:bc7c2273b65756f5924126fb3e01bccf0ad00cf4e51b2c653bf1cf2bd8947185"
+      },
+      "params_hash": "sha256:aaaf2f1d60e0d9cfcbc86df6d325ac75bf50caab75985c80fde6de0976f13f46",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:53:57Z",
+      "provenance": "mathpix"
+    }
+  }
 }

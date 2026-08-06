@@ -116,10 +116,10 @@
       }
     ],
     "bibkey": "D15-1204",
-    "model_path": "D15-1204.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 11,
-      "Footnote": 4,
+      "Footnote": 8,
       "Table": 3,
       "TableRow": 40,
       "TableCell": 360,
@@ -130,13 +130,21 @@
       "ListItem": 3,
       "Equation": 4,
       "Formula": 55,
-      "Paragraph": 47,
+      "Paragraph": 43,
       "Document": 1
     },
     "model_equations_with_cdn": 4,
-    "tiddlers_path": "D15-1204.pdf.drill/D15-1204.tiddlers.json",
+    "tiddlers_path": "D15-1204.tiddlers.json",
     "tiddlers_count": 177,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -687,7 +695,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 32.5,
       "detail": "31 fonts, 16 math"
+    },
+    {
+      "ts": "2026-08-05T06:56:46Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 380.0,
+      "detail": "559 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:56:46Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.8,
+      "detail": "177 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/D15-1204/D15-1204.lines.json": "sha256:2ae8a03bd576ea91da533c3be08f0c9289e47f6926560811f1da05b0bce0eae1"
+      },
+      "params_hash": "sha256:0728f5cddca50d1d950f06d883c35590f6498bd8f15244348ec7b06bcc66a78f",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:56:46Z",
+      "provenance": "mathpix"
+    }
+  }
 }

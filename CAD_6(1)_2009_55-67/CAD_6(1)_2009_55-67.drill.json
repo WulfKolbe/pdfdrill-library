@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -62,7 +64,27 @@
       "VHVNMP+EuclidSymbolOOEnc",
       "GMREOJ+SymbolOOEnc"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "CAD_6(1)_2009_55-67",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 13,
+      "ListItem": 8,
+      "Paragraph": 13,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 417 unmapped private-use character(s) remain (U+F020×27, U+F028×34, U+F029×34, U+F02B×12, U+F02D×9, U+F03D×21, U+F03E×2, U+F041×4, U+F055×1, U+F061×30, U+F063×1, U+F067×1, U+F072×4, U+F075×7, U+F076×3, U+F077×5, U+F07B×3, U+F07D×2, U+F0B3×1, U+F0B4×4, U+F0CC×1, U+F0CE×1, U+F0E5×2, U+F0E6×9, U+F0E7×79, U+F0E8×9, U+F0F6×9, U+F0F7×93, U+F0F8×9) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "CAD_6(1)_2009_55-67.tiddlers.json",
+    "tiddlers_count": 51,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -367,6 +389,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 18.6,
       "detail": "17 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T06:47:50Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 46.2,
+      "detail": "35 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:47:50Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.5,
+      "detail": "51 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/CAD_6(1)_2009_55-67/CAD_6(1)_2009_55-67.lines.json": "sha256:d179f8707f589facc2d65e20800d27be30052be34c360c3694b5580b109728d4"
+      },
+      "params_hash": "sha256:589bfdd991c4a0f073ab5dc110f052c61980cbc1bba7f1fed974d44b806c94c6",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:47:50Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

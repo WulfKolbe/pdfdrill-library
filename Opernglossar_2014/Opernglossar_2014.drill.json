@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -47,7 +49,26 @@
       "ABCDEE+Calibri,Italic"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Opernglossar_2014",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 8,
+      "Paragraph": 8,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Opernglossar_2014.tiddlers.json",
+    "tiddlers_count": 33,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -182,6 +203,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 14.6,
       "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:27:25Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 29.4,
+      "detail": "17 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:27:25Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.7,
+      "detail": "33 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Opernglossar_2014/Opernglossar_2014.lines.json": "sha256:3479f4fac4ee25f090245fb77514f71a6dfc70d118958e32938c3aa5fda1c800"
+      },
+      "params_hash": "sha256:1582aaa4c583c5682d3ecc0e484801fe5db39a198b2c39edaa876d89d2556e9a",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:27:25Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

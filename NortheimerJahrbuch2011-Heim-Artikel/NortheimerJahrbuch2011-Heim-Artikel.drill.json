@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 12,
@@ -68,7 +70,27 @@
       "MBEWXK+Times-Bold"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "NortheimerJahrbuch2011-Heim-Artikel",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 12,
+      "ListItem": 6,
+      "Paragraph": 12,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "NortheimerJahrbuch2011-Heim-Artikel.tiddlers.json",
+    "tiddlers_count": 47,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -525,6 +547,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 22.6,
       "detail": "29 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:23:50Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 48.7,
+      "detail": "31 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:23:50Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.6,
+      "detail": "47 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/NortheimerJahrbuch2011-Heim-Artikel/NortheimerJahrbuch2011-Heim-Artikel.lines.json": "sha256:739a692e690307ebf264100417c49fbf33a202f2d911e95ff217bdb16363d7f0"
+      },
+      "params_hash": "sha256:b04f0bd9987e6b9c4adefb9db16217d4478e2ace057d6e8ecde8abd5c9bad220",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:23:50Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

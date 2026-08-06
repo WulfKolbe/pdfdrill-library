@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 40,
@@ -74,7 +77,27 @@
       "ELSMVA+CMMI9",
       "JUWHCL+CMMI6"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "New_Applications_of_Cliffords_Geometric_Algebra",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 40,
+      "ListItem": 6,
+      "Paragraph": 40,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "New_Applications_of_Cliffords_Geometric_Algebra.tiddlers.json",
+    "tiddlers_count": 103,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -475,6 +498,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 58.7,
       "detail": "25 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-05T22:21:33Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 21.3,
+      "detail": "87 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:21:33Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.9,
+      "detail": "103 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/New_Applications_of_Cliffords_Geometric_Algebra/New_Applications_of_Cliffords_Geometric_Algebra.lines.json": "sha256:46e3839b5c04c9631899cee35b3a07de80ae35f668e0e9bcc91fa6be75e5d232"
+      },
+      "params_hash": "sha256:4f48514b6a12bb25de948f1f5a6edebc4169b567452c751c1c181087a887a5eb",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:21:33Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

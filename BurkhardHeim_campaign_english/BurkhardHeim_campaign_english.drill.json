@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -51,7 +53,27 @@
     "math_fonts": [
       "SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "BurkhardHeim_campaign_english",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "ListItem": 11,
+      "Paragraph": 2,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "BurkhardHeim_campaign_english.tiddlers.json",
+    "tiddlers_count": 32,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -230,6 +252,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 27.0,
       "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T06:47:48Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 7.2,
+      "detail": "16 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:47:48Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 0.9,
+      "detail": "32 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/BurkhardHeim_campaign_english/BurkhardHeim_campaign_english.lines.json": "sha256:bc9aaccf0d2658395f26e4a4ec2d98af1ed432fd0b8c8c521f140c12c99eebbe"
+      },
+      "params_hash": "sha256:cb20ec641415978d04e1f1673f601717d607fa759183d47bfd0e7775b296a7af",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:47:48Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

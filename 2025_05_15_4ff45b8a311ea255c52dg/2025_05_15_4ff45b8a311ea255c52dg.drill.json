@@ -6,7 +6,11 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -92,7 +96,9 @@
     },
     "tiddlers_path": "2025_05_15_4ff45b8a311ea255c52dg.tiddlers.json",
     "tiddlers_count": 167,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -366,7 +372,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 5,
+      "x0": 133.77,
+      "y0": 199.14,
+      "x1": 477.48,
+      "y1": 393.05,
+      "w_pt": 343.71,
+      "h_pt": 193.91,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 1278,
+      "height_px": 721,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 268,
+      "y_ppi": 268,
+      "size_bytes": 50073,
+      "object_id": "26 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 7,
+      "x0": 133.77,
+      "y0": 149.65,
+      "x1": 477.47,
+      "y1": 309.95,
+      "w_pt": 343.7,
+      "h_pt": 160.3,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 982,
+      "height_px": 458,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 206,
+      "y_ppi": 206,
+      "size_bytes": 39628,
+      "object_id": "36 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -441,6 +488,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "167 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:40:06Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 120.0,
+      "detail": "19 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-06T00:40:07Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 61.0,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-06T00:40:07Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 235.5,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:40:09Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1728.7,
+      "detail": "2 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

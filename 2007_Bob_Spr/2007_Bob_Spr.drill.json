@@ -7,7 +7,13 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 17,
@@ -90,9 +96,50 @@
     "bibliography_cites": 35,
     "tiddlers_path": "2007_Bob_Spr.tiddlers.json",
     "tiddlers_count": 107,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Dirichlet Energy of Piecewise Linear Functions",
+        "page": ""
+      },
+      {
+        "number": "2",
+        "title": "Delaunay Triangulations of Piecewise Flat Surfaces",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "Acrobat Distiller 7.0.5 (Windows)",
+    "creator": "VTeX PDF Tools",
+    "creation_date": "2007-12-11T13:14:13+02",
+    "mod_date": "2007-12-11T13:14:18+02",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 17,
+    "encrypted": false,
+    "page_size": "439.37 x 666.142 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 436305,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.3",
+    "custom_fields": {
+      "Keywords": "",
+      "Subject": ""
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -266,7 +313,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -349,6 +396,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.6,
       "detail": "107 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:38:15Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 106.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-06T00:38:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 274.4,
+      "detail": "12 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-06T00:38:17Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 120.7,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-06T00:38:18Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 157.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-06T00:38:19Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 376.4,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:38:27Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 7396.1,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

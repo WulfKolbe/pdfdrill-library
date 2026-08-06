@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -65,7 +67,27 @@
       "GHALNM+AdvOT19ee2aa8.B+20"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "PhysRevD.104.124014 (1)",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 16,
+      "ListItem": 10,
+      "Paragraph": 16,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "PhysRevD.104.124014 (1).tiddlers.json",
+    "tiddlers_count": 59,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -438,6 +460,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 35.7,
       "detail": "23 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:41:14Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 80.3,
+      "detail": "43 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:41:14Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.6,
+      "detail": "59 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/PhysRevD.104.124014 (1)/PhysRevD.104.124014 (1).lines.json": "sha256:96305dbbe3b358095dc3ca249b1f3d9b2e730c2247f42be6819b513a2c552887"
+      },
+      "params_hash": "sha256:e73c5cae964330a0e6eaa0dcfe0730e713f2277f0ef8ecafe5868fb062e61ee2",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:41:14Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -43,7 +45,26 @@
       "GMTXSU+CalibriLight"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Presseerklärung_Thermodyna_Maschine",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 4,
+      "Paragraph": 4,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Presseerklärung_Thermodyna_Maschine.tiddlers.json",
+    "tiddlers_count": 25,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -150,6 +171,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 20.9,
       "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:46:24Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 17.5,
+      "detail": "9 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:46:24Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.5,
+      "detail": "25 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Presseerklärung_Thermodyna_Maschine/Presseerklärung_Thermodyna_Maschine.lines.json": "sha256:1ffd4660416028442c4ea3b5286ac4785f2d71be8c6cf3ed1d265018d336396d"
+      },
+      "params_hash": "sha256:d30ae4b4d1e8f1466bd34ed9c88518141fe66f4f041afcc5db3d4a9058b92aa3",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:46:24Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

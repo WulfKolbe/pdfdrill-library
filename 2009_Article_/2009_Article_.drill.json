@@ -7,7 +7,12 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 60,
@@ -92,9 +97,51 @@
     "bibliography_cites": 0,
     "tiddlers_path": "2009_Article_.tiddlers.json",
     "tiddlers_count": 211,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Introduction and motivation",
+        "page": ""
+      },
+      {
+        "number": "2",
+        "title": "Ultraviolet divergences and perturbative non-renormalizability",
+        "page": ""
+      },
+      {
+        "number": "123",
+        "title": "Quantum gravity on the lattice",
+        "page": "819"
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "Acrobat Distiller 6.0.1 (Windows)",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2009-03-17T18:13:56+05:30",
+    "mod_date": "2009-03-17T18:20:44+05:30",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 60,
+    "encrypted": false,
+    "page_size": "439.37 x 666.142 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 883318,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.3",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -338,7 +385,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 48,
+      "x0": 105.9,
+      "y0": 56.9,
+      "x1": 332.97,
+      "y1": 224.1,
+      "w_pt": 227.08,
+      "h_pt": 167.2,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 473,
+      "height_px": 349,
+      "encoding": "jpeg",
+      "color": "sep",
+      "x_ppi": 150,
+      "y_ppi": 150,
+      "size_bytes": 70144,
+      "object_id": "232 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 49,
+      "x0": 53.4,
+      "y0": 56.21,
+      "x1": 385.11,
+      "y1": 194.12,
+      "w_pt": 331.72,
+      "h_pt": 137.92,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 691,
+      "height_px": 288,
+      "encoding": "jpeg",
+      "color": "icc",
+      "x_ppi": 150,
+      "y_ppi": 150,
+      "size_bytes": 40448,
+      "object_id": "243 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -421,6 +509,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 9.6,
       "detail": "211 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:38:39Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 105.0,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-06T00:38:39Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 268.7,
+      "detail": "17 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-06T00:38:40Z",
+      "node": "toc",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 91.8,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-06T00:38:41Z",
+      "node": "links",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 994.2,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:38:57Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 16355.3,
+      "detail": "2 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

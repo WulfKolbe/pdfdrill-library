@@ -7,7 +7,15 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 15,
@@ -107,12 +115,64 @@
     "bibliography_cites": 18,
     "tiddlers_path": "2020.coling-main.46.tiddlers.json",
     "tiddlers_count": 390,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Knowledge graph (KG) embedding aims at embedding entities and relations in a KG into a low\n     dimensional latent representation space. Existing KG embedding approaches model entities and\n     relations in a KG by utilizing real-valued , complex-valued, or hypercomplex-valued (Quaternion\n     or Octonion) representations, all of which are subsumed into a geometric algebra. In this work,\n     we introduce a novel geometric algebra-based KG embedding framework, GeomE, which uti-\n     lizes multivector representations and the geometric product to model entities and relations. Our\n     framework subsumes several state-of-the-art KG embedding approaches and is advantageous\n     with its ability of modeling various key relation patterns, including (anti-)symmetry, inversion\n     and composition, rich expressiveness with higher degree of freedom as well as good general-\n     ization capacity. Experimental results on multiple benchmark knowledge graphs show that the\n     proposed approach outperforms existing state-of-the-art models for link prediction.\n 1   Introduction\n Knowledge graphs (KGs) are directed graphs where nodes represent entities and (labeled) edges repre-\n sent the types of relationships among entities. This can be represented as a collection of triples (h, r, t),\n each representing a relation r between a ”head-entity” h and an ”tail-entity” t. Some real-world knowl-\n edge graphs include Freebase (Bollacker et al., 2008), WordNet (Miller, 1995), YAGO (Suchanek et al.,\n 2007), and DBpedia (Auer et al., 2007).\n    However, most existing KGs are incomplete. The task of link prediction alleviates this drawback\n by inferring missing facts based on the known facts in a KG and thus has gained growing interest.\n Embedding KGs into a low-dimensional space and learning latent representations of entities and relations\n in KGs is an effective solution for this task. In general, most existing KG embedding models learn to\n embed KGs by optimizing a scoring function which assigns higher scores to true facts than invalid ones.\n    Recently, learning KG embeddings in the complex or hypercomplex spaces has been proven to be a\n highly effective inductive bias. ComplEx (Trouillon et al., 2016), RotatE, pRotatE (Sun et al., 2019), and\n QuatE (Zhang et al., 2019) achieved the state-of-the-art results on link prediction, due to their abilities of\n capturing various relations (i.e., modeling symmetry and anti-symmetry). They both use the asymmetri-\n cal Hermitian product to score relational triples where the components of entity/relation embeddings are\n complex numbers or quaternions.\n    Complex numbers and quaternions can be described by the various components within a Clifford mul-\n tivector (Chappell et al., 2015). In other words, the geometric algebra of Clifford (1882) provides an\n elegant and efficient rotation representation in terms of multivector which is more general than Hamil-\n ton (1844)’s unit quaternion.\n    In this paper, we propose a novel KG embedding approach, GeomE, which is based on Clifford mul-\n tivectors and the geometric product. Concretely, we utilize N multivector embeddings of N grades\n (N = 2, 3) to represent entity and relation. Each component of an entity/relation embedding is a multi-\n vector in a geometric algebra of N grades, GN , with scalars, vectors and bivectors, as well as trivectors",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 7,
+        "url": "https://github.com/soledad921/GeomE",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Knowledge Graph Embeddings in Geometric Algebras",
+    "author": "Chengjin Xu ; Mojtaba Nayyeri ; Yung-Yu Chen ; Jens Lehmann",
+    "producer": "pdfTeX-1.40.20",
+    "creator": "TeX",
+    "creation_date": "2020-10-31T10:01:30Z",
+    "mod_date": "2020-10-31T10:01:30Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 15,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 447071,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.3",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) kpathsea version 6.3.1",
+      "Subject": "COLING2020 2020"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "xu2020",
+    "title": "Knowledge Graph Embeddings in Geometric Algebras",
+    "author": "Chengjin Xu ; Mojtaba Nayyeri ; Yung-Yu Chen ; Jens Lehmann",
+    "year": "2020",
+    "pages": 15,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "UUTHRR+CMR10",
@@ -437,7 +497,68 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 3,
+      "x0": 162.71,
+      "y0": 211.17,
+      "x1": 434.83,
+      "y1": 382.87,
+      "w_pt": 272.12,
+      "h_pt": 171.7,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 859,
+      "height_px": 542,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 227,
+      "y_ppi": 227,
+      "size_bytes": 66048,
+      "object_id": "192 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 9,
+      "x0": 93.31,
+      "y0": 127.77,
+      "x1": 501.5,
+      "y1": 257.76,
+      "w_pt": 408.19,
+      "h_pt": 129.99,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 986,
+      "height_px": 314,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 174,
+      "y_ppi": 174,
+      "size_bytes": 321,
+      "object_id": "127 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 9,
+      "x0": 161.34,
+      "y0": 351.49,
+      "x1": 433.48,
+      "y1": 535.78,
+      "w_pt": 272.13,
+      "h_pt": 184.29,
+      "name": "Im3",
+      "imagemask": false,
+      "width_px": 759,
+      "height_px": 514,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 201,
+      "y_ppi": 201,
+      "size_bytes": 401,
+      "object_id": "128 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -520,6 +641,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.4,
       "detail": "390 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:39:23Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 116.3,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-06T00:39:24Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 206.6,
+      "detail": "23 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-06T00:39:24Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 86.5,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-06T00:39:24Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 85.2,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-06T00:39:25Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 279.9,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:39:25Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 97.1,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-06T00:39:25Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=xu2020"
+    },
+    {
+      "ts": "2026-08-06T00:39:31Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 6122.2,
+      "detail": "3 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

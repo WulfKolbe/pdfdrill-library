@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -51,7 +54,28 @@
     "math_fonts": [
       "KAHATW+OpenSymbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Der_Einfluss_des_Magnetfeldes_bei_der_Th",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 13,
+      "ListItem": 9,
+      "Equation": 33,
+      "Paragraph": 37,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Der_Einfluss_des_Magnetfeldes_bei_der_Th.tiddlers.json",
+    "tiddlers_count": 109,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -202,6 +226,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 17.8,
       "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-05T07:00:21Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 67.0,
+      "detail": "93 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T07:00:21Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.0,
+      "detail": "109 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Der_Einfluss_des_Magnetfeldes_bei_der_Th/Der_Einfluss_des_Magnetfeldes_bei_der_Th.lines.json": "sha256:71628f9703023fb9896e78c6bbafeefee727082d56f2056b72591ad84bc1b042"
+      },
+      "params_hash": "sha256:98604f5428f759c142d9cd17bd8dbe47f6fc683bdb179c5e5ef974385e0a2f38",
+      "algo": "sha256",
+      "ts": "2026-08-05T07:00:21Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

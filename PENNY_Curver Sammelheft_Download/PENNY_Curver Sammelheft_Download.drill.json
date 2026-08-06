@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -50,7 +52,27 @@
       "VEFOIR+AkkoForPenny-Bold"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "PENNY_Curver Sammelheft_Download",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "ListItem": 11,
+      "Paragraph": 6,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "PENNY_Curver Sammelheft_Download.tiddlers.json",
+    "tiddlers_count": 40,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -255,6 +277,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 14.4,
       "detail": "11 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:32:34Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 17.3,
+      "detail": "24 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:32:34Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.6,
+      "detail": "40 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/PENNY_Curver Sammelheft_Download/PENNY_Curver Sammelheft_Download.lines.json": "sha256:af1e457c0f7a699d217285f309d343d626612c3c566f1d3f8d12f8f8f06dd6ec"
+      },
+      "params_hash": "sha256:277edc4d0f4739a236e8251721665b5e4f244b3c1586cc1f2aa91341356e4341",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:32:34Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

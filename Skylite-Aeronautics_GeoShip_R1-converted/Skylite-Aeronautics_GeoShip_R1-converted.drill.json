@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -50,7 +52,27 @@
     "math_fonts": [
       "SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Skylite-Aeronautics_GeoShip_R1-converted",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 9,
+      "ListItem": 20,
+      "Paragraph": 9,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Skylite-Aeronautics_GeoShip_R1-converted.tiddlers.json",
+    "tiddlers_count": 55,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -227,6 +249,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 34.2,
       "detail": "9 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T23:25:25Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 18.4,
+      "detail": "39 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:25:25Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.8,
+      "detail": "55 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Skylite-Aeronautics_GeoShip_R1-converted/Skylite-Aeronautics_GeoShip_R1-converted.lines.json": "sha256:07ff70daa7df9c643596d3248376c51a5930c135698561229f15acb85be75126"
+      },
+      "params_hash": "sha256:3511c9d8f4fe136b959e58faa0bf25442b69889eca73a07e5f05cd564f9133f9",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:25:25Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

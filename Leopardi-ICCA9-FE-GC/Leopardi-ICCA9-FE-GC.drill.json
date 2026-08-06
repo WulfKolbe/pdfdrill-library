@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -64,7 +68,34 @@
       "WKYSHF+CMSY8",
       "AICAWW+MSBM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Leopardi-ICCA9-FE-GC",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "Citation": 1,
+      "ListItem": 10,
+      "Equation": 10,
+      "Paragraph": 16,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 63,
+    "bibliography_with_year": 56,
+    "bibliography_numeric_citations": 63,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 63,
+    "tiddlers_path": "Leopardi-ICCA9-FE-GC.tiddlers.json",
+    "tiddlers_count": 127,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -311,6 +342,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 27.1,
       "detail": "14 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-05T21:56:09Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 41.4,
+      "detail": "48 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T21:56:09Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "63 entries, 63+0 cites detected, 63 linked"
+    },
+    {
+      "ts": "2026-08-05T21:56:09Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.3,
+      "detail": "127 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Leopardi-ICCA9-FE-GC/Leopardi-ICCA9-FE-GC.lines.json": "sha256:498c21b9bcb1c30aa26e15a7d8b1568d74cddb8e191011863aea2f30fd5a8874"
+      },
+      "params_hash": "sha256:b0e97c0b41cddd80c59d6e426889780309d9c9d92558dead82c5541d4d712aba",
+      "algo": "sha256",
+      "ts": "2026-08-05T21:56:09Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

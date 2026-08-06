@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 3,
@@ -51,7 +53,26 @@
       "LAAAAA+SegoeUI-Bold"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Firefox Bookmarks SQLite structure - Stack Overflow",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 3,
+      "Paragraph": 3,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Firefox Bookmarks SQLite structure - Stack Overflow.tiddlers.json",
+    "tiddlers_count": 23,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -286,6 +307,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 14.8,
       "detail": "12 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T20:23:02Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 16.4,
+      "detail": "7 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T20:23:02Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.4,
+      "detail": "23 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Firefox Bookmarks SQLite structure - Stack Overflow/Firefox Bookmarks SQLite structure - Stack Overflow.lines.json": "sha256:ca038a50d72dadd34f1bc08af2ab7e09cfa6ddcfb5d2ac2a8cc29be05477dbe7"
+      },
+      "params_hash": "sha256:fadbf89cf35f58cff2ce6edd281c07e5c3b43b7f9246c7d2c737f18a84a90a73",
+      "algo": "sha256",
+      "ts": "2026-08-05T20:23:02Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }
