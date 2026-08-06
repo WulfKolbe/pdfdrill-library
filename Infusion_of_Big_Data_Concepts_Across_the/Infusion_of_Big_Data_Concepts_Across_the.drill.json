@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -57,7 +60,27 @@
       "FTHKFN+CMSY10",
       "JJVYXB+SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Infusion_of_Big_Data_Concepts_Across_the",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "ListItem": 9,
+      "Paragraph": 10,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 14 unmapped private-use character(s) remain (U+F0B7×14) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Infusion_of_Big_Data_Concepts_Across_the.tiddlers.json",
+    "tiddlers_count": 46,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -278,6 +301,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 19.2,
       "detail": "11 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-05T21:19:24Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 39.7,
+      "detail": "30 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T21:19:24Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.6,
+      "detail": "46 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Infusion_of_Big_Data_Concepts_Across_the/Infusion_of_Big_Data_Concepts_Across_the.lines.json": "sha256:487ad86e102e1667992baaec30b7e446f154f0434865732752a270f6a9f03a3b"
+      },
+      "params_hash": "sha256:cdcb21e2f1c35ef4ea5db99d8e49188b9a3cc9f71e1e4000d614f420bcd2b0b4",
+      "algo": "sha256",
+      "ts": "2026-08-05T21:19:24Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

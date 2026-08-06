@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 117,
@@ -105,7 +109,34 @@
       "CYQHLM+CMMIB7",
       "YFFWYC+MSBM5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Clifford_algebra_geometric_algebra_and_a (2)",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 117,
+      "Citation": 35,
+      "ListItem": 113,
+      "Equation": 667,
+      "Paragraph": 529,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 87 unmapped private-use character(s) remain (U+F8EB×5, U+F8EC×2, U+F8ED×5, U+F8EE×8, U+F8EF×14, U+F8F0×8, U+F8F1×1, U+F8F2×1, U+F8F3×1, U+F8F6×5, U+F8F7×2, U+F8F8×5, U+F8F9×8, U+F8FA×14, U+F8FB×8) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 44,
+    "bibliography_with_year": 41,
+    "bibliography_numeric_citations": 130,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 130,
+    "tiddlers_path": "Clifford_algebra_geometric_algebra_and_a (2).tiddlers.json",
+    "tiddlers_count": 1505,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -746,6 +777,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 241.0,
       "detail": "41 fonts, 20 math"
+    },
+    {
+      "ts": "2026-08-05T06:50:58Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 751.7,
+      "detail": "1462 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:50:59Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "44 entries, 130+1 cites detected, 130 linked"
+    },
+    {
+      "ts": "2026-08-05T06:51:00Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 46.8,
+      "detail": "1505 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Clifford_algebra_geometric_algebra_and_a (2)/Clifford_algebra_geometric_algebra_and_a (2).lines.json": "sha256:d346b8e1c64b7549fae9bb5cc53ad4eb2829e8008898f03ff5da7a87f44d4698"
+      },
+      "params_hash": "sha256:fc7c20b8ee6b60bfad866905d1f49615f72a5c6ed0cdee574cb7d073655f8259",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:50:58Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

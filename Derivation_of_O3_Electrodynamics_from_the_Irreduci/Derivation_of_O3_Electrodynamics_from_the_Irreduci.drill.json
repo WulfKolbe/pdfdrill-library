@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -59,7 +62,28 @@
       "PRBAAA+CMEX10",
       "DAAAAA+CMSY8"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Derivation_of_O3_Electrodynamics_from_the_Irreduci",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "ListItem": 20,
+      "Equation": 16,
+      "Paragraph": 24,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Derivation_of_O3_Electrodynamics_from_the_Irreduci.tiddlers.json",
+    "tiddlers_count": 87,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -322,6 +346,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 25.2,
       "detail": "14 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-05T07:00:22Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 45.5,
+      "detail": "71 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T07:00:22Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.0,
+      "detail": "87 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Derivation_of_O3_Electrodynamics_from_the_Irreduci/Derivation_of_O3_Electrodynamics_from_the_Irreduci.lines.json": "sha256:944306121b6914259c2e4994098e8c12b45c67d1df78a364bc603b16ffa69a57"
+      },
+      "params_hash": "sha256:c10b0b0b8d64a60eb04cc8f137ccbcaaa7b28c7a49b592b74f8b34acb01f1020",
+      "algo": "sha256",
+      "ts": "2026-08-05T07:00:22Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 14,
@@ -91,7 +95,34 @@
       "KLNKNE+CMMI6",
       "ODNMDG+CMEX9"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Method_for_narrow-band_search_of_continuous_gravit",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 14,
+      "Citation": 1,
+      "ListItem": 6,
+      "Equation": 71,
+      "Paragraph": 72,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 17 unmapped private-use character(s) remain (U+F6BE×13, U+F8EB×1, U+F8ED×1, U+F8F6×1, U+F8F8×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 0,
+    "tiddlers_path": "Method_for_narrow-band_search_of_continuous_gravit.tiddlers.json",
+    "tiddlers_count": 182,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -618,6 +649,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 46.6,
       "detail": "34 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-05T22:06:08Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 89.9,
+      "detail": "165 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:06:08Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+1 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-05T22:06:08Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.8,
+      "detail": "182 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Method_for_narrow-band_search_of_continuous_gravit/Method_for_narrow-band_search_of_continuous_gravit.lines.json": "sha256:17e1bfc4f47e2b7334f094f9b0886eb984890caf9c1da340a12a40d6681a8759"
+      },
+      "params_hash": "sha256:6e04cc42e471a00d572acec63926ba4b50764ff8e397d1386fdc15a7de9ae3f4",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:06:08Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 100,
@@ -86,7 +90,34 @@
       "SDVCAT+CMSY7",
       "PTEAUI+CMMI5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Dissertation_Final",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 100,
+      "Citation": 20,
+      "ListItem": 124,
+      "Equation": 576,
+      "Paragraph": 434,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 97 unmapped private-use character(s) remain (U+F8EB×5, U+F8EC×15, U+F8ED×5, U+F8F1×5, U+F8F2×5, U+F8F3×5, U+F8F4×32, U+F8F6×5, U+F8F7×15, U+F8F8×5) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 32,
+    "bibliography_with_year": 29,
+    "bibliography_numeric_citations": 47,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 47,
+    "tiddlers_path": "Dissertation_Final.tiddlers.json",
+    "tiddlers_count": 1291,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -531,6 +562,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 207.9,
       "detail": "27 fonts, 15 math"
+    },
+    {
+      "ts": "2026-08-05T18:49:14Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 556.5,
+      "detail": "1255 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T18:49:15Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "32 entries, 47+0 cites detected, 47 linked"
+    },
+    {
+      "ts": "2026-08-05T18:49:15Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 37.2,
+      "detail": "1291 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Dissertation_Final/Dissertation_Final.lines.json": "sha256:835ad79a42a2a41e3bab6a139d08f56f48ed84511e0b74953ec6949d2270a916"
+      },
+      "params_hash": "sha256:0e4cb78bc83769501aab9b32a2830163bade7037466ee7b58bdb2de7f4ce8400",
+      "algo": "sha256",
+      "ts": "2026-08-05T18:49:14Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

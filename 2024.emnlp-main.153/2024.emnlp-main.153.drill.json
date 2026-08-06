@@ -8,7 +8,15 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 19,
@@ -143,12 +151,1956 @@
       "geometry": true,
       "math": true,
       "source": "mathpix"
+    },
+    "abstract": "GPT-4 ZERO-SHOT GPT-4 CAUSALCOT Reasoning is key to many decision making pro- Mistral-FT Mistral-FT+ProbLog cesses. It requires consolidating a set of rule- 60 like premises that are often associated with dey 40 grees of uncertainty and observations to draw c a conclusions. In this work, we address both the ru c 20 case where premises are specified as numeric c A probabilistic rules and situations in which hu- 0 mans state their estimates using words express- Causal Evidential Explaining-away ing degrees of certainty. Existing probabilistic reasoning datasets simplify the task, e.g., by requiring the model to only rank textual al- Figure 1: Percentage of instances solved correctly for ternatives, by including only binary random each **Bayesian reasoning type**. The neuro-symbolic variables, or by making use of a limited set of Mistral-FT+ProbLog approach is robust against the intemplates that result in less varied text. herent difficulties of different reasoning types. In this work, we present QUITE, a question answering dataset of real-world Bayesian reasonbe highly useful in domains such as requirements ing scenarios with categorical random variables and complex relationships. QUITE provides engineering (Yang et al., 2012) or text-mining in high-quality natural language verbalizations of clinical documentation (Turner et al., 2021). Modpremises together with evidence statements, eling linguistically expressed uncertainty has been and expects the answer to a question in the an active research area for decades in natural lanform of an estimated probability. We conduct guage processing (NLP) (Szarvas et al., 2008; Jean an extensive set of experiments, finding that et al., 2016; Sileo and Moens, 2023). logic-based models outperform out-of-the-box large language models on all reasoning types Recently, large language models (LLMs) have (causal, evidential, and explaining-away). Our shown superior performance on many NLP tasks. results provide evidence that neuro-symbolic However, they fall short of incorporating princimodels are a promising direction for improv- pled reasoning mechanisms, with frequent failure ing complex reasoning. We release QUITE and cases (Kiciman et al., 2023), and their mathematcode for training and experiments on Github.1 ical skills decline if presented with unseen cases",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "QUITE: Quantifying Uncertainty in Natural Language Text",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "in Bayesian Reasoning Scenarios",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "Timo Pierre Schrader",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "Abstract Mixtral ZERO-SHOT Mixtral CAUSALCOT",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.4",
+        "title": "Causal Inference Evidential Inference Explaining away",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.5",
+        "title": "? mileage is 20,000. ? What is the likelihood that the 1,000,000.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.6",
+        "title": "2 Background and Related Work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.7",
+        "title": "Bayesian Networks and Reasoning Patterns.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.8",
+        "title": "Modeling uncertainty. BioScope (Szarvas et al.,",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.9",
+        "title": "QUITE CLADDER BLInD",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.10",
+        "title": "Bayesian reasoning: benchmark datasets.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.11",
+        "title": "Semantic parsing to logical form. Constructing",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.12",
+        "title": "3 Dataset",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.12.1",
+        "title": "3.1 Dataset Structure",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.13",
+        "title": "Numeric background premises are verbal-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.14",
+        "title": "WEP-based background premises are verbal-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.15",
+        "title": "Question-evidence (QE) pairs: Evidences are",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.15.1",
+        "title": "3.2 Data Collection",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.15.2",
+        "title": "3.3 Dataset Creation Steps",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.15.3",
+        "title": "3.3.1 WEP-based Background Premises",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.15.4",
+        "title": "3.3.2 Question-Evidence (QE) Pairs",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.16",
+        "title": "# Train # Test Total",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.16.1",
+        "title": "3.4 Dataset Statistics",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.16.2",
+        "title": "3.5 Validation and Quality Assessment",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.17",
+        "title": "Validation. The first author of the paper has per-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.18",
+        "title": "Linguistic Quality Assessment. To assess the",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.19",
+        "title": "QUITE",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.20",
+        "title": "Grammarly Metric CLAD. BLInD",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.21",
+        "title": "Overall judgement (0-100) 85 82 45 34",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.22",
+        "title": "4 Modeling",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.22.1",
+        "title": "4.1 LLM Prompting Methods",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.23",
+        "title": "CAUSALCOT technique was introduced by Jin",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.23.1",
+        "title": "4.2 Neuro-symbolic Approach",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.24",
+        "title": "ming language that extends the functionality of",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.25",
+        "title": "Prompt) or an LLMfine-tuned for text-to-ProbLog",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.25.1",
+        "title": "4.3 Baselines",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.26",
+        "title": "5 Experimental Evaluation",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.26.1",
+        "title": "5.1 Evaluation Metrics",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.26.2",
+        "title": "5.2 Results for Numeric Premises",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.26.3",
+        "title": "5.3 Results for WEP-based Premises",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.26.4",
+        "title": "5.4 Results by Reasoning Type",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.27",
+        "title": "Re",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.28",
+        "title": "Method Model",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.29",
+        "title": "% correct",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.30",
+        "title": "se Mixtral-8x7B 9.6",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.31",
+        "title": "si",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.32",
+        "title": "m GPT4-Turbo 37.1",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.33",
+        "title": "er C C T 11.4",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.34",
+        "title": "p AUSAL O Llama-3-8B",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 1,
+        "url": "https://github.com/boschresearch/quite-emnlp24"
+      },
+      {
+        "page": 5,
+        "url": "https://www.abnms.org/bnrepo/"
+      },
+      {
+        "page": 6,
+        "url": "https://app.grammarly.com/"
+      },
+      {
+        "page": 10,
+        "url": "https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md"
+      },
+      {
+        "page": 10,
+        "url": "https://doi.org/10.18653/v1/2020.acl-main.774"
+      },
+      {
+        "page": 10,
+        "url": "https://waf.cs.illinois.edu/visualizations/Perception-of-Probability-Words/"
+      },
+      {
+        "page": 10,
+        "url": "https://aclanthology.org/W10-3001"
+      },
+      {
+        "page": 10,
+        "url": "http://arxiv.org/abs/1304.6810"
+      },
+      {
+        "page": 11,
+        "url": "http://arxiv.org/abs/2301.13867"
+      },
+      {
+        "page": 11,
+        "url": "https://proceedings.mlr.press/v202/gao23f.html"
+      },
+      {
+        "page": 11,
+        "url": "https://doi.org/10.18653/v1/2022.findings-emnlp.94"
+      },
+      {
+        "page": 11,
+        "url": "http://arxiv.org/abs/2106.09685"
+      },
+      {
+        "page": 11,
+        "url": "https://doi.org/10.1145/2912845.2912873"
+      },
+      {
+        "page": 11,
+        "url": "http://arxiv.org/abs/2310.06825"
+      },
+      {
+        "page": 11,
+        "url": "http://arxiv.org/abs/2401.04088"
+      },
+      {
+        "page": 11,
+        "url": "https://doi.org/10.48550/ARXIV.2305.00050"
+      },
+      {
+        "page": 11,
+        "url": "https://aclanthology.org/2021.iwcs-1.18"
+      },
+      {
+        "page": 11,
+        "url": "https://books.google.de/books?id=4tjroQEACAAJ"
+      },
+      {
+        "page": 11,
+        "url": "https://books.google.co.in/books?id=7dzpHCHzNQ4C"
+      },
+      {
+        "page": 11,
+        "url": "http://arxiv.org/abs/1210.5135"
+      },
+      {
+        "page": 11,
+        "url": "http://arxiv.org/abs/2402.09614"
+      },
+      {
+        "page": 11,
+        "url": "https://doi.org/10.18653/v1/2023.emnlp-main.313"
+      },
+      {
+        "page": 11,
+        "url": "http://arxiv.org/abs/2303.08774"
+      },
+      {
+        "page": 11,
+        "url": "https://doi.org/10.18653/v1/2023.conll-1.13"
+      },
+      {
+        "page": 12,
+        "url": "https://doi.org/10.1162/tacl_a_00088"
+      },
+      {
+        "page": 12,
+        "url": "http://www.lrec-conf.org/proceedings/lrec2012/pdf/778_Paper.pdf"
+      },
+      {
+        "page": 12,
+        "url": "https://doi.org/10.18637/jss.v035.i03"
+      },
+      {
+        "page": 12,
+        "url": "http://arxiv.org/abs/2211.03358"
+      },
+      {
+        "page": 12,
+        "url": "https://aclanthology.org/W08-0606"
+      },
+      {
+        "page": 12,
+        "url": "https://aclanthology.org/2023.nodalida-1.37"
+      },
+      {
+        "page": 12,
+        "url": "https://doi.org/10.18653/v1/2023.emnlp-main.330"
+      },
+      {
+        "page": 12,
+        "url": "http://arxiv.org/abs/2307.09288"
+      },
+      {
+        "page": 12,
+        "url": "https://github.com/huggingface/alignment-handbook"
+      },
+      {
+        "page": 12,
+        "url": "https://doi.org/10.1007/978-3-030-85251-1_11"
+      },
+      {
+        "page": 12,
+        "url": "https://aclanthology.org/W10-3105"
+      },
+      {
+        "page": 12,
+        "url": "https://aclanthology.org/2023.iwcs-1.3"
+      },
+      {
+        "page": 12,
+        "url": "https://doi.org/10.1109/RE.2012.6345795"
+      },
+      {
+        "page": 12,
+        "url": "http://arxiv.org/abs/2305.09656"
+      },
+      {
+        "page": 12,
+        "url": "http://arxiv.org/abs/2311.07618"
+      },
+      {
+        "page": 12,
+        "url": "https://aclanthology.org/D07-1071"
+      },
+      {
+        "page": 12,
+        "url": "http://arxiv.org/abs/2403.13372"
+      },
+      {
+        "page": 13,
+        "url": "https://doi.org/10.18653/v1/2023.emnlp-main.335"
+      },
+      {
+        "page": 13,
+        "url": "https://doi.org/10.18653/v1/W15-2705"
+      }
+    ]
+  },
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.22",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2024-10-31T22:32:41Z",
+    "mod_date": "2024-10-31T22:32:41Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 19,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 954792,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) kpathsea version 6.3.4/dev",
+      "Subject": ""
     }
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "quite2024",
+    "title": "Quite: Quantifying Uncertainty in Natural Language Text in Bayesian Reasoning Scenarios",
+    "author": "",
+    "year": "2024",
+    "pages": 19,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 87.0,
+      "y": 89.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@1",
+      "kind": "other"
+    },
+    {
+      "page": 1,
+      "x": 306.0,
+      "y": 629.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@150",
+      "kind": "other"
+    },
+    {
+      "page": 1,
+      "x": 306.0,
+      "y": 629.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@37",
+      "kind": "other"
+    },
+    {
+      "page": 1,
+      "x": 56.0,
+      "y": 785.0,
+      "name": "page.2634",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 2,
+      "x": 87.0,
+      "y": 119.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@27",
+      "kind": "other"
+    },
+    {
+      "page": 2,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@28",
+      "kind": "other"
+    },
+    {
+      "page": 2,
+      "x": 322.0,
+      "y": 89.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@29",
+      "kind": "other"
+    },
+    {
+      "page": 2,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@92",
+      "kind": "other"
+    },
+    {
+      "page": 2,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.2635",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 3,
+      "x": 56.0,
+      "y": 785.0,
+      "name": "page.2636",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 4,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@78",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.2637",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 5,
+      "x": 87.0,
+      "y": 120.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@102",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 87.0,
+      "y": 109.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@108",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 306.0,
+      "y": 695.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@93",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 56.0,
+      "y": 785.0,
+      "name": "page.2638",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 6,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@115",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@116",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 322.0,
+      "y": 100.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@117",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 322.0,
+      "y": 89.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@119",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.2639",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 7,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@118",
+      "kind": "other"
+    },
+    {
+      "page": 7,
+      "x": 87.0,
+      "y": 130.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@122",
+      "kind": "other"
+    },
+    {
+      "page": 7,
+      "x": 87.0,
+      "y": 89.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@123",
+      "kind": "other"
+    },
+    {
+      "page": 7,
+      "x": 322.0,
+      "y": 89.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@145",
+      "kind": "other"
+    },
+    {
+      "page": 7,
+      "x": 71.0,
+      "y": 636.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@162",
+      "kind": "other"
+    },
+    {
+      "page": 7,
+      "x": 56.0,
+      "y": 785.0,
+      "name": "page.2640",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 8,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.2641",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 9,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@146",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@149",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@152",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 56.0,
+      "y": 785.0,
+      "name": "page.2642",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 253.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@109",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 253.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@110",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 328.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@127",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 328.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@128",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 124.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@129",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 124.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@130",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 467.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@133",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 467.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@134",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 253.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@159",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 253.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@160",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 253.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@161",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 253.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@163",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 253.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@164",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 328.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@38",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 328.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@39",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 328.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@40",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 124.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@41",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 124.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@42",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 221.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@48",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 221.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@49",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 446.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@70",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 446.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@71",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 371.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@98",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 371.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@99",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.2643",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 480.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@10",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 459.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@100",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 459.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@101",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 308.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@105",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 308.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@106",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 308.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@107",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 480.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@11",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 91.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@111",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 91.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@112",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 480.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@12",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 637.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@120",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 637.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@121",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@124",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@125",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@126",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 259.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@131",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 259.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@132",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 394.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@135",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 394.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@136",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 308.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@137",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 308.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@138",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 308.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@139",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@147",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@148",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 771.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@15",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 102.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@153",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 102.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@154",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 571.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@155",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 571.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@156",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 571.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@157",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 771.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@16",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 534.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@165",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 534.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@166",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 534.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@167",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 771.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@17",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 771.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@18",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 158.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@2",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@21",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@22",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@23",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@24",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 102.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@25",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 102.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@26",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 158.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@3",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 403.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@30",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 403.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@31",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 403.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@32",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 718.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@33",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 718.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@34",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 571.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@43",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 571.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@44",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 631.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@57",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 631.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@58",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 236.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@61",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 236.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@62",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@74",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 177.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@75",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 403.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@76",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 403.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@77",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 715.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@84",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 715.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@85",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 358.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@86",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 358.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@87",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 403.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@90",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 403.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@91",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 515.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@96",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 515.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@97",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 56.0,
+      "y": 785.0,
+      "name": "page.2644",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 583.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@13",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 583.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@14",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 266.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@142",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 266.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@143",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 705.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@168",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 705.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@169",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 113.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@171",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 113.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@172",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 255.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@19",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 255.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@20",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 583.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@35",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 583.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@36",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 387.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@4",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 542.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@46",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 542.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@47",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 387.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@5",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 541.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@50",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 541.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@51",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 697.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@52",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 697.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@53",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 697.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@54",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 464.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@59",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 639.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@6",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 464.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@60",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 373.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@65",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 373.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@66",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 583.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@67",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 583.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@68",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 583.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@69",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 639.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@7",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 458.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@72",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 458.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@73",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 542.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@8",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 212.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@80",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 212.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@81",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 771.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@82",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 771.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@83",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 299.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@88",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 301.0,
+      "y": 299.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@89",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 542.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@9",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 624.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@94",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 624.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@95",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.2645",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 13,
+      "x": 306.0,
+      "y": 771.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@45",
+      "kind": "other"
+    },
+    {
+      "page": 13,
+      "x": 66.0,
+      "y": 685.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@55",
+      "kind": "other"
+    },
+    {
+      "page": 13,
+      "x": 66.0,
+      "y": 685.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@56",
+      "kind": "other"
+    },
+    {
+      "page": 13,
+      "x": 66.0,
+      "y": 771.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@63",
+      "kind": "other"
+    },
+    {
+      "page": 13,
+      "x": 66.0,
+      "y": 771.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@64",
+      "kind": "other"
+    },
+    {
+      "page": 13,
+      "x": 56.0,
+      "y": 785.0,
+      "name": "page.2646",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 14,
+      "x": 71.0,
+      "y": 336.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@113",
+      "kind": "other"
+    },
+    {
+      "page": 14,
+      "x": 71.0,
+      "y": 336.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@114",
+      "kind": "other"
+    },
+    {
+      "page": 14,
+      "x": 306.0,
+      "y": 173.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@140",
+      "kind": "other"
+    },
+    {
+      "page": 14,
+      "x": 306.0,
+      "y": 173.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@141",
+      "kind": "other"
+    },
+    {
+      "page": 14,
+      "x": 71.0,
+      "y": 142.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@144",
+      "kind": "other"
+    },
+    {
+      "page": 14,
+      "x": 306.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@158",
+      "kind": "other"
+    },
+    {
+      "page": 14,
+      "x": 306.0,
+      "y": 526.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@170",
+      "kind": "other"
+    },
+    {
+      "page": 14,
+      "x": 306.0,
+      "y": 173.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@176",
+      "kind": "other"
+    },
+    {
+      "page": 14,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.2647",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 15,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@173",
+      "kind": "other"
+    },
+    {
+      "page": 15,
+      "x": 56.0,
+      "y": 785.0,
+      "name": "page.2648",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 16,
+      "x": 306.0,
+      "y": 217.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@103",
+      "kind": "other"
+    },
+    {
+      "page": 16,
+      "x": 306.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@174",
+      "kind": "other"
+    },
+    {
+      "page": 16,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.2649",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 17,
+      "x": 306.0,
+      "y": 354.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@151",
+      "kind": "other"
+    },
+    {
+      "page": 17,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@175",
+      "kind": "other"
+    },
+    {
+      "page": 17,
+      "x": 306.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@177",
+      "kind": "other"
+    },
+    {
+      "page": 17,
+      "x": 306.0,
+      "y": 574.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@178",
+      "kind": "other"
+    },
+    {
+      "page": 17,
+      "x": 56.0,
+      "y": 785.0,
+      "name": "page.2650",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 18,
+      "x": 306.0,
+      "y": 541.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@104",
+      "kind": "other"
+    },
+    {
+      "page": 18,
+      "x": 71.0,
+      "y": 766.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@179",
+      "kind": "other"
+    },
+    {
+      "page": 18,
+      "x": 71.0,
+      "y": 531.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@180",
+      "kind": "other"
+    },
+    {
+      "page": 18,
+      "x": 71.0,
+      "y": 292.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@181",
+      "kind": "other"
+    },
+    {
+      "page": 18,
+      "x": 306.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@182",
+      "kind": "other"
+    },
+    {
+      "page": 18,
+      "x": 306.0,
+      "y": 347.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@79",
+      "kind": "other"
+    },
+    {
+      "page": 18,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.2651",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 19,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "PAX@/data/dcroce/EMNLP2024/conference_proceedings/main/papers/292.pax@183",
+      "kind": "other"
+    },
+    {
+      "page": 19,
+      "x": 56.0,
+      "y": 785.0,
+      "name": "page.2652",
+      "kind": "page_anchor"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "RVTYVQ+NimbusRomNo9L-ReguItal",
@@ -529,7 +2481,248 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 2,
+      "x0": 178.52,
+      "y0": 81.95,
+      "x1": 205.72,
+      "y1": 109.15,
+      "w_pt": 27.2,
+      "h_pt": 27.2,
+      "name": "X23",
+      "imagemask": false,
+      "width_px": 256,
+      "height_px": 256,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 678,
+      "y_ppi": 678,
+      "size_bytes": 6468,
+      "object_id": "320 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 2,
+      "x0": 117.59,
+      "y0": 86.7,
+      "x1": 140.45,
+      "y1": 105.01,
+      "w_pt": 22.86,
+      "h_pt": 18.31,
+      "name": "X15",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 410,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 1613,
+      "y_ppi": 1613,
+      "size_bytes": 5487,
+      "object_id": "316 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 2,
+      "x0": 103.31,
+      "y0": 128.46,
+      "x1": 126.89,
+      "y1": 152.59,
+      "w_pt": 23.57,
+      "h_pt": 24.14,
+      "name": "X19",
+      "imagemask": false,
+      "width_px": 500,
+      "height_px": 512,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 1527,
+      "y_ppi": 1527,
+      "size_bytes": 13107,
+      "object_id": "318 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 2,
+      "x0": 146.83,
+      "y0": 136.86,
+      "x1": 174.03,
+      "y1": 144.63,
+      "w_pt": 27.2,
+      "h_pt": 7.76,
+      "name": "X12",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 146,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 1355,
+      "y_ppi": 1354,
+      "size_bytes": 5031,
+      "object_id": "315 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 2,
+      "x0": 100.6,
+      "y0": 173.02,
+      "x1": 129.61,
+      "y1": 202.03,
+      "w_pt": 29.01,
+      "h_pt": 29.01,
+      "name": "X21",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 512,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 1271,
+      "y_ppi": 1271,
+      "size_bytes": 9797,
+      "object_id": "319 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 2,
+      "x0": 145.93,
+      "y0": 177.49,
+      "x1": 174.94,
+      "y1": 197.77,
+      "w_pt": 29.01,
+      "h_pt": 20.28,
+      "name": "X17",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 358,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 1271,
+      "y_ppi": 1271,
+      "size_bytes": 6769,
+      "object_id": "317 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 2,
+      "x0": 372.82,
+      "y0": 285.16,
+      "x1": 386.19,
+      "y1": 292.27,
+      "w_pt": 13.37,
+      "h_pt": 7.1,
+      "name": "X8",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 272,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 2757,
+      "y_ppi": 2757,
+      "size_bytes": 6905,
+      "object_id": "321 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 2,
+      "x0": 96.08,
+      "y0": 286.05,
+      "x1": 109.45,
+      "y1": 293.16,
+      "w_pt": 13.37,
+      "h_pt": 7.1,
+      "name": "X8",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 272,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 2757,
+      "y_ppi": 2757,
+      "size_bytes": 6905,
+      "object_id": "321 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 2,
+      "x0": 234.22,
+      "y0": 286.05,
+      "x1": 247.59,
+      "y1": 293.16,
+      "w_pt": 13.37,
+      "h_pt": 7.1,
+      "name": "X8",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 272,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 2757,
+      "y_ppi": 2757,
+      "size_bytes": 6905,
+      "object_id": "321 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 15,
+      "x0": 70.86,
+      "y0": 70.84,
+      "x1": 524.42,
+      "y1": 227.58,
+      "w_pt": 453.56,
+      "h_pt": 156.73,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 2726,
+      "height_px": 942,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 433,
+      "y_ppi": 433,
+      "size_bytes": 2511,
+      "object_id": "1352 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 17,
+      "x0": 125.43,
+      "y0": 70.85,
+      "x1": 234.57,
+      "y1": 192.01,
+      "w_pt": 109.14,
+      "h_pt": 121.16,
+      "name": "Im3",
+      "imagemask": false,
+      "width_px": 699,
+      "height_px": 776,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 461,
+      "y_ppi": 461,
+      "size_bytes": 18534,
+      "object_id": "1396 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 19,
+      "x0": 70.86,
+      "y0": 70.84,
+      "x1": 524.43,
+      "y1": 343.34,
+      "w_pt": 453.58,
+      "h_pt": 272.5,
+      "name": "Im4",
+      "imagemask": false,
+      "width_px": 2317,
+      "height_px": 1392,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 368,
+      "y_ppi": 368,
+      "size_bytes": 3147,
+      "object_id": "1419 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -662,6 +2855,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 11.5,
       "detail": "429 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:39:59Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 136.6,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-06T00:40:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 163.0,
+      "detail": "27 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-06T00:40:00Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 27.5,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-06T00:40:00Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 2.5,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-06T00:40:01Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 86.6,
+      "detail": "43 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:40:01Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 43.8,
+      "detail": "203 dests across 3 kinds"
+    },
+    {
+      "ts": "2026-08-06T00:40:01Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 167.7,
+      "detail": "citekey=quite2024"
+    },
+    {
+      "ts": "2026-08-06T00:40:12Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 10414.7,
+      "detail": "12 images, 10 pix2latex candidates"
     }
   ],
   "capabilities": {

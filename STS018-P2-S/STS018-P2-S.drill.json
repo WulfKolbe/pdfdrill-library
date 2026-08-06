@@ -76,10 +76,10 @@
       }
     ],
     "bibkey": "STS018-P2-S",
-    "model_path": "STS018-P2-S.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 6,
-      "Footnote": 2,
+      "Footnote": 4,
       "Citation": 1,
       "Abstract": 1,
       "Diagram": 3,
@@ -87,7 +87,7 @@
       "ListItem": 8,
       "Equation": 4,
       "Formula": 12,
-      "Paragraph": 22,
+      "Paragraph": 20,
       "Document": 1
     },
     "model_equations_with_cdn": 4,
@@ -96,9 +96,17 @@
     "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 1,
     "bibliography_cites": 0,
-    "tiddlers_path": "STS018-P2-S.pdf.drill/STS018-P2-S.tiddlers.json",
-    "tiddlers_count": 92,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_path": "STS018-P2-S.tiddlers.json",
+    "tiddlers_count": 86,
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -319,7 +327,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 32.5,
       "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-05T23:15:37Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 64.6,
+      "detail": "69 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:15:37Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.3,
+      "detail": "86 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/STS018-P2-S/STS018-P2-S.lines.json": "sha256:e94c3f06819c0b1d42da504621f7d042dbea2b822cf7a18b824e627486b5bc68"
+      },
+      "params_hash": "sha256:475a3fb23a5574b89ca736a7061c4e98a3552e0596c823aa3c62501a4afb27f7",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:15:37Z",
+      "provenance": "mathpix"
+    }
+  }
 }

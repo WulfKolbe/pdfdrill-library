@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -50,7 +53,28 @@
     "math_fonts": [
       "ZRYTDF+OpenSymbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "The_Size_and_Energy_Loss_of_a_Wave_Packe",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 9,
+      "ListItem": 10,
+      "Equation": 19,
+      "Paragraph": 24,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "The_Size_and_Energy_Loss_of_a_Wave_Packe.tiddlers.json",
+    "tiddlers_count": 79,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -171,6 +195,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 22.6,
       "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-06T00:24:14Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 41.7,
+      "detail": "63 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:24:14Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.5,
+      "detail": "79 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/The_Size_and_Energy_Loss_of_a_Wave_Packe/The_Size_and_Energy_Loss_of_a_Wave_Packe.lines.json": "sha256:499c0882cafb2841a72f184da7d1d5bd7f196863648ac5f9162c81e0490135ee"
+      },
+      "params_hash": "sha256:75279fbd8c8065e67a466229938ae7d485527a2e43c939b0a26b33dc4f9f0cbe",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:24:14Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

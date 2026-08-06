@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -47,7 +49,27 @@
       "BCDEEE+Calibri"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Burkhardt-Heim-12.-Dimension",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "ListItem": 12,
+      "Paragraph": 6,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Burkhardt-Heim-12.-Dimension.tiddlers.json",
+    "tiddlers_count": 41,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -212,6 +234,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 27.8,
       "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T06:47:48Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 20.8,
+      "detail": "25 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:47:48Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.8,
+      "detail": "41 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Burkhardt-Heim-12.-Dimension/Burkhardt-Heim-12.-Dimension.lines.json": "sha256:36f16bcdb9cd60a34f900555e62e363ea551b111f9b10da3c76734fd6544b78e"
+      },
+      "params_hash": "sha256:97f4f49cdc323b61fcc8b196aaa208666c72bf243679a968ed6dbaf40dc1f91d",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:47:48Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

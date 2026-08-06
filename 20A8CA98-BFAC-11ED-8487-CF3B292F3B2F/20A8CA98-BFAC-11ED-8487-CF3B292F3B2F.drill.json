@@ -8,7 +8,13 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "ABSTRACT_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 42,
@@ -162,12 +168,39 @@
     "bibliography_cites": 21,
     "tiddlers_path": "20A8CA98-BFAC-11ED-8487-CF3B292F3B2F.tiddlers.json",
     "tiddlers_count": 761,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "toc_search_scope": "first3pages",
+    "abstract": "In modern theoretical physics, the laws of physics are directly repre-\n      sented with axioms (e.g., the Dirac–Von Neumann axioms, the Wight-\n      man axioms, and Newton’s laws of motion). While the laws of physics\n      are entailed by measurements, axioms (in modern logic) are not; rather,\n      axioms hold true merely by definition. Motivated by this dissimilarity,\n      we introduce a more suitable foundation than axioms to represent the\n      laws of physics, then we make the case for its supremacy. Specifically, we\n      introduce a maximization problem on the entropy of all geometric mea-\n      surements. In the model, measurements become axioms, and laws become\n      theorems. The solution is automatically a gravitized quantum theory. Its\n      principal symmetry acts of the frame bundle FX, which then breaks into\n      a gravitational theory FX/SO(3,1) and a quantum theory invariant in the\n      SU(2)xU(1) and SU(3) groups. Remarkably, the general solution fails to\n      admit normalizable observables above 4 dimensions, suggesting an intrin-\n      sic limit to the dimensionality of observable geometry.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages"
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "macOS Version 13.0 (Build 22A380) Quartz PDFContext",
+    "creator": "TexpadTeX CoreGraphicsOutputContext backend: 741",
+    "creation_date": "2023-03-11T01:28:14Z",
+    "mod_date": "2023-03-11T01:28:14Z",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 42,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 793897,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "AAAAAB+CMR17",
@@ -786,7 +819,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -877,6 +910,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 16.1,
       "detail": "761 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:40:13Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 76.2,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-06T00:40:14Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 236.0,
+      "detail": "44 fonts, 27 math"
+    },
+    {
+      "ts": "2026-08-06T00:40:14Z",
+      "node": "toc",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 135.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-06T00:40:14Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 162.0,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-06T00:40:14Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 73.7,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-06T00:40:49Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 33958.5,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

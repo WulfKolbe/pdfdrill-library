@@ -7,7 +7,15 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 11,
@@ -129,12 +137,1008 @@
       "geometry": true,
       "math": true,
       "source": "mathpix"
+    },
+    "abstract": "pansion tokens according to the language model on Query expansion aims to mitigate the mis- top of feedback documents, as in RM3 (Lavrenko match between the language used in a query and Croft, 2001), extract the topical terms from and in a document. However, query exfeedback documents that diverge most from the pansion methods can suffer from introducing corpus language model (Amati, 2003), or extract non-relevant information when expanding the query. To bridge this gap, inspired by recent concepts for expansion (Metzler and Croft, 2007). advances in applying contextualized models In the context of neural approaches, the recent neulike BERT to the document retrieval task, this ral PRF architecture (Li et al., 2018) uses feedback paper proposes a novel query expansion model documents directly for expansion. All these meththat leverages the strength of the BERT model ods, however, are under-equipped to accurately to select relevant document chunks for expanevaluate the relevance of information pieces used sion. In evaluation on the standard TREC for expansion. This can be caused by the mixing of Robust04 and GOV2 test collections, the proposed BERT-QE model significantly outper- relevant and non-relevant information in the expanforms BERT-Large models. sion, like the tokens in RM3 (Lavrenko and Croft, 2001) and the documents in NPRF (Li et al., 2018);",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "BERT-QE: Contextualized Query Expansion for Document Re-ranking",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "1.1",
+        "title": "Zhi Zheng",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.2",
+        "title": "Abstract the query expansions. Existing works identify ex-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.3",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.4",
+        "title": "2 Method",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.4.1",
+        "title": "2.1 Overview",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.5",
+        "title": "Fine-tuning BERT model. Similar to (Yilmaz",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.6",
+        "title": "Phase one. Using the fine-tuned BERT model, we",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.6.1",
+        "title": "2.2 Selecting Chunks for Query Expansion",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.6.2",
+        "title": "2.3 Final Re-ranking using Selected Chunks",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.7",
+        "title": "Evaluating the relevance of a document using",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.8",
+        "title": "the selected feedback chunks. For each individ-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.9",
+        "title": "Combining rel (C, d) with rel (q, d). To generate",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.10",
+        "title": "3 Experimental Setup",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.10.1",
+        "title": "3.1 Dataset and Metrics",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.10.2",
+        "title": "3.2 Initial Ranking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.11",
+        "title": "DPH+KL is used as the ranking model to gen-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.11.1",
+        "title": "3.3 Models in Comparisons",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.12",
+        "title": "Unsupervised query expansion models, like",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.13",
+        "title": "Neural ranking models. We also include different",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.13.1",
+        "title": "3.4 Variants of BERT",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.13.2",
+        "title": "3.5 Implementation of BERT-QE",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.13.3",
+        "title": "3.6 Training",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.13.4",
+        "title": "3.7 Computation of FLOPs",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.14",
+        "title": "4 Results",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.14.1",
+        "title": "4.1 Results for BERT-QE-LLL",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.15",
+        "title": "The effectiveness of BERT-QE-LLL. To put",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.16",
+        "title": "The efficiency of BERT-QE. Beyond the effec-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.16.1",
+        "title": "0.5533∗∗∗ 0.3865∗∗∗",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.16.2",
+        "title": "4.2 Employing Smaller BERT Variants in",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.17",
+        "title": "BERT-QE",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.18",
+        "title": "Smaller BERT variants for chunk selector.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.19",
+        "title": "Smaller BERT variants for final re-ranker.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.19.1",
+        "title": "5.1 First-round Re-ranker Ablation Analyses",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.19.2",
+        "title": "5.2 Hyper-parameter study",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "1.20",
+        "title": "6 Related Work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.21",
+        "title": "BERT for IR. Inspired by the success of contextu-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.22",
+        "title": "Query expansion has long been applied to make",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.23",
+        "title": "7 Conclusion",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.24",
+        "title": "Acknowledgments",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.25",
+        "title": "A Appendices",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.26",
+        "title": "A.1 Interpolation Parameters in BERT-QE",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.27",
+        "title": "A.2 Number of parameters in BERT variants",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 3,
+        "url": "https://github.com/zh-zheng/BERT-QE"
+      },
+      {
+        "page": 5,
+        "url": "https://github.com/google-research/bert"
+      }
+    ]
+  },
+  "pdfinfo": {
+    "title": "BERT-QE: Contextualized Query Expansion for Document Re-ranking",
+    "author": "Zhi Zheng ; Kai Hui ; Ben He ; Xianpei Han ; Le Sun ; Andrew Yates",
+    "producer": "pdfTeX-1.40.20",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2020-10-06T09:34:37Z",
+    "mod_date": "2020-10-06T09:34:37Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 11,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 527868,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.3",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) kpathsea version 6.3.1",
+      "Subject": "Findings 2020"
     }
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "zheng2020",
+    "title": "BERT-QE: Contextualized Query Expansion for Document Re-ranking",
+    "author": "Zhi Zheng ; Kai Hui ; Ben He ; Xianpei Han ; Le Sun ; Andrew Yates",
+    "year": "2020",
+    "pages": 11,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 72.0,
+      "y": 619.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.1",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 1,
+      "x": 72.0,
+      "y": 404.0,
+      "name": "section.1",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 307.0,
+      "y": 576.0,
+      "name": "equation.2.1",
+      "kind": "equation"
+    },
+    {
+      "page": 2,
+      "x": 307.0,
+      "y": 228.0,
+      "name": "equation.2.2",
+      "kind": "equation"
+    },
+    {
+      "page": 2,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.2",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 2,
+      "x": 72.0,
+      "y": 361.0,
+      "name": "section.2",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 72.0,
+      "y": 272.0,
+      "name": "subsection.2.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 2,
+      "x": 307.0,
+      "y": 190.0,
+      "name": "subsection.2.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 323.0,
+      "y": 89.0,
+      "name": "Hfootnote.2",
+      "kind": "other"
+    },
+    {
+      "page": 3,
+      "x": 72.0,
+      "y": 419.0,
+      "name": "equation.2.3",
+      "kind": "equation"
+    },
+    {
+      "page": 3,
+      "x": 196.0,
+      "y": 145.0,
+      "name": "equation.2.4",
+      "kind": "equation"
+    },
+    {
+      "page": 3,
+      "x": 307.0,
+      "y": 473.0,
+      "name": "equation.2.5",
+      "kind": "equation"
+    },
+    {
+      "page": 3,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "figure.caption.1",
+      "kind": "figure"
+    },
+    {
+      "page": 3,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.3",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 3,
+      "x": 307.0,
+      "y": 320.0,
+      "name": "section.3",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 72.0,
+      "y": 379.0,
+      "name": "subsection.2.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 307.0,
+      "y": 237.0,
+      "name": "subsection.3.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 88.0,
+      "y": 99.0,
+      "name": "Hfootnote.3",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "figure.caption.2",
+      "kind": "figure"
+    },
+    {
+      "page": 4,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.4",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 4,
+      "x": 72.0,
+      "y": 436.0,
+      "name": "subsection.3.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 72.0,
+      "y": 268.0,
+      "name": "subsection.3.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 307.0,
+      "y": 138.0,
+      "name": "subsection.3.4",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 88.0,
+      "y": 130.0,
+      "name": "Hfootnote.4",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 88.0,
+      "y": 99.0,
+      "name": "Hfootnote.5",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 323.0,
+      "y": 120.0,
+      "name": "Hfootnote.6",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 323.0,
+      "y": 109.0,
+      "name": "Hfootnote.7",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.5",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 5,
+      "x": 307.0,
+      "y": 549.0,
+      "name": "section.4",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 72.0,
+      "y": 528.0,
+      "name": "subsection.3.5",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 72.0,
+      "y": 334.0,
+      "name": "subsection.3.6",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 307.0,
+      "y": 661.0,
+      "name": "subsection.3.7",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 307.0,
+      "y": 406.0,
+      "name": "subsection.4.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "table.caption.3",
+      "kind": "table"
+    },
+    {
+      "page": 6,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.6",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 6,
+      "x": 307.0,
+      "y": 625.0,
+      "name": "subsection.4.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "table.caption.4",
+      "kind": "table"
+    },
+    {
+      "page": 7,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.7",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 7,
+      "x": 307.0,
+      "y": 227.0,
+      "name": "section.5",
+      "kind": "section"
+    },
+    {
+      "page": 7,
+      "x": 307.0,
+      "y": 203.0,
+      "name": "subsection.5.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "table.caption.5",
+      "kind": "table"
+    },
+    {
+      "page": 7,
+      "x": 72.0,
+      "y": 634.0,
+      "name": "table.caption.6",
+      "kind": "table"
+    },
+    {
+      "page": 8,
+      "x": 72.0,
+      "y": 643.0,
+      "name": "figure.caption.8",
+      "kind": "figure"
+    },
+    {
+      "page": 8,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.8",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 8,
+      "x": 307.0,
+      "y": 493.0,
+      "name": "section.6",
+      "kind": "section"
+    },
+    {
+      "page": 8,
+      "x": 72.0,
+      "y": 178.0,
+      "name": "subsection.5.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 8,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "table.caption.7",
+      "kind": "table"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 123.0,
+      "name": "cite.DBLP:conf/acl/0001MC16",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 187.0,
+      "name": "cite.DBLP:conf/naacl/DevlinCLT19",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 337.0,
+      "name": "cite.DBLP:conf/sigir/CaoNGR08",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 230.0,
+      "name": "cite.DBLP:conf/sigir/DaiC19",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 500.0,
+      "name": "cite.DBLP:conf/trec/AmatiABGG07",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 284.0,
+      "name": "cite.DBLP:conf/trec/ClarkeCS04",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 542.0,
+      "name": "cite.DBLP:phd/ethos/Amati03",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 302.0,
+      "y": 424.0,
+      "name": "cite.bajaj2018ms",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.9",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 9,
+      "x": 307.0,
+      "y": 563.0,
+      "name": "section*.10",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 307.0,
+      "y": 703.0,
+      "name": "section*.9",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 72.0,
+      "y": 199.0,
+      "name": "section.7",
+      "kind": "section"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 263.0,
+      "name": "cite.DBLP:conf/acl/LiuZWZDJ20",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 779.0,
+      "name": "cite.DBLP:conf/cikm/GuoFAC16",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 350.0,
+      "name": "cite.DBLP:conf/ecir/LinCTCCFIMV16",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 672.0,
+      "name": "cite.DBLP:conf/emnlp/HuiYBM17",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 425.0,
+      "name": "cite.DBLP:conf/emnlp/LiSHWHYSX18",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 736.0,
+      "name": "cite.DBLP:conf/ictir/HuiHLW11",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 553.0,
+      "name": "cite.DBLP:conf/sigir/KhattabZ20",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 468.0,
+      "name": "cite.DBLP:conf/sigir/LavrenkoC01",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 198.0,
+      "name": "cite.DBLP:conf/sigir/MacAvaneyN0TGF20",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 134.0,
+      "name": "cite.DBLP:conf/sigir/MacAvaneyN0TGF20b",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 779.0,
+      "name": "cite.DBLP:conf/sigir/MacAvaneyYCG19",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 671.0,
+      "name": "cite.DBLP:conf/sigir/MetzlerC07",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 199.0,
+      "name": "cite.DBLP:conf/trec/Voorhees04b",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 607.0,
+      "name": "cite.DBLP:conf/wsdm/HuiYBM18",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 145.0,
+      "name": "cite.DBLP:conf/www/WuMLZZZM20",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 500.0,
+      "name": "cite.DBLP:journals/corr/KingmaB14",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 628.0,
+      "name": "cite.DBLP:journals/corr/abs-1901-04085",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 425.0,
+      "name": "cite.DBLP:journals/corr/abs-1904-07531",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 468.0,
+      "name": "cite.DBLP:journals/corr/abs-1904-08375",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 252.0,
+      "name": "cite.DBLP:journals/corr/abs-1908-08962",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 382.0,
+      "name": "cite.DBLP:journals/corr/abs-1910-10683",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 511.0,
+      "name": "cite.DBLP:journals/corr/abs-1910-14424",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 597.0,
+      "name": "cite.DBLP:journals/corr/abs-2003-06713",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 543.0,
+      "name": "cite.Nogueira2019doc",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 725.0,
+      "name": "cite.macdonald2012puppy",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 317.0,
+      "name": "cite.rocchio1971relevance",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.10",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 11,
+      "x": 307.0,
+      "y": 779.0,
+      "name": "appendix.A",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 621.0,
+      "name": "cite.DBLP:conf/cikm/ZamaniDCLK18",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 726.0,
+      "name": "cite.DBLP:conf/emnlp/YilmazYZL19",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 663.0,
+      "name": "cite.DBLP:conf/ictir/ZamaniC16a",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 779.0,
+      "name": "cite.DBLP:conf/sigir/XiongDCLP17",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.11",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 11,
+      "x": 307.0,
+      "y": 758.0,
+      "name": "subsection.A.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 11,
+      "x": 307.0,
+      "y": 139.0,
+      "name": "subsection.A.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 11,
+      "x": 307.0,
+      "y": 736.0,
+      "name": "table.caption.11",
+      "kind": "table"
+    },
+    {
+      "page": 11,
+      "x": 307.0,
+      "y": 269.0,
+      "name": "table.caption.12",
+      "kind": "table"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "UUQIFT+CMR8",
@@ -431,7 +1435,68 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 3,
+      "x0": 162.71,
+      "y0": 62.81,
+      "x1": 434.84,
+      "y1": 218.55,
+      "w_pt": 272.13,
+      "h_pt": 155.74,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 1127,
+      "height_px": 645,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 298,
+      "y_ppi": 298,
+      "size_bytes": 727,
+      "object_id": "305 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 4,
+      "x0": 162.71,
+      "y0": 62.81,
+      "x1": 434.84,
+      "y1": 216.8,
+      "w_pt": 272.13,
+      "h_pt": 154.0,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 1161,
+      "height_px": 657,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 307,
+      "y_ppi": 307,
+      "size_bytes": 762,
+      "object_id": "268 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 8,
+      "x0": 72.28,
+      "y0": 205.42,
+      "x1": 289.98,
+      "y1": 336.04,
+      "w_pt": 217.7,
+      "h_pt": 130.62,
+      "name": "Im3",
+      "imagemask": false,
+      "width_px": 3000,
+      "height_px": 1800,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 992,
+      "y_ppi": 992,
+      "size_bytes": 5268,
+      "object_id": "144 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -556,6 +1621,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.3,
       "detail": "247 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:39:29Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 88.0,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-06T00:39:30Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 167.4,
+      "detail": "21 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-06T00:39:30Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 40.9,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-06T00:39:30Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 2.0,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-06T00:39:30Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 72.2,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:39:30Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=zheng2020"
+    },
+    {
+      "ts": "2026-08-06T00:39:30Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 41.9,
+      "detail": "97 dests across 8 kinds"
+    },
+    {
+      "ts": "2026-08-06T00:39:36Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 5521.7,
+      "detail": "3 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {

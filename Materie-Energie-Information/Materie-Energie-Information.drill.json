@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -55,7 +57,27 @@
     "math_fonts": [
       "OLLCEM+SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Materie-Energie-Information",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 11,
+      "ListItem": 12,
+      "Paragraph": 11,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Materie-Energie-Information.tiddlers.json",
+    "tiddlers_count": 51,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -246,6 +268,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 42.5,
       "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:02:02Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 85.6,
+      "detail": "35 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:02:02Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.9,
+      "detail": "51 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Materie-Energie-Information/Materie-Energie-Information.lines.json": "sha256:c9eda314fac0af70e3535fc1c56da255ac2f816a4bce2663a5f1c65a6f039c5d"
+      },
+      "params_hash": "sha256:4760ff91c9b0efbfa298d27b6bac36380a12657ed937320741461e316ac20de9",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:02:02Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

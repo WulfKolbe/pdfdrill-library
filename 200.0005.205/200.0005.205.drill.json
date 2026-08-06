@@ -5,7 +5,13 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 62,
@@ -95,9 +101,71 @@
     },
     "tiddlers_path": "200.0005.205.tiddlers.json",
     "tiddlers_count": 663,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 9,
+        "url": "www.versicherungsombudsmann.de",
+        "kind": "text"
+      },
+      {
+        "page": 35,
+        "url": "http://ec.europa.eu/consumers/odr/",
+        "kind": "text"
+      },
+      {
+        "page": 43,
+        "url": "www.vhv.de",
+        "kind": "text"
+      },
+      {
+        "page": 50,
+        "url": "https://webgate.ec.europa.eu/odr",
+        "kind": "text"
+      },
+      {
+        "page": 58,
+        "url": "https://nrv-rechtsschutz.de/hinweise/umgang-mit-kundendaten/",
+        "kind": "text"
+      },
+      {
+        "page": 58,
+        "url": "https://nrv-rechtsschutz",
+        "kind": "text"
+      },
+      {
+        "page": 59,
+        "url": "www.informa-HIS.de",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "Adobe PDF Library 17.0",
+    "creator": "Adobe InDesign 18.1 (Macintosh)",
+    "creation_date": "2023-01-12T09:47:24+01",
+    "mod_date": "2023-01-12T10:00:09+01",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "AcroForm",
+    "javascript": false,
+    "pages": 62,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 583389,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.3",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -579,7 +647,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -654,6 +722,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 19.4,
       "detail": "663 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:37:01Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 93.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-06T00:37:02Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 273.6,
+      "detail": "34 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T00:37:02Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 44.3,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-06T00:37:03Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 73.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-06T00:37:04Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 977.3,
+      "detail": "7 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:37:42Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 38429.2,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

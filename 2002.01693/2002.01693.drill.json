@@ -6,7 +6,12 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 28,
@@ -125,9 +130,46 @@
     "bibliography_cites": 46,
     "tiddlers_path": "2002.01693.tiddlers.json",
     "tiddlers_count": 332,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "A hallmark of non-perturbative theories of quantum gravity is the absence of a fixed background geometry, and therefore the absence in a Planckian regime of any notion of length or scale that is defined a priori. This has potentially far-reaching consequences for the application of renormalization group methods a la Wilson, which rely on these notions in a crucial way. We review the status quo of attempts in the Causal Dynamical Triangulations (CDT) approach to quantum gravity to find an ultraviolet fixed point associated with the second-order phase transitions observed in the lattice theory. Measurements of the only invariant correlator currently accessible, that of the total spatial three-volume, has not produced any evidence of such a fixed point. A possible explanation for this result is our incomplete and perhaps naive understanding of what constitutes an appropriate notion of (quantum) length near the Planck scale.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Renormalization in quantum theories of geometry",
+    "arxiv_authors": [
+      "J. Ambjorn",
+      "J. Gizbert-Studnicki",
+      "A. Goerlich",
+      "J. Jurkiewicz",
+      "R. Loll"
+    ],
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "TeX",
+    "creation_date": "2020-02-06T01:24:42Z",
+    "mod_date": "2020-02-06T01:24:42Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 28,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 399735,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) kpathsea version 6.2.2"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -637,7 +679,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -720,6 +762,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.0,
       "detail": "332 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:37:16Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 95.5,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-06T00:37:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 231.2,
+      "detail": "36 fonts, 17 math"
+    },
+    {
+      "ts": "2026-08-06T00:37:17Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 459.5,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:37:23Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 5905.3,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

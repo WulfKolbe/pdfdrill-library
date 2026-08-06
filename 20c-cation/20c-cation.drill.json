@@ -6,7 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -74,12 +81,40 @@
     },
     "tiddlers_path": "20c-cation.tiddlers.json",
     "tiddlers_count": 22,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "toc_search_scope": "first3pages",
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.26",
+    "creator": "TeX",
+    "creation_date": "2025-12-25T15:11:32+01",
+    "mod_date": "2025-12-25T15:11:32+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 2,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 90907,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Solus) kpathsea version 6.4.0"
+    }
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "OAKWWW+CMR17",
@@ -194,7 +229,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -269,6 +304,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 0.5,
       "detail": "22 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:40:16Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 104.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-06T00:40:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 69.2,
+      "detail": "8 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-06T00:40:16Z",
+      "node": "toc",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 80.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-06T00:40:16Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 59.9,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-06T00:40:17Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 111.3,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:40:17Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 76.1,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-06T00:40:17Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 665.0,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

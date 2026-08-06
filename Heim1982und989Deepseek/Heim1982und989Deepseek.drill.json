@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -59,7 +62,28 @@
       "STDXPF+CMEX10",
       "LYXSUF+CMSY8"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Heim1982und989Deepseek",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "ListItem": 11,
+      "Equation": 48,
+      "Paragraph": 41,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Heim1982und989Deepseek.tiddlers.json",
+    "tiddlers_count": 123,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -322,6 +346,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 23.0,
       "detail": "14 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-05T21:13:48Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 37.3,
+      "detail": "107 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T21:13:48Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.7,
+      "detail": "123 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Heim1982und989Deepseek/Heim1982und989Deepseek.lines.json": "sha256:2a64c9ea5ee5ac81b240d20dca6262f14f90d6a4edfc7c35ce20f5df15835ede"
+      },
+      "params_hash": "sha256:81545f7fd0c379d605c845380c88d0b805b6c565fdaf32704fcd93861342fe05",
+      "algo": "sha256",
+      "ts": "2026-08-05T21:13:48Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

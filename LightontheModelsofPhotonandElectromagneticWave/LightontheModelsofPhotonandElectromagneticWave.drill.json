@@ -3,7 +3,12 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -51,7 +56,56 @@
     "math_fonts": [
       "EAAAAA+OpenSymbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "lane_policy": "Producer is 'OpenOffice 4.1.4' (openoffice): the pdfminer text-layer lane is DECLINED for this family (it emits font subsets with no /Encoding, mapping only via /ToUnicode). pdftotext, MathPix and tesseract handle it correctly and are used instead.",
+    "ocr_lang": "eng",
+    "ocr_lang_effective": "eng",
+    "ocr_pages": 13,
+    "ocr_lines": 523,
+    "ocr_units": "pt",
+    "ocr_render_dpi": 400,
+    "ocr_type_counts": {
+      "section_header": 12,
+      "page_info": 0,
+      "diagram": 0,
+      "absorbed_lines": 0,
+      "table": 5,
+      "equation": 0,
+      "equation_lines_merged": 0,
+      "toc_rows": 0,
+      "text_layer_lines": 511,
+      "barcodes": 1
+    },
+    "ocr_warnings": [
+      "document carries an embedded text layer (OCR overlay or born-digital) — it is invisible to this re-OCR but may be higher quality; consider the born-digital route (pdfminer/pdfdrill model) or cross-checking against it"
+    ],
+    "bibkey": "LightontheModelsofPhotonandElectromagneticWave",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 13,
+      "Citation": 3,
+      "Table": 5,
+      "ListItem": 14,
+      "Paragraph": 131,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "tesseract",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "tesseract"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "LightontheModelsofPhotonandElectromagneticWave.tiddlers.json",
+    "tiddlers_count": 183,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -242,6 +296,50 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 29.7,
       "detail": "10 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-05T21:59:26Z",
+      "node": "ocr",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "OCR_BUILT",
+      "cost_ms": 111201.7,
+      "detail": "13 pages, 523 lines, lang=eng"
+    },
+    {
+      "ts": "2026-08-05T21:59:27Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,OCR_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 190.6,
+      "detail": "167 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T21:59:27Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-05T21:59:27Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.3,
+      "detail": "183 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/LightontheModelsofPhotonandElectromagneticWave/LightontheModelsofPhotonandElectromagneticWave.lines.json": "sha256:7ad40600fe7fd66bc47762b2111aa43f991a037310d313a43c133069ccdd2b5b"
+      },
+      "params_hash": "sha256:05ea08cfd15645be294cee57d0a5c3ab667c2f7e8cfd3c8b65165eb2acbdfee0",
+      "algo": "sha256",
+      "ts": "2026-08-05T21:59:27Z",
+      "provenance": "tesseract"
+    }
+  }
 }

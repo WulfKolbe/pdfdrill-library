@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 34,
@@ -63,7 +66,27 @@
       "QAUUKM+MSBM10",
       "AELWGN+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "PPD_Brasov_modular",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 34,
+      "Equation": 3,
+      "Paragraph": 37,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "PPD_Brasov_modular.tiddlers.json",
+    "tiddlers_count": 91,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -324,6 +347,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 74.4,
       "detail": "15 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-05T22:33:54Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 40.8,
+      "detail": "75 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:33:54Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.3,
+      "detail": "91 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/PPD_Brasov_modular/PPD_Brasov_modular.lines.json": "sha256:3d0402b2e42ed9f0dd187f92729042bf34ec41256a67f7493674ab3db43ca848"
+      },
+      "params_hash": "sha256:2e91fe4d7d04f74cfe9fef1a6c5be98d4e6cbd48d400a9bdf656d99b159a9454",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:33:54Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

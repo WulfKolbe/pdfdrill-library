@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -58,7 +61,28 @@
       "EADKMF+CambriaMath",
       "EADKOF+CambriaMath"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "EnergyHarvesting",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 11,
+      "ListItem": 9,
+      "Equation": 2,
+      "Paragraph": 12,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "EnergyHarvesting.tiddlers.json",
+    "tiddlers_count": 51,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -321,6 +345,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 24.1,
       "detail": "14 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-05T20:19:47Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 55.4,
+      "detail": "35 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T20:19:47Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.4,
+      "detail": "51 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/EnergyHarvesting/EnergyHarvesting.lines.json": "sha256:23f7fad64b497cd881844892b5f9ce483b7ea329f319cbcaa3bc5cf49995481d"
+      },
+      "params_hash": "sha256:c28a8cc034d64837084dbcfc718e06719078b86027f0a4e92bbf83688395ae5a",
+      "algo": "sha256",
+      "ts": "2026-08-05T20:19:47Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

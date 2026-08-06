@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 29,
@@ -56,7 +58,27 @@
     "math_fonts": [
       "MDYRSU+SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "ThePauliExclusionPrincipleandtheFirstCauseArgument-APhilosophicalExplorationintotheFoundationsofQuantumMechanicsandExistence",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 29,
+      "ListItem": 40,
+      "Paragraph": 29,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "ThePauliExclusionPrincipleandtheFirstCauseArgument-APhilosophicalExplorationintotheFoundationsofQuantumMechanicsandExistence.tiddlers.json",
+    "tiddlers_count": 115,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -261,6 +283,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 29.5,
       "detail": "11 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T00:21:45Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 90.8,
+      "detail": "99 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:21:45Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.9,
+      "detail": "115 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/ThePauliExclusionPrincipleandtheFirstCauseArgument-APhilosophicalExplorationintotheFoundationsofQuantumMechanicsandExistence/ThePauliExclusionPrincipleandtheFirstCauseArgument-APhilosophicalExplorationintotheFoundationsofQuantumMechanicsandExistence.lines.json": "sha256:20d55c52bde2311d1dd051fe3861015cc734a90855eacd7735edf0891273579b"
+      },
+      "params_hash": "sha256:b8e06daf2faca1c682aacd3036305d988ee210b19235c1a7a5582ae6097de11e",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:21:45Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

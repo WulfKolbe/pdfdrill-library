@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 26,
@@ -63,7 +65,27 @@
       "BAJCMF+Univers-CondensedBold"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Band_13-11_Auszug_Web",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 26,
+      "ListItem": 6,
+      "Paragraph": 26,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Band_13-11_Auszug_Web.tiddlers.json",
+    "tiddlers_count": 75,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -438,6 +460,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 53.7,
       "detail": "22 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T06:15:07Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 62.1,
+      "detail": "59 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:15:07Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.5,
+      "detail": "75 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Band_13-11_Auszug_Web/Band_13-11_Auszug_Web.lines.json": "sha256:d1b45a9f3bf4cb7b9697a934e922bdb5df02281caf281dcc8db5b86c21eb0ad0"
+      },
+      "params_hash": "sha256:87f157876f171d87507f0f3aadc8d6ff7059f6e605467b854774892c71645995",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:15:07Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

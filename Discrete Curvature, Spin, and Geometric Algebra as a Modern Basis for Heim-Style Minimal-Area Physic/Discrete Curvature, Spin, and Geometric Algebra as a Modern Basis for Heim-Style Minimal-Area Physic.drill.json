@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 7,
@@ -48,7 +51,27 @@
     "math_fonts": [
       "XQTWUA+KaTeX_Math-Italic"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 7,
+      "Equation": 6,
+      "Paragraph": 9,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic.tiddlers.json",
+    "tiddlers_count": 39,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -213,6 +236,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 17.5,
       "detail": "7 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-05T18:44:41Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 8.9,
+      "detail": "23 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T18:44:41Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.2,
+      "detail": "39 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic/Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic.lines.json": "sha256:26f87843083587a5cdccd925306132eeef7d33206697df12431003ab3e154582"
+      },
+      "params_hash": "sha256:e3358ee41080e43d1c65bf41efa733ed4d6f14876b47258d6cb024cd769bffd1",
+      "algo": "sha256",
+      "ts": "2026-08-05T18:44:41Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

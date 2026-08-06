@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -76,7 +79,28 @@
       "IOBLKG+CMEX10",
       "AYYYNN+MSBM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Spinor_wave_equation_of_photon",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 8,
+      "ListItem": 7,
+      "Equation": 54,
+      "Paragraph": 52,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 286 unmapped private-use character(s) remain (U+F8EB×14, U+F8EC×110, U+F8ED×14, U+F8F1×2, U+F8F2×2, U+F8F3×2, U+F8F4×4, U+F8F6×14, U+F8F7×110, U+F8F8×14) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Spinor_wave_equation_of_photon.tiddlers.json",
+    "tiddlers_count": 138,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -449,6 +473,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 34.0,
       "detail": "23 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-05T23:30:05Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 48.0,
+      "detail": "122 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:30:05Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.4,
+      "detail": "138 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Spinor_wave_equation_of_photon/Spinor_wave_equation_of_photon.lines.json": "sha256:8d9a528894127518ca13ff684f4b6aa156da7a8a0bff22031adca7bbc8cdc0bc"
+      },
+      "params_hash": "sha256:ecfc2269d7a0cd891094405242a0bb6f5ce90bad23070a718893b05e0ad44c51",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:30:05Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

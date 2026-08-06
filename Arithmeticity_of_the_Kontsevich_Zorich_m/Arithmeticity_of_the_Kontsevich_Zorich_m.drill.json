@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 53,
@@ -88,7 +92,34 @@
       "HIPIXG+CMSY5",
       "TXHZHP+MSBM5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Arithmeticity_of_the_Kontsevich_Zorich_m",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 53,
+      "Citation": 18,
+      "ListItem": 66,
+      "Equation": 195,
+      "Paragraph": 198,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 676 unmapped private-use character(s) remain (U+F8EB×48, U+F8EC×214, U+F8ED×48, U+F8F1×4, U+F8F2×4, U+F8F3×4, U+F8F4×32, U+F8F6×48, U+F8F7×214, U+F8F8×48, U+F8FC×4, U+F8FD×4, U+F8FE×4) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 42,
+    "bibliography_with_year": 36,
+    "bibliography_numeric_citations": 94,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 94,
+    "tiddlers_path": "Arithmeticity_of_the_Kontsevich_Zorich_m.tiddlers.json",
+    "tiddlers_count": 578,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -561,6 +592,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 119.9,
       "detail": "29 fonts, 15 math"
+    },
+    {
+      "ts": "2026-08-05T05:13:10Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 178.5,
+      "detail": "531 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T05:13:11Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "42 entries, 94+0 cites detected, 94 linked"
+    },
+    {
+      "ts": "2026-08-05T05:13:11Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.2,
+      "detail": "578 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Arithmeticity_of_the_Kontsevich_Zorich_m/Arithmeticity_of_the_Kontsevich_Zorich_m.lines.json": "sha256:dcfb4dd329e108a4729538de775057a1dc1c1a72696885f0bb42f3fbb8707241"
+      },
+      "params_hash": "sha256:63909a8961b1644c7a313119698feb295c61a32652276721af26b25328b4fb2f",
+      "algo": "sha256",
+      "ts": "2026-08-05T05:13:10Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

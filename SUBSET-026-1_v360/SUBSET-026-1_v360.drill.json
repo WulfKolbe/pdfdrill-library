@@ -255,14 +255,14 @@
     "rasterize_pages": 1,
     "rasterize_dpi": 100,
     "bibkey": "SUBSET-026-1_v360",
-    "model_path": "SUBSET-026-1_v360.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 8,
       "Paragraph": 8,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfplumber-chars",
+    "model_source": "pdfminer-chars",
     "geometry_pdf_lines": 70,
     "geometry_matched": 230,
     "geometry_mean_sim": 0.303,
@@ -289,8 +289,8 @@
     "compare_path": "SUBSET-026-1_v360.pdf.drill/compare.html",
     "compare_rows": 0,
     "report_path": "SUBSET-026-1_v360.pdf.drill/formula-report.html",
-    "tiddlers_path": "SUBSET-026-1_v360.pdf.drill/SUBSET-026-1_v360.tiddlers.json",
-    "tiddlers_count": 34,
+    "tiddlers_path": "SUBSET-026-1_v360.tiddlers.json",
+    "tiddlers_count": 33,
     "tiddlers_svg_mode": "inline",
     "inspect_path": "SUBSET-026-1_v360.pdf.drill/SUBSET-026-1_v360.inspect.html",
     "scored_equations": 0,
@@ -666,7 +666,14 @@
       "keep": 1,
       "review": 0
     },
-    "bibfetch_done": 0
+    "bibfetch_done": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 7 unmapped private-use character(s) remain (U+F0B7×7) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    }
   },
   "pdfinfo": {
     "title": "Title to be introduced in the properties",
@@ -15892,6 +15899,34 @@
       "to": "FONTS_KNOWN",
       "cost_ms": 50.8,
       "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-05T23:15:38Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,ATTACHMENTS_KNOWN,BIBFETCH_DONE,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,COMPARE_BUILT,DESTS_KNOWN,EMBEDDED_IMAGES_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,FORMFIELDS_KNOWN,GEOMETRY_FUSED,IMAGES_EXTRACTED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,LISTS_BUILT,MD_BUILT,PDFINFO_KNOWN,RASTERIZED,REPORT_BUILT,SCORED,SEMANTIC_BUILT,SIZE_KNOWN,SPELLQC_BUILT,TABLES_KNOWN,TIDDLERS_BUILT,TOC_KNOWN,TSV_KNOWN,URLS_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 25.7,
+      "detail": "17 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:15:38Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,ATTACHMENTS_KNOWN,BIBFETCH_DONE,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,COMPARE_BUILT,DESTS_KNOWN,EMBEDDED_IMAGES_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,FORMFIELDS_KNOWN,GEOMETRY_FUSED,IMAGES_EXTRACTED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,LISTS_BUILT,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,RASTERIZED,REPORT_BUILT,SCORED,SEMANTIC_BUILT,SIZE_KNOWN,SPELLQC_BUILT,TABLES_KNOWN,TOC_KNOWN,TSV_KNOWN,URLS_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.7,
+      "detail": "33 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/SUBSET-026-1_v360/SUBSET-026-1_v360.lines.json": "sha256:e8b4d0050eb2953fc6526f64932c7433359d8930c224479270a70227e2fe7b70"
+      },
+      "params_hash": "sha256:72bf9ab0412e87e4e81610da163bac60d4bf7c3e86870b28d7e4f3ff2dab28d0",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:15:38Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

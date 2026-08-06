@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 14,
@@ -59,7 +63,34 @@
       "CLMKKA+MSBM10",
       "CLNKEA+MSAM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Brian_R_Hunt_1999_Nonlinearity_12_1263",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 14,
+      "Citation": 81,
+      "ListItem": 7,
+      "Equation": 3,
+      "Paragraph": 15,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 28,
+    "bibliography_with_year": 28,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "Brian_R_Hunt_1999_Nonlinearity_12_1263.tiddlers.json",
+    "tiddlers_count": 122,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -308,6 +339,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 36.8,
       "detail": "13 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-05T06:46:59Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 56.8,
+      "detail": "121 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:46:59Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "28 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-05T06:46:59Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.7,
+      "detail": "122 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Brian_R_Hunt_1999_Nonlinearity_12_1263/Brian_R_Hunt_1999_Nonlinearity_12_1263.lines.json": "sha256:d91200c5a21d210d6505786b342a6941eaa7d8d3e3b86f5fde7eb0c38e98017f"
+      },
+      "params_hash": "sha256:e34695ecf366ceb3e4fa7e5237780479819e63c9609e97bcbd031f8061abbb81",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:46:59Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

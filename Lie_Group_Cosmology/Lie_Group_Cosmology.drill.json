@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 42,
@@ -91,7 +95,34 @@
       "FDXMGG+CMSY6",
       "MFUGNL+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Lie_Group_Cosmology",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 42,
+      "Citation": 10,
+      "ListItem": 1,
+      "Equation": 171,
+      "Paragraph": 169,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 25,
+    "bibliography_with_year": 7,
+    "bibliography_numeric_citations": 27,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 27,
+    "tiddlers_path": "Lie_Group_Cosmology.tiddlers.json",
+    "tiddlers_count": 433,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -646,6 +677,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 98.6,
       "detail": "36 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-05T21:57:24Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 173.8,
+      "detail": "394 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T21:57:24Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "25 entries, 27+0 cites detected, 27 linked"
+    },
+    {
+      "ts": "2026-08-05T21:57:24Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.2,
+      "detail": "433 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Lie_Group_Cosmology/Lie_Group_Cosmology.lines.json": "sha256:4b6bd8ac8f2ee6e744ab76637effa962b02a53c78f0cba62bc7c1c2bb09fcb25"
+      },
+      "params_hash": "sha256:45db6a517714b6f1352d2bdaea8bac8efa36ee2661aa13dea6e7acbfa7875fa5",
+      "algo": "sha256",
+      "ts": "2026-08-05T21:57:24Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

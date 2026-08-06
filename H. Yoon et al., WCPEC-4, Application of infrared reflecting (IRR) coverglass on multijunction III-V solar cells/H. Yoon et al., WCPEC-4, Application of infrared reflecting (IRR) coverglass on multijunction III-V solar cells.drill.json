@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -48,7 +50,27 @@
     "math_fonts": [
       "APBEBN+SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "H. Yoon et al., WCPEC-4, Application of infrared reflecting (IRR) coverglass on multijunction III-V solar cells",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 4,
+      "ListItem": 1,
+      "Paragraph": 4,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "H. Yoon et al., WCPEC-4, Application of infrared reflecting (IRR) coverglass on multijunction III-V solar cells.tiddlers.json",
+    "tiddlers_count": 26,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -185,6 +207,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 31.3,
       "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T20:57:27Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 41.4,
+      "detail": "10 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T20:57:27Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.6,
+      "detail": "26 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/H. Yoon et al., WCPEC-4, Application of infrared reflecting (IRR) coverglass on multijunction III-V solar cells/H. Yoon et al., WCPEC-4, Application of infrared reflecting (IRR) coverglass on multijunction III-V solar cells.lines.json": "sha256:6c281a91e4ac6819c9bde89b3490a784a1ca04c681f2266713f05347e4babc84"
+      },
+      "params_hash": "sha256:d1fe2a2024607d55eb6161181fc2c9d4d4e1e017d4b34e6486050c76a295d829",
+      "algo": "sha256",
+      "ts": "2026-08-05T20:57:27Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

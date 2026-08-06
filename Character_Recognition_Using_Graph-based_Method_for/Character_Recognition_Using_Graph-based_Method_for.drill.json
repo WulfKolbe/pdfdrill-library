@@ -5,7 +5,8 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "mathpix_pdf_id": null,
@@ -28,7 +29,7 @@
       }
     ],
     "bibkey": "Character_Recognition_Using_Graph-based_Method_for",
-    "model_path": "Character_Recognition_Using_Graph-based_Method_for.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 8,
       "Table": 8,
@@ -37,10 +38,10 @@
       "Sidenote": 18,
       "Abstract": 1,
       "Diagram": 2,
-      "Section": 43,
+      "Section": 47,
       "ListItem": 104,
       "Formula": 17,
-      "Paragraph": 73,
+      "Paragraph": 65,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
@@ -104,7 +105,12 @@
     "math_fonts": [
       "IOMCLA+SegoeUISymbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "tiddlers_path": "Character_Recognition_Using_Graph-based_Method_for.tiddlers.json",
+    "tiddlers_count": 288,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -447,7 +453,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 15.3,
       "detail": "18 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T06:50:02Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 254.2,
+      "detail": "455 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:50:02Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.7,
+      "detail": "288 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Character_Recognition_Using_Graph-based_Method_for/Character_Recognition_Using_Graph-based_Method_for.lines.json": "sha256:e9fdfeb2a9d339495d3e6f813d3f302b9cce4101e4ebfa4af271a2d116bf8b3e"
+      },
+      "params_hash": "sha256:1c4c73598f5c75413b3cee60b10b9aad3f5ba607479b44c72be5ddd1ab21dfcd",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:50:02Z",
+      "provenance": "mathpix"
+    }
+  }
 }

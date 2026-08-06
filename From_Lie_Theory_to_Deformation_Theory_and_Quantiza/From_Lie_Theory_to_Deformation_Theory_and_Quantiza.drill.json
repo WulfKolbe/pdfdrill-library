@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 19,
@@ -91,7 +95,34 @@
       "QXRXPF+CMMI7",
       "XAQFFB+CMSY7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "From_Lie_Theory_to_Deformation_Theory_and_Quantiza",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 19,
+      "Citation": 15,
+      "ListItem": 14,
+      "Equation": 43,
+      "Paragraph": 60,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 37,
+    "bibliography_with_year": 24,
+    "bibliography_numeric_citations": 106,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 106,
+    "tiddlers_path": "From_Lie_Theory_to_Deformation_Theory_and_Quantiza.tiddlers.json",
+    "tiddlers_count": 195,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -648,6 +679,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 52.2,
       "detail": "35 fonts, 15 math"
+    },
+    {
+      "ts": "2026-08-05T20:24:01Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 75.2,
+      "detail": "152 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T20:24:01Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "37 entries, 106+1 cites detected, 106 linked"
+    },
+    {
+      "ts": "2026-08-05T20:24:01Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.3,
+      "detail": "195 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/From_Lie_Theory_to_Deformation_Theory_and_Quantiza/From_Lie_Theory_to_Deformation_Theory_and_Quantiza.lines.json": "sha256:b803971d6fa640afaa7baf0fd9fe9c0cf611ed94c1b8b2d0d9435a65ff1d1221"
+      },
+      "params_hash": "sha256:0fbae5478e09cf6761817e140222660f31f3cfdcc8383c359618001a227610f2",
+      "algo": "sha256",
+      "ts": "2026-08-05T20:24:01Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

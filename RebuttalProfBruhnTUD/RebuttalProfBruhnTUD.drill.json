@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 3,
@@ -42,7 +44,27 @@
       "EAAAAA+Thorndale-Bold"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "RebuttalProfBruhnTUD",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 3,
+      "ListItem": 9,
+      "Paragraph": 3,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "RebuttalProfBruhnTUD.tiddlers.json",
+    "tiddlers_count": 32,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -149,6 +171,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 14.1,
       "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T23:07:48Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 23.3,
+      "detail": "16 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:07:48Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.8,
+      "detail": "32 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/RebuttalProfBruhnTUD/RebuttalProfBruhnTUD.lines.json": "sha256:9ca940f716a21ad060951066d238f0a438985cd60d11bdefbaa25f89a3b467c3"
+      },
+      "params_hash": "sha256:380916e9141b86023fdf7f35dbb9d2c1553d5e8b0d59abec5f7e9f7005783044",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:07:48Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

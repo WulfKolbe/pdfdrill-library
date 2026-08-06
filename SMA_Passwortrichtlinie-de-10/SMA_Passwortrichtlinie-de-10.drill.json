@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -46,7 +48,26 @@
       "CSFWCZ+SMAFuturaGlobal-Light"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "SMA_Passwortrichtlinie-de-10",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "Paragraph": 1,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "SMA_Passwortrichtlinie-de-10.tiddlers.json",
+    "tiddlers_count": 19,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -153,6 +174,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 13.2,
       "detail": "4 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T23:15:23Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 13.6,
+      "detail": "3 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:15:23Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.1,
+      "detail": "19 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/SMA_Passwortrichtlinie-de-10/SMA_Passwortrichtlinie-de-10.lines.json": "sha256:5fab1a3147eb31abdf06d949cd5bdc927354499b332d35a810aa5b4bcfc87fdc"
+      },
+      "params_hash": "sha256:bc163328dd8a8934abdf65562948965139c98e257bb5067a717569ae84dc7799",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:15:23Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

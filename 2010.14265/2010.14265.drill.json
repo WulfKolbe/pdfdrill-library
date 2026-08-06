@@ -10,7 +10,10 @@
     "ABSTRACT_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "2010.14265",
@@ -134,7 +137,8 @@
     "has_math_fonts": false,
     "tiddlers_path": "2010.14265.tiddlers.json",
     "tiddlers_count": 427,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "links": []
   },
   "pdfinfo": {
     "title": "",
@@ -674,7 +678,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {},
@@ -806,6 +810,30 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.5,
       "detail": "427 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:38:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 223.6,
+      "detail": "35 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T00:38:47Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 589.9,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:38:59Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 11497.6,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

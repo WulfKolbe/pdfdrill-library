@@ -8,7 +8,14 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 14,
@@ -125,12 +132,1105 @@
       "geometry": true,
       "math": true,
       "source": "mathpix"
+    },
+    "abstract": "Personal knowledge about users’ professions, hobbies, favorite food, and travel preferences, among others, is a valuable asset for individualized AI, such as recommenders or chatbots. Conversations in social media, such as Reddit, are a rich source of data for inferring personal facts. Prior work developed supervised methods to extract this knowledge, but these approaches can not generalize beyond attribute values with ample labeled training samples. This paper overcomes this limitation by devising CHARM: a zero-shot learning method that creatively leverages keyword extraction and document retrieval in order to predict attribute values that were never seen during training. Experiments with large datasets from Reddit show the viability of CHARM for open-ended attributes, such as professions and hobbies.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "CHARM: Inferring Personal A",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "1.1",
+        "title": "Anna Tigunova, Andrew Yates, P",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.2",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.3",
+        "title": "Motivation. Personal Knowledge Bases (PKBs)",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.4",
+        "title": "Example. Consider the user’s utterance: “I just",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2",
+        "title": "ttributes from Conversations",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "aramita Mirza, Gerhard Weikum",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "State of the Art and its Limitations. Explicit",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "masts on my galleon”. Question answering meth-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.4",
+        "title": "Problem Statement. For a given attribute we con-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.5",
+        "title": "Approach and Contributions. We present",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.6",
+        "title": "2 Related Work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.7",
+        "title": "User profiling from utterances. There is ample",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.8",
+        "title": "Keyword extraction from conversational text.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.9",
+        "title": "Information Retrieval in NLP. Most existing",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.10",
+        "title": "3 Methodology",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.11",
+        "title": "Overview. As illustrated in Figure 1, CHARM",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.12",
+        "title": "brary yesterday”, “Studied for the exam so I could",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.12.1",
+        "title": "3.1 Cue detection",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.12.2",
+        "title": "3.2 Value ranking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.13",
+        "title": "Document ranking. The ranking component",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.14",
+        "title": "Document score aggregation. The document",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.14.1",
+        "title": "3.3 Training",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.15",
+        "title": "4 Dataset",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.15.1",
+        "title": "4.1 Users’ utterances",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.16",
+        "title": "doctor”) found in the user’s posts. To label the",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.16.1",
+        "title": "4.2 Document collection",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.17",
+        "title": "Wikipedia pages (Wiki-page). To create this col-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.18",
+        "title": "Wikipedia pages–extended (Wiki-category).",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.19",
+        "title": "Web search. To create this collection we queried",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.20",
+        "title": "min max avg total",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.21",
+        "title": "profession Wiki-page 1 10 2 156",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.22",
+        "title": "hobby Wiki-page 1 1 1 149",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.23",
+        "title": "5 Experimental Setup",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.24",
+        "title": "Training and test data. For the unseen experi-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.25",
+        "title": "Hyperparameters. BERT, the term selection com-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.26",
+        "title": "Baselines. For the unseen experiments, we evalu-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.27",
+        "title": "profession",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.28",
+        "title": "Model",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.29",
+        "title": "hobby",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.30",
+        "title": ".59 .22 .44* .27 .49 .19 .38",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.31",
+        "title": "profession",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.32",
+        "title": "barista screenwriter airplane pilot",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.33",
+        "title": "Evaluation metrics. Given the difficulty of infer-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.34",
+        "title": "6 Results and Discussion",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.34.1",
+        "title": "6.1 Quantitative Results",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.35",
+        "title": "Unseen values (zero-shot mode). The models’",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.36",
+        "title": "hobby",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.37",
+        "title": "baking quilting model aircraft",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.38",
+        "title": "Seen values (supervised mode). In this experi-",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 2,
+        "url": "https://github.com/Anna146/CHARM"
+      },
+      {
+        "page": 2,
+        "url": "https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/pkb"
+      },
+      {
+        "page": 5,
+        "url": "https://en.wikipedia.org/wiki/List_of_hobbies"
+      },
+      {
+        "page": 5,
+        "url": "https://en.wikipedia.org/wiki/Lists_of_occupations"
+      },
+      {
+        "page": 5,
+        "url": "https://files.pushshift.io/reddit/"
+      },
+      {
+        "page": 10,
+        "url": "https://doi.org/10.1109/ICCV.2015.483"
+      },
+      {
+        "page": 10,
+        "url": "http://ceur-ws.org/Vol-1866/"
+      },
+      {
+        "page": 11,
+        "url": "https://doi.org/10.14778/3157794.3157797"
+      },
+      {
+        "page": 11,
+        "url": "https://arxiv.org/abs/1904.11610"
+      }
+    ]
+  },
+  "pdfinfo": {
+    "title": "CHARM: Inferring Personal Attributes from Conversations",
+    "author": "Anna Tigunova ; Andrew Yates ; Paramita Mirza ; Gerhard Weikum",
+    "producer": "pdfTeX-1.40.20",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2020-10-06T10:05:43Z",
+    "mod_date": "2020-10-06T10:05:43Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 14,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 577727,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.3",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) kpathsea version 6.3.1",
+      "Subject": "emnlp 2020"
     }
   },
-  "pdfinfo": null,
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 72.0,
+      "y": 619.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.1",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 1,
+      "x": 72.0,
+      "y": 370.0,
+      "name": "section.1",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 323.0,
+      "y": 120.0,
+      "name": "Hfootnote.1",
+      "kind": "other"
+    },
+    {
+      "page": 2,
+      "x": 323.0,
+      "y": 109.0,
+      "name": "Hfootnote.2",
+      "kind": "other"
+    },
+    {
+      "page": 2,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.2",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 2,
+      "x": 307.0,
+      "y": 677.0,
+      "name": "section.2",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 307.0,
+      "y": 786.0,
+      "name": "figure.caption.1",
+      "kind": "figure"
+    },
+    {
+      "page": 3,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.3",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 3,
+      "x": 72.0,
+      "y": 168.0,
+      "name": "section.3",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 307.0,
+      "y": 177.0,
+      "name": "subsection.3.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.4",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 4,
+      "x": 72.0,
+      "y": 364.0,
+      "name": "section*.2",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 307.0,
+      "y": 746.0,
+      "name": "section*.3",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 72.0,
+      "y": 443.0,
+      "name": "subsection.3.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 307.0,
+      "y": 476.0,
+      "name": "subsection.3.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 88.0,
+      "y": 100.0,
+      "name": "Hfootnote.3",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 88.0,
+      "y": 89.0,
+      "name": "Hfootnote.4",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 323.0,
+      "y": 99.0,
+      "name": "Hfootnote.5",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 72.0,
+      "y": 693.0,
+      "name": "figure.caption.4",
+      "kind": "figure"
+    },
+    {
+      "page": 5,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.5",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 5,
+      "x": 72.0,
+      "y": 714.0,
+      "name": "section.4",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 72.0,
+      "y": 494.0,
+      "name": "subsection.4.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 307.0,
+      "y": 668.0,
+      "name": "subsection.4.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 88.0,
+      "y": 99.0,
+      "name": "Hfootnote.6",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.6",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 6,
+      "x": 72.0,
+      "y": 653.0,
+      "name": "section.5",
+      "kind": "section"
+    },
+    {
+      "page": 6,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "table.caption.5",
+      "kind": "table"
+    },
+    {
+      "page": 7,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.7",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 7,
+      "x": 307.0,
+      "y": 227.0,
+      "name": "section.6",
+      "kind": "section"
+    },
+    {
+      "page": 7,
+      "x": 307.0,
+      "y": 207.0,
+      "name": "subsection.6.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "table.caption.6",
+      "kind": "table"
+    },
+    {
+      "page": 7,
+      "x": 72.0,
+      "y": 586.0,
+      "name": "table.caption.7",
+      "kind": "table"
+    },
+    {
+      "page": 7,
+      "x": 307.0,
+      "y": 586.0,
+      "name": "table.caption.8",
+      "kind": "table"
+    },
+    {
+      "page": 8,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.8",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 8,
+      "x": 307.0,
+      "y": 606.0,
+      "name": "subsection.6.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 8,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "table.caption.9",
+      "kind": "table"
+    },
+    {
+      "page": 9,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "figure.caption.10",
+      "kind": "figure"
+    },
+    {
+      "page": 9,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.9",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 9,
+      "x": 307.0,
+      "y": 242.0,
+      "name": "section.7",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 72.0,
+      "y": 527.0,
+      "name": "table.caption.11",
+      "kind": "table"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 726.0,
+      "name": "cite.7045531",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 634.0,
+      "name": "cite.Balog:2019:TSE:3331184.3331211",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 198.0,
+      "name": "cite.Luo2019Personalized",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 761.0,
+      "name": "cite.abel2011analyzing",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 581.0,
+      "name": "cite.bando2019twitter",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 517.0,
+      "name": "cite.basile:2017",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 443.0,
+      "name": "cite.bayot:MOD17",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 663.0,
+      "name": "cite.copacrr",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 379.0,
+      "name": "cite.dai2019deeper",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 315.0,
+      "name": "cite.devlin2018bert",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 262.0,
+      "name": "cite.dial7",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 262.0,
+      "name": "cite.fast2016empath",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 199.0,
+      "name": "cite.feng-etal-2019-learning",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 135.0,
+      "name": "cite.flekova:ACL16:long",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 779.0,
+      "name": "cite.guu2020realm",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 599.0,
+      "name": "cite.jing-kambhatla-roukos:2007:ACLMain",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 546.0,
+      "name": "cite.kim-baldwin-2012-extracting",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 504.0,
+      "name": "cite.kratzwald-feuerriegel-2018-adaptive",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 451.0,
+      "name": "cite.krishnamurthy2014location",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 409.0,
+      "name": "cite.larochelle2008zero",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 368.0,
+      "name": "cite.levy2017zero",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 145.0,
+      "name": "cite.mihalcea2004textrank",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 104.0,
+      "name": "cite.nogueira2019passage",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 302.0,
+      "y": 315.0,
+      "name": "cite.pers1",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 67.0,
+      "y": 709.0,
+      "name": "cite.zero-shot15",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.10",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 10,
+      "x": 72.0,
+      "y": 782.0,
+      "name": "section*.12",
+      "kind": "section"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 599.0,
+      "name": "cite.Rao:2010",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 546.0,
+      "name": "cite.Ratner_2017",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 493.0,
+      "name": "cite.Robertson:2009:PRF:1704809.1704810",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 357.0,
+      "name": "cite.Yen:2019:PKB:3331184.3331209",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 304.0,
+      "name": "cite.Zeng:2019:ADO:3289600.3291038",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 779.0,
+      "name": "cite.palatucci2009zero",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 726.0,
+      "name": "cite.pasupat2014zero",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 663.0,
+      "name": "cite.pietro:ACL15",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 451.0,
+      "name": "cite.robertson1995okapi",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 399.0,
+      "name": "cite.rose2010automatic",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 346.0,
+      "name": "cite.sanh2019distilbert",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 293.0,
+      "name": "cite.sutton2000policy",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 67.0,
+      "y": 229.0,
+      "name": "cite.tigunova:ham:2019",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 779.0,
+      "name": "cite.van2017reply",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 707.0,
+      "name": "cite.wang2018r",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 643.0,
+      "name": "cite.wang2019survey",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 579.0,
+      "name": "cite.welch2019look",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 515.0,
+      "name": "cite.wu-etal-2010-automatic-generation",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 473.0,
+      "name": "cite.xiong2017end",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 421.0,
+      "name": "cite.yazdani2015model",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 198.0,
+      "name": "cite.zhang-etal-2016-keyphrase",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 302.0,
+      "y": 251.0,
+      "name": "cite.zhang2019integrating",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.11",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 12,
+      "x": 72.0,
+      "y": 759.0,
+      "name": "appendix.A",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.12",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 12,
+      "x": 72.0,
+      "y": 782.0,
+      "name": "section*.13",
+      "kind": "section"
+    },
+    {
+      "page": 12,
+      "x": 72.0,
+      "y": 623.0,
+      "name": "subsection.A.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 13,
+      "x": 72.0,
+      "y": 387.0,
+      "name": "appendix.B",
+      "kind": "other"
+    },
+    {
+      "page": 13,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.13",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 13,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "table.caption.14",
+      "kind": "table"
+    },
+    {
+      "page": 13,
+      "x": 307.0,
+      "y": 786.0,
+      "name": "table.caption.15",
+      "kind": "table"
+    },
+    {
+      "page": 13,
+      "x": 307.0,
+      "y": 324.0,
+      "name": "table.caption.16",
+      "kind": "table"
+    },
+    {
+      "page": 14,
+      "x": 117.0,
+      "y": 785.0,
+      "name": "page.14",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 14,
+      "x": 72.0,
+      "y": 786.0,
+      "name": "table.caption.17",
+      "kind": "table"
+    },
+    {
+      "page": 14,
+      "x": 72.0,
+      "y": 697.0,
+      "name": "table.caption.18",
+      "kind": "table"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "CQYHIE+NimbusRomNo9L-MediItal",
@@ -357,7 +1457,88 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 3,
+      "x0": 331.14,
+      "y0": 62.81,
+      "x1": 498.95,
+      "y1": 263.43,
+      "w_pt": 167.81,
+      "h_pt": 200.62,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 358,
+      "height_px": 428,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 154,
+      "y_ppi": 154,
+      "size_bytes": 22323,
+      "object_id": "264 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 5,
+      "x0": 72.0,
+      "y0": 156.01,
+      "x1": 289.7,
+      "y1": 188.61,
+      "w_pt": 217.7,
+      "h_pt": 32.6,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 561,
+      "height_px": 84,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 186,
+      "y_ppi": 186,
+      "size_bytes": 69,
+      "object_id": "193 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 9,
+      "x0": 315.08,
+      "y0": 62.81,
+      "x1": 504.7,
+      "y1": 256.12,
+      "w_pt": 189.62,
+      "h_pt": 193.31,
+      "name": "X0",
+      "imagemask": false,
+      "width_px": 823,
+      "height_px": 839,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 312,
+      "y_ppi": 312,
+      "size_bytes": 106496,
+      "object_id": "111 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 9,
+      "x0": 90.17,
+      "y0": 62.9,
+      "x1": 279.68,
+      "y1": 256.03,
+      "w_pt": 189.52,
+      "h_pt": 193.13,
+      "name": "X0",
+      "imagemask": false,
+      "width_px": 839,
+      "height_px": 855,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 319,
+      "y_ppi": 319,
+      "size_bytes": 114688,
+      "object_id": "112 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -490,6 +1671,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.9,
       "detail": "275 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-06T00:39:27Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 100.3,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-06T00:39:27Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 228.3,
+      "detail": "16 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-06T00:39:28Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 9.5,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-06T00:39:28Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 2.4,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-06T00:39:28Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 54.7,
+      "detail": "9 external urls"
+    },
+    {
+      "ts": "2026-08-06T00:39:28Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 71.9,
+      "detail": "103 dests across 7 kinds"
+    },
+    {
+      "ts": "2026-08-06T00:39:34Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 5744.8,
+      "detail": "4 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {

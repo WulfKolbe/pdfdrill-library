@@ -97,10 +97,10 @@
       }
     ],
     "bibkey": "P10-1087",
-    "model_path": "P10-1087.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
-      "Footnote": 1,
+      "Footnote": 2,
       "Table": 2,
       "TableRow": 7,
       "TableCell": 20,
@@ -111,13 +111,21 @@
       "ListItem": 17,
       "Equation": 8,
       "Formula": 179,
-      "Paragraph": 58,
+      "Paragraph": 56,
       "Document": 1
     },
     "model_equations_with_cdn": 8,
-    "tiddlers_path": "P10-1087.pdf.drill/P10-1087.tiddlers.json",
-    "tiddlers_count": 348,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_path": "P10-1087.tiddlers.json",
+    "tiddlers_count": 347,
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -484,7 +492,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 39.6,
       "detail": "19 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-05T22:32:19Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 313.9,
+      "detail": "341 objects, 8 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:32:19Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.9,
+      "detail": "347 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/P10-1087/P10-1087.lines.json": "sha256:7d999876cd4096b8364bb6b96a56be814f878ee4e71b986a868818e0f88a602b"
+      },
+      "params_hash": "sha256:6b4b5168cc7ad08af9d7907268533d6b2748047109598b9ee16ad997670afcdb",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:32:19Z",
+      "provenance": "mathpix"
+    }
+  }
 }

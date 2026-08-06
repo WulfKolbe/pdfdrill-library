@@ -75,21 +75,29 @@
       }
     ],
     "bibkey": "EGICF12-EMITC2_031",
-    "model_path": "EGICF12-EMITC2_031.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
-      "Footnote": 4,
+      "Footnote": 10,
       "Diagram": 2,
       "Section": 10,
       "ListItem": 1,
       "Formula": 3,
-      "Paragraph": 32,
+      "Paragraph": 26,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "tiddlers_path": "EGICF12-EMITC2_031.pdf.drill/EGICF12-EMITC2_031.tiddlers.json",
+    "tiddlers_path": "EGICF12-EMITC2_031.tiddlers.json",
     "tiddlers_count": 80,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -318,7 +326,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 30.4,
       "detail": "8 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-05T19:55:03Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 136.6,
+      "detail": "63 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T19:55:03Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.1,
+      "detail": "80 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/EGICF12-EMITC2_031/EGICF12-EMITC2_031.lines.json": "sha256:ebdfca1e0c1fff9eb1a148aad8a6000e1fee197ed7a3b426bf14f34c670fe099"
+      },
+      "params_hash": "sha256:27eedeafa3d8e6f48f6d64bec2051623024356daf87ee15f1f7e863efe3d1f8e",
+      "algo": "sha256",
+      "ts": "2026-08-05T19:55:03Z",
+      "provenance": "mathpix"
+    }
+  }
 }

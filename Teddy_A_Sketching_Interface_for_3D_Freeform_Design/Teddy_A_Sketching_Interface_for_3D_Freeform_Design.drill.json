@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -56,7 +59,33 @@
       "Helvetica"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Teddy_A_Sketching_Interface_for_3D_Freeform_Design",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 9,
+      "Citation": 4,
+      "ListItem": 53,
+      "Paragraph": 9,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 31,
+    "bibliography_with_year": 31,
+    "bibliography_numeric_citations": 39,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 39,
+    "tiddlers_path": "Teddy_A_Sketching_Interface_for_3D_Freeform_Design.tiddlers.json",
+    "tiddlers_count": 122,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -331,6 +360,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 42.0,
       "detail": "16 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T23:59:17Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 57.3,
+      "detail": "76 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:59:17Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "31 entries, 39+0 cites detected, 39 linked"
+    },
+    {
+      "ts": "2026-08-05T23:59:17Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.5,
+      "detail": "122 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Teddy_A_Sketching_Interface_for_3D_Freeform_Design/Teddy_A_Sketching_Interface_for_3D_Freeform_Design.lines.json": "sha256:44f108073b9d1ddb478c77dc27927630a398e3684af01cee571ad6fc2cbdcad6"
+      },
+      "params_hash": "sha256:d04ecf42e85ea5888bcd7d59e3aab9686e1e97f6c8b8b0de95530c5947923d7a",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:59:17Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

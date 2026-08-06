@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 3,
@@ -43,7 +45,26 @@
       "AAAAAF+TimesNewRomanPS-ItalicMT"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Money",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 3,
+      "Paragraph": 3,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Money.tiddlers.json",
+    "tiddlers_count": 23,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -164,6 +185,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 13.8,
       "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:16:07Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 18.4,
+      "detail": "7 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:16:07Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.2,
+      "detail": "23 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Money/Money.lines.json": "sha256:624ad81b899c9ef7ece0419a9edce8aea68329e23ecf35e9e89f4d416406138b"
+      },
+      "params_hash": "sha256:eb64ceb681c94ac2fbf04f39b38319f3d43172e5b953cf696c52d43f4727d9d4",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:16:07Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

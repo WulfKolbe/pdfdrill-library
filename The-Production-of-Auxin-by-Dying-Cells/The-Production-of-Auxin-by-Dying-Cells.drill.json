@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -49,7 +51,27 @@
       "ORCYBL+ArialUnicodeMS"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "The-Production-of-Auxin-by-Dying-Cells",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 13,
+      "ListItem": 6,
+      "Paragraph": 13,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "The-Production-of-Auxin-by-Dying-Cells.tiddlers.json",
+    "tiddlers_count": 49,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -240,6 +262,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 28.3,
       "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T00:20:59Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 77.7,
+      "detail": "33 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:20:59Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.2,
+      "detail": "49 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/The-Production-of-Auxin-by-Dying-Cells/The-Production-of-Auxin-by-Dying-Cells.lines.json": "sha256:9f9d53bb703418ad1d883730718cc3a7c461f20d53ca41a757ad1e18461f302d"
+      },
+      "params_hash": "sha256:8f1541e256a0b29d66c9d3694186a50b05444ff71acf90725dcb36bb16b62daa",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:20:59Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -45,7 +47,27 @@
       "Helvetica-Bold"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "SMARTFOXUmschaltrelais3-Wechsler16A",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "ListItem": 2,
+      "Paragraph": 2,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "SMARTFOXUmschaltrelais3-Wechsler16A.tiddlers.json",
+    "tiddlers_count": 23,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -124,6 +146,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 52.5,
       "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T23:15:22Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 12.0,
+      "detail": "7 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:15:22Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.1,
+      "detail": "23 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/SMARTFOXUmschaltrelais3-Wechsler16A/SMARTFOXUmschaltrelais3-Wechsler16A.lines.json": "sha256:2cea462b1bbdddc8db39cd0de59d0d0da38902ebc69f40d121682cdc7abbbc56"
+      },
+      "params_hash": "sha256:5eb01b09306db4d8b59cd04056f4049f7e241686af4cb1257c4cbaa4fc3e4a79",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:15:22Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

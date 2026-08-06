@@ -5,7 +5,9 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "mathpix_pdf_id": "5872ded0-3d0a-4f92-a3d6-74c02dd1544e",
@@ -28,10 +30,10 @@
       }
     ],
     "bibkey": "MathBert_paper-03",
-    "model_path": "MathBert_paper-03.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 11,
-      "Footnote": 2,
+      "Footnote": 5,
       "Citation": 1,
       "Table": 4,
       "TableRow": 38,
@@ -42,7 +44,7 @@
       "Picture": 1,
       "ListItem": 12,
       "Formula": 41,
-      "Paragraph": 32,
+      "Paragraph": 29,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
@@ -114,7 +116,22 @@
       "BGDXOB+MSAM10",
       "CUPNPY+CMMI7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "bibliography_entries": 23,
+    "bibliography_with_year": 23,
+    "bibliography_numeric_citations": 28,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 28,
+    "tiddlers_path": "MathBert_paper-03.tiddlers.json",
+    "tiddlers_count": 163,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -475,7 +492,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 38.7,
       "detail": "21 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-05T22:02:07Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 127.4,
+      "detail": "222 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:02:07Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "23 entries, 28+1 cites detected, 28 linked"
+    },
+    {
+      "ts": "2026-08-05T22:02:07Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.9,
+      "detail": "163 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/MathBert_paper-03/MathBert_paper-03.lines.json": "sha256:316a8296226faf7b18295b13fbcc62db42059a07e2ec7d3d15008d801d164f8f"
+      },
+      "params_hash": "sha256:1c6dafd9661ed0e426cb41927aa5ae79510c027d0ceaec001770d97489ecb921",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:02:07Z",
+      "provenance": "mathpix"
+    }
+  }
 }

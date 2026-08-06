@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -43,7 +45,27 @@
       "AAAAAC+LiberationSerif-Italic"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Coding NestFlow_ Fluent Box-Scoped JavaScript and Wasm_trial",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 18,
+      "ListItem": 2,
+      "Paragraph": 18,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Coding NestFlow_ Fluent Box-Scoped JavaScript and Wasm_trial.tiddlers.json",
+    "tiddlers_count": 55,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -152,6 +174,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 13.3,
       "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T06:51:03Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 51.1,
+      "detail": "39 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:51:03Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.0,
+      "detail": "55 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Coding NestFlow_ Fluent Box-Scoped JavaScript and Wasm_trial/Coding NestFlow_ Fluent Box-Scoped JavaScript and Wasm_trial.lines.json": "sha256:893861b3c243218310c784413b27c31b31417e82e7efe60d8688b8f4667eb249"
+      },
+      "params_hash": "sha256:87a59556031db9f731f593281bdd52eff9f26eb1fb4154d5d3704d6a0cd72a83",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:51:03Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

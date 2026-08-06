@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -43,7 +45,27 @@
       "Arial-BoldMT"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "Entwurf Syntrometrie",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "ListItem": 308,
+      "Paragraph": 10,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Entwurf Syntrometrie.tiddlers.json",
+    "tiddlers_count": 345,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -138,6 +160,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 23.5,
       "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T20:20:33Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 45.9,
+      "detail": "329 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T20:20:33Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.2,
+      "detail": "345 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Entwurf Syntrometrie/Entwurf Syntrometrie.lines.json": "sha256:e885abf4e7bed73f562c56aeb34b0607e106a1b77e9f805e8a1dfb3c3c8a45e5"
+      },
+      "params_hash": "sha256:4aba7bdf042d007844792d58ae1b82fab74bd3193cff485a2932fe32708fb72f",
+      "algo": "sha256",
+      "ts": "2026-08-05T20:20:33Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

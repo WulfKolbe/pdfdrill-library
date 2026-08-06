@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -51,7 +55,33 @@
     "math_fonts": [
       "EIOCMB+SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "E.-Die-Massenformel-nach-Burkhard-Heim-_1982_-v23-OP",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 11,
+      "Citation": 2,
+      "ListItem": 2,
+      "Paragraph": 11,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 15 unmapped private-use character(s) remain (U+F6D9×11, U+F8E6×4) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 0,
+    "tiddlers_path": "E.-Die-Massenformel-nach-Burkhard-Heim-_1982_-v23-OP.tiddlers.json",
+    "tiddlers_count": 44,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -230,6 +260,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 14.2,
       "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-05T19:54:42Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 36.5,
+      "detail": "27 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T19:54:42Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+1 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-05T19:54:42Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.1,
+      "detail": "44 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/E.-Die-Massenformel-nach-Burkhard-Heim-_1982_-v23-OP/E.-Die-Massenformel-nach-Burkhard-Heim-_1982_-v23-OP.lines.json": "sha256:62b587c03080956d438bd570463b688c8e254fc96c85c6161c1bb98285b44ac7"
+      },
+      "params_hash": "sha256:20544f522d3aeca6f7ee983d3168752c8e9d5eb28ac4cabb82b3c120e9d42025",
+      "algo": "sha256",
+      "ts": "2026-08-05T19:54:42Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

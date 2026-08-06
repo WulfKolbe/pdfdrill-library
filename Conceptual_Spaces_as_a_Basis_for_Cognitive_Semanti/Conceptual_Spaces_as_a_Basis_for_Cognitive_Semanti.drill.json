@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -46,7 +48,27 @@
     "math_fonts": [
       "Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Conceptual_Spaces_as_a_Basis_for_Cognitive_Semanti",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 16,
+      "ListItem": 12,
+      "Paragraph": 16,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Conceptual_Spaces_as_a_Basis_for_Cognitive_Semanti.tiddlers.json",
+    "tiddlers_count": 61,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -197,6 +219,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 31.3,
       "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T06:53:56Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 66.0,
+      "detail": "45 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T06:53:56Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.3,
+      "detail": "61 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Conceptual_Spaces_as_a_Basis_for_Cognitive_Semanti/Conceptual_Spaces_as_a_Basis_for_Cognitive_Semanti.lines.json": "sha256:818aa6a276cb318abeb336fc4d7f259eef6e8a124921f95b027bf0c4d877d4d7"
+      },
+      "params_hash": "sha256:c43f50eda52e634856ec4fbd120e82e5614f0b97964754dc4e810d5ce8c1bae5",
+      "algo": "sha256",
+      "ts": "2026-08-05T06:53:56Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

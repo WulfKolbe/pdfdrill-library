@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -51,7 +55,33 @@
       "Symbol",
       "Symbol,Italic"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Heims_Mass_Formula_1982",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "Citation": 1,
+      "ListItem": 6,
+      "Paragraph": 10,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "Heims_Mass_Formula_1982.tiddlers.json",
+    "tiddlers_count": 44,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -230,6 +260,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 42.4,
       "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-05T21:13:54Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 36.3,
+      "detail": "28 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T21:13:54Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-05T21:13:54Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.8,
+      "detail": "44 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Heims_Mass_Formula_1982/Heims_Mass_Formula_1982.lines.json": "sha256:016915e3e75d82d6a94de66b20f948f5ea6e786b8e65c0ec5f6dfed84e12d80f"
+      },
+      "params_hash": "sha256:52da735e056646f89c43998a0efa983538cc99926c12886d6b66f17091572927",
+      "algo": "sha256",
+      "ts": "2026-08-05T21:13:54Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

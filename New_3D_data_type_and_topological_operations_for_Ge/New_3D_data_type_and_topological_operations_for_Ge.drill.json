@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 14,
@@ -55,7 +57,27 @@
     "math_fonts": [
       "Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "New_3D_data_type_and_topological_operations_for_Ge",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 14,
+      "ListItem": 5,
+      "Paragraph": 14,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "New_3D_data_type_and_topological_operations_for_Ge.tiddlers.json",
+    "tiddlers_count": 50,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -274,6 +296,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 40.6,
       "detail": "12 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T22:21:28Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 41.1,
+      "detail": "34 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T22:21:28Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.7,
+      "detail": "50 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/New_3D_data_type_and_topological_operations_for_Ge/New_3D_data_type_and_topological_operations_for_Ge.lines.json": "sha256:9c1c8b1a600ba4629c59304c6e8addcdea747b19e1afb436e58ff1b5a6547c2d"
+      },
+      "params_hash": "sha256:6050b6ebfff7cc38a72d1ce57805a44eb3ecccb12067074099c3142262e8ad5d",
+      "algo": "sha256",
+      "ts": "2026-08-05T22:21:28Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

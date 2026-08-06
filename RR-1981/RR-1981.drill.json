@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -70,7 +73,34 @@
       "Times-Roman"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "RR-1981",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 18,
+      "Citation": 1,
+      "ListItem": 10,
+      "Formula": 19,
+      "Paragraph": 17,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "RR-1981.tiddlers.json",
+    "tiddlers_count": 99,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -527,6 +557,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 57.5,
       "detail": "29 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-05T23:07:36Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 172.4,
+      "detail": "66 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-05T23:07:36Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-05T23:07:36Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 20.3,
+      "detail": "99 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/RR-1981/RR-1981.lines.json": "sha256:836b19d78cda9db17c199cbc0ca20411ca2a09c585427e73318b65bb79fe8a1f"
+      },
+      "params_hash": "sha256:0adf1450f516a6f01febc1b23c5f6cfd00570844e97c9bb0670071ac57ec6b68",
+      "algo": "sha256",
+      "ts": "2026-08-05T23:07:36Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }
