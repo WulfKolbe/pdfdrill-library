@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 36,
@@ -74,7 +77,28 @@
       "ZOMLLN+CMMI10",
       "SPWZYY+MSBM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "dissertation-kleffner",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 36,
+      "ListItem": 12,
+      "Equation": 181,
+      "Paragraph": 193,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "dissertation-kleffner.tiddlers.json",
+    "tiddlers_count": 439,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -447,6 +471,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 78.5,
       "detail": "23 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-06T01:11:06Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 151.0,
+      "detail": "423 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:11:06Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.3,
+      "detail": "439 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/dissertation-kleffner/dissertation-kleffner.lines.json": "sha256:1ff08e09033ffe25cdd2b1f0aef793d825f076e55c4b7b748a5b8698a5ca9865"
+      },
+      "params_hash": "sha256:a217c97d674364e180a641ab0edbcc451b74f648876f856c28d761bb77b8df6c",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:11:06Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

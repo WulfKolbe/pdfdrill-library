@@ -6,7 +6,11 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 17,
@@ -112,9 +116,37 @@
     "bibliography_cites": 38,
     "tiddlers_path": "2107.09191.tiddlers.json",
     "tiddlers_count": 516,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.21",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2021-07-21T00:21:55Z",
+    "mod_date": "2021-07-21T00:21:55Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 17,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 532643,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+      "Subject": ""
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -442,7 +474,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 9,
+      "x0": 192.61,
+      "y0": 116.05,
+      "x1": 419.37,
+      "y1": 259.89,
+      "w_pt": 226.76,
+      "h_pt": 143.84,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 1083,
+      "height_px": 687,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 344,
+      "y_ppi": 344,
+      "size_bytes": 113664,
+      "object_id": "207 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 15,
+      "x0": 192.61,
+      "y0": 116.05,
+      "x1": 419.39,
+      "y1": 260.3,
+      "w_pt": 226.77,
+      "h_pt": 144.25,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 720,
+      "height_px": 458,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 229,
+      "y_ppi": 229,
+      "size_bytes": 7896,
+      "object_id": "300 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -525,6 +598,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.2,
       "detail": "516 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-07T04:27:00Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 83.2,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-07T04:27:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 190.5,
+      "detail": "23 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-07T04:27:01Z",
+      "node": "links",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 291.7,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-07T04:27:05Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4491.1,
+      "detail": "2 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {

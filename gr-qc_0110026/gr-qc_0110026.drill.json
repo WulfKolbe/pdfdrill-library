@@ -15,16 +15,16 @@
     "bibkey": "gr-qc_0110026",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 28,
-      "Citation": 47,
-      "ListItem": 20,
-      "Paragraph": 28,
-      "Document": 1,
+      "Paragraph": 181,
+      "Abstract": 1,
+      "Section": 20,
+      "Formula": 232,
       "Equation": 60,
-      "Table": 2
+      "Table": 2,
+      "Citation": 49
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -45,7 +45,7 @@
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 57,
     "tiddlers_path": "gr-qc_0110026.tiddlers.json",
-    "tiddlers_count": 203,
+    "tiddlers_count": 576,
     "tiddlers_svg_mode": "inline",
     "pages": 28,
     "bytes": 321486,
@@ -128,7 +128,16 @@
       "KPVOCO+CMSY8",
       "Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 28,
+      "placed": 119,
+      "regions": 119,
+      "sections": 20,
+      "children": 486,
+      "numbered": 20,
+      "roots": 1
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -639,18 +648,32 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 78.4,
       "detail": "30 fonts, 15 math"
+    },
+    {
+      "ts": "2026-08-06T01:13:26Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "545 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-06T01:13:26Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.3,
+      "detail": "576 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/gr-qc_0110026/gr-qc_0110026.lines.json": "sha256:f2224cd5ea4e7f6285acdab83ce63539d5c28875510ce90441284a0355bdc522"
-      },
+      "inputs": {},
       "params_hash": "sha256:32894a937c3220112aa5780c9f27ea045c80240cbf7dd1af74e87af935992b8f",
       "algo": "sha256",
-      "ts": "2026-07-30T14:04:27Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-06T01:13:26Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

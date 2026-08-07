@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -67,7 +70,28 @@
       "SCBWSU+CMMI9",
       "YLVLXT+CMMI6"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "d30ad510-a0c6-4c48-9b1f-766f595b5a97_Uebungsblatt 01",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "ListItem": 10,
+      "Equation": 8,
+      "Paragraph": 10,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 9 unmapped private-use character(s) remain (U+F8F1×1, U+F8F2×1, U+F8F3×1, U+F8F4×6) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "d30ad510-a0c6-4c48-9b1f-766f595b5a97_Uebungsblatt 01.tiddlers.json",
+    "tiddlers_count": 47,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -342,6 +366,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 19.6,
       "detail": "16 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-06T01:10:27Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 28.5,
+      "detail": "31 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:10:27Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.7,
+      "detail": "47 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/d30ad510-a0c6-4c48-9b1f-766f595b5a97_Uebungsblatt 01/d30ad510-a0c6-4c48-9b1f-766f595b5a97_Uebungsblatt 01.lines.json": "sha256:10733d0edaf477da0d4a383f8352e1cce750644ddeaa61d26b324c4cfc0a4419"
+      },
+      "params_hash": "sha256:38eee1e2f70d91026c2270f1662635b992f4e4027340ad3d0b17191b112594df",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:10:27Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

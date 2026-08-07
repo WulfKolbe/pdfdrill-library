@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -68,7 +72,34 @@
       "TONINC+MSAM10",
       "QSPPZE+MSAM7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "qft2_Exercise2-6_solutions",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 5,
+      "Citation": 3,
+      "ListItem": 9,
+      "Equation": 145,
+      "Paragraph": 72,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 90 unmapped private-use character(s) remain (U+F8EB×15, U+F8EC×15, U+F8ED×15, U+F8F6×15, U+F8F7×15, U+F8F8×15) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "qft2_Exercise2-6_solutions.tiddlers.json",
+    "tiddlers_count": 249,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -385,6 +416,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 32.2,
       "detail": "19 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-06T01:33:06Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 60.1,
+      "detail": "235 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:33:06Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-06T01:33:06Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.8,
+      "detail": "249 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/qft2_Exercise2-6_solutions/qft2_Exercise2-6_solutions.lines.json": "sha256:372260f74df60478518540dfafbbacfd22257aa91173977a2f418ad6d0b10a98"
+      },
+      "params_hash": "sha256:d13f3d3eb305917bb98cbc9976338fb1d745a077dc0049cf38c4202f5e6ccf0e",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:33:06Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

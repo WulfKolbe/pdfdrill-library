@@ -88,7 +88,7 @@
       }
     ],
     "bibkey": "schenkel",
-    "model_path": "schenkel.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
       "Table": 5,
@@ -101,13 +101,22 @@
       "ListItem": 8,
       "Equation": 8,
       "Formula": 62,
-      "Paragraph": 37,
-      "Document": 1
+      "Paragraph": 35,
+      "Document": 1,
+      "Footnote": 1
     },
     "model_equations_with_cdn": 8,
-    "tiddlers_path": "schenkel.pdf.drill/schenkel.tiddlers.json",
-    "tiddlers_count": 163,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_path": "schenkel.tiddlers.json",
+    "tiddlers_count": 162,
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -418,7 +427,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 31.0,
       "detail": "15 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-06T02:06:01Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 126.2,
+      "detail": "213 objects, 8 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:06:01Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.5,
+      "detail": "162 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/schenkel/schenkel.lines.json": "sha256:0bfc9553885ae545c263c3f1dc5ae559f0069c1f0802f66cedb2b445aff4108a"
+      },
+      "params_hash": "sha256:b438f20b89c17a0986be78a9ef6e65428c9506a07a8caad914dce07206705bb3",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:06:01Z",
+      "provenance": "mathpix"
+    }
+  }
 }

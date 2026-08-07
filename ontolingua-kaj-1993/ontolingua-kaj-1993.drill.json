@@ -6,7 +6,8 @@
     "MODEL_BUILT",
     "SIZE_KNOWN",
     "MD_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "mathpix_pdf_id": "d0ba46d0-606d-4ddc-b624-0c61c562cb79",
@@ -99,7 +100,12 @@
     "math_fonts": [
       "JEEKDH+SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "tiddlers_path": "ontolingua-kaj-1993.tiddlers.json",
+    "tiddlers_count": 167,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -363,6 +369,22 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 36.1,
       "detail": "13 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:30:52Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 279.7,
+      "detail": "151 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:30:52Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.3,
+      "detail": "167 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
@@ -373,7 +395,7 @@
       },
       "params_hash": "sha256:daa6bfe7be735e2cbd3f9fd5a20baeba4f67a78bc4e45d2fe4d2494a1c0e4eb8",
       "algo": "sha256",
-      "ts": "2026-07-26T06:44:24Z",
+      "ts": "2026-08-06T01:30:52Z",
       "provenance": "mathpix"
     }
   }

@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -38,7 +41,42 @@
     "needs_ocr": true,
     "fonts": [],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "ocr_lang": "eng",
+    "ocr_lang_effective": "eng",
+    "ocr_pages": 2,
+    "ocr_lines": 0,
+    "ocr_units": "pt",
+    "ocr_render_dpi": 400,
+    "ocr_type_counts": {
+      "section_header": 0,
+      "page_info": 0,
+      "diagram": 0,
+      "absorbed_lines": 0,
+      "table": 0,
+      "equation": 0,
+      "equation_lines_merged": 0,
+      "toc_rows": 0,
+      "barcodes": 0
+    },
+    "bibkey": "locff73949767c_slides",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "tesseract",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "tesseract"
+    },
+    "tiddlers_path": "locff73949767c_slides.tiddlers.json",
+    "tiddlers_count": 19,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -88,6 +126,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 12.1,
       "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:28:32Z",
+      "node": "ocr",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "OCR_BUILT",
+      "cost_ms": 32024.4,
+      "detail": "2 pages, 0 lines, lang=eng"
+    },
+    {
+      "ts": "2026-08-06T01:28:33Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,OCR_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 12.4,
+      "detail": "3 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:28:33Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 0.6,
+      "detail": "19 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/locff73949767c_slides/locff73949767c_slides.lines.json": "sha256:522efcff7de9affb3dd0e219ab7abbd801a25d2f9a1fe92cfc4bd35fe926633d"
+      },
+      "params_hash": "sha256:72b833570eb9569e8cd9aa82149c26f3061e8898ee4a976203ee95e73c65e30a",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:28:33Z",
+      "provenance": "tesseract"
+    }
+  }
 }

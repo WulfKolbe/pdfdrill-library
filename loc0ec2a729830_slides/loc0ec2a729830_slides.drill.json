@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -47,7 +49,27 @@
       "PMLWER+GlyphLessFont"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "loc0ec2a729830_slides",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 8,
+      "ListItem": 5,
+      "Paragraph": 8,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "loc0ec2a729830_slides.tiddlers.json",
+    "tiddlers_count": 38,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -210,6 +232,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 22.9,
       "detail": "8 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:24:10Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 16.3,
+      "detail": "22 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:24:10Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.0,
+      "detail": "38 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/loc0ec2a729830_slides/loc0ec2a729830_slides.lines.json": "sha256:0c0be0feeae39486762ba5d5bcadc9a04d806f8433d430ac6e3072357db8f4c9"
+      },
+      "params_hash": "sha256:076e0800f9684029da25ab3e6148ea507146fd616833ffb07da9cf3135a7759a",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:24:10Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

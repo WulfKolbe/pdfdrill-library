@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -46,7 +48,27 @@
       "EIBQSN+CMBX12"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "lenort",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "ListItem": 1,
+      "Paragraph": 1,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "lenort.tiddlers.json",
+    "tiddlers_count": 20,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -139,6 +161,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 12.1,
       "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:23:50Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 12.6,
+      "detail": "4 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:23:50Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.0,
+      "detail": "20 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/lenort/lenort.lines.json": "sha256:8097aa68587c2a80dd1161416ea01c91e92e1372c9f1bb25d2558dcb8c93f20b"
+      },
+      "params_hash": "sha256:8bd5ae926fad68ac52e4697c94f106bdbe301fef00be2f22a2de4f12fe6eab76",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:23:50Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

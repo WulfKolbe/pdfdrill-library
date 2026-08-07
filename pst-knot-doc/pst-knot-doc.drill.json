@@ -5,7 +5,8 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "mathpix_pdf_id": null,
@@ -96,7 +97,12 @@
     "math_fonts": [
       "MQJCKN+CMMI10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "tiddlers_path": "pst-knot-doc.tiddlers.json",
+    "tiddlers_count": 84,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -283,6 +289,22 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 29.1,
       "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-06T01:32:53Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 30.4,
+      "detail": "88 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:32:53Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.6,
+      "detail": "84 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
@@ -293,7 +315,7 @@
       },
       "params_hash": "sha256:3a2538faf6adedafa47a268f5f846e103849f6cd23af07b26798e077b310c1ed",
       "algo": "sha256",
-      "ts": "2026-07-28T11:08:57Z",
+      "ts": "2026-08-06T01:32:53Z",
       "provenance": "mathpix"
     }
   }

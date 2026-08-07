@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 54,
@@ -74,7 +78,34 @@
       "EVLKOX+CMEX8",
       "AKWYLM+MSBM7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "toe",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 54,
+      "Citation": 85,
+      "ListItem": 39,
+      "Equation": 300,
+      "Paragraph": 267,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 8 unmapped private-use character(s) remain (U+F8F1×2, U+F8F2×2, U+F8F3×2, U+F8F4×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 19,
+    "bibliography_with_year": 17,
+    "bibliography_numeric_citations": 8,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 8,
+    "tiddlers_path": "toe.tiddlers.json",
+    "tiddlers_count": 737,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -447,6 +478,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 154.8,
       "detail": "23 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-06T02:08:45Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 315.3,
+      "detail": "746 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:08:45Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "19 entries, 8+0 cites detected, 8 linked"
+    },
+    {
+      "ts": "2026-08-06T02:08:45Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 30.0,
+      "detail": "737 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/toe/toe.lines.json": "sha256:8b3788cb4c48da38efce4935c7a4fa19fbd150302e7859934425ea085452cd2c"
+      },
+      "params_hash": "sha256:59c0a82ab85615531dfd86044a7f7e3dc78685f92ad5118004195498c20c863b",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:08:45Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

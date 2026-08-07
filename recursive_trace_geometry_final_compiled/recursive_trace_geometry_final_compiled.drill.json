@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -67,7 +70,28 @@
       "ANTVSN+LMMathSymbols8-Regular",
       "HPFRMX+LMMathItalic6-Regular"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "recursive_trace_geometry_final_compiled",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 13,
+      "ListItem": 2,
+      "Equation": 14,
+      "Paragraph": 27,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 6 unmapped private-use character(s) remain (U+F8EB×1, U+F8EC×1, U+F8ED×1, U+F8F6×1, U+F8F7×1, U+F8F8×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "recursive_trace_geometry_final_compiled.tiddlers.json",
+    "tiddlers_count": 73,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -342,6 +366,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 40.1,
       "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-06T01:34:17Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 35.4,
+      "detail": "57 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:34:17Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.1,
+      "detail": "73 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/recursive_trace_geometry_final_compiled/recursive_trace_geometry_final_compiled.lines.json": "sha256:2aaa87ffb3d628db44f93a99cc7b29fddd9535c4908aa530c8c8fa15433b7dfe"
+      },
+      "params_hash": "sha256:1aa017d07ea562f7213224a97c1323de7d0c56aaf56cac46bfb5cf9859ba885d",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:34:17Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -114,20 +114,20 @@
       }
     ],
     "bibkey": "nguyenc14",
-    "model_path": "nguyenc14.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "Footnote": 2,
+      "Footnote": 5,
       "Citation": 5,
       "Sidenote": 18,
       "Abstract": 1,
       "Diagram": 6,
-      "Section": 15,
+      "Section": 18,
       "Picture": 1,
       "ListItem": 10,
       "Equation": 11,
       "Formula": 161,
-      "Paragraph": 46,
+      "Paragraph": 43,
       "Document": 1
     },
     "model_equations_with_cdn": 11,
@@ -136,9 +136,17 @@
     "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 26,
     "bibliography_cites": 25,
-    "tiddlers_path": "nguyenc14.pdf.drill/nguyenc14.tiddlers.json",
-    "tiddlers_count": 335,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_path": "nguyenc14.tiddlers.json",
+    "tiddlers_count": 311,
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -793,7 +801,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 38.8,
       "detail": "39 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-06T01:30:36Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 256.8,
+      "detail": "289 objects, 11 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:30:37Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.4,
+      "detail": "311 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/nguyenc14/nguyenc14.lines.json": "sha256:66c2f8bc55ac3a939e05e387712c4a3eb54fc8238744b35c2f6828069100bc5f"
+      },
+      "params_hash": "sha256:959efd2db3c7346de2ce0e310b9d03d3b50e94302cf679270e516a6753cdf006",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:30:36Z",
+      "provenance": "mathpix"
+    }
+  }
 }

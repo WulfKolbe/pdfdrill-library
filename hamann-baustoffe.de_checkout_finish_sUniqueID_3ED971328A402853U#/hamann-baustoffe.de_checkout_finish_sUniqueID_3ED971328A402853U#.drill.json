@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -46,7 +48,27 @@
       "CAAAAA+NotoSans-Regular"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "hamann-baustoffe.de_checkout_finish_sUniqueID_3ED971328A402853U#",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "ListItem": 1,
+      "Paragraph": 1,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "hamann-baustoffe.de_checkout_finish_sUniqueID_3ED971328A402853U#.tiddlers.json",
+    "tiddlers_count": 20,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -181,6 +203,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 12.7,
       "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:19:16Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 15.9,
+      "detail": "4 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:19:16Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.2,
+      "detail": "20 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/hamann-baustoffe.de_checkout_finish_sUniqueID_3ED971328A402853U#/hamann-baustoffe.de_checkout_finish_sUniqueID_3ED971328A402853U#.lines.json": "sha256:ebab3207713e59e1605100810436ddfe2d2662054bbb3c6879b45674b327a9d0"
+      },
+      "params_hash": "sha256:485d9b0edfcaaef1b426b66ddbf1feb71383fb3f30261301e7e53612844a10c4",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:19:16Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

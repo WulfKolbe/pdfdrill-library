@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -66,7 +69,28 @@
       "BSEIGZ+CMMI6",
       "MDONPO+MSBM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Uebungsblatt 04",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "ListItem": 10,
+      "Equation": 15,
+      "Paragraph": 10,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Uebungsblatt 04.tiddlers.json",
+    "tiddlers_count": 54,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -327,6 +351,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 16.9,
       "detail": "15 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-06T00:47:09Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 22.9,
+      "detail": "38 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:47:09Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.5,
+      "detail": "54 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Uebungsblatt 04/Uebungsblatt 04.lines.json": "sha256:65a3c4317d6d0ae52595951e1983b168c9b24da77499b758152ff6a984784f5a"
+      },
+      "params_hash": "sha256:ddea191511a13b0c1a5a16ddfd30cfe5272284ee06b212a881d22988bccace8b",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:47:09Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

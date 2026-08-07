@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 57,
@@ -86,7 +89,28 @@
       "NFLIPG+CMMI10",
       "NAXVUL+CMSY10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "tacl-2024-enriched-homotopical-coalgebra",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 57,
+      "ListItem": 29,
+      "Equation": 61,
+      "Paragraph": 96,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "tacl-2024-enriched-homotopical-coalgebra.tiddlers.json",
+    "tiddlers_count": 260,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -585,6 +609,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 61.1,
       "detail": "32 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-06T02:07:10Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 86.2,
+      "detail": "244 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:07:10Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.8,
+      "detail": "260 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/tacl-2024-enriched-homotopical-coalgebra/tacl-2024-enriched-homotopical-coalgebra.lines.json": "sha256:8afcbfe09e10586eb5f878568fbf9a0fcb5c2d49bc055149fc27923e2010ffa5"
+      },
+      "params_hash": "sha256:d0dca2c81186c16844641d946a68710df968844a958ab286551c9cef60715752",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:07:10Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

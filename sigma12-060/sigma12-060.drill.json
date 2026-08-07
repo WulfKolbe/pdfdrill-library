@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 15,
@@ -80,7 +83,28 @@
       "PCKNJY+CMMI5",
       "HBIEHQ+CMSY6"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "sigma12-060",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 15,
+      "ListItem": 1,
+      "Equation": 120,
+      "Paragraph": 92,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 140 unmapped private-use character(s) remain (U+F8EB×16, U+F8EC×33, U+F8ED×16, U+F8EE×1, U+F8EF×3, U+F8F0×1, U+F8F6×16, U+F8F7×33, U+F8F8×16, U+F8F9×1, U+F8FA×3, U+F8FB×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "sigma12-060.tiddlers.json",
+    "tiddlers_count": 245,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -467,6 +491,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 51.5,
       "detail": "24 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-06T02:06:14Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 93.2,
+      "detail": "229 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:06:14Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.1,
+      "detail": "245 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/sigma12-060/sigma12-060.lines.json": "sha256:125245444086efbee6ff5bd50260d78d800a4c94862cf9f759f01d52bf4fe192"
+      },
+      "params_hash": "sha256:d5488f7823fb4d5ff6cbea4369cd21e6d0039dca4d603ae7d968c21971bce3fe",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:06:14Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

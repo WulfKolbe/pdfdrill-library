@@ -18,17 +18,17 @@
     "model_object_counts": {
       "Page": 18,
       "Citation": 87,
-      "ListItem": 42,
-      "Paragraph": 18,
+      "ListItem": 40,
+      "Equation": 20,
+      "Paragraph": 36,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
     "model_source": "pdfminer-chars",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "math": true,
+      "source": "pdfminer-chars"
     },
     "latex_source": "math-ph_0212032.tgz",
     "latex_macros": 62,
@@ -42,7 +42,7 @@
     "bibliography_authoryear_citations": 13,
     "bibliography_cites": 79,
     "tiddlers_path": "math-ph_0212032.tiddlers.json",
-    "tiddlers_count": 127,
+    "tiddlers_count": 142,
     "tiddlers_svg_mode": "inline",
     "pages": 18,
     "bytes": 213947,
@@ -111,7 +111,9 @@
       "LIIDXL+CMMI7",
       "GHIQPB+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 112 unmapped private-use character(s) remain (U+F8EE×14, U+F8EF×28, U+F8F0×14, U+F8F9×14, U+F8FA×28, U+F8FB×14) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified."
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -524,17 +526,33 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 58.2,
       "detail": "23 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-06T01:29:10Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 73.2,
+      "detail": "202 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:29:10Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.7,
+      "detail": "142 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/math-ph_0212032/math-ph_0212032.lines.json": "sha256:e1760d2326b12d596d331bee272c8c6d99cb4f4fa8fba934cd414e1f37682e0f"
+        "/home/wkolbe/pdfdrill-library/math-ph_0212032/math-ph_0212032.lines.json": "sha256:af963136d01d8b2a8a2b236f03f40da4f0fa078fa886a96d74744cb3715da0a4"
       },
       "params_hash": "sha256:51855eeaa200f76a5ecdea5819097f9632532d6d46d22d73e3a722716081b843",
       "algo": "sha256",
-      "ts": "2026-07-30T14:05:07Z",
+      "ts": "2026-08-06T01:29:10Z",
       "provenance": "pdfminer-chars"
     },
     "LATEX_INGESTED": {

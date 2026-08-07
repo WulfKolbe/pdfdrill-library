@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 15,
@@ -80,7 +83,28 @@
       "EJKTVU+CMEX7",
       "NXVXDT+CMSY6"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "lopez_aaca_2017",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 15,
+      "ListItem": 8,
+      "Equation": 23,
+      "Paragraph": 33,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 26 unmapped private-use character(s) remain (U+F8EB×4, U+F8ED×4, U+F8EE×1, U+F8EF×3, U+F8F0×1, U+F8F6×4, U+F8F8×4, U+F8F9×1, U+F8FA×3, U+F8FB×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "lopez_aaca_2017.tiddlers.json",
+    "tiddlers_count": 96,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -551,6 +575,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 61.8,
       "detail": "30 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-06T01:28:32Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 62.7,
+      "detail": "80 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:28:32Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.9,
+      "detail": "96 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/lopez_aaca_2017/lopez_aaca_2017.lines.json": "sha256:141338264d4c801506efe8634bfe841433d2d35f78259c59aaf57fe155af84a5"
+      },
+      "params_hash": "sha256:4b9c2c34f3451910e05cd2126873e0ce9fc4fcc28ca3988db84242ab0216f05a",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:28:32Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

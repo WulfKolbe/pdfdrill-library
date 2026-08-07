@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -50,7 +53,33 @@
       "MyriadPro-BoldSemiCn"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "s42439-025-00105-x",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 18,
+      "Citation": 4,
+      "ListItem": 1,
+      "Paragraph": 18,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 21,
+    "bibliography_with_year": 19,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 0,
+    "tiddlers_path": "s42439-025-00105-x.tiddlers.json",
+    "tiddlers_count": 80,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -255,6 +284,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 67.2,
       "detail": "11 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:35:52Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 66.7,
+      "detail": "42 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:35:52Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "21 entries, 0+1 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-06T01:35:52Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.2,
+      "detail": "80 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/s42439-025-00105-x/s42439-025-00105-x.lines.json": "sha256:6fbe211d4ec4d85958d177a01781cbe451271c297180ef803599136a89a56a7b"
+      },
+      "params_hash": "sha256:c146eb6b9c289f2f0ee307abec546d47e9c9391ff40fdf8787322094f6743ff0",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:35:52Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

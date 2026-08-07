@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -47,7 +49,26 @@
       "BCDIEE+CenturySchoolbook-Italic"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "letter-to-vp-harris-111324-1",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "Paragraph": 6,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "letter-to-vp-harris-111324-1.tiddlers.json",
+    "tiddlers_count": 29,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -196,6 +217,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 24.3,
       "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:23:52Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 29.7,
+      "detail": "13 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:23:52Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.0,
+      "detail": "29 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/letter-to-vp-harris-111324-1/letter-to-vp-harris-111324-1.lines.json": "sha256:a88770e292086c212ea1c5284d23cafe7b7d812068b58c2f0a73cf94b313c4f1"
+      },
+      "params_hash": "sha256:73b20ff4091c12f96bd5288511ad26722a1e2e33a2fed6bf9382639b38981319",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:23:52Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

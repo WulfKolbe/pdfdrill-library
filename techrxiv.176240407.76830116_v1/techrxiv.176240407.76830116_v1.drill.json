@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 58,
@@ -105,7 +108,29 @@
       "XWIKTT+CMEX10",
       "EQOAJX+CMMI5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "techrxiv.176240407.76830116_v1",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 58,
+      "ListItem": 593,
+      "Equation": 98,
+      "Paragraph": 143,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 5 unmapped private-use character(s) remain (U+F8F1×1, U+F8F2×1, U+F8F3×1, U+F8F4×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars",
+      "merged": "latex"
+    },
+    "tiddlers_path": "techrxiv.176240407.76830116_v1.tiddlers.json",
+    "tiddlers_count": 909,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -772,6 +797,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 189.8,
       "detail": "44 fonts, 17 math"
+    },
+    {
+      "ts": "2026-08-06T02:07:20Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 466.4,
+      "detail": "893 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:07:21Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 28.8,
+      "detail": "909 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/techrxiv.176240407.76830116_v1/techrxiv.176240407.76830116_v1.lines.json": "sha256:95e49b43b8d27cb86a858563b8183d3603a8d9edd333dac2972c253ca1c5e2e1"
+      },
+      "params_hash": "sha256:cf21b68cf46106f3d95b69ffd0a809ae239dbc92a62555ea2bcd7cb70c850829",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:07:20Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -174,20 +174,20 @@
       }
     ],
     "bibkey": "marx19a",
-    "model_path": "marx19a.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
-      "Footnote": 2,
+      "Footnote": 5,
       "Citation": 4,
       "Sidenote": 20,
       "Abstract": 1,
       "Diagram": 5,
-      "Section": 18,
+      "Section": 20,
       "Picture": 2,
       "ListItem": 6,
       "Equation": 19,
       "Formula": 179,
-      "Paragraph": 59,
+      "Paragraph": 56,
       "Document": 1
     },
     "model_equations_with_cdn": 19,
@@ -196,9 +196,17 @@
     "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 27,
     "bibliography_cites": 10,
-    "tiddlers_path": "marx19a.pdf.drill/marx19a.tiddlers.json",
-    "tiddlers_count": 373,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_path": "marx19a.tiddlers.json",
+    "tiddlers_count": 350,
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -1329,7 +1337,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 53.3,
       "detail": "73 fonts, 35 math"
+    },
+    {
+      "ts": "2026-08-06T01:29:07Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 288.3,
+      "detail": "328 objects, 19 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:29:07Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.5,
+      "detail": "350 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/marx19a/marx19a.lines.json": "sha256:a0561204b016af12dbd9cb0cadf717d3e8cae252d800871ec7a5f10896661db2"
+      },
+      "params_hash": "sha256:90191597692cb144aeaa622cd53d44080daf2922e7e8eb6b1d33ce7f75cc796f",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:29:07Z",
+      "provenance": "mathpix"
+    }
+  }
 }

@@ -96,7 +96,7 @@
       }
     ],
     "bibkey": "paper-25",
-    "model_path": "paper-25.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 4,
       "Abstract": 1,
@@ -104,13 +104,22 @@
       "ListItem": 33,
       "Equation": 2,
       "Formula": 34,
-      "Paragraph": 10,
-      "Document": 1
+      "Paragraph": 9,
+      "Document": 1,
+      "Footnote": 1
     },
     "model_equations_with_cdn": 2,
-    "tiddlers_path": "paper-25.pdf.drill/paper-25.tiddlers.json",
+    "tiddlers_path": "paper-25.tiddlers.json",
     "tiddlers_count": 103,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -477,7 +486,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 22.5,
       "detail": "19 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-06T01:31:57Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 92.3,
+      "detail": "86 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:31:57Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.4,
+      "detail": "103 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/paper-25/paper-25.lines.json": "sha256:379476935cc38e120333b9ae9c5376f2c89e2e698ec7230dd0414ab3b5b065f2"
+      },
+      "params_hash": "sha256:1f7a796f96414b49b55804d672e74eac1677dc69d3eea4eab7450625ff160ce2",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:31:57Z",
+      "provenance": "mathpix"
+    }
+  }
 }

@@ -16,14 +16,14 @@
     "bibkey": "hep-th_9411188",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 11,
-      "Citation": 14,
-      "ListItem": 3,
-      "Paragraph": 11,
-      "Document": 1
+      "Paragraph": 55,
+      "Formula": 171,
+      "LtxCommand": 11,
+      "Equation": 34,
+      "Citation": 48
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": false,
@@ -44,7 +44,7 @@
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 47,
     "tiddlers_path": "hep-th_9411188.tiddlers.json",
-    "tiddlers_count": 114,
+    "tiddlers_count": 324,
     "tiddlers_svg_mode": "inline",
     "pages": 11,
     "bytes": 178494,
@@ -122,7 +122,14 @@
       "IOHRTB+EUFM7",
       "WPDHQX+MSBM7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 11,
+      "placed": 23,
+      "regions": 23,
+      "sections": 0,
+      "children": 0
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -734,18 +741,32 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 41.8,
       "detail": "26 fonts, 15 math"
+    },
+    {
+      "ts": "2026-08-06T01:20:40Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,EQBLOBS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "319 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-06T01:20:40Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,EQBLOBS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.5,
+      "detail": "324 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/hep-th_9411188/hep-th_9411188.lines.json": "sha256:000bb67468cbf24b313e058440740a6d0874abbe1764440401f542c8c71719a3"
-      },
+      "inputs": {},
       "params_hash": "sha256:6e1680f0d81451f4e4b5eab95d4e271a543121ea71e30e866a5fe90eea12f534",
       "algo": "sha256",
-      "ts": "2026-07-30T13:07:15Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-06T01:20:40Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

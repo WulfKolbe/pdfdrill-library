@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 23,
@@ -59,7 +63,33 @@
       "JVQUOH+MSBM10",
       "TMHVPV+MSAM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "j.geomphys.2012.02.006",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 23,
+      "Citation": 53,
+      "ListItem": 27,
+      "Paragraph": 23,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 670 unmapped private-use character(s) remain (U+EB68×1, U+ED03×5, U+ED04×5, U+ED08×5, U+ED09×5, U+ED17×6, U+ED18×6, U+ED19×6, U+ED1A×6, U+ED1C×1, U+ED1D×1, U+ED1E×4, U+ED21×1, U+ED22×1, U+ED23×3, U+ED25×2, U+ED29×2, U+ED4A×30, U+ED4D×16, U+ED4E×6, U+ED55×8, U+ED5A×13, U+ED5B×40, U+ED5C×10, U+ED5D×34, U+ED5E×13, U+ED5F×40, U+ED60×10, U+ED61×34, U+ED70×29, U+ED71×2, U+ED79×210, U+ED7A×29, U+F8EB×14, U+F8EC×15, U+F8ED×14, U+F8F6×14, U+F8F7×15, U+F8F8×14) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 38,
+    "bibliography_with_year": 37,
+    "bibliography_numeric_citations": 109,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 109,
+    "tiddlers_path": "j.geomphys.2012.02.006.tiddlers.json",
+    "tiddlers_count": 136,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -292,6 +322,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 49.3,
       "detail": "13 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-06T01:22:01Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 114.4,
+      "detail": "127 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:22:01Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "38 entries, 109+0 cites detected, 109 linked"
+    },
+    {
+      "ts": "2026-08-06T01:22:02Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.1,
+      "detail": "136 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/j.geomphys.2012.02.006/j.geomphys.2012.02.006.lines.json": "sha256:72cf946eeb2bb0d635a10d62a7a1767b0627aa621a6aaea074014f6ec7ae06ac"
+      },
+      "params_hash": "sha256:5d9967edcbaa31ef9d8e4df305c4b48c153be2267a12aa217a2878faee6268c0",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:22:01Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

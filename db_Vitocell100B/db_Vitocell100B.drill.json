@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -56,7 +58,26 @@
     "math_fonts": [
       "GAMIKE+Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "db_Vitocell100B",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "Paragraph": 10,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "db_Vitocell100B.tiddlers.json",
+    "tiddlers_count": 37,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -303,6 +324,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 22.0,
       "detail": "14 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:10:47Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 42.9,
+      "detail": "21 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:10:47Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.1,
+      "detail": "37 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/db_Vitocell100B/db_Vitocell100B.lines.json": "sha256:d07b8e8feab2528dd4e0797d27e9e95c33840b90119adf41aede445703c082fd"
+      },
+      "params_hash": "sha256:1076481cc958e27d515941732be8cc272066f73eb1f81685779183c14eef6406",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:10:47Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

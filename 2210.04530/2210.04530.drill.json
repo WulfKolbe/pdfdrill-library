@@ -7,7 +7,10 @@
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "2210.04530",
@@ -100,7 +103,16 @@
     "has_math_fonts": true,
     "tiddlers_path": "2210.04530.tiddlers.json",
     "tiddlers_count": 106,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Compiling comprehensive repositories of commonsense knowledge is a long-standing problem in AI. Many concerns revolve around the issue of reporting bias, i.e., that frequency in text sources is not a good proxy for relevance or truth. This paper explores whether children&#39;s texts hold the key to commonsense knowledge compilation, based on the hypothesis that such content makes fewer assumptions on the reader&#39;s knowledge, and therefore spells out commonsense more explicitly. An analysis with several corpora shows that children&#39;s texts indeed contain much more, and more typical commonsense assertions. Moreover, experiments show that this advantage can be leveraged in popular language-model-based commonsense knowledge extraction settings, where task-unspecific fine-tuning on small amounts of children texts (childBERT) already yields significant improvements. This provides a refreshing perspective different from the common trend of deriving progress from ever larger models and corpora.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Do Children Texts Hold The Key To Commonsense Knowledge?",
+    "arxiv_authors": [
+      "Julien Romero",
+      "Simon Razniewski"
+    ],
+    "arxiv_primary_category": "cs.CL"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -290,7 +302,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 3,
+      "x0": 70.87,
+      "y0": 70.87,
+      "x1": 297.63,
+      "y1": 213.66,
+      "w_pt": 226.76,
+      "h_pt": 142.79,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 640,
+      "height_px": 403,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 203,
+      "y_ppi": 203,
+      "size_bytes": 11673,
+      "object_id": "121 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {},
@@ -406,6 +439,22 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.0,
       "detail": "106 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-07T04:28:08Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 93.8,
+      "detail": "13 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-07T04:28:11Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2101.2,
+      "detail": "1 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -57,7 +60,28 @@
       "TQXDEH+CMMI7",
       "PXBGHL+CMSY7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "ws2526ueb00-solutions",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 4,
+      "ListItem": 31,
+      "Equation": 8,
+      "Paragraph": 9,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "ws2526ueb00-solutions.tiddlers.json",
+    "tiddlers_count": 69,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -276,6 +300,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 17.7,
       "detail": "12 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-06T02:09:46Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 22.0,
+      "detail": "53 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:09:46Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.2,
+      "detail": "69 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/ws2526ueb00-solutions/ws2526ueb00-solutions.lines.json": "sha256:5df3451f009fcf09845d8b70a39f99330d380ae647e7445ecbb6c4d4e4fb8a5d"
+      },
+      "params_hash": "sha256:21598b10c3f9ae6ccd7e4fa13585e0c728465b60d475fd6a01e68a0ef41c5568",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:09:46Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

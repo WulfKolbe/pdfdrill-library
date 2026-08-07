@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -52,7 +54,27 @@
     "math_fonts": [
       "SymbolMT"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "student-how-to",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 11,
+      "ListItem": 153,
+      "Paragraph": 11,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "student-how-to.tiddlers.json",
+    "tiddlers_count": 192,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -243,6 +265,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 28.9,
       "detail": "10 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T02:06:43Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 40.7,
+      "detail": "176 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:06:43Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.5,
+      "detail": "192 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/student-how-to/student-how-to.lines.json": "sha256:bd5da1ae4e96c05b1ac9fc060176f728711b3d610c736b9bae3f35d1f83c44f8"
+      },
+      "params_hash": "sha256:3a207cff329f8b46d731ee26d06f5d045b4b62a847a78e8dfb1ca30377b6a17a",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:06:43Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

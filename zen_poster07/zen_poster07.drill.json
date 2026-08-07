@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -47,7 +51,49 @@
     "math_fonts": [
       "EAAAAA+OpenSymbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "lane_policy": "Producer is 'OpenOffice.org 1.1.3' (openoffice): the pdfminer text-layer lane is DECLINED for this family (it emits font subsets with no /Encoding, mapping only via /ToUnicode). pdftotext, MathPix and tesseract handle it correctly and are used instead.",
+    "ocr_lang": "eng",
+    "ocr_lang_effective": "eng",
+    "ocr_pages": 1,
+    "ocr_lines": 105,
+    "ocr_units": "pt",
+    "ocr_render_dpi": 400,
+    "ocr_type_counts": {
+      "section_header": 3,
+      "page_info": 0,
+      "diagram": 0,
+      "absorbed_lines": 0,
+      "table": 0,
+      "equation": 0,
+      "equation_lines_merged": 0,
+      "toc_rows": 0,
+      "text_layer_lines": 86,
+      "barcodes": 0
+    },
+    "ocr_warnings": [
+      "document carries an embedded text layer (OCR overlay or born-digital) — it is invisible to this re-OCR but may be higher quality; consider the born-digital route (pdfminer/pdfdrill model) or cross-checking against it"
+    ],
+    "bibkey": "zen_poster07",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "ListItem": 1,
+      "Paragraph": 31,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "tesseract",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "tesseract"
+    },
+    "tiddlers_path": "zen_poster07.tiddlers.json",
+    "tiddlers_count": 50,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -182,6 +228,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 16.2,
       "detail": "6 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-06T02:11:20Z",
+      "node": "ocr",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "OCR_BUILT",
+      "cost_ms": 65934.2,
+      "detail": "1 pages, 105 lines, lang=eng"
+    },
+    {
+      "ts": "2026-08-06T02:11:20Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,OCR_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 36.8,
+      "detail": "34 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:11:20Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.8,
+      "detail": "50 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/zen_poster07/zen_poster07.lines.json": "sha256:3e7319e8299abbd4aa9c5de1b0435907a5934e010b968bfd473d0734f22a0a9b"
+      },
+      "params_hash": "sha256:47121dd500f8b60175fbef21a528a5bb4b50583ba6f4e49471539c35bbad717b",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:11:20Z",
+      "provenance": "tesseract"
+    }
+  }
 }
