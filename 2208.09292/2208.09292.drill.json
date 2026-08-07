@@ -8,7 +8,11 @@
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "2208.09292",
@@ -117,10 +121,62 @@
     "has_math_fonts": true,
     "tiddlers_path": "2208.09292.tiddlers.json",
     "tiddlers_count": 275,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Commonsense knowledge about everyday concepts is an important asset for AI applications, such as question answering and chatbots. Recently, we have seen an increasing interest in the construction of structured commonsense knowledge bases (CSKBs). An important part of human commonsense is about properties that do not apply to concepts, yet existing CSKBs only store positive statements. Moreover, since CSKBs operate under the open-world assumption, absent statements are considered to have unknown truth rather than being invalid. This paper presents the UNCOMMONSENSE framework for materializing informative negative commonsense statements. Given a target concept, comparable concepts are identified in the CSKB, for which a local closed-world assumption is postulated. This way, positive statements about comparable concepts that are absent for the target concept become seeds for negative statement candidates. The large set of candidates is then scrutinized, pruned and ranked by informativeness. Intrinsic and extrinsic evaluations show that our method significantly outperforms the state-of-the-art. A large dataset of informative negations is released as a resource for future research.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "UnCommonSense: Informative Negative Knowledge about Everyday Concepts",
+    "arxiv_authors": [
+      "Hiba Arnaout",
+      "Simon Razniewski",
+      "Gerhard Weikum",
+      "Jeff Z. Pan"
+    ],
+    "arxiv_primary_category": "cs.AI"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "UnCommonSense: Informative Negative Knowledge about Everyday Concepts",
+    "author": "",
+    "producer": "pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+    "creator": "LaTeX with acmart 2022/04/09 v1.84 Typesetting articles for the Association for Computing Machinery and hyperref 2020-05-15 v7.00e Hypertext links for LaTeX",
+    "creation_date": "2022-09-07T00:31:08Z",
+    "mod_date": "2022-09-07T00:31:08Z",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 10,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 691289,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+      "Subject": "-  Information systems  ->  Retrieval models and ranking."
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "arnaout2022",
+    "title": "UnCommonSense: Informative Negative Knowledge about Everyday Concepts",
+    "author": "Hiba Arnaout and Simon Razniewski and Gerhard Weikum and Jeff Z. Pan",
+    "year": "2022",
+    "pages": 10,
+    "doi": "",
+    "arxiv_id": "2208.09292",
+    "url": "https://arxiv.org/abs/2208.09292",
+    "license": "",
+    "publisher": "",
+    "eprint": "2208.09292",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.AI"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -419,7 +475,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 53.8,
+      "y0": 648.31,
+      "x1": 118.67,
+      "y1": 671.01,
+      "w_pt": 64.87,
+      "h_pt": 22.7,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 403,
+      "height_px": 141,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 447,
+      "y_ppi": 447,
+      "size_bytes": 157,
+      "object_id": "91 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {},
@@ -543,6 +620,30 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.0,
       "detail": "275 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-07T04:28:01Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 30.1,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-08-07T04:28:02Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "citekey=arnaout2022"
+    },
+    {
+      "ts": "2026-08-07T04:28:06Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4077.7,
+      "detail": "1 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {

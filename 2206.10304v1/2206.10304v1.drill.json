@@ -6,7 +6,12 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "PDFINFO_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -103,10 +108,62 @@
     "bibliography_cites": 42,
     "tiddlers_path": "2206.10304v1.tiddlers.json",
     "tiddlers_count": 120,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "This paper investigates the Relation Extraction task in documents by benchmarking two different neural network models: a multi-modal language model (LayoutXLM) and a Graph Neural Network: Edge Convolution Network (ECN). For this benchmark, we use the XFUND dataset, released along with LayoutXLM. While both models reach similar results, they both exhibit very different characteristics. This raises the question on how to integrate various modalities in a neural network: by merging all modalities thanks to additional pretraining (LayoutXLM), or in a cascaded way (ECN). We conclude by discussing some methodological issues that must be considered for new datasets and task definition in the domain of Information Extraction with complex documents.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "LayoutXLM vs. GNN: An Empirical Evaluation of Relation Extraction for Documents",
+    "arxiv_authors": [
+      "Hervé Déjean",
+      "Stéphane Clinchant",
+      "Jean-Luc Meunier"
+    ],
+    "arxiv_primary_category": "cs.CL"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.21",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2022-06-22T01:33:02Z",
+    "mod_date": "2022-06-22T01:33:02Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 8,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 625444,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "djean2022",
+    "title": "LayoutXLM vs. GNN: An Empirical Evaluation of Relation Extraction for Documents",
+    "author": "Hervé Déjean and Stéphane Clinchant and Jean-Luc Meunier",
+    "year": "2022",
+    "pages": 8,
+    "doi": "",
+    "arxiv_id": "2206.10304v1",
+    "url": "https://arxiv.org/abs/2206.10304v1",
+    "license": "",
+    "publisher": "",
+    "eprint": "2206.10304v1",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.CL"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -363,7 +420,68 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 6,
+      "x0": 70.87,
+      "y0": 70.87,
+      "x1": 524.4,
+      "y1": 380.38,
+      "w_pt": 453.53,
+      "h_pt": 309.51,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 803,
+      "height_px": 548,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 127,
+      "y_ppi": 127,
+      "size_bytes": 106496,
+      "object_id": "128 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 6,
+      "x0": 89.87,
+      "y0": 460.33,
+      "x1": 270.13,
+      "y1": 687.09,
+      "w_pt": 180.26,
+      "h_pt": 226.77,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 996,
+      "height_px": 1253,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 398,
+      "y_ppi": 398,
+      "size_bytes": 234496,
+      "object_id": "137 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 8,
+      "x0": 212.6,
+      "y0": 413.25,
+      "x1": 382.67,
+      "y1": 659.95,
+      "w_pt": 170.07,
+      "h_pt": 246.7,
+      "name": "Im3",
+      "imagemask": false,
+      "width_px": 819,
+      "height_px": 1188,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 347,
+      "y_ppi": 347,
+      "size_bytes": 966,
+      "object_id": "199 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -446,6 +564,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.0,
       "detail": "120 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-07T04:27:58Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 45.0,
+      "detail": "18 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-07T04:27:58Z",
+      "node": "pdfinfo",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 81.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-07T04:27:58Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=djean2022"
+    },
+    {
+      "ts": "2026-08-07T04:28:01Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2480.2,
+      "detail": "3 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

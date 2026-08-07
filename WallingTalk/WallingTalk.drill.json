@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -72,7 +75,28 @@
       "BMDLPR+CMMI8",
       "WWJXEE+CMSY5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "WallingTalk",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "ListItem": 25,
+      "Equation": 35,
+      "Paragraph": 28,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 34 unmapped private-use character(s) remain (U+F8EB×2, U+F8EC×3, U+F8ED×2, U+F8F1×2, U+F8F2×2, U+F8F3×2, U+F8F4×14, U+F8F6×2, U+F8F7×3, U+F8F8×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "WallingTalk.tiddlers.json",
+    "tiddlers_count": 111,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -431,6 +455,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 20.8,
       "detail": "22 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-06T01:00:01Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 31.4,
+      "detail": "95 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:00:01Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.0,
+      "detail": "111 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/WallingTalk/WallingTalk.lines.json": "sha256:2bd5b6ab233ebd3d291113c11d2bba7774745dc9be31a4abb774ab5e0f4da254"
+      },
+      "params_hash": "sha256:efd5be16336ac2994307f7d1fab91b7cca1be7171dad5e8a226c0834d434736f",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:00:01Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

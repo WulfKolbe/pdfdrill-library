@@ -7,7 +7,9 @@
     "REPORT_BUILT",
     "TABLES_KNOWN",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "mathpix_pdf_id": "843edf11-fb78-4496-b62a-720b978f52d1",
@@ -30,7 +32,7 @@
       }
     ],
     "bibkey": "classification",
-    "model_path": "classification.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 69,
       "Citation": 831,
@@ -38,10 +40,10 @@
       "TableRow": 3976,
       "TableCell": 10034,
       "Sidenote": 41,
-      "Section": 16,
+      "Section": 21,
       "Picture": 8,
       "Formula": 124,
-      "Paragraph": 1545,
+      "Paragraph": 1543,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
@@ -90,7 +92,23 @@
       "YHMAAA+CMSY10",
       "MVUPWA+CMMI10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "classification.tiddlers.json",
+    "tiddlers_count": 2652,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -280,7 +298,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 75.7,
       "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-06T01:09:19Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,REPORT_BUILT,SIZE_KNOWN,TABLES_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 5432.9,
+      "detail": "16742 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:09:22Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,REPORT_BUILT,SIZE_KNOWN,TABLES_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-06T01:09:24Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,REPORT_BUILT,SIZE_KNOWN,TABLES_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 122.3,
+      "detail": "2652 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/classification/classification.lines.json": "sha256:4e8aa23ad844107666d7d9f24511860ddf6add21dbdc9dff4ac1188ee182ca7c"
+      },
+      "params_hash": "sha256:63cd617889859aa51ac4eab6c7a267c909df7a1dab4497c34f7e98a4da28e094",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:09:19Z",
+      "provenance": "mathpix"
+    }
+  }
 }

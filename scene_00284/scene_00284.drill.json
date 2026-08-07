@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -39,7 +41,26 @@
       "GlyphLessFont"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "scene_00284",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "Paragraph": 1,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "scene_00284.tiddlers.json",
+    "tiddlers_count": 19,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -104,6 +125,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 14.2,
       "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:56:03Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 9.6,
+      "detail": "3 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:56:03Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 0.9,
+      "detail": "19 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/scene_00284/scene_00284.lines.json": "sha256:7555c8fb58008b44903611febf3d8858fc7d3de9bdf3d0680cd9930a3cc09ab2"
+      },
+      "params_hash": "sha256:24df48fbdebef19bcf99b9a69046d3c094c04de721651023d9ef7cda1dbe41e4",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:56:03Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

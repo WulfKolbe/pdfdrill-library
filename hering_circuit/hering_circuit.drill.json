@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -64,7 +67,28 @@
       "ANNDLF+CMMI10",
       "ANNEAG+CMMI8"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "hering_circuit",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 11,
+      "ListItem": 2,
+      "Equation": 15,
+      "Paragraph": 22,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "hering_circuit.tiddlers.json",
+    "tiddlers_count": 67,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -353,6 +377,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 24.3,
       "detail": "17 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-06T01:20:42Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 42.0,
+      "detail": "51 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:20:42Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.4,
+      "detail": "67 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/hering_circuit/hering_circuit.lines.json": "sha256:b0d49b79a3956534677259e60f9a41653c32835bac4a2dadb29a435e655cd608"
+      },
+      "params_hash": "sha256:5ccffd20bbdf53ab2a0fb98203e66b495ead404edaecd5307d2d186c8fde8819",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:20:42Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

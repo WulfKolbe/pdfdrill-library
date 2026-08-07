@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -62,7 +65,28 @@
       "BGUHAO+CMEX10",
       "BHFCSA+CMMI7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Uebungg02_solution",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "ListItem": 27,
+      "Equation": 62,
+      "Paragraph": 43,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 160 unmapped private-use character(s) remain (U+F8EB×35, U+F8EC×10, U+F8ED×35, U+F8F6×35, U+F8F7×10, U+F8F8×35) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Uebungg02_solution.tiddlers.json",
+    "tiddlers_count": 155,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -295,6 +319,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 27.0,
       "detail": "13 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-06T00:47:04Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 42.4,
+      "detail": "139 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:47:04Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.5,
+      "detail": "155 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Uebungg02_solution/Uebungg02_solution.lines.json": "sha256:26c6e1a4c0fff982a96c5f852a4dda5523a7bf6f7711233b434ce2aa2faf6782"
+      },
+      "params_hash": "sha256:16747eb85cf83129c1ad0a3e9677005a785e2bd903dd460b4a38b89fd0234439",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:47:04Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

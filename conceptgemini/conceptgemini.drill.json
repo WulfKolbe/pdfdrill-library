@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -57,7 +60,27 @@
     "math_fonts": [
       "LOWLTO+CMSY10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "conceptgemini",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "ListItem": 13,
+      "Paragraph": 6,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "conceptgemini.tiddlers.json",
+    "tiddlers_count": 42,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -276,6 +299,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 21.2,
       "detail": "12 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-06T01:09:59Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 21.0,
+      "detail": "26 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:09:59Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.9,
+      "detail": "42 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/conceptgemini/conceptgemini.lines.json": "sha256:68707cdafca5305edb5b0724af8affb9568a14abc3e6367c14ebf32b231e4192"
+      },
+      "params_hash": "sha256:c918980bf10b964c581c0e5b5b3acd8ad224413fd1e318b37ea054a8e84cd491",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:09:59Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

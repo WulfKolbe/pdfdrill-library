@@ -31,22 +31,22 @@
       }
     ],
     "bibkey": "smart-paper1",
-    "model_path": "smart-paper1.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 14,
-      "Footnote": 2,
+      "Footnote": 5,
       "Table": 6,
       "TableRow": 34,
       "TableCell": 193,
       "Sidenote": 2,
       "Abstract": 1,
       "Diagram": 2,
-      "Section": 21,
+      "Section": 22,
       "Picture": 11,
       "ListItem": 9,
       "Equation": 6,
       "Formula": 71,
-      "Paragraph": 62,
+      "Paragraph": 57,
       "Document": 1
     },
     "model_equations_with_cdn": 6,
@@ -142,9 +142,17 @@
       "ANANWE+LibertinusMath-Regular"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "smart-paper1.pdf.drill/smart-paper1.tiddlers.json",
-    "tiddlers_count": 263,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_path": "smart-paper1.tiddlers.json",
+    "tiddlers_count": 225,
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -771,7 +779,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 25.9,
       "detail": "37 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-06T02:06:16Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 264.2,
+      "detail": "434 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:06:16Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.4,
+      "detail": "225 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/smart-paper1/smart-paper1.lines.json": "sha256:df03ded808273e956c14a638429bf4c2e22a741fe4492653daeab701a7d7bf9a"
+      },
+      "params_hash": "sha256:4812484ca68860d3ad8a5217b8562beb294658ca4dda4b509aced591e54ea48e",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:06:16Z",
+      "provenance": "mathpix"
+    }
+  }
 }

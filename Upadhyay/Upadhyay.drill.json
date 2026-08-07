@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 15,
@@ -64,7 +67,28 @@
       "JTDNQR+CMMI5",
       "RURJJC+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Upadhyay",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 15,
+      "ListItem": 13,
+      "Equation": 103,
+      "Paragraph": 71,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Upadhyay.tiddlers.json",
+    "tiddlers_count": 219,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -339,6 +363,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 40.5,
       "detail": "16 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-06T00:50:00Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 67.7,
+      "detail": "203 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:50:00Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.4,
+      "detail": "219 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Upadhyay/Upadhyay.lines.json": "sha256:2cd829e9cf53313541af0cd2f1b55c9f317e397d58e1bffece88dfd34b1bd211"
+      },
+      "params_hash": "sha256:f770dca633cb67a048453488c0d7e2b0ebae5ddb5cd5b6fdcc5aec9d25c8c2d9",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:50:00Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 40,
@@ -62,7 +66,33 @@
       "JCNANL+EUFM10",
       "JCNCEE+MSBM7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "j.nuclphysb.2018.09.006",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 40,
+      "Citation": 23,
+      "ListItem": 73,
+      "Paragraph": 40,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 23,
+    "bibliography_with_year": 19,
+    "bibliography_numeric_citations": 41,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 41,
+    "tiddlers_path": "j.nuclphysb.2018.09.006.tiddlers.json",
+    "tiddlers_count": 200,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -309,6 +339,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 70.1,
       "detail": "14 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-06T01:22:22Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 213.4,
+      "detail": "177 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:22:22Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "23 entries, 41+0 cites detected, 41 linked"
+    },
+    {
+      "ts": "2026-08-06T01:22:23Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.9,
+      "detail": "200 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/j.nuclphysb.2018.09.006/j.nuclphysb.2018.09.006.lines.json": "sha256:bc50d42afda7defc74b787c0c6c5ad5bb6c6df0aadced8295606af833c3c8b1a"
+      },
+      "params_hash": "sha256:26e1fc81675d67c792789e558bae70f6ad9dadda64ad4857a240b9080a3da0bc",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:22:22Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

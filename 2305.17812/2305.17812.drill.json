@@ -6,7 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 17,
@@ -110,10 +116,62 @@
     "bibliography_cites": 44,
     "tiddlers_path": "2305.17812.tiddlers.json",
     "tiddlers_count": 178,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "The chain-of-though (CoT) prompting methods were successful in various natural language processing (NLP) tasks thanks to their ability to unveil the underlying complex reasoning processes. Such reasoning processes typically exhibit implicitly structured steps. Recent efforts also started investigating methods to encourage more explicitly structured reasoning procedures to be captured. In this work, we propose Tab-CoT, a novel tabular-format CoT prompting method, which allows the complex reasoning process to be explicitly modelled in a highly structured manner. Despite its simplicity, we show that our approach is capable of performing reasoning across multiple dimensions (i.e., both rows and columns). We demonstrate our approach&#39;s strong zero-shot and few-shot capabilities through extensive experiments on a range of reasoning tasks.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Tab-CoT: Zero-shot Tabular Chain of Thought",
+    "arxiv_authors": [
+      "Ziqi Jin",
+      "Wei Lu"
+    ],
+    "arxiv_primary_category": "cs.CL",
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.25",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2023-05-30T01:17:45Z",
+    "mod_date": "2023-05-30T01:17:45Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 17,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 435652,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "jin2023",
+    "title": "Tab-CoT: Zero-shot Tabular Chain of Thought",
+    "author": "Ziqi Jin and Wei Lu",
+    "year": "2023",
+    "pages": 17,
+    "doi": "",
+    "arxiv_id": "2305.17812",
+    "url": "https://arxiv.org/abs/2305.17812",
+    "license": "",
+    "publisher": "",
+    "eprint": "2305.17812",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.CL"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -496,7 +554,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -579,6 +637,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.2,
       "detail": "178 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-07T04:28:43Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 78.7,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-07T04:28:43Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 107.0,
+      "detail": "27 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-07T04:28:44Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 91.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-07T04:28:44Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=jin2023"
+    },
+    {
+      "ts": "2026-08-07T04:28:47Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3499.5,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

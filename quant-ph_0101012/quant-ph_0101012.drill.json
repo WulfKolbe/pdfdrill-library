@@ -6,7 +6,8 @@
     "LATEX_INGESTED",
     "TIDDLERS_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "BIBLIOGRAPHY_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "quant-ph/0101012",
@@ -14,15 +15,17 @@
     "bibkey": "quant-ph_0101012",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 34,
-      "ListItem": 34,
-      "Formula": 6,
-      "Paragraph": 34,
-      "Document": 1,
-      "Equation": 162
+      "Paragraph": 321,
+      "Abstract": 1,
+      "Section": 37,
+      "Formula": 445,
+      "Equation": 162,
+      "Theorem": 5,
+      "LtxCommand": 36,
+      "Citation": 25
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -38,7 +41,7 @@
     "merge_latex_source": "quant-ph_0101012.tgz",
     "merge_paragraphs_changed": 34,
     "tiddlers_path": "quant-ph_0101012.tiddlers.json",
-    "tiddlers_count": 293,
+    "tiddlers_count": 1080,
     "tiddlers_svg_mode": "inline",
     "pages": 34,
     "bytes": 368655,
@@ -108,7 +111,21 @@
       "QZMXBD+CMMI12",
       "FRYGNT+CMSY5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 34,
+      "placed": 131,
+      "regions": 131,
+      "sections": 37,
+      "children": 954,
+      "numbered": 37,
+      "roots": 1
+    },
+    "bibliography_entries": 21,
+    "bibliography_with_year": 18,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 25
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -499,18 +516,40 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 69.2,
       "detail": "22 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-06T01:34:04Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "1032 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-06T01:34:04Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "21 entries, 0+0 cites detected, 25 linked"
+    },
+    {
+      "ts": "2026-08-06T01:34:04Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 22.5,
+      "detail": "1080 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/quant-ph_0101012/quant-ph_0101012.lines.json": "sha256:baef7b1afd97aec122b6b0b3dfcdfba9555dcef9c9a54fb2a925f6d846968281"
-      },
+      "inputs": {},
       "params_hash": "sha256:dcdc12901a795be29ffdf1168e1b2ff1c7ad5d25e25726d38f4f87356055b3e5",
       "algo": "sha256",
-      "ts": "2026-07-30T14:04:19Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-06T01:34:04Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

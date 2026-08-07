@@ -31,10 +31,10 @@
       }
     ],
     "bibkey": "mly-psmath",
-    "model_path": "mly-psmath.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "Footnote": 3,
+      "Footnote": 6,
       "Citation": 2,
       "Abstract": 1,
       "Diagram": 11,
@@ -42,7 +42,7 @@
       "ListItem": 12,
       "Equation": 1,
       "Formula": 10,
-      "Paragraph": 32,
+      "Paragraph": 29,
       "Document": 1
     },
     "model_equations_with_cdn": 1,
@@ -51,8 +51,8 @@
     "bibliography_numeric_citations": 14,
     "bibliography_authoryear_citations": 1,
     "bibliography_cites": 14,
-    "tiddlers_path": "mly-psmath.pdf.drill/mly-psmath.tiddlers.json",
-    "tiddlers_count": 126,
+    "tiddlers_path": "mly-psmath.tiddlers.json",
+    "tiddlers_count": 112,
     "tiddlers_svg_mode": "inline",
     "pages": 9,
     "bytes": 173434,
@@ -114,7 +114,15 @@
       "ACAEBB+CMMI5",
       "CDCDEA+CMSY10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -507,7 +515,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 24.9,
       "detail": "21 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-06T01:29:38Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 93.2,
+      "detail": "96 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:29:38Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.1,
+      "detail": "112 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/mly-psmath/mly-psmath.lines.json": "sha256:25e36ea85d1c7984c39ff76c8665c858c7e53a79cbe70d7084934cf49d7c548e"
+      },
+      "params_hash": "sha256:367a5abc66821f24b077a3d25206e6fd1d6f03d7595d4fbf34ceb5a7ba08da28",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:29:38Z",
+      "provenance": "mathpix"
+    }
+  }
 }

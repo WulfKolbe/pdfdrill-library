@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -54,7 +58,56 @@
       "T13"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "ocr_lang": "eng",
+    "ocr_lang_effective": "eng",
+    "ocr_pages": 13,
+    "ocr_lines": 413,
+    "ocr_units": "pt",
+    "ocr_render_dpi": 400,
+    "ocr_type_counts": {
+      "section_header": 7,
+      "page_info": 5,
+      "diagram": 0,
+      "absorbed_lines": 0,
+      "table": 9,
+      "equation": 2,
+      "equation_lines_merged": 0,
+      "toc_rows": 0,
+      "math_pass_lines": 2,
+      "text_layer_lines": 403,
+      "barcodes": 0
+    },
+    "ocr_warnings": [
+      "document carries an embedded text layer (OCR overlay or born-digital) — it is invisible to this re-OCR but may be higher quality; consider the born-digital route (pdfminer/pdfdrill model) or cross-checking against it"
+    ],
+    "bibkey": "th-6236-91",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 13,
+      "Citation": 11,
+      "Table": 9,
+      "Equation": 2,
+      "Paragraph": 167,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 2,
+    "model_source": "tesseract",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "tesseract"
+    },
+    "bibliography_entries": 22,
+    "bibliography_with_year": 21,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 5,
+    "bibliography_cites": 1,
+    "tiddlers_path": "th-6236-91.tiddlers.json",
+    "tiddlers_count": 245,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -343,6 +396,50 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 24.3,
       "detail": "17 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T02:08:58Z",
+      "node": "ocr",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "OCR_BUILT",
+      "cost_ms": 95777.8,
+      "detail": "13 pages, 413 lines, lang=eng"
+    },
+    {
+      "ts": "2026-08-06T02:08:58Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,OCR_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 94.6,
+      "detail": "203 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:08:58Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "22 entries, 0+5 cites detected, 1 linked"
+    },
+    {
+      "ts": "2026-08-06T02:08:58Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.2,
+      "detail": "245 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/th-6236-91/th-6236-91.lines.json": "sha256:51cfce83f5ad9625293685cfded164f6626ce38cb81bee921e7e0e3570f338e6"
+      },
+      "params_hash": "sha256:1760abd8c27bcc8d734e43eec752572436c3afe2e890afe7b93f13206d6a6ed6",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:08:58Z",
+      "provenance": "tesseract"
+    }
+  }
 }

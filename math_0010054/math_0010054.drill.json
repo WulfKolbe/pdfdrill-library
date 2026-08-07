@@ -15,15 +15,17 @@
     "bibkey": "math_0010054",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 38,
-      "Citation": 2,
-      "ListItem": 9,
-      "Paragraph": 38,
-      "Document": 1,
-      "Equation": 189
+      "Paragraph": 268,
+      "Abstract": 1,
+      "Section": 26,
+      "Formula": 498,
+      "Equation": 189,
+      "Theorem": 26,
+      "LtxCommand": 9,
+      "Citation": 32
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -44,7 +46,7 @@
     "bibliography_authoryear_citations": 1,
     "bibliography_cites": 32,
     "tiddlers_path": "math_0010054.tiddlers.json",
-    "tiddlers_count": 310,
+    "tiddlers_count": 1088,
     "tiddlers_svg_mode": "inline",
     "pages": 38,
     "bytes": 273350,
@@ -104,7 +106,16 @@
       "ICAUSE+EUFM10",
       "UPGIOR+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 38,
+      "placed": 93,
+      "regions": 93,
+      "sections": 26,
+      "children": 973,
+      "numbered": 26,
+      "roots": 1
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -419,18 +430,32 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 85.9,
       "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-06T01:29:16Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "1049 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-06T01:29:16Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 21.2,
+      "detail": "1088 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/math_0010054/math_0010054.lines.json": "sha256:cabbefa796bb4c421096a65276b91637a11443b2443d629116f0d48ae34b1389"
-      },
+      "inputs": {},
       "params_hash": "sha256:093b7b82975976c0539e655a4900f4850d947d7ac3ee553d47608336829586e7",
       "algo": "sha256",
-      "ts": "2026-07-30T14:04:05Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-06T01:29:16Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

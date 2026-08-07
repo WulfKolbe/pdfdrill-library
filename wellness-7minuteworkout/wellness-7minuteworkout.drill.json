@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -45,7 +47,27 @@
       "BZZOLY+SourceSansPro-Semibold"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "wellness-7minuteworkout",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "ListItem": 7,
+      "Paragraph": 1,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "wellness-7minuteworkout.tiddlers.json",
+    "tiddlers_count": 26,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -180,6 +202,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 11.7,
       "detail": "6 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T02:09:30Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 12.0,
+      "detail": "10 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T02:09:30Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.1,
+      "detail": "26 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/wellness-7minuteworkout/wellness-7minuteworkout.lines.json": "sha256:f6a2a9900fdd7149b9e6534c21cfd2ea478d07d8f19c1c2b83595e32bb67df51"
+      },
+      "params_hash": "sha256:1d8b951dce4be8ffe6425b2bad524fb61364ae7a100778a0b18b5d43f27bd28c",
+      "algo": "sha256",
+      "ts": "2026-08-06T02:09:30Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

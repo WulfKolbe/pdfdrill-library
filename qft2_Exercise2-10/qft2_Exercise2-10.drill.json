@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -64,7 +68,34 @@
       "OLBSGM+CMMI6",
       "QLGQTC+CMMIB10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "qft2_Exercise2-10",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "Citation": 1,
+      "ListItem": 6,
+      "Equation": 14,
+      "Paragraph": 16,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "qft2_Exercise2-10.tiddlers.json",
+    "tiddlers_count": 56,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -339,6 +370,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 21.0,
       "detail": "16 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-06T01:33:02Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 23.7,
+      "detail": "40 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:33:02Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-06T01:33:02Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.3,
+      "detail": "56 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/qft2_Exercise2-10/qft2_Exercise2-10.lines.json": "sha256:87292b338ac720175cde426ad258a6273cb4448256968e76553df389dedd989e"
+      },
+      "params_hash": "sha256:415502e888453940a32488aac612e31d7ecfcb7651585b072c05624991fa8604",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:33:02Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

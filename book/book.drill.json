@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 95,
@@ -62,7 +65,28 @@
       "BMAAAA+CMMI5",
       "XBAAAA+CMSY5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "book",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 95,
+      "ListItem": 48,
+      "Equation": 172,
+      "Paragraph": 227,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 36 unmapped private-use character(s) remain (U+F8F1×2, U+F8F2×2, U+F8F3×2, U+F8F4×24, U+F8FC×2, U+F8FD×2, U+F8FE×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "book.tiddlers.json",
+    "tiddlers_count": 559,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -337,6 +361,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 57.9,
       "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-06T01:06:39Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 360.0,
+      "detail": "543 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:06:39Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 27.1,
+      "detail": "559 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/book/book.lines.json": "sha256:77ef61cbdc46a758cc6b150e947b53a65b6f1eee6785bbfa8a8ef003ce51e555"
+      },
+      "params_hash": "sha256:9083b269ac6b13d77abd746af7b069e9a4f008873d3c0ed3f2d50e0ae03dd9c2",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:06:39Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -55,7 +58,33 @@
       "DEELAN+SimSun"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "s42532-023-00153-x",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 9,
+      "Citation": 1,
+      "ListItem": 8,
+      "Paragraph": 9,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 26,
+    "bibliography_cites": 0,
+    "tiddlers_path": "s42532-023-00153-x.tiddlers.json",
+    "tiddlers_count": 63,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -288,6 +317,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 90.5,
       "detail": "13 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:35:56Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 54.6,
+      "detail": "28 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:35:56Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+26 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-06T01:35:56Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.6,
+      "detail": "63 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/s42532-023-00153-x/s42532-023-00153-x.lines.json": "sha256:66b981069f58bdd47232e03594bbfed98ba380783a54b679ef96340cc7bde1d1"
+      },
+      "params_hash": "sha256:473331253b231897b212d7d3f577489d6149e366f0e3d9553555c2bfa94ad8bc",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:35:56Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

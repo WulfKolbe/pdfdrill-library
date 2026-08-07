@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 24,
@@ -75,7 +79,34 @@
       "CMEX10",
       "MSAM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "angled-survey",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 24,
+      "Citation": 2,
+      "ListItem": 13,
+      "Equation": 42,
+      "Paragraph": 58,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 34,
+    "bibliography_with_year": 26,
+    "bibliography_numeric_citations": 38,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 38,
+    "tiddlers_path": "angled-survey.tiddlers.json",
+    "tiddlers_count": 190,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -476,6 +507,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 119.7,
       "detail": "25 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-06T01:04:44Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 103.8,
+      "detail": "140 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:04:44Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "34 entries, 38+1 cites detected, 38 linked"
+    },
+    {
+      "ts": "2026-08-06T01:04:44Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.9,
+      "detail": "190 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/angled-survey/angled-survey.lines.json": "sha256:a33be512d6ebcd5c18f3eab6d5931564dee1d4bdd914335f15faccee813607c6"
+      },
+      "params_hash": "sha256:7853335e8df158ecb1370f0b4da9328412c7ed81fbba66cee1e52cd90e29d6b0",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:04:44Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -50,7 +52,26 @@
       "FKGGBH+ZapfDingbatsITC"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "ggb_3_2022_054_057_PBGuitarsOrion_low",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 4,
+      "Paragraph": 4,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "ggb_3_2022_054_057_PBGuitarsOrion_low.tiddlers.json",
+    "tiddlers_count": 25,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -171,6 +192,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 14.6,
       "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:13:18Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 26.6,
+      "detail": "9 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:13:18Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.5,
+      "detail": "25 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/ggb_3_2022_054_057_PBGuitarsOrion_low/ggb_3_2022_054_057_PBGuitarsOrion_low.lines.json": "sha256:840e66efde08dfd75ea954681190146f58407249bfac361eab516bc7a0e09529"
+      },
+      "params_hash": "sha256:1cc375cdb6e4f561ae9faa51c004d17ae90b1a84ee00d4701be974de7afe4fcd",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:13:18Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -2,7 +2,9 @@
   "pdf": "qft2_Exercise2-3.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "SIZE_KNOWN"
+    "SIZE_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 3,
@@ -34,7 +36,28 @@
     "text_layer": true,
     "font_count": 0,
     "first_page_chars": 1444,
-    "needs_ocr": false
+    "needs_ocr": false,
+    "bibkey": "qft2_Exercise2-3",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 3,
+      "ListItem": 13,
+      "Equation": 2,
+      "Paragraph": 5,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "qft2_Exercise2-3.tiddlers.json",
+    "tiddlers_count": 40,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -52,6 +75,34 @@
       "to": "SIZE_KNOWN",
       "cost_ms": 47.3,
       "detail": "pdfinfo: 3 pages, 262843 bytes, text_layer=True"
+    },
+    {
+      "ts": "2026-08-06T01:33:03Z",
+      "node": "model",
+      "from": "SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 23.3,
+      "detail": "24 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:33:03Z",
+      "node": "tiddlers",
+      "from": "MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.8,
+      "detail": "40 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/qft2_Exercise2-3/qft2_Exercise2-3.lines.json": "sha256:87b8fcad3948dba20803d8902ce044018b244d7d03aafcba8506eac588ebe327"
+      },
+      "params_hash": "sha256:c407df21d6bdc8f88045f1c1f77b9a21c595691dadf938414e427ab56c00dea6",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:33:03Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

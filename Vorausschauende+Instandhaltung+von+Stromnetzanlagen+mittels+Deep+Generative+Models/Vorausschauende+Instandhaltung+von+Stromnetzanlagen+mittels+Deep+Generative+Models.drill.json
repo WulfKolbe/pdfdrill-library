@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "OCR_BUILT",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -39,7 +42,43 @@
     "needs_ocr": true,
     "fonts": [],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "ocr_lang": "eng",
+    "ocr_lang_effective": "eng",
+    "ocr_pages": 1,
+    "ocr_lines": 28,
+    "ocr_units": "pt",
+    "ocr_render_dpi": 400,
+    "ocr_type_counts": {
+      "section_header": 1,
+      "page_info": 0,
+      "diagram": 0,
+      "absorbed_lines": 0,
+      "table": 0,
+      "equation": 0,
+      "equation_lines_merged": 0,
+      "toc_rows": 0,
+      "barcodes": 0
+    },
+    "bibkey": "Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "Paragraph": 2,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "tesseract",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "tesseract"
+    },
+    "tiddlers_path": "Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models.tiddlers.json",
+    "tiddlers_count": 20,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -89,6 +128,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 11.0,
       "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T00:57:58Z",
+      "node": "ocr",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "OCR_BUILT",
+      "cost_ms": 7380.1,
+      "detail": "1 pages, 28 lines, lang=eng"
+    },
+    {
+      "ts": "2026-08-06T00:57:58Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,OCR_BUILT,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 15.3,
+      "detail": "4 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:57:58Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.0,
+      "detail": "20 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models/Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models.lines.json": "sha256:d39ca22e516183be2ae03588eaacb04b7b4ee06d3a60e8f3307b9c60337009f1"
+      },
+      "params_hash": "sha256:fc78f8ffd5af4d9dea953789c7861d2ea05fc7f636c4ec54f65fbd2f93657cbc",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:57:58Z",
+      "provenance": "tesseract"
+    }
+  }
 }

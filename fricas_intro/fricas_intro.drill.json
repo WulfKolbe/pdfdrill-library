@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 27,
@@ -64,7 +68,34 @@
       "GVENVB+CMMI7",
       "AICAWW+MSBM10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "fricas_intro",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 27,
+      "Citation": 14,
+      "ListItem": 14,
+      "Equation": 24,
+      "Paragraph": 49,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 78 unmapped private-use character(s) remain (U+F8EE×13, U+F8EF×13, U+F8F0×13, U+F8F9×13, U+F8FA×13, U+F8FB×13) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 0,
+    "tiddlers_path": "fricas_intro.tiddlers.json",
+    "tiddlers_count": 140,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -367,6 +398,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 51.8,
       "detail": "18 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-06T01:13:00Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 77.5,
+      "detail": "129 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:13:00Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+1 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-06T01:13:00Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.0,
+      "detail": "140 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/fricas_intro/fricas_intro.lines.json": "sha256:b55229b668459aff0aa9b0801f154aef5387d0eb83ec62ae16030442d4b3a903"
+      },
+      "params_hash": "sha256:ad1e28cf4b80a022ea1a2fba718bab3d0a05bd6c29ba50429f4d55dd42cbb09d",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:13:00Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

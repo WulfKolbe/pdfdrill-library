@@ -73,7 +73,7 @@
       }
     ],
     "bibkey": "pia2014_paper_04",
-    "model_path": "pia2014_paper_04.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 6,
       "Abstract": 1,
@@ -85,9 +85,17 @@
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "tiddlers_path": "pia2014_paper_04.pdf.drill/pia2014_paper_04.tiddlers.json",
+    "tiddlers_path": "pia2014_paper_04.tiddlers.json",
     "tiddlers_count": 73,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -272,7 +280,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 19.2,
       "detail": "6 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-06T01:32:19Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 82.3,
+      "detail": "56 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:32:20Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.5,
+      "detail": "73 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/pia2014_paper_04/pia2014_paper_04.lines.json": "sha256:b1014500327a29f82e877030da6cfddf33d393255036bce02b2e12d81ad7a4cc"
+      },
+      "params_hash": "sha256:75af5307d19d08e0e1274b075e7dc2db676d7430a4e7d6099516d66cf7264a0b",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:32:19Z",
+      "provenance": "mathpix"
+    }
+  }
 }

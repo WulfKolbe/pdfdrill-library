@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -67,7 +70,28 @@
       "IUKJGN+CMSY7",
       "HMPEFZ+CMSY5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Uebungsblatt5LösungenGemini",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 4,
+      "ListItem": 12,
+      "Equation": 57,
+      "Paragraph": 41,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Uebungsblatt5LösungenGemini.tiddlers.json",
+    "tiddlers_count": 131,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -342,6 +366,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 22.4,
       "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-06T00:47:13Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 46.5,
+      "detail": "115 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:47:13Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.7,
+      "detail": "131 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Uebungsblatt5LösungenGemini/Uebungsblatt5LösungenGemini.lines.json": "sha256:9d6ec662f73c5d1ea590529539e9925e9c5cbc795c4fac7e19d9792ad2633c66"
+      },
+      "params_hash": "sha256:33a127f6b9ff798e8069a119ea46360ce0266de4836ca9830728fddf851dbccc",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:47:13Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

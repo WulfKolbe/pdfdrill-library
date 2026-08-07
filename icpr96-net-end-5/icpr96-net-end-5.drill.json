@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -61,7 +64,32 @@
       "[none]"
     ],
     "math_fonts": [],
-    "has_math_fonts": false
+    "has_math_fonts": false,
+    "bibkey": "icpr96-net-end-5",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 5,
+      "Citation": 3,
+      "Paragraph": 5,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 8,
+    "bibliography_with_year": 7,
+    "bibliography_numeric_citations": 19,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 19,
+    "tiddlers_path": "icpr96-net-end-5.tiddlers.json",
+    "tiddlers_count": 37,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -406,6 +434,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 27.0,
       "detail": "21 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-06T01:21:09Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 40.4,
+      "detail": "14 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:21:09Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "8 entries, 19+0 cites detected, 19 linked"
+    },
+    {
+      "ts": "2026-08-06T01:21:09Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.9,
+      "detail": "37 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/icpr96-net-end-5/icpr96-net-end-5.lines.json": "sha256:82b23838c0550630b31ae6e61eb85f7f166dd63dccef047397f7294e9d2aba34"
+      },
+      "params_hash": "sha256:1b1f937810ac6bc99bec14cc7596603d83405ea05631e234f686d2a160b31649",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:21:09Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

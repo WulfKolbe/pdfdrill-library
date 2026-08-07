@@ -31,10 +31,10 @@
       }
     ],
     "bibkey": "paper396",
-    "model_path": "paper396.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 5,
-      "Footnote": 2,
+      "Footnote": 5,
       "Table": 4,
       "TableRow": 4,
       "TableCell": 8,
@@ -43,7 +43,7 @@
       "Section": 5,
       "ListItem": 19,
       "Formula": 27,
-      "Paragraph": 18,
+      "Paragraph": 15,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
@@ -119,9 +119,17 @@
       "AONCYF+CMMI9"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "paper396.pdf.drill/paper396.tiddlers.json",
-    "tiddlers_count": 120,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_path": "paper396.tiddlers.json",
+    "tiddlers_count": 104,
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -602,7 +610,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 24.1,
       "detail": "26 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-06T01:32:00Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 74.8,
+      "detail": "96 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:32:00Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.2,
+      "detail": "104 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/paper396/paper396.lines.json": "sha256:5e7e255b6725638ba09723f422652cf682c9fb9962b0caea5270430b221f42e6"
+      },
+      "params_hash": "sha256:aa13cefdc87628199bf7d29a1a02b8d6f767452681ef8be06c75be1604636e7f",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:32:00Z",
+      "provenance": "mathpix"
+    }
+  }
 }

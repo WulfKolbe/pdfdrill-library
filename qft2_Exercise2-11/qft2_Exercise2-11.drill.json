@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -60,7 +63,28 @@
       "MPVSYE+CMEX10",
       "TMCDBM+CMSY8"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "qft2_Exercise2-11",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "ListItem": 6,
+      "Equation": 18,
+      "Paragraph": 9,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "qft2_Exercise2-11.tiddlers.json",
+    "tiddlers_count": 52,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -307,6 +331,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 20.0,
       "detail": "14 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-06T01:33:02Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 21.7,
+      "detail": "36 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:33:02Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.9,
+      "detail": "52 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/qft2_Exercise2-11/qft2_Exercise2-11.lines.json": "sha256:a1e5402f099c627c972cba0ed7c07ce1b544d68b7f40a3d6cf3d0fc18d725356"
+      },
+      "params_hash": "sha256:9080bb6de27815804cffb4bb03db143c575451a5fd2b110803314e78f207a5de",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:33:02Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

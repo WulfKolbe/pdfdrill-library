@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -74,7 +77,28 @@
       "GWRNYB+CMSY6",
       "FSFYYG+CMSY9"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "Uebungsblatt 05",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "ListItem": 4,
+      "Equation": 8,
+      "Paragraph": 10,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "Uebungsblatt 05.tiddlers.json",
+    "tiddlers_count": 41,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -405,6 +429,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 15.8,
       "detail": "20 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-06T00:47:09Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 16.4,
+      "detail": "25 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:47:09Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.5,
+      "detail": "41 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Uebungsblatt 05/Uebungsblatt 05.lines.json": "sha256:8c3c3e1fe40331eaafe2fdcdda61f3c60a1561ef8dba372f6eabac3466be0338"
+      },
+      "params_hash": "sha256:45493587298aabd10da257c3df3052cf337687b3dd5d507afe21b5a7bbe8d655",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:47:09Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

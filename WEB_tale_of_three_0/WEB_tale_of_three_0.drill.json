@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 60,
@@ -85,7 +89,34 @@
       "CBYSUC+MSBM7",
       "CBYSUC+MSBM7"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "WEB_tale_of_three_0",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 60,
+      "Citation": 101,
+      "ListItem": 557,
+      "Equation": 177,
+      "Paragraph": 168,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 23,
+    "bibliography_with_year": 22,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "WEB_tale_of_three_0.tiddlers.json",
+    "tiddlers_count": 1043,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -542,6 +573,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 131.9,
       "detail": "29 fonts, 16 math"
+    },
+    {
+      "ts": "2026-08-06T00:58:30Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 264.3,
+      "detail": "1064 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T00:58:30Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "23 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-06T00:58:30Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 32.3,
+      "detail": "1043 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/WEB_tale_of_three_0/WEB_tale_of_three_0.lines.json": "sha256:0358904ce324ac08920c6d3da406866265af8b00449550a7163b1b53d28ae65a"
+      },
+      "params_hash": "sha256:5de12dfd698930aae1495ce98b601cc50d8c8b1136afd463ffc9ec1c66c1d688",
+      "algo": "sha256",
+      "ts": "2026-08-06T00:58:30Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

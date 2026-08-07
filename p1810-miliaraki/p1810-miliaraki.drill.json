@@ -108,20 +108,20 @@
       }
     ],
     "bibkey": "p1810-miliaraki",
-    "model_path": "p1810-miliaraki.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 12,
-      "Footnote": 5,
+      "Footnote": 10,
       "Citation": 6,
       "Table": 4,
       "Sidenote": 24,
       "Abstract": 1,
       "Diagram": 7,
-      "Section": 28,
+      "Section": 29,
       "ListItem": 22,
       "Equation": 28,
       "Formula": 304,
-      "Paragraph": 85,
+      "Paragraph": 79,
       "Document": 1
     },
     "model_equations_with_cdn": 28,
@@ -130,9 +130,17 @@
     "bibliography_numeric_citations": 69,
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 69,
-    "tiddlers_path": "p1810-miliaraki.pdf.drill/p1810-miliaraki.tiddlers.json",
-    "tiddlers_count": 602,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_path": "p1810-miliaraki.tiddlers.json",
+    "tiddlers_count": 561,
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -675,7 +683,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 45.5,
       "detail": "31 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-06T01:31:47Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 612.3,
+      "detail": "527 objects, 28 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:31:47Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 24.0,
+      "detail": "561 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/p1810-miliaraki/p1810-miliaraki.lines.json": "sha256:a75b7d0f00d2bf90cdd9e815fda6c7f5e1f897f900e08d6fd92c0942d88dcdf0"
+      },
+      "params_hash": "sha256:bf4f54fe6ddf131cb19f6aa5c3db942ed559098aa0899b782d1fe6cdcbe6c099",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:31:47Z",
+      "provenance": "mathpix"
+    }
+  }
 }

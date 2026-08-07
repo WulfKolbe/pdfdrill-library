@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 30,
@@ -76,7 +80,34 @@
       "UFUDLJ+CMMIB5",
       "HMPEFZ+CMSY5"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "ga-computing-2016-v1",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 30,
+      "Citation": 147,
+      "ListItem": 65,
+      "Equation": 324,
+      "Paragraph": 209,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 47 unmapped private-use character(s) remain (U+F8F1×5, U+F8F2×5, U+F8F3×5, U+F8F4×32) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 7,
+    "bibliography_with_year": 6,
+    "bibliography_numeric_citations": 8,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 8,
+    "tiddlers_path": "ga-computing-2016-v1.tiddlers.json",
+    "tiddlers_count": 682,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -477,6 +508,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 92.6,
       "detail": "25 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-06T01:13:08Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 214.2,
+      "detail": "776 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:13:08Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "7 entries, 8+0 cites detected, 8 linked"
+    },
+    {
+      "ts": "2026-08-06T01:13:08Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 21.6,
+      "detail": "682 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/ga-computing-2016-v1/ga-computing-2016-v1.lines.json": "sha256:26db534f557cb5a04f8bce08a3ef86788036866a9951da3a7bcc0116d4a1014f"
+      },
+      "params_hash": "sha256:b6d8cff34ea7fde631a39509a58cf7f3a194031319aaf3e15909059dad9acc97",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:13:08Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -66,7 +69,27 @@
       "RVFKCP+SymbolMT",
       "BSDSMV+EuclidMathTwo"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "jmp_2022081215575510",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 11,
+      "ListItem": 19,
+      "Paragraph": 11,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 222 unmapped private-use character(s) remain (U+F043×10, U+F04C×6, U+F072×4, U+F8EB×5, U+F8EC×5, U+F8ED×5, U+F8EE×38, U+F8EF×10, U+F8F0×38, U+F8F6×5, U+F8F7×5, U+F8F8×5, U+F8F9×38, U+F8FA×10, U+F8FB×38) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "jmp_2022081215575510.tiddlers.json",
+    "tiddlers_count": 58,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -397,6 +420,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 32.4,
       "detail": "20 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-06T01:22:32Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 44.0,
+      "detail": "42 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:22:32Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.1,
+      "detail": "58 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/jmp_2022081215575510/jmp_2022081215575510.lines.json": "sha256:c83025265bfb13f013fda3d50f647f00204f30318a6cc0d37a950568abb2645c"
+      },
+      "params_hash": "sha256:af21d9a87087722843a3f2d09509b39f1d942058132c1f206c8f04887ed2de3c",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:22:32Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

@@ -3,7 +3,11 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 46,
@@ -60,7 +64,34 @@
       "TUNXQK+CambriaMath",
       "ZEOOWU+CambriaMath"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "richtlinie_dgj_stand_5_05_2017_final_neu_1552299156",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 46,
+      "Citation": 21,
+      "ListItem": 158,
+      "Equation": 5,
+      "Paragraph": 36,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 66 unmapped private-use character(s) remain (U+F02D×64, U+F098×1, U+F099×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 0,
+    "tiddlers_path": "richtlinie_dgj_stand_5_05_2017_final_neu_1552299156.tiddlers.json",
+    "tiddlers_count": 274,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -335,6 +366,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 31.7,
       "detail": "16 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-06T01:34:27Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 126.2,
+      "detail": "267 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:34:27Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+1 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-06T01:34:27Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.3,
+      "detail": "274 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/richtlinie_dgj_stand_5_05_2017_final_neu_1552299156/richtlinie_dgj_stand_5_05_2017_final_neu_1552299156.lines.json": "sha256:62bab812a374bd0ed5fac5209aa74fec34b74893e912b0bf83ebf25934ea85b9"
+      },
+      "params_hash": "sha256:fec60a2939dd71a959c02f40ee55527c6552812a1ca7691a23a81282d1321a78",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:34:27Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

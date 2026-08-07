@@ -15,15 +15,16 @@
     "bibkey": "hep-th_0001124",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Page": 69,
-      "Citation": 4,
-      "ListItem": 125,
-      "Paragraph": 69,
-      "Document": 1,
-      "Equation": 2
+      "Abstract": 1,
+      "Section": 20,
+      "Paragraph": 164,
+      "Formula": 422,
+      "LtxCommand": 3,
+      "Equation": 2,
+      "Citation": 132
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "latex",
     "model_caps": {
       "geometry": true,
       "math": true,
@@ -44,7 +45,7 @@
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 135,
     "tiddlers_path": "hep-th_0001124.tiddlers.json",
-    "tiddlers_count": 371,
+    "tiddlers_count": 784,
     "tiddlers_svg_mode": "inline",
     "pages": 69,
     "bytes": 606526,
@@ -120,7 +121,16 @@
       "YGABUL+CMSY6",
       "Symbol"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "merged_geometry": {
+      "pages": 69,
+      "placed": 135,
+      "regions": 135,
+      "sections": 20,
+      "children": 601,
+      "numbered": 20,
+      "roots": 1
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -597,18 +607,32 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 126.5,
       "detail": "27 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-06T01:19:38Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "744 objects from arXiv LaTeX source"
+    },
+    {
+      "ts": "2026-08-06T01:19:39Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 20.2,
+      "detail": "784 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {
-        "/home/wkolbe/pdfdrill-library/hep-th_0001124/hep-th_0001124.lines.json": "sha256:d63c97f75f3aa49b04d2dccafe0ade72299a2c1f76316fce3e04e3542b4e99b4"
-      },
+      "inputs": {},
       "params_hash": "sha256:75bdede914ca96880715bcc7d117028faae2155775000a3c7a11c04b54a058b0",
       "algo": "sha256",
-      "ts": "2026-07-30T14:03:27Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-06T01:19:38Z",
+      "provenance": "latex-source"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

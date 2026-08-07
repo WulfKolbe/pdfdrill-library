@@ -115,7 +115,7 @@
       }
     ],
     "bibkey": "paper572",
-    "model_path": "paper572.pdf.drill/model.docmodel.json",
+    "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 5,
       "Table": 3,
@@ -126,13 +126,22 @@
       "ListItem": 19,
       "Equation": 3,
       "Formula": 60,
-      "Paragraph": 11,
-      "Document": 1
+      "Paragraph": 10,
+      "Document": 1,
+      "Footnote": 1
     },
     "model_equations_with_cdn": 3,
-    "tiddlers_path": "paper572.pdf.drill/paper572.tiddlers.json",
+    "tiddlers_path": "paper572.tiddlers.json",
     "tiddlers_count": 121,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    }
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -723,7 +732,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 26.1,
       "detail": "35 fonts, 15 math"
+    },
+    {
+      "ts": "2026-08-06T01:32:02Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 128.9,
+      "detail": "304 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:32:02Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.4,
+      "detail": "121 tiddlers, svg=inline"
     }
   ],
-  "capabilities": {}
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/paper572/paper572.lines.json": "sha256:8bd23f8efa92053cba3d2a36834f80ca3ec66253021c9f7d75881bbf403be880"
+      },
+      "params_hash": "sha256:94455a0c61c50d08162e410bdd4b445b7fe6cb10ece517ea2e4992de749f0afb",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:32:02Z",
+      "provenance": "mathpix"
+    }
+  }
 }

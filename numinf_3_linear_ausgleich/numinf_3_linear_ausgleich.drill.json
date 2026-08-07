@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 22,
@@ -53,7 +56,28 @@
       "EYIBPG+CMMI8",
       "QTBUVJ+CMEX10"
     ],
-    "has_math_fonts": true
+    "has_math_fonts": true,
+    "bibkey": "numinf_3_linear_ausgleich",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 22,
+      "ListItem": 44,
+      "Equation": 68,
+      "Paragraph": 53,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 344 unmapped private-use character(s) remain (U+F8EB×34, U+F8EC×104, U+F8ED×34, U+F8F6×34, U+F8F7×104, U+F8F8×34) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "numinf_3_linear_ausgleich.tiddlers.json",
+    "tiddlers_count": 204,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -230,6 +254,34 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 38.6,
       "detail": "9 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-06T01:30:40Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 48.0,
+      "detail": "188 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-06T01:30:40Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.2,
+      "detail": "204 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/numinf_3_linear_ausgleich/numinf_3_linear_ausgleich.lines.json": "sha256:9c2b170eff735b8b2ba1d044074e4215d392b005ef258f554f4cebba6086f63a"
+      },
+      "params_hash": "sha256:7789e2b16370c7c5f07b5cdde58649d55d25d924196e86060e4e9e9f77e9e0c7",
+      "algo": "sha256",
+      "ts": "2026-08-06T01:30:40Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }
