@@ -6,7 +6,12 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 42,
@@ -91,9 +96,66 @@
     "bibliography_cites": 99,
     "tiddlers_path": "2310.07064v2.tiddlers.json",
     "tiddlers_count": 285,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Introduction",
+        "page": ""
+      },
+      {
+        "number": "2",
+        "title": "Preliminaries",
+        "page": ""
+      },
+      {
+        "number": "3",
+        "title": "Hypotheses-to-Theories: Learning a Rule Library for Reasoning",
+        "page": ""
+      },
+      {
+        "number": "3.1",
+        "title": "Induction Stage: Learning A Rule Library By Generation and Verification",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 24,
+        "url": "https://docs.anthropic.com/claude/docs/constructing-a-prompt",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.25",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2024-04-26T00:05:28Z",
+    "mod_date": "2024-04-26T00:05:28Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 42,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 592123,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+      "Subject": ""
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -281,7 +343,68 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 196.74,
+      "y0": 489.02,
+      "x1": 206.35,
+      "y1": 498.63,
+      "w_pt": 9.61,
+      "h_pt": 9.61,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 46,
+      "height_px": 46,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 345,
+      "y_ppi": 345,
+      "size_bytes": 328,
+      "object_id": "203 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 396.46,
+      "y0": 546.59,
+      "x1": 406.12,
+      "y1": 556.22,
+      "w_pt": 9.66,
+      "h_pt": 9.64,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 47,
+      "height_px": 46,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 350,
+      "y_ppi": 344,
+      "size_bytes": 326,
+      "object_id": "204 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 196.74,
+      "y0": 546.72,
+      "x1": 206.35,
+      "y1": 556.33,
+      "w_pt": 9.61,
+      "h_pt": 9.61,
+      "name": "Im0",
+      "imagemask": false,
+      "width_px": 46,
+      "height_px": 46,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 345,
+      "y_ppi": 345,
+      "size_bytes": 345,
+      "object_id": "202 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -364,6 +487,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.4,
       "detail": "285 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-08T05:28:06Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 87.1,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-08T05:28:06Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 195.8,
+      "detail": "13 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-08T05:28:07Z",
+      "node": "toc",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 85.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-08T05:28:07Z",
+      "node": "links",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 419.2,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-08T05:28:18Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 10613.9,
+      "detail": "3 images, 3 pix2latex candidates"
     }
   ],
   "capabilities": {

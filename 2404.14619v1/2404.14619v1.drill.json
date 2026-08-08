@@ -6,7 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 10,
@@ -107,10 +113,98 @@
     "bibliography_cites": 93,
     "tiddlers_path": "2404.14619v1.tiddlers.json",
     "tiddlers_count": 174,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 1,
+        "url": "https://github.com/apple/corenet"
+      },
+      {
+        "page": 1,
+        "url": "https://huggingface.co/apple/OpenELM"
+      },
+      {
+        "page": 3,
+        "url": "https://github.com/EleutherAI/lm-evaluation-harness"
+      },
+      {
+        "page": 7,
+        "url": "https://github.com/argilla-io/notus"
+      },
+      {
+        "page": 7,
+        "url": "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard"
+      },
+      {
+        "page": 9,
+        "url": "https://github.com/EleutherAI/lm-evaluation-harness/issues/1294"
+      },
+      {
+        "page": 9,
+        "url": "https://github.com/huggingface/alignment-handbook"
+      }
+    ],
+    "arxiv_title": "OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework",
+    "arxiv_authors": [
+      "Sachin Mehta",
+      "Mohammad Hossein Sekhavat",
+      "Qingqing Cao",
+      "Maxwell Horton",
+      "Yanzi Jin",
+      "Chenfan Sun",
+      "Iman Mirzadeh",
+      "Mahyar Najibi",
+      "Dmitry Belenko",
+      "Peter Zatloukal",
+      "Mohammad Rastegari"
+    ],
+    "arxiv_primary_category": "cs.CL"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.25",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2024-04-24T00:11:44Z",
+    "mod_date": "2024-04-24T00:11:44Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 10,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 403243,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "mehta2024",
+    "title": "OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework",
+    "author": "Sachin Mehta and Mohammad Hossein Sekhavat and Qingqing Cao and Maxwell Horton and Yanzi Jin and Chenfan Sun and Iman Mirzadeh and Mahyar Najibi and Dmitry Belenko and Peter Zatloukal and Mohammad Rastegari",
+    "year": "2024",
+    "pages": 10,
+    "doi": "",
+    "arxiv_id": "2404.14619v1",
+    "url": "https://arxiv.org/abs/2404.14619v1",
+    "license": "",
+    "publisher": "",
+    "eprint": "2404.14619v1",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.CL"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -451,7 +545,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -534,6 +628,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.2,
       "detail": "174 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-08T05:28:55Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 88.1,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-08T05:28:55Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 108.5,
+      "detail": "24 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-08T05:28:56Z",
+      "node": "toc",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 35.9,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-08T05:28:56Z",
+      "node": "links",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 66.8,
+      "detail": "7 external urls"
+    },
+    {
+      "ts": "2026-08-08T05:28:56Z",
+      "node": "bibtex",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 92.7,
+      "detail": "citekey=mehta2024"
+    },
+    {
+      "ts": "2026-08-08T05:29:00Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3858.9,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

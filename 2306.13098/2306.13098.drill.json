@@ -6,7 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 18,
@@ -112,10 +119,69 @@
     "bibliography_cites": 109,
     "tiddlers_path": "2306.13098.tiddlers.json",
     "tiddlers_count": 548,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "An algebraic representation of three generations of fermions with $SU(3)_C$ color symmetry based on the Cayley-Dickson algebra of sedenions $\\mathbb{S}$ is constructed. Recent constructions based on division algebras convincingly describe a single generation of leptons and quarks with Standard Model gauge symmetries. Nonetheless, an algebraic origin for the existence of exactly three generations has proven difficult to substantiate. We motivate $\\mathbb{S}$ as a natural algebraic candidate to describe three generations with $SU(3)_C$ gauge symmetry. We initially represent one generation of leptons and quarks in terms of two minimal left ideals of $\\mathbb{C}\\ell(6)$, generated from a subset of all left actions of the complex sedenions on themselves. Subsequently we employ the finite group $S_3$, which are automorphisms of $\\mathbb{S}$ but not of $\\mathbb{O}$ to generate two additional generations. Given the relative obscurity of sedenions, efforts have been made to present the material in a self-contained manner.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Three generations of colored fermions with $S_3$ family symmetry from Cayley-Dickson sedenions",
+    "arxiv_authors": [
+      "Niels G. Gresnigt",
+      "Liam Gourlay",
+      "Abhinav Varma"
+    ],
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 16,
+        "url": "https://preprints.ihes.fr/2022/P/P-22-01.pdf",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.25",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2023-06-26T00:59:04Z",
+    "mod_date": "2023-06-26T00:59:04Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 18,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 473467,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "gresnigt2023",
+    "title": "Three generations of colored fermions with $S_3$ family symmetry from Cayley-Dickson sedenions",
+    "author": "Niels G. Gresnigt and Liam Gourlay and Abhinav Varma",
+    "year": "2023",
+    "pages": 18,
+    "doi": "",
+    "arxiv_id": "2306.13098",
+    "url": "https://arxiv.org/abs/2306.13098",
+    "license": "",
+    "publisher": "",
+    "eprint": "2306.13098",
+    "archive_prefix": "arXiv",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -442,7 +508,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 4,
+      "x0": 241.44,
+      "y0": 72.0,
+      "x1": 370.56,
+      "y1": 186.08,
+      "w_pt": 129.12,
+      "h_pt": 114.08,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 1614,
+      "height_px": 1426,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 900,
+      "y_ppi": 900,
+      "size_bytes": 53350,
+      "object_id": "187 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -525,6 +612,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.1,
       "detail": "548 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-08T05:27:37Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 100.5,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-08T05:27:39Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 258.7,
+      "detail": "23 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-08T05:27:40Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 39.2,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-08T05:27:41Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 323.8,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-08T05:27:41Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=gresnigt2023"
+    },
+    {
+      "ts": "2026-08-08T05:27:47Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 5715.1,
+      "detail": "1 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -6,7 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 16,
@@ -79,12 +86,54 @@
     "bibliography_cites": 0,
     "tiddlers_path": "23633.tiddlers.json",
     "tiddlers_count": 69,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Guided by a Foucauldian theorisation, this chapter conducts a discourse analysis of assessment policy\ndocuments in one neoliberalised UK university. Furthermore, it traces the ways in which academics\nand graduate teaching assistants (GTAs) as assessors negotiate this policy space. The findings\ndemonstrate that the assessment policy has become increasingly restrictive but also ambiguous in the\nuniversity. It includes a high number of policy documents, a wide range of assessment stakeholders\nand increasingly abstract language of instruction. However, the findings also suggest that this policy\nambiguity is not utterly negative but can be exploited by academics and GTAs, allowing them to have\nsome ownership over assessment processes and their own subjectivities as assessors.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "Rille",
+    "producer": "Microsoft® Word 2016",
+    "creator": "Microsoft® Word 2016",
+    "creation_date": "2017-12-06T12:04:05Z",
+    "mod_date": "2017-12-06T12:04:05Z",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": true,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 16,
+    "encrypted": false,
+    "page_size": "595.32 x 841.92 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 629740,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "rille2017",
+    "title": "",
+    "author": "Rille",
+    "year": "2017",
+    "pages": 16,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "ABCDEE+Calibri,Bold",
@@ -199,7 +248,7 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -282,6 +331,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.7,
       "detail": "69 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-08T05:28:33Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 81.2,
+      "detail": "title=False author=True"
+    },
+    {
+      "ts": "2026-08-08T05:28:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 103.6,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-08T05:28:33Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 32.6,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-08T05:28:33Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 69.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-08T05:28:34Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 19.8,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-08T05:28:34Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 83.6,
+      "detail": "citekey=rille2017"
+    },
+    {
+      "ts": "2026-08-08T05:28:40Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 6503.4,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
