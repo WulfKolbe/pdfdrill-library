@@ -6,7 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 24,
@@ -112,10 +118,89 @@
     "bibliography_cites": 28,
     "tiddlers_path": "2309.13736.tiddlers.json",
     "tiddlers_count": 1044,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "The set of functions parameterized by a linear fully-connected neural network is a determinantal variety. We investigate the subvariety of functions that are equivariant or invariant under the action of a permutation group. Examples of such group actions are translations or $90^\\circ$ rotations on images. We describe such equivariant or invariant subvarieties as direct products of determinantal varieties, from which we deduce their dimension, degree, Euclidean distance degree, and their singularities. We fully characterize invariance for arbitrary permutation groups, and equivariance for cyclic groups. We draw conclusions for the parameterization and the design of equivariant and invariant linear networks in terms of sparsity and weight-sharing properties. We prove that all invariant linear functions can be parameterized by a single linear autoencoder with a weight-sharing property imposed by the cycle decomposition of the considered permutation. The space of rank-bounded equivariant functions has several irreducible components, so it can not be parameterized by a single network-but each irreducible component can. Finally, we show that minimizing the squared-error loss on our invariant or equivariant networks reduces to minimizing the Euclidean distance from determinantal varieties via the Eckart-Young theorem.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Geometry of Linear Neural Networks: Equivariance and Invariance under Permutation Groups",
+    "arxiv_authors": [
+      "Kathlén Kohn",
+      "Anna-Laura Sattelberger",
+      "Vahid Shahverdi"
+    ],
+    "arxiv_primary_category": "cs.LG",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 24,
+        "url": "https://kathlenkohn.github.io/Papers/MFO_Seminar_MAG.pdf"
+      },
+      {
+        "page": 24,
+        "url": "http://www.math.uiuc.edu/Macaulay2/"
+      },
+      {
+        "page": 24,
+        "url": "https://arxiv.org/abs/2304.05752"
+      },
+      {
+        "page": 24,
+        "url": "https://arxiv.org/abs/2205.07362"
+      },
+      {
+        "page": 24,
+        "url": "https://arxiv.org/abs/2108.02040"
+      },
+      {
+        "page": 24,
+        "url": "https://arxiv.org/abs/2106.06020"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.25",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2023-09-26T01:47:02Z",
+    "mod_date": "2023-09-26T01:47:02Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 24,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 461893,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "kohn2023",
+    "title": "Geometry of Linear Neural Networks: Equivariance and Invariance under Permutation Groups",
+    "author": "Kathlén Kohn and Anna-Laura Sattelberger and Vahid Shahverdi",
+    "year": "2023",
+    "pages": 24,
+    "doi": "",
+    "arxiv_id": "2309.13736",
+    "url": "https://arxiv.org/abs/2309.13736",
+    "license": "",
+    "publisher": "",
+    "eprint": "2309.13736",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.LG"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -428,7 +513,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -511,6 +596,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 18.0,
       "detail": "1044 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-08T05:27:56Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 50.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-08T05:27:57Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 78.4,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-08T05:27:57Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 23.9,
+      "detail": "6 external urls"
+    },
+    {
+      "ts": "2026-08-08T05:27:57Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=kohn2023"
+    },
+    {
+      "ts": "2026-08-08T05:28:04Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 6024.0,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
