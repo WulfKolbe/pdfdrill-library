@@ -7,7 +7,15 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 9,
@@ -95,12 +103,577 @@
     "bibliography_cites": 20,
     "tiddlers_path": "30253-1526-24697-2-10-20241121.tiddlers.json",
     "tiddlers_count": 88,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Combinatory logic and its combinators BCKWI are a founda-          B𝑞 𝑓 𝑥     −→ 𝑞 (𝑓 𝑥)           S 𝑞𝑓 𝑥      −→ 𝑞 𝑥 (𝑓 𝑥)\ntion for tacit (point-free) programming. But what does each        C𝑞𝑥𝑦       −→ 𝑞 𝑦 𝑥             W𝑞𝑥         −→ 𝑞 𝑥 𝑥\nletter mean? Informally, B stands for composing, C for swap-       K𝑞𝑥        −→ 𝑞                 I 𝑥         −→ 𝑥\nping, K for discarding, W for duplicating and I is the identity\n                                                                     We can understand combinators by their effects. C per-\nfunction. However, B does more than that: depending on\n                                                                  mutes 𝑥 and 𝑦, K discards 𝑥, W duplicates 𝑥, and I is the\nwhere it appears in the expression, it can also call functions\n                                                                  identity function. B is often described as function composi-\nor defer values for later. To help tell these purposes apart,\n                                                                  tion, but it actually does more than that. For starters, if 𝑓 is\nwe relate combinatory logic to the concatenative calculus of\n                                                                  a curried function, the composition may also be seen as par-\nKerby, which features separate primitives for the different\n                                                                  tial application. Furthermore, B can help other combinators\nfacets of B.\n                                                                  reach deeper arguments. For example, in B K the B makes K\n   We provide translations from combinatory logic to con-\n                                                                  discard the second argument after 𝑞, instead of the first:\ncatenative calculus and vice versa. In both directions we\nhave contributions. From concatenative to combinatory, we                      B K 𝑞 𝑥 𝑦 −→ K (𝑞 𝑥) 𝑦 −→ 𝑞 𝑥\nshow that first-order stack programs map to regular com-             We want to be able to look at a combinator and intuitively\nbinators, and which patterns of combinators higher-order          understand what it means. A first obstacle is that some com-\nstack programs map to. From combinatory to concatenative,         binators serve more than one purpose. That was already\nwe extend an algorithm of Kerby to make it compatible with        bad for B, and it gets even worse for S. A famous result of\na call-by-value evaluation order, in addition to call-by-name.    combinatory logic is that any combinator can be expressed\n   To enforce a strong association between the two worlds,        in terms of only S and K. Thus, combinations of S and K can\nour translations are simulations. That is, one evaluation step    literally do anything.\nin the original program is simulated by zero or more evalua-         A second obstacle is that the combinator basis BCKWI\ntions steps in the translated program.                            encourages continuation-passing style, because their first\nKeywords: concatenative calculus, combinatory logic, stack        argument behaves like a continuation callback. This is ser-\nlanguages, conversion, simulation, tacit programming, point-      viceable, but can take some time to get used to.\nfree programming                                                     Higher-order concatenative programming. The higher-\n                                                                  order concatenative (stack) languages, such as Joy [12, 13]",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 9,
+        "url": "http://hdl.handle.net/11422/22871"
+      },
+      {
+        "page": 9,
+        "url": "http://tunes.org/~iepos/joy.html"
+      },
+      {
+        "page": 9,
+        "url": "https://doi.org/10.1093/comjnl/6.4.308"
+      },
+      {
+        "page": 9,
+        "url": "http://www.latrobe.edu.au/phimvt/joy/j02maf.html"
+      },
+      {
+        "page": 9,
+        "url": "https://web.archive.org/web/20111007025556/http://www.latrobe.edu.au/phimvt/joy/j02maf.html"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Converting Combinatory Logic to and from Concatenative Calculus",
+    "author": "",
+    "producer": "pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) kpathsea version 6.3.5",
+    "creator": "LaTeX with acmart 2024/04/17 v2.07 Typesetting articles for the Association for Computing Machinery and hyperref 2023-02-07 v7.00v Hypertext links for LaTeX",
+    "creation_date": "2024-11-21T16:44:43-03",
+    "mod_date": "2024-11-21T16:44:43-03",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 9,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 510586,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) kpathsea version 6.3.5",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "converting2024",
+    "title": "Converting Combinatory Logic to and from Concatenative Calculus",
+    "author": "",
+    "year": "2024",
+    "pages": 9,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 602.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 53.0,
+      "y": 748.0,
+      "name": "page.1",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 602.0,
+      "name": "section*.1",
+      "kind": "section"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 606.0,
+      "name": "section*.2",
+      "kind": "section"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 318.0,
+      "name": "section*.3",
+      "kind": "section"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 136.0,
+      "name": "section*.4",
+      "kind": "section"
+    },
+    {
+      "page": 1,
+      "x": 318.0,
+      "y": 291.0,
+      "name": "section*.5",
+      "kind": "section"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 266.0,
+      "name": "section.1",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 53.0,
+      "y": 748.0,
+      "name": "page.2",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 2,
+      "x": 54.0,
+      "y": 406.0,
+      "name": "section*.6",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 54.0,
+      "y": 232.0,
+      "name": "section*.7",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 318.0,
+      "y": 628.0,
+      "name": "section*.8",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 318.0,
+      "y": 443.0,
+      "name": "section.2",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 318.0,
+      "y": 376.0,
+      "name": "subsection.2.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 54.0,
+      "y": 652.0,
+      "name": "figure.caption.10",
+      "kind": "figure"
+    },
+    {
+      "page": 3,
+      "x": 54.0,
+      "y": 726.0,
+      "name": "figure.caption.9",
+      "kind": "figure"
+    },
+    {
+      "page": 3,
+      "x": 53.0,
+      "y": 748.0,
+      "name": "page.3",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 3,
+      "x": 318.0,
+      "y": 318.0,
+      "name": "section.3",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 54.0,
+      "y": 450.0,
+      "name": "subsection.2.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 318.0,
+      "y": 221.0,
+      "name": "subsection.3.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 54.0,
+      "y": 726.0,
+      "name": "figure.caption.11",
+      "kind": "figure"
+    },
+    {
+      "page": 4,
+      "x": 53.0,
+      "y": 748.0,
+      "name": "page.4",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 4,
+      "x": 318.0,
+      "y": 276.0,
+      "name": "section*.12",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 318.0,
+      "y": 195.0,
+      "name": "section*.13",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 318.0,
+      "y": 113.0,
+      "name": "theorem.3.1",
+      "kind": "theorem"
+    },
+    {
+      "page": 5,
+      "x": 53.0,
+      "y": 748.0,
+      "name": "page.5",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 5,
+      "x": 318.0,
+      "y": 542.0,
+      "name": "subsection.3.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 54.0,
+      "y": 588.0,
+      "name": "theorem.3.2",
+      "kind": "theorem"
+    },
+    {
+      "page": 5,
+      "x": 54.0,
+      "y": 297.0,
+      "name": "theorem.3.3",
+      "kind": "theorem"
+    },
+    {
+      "page": 6,
+      "x": 318.0,
+      "y": 726.0,
+      "name": "figure.caption.14",
+      "kind": "figure"
+    },
+    {
+      "page": 6,
+      "x": 318.0,
+      "y": 611.0,
+      "name": "figure.caption.15",
+      "kind": "figure"
+    },
+    {
+      "page": 6,
+      "x": 53.0,
+      "y": 748.0,
+      "name": "page.6",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 6,
+      "x": 54.0,
+      "y": 244.0,
+      "name": "section.4",
+      "kind": "section"
+    },
+    {
+      "page": 6,
+      "x": 54.0,
+      "y": 635.0,
+      "name": "subsection.3.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 318.0,
+      "y": 340.0,
+      "name": "subsection.4.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 54.0,
+      "y": 726.0,
+      "name": "figure.caption.16",
+      "kind": "figure"
+    },
+    {
+      "page": 7,
+      "x": 54.0,
+      "y": 640.0,
+      "name": "figure.caption.17",
+      "kind": "figure"
+    },
+    {
+      "page": 7,
+      "x": 54.0,
+      "y": 579.0,
+      "name": "figure.caption.18",
+      "kind": "figure"
+    },
+    {
+      "page": 7,
+      "x": 318.0,
+      "y": 726.0,
+      "name": "figure.caption.19",
+      "kind": "figure"
+    },
+    {
+      "page": 7,
+      "x": 53.0,
+      "y": 748.0,
+      "name": "page.7",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 7,
+      "x": 54.0,
+      "y": 496.0,
+      "name": "subsection.4.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 318.0,
+      "y": 355.0,
+      "name": "theorem.4.1",
+      "kind": "theorem"
+    },
+    {
+      "page": 7,
+      "x": 318.0,
+      "y": 325.0,
+      "name": "theorem.4.2",
+      "kind": "theorem"
+    },
+    {
+      "page": 7,
+      "x": 318.0,
+      "y": 112.0,
+      "name": "theorem.4.3",
+      "kind": "theorem"
+    },
+    {
+      "page": 8,
+      "x": 318.0,
+      "y": 726.0,
+      "name": "figure.caption.20",
+      "kind": "figure"
+    },
+    {
+      "page": 8,
+      "x": 53.0,
+      "y": 748.0,
+      "name": "page.8",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 8,
+      "x": 318.0,
+      "y": 278.0,
+      "name": "section*.22",
+      "kind": "section"
+    },
+    {
+      "page": 8,
+      "x": 318.0,
+      "y": 220.0,
+      "name": "section*.23",
+      "kind": "section"
+    },
+    {
+      "page": 8,
+      "x": 54.0,
+      "y": 319.0,
+      "name": "subsection.4.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 9,
+      "x": 322.0,
+      "y": 343.0,
+      "name": "cite.compcert",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 322.0,
+      "y": 472.0,
+      "name": "cite.curry-combinatory",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 318.0,
+      "y": 233.0,
+      "name": "cite.evo-forth",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 322.0,
+      "y": 442.0,
+      "name": "cite.hashi-fc2cba",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 322.0,
+      "y": 413.0,
+      "name": "cite.kerby-joy",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 322.0,
+      "y": 393.0,
+      "name": "cite.kleffner-ftcl",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 322.0,
+      "y": 373.0,
+      "name": "cite.landing-secd",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 322.0,
+      "y": 303.0,
+      "name": "cite.moore-forth",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 322.0,
+      "y": 283.0,
+      "name": "cite.pestov-factor",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 322.0,
+      "y": 253.0,
+      "name": "cite.piperno-composecomb",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 318.0,
+      "y": 213.0,
+      "name": "cite.schonfinkel-uber-die",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 318.0,
+      "y": 154.0,
+      "name": "cite.thun-joy",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 318.0,
+      "y": 193.0,
+      "name": "cite.thun-math-joy",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 54.0,
+      "y": 726.0,
+      "name": "figure.caption.21",
+      "kind": "figure"
+    },
+    {
+      "page": 9,
+      "x": 53.0,
+      "y": 748.0,
+      "name": "page.9",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 9,
+      "x": 54.0,
+      "y": 303.0,
+      "name": "section*.24",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 54.0,
+      "y": 148.0,
+      "name": "section*.25",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 318.0,
+      "y": 587.0,
+      "name": "section*.26",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 318.0,
+      "y": 567.0,
+      "name": "section*.27",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 318.0,
+      "y": 489.0,
+      "name": "section*.28",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 318.0,
+      "y": 472.0,
+      "name": "section*.29",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 54.0,
+      "y": 481.0,
+      "name": "section.5",
+      "kind": "section"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "CCQVKT+LinLibertineTB",
@@ -355,7 +928,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -438,6 +1011,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.8,
       "detail": "88 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-09T05:51:13Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 93.5,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-08-09T05:51:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 197.4,
+      "detail": "18 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-09T05:51:13Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 94.6,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-09T05:51:13Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 102.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-09T05:51:14Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 23.7,
+      "detail": "5 external urls"
+    },
+    {
+      "ts": "2026-08-09T05:51:14Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 20.9,
+      "detail": "71 dests across 7 kinds"
+    },
+    {
+      "ts": "2026-08-09T05:51:14Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=converting2024"
+    },
+    {
+      "ts": "2026-08-09T05:51:17Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3403.4,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

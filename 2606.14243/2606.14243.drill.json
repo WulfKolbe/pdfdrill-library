@@ -9,7 +9,15 @@
     "MD_BUILT",
     "FONTS_LAYER_KNOWN",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "2606.14243",
@@ -117,12 +125,1424 @@
     "bibliography_cites": 72,
     "tiddlers_path": "2606.14243.tiddlers.json",
     "tiddlers_count": 302,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Knowledge injection aims to equip large language models (LLMs) with external, domain-specific, or time-sensitive knowledge. Existing approaches typically face a trade-off between flexibility and integration: retrieval-augmented generation keeps knowledge outside the model but only provides prompt-level augmentation, whereas post-training based methods encode new knowledge into shared parameters but may introduce catastrophic forgetting, knowledge conflict, and costly updates. In this paper, we propose Decoupled Mixture-of-Experts (DMoE), a modular architecture for parametric knowledge injection that decouples both experts and the router from the base model. DMoE converts external knowledge corpora into independently updatable expert modules and uses a lightweight uncertainty-aware router to activate relevant experts only when the base model lacks sufficient knowledge during generation. To support efficient auto-regressive inference, DMoE attaches experts only to the final-layer feed-forward network, preserving KV-cache reuse while enabling parameter-level knowledge augmentation. Experiments on knowledge-intensive benchmarks show that DMoE consistently improves answer quality over retrieval and adapter-based baselines.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Decoupled Mixture-of-Experts for Parametric Knowledge Injection",
+    "arxiv_authors": [
+      "Baoqing Yue",
+      "Weihang Su",
+      "Qingyao Ai",
+      "Yichen Tang",
+      "Changyue Wang",
+      "Jiacheng Kang",
+      "Jingtao Zhan",
+      "Yiqun Liu"
+    ],
+    "arxiv_primary_category": "cs.CL",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Decoupled Mixture-of-Experts for Parametric Knowledge Injection",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "1.1",
+        "title": "Baoqing Yue",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.2",
+        "title": "Jiacheng Kang1, Jingtao Zhan1, Yiqun Liu1",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.3",
+        "title": "C may introduce catastrophic forgetting, knowl-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2",
+        "title": "X knowledge-intensive benchmarks show that",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "of-Experts (DMoE), a modular architecture for",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2.1",
+        "title": "2.3 Previous Explorations in Decoupling MoE",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.3",
+        "title": "3 Methodology",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3.1",
+        "title": "2.2 Post-training Based Knowledge Injection",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.3.2",
+        "title": "3.1 Preliminaries and Task Formulation",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.3.3",
+        "title": "3.2 Model Architecture N",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.3.4",
+        "title": "3.2.2 Router",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.4",
+        "title": "Triggering. Routing is activated only when",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.4.1",
+        "title": "3.2.1 Experts",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.5",
+        "title": "Expert architecture.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.5.1",
+        "title": "4.1 Benchmarks and Metrics",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.6",
+        "title": "Routing.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.6.1",
+        "title": "4.2 Baselines",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.7",
+        "title": "CWQ HOTPOTQA QUASAR-T STRATEGYQA",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.8",
+        "title": "METHOD",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.9",
+        "title": "EM F1 EM F1 EM F1 ACC",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.10",
+        "title": "BASE MODEL: LLAMA3.2-1B",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.11",
+        "title": "BASE MODEL: QWEN2.5-1.5B",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.11.1",
+        "title": "4.3 Implementation Details",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.11.2",
+        "title": "5.1 Overall Results",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.12",
+        "title": "METHOD TIME (S) GPU (GB)",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.13",
+        "title": "toregressive inference efficiency. We report the infer-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.13.1",
+        "title": "5.2 Efficiency Analysis",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.13.2",
+        "title": "5.3 Ablation Study",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.14",
+        "title": "CWQ HOTPOTQA QUASAR-T STRATEGYQA EFFICIENCY",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.15",
+        "title": "METHOD",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.16",
+        "title": "EM F1 EM F1 EM F1 ACC TIME (S) GPU (GB)",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.17",
+        "title": "SETTING CWQ HOTPOTQA QUASAR-T STRATEGYQA",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.18",
+        "title": "LLAMA3.2-1B",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.19",
+        "title": "QWEN2.5-1.5B",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.20",
+        "title": "6 Conclusion",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.21",
+        "title": "er",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.22",
+        "title": "oc HP",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.23",
+        "title": "S M",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.24",
+        "title": "E0.35 STRATEGY",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.25",
+        "title": "Top-K",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.26",
+        "title": "A Additional Ablation Studies",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.27",
+        "title": "A.1 Warmup: Definition and Impact choices.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.28",
+        "title": "SETTING EM F1",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.29",
+        "title": "A.3.1 TU and Downstream Performance",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.30",
+        "title": "A.2 Router: Impact of Top-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.31",
+        "title": "A.3.2 Component Ablation: Trigger and",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.32",
+        "title": "Router",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.33",
+        "title": "A.3 Router: TU-Triggered Routing Analysis",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 1,
+        "url": "https://arxiv.org/abs/2606.14243v1"
+      },
+      {
+        "page": 11,
+        "url": "https://doi.org/10.18653/v1/2024.findings-emnlp.625"
+      },
+      {
+        "page": 11,
+        "url": "https://doi.org/10.1145/3726302.3730295"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Decoupled Mixture-of-Experts for Parametric Knowledge Injection",
+    "author": "Baoqing Yue; Weihang Su; Qingyao Ai; Yichen Tang; Changyue Wang; Jiacheng Kang; Jingtao Zhan; Yiqun Liu",
+    "producer": "pikepdf 8.15.1",
+    "creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+    "creation_date": null,
+    "mod_date": null,
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 16,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 593720,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "DOI": "https://doi.org/10.48550/arXiv.2606.14243",
+      "License": "http://creativecommons.org/licenses/by/4.0/",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) kpathsea version 6.4.1",
+      "arXivID": "https://arxiv.org/abs/2606.14243v1"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "yue2026",
+    "title": "Decoupled Mixture-of-Experts for Parametric Knowledge Injection",
+    "author": "Baoqing Yue and Weihang Su and Qingyao Ai and Yichen Tang and Changyue Wang and Jiacheng Kang and Jingtao Zhan and Yiqun Liu",
+    "year": "2026",
+    "pages": 16,
+    "doi": "10.48550/arXiv.2606.14243",
+    "arxiv_id": "2606.14243",
+    "url": "https://arxiv.org/abs/2606.14243",
+    "license": "http://creativecommons.org/licenses/by/4.0/",
+    "publisher": "",
+    "eprint": "2606.14243",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.CL"
+  },
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 71.0,
+      "y": 622.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 306.0,
+      "y": 629.0,
+      "name": "figure.caption.1",
+      "kind": "figure"
+    },
+    {
+      "page": 1,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.1",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 1,
+      "x": 71.0,
+      "y": 225.0,
+      "name": "section.1",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.2",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 2,
+      "x": 306.0,
+      "y": 215.0,
+      "name": "section.2",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 306.0,
+      "y": 195.0,
+      "name": "subsection.2.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 351.0,
+      "y": 321.0,
+      "name": "equation.1",
+      "kind": "equation"
+    },
+    {
+      "page": 3,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.3",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 3,
+      "x": 306.0,
+      "y": 478.0,
+      "name": "section.3",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 71.0,
+      "y": 464.0,
+      "name": "subsection.2.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 306.0,
+      "y": 749.0,
+      "name": "subsection.2.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 306.0,
+      "y": 456.0,
+      "name": "subsection.3.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 147.0,
+      "y": 444.0,
+      "name": "equation.2",
+      "kind": "equation"
+    },
+    {
+      "page": 4,
+      "x": 78.0,
+      "y": 419.0,
+      "name": "equation.3",
+      "kind": "equation"
+    },
+    {
+      "page": 4,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "figure.caption.2",
+      "kind": "figure"
+    },
+    {
+      "page": 4,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.4",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 4,
+      "x": 71.0,
+      "y": 100.0,
+      "name": "section*.3",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 306.0,
+      "y": 352.0,
+      "name": "section*.4",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 306.0,
+      "y": 126.0,
+      "name": "section*.6",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 71.0,
+      "y": 247.0,
+      "name": "subsection.3.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 71.0,
+      "y": 114.0,
+      "name": "subsubsection.3.2.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 306.0,
+      "y": 139.0,
+      "name": "subsubsection.3.2.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 127.0,
+      "y": 518.0,
+      "name": "equation.4",
+      "kind": "equation"
+    },
+    {
+      "page": 5,
+      "x": 101.0,
+      "y": 137.0,
+      "name": "equation.5",
+      "kind": "equation"
+    },
+    {
+      "page": 5,
+      "x": 360.0,
+      "y": 694.0,
+      "name": "equation.6",
+      "kind": "equation"
+    },
+    {
+      "page": 5,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "figure.caption.5",
+      "kind": "figure"
+    },
+    {
+      "page": 5,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.5",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 5,
+      "x": 71.0,
+      "y": 432.0,
+      "name": "section*.7",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 306.0,
+      "y": 552.0,
+      "name": "section.4",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 306.0,
+      "y": 530.0,
+      "name": "subsection.4.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 306.0,
+      "y": 125.0,
+      "name": "subsection.4.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.6",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 6,
+      "x": 306.0,
+      "y": 219.0,
+      "name": "section.5",
+      "kind": "section"
+    },
+    {
+      "page": 6,
+      "x": 71.0,
+      "y": 287.0,
+      "name": "subsection.4.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 306.0,
+      "y": 197.0,
+      "name": "subsection.5.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "table.caption.8",
+      "kind": "table"
+    },
+    {
+      "page": 7,
+      "x": 381.0,
+      "y": 175.0,
+      "name": "equation.7",
+      "kind": "equation"
+    },
+    {
+      "page": 7,
+      "x": 363.0,
+      "y": 86.0,
+      "name": "equation.8",
+      "kind": "equation"
+    },
+    {
+      "page": 7,
+      "x": 306.0,
+      "y": 778.0,
+      "name": "figure.caption.10",
+      "kind": "figure"
+    },
+    {
+      "page": 7,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.7",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 7,
+      "x": 71.0,
+      "y": 420.0,
+      "name": "subsection.5.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 306.0,
+      "y": 414.0,
+      "name": "subsection.5.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 306.0,
+      "y": 254.0,
+      "name": "subsubsection.5.3.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "table.caption.9",
+      "kind": "table"
+    },
+    {
+      "page": 8,
+      "x": 136.0,
+      "y": 166.0,
+      "name": "equation.10",
+      "kind": "equation"
+    },
+    {
+      "page": 8,
+      "x": 99.0,
+      "y": 310.0,
+      "name": "equation.9",
+      "kind": "equation"
+    },
+    {
+      "page": 8,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.8",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 8,
+      "x": 306.0,
+      "y": 509.0,
+      "name": "subsubsection.5.3.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 8,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "table.caption.11",
+      "kind": "table"
+    },
+    {
+      "page": 8,
+      "x": 71.0,
+      "y": 645.0,
+      "name": "table.caption.12",
+      "kind": "table"
+    },
+    {
+      "page": 9,
+      "x": 66.0,
+      "y": 279.0,
+      "name": "cite.ai2025memorybench",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 66.0,
+      "y": 226.0,
+      "name": "cite.borgeaud2022improving",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 66.0,
+      "y": 141.0,
+      "name": "cite.brown2020language",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 771.0,
+      "name": "cite.cai2024read",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 708.0,
+      "name": "cite.chowdhery2023palm",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 635.0,
+      "name": "cite.dai2022stablemoe",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 583.0,
+      "name": "cite.dhingra2017quasar",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 532.0,
+      "name": "cite.dong2025decoupling",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 447.0,
+      "name": "cite.edge2024local",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 385.0,
+      "name": "cite.fang2024scaling",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 311.0,
+      "name": "cite.fedus2022switch",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 260.0,
+      "name": "cite.geva2021did",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 186.0,
+      "name": "cite.geva2021transformer",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 301.0,
+      "y": 124.0,
+      "name": "cite.goodfellow2013empirical",
+      "kind": "other"
+    },
+    {
+      "page": 9,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.9",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 9,
+      "x": 71.0,
+      "y": 300.0,
+      "name": "section*.13",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 71.0,
+      "y": 628.0,
+      "name": "section.6",
+      "kind": "section"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 771.0,
+      "name": "cite.han2024parameter",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 718.0,
+      "name": "cite.houlsby2019parameter",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 644.0,
+      "name": "cite.hu2022lora",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 591.0,
+      "name": "cite.jacobs1991adaptive",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 549.0,
+      "name": "cite.jiang2023active",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 474.0,
+      "name": "cite.jin2025search",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 410.0,
+      "name": "cite.karpukhin2020dense",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 347.0,
+      "name": "cite.kemker2018measuring",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 283.0,
+      "name": "cite.lauscher2020common",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 208.0,
+      "name": "cite.lester2021power",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 66.0,
+      "y": 166.0,
+      "name": "cite.lewis2020retrieval",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 771.0,
+      "name": "cite.li2021prefix",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 729.0,
+      "name": "cite.mishra2021cross",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 676.0,
+      "name": "cite.nanda2023fact",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 624.0,
+      "name": "cite.nie2021evomoe",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 560.0,
+      "name": "cite.ouyang2022training",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 485.0,
+      "name": "cite.ovadia2023fine",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 432.0,
+      "name": "cite.robertson2009probabilistic",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 379.0,
+      "name": "cite.shazeer2017outrageously",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 316.0,
+      "name": "cite.song2025injecting",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 252.0,
+      "name": "cite.su2024wikiformer",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 103.0,
+      "name": "cite.su2025dynamic",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 301.0,
+      "y": 177.0,
+      "name": "cite.su2025pre",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.10",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 303.0,
+      "name": "cite.su2024dragin",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 388.0,
+      "name": "cite.su2024mitigating",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 602.0,
+      "name": "cite.su2024stard",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 153.0,
+      "name": "cite.su2024unsupervised",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 707.0,
+      "name": "cite.su2025judge",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 239.0,
+      "name": "cite.su2025parametric",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 665.0,
+      "name": "cite.su2025sigirap",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 771.0,
+      "name": "cite.su2025surge",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 452.0,
+      "name": "cite.su2025towards",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 611.0,
+      "name": "cite.su2026decoupling",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 729.0,
+      "name": "cite.su2026enhancing",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 66.0,
+      "y": 505.0,
+      "name": "cite.su2026skill",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 547.0,
+      "name": "cite.talmor2018web",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 505.0,
+      "name": "cite.taori2023alpaca",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 419.0,
+      "name": "cite.tu2025robust",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 142.0,
+      "name": "cite.wang2025decoupling",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 206.0,
+      "name": "cite.wang2025decoupling-2",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 270.0,
+      "name": "cite.wang2025knowledge",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 301.0,
+      "y": 345.0,
+      "name": "cite.wang2026joint",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.11",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 771.0,
+      "name": "cite.wang2022super",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 685.0,
+      "name": "cite.wang2025decoupled",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 622.0,
+      "name": "cite.xu2024hallucination",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 569.0,
+      "name": "cite.yang2018hotpotqa",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 483.0,
+      "name": "cite.yu2024neuron",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 66.0,
+      "y": 419.0,
+      "name": "cite.zhou2023instruction",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.12",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 13,
+      "x": 71.0,
+      "y": 577.0,
+      "name": "appendix.A",
+      "kind": "other"
+    },
+    {
+      "page": 13,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "figure.caption.14",
+      "kind": "figure"
+    },
+    {
+      "page": 13,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.13",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 13,
+      "x": 71.0,
+      "y": 558.0,
+      "name": "subsection.A.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 13,
+      "x": 71.0,
+      "y": 327.0,
+      "name": "subsection.A.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 13,
+      "x": 71.0,
+      "y": 138.0,
+      "name": "subsection.A.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 13,
+      "x": 306.0,
+      "y": 368.0,
+      "name": "subsubsection.A.3.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 13,
+      "x": 306.0,
+      "y": 182.0,
+      "name": "subsubsection.A.3.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 13,
+      "x": 306.0,
+      "y": 778.0,
+      "name": "table.caption.15",
+      "kind": "table"
+    },
+    {
+      "page": 13,
+      "x": 306.0,
+      "y": 576.0,
+      "name": "table.caption.16",
+      "kind": "table"
+    },
+    {
+      "page": 14,
+      "x": 306.0,
+      "y": 748.0,
+      "name": "appendix.B",
+      "kind": "other"
+    },
+    {
+      "page": 14,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.14",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 14,
+      "x": 71.0,
+      "y": 455.0,
+      "name": "subsection.A.4",
+      "kind": "subsection"
+    },
+    {
+      "page": 14,
+      "x": 71.0,
+      "y": 252.0,
+      "name": "subsection.A.5",
+      "kind": "subsection"
+    },
+    {
+      "page": 14,
+      "x": 306.0,
+      "y": 727.0,
+      "name": "subsection.B.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 14,
+      "x": 306.0,
+      "y": 307.0,
+      "name": "subsection.B.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 14,
+      "x": 71.0,
+      "y": 644.0,
+      "name": "subsubsection.A.3.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 15,
+      "x": 71.0,
+      "y": 778.0,
+      "name": "figure.caption.17",
+      "kind": "figure"
+    },
+    {
+      "page": 15,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.15",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 15,
+      "x": 71.0,
+      "y": 196.0,
+      "name": "subsection.B.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 15,
+      "x": 71.0,
+      "y": 636.0,
+      "name": "table.caption.18",
+      "kind": "table"
+    },
+    {
+      "page": 15,
+      "x": 71.0,
+      "y": 437.0,
+      "name": "table.caption.19",
+      "kind": "table"
+    },
+    {
+      "page": 15,
+      "x": 306.0,
+      "y": 437.0,
+      "name": "table.caption.20",
+      "kind": "table"
+    },
+    {
+      "page": 16,
+      "x": 71.0,
+      "y": 707.0,
+      "name": "appendix.C",
+      "kind": "other"
+    },
+    {
+      "page": 16,
+      "x": 70.0,
+      "y": 809.0,
+      "name": "page.16",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 16,
+      "x": 71.0,
+      "y": 519.0,
+      "name": "section*.21",
+      "kind": "section"
+    },
+    {
+      "page": 16,
+      "x": 71.0,
+      "y": 340.0,
+      "name": "section*.22",
+      "kind": "section"
+    },
+    {
+      "page": 16,
+      "x": 71.0,
+      "y": 596.0,
+      "name": "subsection.C.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 16,
+      "x": 306.0,
+      "y": 538.0,
+      "name": "subsection.C.2",
+      "kind": "subsection"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "AXTGMU+NimbusRomNo9L-Medi",
@@ -447,7 +1867,128 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 372.51,
+      "y0": 224.28,
+      "x1": 402.69,
+      "y1": 254.46,
+      "w_pt": 30.18,
+      "h_pt": 30.18,
+      "name": "X10",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 512,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 1222,
+      "y_ppi": 1222,
+      "size_bytes": 3182,
+      "object_id": "457 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 402.94,
+      "y0": 224.28,
+      "x1": 433.12,
+      "y1": 254.46,
+      "w_pt": 30.18,
+      "h_pt": 30.18,
+      "name": "X10",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 512,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 1222,
+      "y_ppi": 1222,
+      "size_bytes": 3182,
+      "object_id": "457 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 433.12,
+      "y0": 224.28,
+      "x1": 463.3,
+      "y1": 254.46,
+      "w_pt": 30.18,
+      "h_pt": 30.18,
+      "name": "X10",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 512,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 1222,
+      "y_ppi": 1222,
+      "size_bytes": 3182,
+      "object_id": "457 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 338.75,
+      "y0": 296.47,
+      "x1": 351.83,
+      "y1": 309.55,
+      "w_pt": 13.08,
+      "h_pt": 13.08,
+      "name": "X7",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 512,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 2819,
+      "y_ppi": 2819,
+      "size_bytes": 22732,
+      "object_id": "458 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 466.51,
+      "y0": 296.47,
+      "x1": 479.59,
+      "y1": 309.55,
+      "w_pt": 13.08,
+      "h_pt": 13.08,
+      "name": "X7",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 512,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 2819,
+      "y_ppi": 2819,
+      "size_bytes": 22732,
+      "object_id": "458 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 393.33,
+      "y0": 297.18,
+      "x1": 406.4,
+      "y1": 310.26,
+      "w_pt": 13.08,
+      "h_pt": 13.08,
+      "name": "X7",
+      "imagemask": false,
+      "width_px": 512,
+      "height_px": 512,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 2819,
+      "y_ppi": 2819,
+      "size_bytes": 22732,
+      "object_id": "458 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -580,6 +2121,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.1,
       "detail": "302 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-09T05:50:41Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 85.5,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-09T05:50:42Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 176.7,
+      "detail": "23 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-09T05:50:42Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 7.7,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-09T05:50:42Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 21.3,
+      "detail": "3 external urls"
+    },
+    {
+      "ts": "2026-08-09T05:50:42Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 24.6,
+      "detail": "148 dests across 8 kinds"
+    },
+    {
+      "ts": "2026-08-09T05:50:42Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "citekey=yue2026"
+    },
+    {
+      "ts": "2026-08-09T05:50:49Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 6993.4,
+      "detail": "6 images, 6 pix2latex candidates"
     }
   ],
   "capabilities": {

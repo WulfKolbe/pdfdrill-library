@@ -9,7 +9,14 @@
     "BIBLIOGRAPHY_BUILT",
     "MD_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "2603.05061",
@@ -128,12 +135,76 @@
     },
     "tiddlers_path": "2603.05061.tiddlers.json",
     "tiddlers_count": 299,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "toc": [
+      {
+        "number": "0.1",
+        "title": "Glossary",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "0.1.1",
+        "title": "Display equations",
+        "page": "",
+        "level": 3
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 1,
+        "url": "https://arxiv.org/abs/2603.05061v2"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Quantum field theory for classical fields",
+    "author": "Christof Wetterich",
+    "producer": "pikepdf 8.15.1",
+    "creator": "arXiv GenPDF (tex2pdf:8def8d8)",
+    "creation_date": null,
+    "mod_date": null,
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 6,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 213808,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "DOI": "https://doi.org/10.48550/arXiv.2603.05061",
+      "License": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) kpathsea version 6.4.1",
+      "arXivID": "https://arxiv.org/abs/2603.05061v2"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "wetterich2026",
+    "title": "Quantum field theory for classical fields",
+    "author": "Christof Wetterich",
+    "year": "2026",
+    "pages": 6,
+    "doi": "10.48550/arXiv.2603.05061",
+    "arxiv_id": "2603.05061",
+    "url": "https://arxiv.org/abs/2603.05061",
+    "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "publisher": "",
+    "eprint": "2603.05061",
+    "archive_prefix": "arXiv",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "STYXPH+CMEX10",
@@ -486,7 +557,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {
     "md": {
@@ -592,6 +663,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.5,
       "detail": "299 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-09T05:50:12Z",
+      "node": "pdfinfo",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 72.6,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-09T05:50:12Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 198.3,
+      "detail": "25 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-09T05:50:13Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 1.6,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-09T05:50:13Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 17.4,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-09T05:50:13Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 71.4,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-09T05:50:14Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "citekey=wetterich2026"
+    },
+    {
+      "ts": "2026-08-09T05:50:16Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2213.9,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

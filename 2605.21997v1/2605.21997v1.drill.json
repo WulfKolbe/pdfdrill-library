@@ -9,7 +9,12 @@
     "MD_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "2605.21997v1",
@@ -114,10 +119,61 @@
     },
     "tiddlers_path": "2605.21997v1.tiddlers.json",
     "tiddlers_count": 89,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "Most agent frameworks are built around the language model: a conversation loop comes first, then tools, then rules, and finally a logging layer bolted on for observability, with state persisted as retrievable &#34;memory.&#34; We describe ActiveGraph, a runtime that inverts this arrangement. The append-only event log is the source of truth; the working graph is a deterministic projection of that log; and behaviors--ordinary functions, classes, LLM-backed routines, or logic attached to typed edges--react to changes in the graph and emit new events. No component instructs another; coordination happens entirely through the shared graph. This single design decision yields three properties that retrieval-and-summarization memory systems do not provide: deterministic replay of any run from its log, cheap forking that branches a run at any event without re-executing the shared prefix, and end-to-end lineage from a high-level goal down to the individual model call that produced each artifact. We present the architecture, a determinism contract that makes replay sound, and a worked diligence example whose full causal structure is reconstructable from the log alone. We discuss--without claiming to demonstrate--why this substrate is unusually well suited to self-improving agents, and how it extends the BabyAGI lineage and prior graph-memory research.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems",
+    "arxiv_authors": [
+      "Yohei Nakajima"
+    ],
+    "arxiv_primary_category": "cs.AI"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems",
+    "author": "Yohei Nakajima",
+    "producer": "pikepdf 8.15.1",
+    "creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+    "creation_date": null,
+    "mod_date": null,
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 11,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 736700,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "DOI": "https://doi.org/10.48550/arXiv.2605.21997",
+      "License": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) kpathsea version 6.4.1",
+      "arXivID": "https://arxiv.org/abs/2605.21997v1"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "nakajima2026",
+    "title": "The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems",
+    "author": "Yohei Nakajima",
+    "year": "2026",
+    "pages": 11,
+    "doi": "10.48550/arXiv.2605.21997",
+    "arxiv_id": "2605.21997v1",
+    "url": "https://arxiv.org/abs/2605.21997v1",
+    "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "publisher": "",
+    "eprint": "2605.21997v1",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.AI"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -430,7 +486,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {
     "md": {
@@ -536,6 +592,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.6,
       "detail": "89 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-09T05:50:35Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 93.5,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-09T05:50:35Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 114.0,
+      "detail": "22 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-09T05:50:36Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "citekey=nakajima2026"
+    },
+    {
+      "ts": "2026-08-09T05:50:40Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3692.8,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

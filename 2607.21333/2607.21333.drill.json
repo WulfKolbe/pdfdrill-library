@@ -12,7 +12,12 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "2607.21333",
@@ -336,10 +341,66 @@
     "bibliography_cites": 61,
     "tiddlers_path": "2607.21333.tiddlers.json",
     "tiddlers_count": 244,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "LLM-based retrievers have become a fundamental component of modern information retrieval systems. The paradigm of &#34;rewrite-then-retriev&#34; introduces explicit reasoning before retrieval. In addition, implicit-reasoning retrievers such as GIRCSE and LaSER improve efficiency by replacing explicit reasoning with soft tokens. Although these methods demonstrated competitive performance on reasoning-intensive retrieval benchmarks, they struggle to address the mismatch between the objectives of retrieval and generation. In this work, we propose SHIFT ($\\textbf{S}$elf-reconstruction $\\textbf{H}$arnesses $\\textbf{I}$mplicit $\\textbf{F}$ine-grained $\\textbf{T}$hinking for Retrieval), a retrieval training framework based on LLMs. Firstly, we transfer LLMs into reasoning-efficient retrievers with residual projection and task-oriented bidirectional attention aggregation in the latent space. Secondly, we alleviate the mismatch between contrastive learning and implicit reasoning using fine-grained next-token-prediction-based reconstruction. Extensive experiments on reasoning-intensive retrieval benchmarks show that SHIFT consistently outperforms other widely used retrievers. We also carried out a detailed analysis to illustrate how our method works.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "SHIFT: Self-reconstruction Harnesses Implicit Fine-grained Thinking for Retrieval",
+    "arxiv_authors": [
+      "Yuxiao Luo",
+      "Da Li",
+      "Mingjie Zhang",
+      "Zhentao He",
+      "Shikun Zhang",
+      "Wei Ye"
+    ],
+    "arxiv_primary_category": "cs.IR"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "SHIFT: Self-reconstruction Harnesses Implicit Fine-grained Thinking for Retrieval",
+    "author": "Yuxiao Luo; Da Li; Mingjie Zhang; Zhentao He; Shikun Zhang; Wei Ye",
+    "producer": "pikepdf 8.15.1",
+    "creator": "arXiv GenPDF (tex2pdf:8def8d8)",
+    "creation_date": null,
+    "mod_date": null,
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 13,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 708321,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "DOI": "https://doi.org/10.48550/arXiv.2607.21333",
+      "License": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) kpathsea version 6.4.1",
+      "arXivID": "https://arxiv.org/abs/2607.21333v1"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "luo2026",
+    "title": "SHIFT: Self-reconstruction Harnesses Implicit Fine-grained Thinking for Retrieval",
+    "author": "Yuxiao Luo and Da Li and Mingjie Zhang and Zhentao He and Shikun Zhang and Wei Ye",
+    "year": "2026",
+    "pages": 13,
+    "doi": "10.48550/arXiv.2607.21333",
+    "arxiv_id": "2607.21333",
+    "url": "https://arxiv.org/abs/2607.21333",
+    "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "publisher": "",
+    "eprint": "2607.21333",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.IR"
+  },
   "urls": [
     {
       "page": 1,
@@ -5685,7 +5746,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 7,
+      "x0": 505.24,
+      "y0": 143.53,
+      "x1": 507.85,
+      "y1": 197.25,
+      "w_pt": 2.62,
+      "h_pt": 53.72,
+      "name": "I1",
+      "imagemask": false,
+      "width_px": 28,
+      "height_px": 575,
+      "encoding": "image",
+      "color": "index",
+      "x_ppi": 771,
+      "y_ppi": 771,
+      "size_bytes": 741,
+      "object_id": "874 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -5832,6 +5914,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.7,
       "detail": "244 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-09T05:51:04Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,URLS_KNOWN",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 89.0,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-09T05:51:04Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 186.2,
+      "detail": "43 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-09T05:51:04Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,URLS_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "citekey=luo2026"
+    },
+    {
+      "ts": "2026-08-09T05:51:11Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,URLS_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 6599.5,
+      "detail": "1 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {
