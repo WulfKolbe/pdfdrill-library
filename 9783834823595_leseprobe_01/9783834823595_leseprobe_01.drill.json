@@ -5,7 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 15,
@@ -72,10 +79,62 @@
     },
     "tiddlers_path": "9783834823595_leseprobe_01.tiddlers.json",
     "tiddlers_count": 48,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 5,
+        "url": "http://dnb.d-nb.de",
+        "kind": "text"
+      },
+      {
+        "page": 5,
+        "url": "www.springer-spektrum.de",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "itext-paulo-155 (itextpdf.sf.net-lowagie.com)",
+    "creator": "pdftk 1.41 - www.pdftk.com",
+    "creation_date": "2012-10-23T03:49:15-01",
+    "mod_date": "2012-10-23T03:49:15-01",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 15,
+    "encrypted": false,
+    "page_size": "100.56 x 142.8 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 464201,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2012",
+    "title": "",
+    "author": "",
+    "year": "2012",
+    "pages": 15,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -234,7 +293,28 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 100.56,
+      "y1": 142.8,
+      "w_pt": 100.56,
+      "h_pt": 142.8,
+      "name": "Im0",
+      "imagemask": false,
+      "width_px": 419,
+      "height_px": 595,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 300,
+      "y_ppi": 300,
+      "size_bytes": 222208,
+      "object_id": "20 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -309,6 +389,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.5,
       "detail": "48 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-10T04:53:42Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 89.3,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-10T04:53:42Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 88.7,
+      "detail": "11 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-10T04:53:42Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 70.8,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-10T04:53:42Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 22.3,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-10T04:53:42Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 130.1,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-10T04:53:43Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 82.4,
+      "detail": "citekey=unknown2012"
+    },
+    {
+      "ts": "2026-08-10T04:53:46Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3194.2,
+      "detail": "1 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {

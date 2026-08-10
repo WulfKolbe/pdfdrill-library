@@ -6,7 +6,12 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 100,
@@ -88,12 +93,14 @@
     },
     "tiddlers_path": "640104037-Heim-Theory-Syntrometrische-Maximentelezentrik.tiddlers.json",
     "tiddlers_count": 770,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "YNTIAD+NimbusRomNo9L-Regu",
@@ -306,7 +313,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -381,6 +388,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 26.6,
       "detail": "770 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-10T04:51:42Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 410.6,
+      "detail": "15 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-10T04:51:42Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 73.4,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-10T04:51:43Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 83.0,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-10T04:51:43Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 66.1,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-10T04:52:14Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 30478.4,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

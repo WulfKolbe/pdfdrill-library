@@ -7,7 +7,15 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 5,
@@ -77,12 +85,53 @@
     "bibliography_cites": 0,
     "tiddlers_path": "A_Massenformel_Kurzfassung.tiddlers.json",
     "tiddlers_count": 32,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Kurzfassung",
+    "author": "Illobrand von Ludwiger",
+    "producer": "Acrobat Distiller 5.0.5 (Windows)",
+    "creator": "Acrobat PDFMaker 5.0 für Word",
+    "creation_date": "2003-08-30T16:45:13+02",
+    "mod_date": "2003-08-30T16:45:18+03",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": true,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 5,
+    "encrypted": false,
+    "page_size": "595 x 842 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 158285,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.3",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "ludwiger2003",
+    "title": "Kurzfassung",
+    "author": "Illobrand von Ludwiger",
+    "year": "2003",
+    "pages": 5,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "JENOGG+TimesNewRoman",
@@ -155,7 +204,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -238,6 +287,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.1,
       "detail": "32 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-10T04:57:05Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 88.8,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-10T04:57:06Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 74.0,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-10T04:57:06Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 28.4,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-10T04:57:06Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 25.3,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-10T04:57:06Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 105.8,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-10T04:57:07Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=ludwiger2003"
+    },
+    {
+      "ts": "2026-08-10T04:57:07Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 20.5,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-10T04:57:09Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2190.9,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

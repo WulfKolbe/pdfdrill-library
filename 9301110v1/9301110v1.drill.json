@@ -7,7 +7,13 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 61,
@@ -98,9 +104,82 @@
     "bibliography_cites": 0,
     "tiddlers_path": "9301110v1.tiddlers.json",
     "tiddlers_count": 377,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Folderol: a simple theorem prover",
+        "page": "3"
+      },
+      {
+        "number": "2",
+        "title": "Basic data structures and operations",
+        "page": "10"
+      },
+      {
+        "number": "3",
+        "title": "Unification",
+        "page": "14"
+      },
+      {
+        "number": "4",
+        "title": "Inference in Folderol",
+        "page": "20"
+      },
+      {
+        "number": "5",
+        "title": "Folderol in action",
+        "page": "27"
+      },
+      {
+        "number": "6",
+        "title": "Interactive theorem proving",
+        "page": "39"
+      },
+      {
+        "number": "7",
+        "title": "Conclusion",
+        "page": "47"
+      },
+      {
+        "number": "8",
+        "title": "Program listing",
+        "page": "48"
+      },
+      {
+        "number": "1",
+        "title": "Folderol: a simple theorem prover",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "TR192.dvi",
+    "author": "lcp",
+    "producer": "Acrobat Distiller Command 3.02b for Solaris 2.3 and later (SPARC)",
+    "creator": "Textures¨ Reader: LaserWriter 8 B1-8.3.2",
+    "creation_date": "1998-12-10T09:46:35Z",
+    "mod_date": null,
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 61,
+    "encrypted": false,
+    "page_size": "595 x 842 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 290536,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.2",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -372,7 +451,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -455,6 +534,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 11.9,
       "detail": "377 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-10T04:52:47Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 88.6,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-10T04:52:48Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 287.4,
+      "detail": "19 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-10T04:52:48Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 71.2,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-10T04:52:48Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 79.8,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-10T04:52:48Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 566.6,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-10T04:52:58Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 9855.4,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
