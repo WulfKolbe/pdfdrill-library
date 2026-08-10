@@ -6,7 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 78,
@@ -86,12 +94,64 @@
     "bibliography_cites": 0,
     "tiddlers_path": "801-Artikeltext-4003-1-10-20171221.tiddlers.json",
     "tiddlers_count": 181,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 10,
+        "url": "http://www.arxiv.org/"
+      },
+      {
+        "page": 49,
+        "url": "http://www.gaalop.de/"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "geometric algebra crash course, part 6",
+    "author": "Martin Erik Horn (mail@martinerikhorn.de)",
+    "producer": "Microsoft® Word 2010",
+    "creator": "Microsoft® Word 2010",
+    "creation_date": "2017-01-21T13:20:40+01",
+    "mod_date": "2017-01-21T13:20:40+01",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": true,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 78,
+    "encrypted": false,
+    "page_size": "595.4 x 841.8 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 682534,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "history of solving systems of linear equations, sandwich products, geometric algebra, grassmann, gell-mann"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "mailmartinerikhornde2017",
+    "title": "geometric algebra crash course, part 6",
+    "author": "Martin Erik Horn (mail@martinerikhorn.de)",
+    "year": "2017",
+    "pages": 78,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "Times New Roman,Bold",
@@ -290,7 +350,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 54.3,
+      "y0": 61.7,
+      "x1": 93.89,
+      "y1": 112.49,
+      "w_pt": 39.59,
+      "h_pt": 50.79,
+      "name": "Image30",
+      "imagemask": false,
+      "width_px": 131,
+      "height_px": 176,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 238,
+      "y_ppi": 250,
+      "size_bytes": 4037,
+      "object_id": "30 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -373,6 +454,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.8,
       "detail": "181 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-10T04:52:21Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 92.4,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-10T04:52:21Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 204.2,
+      "detail": "14 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-10T04:52:22Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 20.8,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-10T04:52:22Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 66.9,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-10T04:52:22Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 70.3,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-10T04:52:22Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 63.5,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-10T04:52:22Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "citekey=mailmartinerikhornde2017"
+    },
+    {
+      "ts": "2026-08-10T04:52:35Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 12530.6,
+      "detail": "1 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {
