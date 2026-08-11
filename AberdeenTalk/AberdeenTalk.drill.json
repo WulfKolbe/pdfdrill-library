@@ -7,7 +7,14 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 24,
@@ -116,10 +123,72 @@
     "bibliography_cites": 0,
     "tiddlers_path": "AberdeenTalk.tiddlers.json",
     "tiddlers_count": 134,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 1,
+        "url": "http://people.maths.ox.ac.uk/~joyce/"
+      },
+      {
+        "page": 1,
+        "url": "https://arxiv.org/abs/1401.1044"
+      },
+      {
+        "page": 1,
+        "url": "http://people.maths.ox.ac.uk/~joyce/dmanifolds.html"
+      },
+      {
+        "page": 1,
+        "url": "http://people.maths.ox.ac.uk/~joyce/Kuranishi.html"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.19",
+    "creator": "LaTeX with Beamer class",
+    "creation_date": "2023-03-24T17:09:34Z",
+    "mod_date": "2023-03-24T17:09:34Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 24,
+    "encrypted": false,
+    "page_size": "362.835 x 272.126 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 293671,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) kpathsea version 6.3.0",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2023",
+    "title": "",
+    "author": "",
+    "year": "2023",
+    "pages": 24,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -544,7 +613,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -627,6 +696,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.7,
       "detail": "134 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-11T07:29:39Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 39.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-11T07:29:40Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 181.4,
+      "detail": "30 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-11T07:29:40Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 28.8,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-11T07:29:40Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 75.2,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-11T07:29:40Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 69.1,
+      "detail": "4 external urls"
+    },
+    {
+      "ts": "2026-08-11T07:29:40Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 72.4,
+      "detail": "citekey=unknown2023"
+    },
+    {
+      "ts": "2026-08-11T07:29:43Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2830.7,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -7,7 +7,13 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 23,
@@ -99,12 +105,37 @@
     "bibliography_cites": 1,
     "tiddlers_path": "AttachBBlocaldim.tiddlers.json",
     "tiddlers_count": 513,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "C:/Users/Mark/Documents/My Dropbox/Binder-Braverman-GAFA/Recorrected version/localdim.dvi",
+    "author": "",
+    "producer": "GPL Ghostscript 8.15",
+    "creator": "dvips(k) 5.98 Copyright 2009 Radical Eye Software",
+    "creation_date": "2012-01-23T13:44:00Z",
+    "mod_date": "2012-01-23T13:44:00Z",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 23,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 335263,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.3",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "VEWTVA+CMMI8",
@@ -359,7 +390,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -442,6 +473,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 10.1,
       "detail": "513 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-11T07:35:33Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 35.1,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-08-11T07:35:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 101.2,
+      "detail": "18 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-11T07:35:33Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 80.5,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-11T07:35:33Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 26.4,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-11T07:35:34Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 13.5,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-11T07:35:42Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 7974.7,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
