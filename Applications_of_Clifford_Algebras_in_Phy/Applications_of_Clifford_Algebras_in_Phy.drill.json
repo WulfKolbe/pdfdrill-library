@@ -6,7 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 54,
@@ -146,12 +154,67 @@
     },
     "tiddlers_path": "Applications_of_Clifford_Algebras_in_Phy.tiddlers.json",
     "tiddlers_count": 551,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 54,
+        "url": "http://modelingnts.la.asu.edu/GC_R&D.html",
+        "kind": "text"
+      },
+      {
+        "page": 54,
+        "url": "http://www.mrao.cam.ac.uk/~cliﬀord/",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "GPL Ghostscript 9.26",
+    "creator": "",
+    "creation_date": "2021-09-27T16:40:26-07",
+    "mod_date": "2021-09-27T16:40:26-07",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 54,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 644926,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "Keywords": "",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2021",
+    "title": "",
+    "author": "",
+    "year": "2021",
+    "pages": 54,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "HNNKUC+Cmmi10 CID",
@@ -952,7 +1015,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 12,
+      "x0": 208.56,
+      "y0": 265.68,
+      "x1": 435.6,
+      "y1": 436.5,
+      "w_pt": 227.04,
+      "h_pt": 170.82,
+      "name": "R165",
+      "imagemask": false,
+      "width_px": 400,
+      "height_px": 300,
+      "encoding": "jpeg",
+      "color": "icc",
+      "x_ppi": 127,
+      "y_ppi": 126,
+      "size_bytes": 8581,
+      "object_id": "165 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -1027,6 +1111,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 12.1,
       "detail": "551 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-11T07:34:28Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 96.6,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-11T07:34:30Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 308.1,
+      "detail": "57 fonts, 21 math"
+    },
+    {
+      "ts": "2026-08-11T07:34:31Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 87.2,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-11T07:34:31Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 35.9,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-11T07:34:32Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 535.4,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-11T07:34:33Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 17.8,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-11T07:34:34Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 499.3,
+      "detail": "citekey=unknown2021"
+    },
+    {
+      "ts": "2026-08-11T07:34:43Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 9382.4,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
