@@ -5,7 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -69,12 +76,87 @@
     },
     "tiddlers_path": "Burkhardt-Heim-12.-Dimension.tiddlers.json",
     "tiddlers_count": 41,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Author": "Binder, Bettina (019)",
+      "Creator": "Microsoft® Word 2016",
+      "Producer": "Microsoft® Word 2016",
+      "CreationDate": "Thu Oct 26 20:24:40 2017 CEST",
+      "ModDate": "Thu Oct 26 20:24:40 2017 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "yes",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "595.4 x 841.8 pts (A4)",
+      "Page rot": "0",
+      "File size": "568710 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 6,
+    "image_count": 1,
+    "abstract_search_scope": "first2pages",
+    "links": [
+      {
+        "page": 3,
+        "url": "http://www.quantenkybernetik.eu/AQK-Info/12-D_Modell/S2-Raum/S2-Raum.html",
+        "kind": "text"
+      },
+      {
+        "page": 5,
+        "url": "http://www.herzresonanz.info",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "Binder, Bettina (019)",
+    "producer": "Microsoft® Word 2016",
+    "creator": "Microsoft® Word 2016",
+    "creation_date": "2017-10-27T07:24:40+13",
+    "mod_date": "2017-10-27T07:24:40+13",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": true,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 6,
+    "encrypted": false,
+    "page_size": "595.4 x 841.8 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 568710,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "binder2017",
+    "title": "",
+    "author": "Binder, Bettina (019)",
+    "year": "2017",
+    "pages": 6,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "TimesNewRomanPS-BoldMT CID",
@@ -175,7 +257,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 6,
+      "x0": 70.85,
+      "y0": 70.85,
+      "x1": 524.45,
+      "y1": 394.7,
+      "w_pt": 453.6,
+      "h_pt": 323.85,
+      "name": "Image40",
+      "imagemask": false,
+      "width_px": 860,
+      "height_px": 614,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 137,
+      "y_ppi": 137,
+      "size_bytes": 95846,
+      "object_id": "40 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -250,6 +353,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.8,
       "detail": "41 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-12T04:27:32Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 88.8,
+      "detail": "title=False author=True"
+    },
+    {
+      "ts": "2026-08-12T04:27:32Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.1,
+      "detail": "7 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-12T04:27:33Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 76.8,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-12T04:27:33Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 91.8,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-12T04:27:33Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 20.2,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-12T04:27:33Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 19.2,
+      "detail": "citekey=binder2017"
+    },
+    {
+      "ts": "2026-08-12T04:27:35Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1398.6,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
