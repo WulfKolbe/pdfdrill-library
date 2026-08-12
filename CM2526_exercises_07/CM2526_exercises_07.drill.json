@@ -7,7 +7,12 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -95,7 +100,37 @@
     "bibliography_cites": 0,
     "tiddlers_path": "CM2526_exercises_07.tiddlers.json",
     "tiddlers_count": 36,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.27",
+      "CreationDate": "Fri Nov 28 12:58:39 2025 CET",
+      "ModDate": "Fri Nov 28 12:58:39 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "2",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "954140 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 2,
+    "image_count": 4,
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -313,7 +348,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 351.06,
+      "y0": 34.01,
+      "x1": 524.4,
+      "y1": 110.54,
+      "w_pt": 173.35,
+      "h_pt": 76.53,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 9439,
+      "height_px": 4167,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 3921,
+      "y_ppi": 3921,
+      "size_bytes": 376832,
+      "object_id": "19 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 2,
+      "x0": 351.06,
+      "y0": 34.01,
+      "x1": 524.4,
+      "y1": 110.54,
+      "w_pt": 173.35,
+      "h_pt": 76.53,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 9439,
+      "height_px": 4167,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 3921,
+      "y_ppi": 3921,
+      "size_bytes": 376832,
+      "object_id": "19 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -396,6 +472,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.5,
       "detail": "36 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-12T04:28:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "15 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-12T04:28:03Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 73.5,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-12T04:28:03Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 83.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-12T04:28:03Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 87.1,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-12T04:28:04Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 728.5,
+      "detail": "2 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {

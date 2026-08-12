@@ -6,7 +6,12 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 4,
@@ -76,9 +81,65 @@
     },
     "tiddlers_path": "Chats-13.tiddlers.json",
     "tiddlers_count": 121,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX via pandoc",
+      "Producer": "LuaTeX-1.18.0",
+      "CreationDate": "Sat Jan 24 08:57:10 2026 CET",
+      "ModDate": "Sat Jan 24 08:57:10 2026 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "4",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "70128 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 4,
+    "image_count": 4,
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "LuaTeX-1.18.0",
+    "creator": "LaTeX via pandoc",
+    "creation_date": "2026-01-24T08:57:10+01",
+    "mod_date": "2026-01-24T08:57:10+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 4,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 70128,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.FullBanner": "This is LuaHBTeX, Version 1.18.0 (TeX Live 2024 Solus)",
+      "Subject": ""
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -168,7 +229,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 86.75,
+      "y0": 170.88,
+      "x1": 101.64,
+      "y1": 184.92,
+      "w_pt": 14.89,
+      "h_pt": 14.04,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 136,
+      "height_px": 128,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 658,
+      "y_ppi": 656,
+      "size_bytes": 572,
+      "object_id": "13 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 86.75,
+      "y0": 225.27,
+      "x1": 101.64,
+      "y1": 239.31,
+      "w_pt": 14.89,
+      "h_pt": 14.04,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 136,
+      "height_px": 128,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 658,
+      "y_ppi": 656,
+      "size_bytes": 343,
+      "object_id": "15 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -243,6 +345,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.8,
       "detail": "121 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-12T04:29:41Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 95.9,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-12T04:29:41Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "6 fonts, 3 math"
+    },
+    {
+      "ts": "2026-08-12T04:29:41Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 19.5,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-12T04:29:42Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 49.2,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-12T04:29:43Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 809.2,
+      "detail": "2 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {
