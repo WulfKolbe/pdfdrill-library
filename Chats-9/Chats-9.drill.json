@@ -6,7 +6,11 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "TOC_KNOWN",
+    "ABSTRACT_ABSENT",
+    "PDFINFO_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 7,
@@ -75,9 +79,82 @@
     },
     "tiddlers_path": "Chats-9.tiddlers.json",
     "tiddlers_count": 205,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX via pandoc",
+      "Producer": "LuaTeX-1.18.0",
+      "CreationDate": "Sat Jan 10 10:24:31 2026 CET",
+      "ModDate": "Sat Jan 10 10:24:31 2026 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "80173 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 7,
+    "image_count": 4,
+    "toc": [
+      {
+        "number": "1",
+        "title": "Chats",
+        "page": ""
+      },
+      {
+        "number": "1.1",
+        "title": "You",
+        "page": ""
+      },
+      {
+        "number": "1.2",
+        "title": "Gemini",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "abstract_search_scope": "first2pages"
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "LuaTeX-1.18.0",
+    "creator": "LaTeX via pandoc",
+    "creation_date": "2026-01-10T10:24:31+01",
+    "mod_date": "2026-01-10T10:24:31+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 7,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 80173,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.FullBanner": "This is LuaHBTeX, Version 1.18.0 (TeX Live 2024 Solus)",
+      "Subject": ""
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -153,7 +230,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 86.75,
+      "y0": 170.88,
+      "x1": 101.64,
+      "y1": 184.92,
+      "w_pt": 14.89,
+      "h_pt": 14.04,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 136,
+      "height_px": 128,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 658,
+      "y_ppi": 656,
+      "size_bytes": 572,
+      "object_id": "13 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 86.75,
+      "y0": 265.92,
+      "x1": 101.64,
+      "y1": 279.96,
+      "w_pt": 14.89,
+      "h_pt": 14.04,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 136,
+      "height_px": 128,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 658,
+      "y_ppi": 656,
+      "size_bytes": 343,
+      "object_id": "15 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -228,6 +346,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.8,
       "detail": "205 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-13T06:13:27Z",
+      "node": "toc",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 68.6,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-13T06:13:27Z",
+      "node": "abstract",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 22.2,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-13T06:13:28Z",
+      "node": "pdfinfo",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 35.9,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-13T06:13:29Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1169.3,
+      "detail": "2 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {
