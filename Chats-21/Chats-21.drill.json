@@ -6,7 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 3,
@@ -79,10 +85,129 @@
     },
     "tiddlers_path": "Chats-21.tiddlers.json",
     "tiddlers_count": 37,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX via pandoc",
+      "Producer": "LuaTeX-1.24.0",
+      "CreationDate": "Tue Mar 17 12:29:13 2026 CET",
+      "ModDate": "Tue Mar 17 12:29:13 2026 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "3",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "78618 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 3,
+    "image_count": 4,
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Chats",
+        "page": "1"
+      },
+      {
+        "number": "1",
+        "title": "Chats",
+        "page": ""
+      },
+      {
+        "number": "1.1",
+        "title": "Gemini",
+        "page": ""
+      },
+      {
+        "number": "2",
+        "title": "SELECT result_id, m.row AS index, SUM(m.value * v.value) AS value",
+        "page": ""
+      },
+      {
+        "number": "3",
+        "title": "FROM sparse_matrix_elements m",
+        "page": ""
+      },
+      {
+        "number": "4",
+        "title": "JOIN sparse_vector_elements v ON m.col = v.index",
+        "page": ""
+      },
+      {
+        "number": "5",
+        "title": "WHERE m.matrix_id = $1 AND v.vector_id = $2",
+        "page": ""
+      },
+      {
+        "number": "6",
+        "title": "GROUP BY m.row",
+        "page": ""
+      },
+      {
+        "number": "7",
+        "title": "HAVING ABS(SUM(m.value * v.value)) > 1e-15;",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "LuaTeX-1.24.0",
+    "creator": "LaTeX via pandoc",
+    "creation_date": "2026-03-17T12:29:13+01",
+    "mod_date": "2026-03-17T12:29:13+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 3,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 78618,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.FullBanner": "This is LuaHBTeX, Version 1.24.0 (TeX Live 2026 Solus)",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2026",
+    "title": "",
+    "author": "",
+    "year": "2026",
+    "pages": 3,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -185,7 +310,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 95.45,
+      "y0": 94.97,
+      "x1": 109.04,
+      "y1": 107.78,
+      "w_pt": 13.58,
+      "h_pt": 12.81,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 136,
+      "height_px": 128,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 658,
+      "y_ppi": 656,
+      "size_bytes": 343,
+      "object_id": "13 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 86.75,
+      "y0": 210.84,
+      "x1": 101.64,
+      "y1": 224.88,
+      "w_pt": 14.89,
+      "h_pt": 14.04,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 136,
+      "height_px": 128,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 658,
+      "y_ppi": 656,
+      "size_bytes": 343,
+      "object_id": "13 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -260,6 +426,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.2,
       "detail": "37 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-13T06:13:20Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 84.7,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-13T06:13:20Z",
+      "node": "abstract",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 16.2,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-13T06:13:20Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 23.8,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-13T06:13:21Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 88.1,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-13T06:13:21Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 79.6,
+      "detail": "citekey=unknown2026"
+    },
+    {
+      "ts": "2026-08-13T06:13:22Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 734.4,
+      "detail": "2 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {
