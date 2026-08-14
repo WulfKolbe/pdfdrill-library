@@ -6,7 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 113,
@@ -87,12 +94,87 @@
     "bibliography_cites": 0,
     "tiddlers_path": "EFI-ShellCommandManual.tiddlers.json",
     "tiddlers_count": 745,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Author": "jgong5",
+      "Creator": "Acrobat PDFMaker 8.1 for Word",
+      "Producer": "Acrobat Distiller 8.1.0 (Windows)",
+      "CreationDate": "Fri Dec 14 22:38:14 2007 CET",
+      "ModDate": "Sun Oct 28 23:16:15 2012 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "113",
+      "Encrypted": "yes (print:yes copy:yes change:no addNotes:yes algorithm:RC4)",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "191276 bytes",
+      "Optimized": "no",
+      "PDF version": "1.6"
+    },
+    "page_count_text": 113,
+    "image_count": 3,
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 7,
+        "url": "http://edk.tianocore.org/"
+      },
+      {
+        "page": 7,
+        "url": "http://developer.intel.com/technology/efi"
+      },
+      {
+        "page": 7,
+        "url": "http://www.uefi.org/"
+      },
+      {
+        "page": 7,
+        "url": "http://www.intel.com/technology/framework/"
+      },
+      {
+        "page": 7,
+        "url": "http://efi-shell.tianocore.org/"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "jgong5",
+    "producer": "Acrobat Distiller 8.1.0 (Windows)",
+    "creator": "Acrobat PDFMaker 8.1 for Word",
+    "creation_date": "2007-12-14T13:38:14-08",
+    "mod_date": "2012-10-28T23:16:15+01",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 113,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 191276,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.6",
+    "custom_fields": {
+      "Company": "ntm",
+      "PXCViewerInfo": "PDF-XChange Viewer;2.0.55.0;Sep 10 2010;20:17:45;D:20121028231615+01'00'"
+    }
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "Verdana-BoldItalic",
@@ -291,7 +373,48 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 429.0,
+      "y0": 67.02,
+      "x1": 533.94,
+      "y1": 136.74,
+      "w_pt": 104.94,
+      "h_pt": 69.72,
+      "name": "Im0",
+      "imagemask": false,
+      "width_px": 220,
+      "height_px": 146,
+      "encoding": "ccitt",
+      "color": "-",
+      "x_ppi": 151,
+      "y_ppi": 151,
+      "size_bytes": 445,
+      "object_id": "161 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 471.78,
+      "y0": 135.72,
+      "x1": 472.26,
+      "y1": 135.78,
+      "w_pt": 0.48,
+      "h_pt": 0.06,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 1,
+      "height_px": 1,
+      "encoding": "image",
+      "color": "icc",
+      "x_ppi": 150,
+      "y_ppi": 1200,
+      "size_bytes": 4,
+      "object_id": "162 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -374,6 +497,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 36.5,
       "detail": "745 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-14T05:37:09Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 46.4,
+      "detail": "title=False author=True"
+    },
+    {
+      "ts": "2026-08-14T05:37:09Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "14 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-14T05:37:10Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 37.6,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-14T05:37:10Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 45.0,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-14T05:37:10Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 37.1,
+      "detail": "5 external urls"
+    },
+    {
+      "ts": "2026-08-14T05:37:10Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 24.5,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-14T05:37:21Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 10571.0,
+      "detail": "2 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {

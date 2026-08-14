@@ -7,7 +7,13 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 11,
@@ -116,10 +122,94 @@
       "geometry": true,
       "math": true,
       "source": "mathpix"
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "FINET: Context-Aware Fine-Grained Named Entity Typing",
+      "Subject": "EMNLP 2015",
+      "Keywords": "",
+      "Author": "Luciano Del Corro ; Abdalghani Abujabal ; Rainer Gemulla ; Gerhard Weikum",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.3",
+      "CreationDate": "Fri Sep  4 11:16:59 2015 CEST",
+      "ModDate": "Fri Sep  4 11:16:59 2015 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "169160 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 11,
+    "image_count": 0,
+    "abstract": "We propose FINET, a system for detecting the types of named entities in short inputs—such as sentences or tweets—with respect to WordNet’s super fine-grained type system. FINET generates candidate types using a sequence of multiple extractors, ranging from explicitly mentioned types to implicit types, and subsequently selects the most appropriate using ideas from word-sense disambiguation. FINET combats data scarcity and noise from existing systems: It does not rely on supervision in its extractors and generates training data for type selection from WordNet and other resources. FINET supports the most fine-grained type system so far, including types with no annotated training data. Our experiments indicate that FINET outperforms state-of-the-art methods in terms of recall, precision, and granularity of extracted types.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "links": [
+      {
+        "page": 6,
+        "url": "http://web.eecs.umich.edu/˜mihalcea/downloads.html",
+        "kind": "text"
+      },
+      {
+        "page": 6,
+        "url": "http://dws.informatik.uni-mannheim",
+        "kind": "text"
+      }
+    ]
+  },
+  "pdfinfo": {
+    "title": "FINET: Context-Aware Fine-Grained Named Entity Typing",
+    "author": "Luciano Del Corro ; Abdalghani Abujabal ; Rainer Gemulla ; Gerhard Weikum",
+    "producer": "pdfTeX-1.40.3",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2015-09-04T02:16:59-07",
+    "mod_date": "2015-09-04T02:16:59-07",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 11,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 169160,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX using libpoppler, Version 3.141592-1.40.3-2.2 (Web2C 7.5.6) kpathsea version 3.5.6",
+      "Subject": "EMNLP 2015"
     }
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "corro2015",
+    "title": "FINET: Context-Aware Fine-Grained Named Entity Typing",
+    "author": "Luciano Del Corro ; Abdalghani Abujabal ; Rainer Gemulla ; Gerhard Weikum",
+    "year": "2015",
+    "pages": 11,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -320,7 +410,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -445,6 +535,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 12.3,
       "detail": "159 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-14T05:37:16Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 39.6,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-14T05:37:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "14 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-14T05:37:16Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 9.0,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-14T05:37:17Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 123.3,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-14T05:37:17Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "citekey=corro2015"
+    },
+    {
+      "ts": "2026-08-14T05:37:20Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2775.6,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
