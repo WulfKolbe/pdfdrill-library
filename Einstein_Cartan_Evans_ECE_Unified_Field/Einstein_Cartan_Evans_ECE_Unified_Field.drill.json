@@ -6,7 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -85,12 +92,91 @@
     },
     "tiddlers_path": "Einstein_Cartan_Evans_ECE_Unified_Field.tiddlers.json",
     "tiddlers_count": 111,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "",
+      "Producer": "GPL Ghostscript 9.26",
+      "CreationDate": "Sat Sep  4 09:10:14 2021 CEST",
+      "ModDate": "Sat Sep  4 09:10:14 2021 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "595.28 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "101769 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 12,
+    "image_count": 0,
+    "abstract": "Einstein Cartan Evans (ECE) unified field theory is an extension of the original\nEinstein Hilbert gravitational field theory of 1915 to all radiated and matter\nfields. This allows the systematic investigation of the mutual interaction of\ngravitation and electromagnetism (EMG coupling) and allows the development\nof a generally covariant quantum field theory in which the wave-function is the\ntetrad. The latter is the fundamental field of the Palatini variation of general\nrelativity. The ECE field theory is used to investigate the effect of gravitation\non the Sagnac effect through a non-zero current of the homogeneous field equa-\ntion. A frequency shift of the Sagnac effect is predicted due to gravitation, in\naccord with experimental observation.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 1,
+        "url": "www.aias.us",
+        "kind": "text"
+      },
+      {
+        "page": 1,
+        "url": "www.atomicprecision.com",
+        "kind": "text"
+      },
+      {
+        "page": 9,
+        "url": "www.atomicprecison.com",
+        "kind": "text"
+      },
+      {
+        "page": 10,
+        "url": "www.atomicpecision.com",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "GPL Ghostscript 9.26",
+    "creator": "",
+    "creation_date": "2021-09-04T00:10:14-07",
+    "mod_date": "2021-09-04T00:10:14-07",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 12,
+    "encrypted": false,
+    "page_size": "595.28 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 101769,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "Keywords": "",
+      "Subject": ""
+    }
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "MVGCPN+CMBX12",
@@ -261,7 +347,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -336,6 +422,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.6,
       "detail": "111 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-14T05:37:46Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 47.6,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-14T05:37:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.1,
+      "detail": "12 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-14T05:37:47Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 28.0,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-14T05:37:47Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 37.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-14T05:37:47Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 91.6,
+      "detail": "4 external urls"
+    },
+    {
+      "ts": "2026-08-14T05:37:47Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 18.4,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-14T05:37:49Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1569.1,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

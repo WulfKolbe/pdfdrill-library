@@ -7,7 +7,13 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 11,
@@ -142,9 +148,370 @@
       "geometry": true,
       "math": true,
       "source": "mathpix"
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "C3EL: A Joint Model for Cross-Document Co-Reference Resolution and Entity Linking",
+      "Subject": "EMNLP 2015",
+      "Keywords": "",
+      "Author": "Sourav Dutta ; Gerhard Weikum",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.3",
+      "CreationDate": "Fri Sep  4 11:16:59 2015 CEST",
+      "ModDate": "Fri Sep  4 11:16:59 2015 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "260823 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 11,
+    "image_count": 0,
+    "abstract": "Cross-document co-reference resolution (CCR) computes equivalence classes over textual mentions denoting the same entity in a document corpus. Named-entity linking (NEL) disambiguates mentions onto entities present in a knowledge base (KB) or maps them to $null$ if not present in the KB. Traditionally, CCR and NEL have been addressed separately. However, such approaches miss out on the mutual synergies if CCR and NEL were performed jointly. This paper proposes $C3EL$, an unsupervised framework combining CCR and NEL for jointly tackling both problems. $C3EL$ incorporates results from the CCR stage into NEL, and vice versa: additional global context obtained from CCR improves the feature space and performance of NEL, while NEL in turn provides distant KB features for already disambiguated mentions to improve CCR. The CCR and NEL steps are interleaved in an iterative algorithm that focuses on the highest-confidence still unresolved mentions in each iteration. Experimental results on two different corpora, news-centric and web-centric, demonstrate significant gains over state-of-the-art baselines for both CCR and NEL.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "C3EL: A Joi",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "Cross-Document Co-Reference",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "Sourav Dutta",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "3",
+        "title": "nt Model for",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4",
+        "title": "Resolution and Entity Linking",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4.1",
+        "title": "Gerhard Weikum",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.2",
+        "title": "State-of-the-Art and its Limitations: Established",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.2.1",
+        "title": "1.1 Approach and Contributions",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.3",
+        "title": "Example: To illustrate the potential synergies",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.4",
+        "title": "Approach: C3EL iteratively aggregates interme-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.5",
+        "title": "2 C3EL: Joint CCR-NEL Framework",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.5.1",
+        "title": "2.1 Pre-Processing Stage",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.5.2",
+        "title": "2.2 Interleaved NEL & CCR Approach",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.6",
+        "title": "1. During Iteration 1, C3EL performs:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.7",
+        "title": "2. The above results are provided to the second",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.8",
+        "title": "Iteration:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.9",
+        "title": "3. Subsequent NEL iterations (on WE and NE)",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.9.1",
+        "title": "2.2.1 Named-Entity Linking (NEL) Stage",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.10",
+        "title": "A. Link Validation: For each mention group (e.g.,",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.11",
+        "title": "B. Classification: To sift out well-known and",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.11.1",
+        "title": "2.2.2 Cross-Document CR (CCR) Stage",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.12",
+        "title": "A. Similarity Measure: To infer whether two",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.13",
+        "title": "B. Hierarchical Clustering: s mention groups",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.13.1",
+        "title": "2.3 Finalization Stage",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.14",
+        "title": "3 Experimental Evaluation",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.15",
+        "title": "Datasets: We use the following 2 publicly avail-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.16",
+        "title": "Evaluation: To assess the output quality of C3EL",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.16.1",
+        "title": "3.1 Parameter Tuning & Sensitivity Study",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.17",
+        "title": "Approach P R B3 φ φ",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.18",
+        "title": "EECR 74.9 55.5 63.7 - 33.7",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.19",
+        "title": "CROCS 73.11 75.28 74.18 67.35 -",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.20",
+        "title": "C3EL 79.52 82.91 81.18 73.89 53.3",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.20.1",
+        "title": "3.2 CCR Performance Results",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.21",
+        "title": "Approach P (%) R (%) B3 (%) φ (%)",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.22",
+        "title": "Type Approach P (%) R (%) B3 (%)",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.23",
+        "title": "PER CROCSG 71.8 74.15 72.96",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.24",
+        "title": "LOC CROCSG 78.23 85.41 81.66",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.25",
+        "title": "ORG CROCSG 85.73 87.89 86.8",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.26",
+        "title": "A. Gold Results: Errors introduced during the pre-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.27",
+        "title": "B. Mention Categorization: Person mention type",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.28",
+        "title": "C. Large Data: To study the robustness of C3EL",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.28.1",
+        "title": "3.3 Named-Entity Linking (NEL) Results",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.29",
+        "title": "Datasets 0.01 0.05 0.10 0.15 0.20 0.01 0.02",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.30",
+        "title": "Approach P (%) R (%) B3 (%) φ (%)",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.31",
+        "title": "CROCS 68.66 70.96 69.79 62.85",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.32",
+        "title": "C3EL 75.76 81.42 78.49 74.13",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.33",
+        "title": "Approach Within-KB Out-of-KB Overall",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.34",
+        "title": "AIDA 86.5 13.5 0.0 63.9 36.1 83.4",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.35",
+        "title": "C3EL 85.4 14.4 0.2 79.0 21.0 84.9",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": []
+  },
+  "pdfinfo": {
+    "title": "C3EL: A Joint Model for Cross-Document Co-Reference Resolution and Entity Linking",
+    "author": "Sourav Dutta ; Gerhard Weikum",
+    "producer": "pdfTeX-1.40.3",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2015-09-04T02:16:59-07",
+    "mod_date": "2015-09-04T02:16:59-07",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 11,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 260823,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX using libpoppler, Version 3.141592-1.40.3-2.2 (Web2C 7.5.6) kpathsea version 3.5.6",
+      "Subject": "EMNLP 2015"
     }
   },
-  "pdfinfo": null,
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -570,7 +937,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -695,6 +1062,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 12.6,
       "detail": "280 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-14T05:37:14Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 38.6,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-14T05:37:15Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "30 fonts, 15 math"
+    },
+    {
+      "ts": "2026-08-14T05:37:15Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 1.4,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-14T05:37:15Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 2.3,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-14T05:37:15Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 146.7,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-14T05:37:19Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3297.0,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
