@@ -7,7 +7,13 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "PDFINFO_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 32,
@@ -96,9 +102,64 @@
     "bibliography_cites": 0,
     "tiddlers_path": "Gemini-Analysis III Übungsblatt 5 Solutions.tiddlers.json",
     "tiddlers_count": 450,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "about:blank",
+      "Creator": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+      "Producer": "Skia/PDF m141",
+      "CreationDate": "Thu Jan  1 22:21:47 2026 CET",
+      "ModDate": "Thu Jan  1 22:21:47 2026 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "yes",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "32",
+      "Encrypted": "no",
+      "Page size": "595.92 x 841.92 pts (A4)",
+      "Page rot": "0",
+      "File size": "613708 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 32,
+    "image_count": 0,
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 1,
+        "url": "https://www.ai-chat-exporter.com/"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "about:blank",
+    "author": "",
+    "producer": "Skia/PDF m141",
+    "creator": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.0.0 Safari/537.36",
+    "creation_date": "2026-01-01T21:21:47Z",
+    "mod_date": "2026-01-01T21:21:47Z",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": true,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 32,
+    "encrypted": false,
+    "page_size": "595.92 x 841.92 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 613708,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -398,7 +459,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -481,6 +542,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 29.9,
       "detail": "450 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-15T06:36:43Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "21 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-15T06:36:43Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 32.1,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-15T06:36:44Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 39.4,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-15T06:36:44Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 28.4,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-15T06:36:44Z",
+      "node": "pdfinfo",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 48.3,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-08-15T06:36:48Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4299.4,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

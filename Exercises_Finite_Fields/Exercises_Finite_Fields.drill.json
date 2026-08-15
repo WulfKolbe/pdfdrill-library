@@ -7,7 +7,14 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -96,12 +103,76 @@
     "bibliography_cites": 0,
     "tiddlers_path": "Exercises_Finite_Fields.tiddlers.json",
     "tiddlers_count": 50,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfeTeX-1.30.4",
+      "CreationDate": "Sun Nov 26 01:48:03 2006 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "2",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "99990 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 2,
+    "image_count": 0,
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfeTeX-1.30.4",
+    "creator": "TeX",
+    "creation_date": "2006-11-25T19:48:03-05",
+    "mod_date": null,
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 2,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 99990,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfeTeX, Version 3.141592-1.30.4-2.2 (Web2C 7.5.5) kpathsea version 3.5.5"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2006",
+    "title": "",
+    "author": "",
+    "year": "2006",
+    "pages": 2,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "SWFXPD+CMBX10",
@@ -342,7 +413,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -425,6 +496,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "50 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-15T06:34:16Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 38.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-15T06:34:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "17 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-15T06:34:16Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 29.2,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-15T06:34:16Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 51.0,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-15T06:34:16Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 16.6,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-15T06:34:16Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 45.8,
+      "detail": "citekey=unknown2006"
+    },
+    {
+      "ts": "2026-08-15T06:34:17Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 470.0,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

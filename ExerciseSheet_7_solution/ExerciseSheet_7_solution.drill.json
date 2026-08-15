@@ -6,7 +6,12 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -95,10 +100,81 @@
     },
     "tiddlers_path": "ExerciseSheet_7_solution.tiddlers.json",
     "tiddlers_count": 128,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.28",
+      "CreationDate": "Mon Dec  8 14:01:44 2025 CET",
+      "ModDate": "Mon Dec  8 14:01:44 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "254138 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 6,
+    "image_count": 0,
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.28",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2025-12-08T13:01:44Z",
+    "mod_date": "2025-12-08T13:01:44Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 6,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 254138,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) kpathsea version 6.4.1",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2025",
+    "title": "",
+    "author": "",
+    "year": "2025",
+    "pages": 6,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -369,7 +445,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -444,6 +520,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.3,
       "detail": "128 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-15T06:34:13Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 36.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-15T06:34:13Z",
+      "node": "abstract",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 41.9,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-15T06:34:13Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 80.3,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-15T06:34:13Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 71.4,
+      "detail": "citekey=unknown2025"
+    },
+    {
+      "ts": "2026-08-15T06:34:14Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 954.5,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
