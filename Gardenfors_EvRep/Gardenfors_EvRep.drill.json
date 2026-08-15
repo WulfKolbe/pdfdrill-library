@@ -6,7 +6,14 @@
     "MODEL_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "PDFINFO_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "mathpix_pdf_id": null,
@@ -89,10 +96,84 @@
     "pua_note": "",
     "tiddlers_path": "Gardenfors_EvRep.tiddlers.json",
     "tiddlers_count": 33,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Peter Gärdenfors",
+      "Creator": "Acrobat PDFMaker 15 for Word",
+      "Producer": "Adobe PDF Library 15.0",
+      "CreationDate": "Tue Sep  5 15:34:16 2017 CEST",
+      "ModDate": "Mon Apr 29 12:00:30 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "yes",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "2",
+      "Encrypted": "no",
+      "Page size": "594.96 x 842.04 pts (A4)",
+      "Page rot": "0",
+      "File size": "18543 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 2,
+    "image_count": 0,
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "Peter Gärdenfors",
+    "producer": "Adobe PDF Library 15.0",
+    "creator": "Acrobat PDFMaker 15 for Word",
+    "creation_date": "2017-09-05T15:34:16+02",
+    "mod_date": "2019-04-29T12:00:30+02",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": true,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 2,
+    "encrypted": false,
+    "page_size": "594.96 x 842.04 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 18543,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Comments": "",
+      "Company": "Lunds Universitet",
+      "Keywords": "",
+      "SourceModified": "D:20170825134838",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "gaerdenfors2017",
+    "title": "",
+    "author": "Peter Gärdenfors",
+    "year": "2017",
+    "pages": 2,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -139,7 +220,7 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -238,6 +319,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.6,
       "detail": "33 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-15T06:36:40Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-15T06:36:41Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 36.8,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-15T06:36:41Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 32.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-15T06:36:41Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 57.1,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-15T06:36:41Z",
+      "node": "pdfinfo",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 45.6,
+      "detail": "title=False author=True"
+    },
+    {
+      "ts": "2026-08-15T06:36:41Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 36.7,
+      "detail": "citekey=gaerdenfors2017"
+    },
+    {
+      "ts": "2026-08-15T06:36:42Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 487.1,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

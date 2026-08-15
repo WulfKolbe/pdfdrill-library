@@ -5,7 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 7,
@@ -69,12 +76,73 @@
     },
     "tiddlers_path": "General Relativity, Tensor Analysis And Geometry - (small handout) WW.tiddlers.json",
     "tiddlers_count": 32,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Producer": "Aladdin Ghostscript 5.50",
+      "CreationDate": "Tue May 16 02:41:29 2000 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "135629 bytes",
+      "Optimized": "no",
+      "PDF version": "1.2"
+    },
+    "page_count_text": 7,
+    "image_count": 0,
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "Aladdin Ghostscript 5.50",
+    "creator": "",
+    "creation_date": "2000-05-16T00:41:29Z",
+    "mod_date": null,
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 7,
+    "encrypted": false,
+    "page_size": "595 x 842 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 135629,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.2",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2000",
+    "title": "",
+    "author": "",
+    "year": "2000",
+    "pages": 7,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "Times-Bold",
@@ -189,7 +257,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -264,6 +332,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.5,
       "detail": "32 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-15T06:36:54Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 38.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-15T06:36:54Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "8 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-15T06:36:55Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 40.0,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-15T06:36:55Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 127.1,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-15T06:36:55Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 20.9,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-15T06:36:55Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 89.6,
+      "detail": "citekey=unknown2000"
+    },
+    {
+      "ts": "2026-08-15T06:37:00Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4434.7,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

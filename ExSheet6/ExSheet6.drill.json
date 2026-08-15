@@ -6,7 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 3,
@@ -80,10 +87,76 @@
     },
     "tiddlers_path": "ExSheet6.tiddlers.json",
     "tiddlers_count": 45,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.26",
+      "CreationDate": "Wed Jul  2 12:38:43 2025 CEST",
+      "ModDate": "Wed Jul  2 12:38:43 2025 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "3",
+      "Encrypted": "no",
+      "Page size": "595.913 x 842.74 pts (A4)",
+      "Page rot": "0",
+      "File size": "356434 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 3,
+    "image_count": 2,
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.26",
+    "creator": "TeX",
+    "creation_date": "2025-07-02T10:38:43Z",
+    "mod_date": "2025-07-02T10:38:43Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 3,
+    "encrypted": false,
+    "page_size": "595.913 x 842.74 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 356434,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) kpathsea version 6.4.0"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2025",
+    "title": "",
+    "author": "",
+    "year": "2025",
+    "pages": 3,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -242,7 +315,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 3,
+      "x0": 70.87,
+      "y0": 259.91,
+      "x1": 525.05,
+      "y1": 451.09,
+      "w_pt": 454.19,
+      "h_pt": 191.18,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 1271,
+      "height_px": 535,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 201,
+      "y_ppi": 201,
+      "size_bytes": 682,
+      "object_id": "8 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -317,6 +411,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.7,
       "detail": "45 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-15T06:34:11Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 38.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-15T06:34:11Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "11 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-15T06:34:11Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 28.6,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-15T06:34:11Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 30.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-15T06:34:12Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 49.3,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-15T06:34:12Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 43.6,
+      "detail": "citekey=unknown2025"
+    },
+    {
+      "ts": "2026-08-15T06:34:12Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 512.7,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
