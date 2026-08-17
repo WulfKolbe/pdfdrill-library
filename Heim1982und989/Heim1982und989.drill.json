@@ -6,7 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 3,
@@ -87,12 +95,117 @@
     },
     "tiddlers_path": "Heim1982und989.tiddlers.json",
     "tiddlers_count": 51,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "LuaTeX-1.18.0",
+      "CreationDate": "Mon Feb  2 16:08:36 2026 CET",
+      "ModDate": "Mon Feb  2 16:08:36 2026 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "3",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "135122 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 3,
+    "image_count": 0,
+    "abstract": "This document consolidates the algorithmic determination of elementary particle masses accord-\ning to Burkhard Heim. It integrates the invariant definitions from the 1982 DESY programming\nmanuscript with the critical structural corrections, lost bracket restorations, and parameter\nupdates (neutrino masses, lifetimes) presented in the 1989 MBB/DASA report.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Fundamental Invariants and Metric Tensor",
+        "page": ""
+      },
+      {
+        "number": "2.1",
+        "title": "The Master Equation (1989)",
+        "page": ""
+      },
+      {
+        "number": "2.2",
+        "title": "Fine Structure Constants",
+        "page": ""
+      },
+      {
+        "number": "2.3",
+        "title": "Interaction Functions (F and Φ)",
+        "page": ""
+      },
+      {
+        "number": "3.1",
+        "title": "Occupational Limits (The ”Grid”)",
+        "page": ""
+      },
+      {
+        "number": "3.2",
+        "title": "The Eigenvalue Equation (Wνx )",
+        "page": ""
+      },
+      {
+        "number": "4",
+        "title": "Implementation Constants",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "LuaTeX-1.18.0",
+    "creator": "TeX",
+    "creation_date": "2026-02-02T16:08:36+01",
+    "mod_date": "2026-02-02T16:08:36+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 3,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 135122,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.FullBanner": "This is LuaHBTeX, Version 1.18.0 (TeX Live 2024 Solus)"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2026",
+    "title": "",
+    "author": "",
+    "year": "2026",
+    "pages": 3,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "DAQWLD+LMRoman12-Bold CID",
@@ -319,7 +432,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -394,6 +507,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.7,
       "detail": "51 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-17T05:22:59Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 48.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-17T05:23:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "16 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-17T05:23:00Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 40.9,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-17T05:23:00Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 42.1,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-17T05:23:01Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 67.4,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-17T05:23:01Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 21.8,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-17T05:23:01Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 61.5,
+      "detail": "citekey=unknown2026"
+    },
+    {
+      "ts": "2026-08-17T05:23:02Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 650.3,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

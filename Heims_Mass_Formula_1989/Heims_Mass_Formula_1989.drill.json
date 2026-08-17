@@ -6,7 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 11,
@@ -78,12 +86,77 @@
     "bibliography_cites": 0,
     "tiddlers_path": "Heims_Mass_Formula_1989.tiddlers.json",
     "tiddlers_count": 65,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "F. Heim's Mass Formula _1989_.doc",
+      "Author": "Admin",
+      "Creator": "F. Heim's Mass Formula (1989).doc - Microsoft Word",
+      "Producer": "Acrobat PDFWriter 5.0 für Windows NT",
+      "CreationDate": "Thu Sep 25 12:12:57 2003 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "57616 bytes",
+      "Optimized": "no",
+      "PDF version": "1.2"
+    },
+    "page_count_text": 11,
+    "image_count": 0,
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "F. Heim's Mass Formula _1989_.doc",
+    "author": "Admin",
+    "producer": "Acrobat PDFWriter 5.0 für Windows NT",
+    "creator": "F. Heim's Mass Formula (1989).doc - Microsoft Word",
+    "creation_date": "2003-09-25T10:12:57Z",
+    "mod_date": null,
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 11,
+    "encrypted": false,
+    "page_size": "595 x 842 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 57616,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.2",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "admin2003",
+    "title": "F. Heim's Mass Formula _1989_.doc",
+    "author": "Admin",
+    "year": "2003",
+    "pages": 11,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "TimesNewRoman",
@@ -170,7 +243,7 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -253,6 +326,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "65 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-17T05:23:17Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 40.0,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-17T05:23:17Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "6 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-17T05:23:18Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 28.4,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-17T05:23:18Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 32.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-17T05:23:18Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 74.1,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-17T05:23:18Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 22.3,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-17T05:23:18Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=admin2003"
+    },
+    {
+      "ts": "2026-08-17T05:23:20Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2042.1,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -5,7 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -62,12 +69,75 @@
     },
     "tiddlers_path": "Heft9_Inhalt.tiddlers.json",
     "tiddlers_count": 21,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "splwow64.exe 6.1.7601.17514 - CIB pdf brewer 2.7.1",
+      "Producer": "CIB pdf brewer lizenziert für Kunibert Förster",
+      "CreationDate": "Thu Dec  4 15:54:15 2014 CET",
+      "ModDate": "Thu Jul  7 08:51:45 2016 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "2",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "16358 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 2,
+    "image_count": 0,
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "CIB pdf brewer lizenziert für Kunibert Förster",
+    "creator": "splwow64.exe 6.1.7601.17514 - CIB pdf brewer 2.7.1",
+    "creation_date": "2014-12-04T15:54:15+01",
+    "mod_date": "2016-07-07T08:51:45+02",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 2,
+    "encrypted": false,
+    "page_size": "595 x 842 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 16358,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2014",
+    "title": "",
+    "author": "",
+    "year": "2014",
+    "pages": 2,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "TimesNewRomanPS-BoldMT",
@@ -98,7 +168,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -173,6 +243,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.1,
       "detail": "21 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-17T05:22:46Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 43.9,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-17T05:22:47Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.1,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-17T05:22:47Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 29.7,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-17T05:22:47Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 60.1,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-17T05:22:47Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 28.9,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-17T05:22:48Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 53.0,
+      "detail": "citekey=unknown2014"
+    },
+    {
+      "ts": "2026-08-17T05:22:48Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 636.3,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
