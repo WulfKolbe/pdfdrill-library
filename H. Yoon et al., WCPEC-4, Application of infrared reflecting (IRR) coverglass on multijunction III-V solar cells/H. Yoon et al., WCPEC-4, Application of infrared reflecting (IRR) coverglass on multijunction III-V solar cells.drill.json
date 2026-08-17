@@ -5,7 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 4,
@@ -70,12 +77,82 @@
     },
     "tiddlers_path": "H. Yoon et al., WCPEC-4, Application of infrared reflecting (IRR) coverglass on multijunction III-V solar cells.tiddlers.json",
     "tiddlers_count": 26,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "a",
+      "Author": "HYOON",
+      "Creator": "Acrobat PDFMaker 6.0 for Word",
+      "Producer": "Acrobat Distiller 6.0 (Windows)",
+      "CreationDate": "Fri Apr 28 19:23:51 2006 CEST",
+      "ModDate": "Wed Aug 12 00:31:01 2009 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "yes",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "4",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "146983 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 4,
+    "image_count": 0,
+    "abstract": "It is well known that the Ge subcell in multijunction GaInP/GaAs/Ge based solar cells produces a significantly higher photogen-\nerated current (nearly 2x) than the other two subcells connected in series. The excess current is converted into heat, and as a\nresult, increases the cell operating temperature. Because the solar cell efficiency decreases with higher temperatures, it is desir-\nable to maintain a lower cell operating temperature. This can be achieved by rejecting a part of the incident sunlight that would\notherwise be absorbed and converted into heat by the Ge subcell. For many space applications, coverglass incorporated with\ninfrared reflecting (IRR) coatings can be applied to these solar cells for the purpose of lowering the cell operating temperature\nand/or improving the power output from the solar arrays. Achieving higher power output requires an appropriate IRR coating\ndesign that carefully balances the reduction in the cell absorptance against the Ge subcell current output. In this paper, this key\nissue is discussed. Also, preliminary IRR coating designs have been evaluated by applying them on high efficiency 3-junction\nsolar cells, and the performance data are used to help predict optimal designs.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "a",
+    "author": "HYOON",
+    "producer": "Acrobat Distiller 6.0 (Windows)",
+    "creator": "Acrobat PDFMaker 6.0 for Word",
+    "creation_date": "2006-04-28T10:23:51-07",
+    "mod_date": "2009-08-11T15:31:01-07",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": true,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 4,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 146983,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "Company": "Spectrolab",
+      "SourceModified": "D:20060428171831"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "hyoon2006",
+    "title": "a",
+    "author": "HYOON",
+    "year": "2006",
+    "pages": 4,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "TimesNewRomanPSMT",
@@ -148,7 +225,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -223,6 +300,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.6,
       "detail": "26 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-17T05:20:46Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 49.9,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-17T05:20:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "5 fonts, 1 math"
+    },
+    {
+      "ts": "2026-08-17T05:20:46Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 44.0,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-17T05:20:46Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 49.4,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-17T05:20:46Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 21.4,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-17T05:20:46Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "citekey=hyoon2006"
+    },
+    {
+      "ts": "2026-08-17T05:20:49Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2135.1,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

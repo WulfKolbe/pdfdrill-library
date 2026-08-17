@@ -6,7 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -83,12 +91,107 @@
     },
     "tiddlers_path": "Heim1982und989Deepseek.tiddlers.json",
     "tiddlers_count": 123,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "LuaTeX-1.18.0",
+      "CreationDate": "Mon Feb  2 16:16:20 2026 CET",
+      "ModDate": "Mon Feb  2 16:16:20 2026 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "143748 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 6,
+    "image_count": 0,
+    "abstract": "This document presents a consolidated version of Burkhard Heim’s mass formula\n      for elementary particles, incorporating the corrections and extensions published in\n      1989 into the original 1982 formulation. The unified theory describes the masses,\n      lifetimes, fine-structure constant, and neutrino states of elementary particles based\n      on a geometric-dynamical structure of spacetime.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Introduction",
+        "page": ""
+      },
+      {
+        "number": "2",
+        "title": "Mass of Basic States and of the Excited States of",
+        "page": ""
+      },
+      {
+        "number": "2.1",
+        "title": "Quantum Numbers and Invariants (1982 with 1989 correc-",
+        "page": ""
+      },
+      {
+        "number": "2.2",
+        "title": "Mass Formula (1982 foundation with 1989 updates)",
+        "page": ""
+      },
+      {
+        "number": "2.3",
+        "title": "Limits of Structure Zone Fillings",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "LuaTeX-1.18.0",
+    "creator": "TeX",
+    "creation_date": "2026-02-02T16:16:20+01",
+    "mod_date": "2026-02-02T16:16:20+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 6,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 143748,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.FullBanner": "This is LuaHBTeX, Version 1.18.0 (TeX Live 2024 Solus)"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2026",
+    "title": "",
+    "author": "",
+    "year": "2026",
+    "pages": 6,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "UFDXLB+LMRoman17-Regular CID",
@@ -287,7 +390,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -362,6 +465,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.7,
       "detail": "123 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-17T05:23:03Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 50.3,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-17T05:23:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "14 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-17T05:23:03Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 30.4,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-17T05:23:04Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 43.3,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-17T05:23:04Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 83.1,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-17T05:23:04Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 24.7,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-17T05:23:04Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 82.1,
+      "detail": "citekey=unknown2026"
+    },
+    {
+      "ts": "2026-08-17T05:23:05Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1186.1,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

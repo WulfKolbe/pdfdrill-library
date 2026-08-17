@@ -5,7 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -65,12 +73,80 @@
     },
     "tiddlers_path": "Hill-Effect_8-04-21.tiddlers.json",
     "tiddlers_count": 29,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Microsoft Word - Hill Effect .8.04.21.docx",
+      "Keywords": "",
+      "Creator": "Word",
+      "Producer": "Mac OS X 10.12.5 Quartz PDFContext",
+      "CreationDate": "Thu Apr  8 15:50:12 2021 CEST",
+      "ModDate": "Thu Apr  8 15:50:12 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "595.28 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "76174 bytes",
+      "Optimized": "no",
+      "PDF version": "1.3"
+    },
+    "page_count_text": 6,
+    "image_count": 0,
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Microsoft Word - Hill Effect .8.04.21.docx",
+    "author": "",
+    "producer": "Mac OS X 10.12.5 Quartz PDFContext",
+    "creator": "Word",
+    "creation_date": "2021-04-08T13:50:12Z",
+    "mod_date": "2021-04-08T13:50:12Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 6,
+    "encrypted": false,
+    "page_size": "595.28 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 76174,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.3",
+    "custom_fields": {
+      "Keywords": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "microsoft2021",
+    "title": "Microsoft Word - Hill Effect .8.04.21.docx",
+    "author": "",
+    "year": "2021",
+    "pages": 6,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "UAADOO+Cambria",
@@ -115,7 +191,7 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -190,6 +266,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.5,
       "detail": "29 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-17T05:23:52Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 40.3,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-08-17T05:23:52Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "3 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-17T05:23:52Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 34.4,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-17T05:23:53Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 32.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-17T05:23:53Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 74.5,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-17T05:23:53Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 20.1,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-17T05:23:53Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 54.6,
+      "detail": "citekey=microsoft2021"
+    },
+    {
+      "ts": "2026-08-17T05:23:54Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1063.5,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
