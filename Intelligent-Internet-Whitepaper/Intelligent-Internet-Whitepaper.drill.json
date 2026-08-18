@@ -6,7 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 17,
@@ -76,10 +82,83 @@
     },
     "tiddlers_path": "Intelligent-Internet-Whitepaper.tiddlers.json",
     "tiddlers_count": 199,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Whitepaper of the Intelligent Internet",
+      "Subject": "Intelligent Internet Whitepaper",
+      "Keywords": "AI, Blockchain, Governance, Decentralization",
+      "Author": "The II Project",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.26",
+      "CreationDate": "Thu Jul 24 16:09:09 2025 CEST",
+      "ModDate": "Thu Jul 24 16:09:09 2025 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "17",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "131699 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 17,
+    "image_count": 0,
+    "abstract": "This whitepaper introduces the Intelligent Internet (II), a novel protocol designed to address\ngovernance failures in AI development: the Great Race towards centralization and the Gradual Dis-\nempowerment of human agency. We propose a \"Third Path\" by building a Bitcoin for the Intelligence\nAge, gifting every human a sovereign AI (II-Agent), scaling intelligence through permissionless\ncoordination via the Common-Ground protocol, and anchoring all knowledge on auditable, open-\nlicensed datasets. The framework relies on Proof-of-Benefit, minting Foundation Coins only when\nverifiable societal benefit is performed. We outline a three-layer architecture (Foundation, Culture,\nPersonal layers), define key actors and guiding principles (Openness, Verifiable Public Benefit, Cred-\nible Neutrality, Human + Agent Dignity, Sovereign Interoperability), and detail economic design,\nBFT finality, Anchor-Set provenance, Common-Ground orchestration, Universal AI access tiers, and\nprogressive governance models. We provide a comprehensive security and threat model and discuss\ninteroperability, ensuring the Intelligent Internet remains a transparent, auditable, and resilient public\nutility for the Intelligence Age.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Whitepaper of the Intelligent Internet",
+    "author": "The II Project",
+    "producer": "pdfTeX-1.40.26",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2025-07-24T14:09:09Z",
+    "mod_date": "2025-07-24T14:09:09Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 17,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 131699,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "AI, Blockchain, Governance, Decentralization",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) kpathsea version 6.4.0",
+      "Subject": "Intelligent Internet Whitepaper"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "project2025",
+    "title": "Whitepaper of the Intelligent Internet",
+    "author": "The II Project",
+    "year": "2025",
+    "pages": 17,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -182,7 +261,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -257,6 +336,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.9,
       "detail": "199 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T05:37:26Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 39.1,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-18T05:37:26Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "7 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-18T05:37:26Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 27.6,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-18T05:37:26Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 93.4,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-18T05:37:26Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.9,
+      "detail": "citekey=project2025"
+    },
+    {
+      "ts": "2026-08-18T05:37:29Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2109.0,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
