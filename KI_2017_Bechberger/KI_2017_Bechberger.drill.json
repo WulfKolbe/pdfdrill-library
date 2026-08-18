@@ -7,7 +7,12 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "PDFINFO_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 14,
@@ -112,9 +117,75 @@
     "bibliography_cites": 48,
     "tiddlers_path": "KI_2017_Bechberger.tiddlers.json",
     "tiddlers_count": 171,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "PDF24 Creator",
+      "Producer": "GPL Ghostscript 9.21",
+      "CreationDate": "Fri Oct 13 15:04:27 2017 CEST",
+      "ModDate": "Mon Jan 22 09:04:48 2018 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "268795 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 14,
+    "image_count": 2,
+    "abstract_search_scope": "first2pages",
+    "links": [
+      {
+        "page": 1,
+        "url": "http://dx.doi.org/10.1007/",
+        "kind": "text"
+      },
+      {
+        "page": 8,
+        "url": "http://lucas-bechberger.de/appendix-ki-2017/",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "GPL Ghostscript 9.21",
+    "creator": "PDF24 Creator",
+    "creation_date": "2017-10-13T15:04:27+02",
+    "mod_date": "2018-01-22T09:04:48+01",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 14,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 268795,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "Keywords": "",
+      "Subject": ""
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -470,7 +541,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 4,
+      "x0": 177.99,
+      "y0": 115.84,
+      "x1": 437.35,
+      "y1": 196.99,
+      "w_pt": 259.35,
+      "h_pt": 81.15,
+      "name": "R82",
+      "imagemask": false,
+      "width_px": 1077,
+      "height_px": 337,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 299,
+      "y_ppi": 299,
+      "size_bytes": 36249,
+      "object_id": "11 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 7,
+      "x0": 134.77,
+      "y0": 115.84,
+      "x1": 480.6,
+      "y1": 243.38,
+      "w_pt": 345.83,
+      "h_pt": 127.54,
+      "name": "R103",
+      "imagemask": false,
+      "width_px": 1109,
+      "height_px": 409,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 231,
+      "y_ppi": 231,
+      "size_bytes": 46182,
+      "object_id": "22 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -537,6 +649,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.6,
       "detail": "171 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T05:39:32Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "25 fonts, 12 math"
+    },
+    {
+      "ts": "2026-08-18T05:39:33Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 64.8,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-18T05:39:33Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 167.9,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-18T05:39:33Z",
+      "node": "pdfinfo",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 50.2,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-18T05:39:36Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2538.3,
+      "detail": "2 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {
