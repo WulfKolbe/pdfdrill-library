@@ -3,17 +3,19 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1408.0838",
@@ -21,25 +23,21 @@
     "bibkey": "1408.0838",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 91,
+      "Page": 16,
+      "Table": 2,
+      "TableRow": 22,
+      "TableCell": 175,
       "Abstract": 1,
-      "Section": 28,
-      "Formula": 122,
-      "Diagram": 12,
-      "LtxCommand": 6,
-      "Equation": 33,
-      "Table": 6,
-      "Theorem": 13,
-      "Proof": 5,
-      "Citation": 39
+      "Diagram": 6,
+      "Picture": 2,
+      "ListItem": 4,
+      "Equation": 32,
+      "Formula": 227,
+      "Paragraph": 93,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 22,
-    "bibliography_with_year": 22,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 39,
+    "model_equations_with_cdn": 32,
+    "model_source": "mathpix",
     "pages": 16,
     "bytes": 534206,
     "page_size": "612 x 792 pts (letter)",
@@ -80,9 +78,6 @@
     "latex_attached": 33,
     "latex_created": 0,
     "latex_graphics": 0,
-    "tiddlers_path": "1408.0838.tiddlers.json",
-    "tiddlers_count": 373,
-    "tiddlers_svg_mode": "inline",
     "bibsource_references": 22,
     "bibsource_enriched": 0,
     "bibsource_citations_linked": 39,
@@ -170,7 +165,73 @@
     ],
     "has_math_fonts": true,
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Estimating Maximally Probable Constrained Relations by Mathematical Programming",
+      "Subject": "",
+      "Keywords": "Clustering, Combinatorial Optimization, Convex Optimization, Graphical Models, Mathematical Programming, Mixed-Integer Nonlinear Programming, Ranking",
+      "Author": "Lizhen Qu, Bjoern Andres",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.12",
+      "CreationDate": "Wed Mar  2 19:05:27 2022 CET",
+      "ModDate": "Wed Mar  2 19:05:27 2022 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "534206 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 0,
+    "mathpix_pdf_id": "0d676027-ecc7-46a2-92be-e1f872363fb9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1408.0838.lines.json",
+        "bytes": 877603
+      },
+      {
+        "format": "md",
+        "path": "1408.0838.md",
+        "bytes": 57225
+      },
+      {
+        "format": "tex.zip",
+        "path": "1408.0838.tex.zip",
+        "bytes": 665838
+      }
+    ],
+    "eqnums_from_mathpix": 32,
+    "eqnums_recovered": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 403,
+    "geometry_matched": 806,
+    "geometry_mean_sim": 0.32,
+    "tiddlers_path": "1408.0838.tiddlers.json",
+    "tiddlers_count": 400,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Estimating Maximally Probable Constrained Relations by Mathematical Programming",
@@ -1037,6 +1098,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.5,
       "detail": "373 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:55:02Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9688.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:21:26Z",
+      "node": "geometry",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 153.0,
+      "detail": "0/403 matched"
+    },
+    {
+      "ts": "2026-08-18T17:21:26Z",
+      "node": "eqnums",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:21:27Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.8,
+      "detail": "373 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T19:09:25Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 816.0,
+      "detail": "581 objects, 32 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T19:09:28Z",
+      "node": "geometry",
+      "from": "BIBSOURCE_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 1814.2,
+      "detail": "806/403 matched"
+    },
+    {
+      "ts": "2026-08-18T19:09:29Z",
+      "node": "eqnums",
+      "from": "BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "32 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T19:09:30Z",
+      "node": "tiddlers",
+      "from": "BIBSOURCE_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 27.1,
+      "detail": "400 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
@@ -1051,11 +1176,13 @@
     },
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1408.0838/1408.0838.lines.json": "sha256:0d4c8c154f2ea7287ead7c6b8a3a8f8cbc9a11a1274948dc6412d7b0b315a534"
+      },
       "params_hash": "sha256:f0fce1a9db1f30e90c0418ed306f81c0fa8cb25d7bb9be92278e3f832279dc71",
       "algo": "sha256",
-      "ts": "2026-08-04T22:21:21Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T19:09:24Z",
+      "provenance": "mathpix"
     }
   }
 }

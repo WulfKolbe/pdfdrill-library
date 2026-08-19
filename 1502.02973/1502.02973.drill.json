@@ -5,15 +5,17 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 30,
@@ -53,22 +55,27 @@
     "bibkey": "1502.02973",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 127,
-      "Formula": 160,
-      "Abstract": 1,
-      "Section": 35,
-      "Equation": 77,
-      "Theorem": 13,
+      "Page": 30,
+      "Footnote": 6,
       "Table": 2,
-      "Citation": 65
+      "TableRow": 17,
+      "TableCell": 21,
+      "Abstract": 1,
+      "Diagram": 6,
+      "Section": 2,
+      "Picture": 3,
+      "ListItem": 14,
+      "Equation": 82,
+      "Formula": 209,
+      "Paragraph": 179,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 82,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "1502.02973.tgz",
     "latex_macros": 3,
@@ -78,9 +85,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "1502.02973.tgz",
     "merge_paragraphs_changed": 27,
-    "tiddlers_path": "1502.02973.tiddlers.json",
-    "tiddlers_count": 507,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "CVPOUK+CMR17",
       "FYKMDH+CMR12",
@@ -151,11 +155,6 @@
       "numbered": 35,
       "roots": 1
     },
-    "bibliography_entries": 44,
-    "bibliography_with_year": 43,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 65,
     "abstract": "The rapid development of signal processing on graphs provides a new perspective for processing large-scale data associated with irregular domains. In many practical applications, it is necessary to handle massive data sets through complex networks, in which most nodes have limited computing power. Designing efficient distributed algorithms is critical for this task. This paper focuses on the distributed reconstruction of a time-varying bandlimited graph signal based on observations sampled at a subset of selected nodes. A distributed least square reconstruction (DLSR) algorithm is proposed to recover the unknown signal iteratively, by allowing neighboring nodes to communicate with one another and make fast updates. DLSR uses a decay scheme to annihilate the out-of-band energy occurring in the reconstruction process, which is inevitably caused by the transmission delay in distributed systems. Proof of convergence and error bounds for DLSR are provided in this paper, suggesting that the algorithm is able to track time-varying graph signals and perfectly reconstruct time-invariant signals. The DLSR algorithm is numerically experimented with synthetic data and real-world sensor network data, which verifies its ability in tracking slowly time-varying graph signals.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -165,7 +164,68 @@
       "Mengdi Wang",
       "Yuantao Gu"
     ],
-    "arxiv_primary_category": "cs.IT"
+    "arxiv_primary_category": "cs.IT",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.12",
+      "CreationDate": "Wed Feb 11 02:33:15 2015 CET",
+      "ModDate": "Wed Feb 11 02:33:15 2015 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "30",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "638442 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 30,
+    "image_count": 5,
+    "mathpix_pdf_id": "1bcdbcce-b884-4ae6-94b4-dae454ac8230",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1502.02973.lines.json",
+        "bytes": 1030715
+      },
+      {
+        "format": "md",
+        "path": "1502.02973.md",
+        "bytes": 74952
+      },
+      {
+        "format": "tex.zip",
+        "path": "1502.02973.tex.zip",
+        "bytes": 804326
+      }
+    ],
+    "eqnums_from_mathpix": 48,
+    "eqnums_recovered": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 672,
+    "geometry_matched": 963,
+    "geometry_mean_sim": 0.416,
+    "tiddlers_path": "1502.02973.tiddlers.json",
+    "tiddlers_count": 552,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2412,16 +2472,82 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.5,
       "detail": "507 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:56:21Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9738.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:21:45Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 207.2,
+      "detail": "0/672 matched"
+    },
+    {
+      "ts": "2026-08-18T17:21:45Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:21:46Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.0,
+      "detail": "507 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T18:59:24Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 1546.5,
+      "detail": "573 objects, 82 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T18:59:28Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 2123.3,
+      "detail": "963/672 matched"
+    },
+    {
+      "ts": "2026-08-18T18:59:29Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "48 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T18:59:31Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 61.2,
+      "detail": "552 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1502.02973/1502.02973.lines.json": "sha256:7e6bfa67e447db76cf57af80f8e3b498ac5dd5af73dd8303a9a52384c80d7c01"
+      },
       "params_hash": "sha256:ce030ca7e085bac467ce26201a40e6f3d1dcc173a04df696c9db7ec86589fe45",
       "algo": "sha256",
-      "ts": "2026-08-04T22:22:01Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T18:59:24Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

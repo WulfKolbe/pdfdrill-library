@@ -7,7 +7,13 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 42,
@@ -112,12 +118,146 @@
     "bibliography_cites": 1,
     "tiddlers_path": "ModForms.tiddlers.json",
     "tiddlers_count": 703,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.10b",
+      "CreationDate": "Mon May 11 14:03:00 2009 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "42",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "362887 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 42,
+    "image_count": 0,
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Review",
+        "page": "3"
+      },
+      {
+        "number": "2",
+        "title": "Modular Forms (mod p) of Level 1",
+        "page": "4"
+      },
+      {
+        "number": "3",
+        "title": "Reinterpreting Classical Modular Forms (on C)",
+        "page": "7"
+      },
+      {
+        "number": "4",
+        "title": "Geometric Modular Forms “à la Katz”",
+        "page": "10"
+      },
+      {
+        "number": "5",
+        "title": "Higher Levels (level-N Structures)",
+        "page": "10"
+      },
+      {
+        "number": "6",
+        "title": "Families of Elliptic Curves",
+        "page": "12"
+      },
+      {
+        "number": "7",
+        "title": "Cohomology of Sheaves",
+        "page": "13"
+      },
+      {
+        "number": "8",
+        "title": "Equations For Elliptic Curves",
+        "page": "14"
+      },
+      {
+        "number": "9",
+        "title": "Explicit Description of the Sheaf Cohomology Groups",
+        "page": "21"
+      },
+      {
+        "number": "10",
+        "title": "The deRham Cohomology",
+        "page": "23"
+      },
+      {
+        "number": "11",
+        "title": "Relative deRham Cohomology",
+        "page": "26"
+      },
+      {
+        "number": "13",
+        "title": "Connections",
+        "page": "28"
+      },
+      {
+        "number": "14",
+        "title": "The Gauss-Manin Connection",
+        "page": "30"
+      },
+      {
+        "number": "15",
+        "title": "The Poincaré Pairing (lite)",
+        "page": "31"
+      },
+      {
+        "number": "16",
+        "title": "The Gauss-Manin Connection on an family of Elliptic Curves",
+        "page": "33"
+      },
+      {
+        "number": "17",
+        "title": "The Kodaira-Spencer Map",
+        "page": "36"
+      },
+      {
+        "number": "18",
+        "title": "Relationship between Katz’s and Classical Modular Forms",
+        "page": "37"
+      }
+    ],
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.10b",
+    "creator": "TeX",
+    "creation_date": "2009-05-11T12:03:00Z",
+    "mod_date": null,
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 42,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 362887,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "VHSDXJ+CMR17",
@@ -512,7 +652,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -579,6 +719,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 23.6,
       "detail": "703 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-19T07:58:11Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 49.1,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-19T07:58:13Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "28 fonts, 14 math"
+    },
+    {
+      "ts": "2026-08-19T07:58:13Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 48.0,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-19T07:58:13Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 49.9,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-19T07:58:13Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 28.9,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-19T07:58:21Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 7265.3,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

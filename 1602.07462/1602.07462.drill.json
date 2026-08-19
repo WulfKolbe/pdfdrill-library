@@ -5,16 +5,19 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "EQNUMS_FUSED",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 7,
@@ -54,21 +57,22 @@
     "bibkey": "1602.07462",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 39,
-      "Formula": 231,
-      "LtxCommand": 4,
+      "Page": 7,
+      "Citation": 2,
       "Abstract": 1,
-      "Section": 3,
+      "Section": 2,
       "Equation": 3,
-      "Citation": 19
+      "Formula": 218,
+      "Paragraph": 23,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "1602.07462.tgz",
     "latex_macros": 1,
@@ -78,9 +82,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "1602.07462.tgz",
     "merge_paragraphs_changed": 7,
-    "tiddlers_path": "1602.07462.tiddlers.json",
-    "tiddlers_count": 311,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "ITSVKQ+CMSY10",
       "CBWJGS+CMR12",
@@ -121,11 +122,6 @@
       "numbered": 3,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
     "abstract": "We study the automorphism group of the algebraic closure of a substructure A of a pseudo-finite field F, or more generally, of a bounded PAC field F. This paper answers some of the questions of [1], and in particular that any finite group which is geometrically represented in a pseudo-finite field must be abelian.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -140,7 +136,72 @@
         "page": 1,
         "url": "http://arxiv.org/abs/1602.07462v2"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Tue Aug 21 03:53:59 2018 CEST",
+      "ModDate": "Tue Aug 21 03:53:59 2018 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "117619 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 7,
+    "image_count": 1,
+    "mathpix_pdf_id": "e238082c-394b-4c4c-a473-307d5100a158",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1602.07462.lines.json",
+        "bytes": 291906
+      },
+      {
+        "format": "md",
+        "path": "1602.07462.md",
+        "bytes": 25222
+      },
+      {
+        "format": "tex.zip",
+        "path": "1602.07462.tex.zip",
+        "bytes": 27888
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 236,
+    "geometry_matched": 265,
+    "geometry_mean_sim": 0.713,
+    "eqnums_from_mathpix": 0,
+    "eqnums_recovered": 0,
+    "bibliography_entries": 5,
+    "bibliography_with_year": 5,
+    "bibliography_numeric_citations": 19,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 19,
+    "tiddlers_path": "1602.07462.tiddlers.json",
+    "tiddlers_count": 279,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -891,16 +952,66 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1600.2,
       "detail": "2 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-18T17:12:08Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9429.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T18:50:24Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 372.8,
+      "detail": "258 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T18:50:25Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 576.4,
+      "detail": "265/236 matched"
+    },
+    {
+      "ts": "2026-08-18T18:50:25Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T18:50:26Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "5 entries, 19+0 cites detected, 19 linked"
+    },
+    {
+      "ts": "2026-08-18T18:50:26Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 22.4,
+      "detail": "279 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1602.07462/1602.07462.lines.json": "sha256:c2ac7b7fc43de9990225c05bc34972f366e42d421ba76f53386a28862eac757d"
+      },
       "params_hash": "sha256:092c0d8dbaaaf924f128d1d31c7da8510f48bb6cbb25138b60fa7fddbc7cbf73",
       "algo": "sha256",
-      "ts": "2026-08-03T19:36:45Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T18:50:24Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

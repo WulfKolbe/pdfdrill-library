@@ -6,7 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 9,
@@ -86,12 +94,103 @@
     },
     "tiddlers_path": "NIPS-2016-binarized-neural-networks-Paper.tiddlers.json",
     "tiddlers_count": 62,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Binarized Neural Networks",
+      "Subject": "Neural Information Processing Systems http://nips.cc/",
+      "Author": "Itay Hubara, Matthieu Courbariaux, Daniel Soudry, Ran El-Yaniv, Yoshua Bengio",
+      "Producer": "PyPDF2",
+      "ModDate": "Fri Jan 13 00:47:43 2017 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "289171 bytes",
+      "Optimized": "no",
+      "PDF version": "1.3"
+    },
+    "page_count_text": 9,
+    "image_count": 4,
+    "abstract": "We introduce a method to train Binarized Neural Networks (BNNs) - neural\n         networks with binary weights and activations at run-time. At train-time the binary\n         weights and activations are used for computing the parameter gradients. During the\n         forward pass, BNNs drastically reduce memory size and accesses, and replace most\n         arithmetic operations with bit-wise operations, which is expected to substantially\n         improve power-efficiency. To validate the effectiveness of BNNs, we conducted\n         two sets of experiments on the Torch7 and Theano frameworks. On both, BNNs\n         achieved nearly state-of-the-art results over the MNIST, CIFAR-10 and SVHN\n         datasets. We also report our preliminary results on the challenging ImageNet\n         dataset. Last but not least, we wrote a binary matrix multiplication GPU kernel\n         with which it is possible to run our MNIST BNN 7 times faster than with an\n         unoptimized GPU kernel, without suffering any loss in classification accuracy. The\n         code for training and running our BNNs is available on-line.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 2,
+        "url": "https://github.com/MatthieuCourbariaux/BinaryNet"
+      },
+      {
+        "page": 2,
+        "url": "https://github.com/itayhubara/BinaryNet"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Binarized Neural Networks",
+    "author": "Itay Hubara, Matthieu Courbariaux, Daniel Soudry, Ran El-Yaniv, Yoshua Bengio",
+    "producer": "PyPDF2",
+    "creator": "",
+    "creation_date": null,
+    "mod_date": "2017-01-12T15:47:43-08",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 9,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 289171,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.3",
+    "custom_fields": {
+      "Book": "Advances in Neural Information Processing Systems 29",
+      "Created": "2016",
+      "Date": "2016",
+      "Description": "Paper accepted and presented at the Neural Information Processing Systems Conference (http://nips.cc/)",
+      "Description-Abstract": "We introduce a method to train Binarized Neural Networks (BNNs) - neural networks with binary weights and activations at run-time. At train-time the binary weights and activations are used for computing the parameter gradients. During the forward pass, BNNs drastically reduce memory size and accesses, and replace most arithmetic operations with bit-wise operations, which is expected to  substantially improve power-efficiency. To validate the effectiveness of BNNs, we conducted two sets of experiments on the Torch7 and Theano frameworks. On both, BNNs achieved nearly state-of-the-art results over the MNIST, CIFAR-10 and SVHN datasets. We also report our preliminary results on the challenging ImageNet dataset. Last but not least, we wrote a binary matrix multiplication GPU kernel with which it is possible to run our MNIST BNN 7 times faster  than with an unoptimized GPU kernel, without suffering any loss in classification accuracy. The code for training and running our BNNs is available on-line.",
+      "Editors": "D.D. Lee and M. Sugiyama and U.V. Luxburg and I. Guyon and R. Garnett",
+      "EventType": "Poster",
+      "Language": "en-US",
+      "Published": "2016",
+      "Publisher": "Curran Associates, Inc.",
+      "Subject": "Neural Information Processing Systems http://nips.cc/",
+      "Type": "Conference Proceedings",
+      "firstpage": "4107",
+      "lastpage": "4115"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "hubara",
+    "title": "Binarized Neural Networks",
+    "author": "Itay Hubara, Matthieu Courbariaux, Daniel Soudry, Ran El-Yaniv, Yoshua Bengio",
+    "year": "",
+    "pages": 9,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "Curran Associates, Inc.",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "FOXWDJ+CMSY10",
@@ -290,7 +389,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 5,
+      "x0": 288.38,
+      "y0": 426.15,
+      "x1": 501.82,
+      "y1": 564.96,
+      "w_pt": 213.45,
+      "h_pt": 138.81,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 592,
+      "height_px": 385,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 200,
+      "y_ppi": 200,
+      "size_bytes": 466,
+      "object_id": "140 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 7,
+      "x0": 306.0,
+      "y0": 290.53,
+      "x1": 504.0,
+      "y1": 454.68,
+      "w_pt": 198.0,
+      "h_pt": 164.15,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 351,
+      "height_px": 291,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 128,
+      "y_ppi": 128,
+      "size_bytes": 221,
+      "object_id": "181 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -349,6 +489,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "62 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-19T07:59:25Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 47.9,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-19T07:59:25Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "14 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-19T07:59:25Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 49.0,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-19T07:59:25Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 50.0,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-19T07:59:25Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 26.7,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-19T07:59:26Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 23.0,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-19T07:59:26Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "citekey=hubara"
+    },
+    {
+      "ts": "2026-08-19T07:59:29Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2789.2,
+      "detail": "2 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -5,8 +5,6 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
@@ -14,7 +12,12 @@
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 52,
@@ -51,23 +54,23 @@
     "bibkey": "0806.1585",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 272,
-      "Formula": 575,
-      "LtxCommand": 2,
-      "Abstract": 1,
-      "Section": 36,
-      "Equation": 235,
-      "Theorem": 37,
-      "Proof": 11,
-      "Citation": 49
+      "Page": 52,
+      "Citation": 1,
+      "Abstract": 2,
+      "Diagram": 10,
+      "ListItem": 10,
+      "Equation": 243,
+      "Formula": 783,
+      "Paragraph": 322,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 243,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "0806.1585.tgz",
     "latex_macros": 59,
@@ -77,14 +80,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "0806.1585.tgz",
     "merge_paragraphs_changed": 50,
-    "bibliography_entries": 25,
-    "bibliography_with_year": 22,
-    "bibliography_numeric_citations": 48,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 48,
-    "tiddlers_path": "0806.1585.tiddlers.json",
-    "tiddlers_count": 1261,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Moduli spaces of polygons have been studied since the nineties for their topological and symplectic properties. Under generic assumptions, these are symplectic manifolds with natural global action-angle coordinates. This paper is concerned with the quantization of these manifolds and of their action coordinates. Applying the geometric quantization procedure, one is lead to consider invariant subspaces of a tensor product of irreducible representations of SU(2). These quantum spaces admit natural sets of commuting observables. We prove that these operators form a semi-classical integrable system, in the sense that they are Toeplitz operators with principal symbol the square of the action coordinates. As a consequence, the quantum spaces admit bases whose vectors concentrate on the Lagrangian submanifolds of constant action. The coefficients of the change of basis matrices can be estimated in terms of geometric quantities. We recover this way the already known asymptotics of the classical 6j-symbols.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -169,7 +164,70 @@
       "children": 1107,
       "numbered": 36,
       "roots": 1
-    }
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:0806.1585v1  [math.SG]  10 Jun 2008",
+      "Creator": "dvips(k) 5.95a Copyright 2005 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Thu Nov  8 17:27:57 2018 CET",
+      "ModDate": "Thu Nov  8 17:27:57 2018 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "52",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "446655 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 52,
+    "image_count": 327,
+    "mathpix_pdf_id": "4bd270e6-9c72-4d73-beb9-45762c288d38",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "0806.1585.lines.json",
+        "bytes": 1839982
+      },
+      {
+        "format": "md",
+        "path": "0806.1585.md",
+        "bytes": 145311
+      },
+      {
+        "format": "tex.zip",
+        "path": "0806.1585.tex.zip",
+        "bytes": 422080
+      }
+    ],
+    "eqnums_from_mathpix": 53,
+    "eqnums_recovered": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 1197,
+    "geometry_matched": 1735,
+    "geometry_mean_sim": 0.436,
+    "bibliography_entries": 22,
+    "bibliography_with_year": 22,
+    "bibliography_numeric_citations": 49,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 49,
+    "tiddlers_path": "0806.1585.tiddlers.json",
+    "tiddlers_count": 1463,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:0806.1585v1  [math.SG]  10 Jun 2008",
@@ -11726,16 +11784,90 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 15.0,
       "detail": "1261 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:49:09Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10076.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:19:41Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 338.5,
+      "detail": "0/1197 matched"
+    },
+    {
+      "ts": "2026-08-18T17:19:41Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:19:41Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 20.2,
+      "detail": "1261 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T17:25:11Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 1153.1,
+      "detail": "1425 objects, 243 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T17:25:14Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 1374.4,
+      "detail": "1735/1197 matched"
+    },
+    {
+      "ts": "2026-08-18T17:25:15Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "53 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:25:17Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "22 entries, 49+0 cites detected, 49 linked"
+    },
+    {
+      "ts": "2026-08-18T17:25:17Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 38.0,
+      "detail": "1463 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/0806.1585/0806.1585.lines.json": "sha256:c0f584cb537f6082a02602cb3ebdb2a15c1cb7e5f7aee92c4a2f9bc57f99b577"
+      },
       "params_hash": "sha256:10557a4635b58bd7c97ad16d95a8d41cda183fc629647fb4965276fe91f8a482",
       "algo": "sha256",
-      "ts": "2026-08-04T22:11:59Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T17:25:11Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

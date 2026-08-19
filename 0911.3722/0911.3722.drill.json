@@ -5,15 +5,17 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -53,23 +55,22 @@
     "bibkey": "0911.3722",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 56,
-      "Abstract": 1,
-      "Section": 8,
-      "Formula": 97,
-      "Theorem": 23,
-      "Proof": 9,
+      "Page": 9,
+      "Sidenote": 2,
+      "Diagram": 2,
+      "ListItem": 8,
       "Equation": 24,
-      "LtxCommand": 2,
-      "Citation": 19
+      "Formula": 281,
+      "Paragraph": 62,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 24,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "0911.3722.tgz",
     "latex_macros": 19,
@@ -79,14 +80,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "0911.3722.tgz",
     "merge_paragraphs_changed": 8,
-    "bibliography_entries": 13,
-    "bibliography_with_year": 12,
-    "bibliography_numeric_citations": 24,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 24,
-    "tiddlers_path": "0911.3722.tiddlers.json",
-    "tiddlers_count": 259,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We introduce and study varions notions of completeness of translation-invariant ideals in groups.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -213,7 +206,68 @@
       "children": 174,
       "numbered": 8,
       "roots": 1
-    }
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript SVN PRE-RELEASE 8.71",
+      "CreationDate": "Tue Jan  5 00:19:41 2010 CET",
+      "ModDate": "Tue Jan  5 00:19:41 2010 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "212650 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 9,
+    "image_count": 6,
+    "mathpix_pdf_id": "784f5366-5863-4de5-a72f-88c25833ba32",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "0911.3722.lines.json",
+        "bytes": 421786
+      },
+      {
+        "format": "md",
+        "path": "0911.3722.md",
+        "bytes": 37896
+      },
+      {
+        "format": "tex.zip",
+        "path": "0911.3722.tex.zip",
+        "bytes": 46004
+      }
+    ],
+    "eqnums_from_mathpix": 0,
+    "eqnums_recovered": 1,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 341,
+    "geometry_matched": 388,
+    "geometry_mean_sim": 0.597,
+    "tiddlers_path": "0911.3722.tiddlers.json",
+    "tiddlers_count": 406,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1301,16 +1355,82 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.1,
       "detail": "259 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:50:30Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9078.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:20:09Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 81.2,
+      "detail": "0/341 matched"
+    },
+    {
+      "ts": "2026-08-18T17:20:09Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:20:09Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.0,
+      "detail": "259 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T17:45:18Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 248.3,
+      "detail": "390 objects, 24 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T17:45:19Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 338.0,
+      "detail": "388/341 matched"
+    },
+    {
+      "ts": "2026-08-18T17:45:19Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 1 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:45:20Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.0,
+      "detail": "406 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/0911.3722/0911.3722.lines.json": "sha256:3e9a915b7ac7c64856c66761972962513d3271d07790bd728713a7158c129feb"
+      },
       "params_hash": "sha256:5547b7f348c671ca844a421401a697dce78d0b4f28d02e86e9853ee70a4dfa77",
       "algo": "sha256",
-      "ts": "2026-08-04T22:12:59Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T17:45:18Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",
