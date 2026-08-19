@@ -5,15 +5,17 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -52,23 +54,23 @@
     "bibkey": "1304.0071v3",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 44,
-      "LtxCommand": 9,
-      "Abstract": 1,
-      "Section": 7,
-      "Theorem": 24,
-      "Formula": 211,
-      "Equation": 38,
-      "Proof": 9,
-      "Citation": 70
+      "Page": 16,
+      "Table": 2,
+      "TableRow": 19,
+      "TableCell": 97,
+      "Diagram": 10,
+      "Section": 2,
+      "Equation": 13,
+      "Formula": 76,
+      "Paragraph": 35,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 13,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "1304.0071v3.tgz",
     "latex_macros": 86,
@@ -78,9 +80,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "1304.0071v3.tgz",
     "merge_paragraphs_changed": 11,
-    "tiddlers_path": "1304.0071v3.tiddlers.json",
-    "tiddlers_count": 401,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "HPXKMS+Helvetica",
       "XXOVJF+Helvetica-Bold",
@@ -99,11 +98,6 @@
       "numbered": 7,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
     "toc_search_scope": "first3pages",
     "links": [],
     "arxiv_title": "The Caratheodory-Fejér type extremal problem on locally compact Abelian groups",
@@ -111,7 +105,67 @@
       "Sándor Krenedits",
       "Szilárd Gy. Révész"
     ],
-    "arxiv_primary_category": "math.AP"
+    "arxiv_primary_category": "math.AP",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "CliffordfromCl8pagesMay2013",
+      "Keywords": "",
+      "Author": "Frank Smith",
+      "Creator": "Pages",
+      "Producer": "Mac OS X 10.7.2 Quartz PDFContext",
+      "CreationDate": "Wed May 22 18:45:45 2013 CEST",
+      "ModDate": "Sat May 23 08:57:37 2015 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "AcroForm",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "780810 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.6"
+    },
+    "page_count_text": 16,
+    "image_count": 23,
+    "mathpix_pdf_id": "5f6f835c-44d4-4c8a-82a2-e6498493c9e1",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1304.0071v3.lines.json",
+        "bytes": 474139
+      },
+      {
+        "format": "md",
+        "path": "1304.0071v3.md",
+        "bytes": 22926
+      },
+      {
+        "format": "tex.zip",
+        "path": "1304.0071v3.tex.zip",
+        "bytes": 716154
+      }
+    ],
+    "eqnums_from_mathpix": 0,
+    "eqnums_recovered": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 262,
+    "geometry_matched": 457,
+    "geometry_mean_sim": 0.551,
+    "tiddlers_path": "1304.0071v3.tiddlers.json",
+    "tiddlers_count": 172,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "CliffordfromCl8pagesMay2013",
@@ -649,16 +703,82 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.2,
       "detail": "401 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:53:18Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9532.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:20:58Z",
+      "node": "geometry",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 65.0,
+      "detail": "0/262 matched"
+    },
+    {
+      "ts": "2026-08-18T17:20:58Z",
+      "node": "eqnums",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:20:59Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.4,
+      "detail": "401 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T19:01:44Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 581.9,
+      "detail": "271 objects, 13 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T19:01:45Z",
+      "node": "geometry",
+      "from": "BIBTEX_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 719.1,
+      "detail": "457/262 matched"
+    },
+    {
+      "ts": "2026-08-18T19:01:46Z",
+      "node": "eqnums",
+      "from": "BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T19:01:47Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 18.1,
+      "detail": "172 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1304.0071v3/1304.0071v3.lines.json": "sha256:aaaa92bb32816855a1b26697eb16a83a991f74655b737093854abec5b6b2692d"
+      },
       "params_hash": "sha256:08078e60420b84218733ef33104c8c64a569cf8a8e95326992efd4f0fa5c6e56",
       "algo": "sha256",
-      "ts": "2026-08-04T22:20:34Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T19:01:44Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

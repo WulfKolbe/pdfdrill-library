@@ -7,7 +7,10 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "FONTS_KNOWN",
+    "PDFINFO_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 87,
@@ -106,9 +109,57 @@
     "bibliography_cites": 123,
     "tiddlers_path": "M15_Lecture_notes.tiddlers.json",
     "tiddlers_count": 1228,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.15",
+      "CreationDate": "Wed Apr 20 15:32:01 2016 CEST",
+      "ModDate": "Wed Apr 20 15:32:01 2016 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "87",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "724241 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 87,
+    "image_count": 0
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.15",
+    "creator": "TeX",
+    "creation_date": "2016-04-20T15:32:01+02",
+    "mod_date": "2016-04-20T15:32:01+02",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 87,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 724241,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) kpathsea version 6.2.1dev"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -450,7 +501,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -517,6 +568,30 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 77.1,
       "detail": "1228 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-19T07:53:44Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "24 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-19T07:53:44Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 54.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-19T07:54:10Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 25739.6,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -5,15 +5,18 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 7,
@@ -53,22 +56,22 @@
     "bibkey": "0912.0721",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 52,
+      "Page": 7,
+      "Citation": 22,
       "Abstract": 1,
-      "Section": 5,
-      "Formula": 84,
-      "Equation": 26,
-      "Theorem": 9,
-      "LtxCommand": 2,
-      "Citation": 9
+      "ListItem": 1,
+      "Equation": 28,
+      "Formula": 119,
+      "Paragraph": 43,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 28,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "0912.0721.tgz",
     "latex_macros": 19,
@@ -78,14 +81,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "0912.0721.tgz",
     "merge_paragraphs_changed": 7,
-    "bibliography_entries": 7,
-    "bibliography_with_year": 6,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "0912.0721.tiddlers.json",
-    "tiddlers_count": 211,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We prove that there is an absolute constant $c&gt;0$ with the following property: if $Z/pZ$ denotes the group of prime order $p$, and a subset $A\\subset Z/pZ$ satisfies $1&lt;|A|&lt;p/2$, then for any positive integer $m&lt;\\min\\{c|A|/\\ln|A|,\\sqrt{p/8}\\}$ there are at most $2m$ non-zero elements $b\\in Z/pZ$ with $|(A+b)\\setminus A|\\le m$. This (partially) extends onto prime-order groups the result, established earlier by S. Konyagin and the present author for the group of integers. We notice that if $A\\subset Z/pZ$ is an arithmetic progression and $m&lt;|A|&lt;p/2$, then there are exactly $2m$ non-zero elements $b\\in Z/pZ$ with $|(A+b)\\setminus A|\\le m$. Furthermore, the bound $c|A|/\\ln|A|$ is best possible up to the value of the constant $c$. On the other hand, it is likely that the assumption $m&lt;\\sqrt{p/8}$ can be dropped or substantially relaxed.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -142,7 +137,73 @@
       "children": 160,
       "numbered": 5,
       "roots": 1
-    }
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Nov 15 21:53:44 2021 CET",
+      "ModDate": "Mon Nov 15 21:53:44 2021 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "124217 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 7,
+    "image_count": 32,
+    "mathpix_pdf_id": "f78d878a-0081-4646-a76c-55b3c88a9f8d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "0912.0721.lines.json",
+        "bytes": 254692
+      },
+      {
+        "format": "md",
+        "path": "0912.0721.md",
+        "bytes": 16819
+      },
+      {
+        "format": "tex.zip",
+        "path": "0912.0721.tex.zip",
+        "bytes": 18768
+      }
+    ],
+    "eqnums_from_mathpix": 5,
+    "eqnums_recovered": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 227,
+    "geometry_matched": 248,
+    "geometry_mean_sim": 0.598,
+    "bibliography_entries": 6,
+    "bibliography_with_year": 6,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "0912.0721.tiddlers.json",
+    "tiddlers_count": 233,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1960,16 +2021,90 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.7,
       "detail": "211 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:51:04Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9121.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:20:17Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 55.9,
+      "detail": "0/227 matched"
+    },
+    {
+      "ts": "2026-08-18T17:20:17Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:20:18Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.2,
+      "detail": "211 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T17:46:10Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 127.8,
+      "detail": "223 objects, 28 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T17:46:10Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 155.0,
+      "detail": "248/227 matched"
+    },
+    {
+      "ts": "2026-08-18T17:46:10Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "5 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:46:11Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "6 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-18T17:46:11Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.8,
+      "detail": "233 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/0912.0721/0912.0721.lines.json": "sha256:5882db567876137e1be5647618d5fb4cf77e9eb8a7a86b0045fba0f8695d1ed3"
+      },
       "params_hash": "sha256:120f9e813d533b651ea639af53e6ac6a040dbfee6bc5a495e42a09803c99829e",
       "algo": "sha256",
-      "ts": "2026-08-04T22:13:03Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T17:46:10Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

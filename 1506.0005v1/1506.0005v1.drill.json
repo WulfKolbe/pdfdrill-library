@@ -5,12 +5,14 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
-    "ABSTRACT_KNOWN"
+    "ABSTRACT_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -46,22 +48,19 @@
     "bibkey": "1506.0005v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Formula": 104,
-      "LtxCommand": 1,
-      "Paragraph": 82,
-      "Abstract": 1,
-      "Section": 12,
-      "Table": 1,
-      "Equation": 2,
-      "Citation": 173
+      "Page": 5,
+      "Diagram": 2,
+      "Equation": 1,
+      "Formula": 37,
+      "Paragraph": 15,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "1506.0005v1.tgz",
     "latex_macros": 76,
@@ -71,9 +70,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "1506.0005v1.tgz",
     "merge_paragraphs_changed": 4,
-    "tiddlers_path": "1506.0005v1.tiddlers.json",
-    "tiddlers_count": 330,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "BAAAAA+TimesNewRomanPS-BoldMT",
       "CAAAAA+TimesNewRomanPSMT",
@@ -87,11 +83,6 @@
     ],
     "has_math_fonts": true,
     "lane_policy": "Producer is 'OpenOffice 4.1.0' (openoffice): the pdfminer text-layer lane is DECLINED for this family (it emits font subsets with no /Encoding, mapping only via /ToUnicode). pdftotext, MathPix and tesseract handle it correctly and are used instead.",
-    "bibliography_entries": 109,
-    "bibliography_with_year": 101,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 173,
     "abstract": "We perform uniformly sampled large-scale cosmological simulations including magnetic fields with the moving mesh code AREPO. We run two sets of MHD simulations: one including adiabatic gas physics only; the other featuring the fiducial feedback model of the Illustris simulation. In the adiabatic case, the magnetic field amplification follows the $B \\propto \\rho^{2/3}$ scaling derived from `flux-freezing&#39; arguments, with the seed field strength providing an overall normalisation factor. At high baryon overdensities the amplification is enhanced by shear flows and turbulence. Feedback physics and the inclusion of radiative cooling change this picture dramatically. Gas collapses to much larger densities and the magnetic field is amplified strongly, reaching saturation and losing memory of the initial seed field. At lower densities a dependence on the seed field strength and orientation, which in principle can be used to constrain models of cosmological magnetogenesis, is still present. Inside the most massive haloes magnetic fields reach values of $\\sim 10-100\\,\\mu G$, in agreement with galaxy cluster observations. The topology of the field is tangled and gives rise to rotation measure signals in reasonable agreement with the observations. However, the rotation measure signal declines too rapidly towards larger radii compared to observational data.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -102,7 +93,64 @@
       "Philip Mocz",
       "Ruediger Pakmor"
     ],
-    "arxiv_primary_category": "astro-ph.CO"
+    "arxiv_primary_category": "astro-ph.CO",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Author": "Herbert Weidner",
+      "Creator": "Writer",
+      "Producer": "OpenOffice 4.1.0",
+      "CreationDate": "Mon Jun  1 20:25:15 2015 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "5",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "135635 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 5,
+    "image_count": 3,
+    "mathpix_pdf_id": "009c7775-b04e-44f9-a85d-30955d080834",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1506.0005v1.lines.json",
+        "bytes": 184336
+      },
+      {
+        "format": "md",
+        "path": "1506.0005v1.md",
+        "bytes": 14335
+      },
+      {
+        "format": "tex.zip",
+        "path": "1506.0005v1.tex.zip",
+        "bytes": 94925
+      }
+    ],
+    "eqnums_from_mathpix": 0,
+    "eqnums_recovered": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 107,
+    "geometry_matched": 178,
+    "geometry_mean_sim": 0.545,
+    "tiddlers_path": "1506.0005v1.tiddlers.json",
+    "tiddlers_count": 77,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -364,16 +412,82 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.6,
       "detail": "330 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:56:43Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8516.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:21:52Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 42.6,
+      "detail": "0/107 matched"
+    },
+    {
+      "ts": "2026-08-18T17:21:52Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:21:53Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.8,
+      "detail": "335 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T19:01:18Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 127.0,
+      "detail": "61 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T19:01:19Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 591.0,
+      "detail": "178/107 matched"
+    },
+    {
+      "ts": "2026-08-18T19:01:19Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T19:01:20Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.8,
+      "detail": "77 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1506.0005v1/1506.0005v1.lines.json": "sha256:9efcfba30e2a7cea2b0f0351a830dd1d627693e280af3e87082417e7d5e51fdd"
+      },
       "params_hash": "sha256:b363d83e7e4214e68e8ce1cd979b52aff93134e01387bbf456a34517cbce8362",
       "algo": "sha256",
-      "ts": "2026-08-04T22:22:03Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T19:01:18Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

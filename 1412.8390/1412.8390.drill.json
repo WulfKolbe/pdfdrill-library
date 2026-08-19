@@ -5,13 +5,15 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -51,21 +53,24 @@
     "bibkey": "1412.8390",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 118,
+      "Page": 11,
+      "Footnote": 5,
+      "Sidenote": 24,
       "Abstract": 1,
-      "LtxCommand": 2,
-      "Section": 8,
-      "Formula": 148,
-      "Equation": 41,
-      "Citation": 77
+      "Section": 4,
+      "Picture": 6,
+      "ListItem": 8,
+      "Equation": 42,
+      "Formula": 181,
+      "Paragraph": 96,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 42,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "1412.8390.tgz",
     "latex_macros": 93,
@@ -75,9 +80,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "1412.8390.tgz",
     "merge_paragraphs_changed": 10,
-    "tiddlers_path": "1412.8390.tiddlers.json",
-    "tiddlers_count": 395,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "YLEGSO+CMBX9",
       "MVDEGR+CMSY10",
@@ -141,11 +143,6 @@
       "numbered": 8,
       "roots": 1
     },
-    "bibliography_entries": 49,
-    "bibliography_with_year": 9,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 50,
     "abstract": "In various theories of quantum gravity, one observes a change in the spectral dimension from the topological spatial dimension $d$ at large length scales to some smaller value at small, Planckian scales. While the origin of such a flow is well understood in continuum approaches, in theories built on discrete structures a firm control of the underlying mechanism is still missing. We shed some light on the issue by presenting a particular class of quantum geometries with a flow in the spectral dimension, given by superpositions of states defined on regular complexes. For particular superposition coefficients parametrized by a real number $0&lt;\\alpha&lt;d$, we find that the spatial spectral dimension reduces to $d_s \\simeq \\alpha$ at small scales. The spatial Hausdorff dimension of such class of states varies between 1 and $d$, while the walk dimension takes the usual value $d_w=2$. Therefore, these quantum geometries may be considered as fractal only when $\\alpha=1$, where the &#34;magic number&#34; ${d_s}^{\\rm spacetime}\\simeq 2$ for the spectral dimension of space\\emph{time}, appearing so often in quantum gravity, is reproduced as well. These results apply, in particular, to special superpositions of spin-network states in loop quantum gravity, and they provide more solid indications of dimensional flow in this approach.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -154,7 +151,68 @@
       "Gianluca Calcagni",
       "Daniele Oriti",
       "Johannes Thürigen"
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Sat Sep 29 14:32:55 2018 CEST",
+      "ModDate": "Sat Sep 29 14:32:55 2018 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "300515 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 11,
+    "image_count": 29,
+    "mathpix_pdf_id": "5f4dcce1-3ee6-47c9-a5fb-5bb18b30f3ea",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1412.8390.lines.json",
+        "bytes": 1155133
+      },
+      {
+        "format": "md",
+        "path": "1412.8390.md",
+        "bytes": 56833
+      },
+      {
+        "format": "tex.zip",
+        "path": "1412.8390.tex.zip",
+        "bytes": 234135
+      }
+    ],
+    "eqnums_from_mathpix": 42,
+    "eqnums_recovered": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 527,
+    "geometry_matched": 1059,
+    "geometry_mean_sim": 0.442,
+    "tiddlers_path": "1412.8390.tiddlers.json",
+    "tiddlers_count": 396,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1735,16 +1793,82 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.8,
       "detail": "395 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:55:54Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9569.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:21:38Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 138.5,
+      "detail": "0/527 matched"
+    },
+    {
+      "ts": "2026-08-18T17:21:38Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:21:38Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.2,
+      "detail": "395 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T18:58:16Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 1039.2,
+      "detail": "379 objects, 42 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T18:58:20Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 2479.4,
+      "detail": "1059/527 matched"
+    },
+    {
+      "ts": "2026-08-18T18:58:21Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "42 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T18:58:22Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 37.2,
+      "detail": "396 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1412.8390/1412.8390.lines.json": "sha256:903cd60c3029cbca9733e2ad2715182336f3984beb7a0f73a687d60f59417e98"
+      },
       "params_hash": "sha256:7aae6f89bb32f03d5f2585aee765ed611dea1c5b7ed782c6301f7e255c39614f",
       "algo": "sha256",
-      "ts": "2026-08-04T22:21:33Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T18:58:16Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

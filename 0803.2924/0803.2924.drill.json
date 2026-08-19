@@ -5,15 +5,18 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -53,21 +56,21 @@
     "bibkey": "0803.2924",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 17,
+      "Page": 5,
+      "Footnote": 1,
+      "Citation": 8,
       "Abstract": 1,
-      "Formula": 44,
       "Equation": 23,
-      "Theorem": 7,
-      "Proof": 5,
-      "Citation": 3
+      "Formula": 94,
+      "Paragraph": 32,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 23,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "0803.2924.tgz",
     "latex_macros": 11,
@@ -77,14 +80,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "0803.2924.tgz",
     "merge_paragraphs_changed": 5,
-    "bibliography_entries": 2,
-    "bibliography_with_year": 1,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "0803.2924.tiddlers.json",
-    "tiddlers_count": 122,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Eigenfunctions of the Laplace-Beltrami operator on a hyperboloid are studied in the spirit of the treatment of the spherical harmonics by Stein and Weiss. As a special case, a simple self-contained proof of Laplace&#39;s integral for a Legendre function is obtained.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -134,7 +129,73 @@
       "regions": 5,
       "sections": 0,
       "children": 0
-    }
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Tue Oct 19 12:31:10 2021 CEST",
+      "ModDate": "Tue Oct 19 12:31:10 2021 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "5",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "90627 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 5,
+    "image_count": 9,
+    "mathpix_pdf_id": "71edd94d-cd1e-4799-9af2-724b6461ca4b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "0803.2924.lines.json",
+        "bytes": 172353
+      },
+      {
+        "format": "md",
+        "path": "0803.2924.md",
+        "bytes": 12996
+      },
+      {
+        "format": "tex.zip",
+        "path": "0803.2924.tex.zip",
+        "bytes": 14809
+      }
+    ],
+    "eqnums_from_mathpix": 2,
+    "eqnums_recovered": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 123,
+    "geometry_matched": 165,
+    "geometry_mean_sim": 0.459,
+    "bibliography_entries": 2,
+    "bibliography_with_year": 1,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "0803.2924.tiddlers.json",
+    "tiddlers_count": 180,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1060,16 +1121,90 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.4,
       "detail": "122 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:48:56Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8721.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:19:38Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 40.6,
+      "detail": "0/123 matched"
+    },
+    {
+      "ts": "2026-08-18T17:19:38Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:19:39Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.5,
+      "detail": "122 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T17:24:51Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 91.0,
+      "detail": "165 objects, 23 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T17:24:51Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 122.3,
+      "detail": "165/123 matched"
+    },
+    {
+      "ts": "2026-08-18T17:24:51Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "2 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:24:52Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "2 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-18T17:24:52Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.6,
+      "detail": "180 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/0803.2924/0803.2924.lines.json": "sha256:15a20fcfb58f9dd3096d73d5c8bd5f6a9cf22248c715dd409a42dc0670b0786c"
+      },
       "params_hash": "sha256:b7ae2ad3cf43594c31223600888f9db4abb5136b415369fc89ec531fa9eeefb4",
       "algo": "sha256",
-      "ts": "2026-08-04T22:11:55Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T17:24:51Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

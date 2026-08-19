@@ -5,8 +5,6 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
@@ -14,7 +12,11 @@
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 22,
@@ -54,20 +56,24 @@
     "bibkey": "0711.0273",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Formula": 68,
-      "LtxCommand": 14,
-      "Paragraph": 61,
-      "Section": 8,
+      "Page": 22,
+      "Footnote": 15,
+      "Abstract": 1,
+      "Diagram": 7,
+      "Section": 2,
+      "Picture": 4,
+      "ListItem": 9,
       "Equation": 14,
-      "Citation": 34
+      "Formula": 77,
+      "Paragraph": 73,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 14,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "0711.0273.tgz",
     "latex_macros": 10,
@@ -77,14 +83,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "0711.0273.tgz",
     "merge_paragraphs_changed": 20,
-    "bibliography_entries": 29,
-    "bibliography_with_year": 27,
-    "bibliography_numeric_citations": 34,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 34,
-    "tiddlers_path": "0711.0273.tiddlers.json",
-    "tiddlers_count": 231,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "HUZHBX+CMR10",
       "WLXLFE+CMR12",
@@ -260,7 +258,68 @@
       "children": 131,
       "numbered": 8,
       "roots": 1
-    }
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "vr1tA06.eps",
+      "Subject": "gnuplot plot",
+      "Keywords": "",
+      "Author": "Andrzej Goerlich,,,",
+      "Creator": "gnuplot 4.2 patchlevel 0",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Thu May 31 17:55:52 2007",
+      "ModDate": "Sun Oct 28 05:05:24 2018 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "22",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "619981 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 22,
+    "image_count": 40,
+    "mathpix_pdf_id": "f319282a-58cd-4cdf-ba6e-6732fc5d2fc9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "0711.0273.lines.json",
+        "bytes": 745996
+      },
+      {
+        "format": "md",
+        "path": "0711.0273.md",
+        "bytes": 53630
+      },
+      {
+        "format": "tex.zip",
+        "path": "0711.0273.tex.zip",
+        "bytes": 680216
+      }
+    ],
+    "eqnums_from_mathpix": 14,
+    "eqnums_recovered": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 572,
+    "geometry_matched": 708,
+    "geometry_mean_sim": 0.651,
+    "tiddlers_path": "0711.0273.tiddlers.json",
+    "tiddlers_count": 242,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "vr1tA06.eps",
@@ -2852,16 +2911,82 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "231 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:48:33Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10145.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:19:33Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 117.5,
+      "detail": "0/572 matched"
+    },
+    {
+      "ts": "2026-08-18T17:19:33Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:19:34Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.7,
+      "detail": "231 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T17:24:16Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 194.8,
+      "detail": "225 objects, 14 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T17:24:17Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 560.0,
+      "detail": "708/572 matched"
+    },
+    {
+      "ts": "2026-08-18T17:24:17Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "14 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:24:18Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.7,
+      "detail": "242 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/0711.0273/0711.0273.lines.json": "sha256:70c439649400bb38210b3c124fd5930851742e3a1ca6b37c628c6b2beac8b984"
+      },
       "params_hash": "sha256:fcb0dabbb084303dc59eb074337b944238b61ab34d789d85b9d1fcb27dd50b81",
       "algo": "sha256",
-      "ts": "2026-08-04T22:11:52Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T17:24:16Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

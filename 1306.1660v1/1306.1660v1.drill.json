@@ -5,13 +5,16 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "EQNUMS_FUSED",
+    "GEOMETRY_FUSED",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -68,16 +71,24 @@
     "bibkey": "1306.1660v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 160,
-      "Abstract": 1,
-      "Section": 19,
-      "Formula": 388,
-      "Equation": 69,
+      "Page": 11,
+      "Footnote": 13,
+      "Citation": 1,
       "Table": 2,
-      "Citation": 47
+      "TableRow": 14,
+      "TableCell": 104,
+      "Sidenote": 20,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Picture": 1,
+      "ListItem": 1,
+      "Equation": 118,
+      "Formula": 393,
+      "Paragraph": 156,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 118,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 11,
       "placed": 54,
@@ -87,14 +98,6 @@
       "numbered": 19,
       "roots": 1
     },
-    "bibliography_entries": 25,
-    "bibliography_with_year": 23,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 47,
-    "tiddlers_path": "1306.1660v1.tiddlers.json",
-    "tiddlers_count": 693,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Geometric algebra was initiated by W.K. Clifford over 130 years ago. It unifies all branches of physics, and has found rich applications in robotics, signal processing, ray tracing, virtual reality, computer vision, vector field processing, tracking, geographic information systems and neural computing. This tutorial explains the basics of geometric algebra, with concrete examples of the plane, of 3D space, of spacetime, and the popular conformal model. Geometric algebras are ideal to represent geometric transformations in the general framework of Clifford groups (also called versor or Lipschitz groups). Geometric (algebra based) calculus allows, e.g., to optimize learning algorithms of Clifford neurons, etc. Keywords: Hypercomplex algebra, hypercomplex analysis, geometry, science, engineering.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -102,7 +105,75 @@
     "arxiv_authors": [
       "Eckhard Hitzer"
     ],
-    "arxiv_primary_category": "math.RA"
+    "arxiv_primary_category": "math.RA",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:1306.1660v1  [math.RA]  7 Jun 2013",
+      "Creator": "dvips(k) 5.991 Copyright 2011 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.05",
+      "CreationDate": "Mon Jun 10 02:31:24 2013 CEST",
+      "ModDate": "Mon Jun 10 02:31:24 2013 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "161477 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 11,
+    "image_count": 400,
+    "mathpix_pdf_id": "7f08bac4-1f45-4389-8d45-d1af82302d6c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1306.1660v1.lines.json",
+        "bytes": 1377720
+      },
+      {
+        "format": "md",
+        "path": "1306.1660v1.md",
+        "bytes": 71632
+      },
+      {
+        "format": "tex.zip",
+        "path": "1306.1660v1.tex.zip",
+        "bytes": 92113
+      }
+    ],
+    "eqnums_from_mathpix": 117,
+    "eqnums_recovered": 0,
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 334,
+    "geometry_matched": 1241,
+    "geometry_mean_sim": 0.288,
+    "bibliography_entries": 26,
+    "bibliography_with_year": 23,
+    "bibliography_numeric_citations": 46,
+    "bibliography_authoryear_citations": 2,
+    "bibliography_cites": 46,
+    "tiddlers_path": "1306.1660v1.tiddlers.json",
+    "tiddlers_count": 763,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:1306.1660v1  [math.RA]  7 Jun 2013",
@@ -13691,16 +13762,90 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 8.6,
       "detail": "693 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T16:53:48Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12886.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-18T17:21:04Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 140.0,
+      "detail": "0/334 matched"
+    },
+    {
+      "ts": "2026-08-18T17:21:04Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "0 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T17:21:05Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.6,
+      "detail": "693 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-18T19:03:52Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 2035.5,
+      "detail": "837 objects, 118 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-18T19:03:57Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 2551.6,
+      "detail": "1241/334 matched"
+    },
+    {
+      "ts": "2026-08-18T19:03:59Z",
+      "node": "eqnums",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "EQNUMS_FUSED",
+      "cost_ms": 0,
+      "detail": "117 mathpix, 0 recovered"
+    },
+    {
+      "ts": "2026-08-18T19:04:02Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "26 entries, 46+2 cites detected, 46 linked"
+    },
+    {
+      "ts": "2026-08-18T19:04:02Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 63.2,
+      "detail": "763 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1306.1660v1/1306.1660v1.lines.json": "sha256:6eb8e7a1b869b80d6614e4ea5bc6de7137840c031ca6af47fcbe68943ddb94b5"
+      },
       "params_hash": "sha256:9e3f6d6c40179f50feb0fc92c503af010128fb647d9a27e8154839912f8d287d",
       "algo": "sha256",
-      "ts": "2026-08-04T22:20:38Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-18T19:03:52Z",
+      "provenance": "mathpix"
     }
   }
 }
