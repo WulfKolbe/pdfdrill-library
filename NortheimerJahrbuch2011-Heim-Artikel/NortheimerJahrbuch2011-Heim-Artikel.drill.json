@@ -5,7 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -90,12 +98,76 @@
     },
     "tiddlers_path": "NortheimerJahrbuch2011-Heim-Artikel.tiddlers.json",
     "tiddlers_count": 47,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "Adobe InDesign CS5.5 (7.5)",
+      "Producer": "Adobe PDF Library 9.9",
+      "CreationDate": "Thu Dec 22 16:22:04 2011 CET",
+      "ModDate": "Thu Dec 22 16:22:09 2011 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "419.528 x 595.276 pts",
+      "Page rot": "0",
+      "File size": "253081 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 12,
+    "image_count": 2,
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "Adobe PDF Library 9.9",
+    "creator": "Adobe InDesign CS5.5 (7.5)",
+    "creation_date": "2011-12-22T16:22:04+01",
+    "mod_date": "2011-12-22T16:22:09+01",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 12,
+    "encrypted": false,
+    "page_size": "419.528 x 595.276 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 253081,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.5",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2011",
+    "title": "",
+    "author": "",
+    "year": "2011",
+    "pages": 12,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "OEDIZG+Times-Roman",
@@ -504,7 +576,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 2,
+      "x0": 65.2,
+      "y0": 294.0,
+      "x1": 369.27,
+      "y1": 513.07,
+      "w_pt": 304.07,
+      "h_pt": 219.07,
+      "name": "Im0",
+      "imagemask": false,
+      "width_px": 634,
+      "height_px": 457,
+      "encoding": "jpeg",
+      "color": "gray",
+      "x_ppi": 150,
+      "y_ppi": 150,
+      "size_bytes": 46899,
+      "object_id": "6 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 4,
+      "x0": 169.03,
+      "y0": 127.56,
+      "x1": 369.45,
+      "y1": 286.3,
+      "w_pt": 200.42,
+      "h_pt": 158.74,
+      "name": "Im0",
+      "imagemask": false,
+      "width_px": 418,
+      "height_px": 331,
+      "encoding": "jpeg",
+      "color": "gray",
+      "x_ppi": 150,
+      "y_ppi": 150,
+      "size_bytes": 20684,
+      "object_id": "16 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -563,6 +676,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.6,
       "detail": "47 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-20T07:31:08Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 47.7,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-20T07:31:08Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "29 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-20T07:31:09Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 42.0,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-20T07:31:09Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 34.2,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-20T07:31:09Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 95.8,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-20T07:31:09Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 19.9,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-20T07:31:10Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 91.1,
+      "detail": "citekey=unknown2011"
+    },
+    {
+      "ts": "2026-08-20T07:31:13Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3448.1,
+      "detail": "2 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

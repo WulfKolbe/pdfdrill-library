@@ -5,7 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 173,
@@ -65,10 +72,76 @@
     },
     "tiddlers_path": "Pagès, Frédéric - Frühstück bei Sokrates.tiddlers.json",
     "tiddlers_count": 380,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Frühstück bei Sokrates",
+      "Author": "Frédéric Pagès",
+      "Creator": "PScript5.dll Version 5.2",
+      "Producer": "Acrobat Distiller 5.0 (Windows)",
+      "CreationDate": "Wed Aug  1 20:43:21 2001 CEST",
+      "ModDate": "Tue Mar  2 10:36:48 2010 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "173",
+      "Encrypted": "no",
+      "Page size": "308 x 475 pts",
+      "Page rot": "0",
+      "File size": "582589 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 173,
+    "image_count": 1,
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Frühstück bei Sokrates",
+    "author": "Frédéric Pagès",
+    "producer": "Acrobat Distiller 5.0 (Windows)",
+    "creator": "PScript5.dll Version 5.2",
+    "creation_date": "2001-08-01T18:43:21Z",
+    "mod_date": "2010-03-02T10:36:48+01",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 173,
+    "encrypted": false,
+    "page_size": "308 x 475 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 582589,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "pages2001",
+    "title": "Frühstück bei Sokrates",
+    "author": "Frédéric Pagès",
+    "year": "2001",
+    "pages": 173,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -101,7 +174,28 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 308.0,
+      "y1": 475.0,
+      "w_pt": 308.0,
+      "h_pt": 475.0,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 308,
+      "height_px": 475,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 72,
+      "y_ppi": 72,
+      "size_bytes": 38297,
+      "object_id": "613 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -160,6 +254,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 27.2,
       "detail": "380 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-20T07:33:29Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 43.9,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-20T07:33:30Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.1,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-20T07:33:30Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 27.8,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-20T07:33:30Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 28.1,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-20T07:33:31Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 326.1,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-20T07:33:31Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=pages2001"
+    },
+    {
+      "ts": "2026-08-20T07:33:47Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 16543.9,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
