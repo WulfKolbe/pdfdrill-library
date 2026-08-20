@@ -7,7 +7,14 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 10,
@@ -129,10 +136,143 @@
       "geometry": true,
       "math": true,
       "source": "mathpix"
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.10",
+      "CreationDate": "Thu Jul 31 03:18:19 2014 CEST",
+      "ModDate": "Thu Jul 31 03:18:19 2014 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "324000 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 10,
+    "image_count": 0,
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "NASSAU: Description Length Minimization for",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "Boolean Matrix Factorization",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "2 Related Work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "3 Notation",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.4",
+        "title": "4 BMF with MDL",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.5",
+        "title": "5 Algorithm",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.6",
+        "title": "6 Experiments",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.7",
+        "title": "7 Conclusions",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 9,
+        "url": "http://www.helsinki.fi/science/now/",
+        "kind": "text"
+      },
+      {
+        "page": 9,
+        "url": "http://people.csail.mit.edu/jrennie/20Newsgroups/",
+        "kind": "text"
+      }
+    ]
+  },
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.10",
+    "creator": "TeX",
+    "creation_date": "2014-07-31T03:18:19+02",
+    "mod_date": "2014-07-31T03:18:19+02",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 10,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 324000,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.1415926-1.40.10-2.2 (TeX Live 2009/Debian) kpathsea version 5.0.0"
     }
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "nassau2014",
+    "title": "NASSAU: Description Length Minimization for Boolean Matrix Factorization",
+    "author": "",
+    "year": "2014",
+    "pages": 10,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -501,7 +641,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -610,6 +750,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.5,
       "detail": "213 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-20T07:33:33Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 42.2,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-20T07:33:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "26 fonts, 13 math"
+    },
+    {
+      "ts": "2026-08-20T07:33:34Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 9.1,
+      "detail": "scope=markdown method=none"
+    },
+    {
+      "ts": "2026-08-20T07:33:34Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 1.4,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-20T07:33:34Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 114.0,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-20T07:33:34Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 67.8,
+      "detail": "citekey=nassau2014"
+    },
+    {
+      "ts": "2026-08-20T07:33:36Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1698.9,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

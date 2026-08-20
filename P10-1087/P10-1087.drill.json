@@ -7,7 +7,14 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 10,
@@ -125,12 +132,410 @@
       "geometry": true,
       "math": true,
       "source": "mathpix"
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Untangling the Cross-Lingual Link Structure of Wikipedia",
+      "Subject": "ACL 2010",
+      "Keywords": "",
+      "Author": "Gerard de Melo ; Gerhard Weikum",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfeTeX-1.21a",
+      "CreationDate": "Thu Jun 24 19:18:12 2010 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "344184 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 10,
+    "image_count": 2,
+    "abstract": "Wikipedia articles in different languages are connected by interwiki links that are increasingly being recognized as a valuable source of cross-lingual information. Unfortunately, large numbers of links are imprecise or simply wrong. In this paper, techniques to detect such problems are identified. We formalize their removal as an optimization task based on graph repair operations. We then present an algorithm with provable properties that uses linear programming and a region growing technique to tackle this challenge. This allows us to transform Wikipedia into a much more consistent multilingual register of the world’s entities and concepts.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Untangling the Cross-Lingual",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "1.1",
+        "title": "Gerard de Melo",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.2",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "1.3",
+        "title": "Motivation. The open community-maintained en-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2",
+        "title": "Link Structure of Wikipedia",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "Gerhard Weikum",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "Contribution. Our research contributions are:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "2 Detecting Inaccurate Links",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3.1",
+        "title": "2.1 Distinctness Assertions",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.4",
+        "title": "Definition 1. (Distinctness Assertions) Given a",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.5",
+        "title": "Criterion 1. (Distinctness between articles from",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.6",
+        "title": "Criterion 2. (Distinctness between categories",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.7",
+        "title": "Criterion 3. (Distinctness for links with anchor",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.7.1",
+        "title": "2.2 Enforcing Consistency",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.8",
+        "title": "Distinctness-Based Graph Separation (WDGS)",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.9",
+        "title": "Definition 2. (WDGS Solution). Given a graph",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.10",
+        "title": "Definition 3. (WDGS Cost). Let w : E → R",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.11",
+        "title": "Definition 4. (WDGS). A WDGS problem instance",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.12",
+        "title": "Theorem 1. WDGS is NP-hard and APX-hard. If",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.13",
+        "title": "3 Approximation Algorithm",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.14",
+        "title": "Definition 5. Given a WDGS instance, we define a",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.15",
+        "title": "Definition 6. Given G = (V, E) and distinct-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.16",
+        "title": "Definition 7. Around a given node v in G0, we",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.17",
+        "title": "Definition 8. Given q = max |Di,j|, we approxi-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.18",
+        "title": "Theorem 2. The algorithm yields a valid WDGS",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.19",
+        "title": "Theorem 3. The algorithm yields a solution",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.20",
+        "title": "4 Results",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.20.1",
+        "title": "4.1 Wikipedia",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.20.2",
+        "title": "4.2 Application of Algorithm",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.21",
+        "title": "Algorithm 3.1 WDGS Approximation Algorithm",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.21.1",
+        "title": "4.3 Linguistic Adequacy",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.21.2",
+        "title": "4.4 Large Problem Instances",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.21.3",
+        "title": "4.5 Database of Named Entities",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "2.22",
+        "title": "5 Related Work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.23",
+        "title": "6 Conclusions and Future Work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.24",
+        "title": "A Proofs",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.25",
+        "title": "Proof (Theorem 1). We shall reduce the mini-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.26",
+        "title": "Lemma 4. The linear program given by Defini-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.27",
+        "title": "Proof (Theorem 2). r < 1 holds for any ra-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.28",
+        "title": "Lemma 5 (essentially due to Garg et al. (1996)).",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.29",
+        "title": "Proof (Theorem 3). Let Si, ri denote the set",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown"
+  },
+  "pdfinfo": {
+    "title": "Untangling the Cross-Lingual Link Structure of Wikipedia",
+    "author": "Gerard de Melo ; Gerhard Weikum",
+    "producer": "pdfeTeX-1.21a",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2010-06-25T01:18:12+08",
+    "mod_date": null,
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 10,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 344184,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) kpathsea version 3.5.4",
+      "Subject": "ACL 2010"
     }
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "melo2010",
+    "title": "Untangling the Cross-Lingual Link Structure of Wikipedia",
+    "author": "Gerard de Melo ; Gerhard Weikum",
+    "year": "2010",
+    "pages": 10,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "page.844",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 2,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "page.845",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 3,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "page.846",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 4,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "page.847",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 5,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "page.848",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 6,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "page.849",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 7,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "page.850",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 8,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "page.851",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 9,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "page.852",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 10,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "page.853",
+      "kind": "page_anchor"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "UHGYSL+NimbusRomNo9L-ReguItal",
@@ -399,7 +804,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 2,
+      "x0": 72.3,
+      "y0": 62.8,
+      "x1": 289.98,
+      "y1": 214.24,
+      "w_pt": 217.68,
+      "h_pt": 151.44,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 907,
+      "height_px": 631,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 300,
+      "y_ppi": 300,
+      "size_bytes": 73113,
+      "object_id": "99 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 5,
+      "x0": 72.25,
+      "y0": 62.8,
+      "x1": 290.02,
+      "y1": 227.67,
+      "w_pt": 217.76,
+      "h_pt": 164.87,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 741,
+      "height_px": 561,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 245,
+      "y_ppi": 245,
+      "size_bytes": 70144,
+      "object_id": "158 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -508,6 +954,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 11.9,
       "detail": "347 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-20T07:32:53Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 54.4,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-20T07:32:54Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "19 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-20T07:32:54Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 9.4,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-20T07:32:54Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 1.8,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-20T07:32:54Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 23.7,
+      "detail": "11 dests across 2 kinds"
+    },
+    {
+      "ts": "2026-08-20T07:32:54Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "citekey=melo2010"
+    },
+    {
+      "ts": "2026-08-20T07:32:57Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2572.2,
+      "detail": "2 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
