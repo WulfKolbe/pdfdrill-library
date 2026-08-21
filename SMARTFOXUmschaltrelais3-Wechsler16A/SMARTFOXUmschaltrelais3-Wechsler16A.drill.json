@@ -5,7 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -67,12 +74,73 @@
     },
     "tiddlers_path": "SMARTFOXUmschaltrelais3-Wechsler16A.tiddlers.json",
     "tiddlers_count": 23,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "?",
+      "Subject": "?",
+      "Keywords": "?",
+      "Author": "?",
+      "Creator": "?",
+      "Producer": "TCPDF 4.8.007 (http://www.tcpdf.org)",
+      "CreationDate": "Sun Dec 11 00:11:35 2022 CET",
+      "ModDate": "Sun Dec 11 00:11:35 2022 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "2",
+      "Encrypted": "no",
+      "Page size": "595.28 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "77394 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 2,
+    "image_count": 3,
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 1,
+        "url": "http://www.voltus.de"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "?",
+    "author": "?",
+    "producer": "TCPDF 4.8.007 (http://www.tcpdf.org)",
+    "creator": "?",
+    "creation_date": "2022-12-11T00:11:35+01",
+    "mod_date": "2022-12-11T00:11:35+01",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 2,
+    "encrypted": false,
+    "page_size": "595.28 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 77394,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "Keywords": "?",
+      "Subject": "?"
+    }
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "Helvetica",
@@ -103,7 +171,68 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 315.21,
+      "y0": 28.34,
+      "x1": 538.58,
+      "y1": 77.1,
+      "w_pt": 223.37,
+      "h_pt": 48.76,
+      "name": "I1",
+      "imagemask": false,
+      "width_px": 394,
+      "height_px": 86,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 127,
+      "y_ppi": 127,
+      "size_bytes": 10752,
+      "object_id": "11 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 1,
+      "x0": 201.26,
+      "y0": 113.95,
+      "x1": 394.02,
+      "y1": 306.71,
+      "w_pt": 192.76,
+      "h_pt": 192.76,
+      "name": "I2",
+      "imagemask": false,
+      "width_px": 340,
+      "height_px": 340,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 127,
+      "y_ppi": 127,
+      "size_bytes": 62054,
+      "object_id": "12 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 2,
+      "x0": 315.21,
+      "y0": 28.34,
+      "x1": 538.58,
+      "y1": 77.1,
+      "w_pt": 223.37,
+      "h_pt": 48.76,
+      "name": "I1",
+      "imagemask": false,
+      "width_px": 394,
+      "height_px": 86,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 127,
+      "y_ppi": 127,
+      "size_bytes": 10752,
+      "object_id": "11 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -162,6 +291,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.1,
       "detail": "23 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-21T06:07:02Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 56.1,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-21T06:07:02Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.1,
+      "detail": "2 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-21T06:07:02Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 30.2,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-21T06:07:02Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 36.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-21T06:07:03Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 26.1,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-21T06:07:03Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 28.0,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-21T06:07:03Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 287.6,
+      "detail": "3 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {

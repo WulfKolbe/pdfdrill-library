@@ -6,7 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 3,
@@ -79,12 +87,122 @@
     },
     "tiddlers_path": "Recasting_Transfinite_Set_Theory_through.tiddlers.json",
     "tiddlers_count": 31,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "",
+      "Producer": "GPL Ghostscript 9.26",
+      "CreationDate": "Sun Dec 15 19:57:56 2024 CET",
+      "ModDate": "Sun Dec 15 19:57:56 2024 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "3",
+      "Encrypted": "no",
+      "Page size": "595.28 x 871.78 pts",
+      "Page rot": "0",
+      "File size": "47674 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 3,
+    "image_count": 0,
+    "abstract": "The Laws of Form (LoF), as introduced by George Spencer-Brown, provides a\n       conceptual framework rooted in the notion of distinction. By focusing on the act of\n       distinction and its recursive application, LoF offers a novel way to approach trans-\n       finite set theory. This article explores how LoF recasts the traditional framework\n       of transfinite mathematics into a simpler and more intuitive system, emphasizing\n       the role of boundaries, distinctions, and recursion. We demonstrate that the hi-\n       erarchy of infinities can be reinterpreted in terms of discrete distinctions, and the\n       continuum can be redefined as a web of nested boundaries. This reinterpretation\n       bridges the conceptual gap between discrete and continuous systems and provides\n       fresh insights into cardinality, ordinal numbers, and the nature of irrationality.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Introduction",
+        "page": ""
+      },
+      {
+        "number": "2.1",
+        "title": "Boundaries and Cardinality",
+        "page": ""
+      },
+      {
+        "number": "2.2",
+        "title": "Irrational Numbers as Dedekind Cuts",
+        "page": ""
+      },
+      {
+        "number": "3",
+        "title": "Rethinking the Hierarchy of Infinities",
+        "page": ""
+      },
+      {
+        "number": "3.1",
+        "title": "Countable Infinity: Discrete Boundaries",
+        "page": ""
+      },
+      {
+        "number": "4",
+        "title": "Implications for Set Theory",
+        "page": ""
+      },
+      {
+        "number": "5",
+        "title": "Conclusion",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "GPL Ghostscript 9.26",
+    "creator": "",
+    "creation_date": "2024-12-15T18:57:56Z",
+    "mod_date": "2024-12-15T18:57:56Z",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 3,
+    "encrypted": false,
+    "page_size": "595.28 x 871.78 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 47674,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "Keywords": "",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2024",
+    "title": "",
+    "author": "",
+    "year": "2024",
+    "pages": 3,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "BROXXA+CMTI10",
@@ -227,7 +345,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -286,6 +404,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.4,
       "detail": "31 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-21T06:05:11Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 44.0,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-21T06:05:11Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "10 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-21T06:05:12Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 27.2,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-21T06:05:12Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 32.9,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-21T06:05:12Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 58.1,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-21T06:05:12Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 20.9,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-21T06:05:12Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 48.8,
+      "detail": "citekey=unknown2024"
+    },
+    {
+      "ts": "2026-08-21T06:05:13Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 547.2,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
