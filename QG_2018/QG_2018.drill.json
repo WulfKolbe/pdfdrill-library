@@ -7,7 +7,14 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 24,
@@ -115,12 +122,85 @@
     "bibliography_cites": 16,
     "tiddlers_path": "QG_2018.tiddlers.json",
     "tiddlers_count": 169,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX output 2018.08.21:1503",
+      "Producer": "dvipdfm 0.13.2d, Copyright © 1998, by Mark A. Wicks",
+      "CreationDate": "Tue Aug 21 17:03:59 2018 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "24",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "266533 bytes",
+      "Optimized": "no",
+      "PDF version": "1.2"
+    },
+    "page_count_text": 24,
+    "image_count": 0,
+    "abstract": "Loop quantum gravity purports to be a viable candidate for a phys-\n     ical theory which quantizes general relativity, and captures the discrete\n     nature of space-time at a fundamental level. This paper subjects that\n     joint claim to critical scrutiny. The paper begins by reviewing the canon-\n     ical formulation, proceeds to an exposition of Ashtekar’s ‘new variables’,\n     and then details the development of loop quantum gravity, focusing on the\n     definition of spin-network states and area operators. The paper concludes\n     with a critical analysis of loop quantum gravity’s credentials as a physical\n     theory. A number of the widely-held beliefs, particularly those related to\n     the discrete nature of space, are rejected as misconceptions.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Introduction",
+        "page": ""
+      },
+      {
+        "number": "2",
+        "title": "Canonical Quantum Gravity",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 23,
+        "url": "https://arxiv.org/pdf/0707.3070.pdf",
+        "kind": "text"
+      },
+      {
+        "page": 23,
+        "url": "http://philsci-archive.pitt.edu/12016/",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "dvipdfm 0.13.2d, Copyright © 1998, by Mark A. Wicks",
+    "creator": "TeX output 2018.08.21:1503",
+    "creation_date": "2018-08-21T15:03:59Z",
+    "mod_date": null,
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 24,
+    "encrypted": false,
+    "page_size": "595 x 842 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 266533,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.2",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "KUTDCR+CMR17",
@@ -529,7 +609,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -596,6 +676,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.8,
       "detail": "169 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-21T06:03:59Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 43.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-21T06:04:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "29 fonts, 16 math"
+    },
+    {
+      "ts": "2026-08-21T06:04:00Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 34.5,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-21T06:04:00Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 40.9,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-21T06:04:00Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 183.7,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-21T06:04:00Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 23.2,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-21T06:04:04Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3762.8,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
