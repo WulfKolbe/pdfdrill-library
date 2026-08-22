@@ -6,7 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -94,12 +101,88 @@
     },
     "tiddlers_path": "Semantic_spaces_Measuring_the_distance_b.tiddlers.json",
     "tiddlers_count": 108,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Producer": "GPL Ghostscript 9.05",
+      "CreationDate": "Sat Feb  8 23:24:44 2014 CET",
+      "ModDate": "Sat Feb  8 23:24:44 2014 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "595.28 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "146883 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 12,
+    "image_count": 0,
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Introduction",
+        "page": ""
+      },
+      {
+        "number": "1",
+        "title": "We refer to different Spaces, not different instances of the same space, i. e. the same",
+        "page": ""
+      },
+      {
+        "number": "2",
+        "title": "Semantic Spaces: a Hilbert space representation",
+        "page": ""
+      },
+      {
+        "number": "2",
+        "title": "The interested reader should refer to [3] for a complete investigation of the procedure.",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 11,
+        "url": "http://www.ir-facility.org/",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "GPL Ghostscript 9.05",
+    "creator": "",
+    "creation_date": "2014-02-08T14:24:44-08",
+    "mod_date": "2014-02-08T14:24:44-08",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 12,
+    "encrypted": false,
+    "page_size": "595.28 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 146883,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "XEGNLK+CMTT9",
@@ -424,7 +507,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -483,6 +566,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.8,
       "detail": "108 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T06:20:10Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 44.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-22T06:20:10Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 1.4,
+      "detail": "23 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-22T06:20:10Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 29.1,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-22T06:20:10Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 31.9,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-22T06:20:11Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 105.7,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-22T06:20:11Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 20.0,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-22T06:20:13Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1827.8,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

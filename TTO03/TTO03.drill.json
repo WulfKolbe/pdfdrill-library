@@ -7,7 +7,15 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 11,
@@ -134,12 +142,449 @@
       "geometry": true,
       "math": true,
       "source": "mathpix"
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Cross-Domain Learning for Classifying Propaganda in Online Contents",
+      "Subject": "TTO 2020",
+      "Keywords": "",
+      "Author": "Liqiang Wang ; Xiaoyu Shen ; Gerard de Melo ; Gerhard Weikum",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Thu Oct 15 09:36:47 2020 CEST",
+      "ModDate": "Thu Oct 15 09:36:47 2020 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "295725 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 0,
+    "abstract": "As news and social media exhibit an increasing amount of manipulative polarized content, detecting such propaganda has received attention as a new task for content analysis. Prior work has focused on supervised learning with training data from the same domain. However, as propaganda can be subtle and keeps evolving, manual identification and proper labeling are very demanding. As a consequence, training data is a major bottleneck. In this paper, we tackle this bottleneck and present an approach to leverage cross-domain learning, based on labeled documents and sentences from news and tweets, as well as political speeches with a clear difference in their degrees of being propagandistic. We devise informative features and build various classifiers for propaganda labeling, using cross-domain learning. Our experiments demonstrate the usefulness of this approach, and identify difficulties and limitations in various configurations of sources and targets for the transfer step. We further analyze the influence of various features, and characterize salient indicators of propaganda.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Cross-Domain",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "Classifying Propagand",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "Liqiang Wang1,2, Xiaoyu Shen1, G",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2.1",
+        "title": "1.1 Motivation and Problem",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "3",
+        "title": "Learning for",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4",
+        "title": "a in Online Contents",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4.1",
+        "title": "erard de Melo3, Gerhard Weikum1",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.1.1",
+        "title": "1.2 Approach and Contribution",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.2",
+        "title": "2 Related Work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.3",
+        "title": "Propaganda Detection. We summarize the state-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.4",
+        "title": "Propaganda Analysis. Analyses of propagandis-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.5",
+        "title": "3 Datasets",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.6",
+        "title": "Speeches. We collected transcripts of speeches",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.7",
+        "title": "News. The news dataset comes from the Hack the",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.8",
+        "title": "Tweets. We combine two pre-existing collections",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.9",
+        "title": "4 Methods",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.10",
+        "title": "LSTMR, and present it in the Subsection 4.3.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.10.1",
+        "title": "4.1 Feature-based Models",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.11",
+        "title": "G),",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.11.1",
+        "title": "4.2 LSTM Baseline Model",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.11.2",
+        "title": "4.3 Pairwise Ranking Model",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.12",
+        "title": "Model Architecture. Figure 2 depicts our pair-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.13",
+        "title": "Pairwise Constraints. The constraints are instan-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.14",
+        "title": "loss is designed to further relax the constraints by",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.15",
+        "title": "Sampling Method. We apply different methods",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.16",
+        "title": "5 Experimental Evaluation",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.17",
+        "title": "Setup. The feature dimensions of WC, TI-W,",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.18",
+        "title": "In-Domain Performance. The results are shown",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.19",
+        "title": "Cross-Domain Performance. The cross-domain",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.20",
+        "title": "Combining Datasets for Training. As a final",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.21",
+        "title": "6 Analysis",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.22",
+        "title": "Datasets and Granularity. The best cross-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.23",
+        "title": "Proper Nouns. Table 4 shows cross-domain re-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.24",
+        "title": "Feature Groups. We conduct experiments with",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.25",
+        "title": "Informative Language Features. To analyze to",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.26",
+        "title": "LSTMR Loss Functions. For our LSTMR",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.27",
+        "title": "Sampling Strategies. The training of LSTMR",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.28",
+        "title": "7 Conclusion and Future Work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.29",
+        "title": "Acknowledgments",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 1,
+        "url": "www.britannica.com/topic/propaganda",
+        "kind": "text"
+      },
+      {
+        "page": 1,
+        "url": "https://www.datasciencesociety.net/hack-article",
+        "kind": "text"
+      },
+      {
+        "page": 2,
+        "url": "https://github.com/leereak/propaganda-learning",
+        "kind": "text"
+      },
+      {
+        "page": 3,
+        "url": "https://factba.se",
+        "kind": "text"
+      },
+      {
+        "page": 3,
+        "url": "http://obamaspeeches.com",
+        "kind": "text"
+      },
+      {
+        "page": 3,
+        "url": "https://research.calvin.edu/german-propaganda-archive/goebmain.htm",
+        "kind": "text"
+      },
+      {
+        "page": 3,
+        "url": "https://winstonchurchill.org/resources/interviews",
+        "kind": "text"
+      }
+    ]
+  },
+  "pdfinfo": {
+    "title": "Cross-Domain Learning for Classifying Propaganda in Online Contents",
+    "author": "Liqiang Wang ; Xiaoyu Shen ; Gerard de Melo ; Gerhard Weikum",
+    "producer": "pdfTeX-1.40.21",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2020-10-15T10:36:47+03",
+    "mod_date": "2020-10-15T10:36:47+03",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 11,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 295725,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+      "Subject": "TTO 2020"
     }
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "wang2020",
+    "title": "Cross-Domain Learning for Classifying Propaganda in Online Contents",
+    "author": "Liqiang Wang ; Xiaoyu Shen ; Gerard de Melo ; Gerhard Weikum",
+    "year": "2020",
+    "pages": 11,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 72.0,
+      "y": 779.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.21",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 2,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.22",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 3,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.23",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 4,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.24",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 5,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.25",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 6,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.26",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 7,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.27",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 8,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.28",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 9,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.29",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 10,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.30",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 11,
+      "x": 71.0,
+      "y": 785.0,
+      "name": "page.31",
+      "kind": "page_anchor"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "VJFOCO+NimbusRomNo9L-ReguItal",
@@ -520,7 +965,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -629,6 +1074,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 12.0,
       "detail": "190 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T06:24:30Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 49.2,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-22T06:24:31Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "27 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-22T06:24:31Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 1.6,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-22T06:24:31Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 1.5,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-22T06:24:32Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 154.3,
+      "detail": "7 external urls"
+    },
+    {
+      "ts": "2026-08-22T06:24:32Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 21.4,
+      "detail": "12 dests across 2 kinds"
+    },
+    {
+      "ts": "2026-08-22T06:24:32Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=wang2020"
+    },
+    {
+      "ts": "2026-08-22T06:24:36Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3271.9,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
