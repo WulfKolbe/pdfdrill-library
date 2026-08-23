@@ -19,22 +19,20 @@
     "TABLES_KNOWN",
     "RASTERIZED",
     "MODEL_BUILT",
-    "GEOMETRY_FUSED",
     "EQNUMS_FUSED",
     "LISTS_BUILT",
     "ALGORITHMS_BUILT",
     "ANNOTATIONS_BUILT",
     "EMBEDDED_IMAGES_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "COMPARE_BUILT",
     "REPORT_BUILT",
-    "TIDDLERS_BUILT",
     "SCORED",
     "SEMANTIC_BUILT",
     "SPELLQC_BUILT",
     "BIBFETCH_DONE",
     "FONTS_LAYER_KNOWN",
-    "FONTS_KNOWN"
+    "FONTS_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -134,17 +132,17 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 13,
-      "Citation": 14,
-      "ListItem": 58,
-      "Equation": 45,
-      "Paragraph": 13,
+      "Table": 3,
+      "TableRow": 23,
+      "TableCell": 183,
+      "ListItem": 32,
+      "Equation": 39,
+      "Formula": 286,
+      "Paragraph": 91,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "visionocr",
-    "geometry_pdf_lines": 666,
-    "geometry_matched": 473,
-    "geometry_mean_sim": 0.71,
+    "model_equations_with_cdn": 39,
+    "model_source": "mathpix",
     "eqnums_from_mathpix": 0,
     "eqnums_recovered": 0,
     "lists_created": 26,
@@ -160,17 +158,7 @@
     "annotation_xrefs": 0,
     "embedded_images": 0,
     "embedded_images_fused": 0,
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "compare_path": "musterloesung.pdf.drill/compare.html",
-    "compare_rows": 0,
     "report_path": "musterloesung.pdf.drill/formula-report.html",
-    "tiddlers_path": "musterloesung.tiddlers.json",
-    "tiddlers_count": 152,
-    "tiddlers_svg_mode": "inline",
     "inspect_path": "musterloesung.pdf.drill/musterloesung.inspect.html",
     "scored_equations": 0,
     "scored_flagged": 0,
@@ -579,9 +567,6 @@
       "segments": 72,
       "language": "de"
     },
-    "svg_rendered": 0,
-    "svg_errors": 0,
-    "svg_skipped": 0,
     "spellqc": {
       "join": 23,
       "keep": 1,
@@ -589,11 +574,11 @@
     },
     "bibfetch_done": 0,
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 132 unmapped private-use character(s) remain (U+F8EB×25, U+F8EC×16, U+F8ED×25, U+F8F6×25, U+F8F7×16, U+F8F8×25) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "visionocr"
+      "source": "mathpix"
     },
     "probe_version": 3,
     "pdfinfo_fields": {
@@ -616,7 +601,36 @@
       "Optimized": "no",
       "PDF version": "1.4"
     },
-    "page_count_text": 13
+    "page_count_text": 13,
+    "mathpix_pdf_id": "c051297c-a6d9-403a-b21e-e52068634ea3",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "musterloesung.lines.json",
+        "bytes": 683102
+      },
+      {
+        "format": "md",
+        "path": "musterloesung.md",
+        "bytes": 31239
+      },
+      {
+        "format": "tex.zip",
+        "path": "musterloesung.tex.zip",
+        "bytes": 34388
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "compare",
+      "geometry",
+      "svg",
+      "tiddlers"
+    ],
+    "tiddlers_path": "musterloesung.tiddlers.json",
+    "tiddlers_count": 481,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -646,8 +660,8 @@
   },
   "bibtex": {
     "entry_type": "misc",
-    "citekey": "unknown2009",
-    "title": "",
+    "citekey": "lineare2009",
+    "title": "Lineare Algebra Weihnachtszettel Musterlösungen",
     "author": "",
     "year": "2009",
     "pages": 13,
@@ -51722,18 +51736,50 @@
       "to": "BIBTEX_KNOWN",
       "cost_ms": 123.2,
       "detail": "citekey=unknown2009"
+    },
+    {
+      "ts": "2026-08-22T16:33:49Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,ATTACHMENTS_KNOWN,BIBFETCH_DONE,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,COMPARE_BUILT,DESTS_KNOWN,EMBEDDED_IMAGES_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,FORMFIELDS_KNOWN,GEOMETRY_FUSED,IMAGES_EXTRACTED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,LISTS_BUILT,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,RASTERIZED,REPORT_BUILT,SCORED,SEMANTIC_BUILT,SIZE_KNOWN,SPELLQC_BUILT,TABLES_KNOWN,TIDDLERS_BUILT,TOC_KNOWN,TSV_KNOWN,URLS_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9548.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:33:50Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,ATTACHMENTS_KNOWN,BIBFETCH_DONE,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,COMPARE_BUILT,DESTS_KNOWN,EMBEDDED_IMAGES_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,FORMFIELDS_KNOWN,GEOMETRY_FUSED,IMAGES_EXTRACTED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,RASTERIZED,REPORT_BUILT,SCORED,SEMANTIC_BUILT,SIZE_KNOWN,SPELLQC_BUILT,TABLES_KNOWN,TIDDLERS_BUILT,TOC_KNOWN,TSV_KNOWN,URLS_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 216.6,
+      "detail": "671 objects, 39 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:33:50Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,ATTACHMENTS_KNOWN,BIBFETCH_DONE,BIBTEX_KNOWN,DESTS_KNOWN,EMBEDDED_IMAGES_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,FORMFIELDS_KNOWN,IMAGES_EXTRACTED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,RASTERIZED,REPORT_BUILT,SCORED,SEMANTIC_BUILT,SIZE_KNOWN,SPELLQC_BUILT,TABLES_KNOWN,TOC_KNOWN,TSV_KNOWN,URLS_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.2,
+      "detail": "481 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T00:35:52Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,ATTACHMENTS_KNOWN,BIBFETCH_DONE,DESTS_KNOWN,EMBEDDED_IMAGES_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,FORMFIELDS_KNOWN,IMAGES_EXTRACTED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,RASTERIZED,REPORT_BUILT,SCORED,SEMANTIC_BUILT,SIZE_KNOWN,SPELLQC_BUILT,TABLES_KNOWN,TIDDLERS_BUILT,TOC_KNOWN,TSV_KNOWN,URLS_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 369.8,
+      "detail": "citekey=lineare2009"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/musterloesung/musterloesung.lines.json": "sha256:fb009c682ae61987c408a0a0bc588fa17943d8500bc91c5fe8b6cb12931cbb2f"
+        "/home/wkolbe/pdfdrill-library/musterloesung/musterloesung.lines.json": "sha256:96d5be4003d6e3c3eac752c8fbe022bc59bbb2d3e7cafaa32b2c403263e2ffd5"
       },
       "params_hash": "sha256:f49656c51378cf5bb6bc92bf5c543ec2738bafbbb79518848c51e3208be46a86",
       "algo": "sha256",
-      "ts": "2026-08-06T01:30:16Z",
-      "provenance": "visionocr"
+      "ts": "2026-08-22T16:33:50Z",
+      "provenance": "mathpix"
     }
   }
 }

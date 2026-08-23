@@ -9,7 +9,10 @@
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -78,7 +81,51 @@
     "has_math_fonts": false,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "7e486f63-6a07-4e23-8887-09a6f56400f2",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Goedel.lines.json",
+        "bytes": 439158
+      },
+      {
+        "format": "md",
+        "path": "Goedel.md",
+        "bytes": 23412
+      },
+      {
+        "format": "tex.zip",
+        "path": "Goedel.tex.zip",
+        "bytes": 25243
+      }
+    ],
+    "bibkey": "Goedel",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 4,
+      "Footnote": 13,
+      "Sidenote": 8,
+      "Section": 4,
+      "ListItem": 2,
+      "Equation": 19,
+      "Formula": 118,
+      "Paragraph": 30,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 19,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "Goedel.tiddlers.json",
+    "tiddlers_count": 216,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -248,6 +295,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1349.2,
       "detail": "4 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:29:56Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8800.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:29:56Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 194.6,
+      "detail": "199 objects, 19 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:29:56Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.8,
+      "detail": "216 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Goedel/Goedel.lines.json": "sha256:932b32dde7ab6bdbd0c3329ca729a0b059d36e1ee6a2e40a494a1c9fd8692ea8"
+      },
+      "params_hash": "sha256:9bcec182dd4034d82d2dd7399ac8da916aef48e011204382812c7d7df5dd4ec8",
+      "algo": "sha256",
+      "ts": "2026-08-22T14:29:56Z",
+      "provenance": "mathpix"
+    }
+  }
 }

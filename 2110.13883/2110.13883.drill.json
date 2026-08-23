@@ -4,11 +4,9 @@
   "facts": [
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
     "BIBFETCH_DONE",
     "MD_BUILT",
     "BIBSOURCE_BUILT",
@@ -17,7 +15,10 @@
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2110.13883",
@@ -25,27 +26,27 @@
     "bibkey": "2110.13883",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 3,
-      "Paragraph": 96,
+      "Page": 11,
+      "Footnote": 4,
+      "Citation": 2,
+      "Sidenote": 22,
       "Abstract": 1,
-      "Section": 19,
-      "Formula": 200,
+      "Diagram": 5,
+      "Picture": 2,
+      "ListItem": 15,
       "Equation": 21,
-      "Theorem": 2,
-      "Proof": 1,
-      "Citation": 87
+      "Formula": 225,
+      "Paragraph": 95,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 21,
+    "model_source": "mathpix",
     "latex_source": "2110.13883.tgz",
     "latex_macros": 71,
     "latex_src_equations": 21,
     "latex_attached": 0,
     "latex_created": 0,
     "latex_graphics": 0,
-    "tiddlers_path": "2110.13883.tiddlers.json",
-    "tiddlers_count": 404,
-    "tiddlers_svg_mode": "inline",
     "pages": 11,
     "bytes": 792733,
     "page_size": "612 x 792 pts (letter)",
@@ -208,20 +209,12 @@
       "JMFAKC+CMMI7"
     ],
     "has_math_fonts": true,
-    "svg_rendered": 0,
-    "svg_errors": 0,
-    "svg_skipped": 0,
     "arxiv_title": "Estimating Mutual Information via Geodesic $k$NN",
     "arxiv_authors": [
       "Alexander Marx",
       "Jonas Fischer"
     ],
     "arxiv_primary_category": "cs.IT",
-    "bibliography_entries": 32,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 87,
     "bibfetch_done": 0,
     "bibsource_references": 32,
     "bibsource_enriched": 0,
@@ -375,7 +368,73 @@
         "page": 6,
         "url": "https://github.com/a-marx/geodesic-mi"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "ourtitle",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Wed Jan 19 05:10:26 2022 CET",
+      "ModDate": "Wed Jan 19 05:10:26 2022 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "792733 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 0,
+    "mathpix_pdf_id": "1781d54f-faf4-4af0-8008-678ff367c2d7",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2110.13883.lines.json",
+        "bytes": 1121214
+      },
+      {
+        "format": "md",
+        "path": "2110.13883.md",
+        "bytes": 59547
+      },
+      {
+        "format": "tex.zip",
+        "path": "2110.13883.tex.zip",
+        "bytes": 331240
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "svg",
+      "tiddlers"
+    ],
+    "bibliography_entries": 32,
+    "bibliography_with_year": 32,
+    "bibliography_numeric_citations": 85,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 85,
+    "tiddlers_path": "2110.13883.tiddlers.json",
+    "tiddlers_count": 452,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "ourtitle",
@@ -2512,16 +2571,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6317.7,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:57:04Z",
+      "node": "mathpix",
+      "from": "BIBFETCH_DONE,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10223.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:57:04Z",
+      "node": "model",
+      "from": "BIBFETCH_DONE,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 416.4,
+      "detail": "404 objects, 21 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:57:05Z",
+      "node": "bibliography",
+      "from": "BIBFETCH_DONE,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "32 entries, 85+0 cites detected, 85 linked"
+    },
+    {
+      "ts": "2026-08-22T15:57:05Z",
+      "node": "tiddlers",
+      "from": "BIBFETCH_DONE,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.8,
+      "detail": "452 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2110.13883/2110.13883.lines.json": "sha256:47295f8b4e0216a56b6396b728748c9c55fe5fda4f05a356d21ecba71ddc384c"
+      },
       "params_hash": "sha256:4cb488cff3707cf3bef2370f752be5a3ebaabdd221a7756b9d89caf8b8ccbd81",
       "algo": "sha256",
-      "ts": "2026-08-03T20:56:16Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:57:04Z",
+      "provenance": "mathpix"
     }
   }
 }

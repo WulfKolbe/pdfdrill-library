@@ -7,14 +7,15 @@
     "MODEL_BUILT",
     "LATEX_INGESTED",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 19,
@@ -96,20 +97,22 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 19,
-      "ListItem": 22,
-      "Equation": 73,
-      "Paragraph": 77,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 17,
+      "Equation": 58,
+      "Formula": 362,
+      "Paragraph": 92,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 58,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "2102.11507.tgz",
     "latex_macros": 179,
@@ -117,9 +120,6 @@
     "latex_attached": 0,
     "latex_created": 0,
     "latex_graphics": 0,
-    "tiddlers_path": "2102.11507.tiddlers.json",
-    "tiddlers_count": 208,
-    "tiddlers_svg_mode": "inline",
     "abstract": "By Liouville&#39;s theorem, in dimensions 3 or more conformal transformations form a finite-dimensional group, an apparent drastic departure from the 2-dimensional case. We propose a derived enhancement of the conformal Lie algebra which is an infinite-dimensional dg-Lie algebra incorporating not only symmetries but also deformations of the conformal structure. Our approach is based on (derived) deformation theory of the ambitwistor space of complex null-geodesics.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -128,7 +128,59 @@
       "Mikhail Kapranov"
     ],
     "arxiv_primary_category": "math.AG",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "",
+      "Producer": "",
+      "CreationDate": "Wed Feb 24 02:40:29 2021 CET",
+      "ModDate": "Wed Feb 24 02:40:29 2021 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "19",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "240287 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 19,
+    "image_count": 41,
+    "mathpix_pdf_id": "221702b0-9c06-4ecf-bbeb-46ea260c0194",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2102.11507.lines.json",
+        "bytes": 694371
+      },
+      {
+        "format": "md",
+        "path": "2102.11507.md",
+        "bytes": 55101
+      },
+      {
+        "format": "tex.zip",
+        "path": "2102.11507.tex.zip",
+        "bytes": 115160
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "2102.11507.tiddlers.json",
+    "tiddlers_count": 567,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2748,18 +2800,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5815.7,
       "detail": "82 images, 41 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:47:53Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9627.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:47:54Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 511.2,
+      "detail": "551 objects, 58 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:47:55Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 23.4,
+      "detail": "567 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2102.11507/2102.11507.lines.json": "sha256:231d0f77f1d4fa1b8bb6831e5ed580099eeff23dc276be40c0262af0f171ec17"
+        "/home/wkolbe/pdfdrill-library/2102.11507/2102.11507.lines.json": "sha256:76a153cdfc7a75708be1b90b8152e788d49c175c25d7e0bfa884c9810ee318c6"
       },
       "params_hash": "sha256:9baf97795fa765e570b5a78685f5e71fff3a7f5263b75e303edc9a4707a5d3b4",
       "algo": "sha256",
-      "ts": "2026-08-03T20:50:34Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:47:54Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

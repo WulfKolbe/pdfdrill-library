@@ -6,15 +6,16 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -77,29 +78,30 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 8,
-      "Citation": 2,
-      "ListItem": 9,
-      "Equation": 22,
-      "Paragraph": 25,
+      "Footnote": 7,
+      "Citation": 5,
+      "Table": 5,
+      "TableRow": 33,
+      "TableCell": 194,
+      "Sidenote": 16,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Section": 2,
+      "ListItem": 7,
+      "Equation": 11,
+      "Formula": 72,
+      "Paragraph": 76,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 11,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 9 unmapped private-use character(s) remain (U+F8F1×1, U+F8F2×1, U+F8F3×1, U+F8F4×6) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 40,
-    "bibliography_with_year": 39,
-    "bibliography_numeric_citations": 69,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 69,
-    "tiddlers_path": "Cat2Type.tiddlers.json",
-    "tiddlers_count": 123,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Cat2Type: Wikipedia Category Embeddings for Entity Typing in Knowledge Graphs",
@@ -155,7 +157,38 @@
         "page": 8,
         "url": "https://downloads.dbpedia.org/repo/dbpedia/mappings/instance-types/2021.06.01/"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "87d91e7b-f93b-4fb1-974d-268864ac2633",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Cat2Type.lines.json",
+        "bytes": 1189150
+      },
+      {
+        "format": "md",
+        "path": "Cat2Type.md",
+        "bytes": 51567
+      },
+      {
+        "format": "tex.zip",
+        "path": "Cat2Type.tex.zip",
+        "bytes": 148031
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 40,
+    "bibliography_with_year": 39,
+    "bibliography_numeric_citations": 64,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 64,
+    "tiddlers_path": "Cat2Type.tiddlers.json",
+    "tiddlers_count": 267,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Cat2Type: Wikipedia Category Embeddings for Entity Typing in Knowledge Graphs",
@@ -1155,18 +1188,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4010.0,
       "detail": "2 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:01:22Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13549.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:01:23Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 319.0,
+      "detail": "440 objects, 11 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:01:23Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "40 entries, 64+0 cites detected, 64 linked"
+    },
+    {
+      "ts": "2026-08-22T15:01:23Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.1,
+      "detail": "267 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Cat2Type/Cat2Type.lines.json": "sha256:7be80a193a6195ebdb046bc1784abaed6d51ea9e0cc2429723801a60fccefd54"
+        "/home/wkolbe/pdfdrill-library/Cat2Type/Cat2Type.lines.json": "sha256:862967107a1824f5004f82347c8511f75d99b1563759794f8240e7f06858a8ad"
       },
       "params_hash": "sha256:5caa725ca7efe21264b7eead5bb8b6ce79257a3cfda004d280e202621a5ec3df",
       "algo": "sha256",
-      "ts": "2026-08-05T06:49:24Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:01:23Z",
+      "provenance": "mathpix"
     }
   }
 }

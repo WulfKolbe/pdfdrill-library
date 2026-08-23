@@ -5,7 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -13,7 +12,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 20,
@@ -67,23 +68,27 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 20,
-      "ListItem": 20,
-      "Formula": 1,
-      "Paragraph": 20,
+      "Table": 7,
+      "TableRow": 72,
+      "TableCell": 283,
+      "Sidenote": 20,
+      "Toc": 1,
+      "Diagram": 18,
+      "Section": 2,
+      "ListItem": 39,
+      "Formula": 8,
+      "Paragraph": 103,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Bruderus_Regelgeraet_ERC_Montageanweisung-2 (1).tiddlers.json",
-    "tiddlers_count": 78,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Untitled Document",
@@ -163,7 +168,32 @@
         "url": "http://www.heiztechnik.buderus.de",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "54c41142-ddd4-43d7-bccc-330bcaaa07ab",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Bruderus_Regelgeraet_ERC_Montageanweisung-2 (1).lines.json",
+        "bytes": 1130685
+      },
+      {
+        "format": "md",
+        "path": "Bruderus_Regelgeraet_ERC_Montageanweisung-2 (1).md",
+        "bytes": 23783
+      },
+      {
+        "format": "tex.zip",
+        "path": "Bruderus_Regelgeraet_ERC_Montageanweisung-2 (1).tex.zip",
+        "bytes": 735009
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Bruderus_Regelgeraet_ERC_Montageanweisung-2 (1).tiddlers.json",
+    "tiddlers_count": 235,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Untitled Document",
@@ -488,18 +518,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4013.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:12:26Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9791.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:12:26Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 247.3,
+      "detail": "574 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:12:27Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.7,
+      "detail": "235 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Bruderus_Regelgeraet_ERC_Montageanweisung-2 (1)/Bruderus_Regelgeraet_ERC_Montageanweisung-2 (1).lines.json": "sha256:0fe3ec42705b2507e54fb2284405603ff606c7740edaee13d20c35a6f19b6b69"
+        "/home/wkolbe/pdfdrill-library/Bruderus_Regelgeraet_ERC_Montageanweisung-2 (1)/Bruderus_Regelgeraet_ERC_Montageanweisung-2 (1).lines.json": "sha256:00ceec0fcab34f2421d44484fe9ab1ae742587849a936f7078422c65baeedcf9"
       },
       "params_hash": "sha256:487d241aa11b63cbd99285c06e67d02f04c5d375a8c8ff4d6e10c909df4de0ff",
       "algo": "sha256",
-      "ts": "2026-08-05T06:47:03Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:12:26Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -5,8 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +12,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -81,17 +82,20 @@
     "bibkey": "2510.12269v3",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 117,
-      "Abstract": 1,
-      "LtxCommand": 1,
-      "Section": 16,
-      "Formula": 190,
-      "Equation": 45,
+      "Page": 17,
+      "Citation": 14,
       "Table": 3,
-      "Citation": 20
+      "TableRow": 26,
+      "TableCell": 52,
+      "Abstract": 1,
+      "ListItem": 19,
+      "Equation": 45,
+      "Formula": 145,
+      "Paragraph": 78,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 45,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 17,
       "placed": 88,
@@ -101,14 +105,6 @@
       "numbered": 16,
       "roots": 1
     },
-    "bibliography_entries": 18,
-    "bibliography_with_year": 18,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 20,
-    "tiddlers_path": "2510.12269v3.tiddlers.json",
-    "tiddlers_count": 426,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Progress in AI is hindered by the lack of a programming language with all the requisite features. Libraries like PyTorch and TensorFlow provide automatic differentiation and efficient GPU implementation, but are additions to Python, which was never intended for AI. Their lack of support for automated reasoning and knowledge acquisition has led to a long and costly series of hacky attempts to tack them on. On the other hand, AI languages like LISP and Prolog lack scalability and support for learning. This paper proposes tensor logic, a language that solves these problems by unifying neural and symbolic AI at a fundamental level. The sole construct in tensor logic is the tensor equation, based on the observation that logical rules and Einstein summation are essentially the same operation, and all else can be reduced to them. I show how to elegantly implement key forms of neural, symbolic and statistical AI in tensor logic, including transformers, formal reasoning, kernel machines and graphical models. Most importantly, tensor logic makes new directions possible, such as sound reasoning in embedding space. This combines the scalability and learnability of neural networks with the reliability and transparency of symbolic reasoning, and is potentially a basis for the wider adoption of AI.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -123,7 +119,68 @@
         "page": 1,
         "url": "https://arxiv.org/abs/2510.12269v3"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Tensor Logic: The Language of AI",
+      "Author": "Pedro Domingos",
+      "Creator": "arXiv GenPDF (tex2pdf:e76afa9)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "17",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "306091 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 17,
+    "image_count": 0,
+    "mathpix_pdf_id": "613389cb-0deb-49db-9309-3f370169a4e8",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2510.12269v3.lines.json",
+        "bytes": 794847
+      },
+      {
+        "format": "md",
+        "path": "2510.12269v3.md",
+        "bytes": 57527
+      },
+      {
+        "format": "tex.zip",
+        "path": "2510.12269v3.tex.zip",
+        "bytes": 59685
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 18,
+    "bibliography_with_year": 18,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 18,
+    "bibliography_cites": 10,
+    "tiddlers_path": "2510.12269v3.tiddlers.json",
+    "tiddlers_count": 361,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Tensor Logic: The Language of AI",
@@ -958,18 +1015,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3602.4,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:26:30Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9814.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:26:30Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 326.2,
+      "detail": "401 objects, 45 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:26:31Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "18 entries, 0+18 cites detected, 10 linked"
+    },
+    {
+      "ts": "2026-08-22T17:26:31Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.0,
+      "detail": "361 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2510.12269v3/texsrc/main.tex": "sha256:41fbf9feb5e01ab118b6ac47a29876e2db2d2ddaf9b053198ba6299c5db25ae3"
+        "/home/wkolbe/pdfdrill-library/2510.12269v3/2510.12269v3.lines.json": "sha256:6171f49b7a48f4c57c40c96dd67d24a99bbc6fde5bd0ea620a80273ac6902ac5"
       },
       "params_hash": "sha256:bb7bda5821a06b7659a1da973eb7f009e2e32f5b8ef74a374d1b391307290adc",
       "algo": "sha256",
-      "ts": "2026-08-03T21:41:05Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:26:30Z",
+      "provenance": "mathpix"
     }
   }
 }

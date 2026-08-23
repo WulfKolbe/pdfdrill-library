@@ -3,16 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2005.05886",
@@ -20,25 +21,23 @@
     "bibkey": "2005.05886",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 185,
-      "Formula": 289,
+      "Page": 15,
+      "Footnote": 11,
+      "Citation": 24,
+      "Table": 1,
+      "TableRow": 7,
+      "TableCell": 34,
+      "Sidenote": 17,
       "Abstract": 1,
-      "Section": 13,
-      "Equation": 39,
-      "LtxCommand": 4,
-      "Table": 2,
-      "Theorem": 25,
       "Diagram": 2,
-      "Proof": 10,
-      "Citation": 66
+      "ListItem": 16,
+      "Equation": 37,
+      "Formula": 571,
+      "Paragraph": 101,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 24,
-    "bibliography_with_year": 24,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 1,
+    "model_equations_with_cdn": 37,
+    "model_source": "mathpix",
     "pages": 15,
     "bytes": 281268,
     "page_size": "612 x 792 pts (letter)",
@@ -114,9 +113,6 @@
     ],
     "math_fonts": [],
     "has_math_fonts": false,
-    "tiddlers_path": "2005.05886.tiddlers.json",
-    "tiddlers_count": 627,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Counting answers to a query is an operation supported by virtually all database management systems. In this paper we focus on counting answers over a Knowledge Base (KB), which may be viewed as a database enriched with background knowledge about the domain under consideration. In particular, we place our work in the context of Ontology-Mediated Query Answering/Ontology-based Data Access (OMQA/OBDA), where the language used for the ontology is a member of the DL-Lite family and the data is a (usually virtual) set of assertions. We study the data complexity of query answering, for different members of the DL-Lite family that include number restrictions, and for variants of conjunctive queries with counting that differ with respect to their shape (connected, branching, rooted). We improve upon existing results by providing a PTIME and coNP lower bounds, and upper bounds in PTIME and LOGSPACE. For the latter case, we define a novel query rewriting technique into first-order logic with counting.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -127,7 +123,72 @@
       "Davide Lanti",
       "Simon Razniewski"
     ],
-    "arxiv_primary_category": "cs.DB"
+    "arxiv_primary_category": "cs.DB",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Jul 20 04:27:06 2020 CEST",
+      "ModDate": "Mon Jul 20 04:27:06 2020 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "281268 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 15,
+    "image_count": 13,
+    "mathpix_pdf_id": "dd251be7-6aa2-4155-b40e-c491341a8547",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2005.05886.lines.json",
+        "bytes": 1406027
+      },
+      {
+        "format": "md",
+        "path": "2005.05886.md",
+        "bytes": 95450
+      },
+      {
+        "format": "tex.zip",
+        "path": "2005.05886.tex.zip",
+        "bytes": 120468
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 22,
+    "bibliography_with_year": 22,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "2005.05886.tiddlers.json",
+    "tiddlers_count": 826,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1104,16 +1165,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 9609.3,
       "detail": "26 images, 13 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:53:47Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10083.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:53:48Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 807.1,
+      "detail": "838 objects, 37 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:53:49Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "22 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T16:53:49Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 29.5,
+      "detail": "826 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2005.05886/2005.05886.lines.json": "sha256:4ab1f10ffd146a2e923716fe642e5b0f32690e75bf0599fbb2bdc78775c620b5"
+      },
       "params_hash": "sha256:0d7232c6b34ba83573c2a88677b8a0d5e772737d977b251c3622325a895271fe",
       "algo": "sha256",
-      "ts": "2026-08-03T20:32:28Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:53:48Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "OCR_BUILT",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -85,28 +86,75 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 13,
-      "Citation": 11,
-      "Table": 9,
-      "Equation": 2,
-      "Paragraph": 167,
+      "Footnote": 2,
+      "Citation": 9,
+      "Abstract": 1,
+      "Diagram": 5,
+      "Equation": 42,
+      "Formula": 82,
+      "Paragraph": 58,
       "Document": 1
     },
-    "model_equations_with_cdn": 2,
-    "model_source": "tesseract",
+    "model_equations_with_cdn": 42,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "tesseract"
+      "source": "mathpix"
     },
-    "bibliography_entries": 22,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Producer": "Acrobat Distiller Daemon 2.1 for SunOS/Solaris (SPARC)",
+      "CreationDate": "Sat Sep 19 00:03:56 1998 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "13",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "185289 bytes",
+      "Optimized": "no",
+      "PDF version": "1.1"
+    },
+    "page_count_text": 13,
+    "image_count": 0,
+    "mathpix_pdf_id": "429402df-7e42-49b4-9827-a9550826f879",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "th-6236-91 (1).lines.json",
+        "bytes": 406399
+      },
+      {
+        "format": "md",
+        "path": "th-6236-91 (1).md",
+        "bytes": 28662
+      },
+      {
+        "format": "tex.zip",
+        "path": "th-6236-91 (1).tex.zip",
+        "bytes": 171205
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 21,
     "bibliography_with_year": 21,
     "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 5,
     "bibliography_cites": 1,
     "tiddlers_path": "th-6236-91 (1).tiddlers.json",
-    "tiddlers_count": 245,
+    "tiddlers_count": 254,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -428,18 +476,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.3,
       "detail": "245 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:36:30Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8734.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:36:30Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 177.3,
+      "detail": "213 objects, 42 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:36:30Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "21 entries, 0+5 cites detected, 1 linked"
+    },
+    {
+      "ts": "2026-08-22T16:36:31Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.8,
+      "detail": "254 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/th-6236-91 (1)/th-6236-91 (1).lines.json": "sha256:51cfce83f5ad9625293685cfded164f6626ce38cb81bee921e7e0e3570f338e6"
+        "/home/wkolbe/pdfdrill-library/th-6236-91 (1)/th-6236-91 (1).lines.json": "sha256:093711843dd5d1c87d47706ad8a70888bb10c27fecaa16b42100772f9f5fdc81"
       },
       "params_hash": "sha256:ac31f476a12d15370479ca5147764bef1ed2c418cddbf9d6e2803bfb2d4cf30f",
       "algo": "sha256",
-      "ts": "2026-08-06T02:08:58Z",
-      "provenance": "tesseract"
+      "ts": "2026-08-22T16:36:30Z",
+      "provenance": "mathpix"
     }
   }
 }

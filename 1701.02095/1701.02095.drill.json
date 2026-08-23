@@ -5,15 +5,15 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 15,
@@ -53,20 +53,24 @@
     "bibkey": "1701.02095",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 8,
+      "Page": 15,
+      "Table": 11,
+      "TableRow": 143,
+      "TableCell": 534,
       "Abstract": 1,
-      "Section": 13,
-      "Formula": 142,
-      "Equation": 12,
-      "Citation": 87
+      "ListItem": 16,
+      "Equation": 1,
+      "Formula": 507,
+      "Paragraph": 52,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "1701.02095.tgz",
     "latex_macros": 18,
@@ -76,9 +80,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "1701.02095.tgz",
     "merge_paragraphs_changed": 9,
-    "tiddlers_path": "1701.02095.tiddlers.json",
-    "tiddlers_count": 276,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "XVZYUU+CMBX10",
       "Times-Roman",
@@ -118,11 +119,6 @@
       "numbered": 13,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
     "abstract": "A systematic study of maximal subgroups of the sporadic simple groups began in the 1960s. The work is now almost complete, only a few cases in the Monster remaining outstanding. We give a survey of results obtained, and methods used, over the past 50 years, for the classification of maximal subgroups of sporadic simple groups, and their automorphism groups.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -130,7 +126,62 @@
     "arxiv_authors": [
       "Robert A. Wilson"
     ],
-    "arxiv_primary_category": "math.GR"
+    "arxiv_primary_category": "math.GR",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.08",
+      "CreationDate": "Fri Jan 20 07:08:15 2017 CET",
+      "ModDate": "Fri Jan 20 07:08:15 2017 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "195664 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 15,
+    "image_count": 102,
+    "mathpix_pdf_id": "8a0369be-96cc-4fd1-b3f4-bce91754a0dd",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1701.02095.lines.json",
+        "bytes": 1440519
+      },
+      {
+        "format": "md",
+        "path": "1701.02095.md",
+        "bytes": 54796
+      },
+      {
+        "format": "tex.zip",
+        "path": "1701.02095.tex.zip",
+        "bytes": 60337
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1701.02095.tiddlers.json",
+    "tiddlers_count": 621,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -4682,16 +4733,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3376.4,
       "detail": "204 images, 102 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:51:55Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9819.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:51:56Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 496.2,
+      "detail": "1282 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:51:56Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.6,
+      "detail": "621 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1701.02095/1701.02095.lines.json": "sha256:90788e67fa39cc3b27ad80e752434b79f850c00d0c4bb10c8434ca187ca5884e"
+      },
       "params_hash": "sha256:d6c8685b90c89757712ccbb571ad25c016dee168a8dd5157a71762de9cfc4b65",
       "algo": "sha256",
-      "ts": "2026-08-03T19:37:39Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:51:56Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

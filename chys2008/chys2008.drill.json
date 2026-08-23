@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -81,22 +82,80 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 13,
-      "ListItem": 11,
-      "Equation": 20,
-      "Paragraph": 33,
-      "Document": 1
+      "Table": 2,
+      "TableRow": 14,
+      "TableCell": 36,
+      "Sidenote": 26,
+      "Abstract": 1,
+      "Diagram": 12,
+      "Section": 4,
+      "ListItem": 4,
+      "Equation": 68,
+      "Formula": 232,
+      "Paragraph": 137,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 68,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "XPP",
+      "Producer": "StampPDF Batch 4.1.1 Solaris SPDF_1116 Jun  7 2006",
+      "CreationDate": "Wed Mar 12 13:36:37 2008 CET",
+      "ModDate": "Fri Mar 21 10:41:08 2008 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "13",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "801584 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 13,
+    "image_count": 12,
+    "mathpix_pdf_id": "89988c54-003a-4017-a2f7-bcb1d6630d56",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "chys2008.lines.json",
+        "bytes": 1406311
+      },
+      {
+        "format": "md",
+        "path": "chys2008.md",
+        "bytes": 72710
+      },
+      {
+        "format": "tex.zip",
+        "path": "chys2008.tex.zip",
+        "bytes": 528590
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "chys2008.tiddlers.json",
-    "tiddlers_count": 94,
+    "tiddlers_count": 518,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -458,18 +517,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.4,
       "detail": "94 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:31:38Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13052.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:31:39Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 463.5,
+      "detail": "551 objects, 68 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:31:39Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.7,
+      "detail": "518 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/chys2008/chys2008.lines.json": "sha256:a64c68efa61e24d4c466cb7f5f5f024aa63e43c337bff6361ea3f36b550fb926"
+        "/home/wkolbe/pdfdrill-library/chys2008/chys2008.lines.json": "sha256:4975a2d4cf69eb974265364e95d1e9ce68c7c9aabee41da387dfd258a0a1a718"
       },
       "params_hash": "sha256:0f81d8cf4584f5a48a676358382e849cf97a6d53f92378c8bff018be61e04a9f",
       "algo": "sha256",
-      "ts": "2026-08-06T01:09:12Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:31:39Z",
+      "provenance": "mathpix"
     }
   }
 }

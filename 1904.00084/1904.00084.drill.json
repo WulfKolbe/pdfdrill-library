@@ -5,15 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 25,
@@ -109,18 +109,18 @@
     "bibkey": "1904.00084",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 79,
+      "Page": 25,
       "Abstract": 1,
-      "Section": 26,
-      "Formula": 25,
-      "Theorem": 51,
-      "Equation": 129,
-      "Proof": 27,
-      "Diagram": 5,
-      "Citation": 34
+      "Diagram": 6,
+      "ListItem": 15,
+      "Equation": 130,
+      "Formula": 299,
+      "Paragraph": 216,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 130,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 25,
       "placed": 63,
@@ -130,14 +130,6 @@
       "numbered": 26,
       "roots": 1
     },
-    "bibliography_entries": 22,
-    "bibliography_with_year": 22,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 34,
-    "tiddlers_path": "1904.00084.tiddlers.json",
-    "tiddlers_count": 408,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Modern advances in general-purpose computer algebra systems offer solutions to a variety of problems, which in the past required substantial time investments by trained mathematicians. An excellent example of such development are the Clifford algebras. The main objective of the paper is to demonstrate an utterly algorithmic construction of a Clifford algebra matrix algebra representation of a non-degenerate signature (p, q). While this is not the most economical way of implementation, it offers a transparent mechanism of translation between a Clifford algebra and its faithful real-valued matrix representation and can be used for automated proof checking. This representation is used to derive an algorithm for the computation of an arbitrary multivector inverse as a proof certificate. The proposed algorithm is a mapping of the Faddeev--LeVerrier--Souriau algorithm for computation of the characteristic polynomial of matrices.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -191,7 +183,67 @@
         "page": 25,
         "url": "http://dx.doi.org/10.1007/s00006-014-0521-x"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Thu May 18 02:38:13 2023 CEST",
+      "ModDate": "Thu May 18 02:38:13 2023 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "25",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "310043 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 25,
+    "image_count": 98,
+    "mathpix_pdf_id": "d1679ad4-16d9-4f47-b9ef-2736b3819db1",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1904.00084.lines.json",
+        "bytes": 1000852
+      },
+      {
+        "format": "md",
+        "path": "1904.00084.md",
+        "bytes": 69768
+      },
+      {
+        "format": "tex.zip",
+        "path": "1904.00084.tex.zip",
+        "bytes": 120351
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1904.00084.tiddlers.json",
+    "tiddlers_count": 710,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -5623,16 +5675,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7820.8,
       "detail": "196 images, 97 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:11:49Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10176.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:11:50Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 712.0,
+      "detail": "694 objects, 130 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:11:50Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 18.3,
+      "detail": "710 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1904.00084/1904.00084.lines.json": "sha256:86de9efad339fc0273001dbe9aea9a502ac7b6f2ded1e709812b4016a278529f"
+      },
       "params_hash": "sha256:2d3d49b453e68c42bd53440a8970a986a3b717e823f9cd14fa103dd80be45620",
       "algo": "sha256",
-      "ts": "2026-08-03T19:46:04Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T19:11:50Z",
+      "provenance": "mathpix"
     }
   }
 }

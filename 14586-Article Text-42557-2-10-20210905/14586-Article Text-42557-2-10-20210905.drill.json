@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 21,
@@ -73,23 +74,26 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 21,
-      "ListItem": 46,
-      "Equation": 64,
-      "Paragraph": 79,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 8,
+      "Section": 6,
+      "Picture": 1,
+      "ListItem": 49,
+      "Equation": 84,
+      "Formula": 25,
+      "Paragraph": 147,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 84,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "14586-Article Text-42557-2-10-20210905.tiddlers.json",
-    "tiddlers_count": 227,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Many complex formula derivation steps found within material science\nand engineering programmes are essential skill-developing activities that\nenhance students’ learning. Most students lack the required mathematical\nknowledge to fully comprehend some of those derivation steps. This work\ninvolves the development of a framework for clarifying some of the original\nderivations by adding further mathematical steps that support students’\nconstructive and cognitive learning. Modifications were made on the\ntheoretical tensile strength derivations, the Maxwell’s and the Voigt-Kelvin’s\nmodels. The aim is to facilitate students’ learning and help them acquire\ntransferable skills when solving other material science and engineering\nproblems. Students benefited from the activities in two folds; firstly, they\nunderstood the mathematical reasons behind each derivation step and\nsecondly, their study periods were reduced. These activities provide a platform\nfor widening STEM activities at higher education institutions. The ongoing\nwork will look at other important formula derivation steps within material\nscience and engineering.",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
@@ -183,7 +187,59 @@
         "page": 21,
         "url": "https://doi.org/10.1201/9781439894156"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "User",
+      "Creator": "Acrobat PDFMaker 15 for Word",
+      "Producer": "Adobe PDF Library 15.0",
+      "CreationDate": "Sun Sep  5 18:30:15 2021 CEST",
+      "ModDate": "Sun Sep  5 18:30:20 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "yes",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "21",
+      "Encrypted": "no",
+      "Page size": "516 x 728.52 pts",
+      "Page rot": "0",
+      "File size": "371634 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 21,
+    "image_count": 18,
+    "mathpix_pdf_id": "6ddaf67c-7980-4498-a1c3-e93bed386783",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "14586-Article Text-42557-2-10-20210905.lines.json",
+        "bytes": 882921
+      },
+      {
+        "format": "md",
+        "path": "14586-Article Text-42557-2-10-20210905.md",
+        "bytes": 41109
+      },
+      {
+        "format": "tex.zip",
+        "path": "14586-Article Text-42557-2-10-20210905.tex.zip",
+        "bytes": 171582
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "14586-Article Text-42557-2-10-20210905.tiddlers.json",
+    "tiddlers_count": 362,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -722,18 +778,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.9,
       "detail": "227 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T18:16:40Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9630.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:16:41Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 316.5,
+      "detail": "345 objects, 84 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:16:41Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.0,
+      "detail": "362 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/14586-Article Text-42557-2-10-20210905/14586-Article Text-42557-2-10-20210905.lines.json": "sha256:3b937dd148357beb792a9c4264c42dafe02eebe0ebb57420826002529de00c55"
+        "/home/wkolbe/pdfdrill-library/14586-Article Text-42557-2-10-20210905/14586-Article Text-42557-2-10-20210905.lines.json": "sha256:7c33b53d887f5763326593de9c17514283b4c75eebe544f7ff63dccc78c88b9d"
       },
       "params_hash": "sha256:26f816b099ac82d231cd5cf09b63a5e8629c3911b27738bcf8c06a3e7e168fe8",
       "algo": "sha256",
-      "ts": "2026-08-04T22:21:37Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:16:41Z",
+      "provenance": "mathpix"
     }
   }
 }

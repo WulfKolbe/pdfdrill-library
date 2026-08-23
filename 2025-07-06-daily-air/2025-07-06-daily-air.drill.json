@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -83,26 +84,73 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 6,
-      "ListItem": 37,
-      "Equation": 30,
-      "Paragraph": 24,
+      "Section": 2,
+      "ListItem": 10,
+      "Equation": 23,
+      "Formula": 37,
+      "Paragraph": 41,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 23,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "2025-07-06-daily-air.tiddlers.json",
-    "tiddlers_count": 114,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.28",
+      "CreationDate": "Sun Jul  6 12:58:40 2025 CEST",
+      "ModDate": "Sun Jul  6 12:58:40 2025 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "213059 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 6,
+    "image_count": 0,
+    "mathpix_pdf_id": "0935ebb6-4f51-400f-a87e-5e2379a22ca5",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2025-07-06-daily-air.lines.json",
+        "bytes": 154256
+      },
+      {
+        "format": "md",
+        "path": "2025-07-06-daily-air.md",
+        "bytes": 9153
+      },
+      {
+        "format": "tex.zip",
+        "path": "2025-07-06-daily-air.tex.zip",
+        "bytes": 10579
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "2025-07-06-daily-air.tiddlers.json",
+    "tiddlers_count": 137,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -533,18 +581,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1398.7,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:39:35Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 4798.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:39:35Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 75.5,
+      "detail": "120 objects, 23 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:39:35Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.6,
+      "detail": "137 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2025-07-06-daily-air/2025-07-06-daily-air.lines.json": "sha256:fad1a96a36b78d4796e1464b84a4207ffc96aa933d99e889fdda5ac377737748"
+        "/home/wkolbe/pdfdrill-library/2025-07-06-daily-air/2025-07-06-daily-air.lines.json": "sha256:08066b6c9bc7095cf7d6a2fb5b43b179a1563d71a9e150d95871ef85e497666a"
       },
       "params_hash": "sha256:2604f4bc6f374ef0957b7f22f4fdb2d353811778588b06ca54531b00026304a6",
       "algo": "sha256",
-      "ts": "2026-08-03T20:45:23Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:39:35Z",
+      "provenance": "mathpix"
     }
   }
 }

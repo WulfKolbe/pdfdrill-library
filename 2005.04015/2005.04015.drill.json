@@ -5,15 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 24,
@@ -107,18 +107,20 @@
     "bibkey": "2005.04015",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 92,
-      "Abstract": 1,
-      "Section": 6,
-      "Formula": 216,
-      "Equation": 110,
-      "Theorem": 22,
-      "Proof": 16,
+      "Page": 24,
+      "Footnote": 18,
       "Table": 1,
-      "Citation": 73
+      "TableRow": 17,
+      "TableCell": 289,
+      "Abstract": 1,
+      "ListItem": 1,
+      "Equation": 112,
+      "Formula": 386,
+      "Paragraph": 159,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 112,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 24,
       "placed": 33,
@@ -128,14 +130,6 @@
       "numbered": 6,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "2005.04015.tiddlers.json",
-    "tiddlers_count": 535,
-    "tiddlers_svg_mode": "inline",
     "abstract": "In this paper, we solve the problem of computing the inverse in Clifford algebras of arbitrary dimension. We present basis-free formulas of different types (explicit and recursive) for the determinant, other characteristic polynomial coefficients, adjugate, and inverse in real Clifford algebras (or geometric algebras) over vector spaces of arbitrary dimension $n$. The formulas involve only the operations of multiplication, summation, and operations of conjugation without explicit use of matrix representation. We use methods of Clifford algebras (including the method of quaternion typification proposed by the author in previous papers and the method of operations of conjugation of special type presented in this paper) and generalizations of numerical methods of matrix theory (the Faddeev-LeVerrier algorithm based on the Cayley-Hamilton theorem; the method of calculating the characteristic polynomial coefficients using Bell polynomials) to the case of Clifford algebras in this paper. We present the construction of operations of conjugation of special type and study relations between these operations and the projection operations onto fixed subspaces of Clifford algebras. We use this construction in the analytical proof of formulas for the determinant, other characteristic polynomial coefficients, adjugate, and inverse in Clifford algebras. The basis-free formulas for the inverse give us basis-free solutions to linear algebraic equations, which are widely used in computer science, image and signal processing, physics, engineering, control theory, etc. The results of this paper can be used in symbolic computation.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -177,7 +171,67 @@
         "page": 23,
         "url": "http://clifford-multivector-toolbox.sourceforge.net/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "On computing the determinant, other characteristic polynomial coefficients, and inverse in Clifford algebras of arbitrary dimension",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "D. S. Shirokov;",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Wed Sep  7 03:25:48 2022 CEST",
+      "ModDate": "Wed Sep  7 03:25:48 2022 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "24",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "372095 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 24,
+    "image_count": 643,
+    "mathpix_pdf_id": "9e74546a-deec-4e7b-9610-61a6a300fcb0",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2005.04015.lines.json",
+        "bytes": 1382526
+      },
+      {
+        "format": "md",
+        "path": "2005.04015.md",
+        "bytes": 119729
+      },
+      {
+        "format": "tex.zip",
+        "path": "2005.04015.tex.zip",
+        "bytes": 124146
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2005.04015.tiddlers.json",
+    "tiddlers_count": 719,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "On computing the determinant, other characteristic polynomial coefficients, and inverse in Clifford algebras of arbitrary dimension",
@@ -23012,16 +23066,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 11913.3,
       "detail": "1286 images, 638 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:59:08Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13599.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:59:09Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 1227.5,
+      "detail": "1009 objects, 112 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:59:09Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 19.9,
+      "detail": "719 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2005.04015/2005.04015.lines.json": "sha256:58067b43c657136972234d61c728c10ad9a0e9b35c72cb6934b2ec5197d46a8c"
+      },
       "params_hash": "sha256:33954f9ada79c51fb8e5bc3e63fa9eab737453359364b17d29764095f8c483f5",
       "algo": "sha256",
-      "ts": "2026-08-03T20:32:24Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:59:09Z",
+      "provenance": "mathpix"
     }
   }
 }

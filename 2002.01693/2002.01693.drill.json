@@ -5,13 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 28,
@@ -105,15 +106,19 @@
     "bibkey": "2002.01693",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 22,
-      "Paragraph": 58,
-      "Formula": 165,
-      "Section": 9,
-      "Equation": 1,
-      "Citation": 46
+      "Page": 28,
+      "Footnote": 23,
+      "Citation": 14,
+      "Abstract": 1,
+      "Picture": 2,
+      "ListItem": 15,
+      "Equation": 28,
+      "Formula": 166,
+      "Paragraph": 65,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 28,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 28,
       "placed": 32,
@@ -123,14 +128,6 @@
       "numbered": 9,
       "roots": 1
     },
-    "bibliography_entries": 31,
-    "bibliography_with_year": 30,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 46,
-    "tiddlers_path": "2002.01693.tiddlers.json",
-    "tiddlers_count": 332,
-    "tiddlers_svg_mode": "inline",
     "abstract": "A hallmark of non-perturbative theories of quantum gravity is the absence of a fixed background geometry, and therefore the absence in a Planckian regime of any notion of length or scale that is defined a priori. This has potentially far-reaching consequences for the application of renormalization group methods a la Wilson, which rely on these notions in a crucial way. We review the status quo of attempts in the Causal Dynamical Triangulations (CDT) approach to quantum gravity to find an ultraviolet fixed point associated with the second-order phase transitions observed in the lattice theory. Measurements of the only invariant correlator currently accessible, that of the total spatial three-volume, has not produced any evidence of such a fixed point. A possible explanation for this result is our incomplete and perhaps naive understanding of what constitutes an appropriate notion of (quantum) length near the Planck scale.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -142,7 +139,68 @@
       "J. Jurkiewicz",
       "R. Loll"
     ],
-    "links": []
+    "links": [],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Thu Feb  6 02:24:42 2020 CET",
+      "ModDate": "Thu Feb  6 02:24:42 2020 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "28",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "399735 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 28,
+    "image_count": 0,
+    "mathpix_pdf_id": "7ccc5efb-a73f-4f36-92c8-cf2f751804b3",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2002.01693.lines.json",
+        "bytes": 1010683
+      },
+      {
+        "format": "md",
+        "path": "2002.01693.md",
+        "bytes": 69744
+      },
+      {
+        "format": "tex.zip",
+        "path": "2002.01693.tex.zip",
+        "bytes": 204603
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 30,
+    "bibliography_with_year": 29,
+    "bibliography_numeric_citations": 44,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 42,
+    "tiddlers_path": "2002.01693.tiddlers.json",
+    "tiddlers_count": 378,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -794,16 +852,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5905.3,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:54:55Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9727.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:54:56Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 376.4,
+      "detail": "343 objects, 28 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:54:56Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "30 entries, 44+0 cites detected, 42 linked"
+    },
+    {
+      "ts": "2026-08-22T19:54:57Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.8,
+      "detail": "378 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2002.01693/2002.01693.lines.json": "sha256:05975f2d3120fcc2e84f6b2165b0503bf3234d80e788002fca55eced300a5218"
+      },
       "params_hash": "sha256:db7cebb8f41dae40dfe147ae95439d7ea46c6512dc78b51a959b933c661125de",
       "algo": "sha256",
-      "ts": "2026-08-03T19:51:35Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T19:54:56Z",
+      "provenance": "mathpix"
     }
   }
 }

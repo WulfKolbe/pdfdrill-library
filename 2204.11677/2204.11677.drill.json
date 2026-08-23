@@ -3,18 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2204.11677",
@@ -22,21 +22,21 @@
     "bibkey": "2204.11677",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 241,
-      "Formula": 70,
-      "LtxCommand": 12,
-      "Abstract": 1,
-      "Section": 19,
+      "Page": 12,
+      "Footnote": 5,
       "Table": 12,
-      "Citation": 143
+      "TableRow": 97,
+      "TableCell": 503,
+      "Sidenote": 24,
+      "Abstract": 1,
+      "Diagram": 3,
+      "ListItem": 13,
+      "Formula": 39,
+      "Paragraph": 162,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 59,
-    "bibliography_with_year": 59,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 143,
+    "model_source": "mathpix",
     "pages": 12,
     "bytes": 885427,
     "page_size": "612 x 792 pts (letter)",
@@ -114,9 +114,6 @@
       "AAAAAH+CambriaMath"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2204.11677.tiddlers.json",
-    "tiddlers_count": 444,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Conversational question answering (ConvQA) tackles sequential information needs where contexts in follow-up questions are left implicit. Current ConvQA systems operate over homogeneous sources of information: either a knowledge base (KB), or a text corpus, or a collection of tables. This paper addresses the novel issue of jointly tapping into all of these together, this way boosting answer coverage and confidence. We present CONVINSE, an end-to-end pipeline for ConvQA over heterogeneous sources, operating in three stages: i) learning an explicit structured representation of an incoming question and its conversational context, ii) harnessing this frame-like representation to uniformly capture relevant evidences from KB, text, and tables, and iii) running a fusion-in-decoder model to generate the answer. We construct and release the first benchmark, ConvMix, for ConvQA over heterogeneous sources, comprising 3000 real-user conversations with 16000 questions, along with entity annotations, completed question utterances, and question paraphrases. Experiments demonstrate the viability and advantages of our method, compared to state-of-the-art baselines.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -161,7 +158,65 @@
         "page": 7,
         "url": "https://pytorch.org"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Conversational Question Answering on Heterogeneous Sources",
+      "Subject": "-  Information systems  ->  Question answering.",
+      "Creator": "LaTeX with acmart 2020/11/15 v1.75 Typesetting articles for the Association for Computing Machinery and hyperref 2023-04-22 v7.00x Hypertext links for LaTeX",
+      "Producer": "pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+      "CreationDate": "Mon Jul  3 03:18:24 2023 CEST",
+      "ModDate": "Mon Jul  3 03:18:24 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "885427 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 12,
+    "image_count": 2,
+    "mathpix_pdf_id": "775d52d7-7e0d-459d-b823-5fc8f4399ba9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2204.11677.lines.json",
+        "bytes": 2126601
+      },
+      {
+        "format": "md",
+        "path": "2204.11677.md",
+        "bytes": 74684
+      },
+      {
+        "format": "tex.zip",
+        "path": "2204.11677.tex.zip",
+        "bytes": 241868
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2204.11677.tiddlers.json",
+    "tiddlers_count": 288,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Conversational Question Answering on Heterogeneous Sources",
@@ -1557,16 +1612,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7580.7,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:14:19Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 16856.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:14:20Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 431.5,
+      "detail": "872 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:14:20Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.3,
+      "detail": "288 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2204.11677/2204.11677.lines.json": "sha256:0fe8b37b6ac215614e926c152a1e6f05ed93a99e69e774b71242e0f4ee7fa153"
+      },
       "params_hash": "sha256:337b47a62a76549821f5f553479b719d3b5f7bc198eeaebb42fa1b5304f0d77f",
       "algo": "sha256",
-      "ts": "2026-08-03T20:57:52Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:14:20Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -68,22 +69,69 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 3,
-      "ListItem": 10,
-      "Equation": 19,
-      "Paragraph": 16,
+      "Section": 2,
+      "ListItem": 7,
+      "Equation": 15,
+      "Formula": 35,
+      "Paragraph": 23,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 15,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.18",
+      "CreationDate": "Mon Dec 16 17:26:34 2019 CET",
+      "ModDate": "Mon Dec 16 17:26:34 2019 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "3",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "151063 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 3,
+    "image_count": 0,
+    "mathpix_pdf_id": "a662bd19-b3ae-4e7f-b483-041b3bc8a125",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "qft2_Exercise2-9.lines.json",
+        "bytes": 113682
+      },
+      {
+        "format": "md",
+        "path": "qft2_Exercise2-9.md",
+        "bytes": 7791
+      },
+      {
+        "format": "tex.zip",
+        "path": "qft2_Exercise2-9.tex.zip",
+        "bytes": 8698
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "qft2_Exercise2-9.tiddlers.json",
-    "tiddlers_count": 65,
+    "tiddlers_count": 103,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -333,18 +381,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.0,
       "detail": "65 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:25:57Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9131.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:25:57Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 93.0,
+      "detail": "86 objects, 15 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:25:57Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.1,
+      "detail": "103 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/qft2_Exercise2-9/qft2_Exercise2-9.lines.json": "sha256:1529e36900447dc4bc31a5b7ac51108bec41fa0945a5f2becab317d7fc8100eb"
+        "/home/wkolbe/pdfdrill-library/qft2_Exercise2-9/qft2_Exercise2-9.lines.json": "sha256:e71c2076afe803dabe413074df4a2d302bd62ba31624f9459359fb634abf3c8d"
       },
       "params_hash": "sha256:a4e7c15e8351300a467a8e96c7bb3cbb40628b4cf526061083bc42469f93f491",
       "algo": "sha256",
-      "ts": "2026-08-06T01:33:06Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:25:57Z",
+      "provenance": "mathpix"
     }
   }
 }

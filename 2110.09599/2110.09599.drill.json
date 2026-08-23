@@ -3,17 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2110.09599",
@@ -21,25 +21,22 @@
     "bibkey": "2110.09599",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 96,
-      "LtxCommand": 7,
-      "Abstract": 1,
-      "Section": 33,
+      "Page": 17,
+      "Footnote": 5,
       "Table": 5,
-      "Formula": 149,
-      "Diagram": 13,
+      "TableRow": 34,
+      "TableCell": 134,
+      "Sidenote": 29,
+      "Abstract": 1,
+      "Diagram": 6,
+      "ListItem": 9,
       "Equation": 12,
-      "Citation": 76,
-      "Algorithm": 2,
-      "AlgorithmStep": 43
+      "Formula": 168,
+      "Paragraph": 88,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 53,
-    "bibliography_with_year": 53,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 3,
+    "model_equations_with_cdn": 12,
+    "model_source": "mathpix",
     "pages": 17,
     "bytes": 533626,
     "page_size": "612 x 792 pts (letter)",
@@ -135,9 +132,6 @@
       "TITAFX+CMEX7"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2110.09599.tiddlers.json",
-    "tiddlers_count": 404,
-    "tiddlers_svg_mode": "inline",
     "abstract": "State-of-the-art deep learning methods achieve human-like performance on many tasks, but make errors nevertheless. Characterizing these errors in easily interpretable terms gives insight into whether a classifier is prone to making systematic errors, but also gives a way to act and improve the classifier. We propose to discover those feature-value combinations (i.e., patterns) that strongly correlate with correct resp. erroneous predictions to obtain a global and interpretable description for arbitrary classifiers. We show this is an instance of the more general label description problem, which we formulate in terms of the Minimum Description Length principle. To discover a good pattern set, we develop the efficient Premise algorithm. Through an extensive set of experiments we show it performs very well in practice on both synthetic and real-world data. Unlike existing solutions, it ably recovers ground truth patterns, even on highly imbalanced data over many features. Through two case studies on Visual Question Answering and Named Entity Recognition, we confirm that Premise gives clear and actionable insight into the systematic errors made by modern NLP classifiers.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -158,7 +152,67 @@
         "page": 15,
         "url": "https://github.com/yuchenlin/OntoNotes-5.0-NER-BIO"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "Proceedings of the International Conference on Machine Learning 2022",
+      "Keywords": "",
+      "Author": "Anonymous Submission",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Mon Jun 20 03:17:44 2022 CEST",
+      "ModDate": "Mon Jun 20 03:17:44 2022 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "17",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "533626 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 17,
+    "image_count": 0,
+    "mathpix_pdf_id": "3f4cb47b-f81a-4271-bc60-0979672cf1ff",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2110.09599.lines.json",
+        "bytes": 1739177
+      },
+      {
+        "format": "md",
+        "path": "2110.09599.md",
+        "bytes": 79561
+      },
+      {
+        "format": "tex.zip",
+        "path": "2110.09599.tex.zip",
+        "bytes": 376892
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2110.09599.tiddlers.json",
+    "tiddlers_count": 357,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1611,16 +1665,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7898.3,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:24:56Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9844.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:24:56Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 471.9,
+      "detail": "509 objects, 12 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:24:57Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.5,
+      "detail": "357 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2110.09599/2110.09599.lines.json": "sha256:b42ab00fc5cb738e03e5d7905519c991ba3f170c0c082fe94554b9ed80bb1e40"
+      },
       "params_hash": "sha256:03d8c78f82c58a6566304ee2bd561d941e6eeb1cc8868f31a3ea5934014bcdb2",
       "algo": "sha256",
-      "ts": "2026-08-03T20:56:05Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:24:56Z",
+      "provenance": "mathpix"
     }
   }
 }

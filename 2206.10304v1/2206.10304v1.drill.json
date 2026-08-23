@@ -5,13 +5,13 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -82,16 +82,23 @@
     "bibkey": "2206.10304v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 42,
+      "Page": 8,
+      "Footnote": 1,
+      "Table": 5,
+      "TableRow": 50,
+      "TableCell": 371,
+      "Sidenote": 11,
       "Abstract": 1,
-      "Section": 16,
-      "Formula": 13,
-      "Table": 7,
+      "Diagram": 2,
+      "Section": 2,
+      "ListItem": 3,
       "Equation": 1,
-      "Citation": 42
+      "Formula": 20,
+      "Paragraph": 38,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 8,
       "placed": 17,
@@ -101,14 +108,6 @@
       "numbered": 16,
       "roots": 1
     },
-    "bibliography_entries": 14,
-    "bibliography_with_year": 14,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 42,
-    "tiddlers_path": "2206.10304v1.tiddlers.json",
-    "tiddlers_count": 120,
-    "tiddlers_svg_mode": "inline",
     "abstract": "This paper investigates the Relation Extraction task in documents by benchmarking two different neural network models: a multi-modal language model (LayoutXLM) and a Graph Neural Network: Edge Convolution Network (ECN). For this benchmark, we use the XFUND dataset, released along with LayoutXLM. While both models reach similar results, they both exhibit very different characteristics. This raises the question on how to integrate various modalities in a neural network: by merging all modalities thanks to additional pretraining (LayoutXLM), or in a cascaded way (ECN). We conclude by discussing some methodological issues that must be considered for new datasets and task definition in the domain of Information Extraction with complex documents.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -118,7 +117,67 @@
       "Stéphane Clinchant",
       "Jean-Luc Meunier"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Wed Jun 22 03:33:02 2022 CEST",
+      "ModDate": "Wed Jun 22 03:33:02 2022 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "625444 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 8,
+    "image_count": 4,
+    "mathpix_pdf_id": "0719ab3f-48bc-4b99-89e9-68a8b2efb3f1",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2206.10304v1.lines.json",
+        "bytes": 1031537
+      },
+      {
+        "format": "md",
+        "path": "2206.10304v1.md",
+        "bytes": 26245
+      },
+      {
+        "format": "tex.zip",
+        "path": "2206.10304v1.tex.zip",
+        "bytes": 204465
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2206.10304v1.tiddlers.json",
+    "tiddlers_count": 110,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -596,16 +655,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2480.2,
       "detail": "3 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:59:10Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9862.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:59:10Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 251.7,
+      "detail": "514 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:59:11Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.1,
+      "detail": "110 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2206.10304v1/2206.10304v1.lines.json": "sha256:9980c534b532fbe2db5d8970828972860e2c058a78bb839585863ac31899ad85"
+      },
       "params_hash": "sha256:fc275f0b37a154682124a2674428c013a5fead782e568f81dd97b9fea11ba1e4",
       "algo": "sha256",
-      "ts": "2026-08-03T20:58:42Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:59:10Z",
+      "provenance": "mathpix"
     }
   }
 }

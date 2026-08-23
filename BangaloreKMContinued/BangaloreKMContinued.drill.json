@@ -6,12 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 20,
@@ -87,29 +88,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 20,
-      "Citation": 19,
-      "ListItem": 84,
-      "Equation": 4,
-      "Paragraph": 24,
+      "Citation": 2,
+      "Sidenote": 1,
+      "Abstract": 1,
+      "Section": 2,
+      "ListItem": 112,
+      "Equation": 3,
+      "Formula": 107,
+      "Paragraph": 132,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 82,
-    "bibliography_with_year": 78,
-    "bibliography_numeric_citations": 75,
-    "bibliography_authoryear_citations": 2,
-    "bibliography_cites": 75,
-    "tiddlers_path": "BangaloreKMContinued.tiddlers.json",
-    "tiddlers_count": 238,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "PlotSoft PDFill 5.0",
@@ -134,7 +131,38 @@
     "page_count_text": 20,
     "image_count": 0,
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "cff8288f-9ff8-49cf-8266-04a1ee870db6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "BangaloreKMContinued.lines.json",
+        "bytes": 997050
+      },
+      {
+        "format": "md",
+        "path": "BangaloreKMContinued.md",
+        "bytes": 60146
+      },
+      {
+        "format": "tex.zip",
+        "path": "BangaloreKMContinued.tex.zip",
+        "bytes": 63266
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 82,
+    "bibliography_with_year": 78,
+    "bibliography_numeric_citations": 76,
+    "bibliography_authoryear_citations": 2,
+    "bibliography_cites": 76,
+    "tiddlers_path": "BangaloreKMContinued.tiddlers.json",
+    "tiddlers_count": 481,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -565,18 +593,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3692.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:11:53Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9415.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:11:53Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 382.6,
+      "detail": "381 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:11:54Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "82 entries, 76+2 cites detected, 76 linked"
+    },
+    {
+      "ts": "2026-08-22T18:11:54Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 17.3,
+      "detail": "481 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/BangaloreKMContinued/BangaloreKMContinued.lines.json": "sha256:35c6c2ac44fe342d167235ce456b84700bf93cb32127fb54f6628962fdeac4cd"
+        "/home/wkolbe/pdfdrill-library/BangaloreKMContinued/BangaloreKMContinued.lines.json": "sha256:63032f32b093f9653274ce4d1a616ae96cd36cfd7ed799f44fa6983217c1acb0"
       },
       "params_hash": "sha256:16de3b51adf0ca82e6604c2887529606f1d00da86721fac150960d921723ebc0",
       "algo": "sha256",
-      "ts": "2026-08-05T06:15:08Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:11:53Z",
+      "provenance": "mathpix"
     }
   }
 }

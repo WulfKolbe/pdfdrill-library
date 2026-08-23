@@ -5,16 +5,16 @@
     "MODEL_BUILT",
     "LATEX_INGESTED",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
     "MD_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2605.21997v1",
@@ -22,20 +22,24 @@
     "bibkey": "2605.21997v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 41,
-      "Abstract": 1,
-      "Section": 9,
+      "Page": 11,
       "Table": 1,
+      "TableRow": 8,
+      "TableCell": 32,
+      "Abstract": 1,
+      "Diagram": 4,
+      "ListItem": 4,
       "Formula": 2,
-      "Citation": 7
+      "Paragraph": 35,
+      "Document": 1,
+      "Footnote": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "math": true,
+      "source": "mathpix"
     },
     "latex_source": "2605.21997v1.tgz",
     "latex_macros": 0,
@@ -45,11 +49,6 @@
     "latex_graphics": 1,
     "merge_latex_source": "2605.21997v1.tgz",
     "merge_paragraphs_changed": 11,
-    "bibliography_entries": 7,
-    "bibliography_with_year": 6,
-    "bibliography_numeric_citations": 7,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 7,
     "pages": 11,
     "bytes": 736700,
     "page_size": "612 x 792 pts (letter)",
@@ -117,9 +116,6 @@
       "numbered": 9,
       "roots": 1
     },
-    "tiddlers_path": "2605.21997v1.tiddlers.json",
-    "tiddlers_count": 89,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Most agent frameworks are built around the language model: a conversation loop comes first, then tools, then rules, and finally a logging layer bolted on for observability, with state persisted as retrievable &#34;memory.&#34; We describe ActiveGraph, a runtime that inverts this arrangement. The append-only event log is the source of truth; the working graph is a deterministic projection of that log; and behaviors--ordinary functions, classes, LLM-backed routines, or logic attached to typed edges--react to changes in the graph and emit new events. No component instructs another; coordination happens entirely through the shared graph. This single design decision yields three properties that retrieval-and-summarization memory systems do not provide: deterministic replay of any run from its log, cheap forking that branches a run at any event without re-executing the shared prefix, and end-to-end lineage from a high-level goal down to the individual model call that produced each artifact. We present the architecture, a determinism contract that makes replay sound, and a worked diligence example whose full causal structure is reconstructable from the log alone. We discuss--without claiming to demonstrate--why this substrate is unusually well suited to self-improving agents, and how it extends the BabyAGI lineage and prior graph-memory research.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -127,7 +123,58 @@
     "arxiv_authors": [
       "Yohei Nakajima"
     ],
-    "arxiv_primary_category": "cs.AI"
+    "arxiv_primary_category": "cs.AI",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems",
+      "Author": "Yohei Nakajima",
+      "Creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "736700 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 11,
+    "image_count": 0,
+    "mathpix_pdf_id": "ddd0cd75-3b3b-489a-83c2-21be493893b3",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2605.21997v1.lines.json",
+        "bytes": 536086
+      },
+      {
+        "format": "md",
+        "path": "2605.21997v1.md",
+        "bytes": 32675
+      },
+      {
+        "format": "tex.zip",
+        "path": "2605.21997v1.tex.zip",
+        "bytes": 158867
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2605.21997v1.tiddlers.json",
+    "tiddlers_count": 76,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems",
@@ -624,16 +671,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3692.8,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:02:07Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8869.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:02:07Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MD_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 98.4,
+      "detail": "100 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:02:07Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.1,
+      "detail": "76 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2605.21997v1/2605.21997v1.lines.json": "sha256:4637cafff9ddb15c648b5ce5aea877e2fc522fd210d422f6b8e2621fdce10248"
+      },
       "params_hash": "sha256:4bab8dc0811031b80ab8a5ab0a91ea9922f27202d79ddd71a008fb4a46ce4634",
       "algo": "sha256",
-      "ts": "2026-08-03T21:45:46Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:02:07Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

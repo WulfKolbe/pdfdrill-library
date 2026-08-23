@@ -6,13 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 22,
@@ -89,23 +90,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 22,
-      "ListItem": 72,
-      "Equation": 2,
-      "Paragraph": 24,
+      "Sidenote": 3,
+      "Diagram": 2,
+      "ListItem": 10,
+      "Equation": 10,
+      "Formula": 324,
+      "Paragraph": 75,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 10,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "IDG1+2handout.tiddlers.json",
-    "tiddlers_count": 137,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -141,7 +142,32 @@
         "url": "http://people.maths.ox.ac.uk/∼joyce/",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "8334e32e-311d-4cd2-930a-ca9397ebccb5",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "IDG1+2handout.lines.json",
+        "bytes": 915422
+      },
+      {
+        "format": "md",
+        "path": "IDG1+2handout.md",
+        "bytes": 38477
+      },
+      {
+        "format": "tex.zip",
+        "path": "IDG1+2handout.tex.zip",
+        "bytes": 100475
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "IDG1+2handout.tiddlers.json",
+    "tiddlers_count": 463,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -607,18 +633,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4351.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:42:19Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10723.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:42:20Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 326.4,
+      "detail": "447 objects, 10 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:42:20Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.9,
+      "detail": "463 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/IDG1+2handout/IDG1+2handout.lines.json": "sha256:715c71398da33c890c8f9e736ff8469f764121d652ecbf2e6fcc9bb88b8abdc3"
+        "/home/wkolbe/pdfdrill-library/IDG1+2handout/IDG1+2handout.lines.json": "sha256:ce72d86587fd80f7a0c1cf53175ebb720da31fe878aa390c6e6d0998981ff5eb"
       },
       "params_hash": "sha256:006dbd68e2bc5596d3a5361ced71ece4b62edde3824a968230ed294b35442621",
       "algo": "sha256",
-      "ts": "2026-08-05T21:16:36Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:42:20Z",
+      "provenance": "mathpix"
     }
   }
 }

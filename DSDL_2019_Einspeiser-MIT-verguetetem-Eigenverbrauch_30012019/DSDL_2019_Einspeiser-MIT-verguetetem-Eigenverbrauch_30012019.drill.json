@@ -5,11 +5,12 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -56,23 +57,22 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 4,
-      "ListItem": 3,
-      "Formula": 1,
-      "Paragraph": 4,
+      "Table": 13,
+      "TableRow": 55,
+      "TableCell": 185,
+      "Section": 2,
+      "Paragraph": 26,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": true,
-      "source": "pdfminer-chars"
+      "math": false,
+      "source": "mathpix"
     },
-    "tiddlers_path": "DSDL_2019_Einspeiser-MIT-verguetetem-Eigenverbrauch_30012019.tiddlers.json",
-    "tiddlers_count": 29,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Author": "Nadja Strebl",
@@ -99,7 +99,32 @@
     "image_count": 0,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "7561e0ce-f24d-4371-ba00-677fa0bd6e30",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "DSDL_2019_Einspeiser-MIT-verguetetem-Eigenverbrauch_30012019.lines.json",
+        "bytes": 429484
+      },
+      {
+        "format": "md",
+        "path": "DSDL_2019_Einspeiser-MIT-verguetetem-Eigenverbrauch_30012019.md",
+        "bytes": 6151
+      },
+      {
+        "format": "tex.zip",
+        "path": "DSDL_2019_Einspeiser-MIT-verguetetem-Eigenverbrauch_30012019.tex.zip",
+        "bytes": 8174
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "DSDL_2019_Einspeiser-MIT-verguetetem-Eigenverbrauch_30012019.tiddlers.json",
+    "tiddlers_count": 63,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -284,18 +309,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1076.1,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:29:44Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8772.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:29:45Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 95.4,
+      "detail": "286 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:29:45Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.9,
+      "detail": "63 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/DSDL_2019_Einspeiser-MIT-verguetetem-Eigenverbrauch_30012019/DSDL_2019_Einspeiser-MIT-verguetetem-Eigenverbrauch_30012019.lines.json": "sha256:236568a51f43322533a7c2b39b58b19fae2b13e1e8e2e68f0123a187b2470e55"
+        "/home/wkolbe/pdfdrill-library/DSDL_2019_Einspeiser-MIT-verguetetem-Eigenverbrauch_30012019/DSDL_2019_Einspeiser-MIT-verguetetem-Eigenverbrauch_30012019.lines.json": "sha256:4bb97bc4645d75aad54296817762c938439490a5b1af65f5d206074b70b478b6"
       },
       "params_hash": "sha256:fbc2540f514bf6f20e4eca8061c78ba229f994680e6771c800b0223ea343ba7e",
       "algo": "sha256",
-      "ts": "2026-08-05T06:57:54Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:29:45Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -3,18 +3,19 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2111.13611",
@@ -22,22 +23,24 @@
     "bibkey": "2111.13611",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 10,
-      "Paragraph": 88,
-      "Table": 12,
+      "Page": 16,
+      "Footnote": 13,
+      "Citation": 4,
+      "Table": 11,
+      "TableRow": 90,
+      "TableCell": 438,
+      "Sidenote": 30,
       "Abstract": 1,
-      "Section": 15,
-      "Formula": 81,
+      "Diagram": 4,
+      "Section": 2,
+      "ListItem": 33,
       "Equation": 1,
-      "Citation": 52
+      "Formula": 32,
+      "Paragraph": 106,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 39,
-    "bibliography_with_year": 39,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 52,
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "pages": 16,
     "bytes": 513222,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -116,9 +119,6 @@
       "JZNSLW+CMMI7"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2111.13611.tiddlers.json",
-    "tiddlers_count": 281,
-    "tiddlers_svg_mode": "inline",
     "abstract": "This paper presents a new task of predicting the coverage of a text document for relation extraction (RE): does the document contain many relational tuples for a given entity? Coverage predictions are useful in selecting the best documents for knowledge base construction with large input corpora. To study this problem, we present a dataset of 31,366 diverse documents for 520 entities. We analyze the correlation of document coverage with features like length, entity mention frequency, Alexa rank, language complexity and information retrieval scores. Each of these features has only moderate predictive power. We employ methods combining features with statistical models like TF-IDF and language models like BERT. The model combining features and BERT, HERB, achieves an F1 score of up to 46%. We demonstrate the utility of coverage predictions on two use cases: KB construction and claim refutation.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -195,7 +195,72 @@
         "page": 11,
         "url": "https://stanfordnlp.github.io/stanza/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Mon Nov 29 03:13:29 2021 CET",
+      "ModDate": "Mon Nov 29 03:13:29 2021 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "513222 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 9,
+    "mathpix_pdf_id": "e0b16c4e-39da-4ce1-b432-b7a5651ab753",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2111.13611.lines.json",
+        "bytes": 2079064
+      },
+      {
+        "format": "md",
+        "path": "2111.13611.md",
+        "bytes": 63630
+      },
+      {
+        "format": "tex.zip",
+        "path": "2111.13611.tex.zip",
+        "bytes": 329861
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 17,
+    "bibliography_with_year": 15,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 11,
+    "bibliography_cites": 2,
+    "tiddlers_path": "2111.13611.tiddlers.json",
+    "tiddlers_count": 297,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1722,16 +1787,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4418.4,
       "detail": "5 images, 5 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:08:51Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13657.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:08:52Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 555.6,
+      "detail": "782 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:08:52Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "17 entries, 0+11 cites detected, 2 linked"
+    },
+    {
+      "ts": "2026-08-22T17:08:52Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.1,
+      "detail": "297 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2111.13611/2111.13611.lines.json": "sha256:731dbc02a511d22bc5c127a59552c719b77d6de64e8b57069df36cbbc5527c6d"
+      },
       "params_hash": "sha256:7ee72c949d4794b3d649b338edbbe218ace2637ed9de71db8016059d1ad111c4",
       "algo": "sha256",
-      "ts": "2026-08-03T20:56:18Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:08:52Z",
+      "provenance": "mathpix"
     }
   }
 }

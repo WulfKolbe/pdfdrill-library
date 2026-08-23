@@ -3,17 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1702.06875",
@@ -21,21 +21,24 @@
     "bibkey": "1702.06875",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 62,
+      "Page": 19,
+      "Footnote": 13,
+      "Table": 9,
+      "TableRow": 53,
+      "TableCell": 258,
+      "Sidenote": 40,
       "Abstract": 1,
-      "Section": 18,
-      "Table": 29,
-      "Formula": 37,
+      "Diagram": 5,
+      "Section": 8,
+      "Picture": 1,
+      "ListItem": 34,
       "Equation": 4,
-      "Citation": 85
+      "Formula": 54,
+      "Paragraph": 82,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 61,
-    "bibliography_with_year": 56,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 85,
+    "model_equations_with_cdn": 4,
+    "model_source": "mathpix",
     "pages": 19,
     "bytes": 432087,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -118,9 +121,6 @@
       "GHHTJC+CMMI9"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1702.06875.tiddlers.json",
-    "tiddlers_count": 249,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
     "arxiv_title": "Triaging Content Severity in Online Mental Health Forums",
     "arxiv_authors": [
@@ -129,7 +129,67 @@
       "Andrew Yates",
       "Nazli Goharian"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Thu Feb 23 03:02:34 2017 CET",
+      "ModDate": "Thu Feb 23 03:02:34 2017 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "19",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "432087 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 19,
+    "image_count": 0,
+    "mathpix_pdf_id": "4c191483-d6ea-44fd-9089-94d27afbbf32",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1702.06875.lines.json",
+        "bytes": 2260756
+      },
+      {
+        "format": "md",
+        "path": "1702.06875.md",
+        "bytes": 83999
+      },
+      {
+        "format": "tex.zip",
+        "path": "1702.06875.tex.zip",
+        "bytes": 483769
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1702.06875.tiddlers.json",
+    "tiddlers_count": 288,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1562,16 +1622,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4797.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:46:51Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10025.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:46:52Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 871.8,
+      "detail": "582 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:46:53Z",
+      "node": "tiddlers",
+      "from": "BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 21.5,
+      "detail": "288 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1702.06875/1702.06875.lines.json": "sha256:fd0282e35e9310525bda4b80970129ea67a68bf9bc9b55b3071511845827cc4c"
+      },
       "params_hash": "sha256:924c686ff76b73e90754e222d7dab990cca29d5d04d1ab940c49d19c4e8fd787",
       "algo": "sha256",
-      "ts": "2026-08-03T19:38:04Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:46:52Z",
+      "provenance": "mathpix"
     }
   }
 }

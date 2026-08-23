@@ -6,7 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -89,28 +89,73 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 25,
-      "Citation": 35,
-      "ListItem": 9,
+      "Toc": 1,
+      "Diagram": 5,
+      "ListItem": 3,
       "Equation": 8,
-      "Paragraph": 30,
+      "Formula": 115,
+      "Paragraph": 85,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 8,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 8,
-    "bibliography_with_year": 7,
-    "bibliography_numeric_citations": 23,
-    "bibliography_authoryear_citations": 3,
-    "bibliography_cites": 0,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "ThesisNOV21.dvi",
+      "Author": "SSolli",
+      "Creator": "dvips(k) 5.98 Copyright 2009 Radical Eye Software",
+      "Producer": "Acrobat Distiller 10.1.4 (Windows)",
+      "CreationDate": "Thu Nov 22 10:52:25 2012 CET",
+      "ModDate": "Thu Oct  3 11:31:47 2013 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "25",
+      "Encrypted": "no",
+      "Page size": "482 x 680 pts",
+      "Page rot": "0",
+      "File size": "627611 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.6"
+    },
+    "page_count_text": 25,
+    "image_count": 5,
+    "mathpix_pdf_id": "f2e152ea-125f-4246-bd73-da0a47525438",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "dravhandling-villamizar.lines.json",
+        "bytes": 809690
+      },
+      {
+        "format": "md",
+        "path": "dravhandling-villamizar.md",
+        "bytes": 44983
+      },
+      {
+        "format": "tex.zip",
+        "path": "dravhandling-villamizar.tex.zip",
+        "bytes": 202976
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "dravhandling-villamizar.tiddlers.json",
-    "tiddlers_count": 116,
+    "tiddlers_count": 259,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -578,18 +623,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 8.1,
       "detail": "116 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T19:18:04Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9484.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:18:04Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 164.6,
+      "detail": "243 objects, 8 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:18:04Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.3,
+      "detail": "259 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/dravhandling-villamizar/dravhandling-villamizar.lines.json": "sha256:aacca576c433cb553d6b71d0c1878ec25bd76a7cccddb83b53bb7eef8a18462b"
+        "/home/wkolbe/pdfdrill-library/dravhandling-villamizar/dravhandling-villamizar.lines.json": "sha256:3d40c91b3eb2ca472d14a534188af98c278bdfd4cdee5039190ac2e36603a8d0"
       },
       "params_hash": "sha256:ac79e18ac03cef067cb9ac3ad5d8369fcf8cea0f03a274d5ec8b0d04f5746b1d",
       "algo": "sha256",
-      "ts": "2026-08-06T01:11:42Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:18:04Z",
+      "provenance": "mathpix"
     }
   }
 }

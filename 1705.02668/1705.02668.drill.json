@@ -3,18 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1705.02668",
@@ -22,24 +22,22 @@
     "bibkey": "1705.02668",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 111,
+      "Page": 16,
+      "Footnote": 4,
+      "Table": 8,
+      "TableRow": 58,
+      "TableCell": 223,
+      "Sidenote": 2,
       "Abstract": 1,
-      "Section": 11,
-      "Formula": 158,
-      "LtxCommand": 42,
-      "Equation": 5,
-      "Table": 12,
-      "Citation": 86,
-      "Algorithm": 1,
-      "AlgorithmStep": 12
+      "Picture": 1,
+      "ListItem": 44,
+      "Equation": 4,
+      "Formula": 144,
+      "Paragraph": 83,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 33,
-    "bibliography_with_year": 33,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_equations_with_cdn": 4,
+    "model_source": "mathpix",
     "pages": 16,
     "bytes": 466962,
     "page_size": "612 x 792 pts (letter)",
@@ -130,9 +128,6 @@
       "ZHJZJA+CMSY6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1705.02668.tiddlers.json",
-    "tiddlers_count": 408,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Online reviews provide viewpoints on the strengths and shortcomings of products/services, influencing potential customers&#39; purchasing decisions. However, the proliferation of non-credible reviews -- either fake (promoting/ demoting an item), incompetent (involving irrelevant aspects), or biased -- entails the problem of identifying credible reviews. Prior works involve classifiers harnessing rich information about items/users -- which might not be readily available in several domains -- that provide only limited interpretability as to why a review is deemed non-credible. This paper presents a novel approach to address the above issues. We utilize latent topic models leveraging review texts, item ratings, and timestamps to derive consistency features without relying on item/user histories, unavailable for &#34;long-tail&#34; items/users. We develop models, for computing review credibility scores to provide interpretable evidence for non-credible reviews, that are also transferable to other domains -- addressing the scarcity of labeled data. Experiments on real-world datasets demonstrate improvements over state-of-the-art baselines.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -148,7 +143,67 @@
         "page": 12,
         "url": "http://www.amazon.com/gp/help/customer/display.html?nodeId=525376"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Tue May  9 03:17:54 2017 CEST",
+      "ModDate": "Tue May  9 03:17:54 2017 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "466962 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 1,
+    "mathpix_pdf_id": "589d78e1-540a-48b5-aaa0-f81ce88f420d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1705.02668.lines.json",
+        "bytes": 1130959
+      },
+      {
+        "format": "md",
+        "path": "1705.02668.md",
+        "bytes": 56848
+      },
+      {
+        "format": "tex.zip",
+        "path": "1705.02668.tex.zip",
+        "bytes": 96626
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1705.02668.tiddlers.json",
+    "tiddlers_count": 324,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1357,16 +1412,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3079.2,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:05:12Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10060.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:05:13Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 350.6,
+      "detail": "589 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:05:13Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.0,
+      "detail": "324 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1705.02668/1705.02668.lines.json": "sha256:7de45e81f097ec46804cd922b10eba24e5c3e3c313464fe954d44170c404c0c8"
+      },
       "params_hash": "sha256:d969fbac4e1e0aaed7951dab4fa89d1feba9868c8847ab11d68643329d7051ce",
       "algo": "sha256",
-      "ts": "2026-08-03T19:38:36Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:05:13Z",
+      "provenance": "mathpix"
     }
   }
 }

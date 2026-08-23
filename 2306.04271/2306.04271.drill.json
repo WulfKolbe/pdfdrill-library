@@ -5,8 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +12,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -84,18 +84,18 @@
     "bibkey": "2306.04271",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 54,
-      "LtxCommand": 6,
+      "Page": 9,
+      "Sidenote": 18,
       "Abstract": 1,
-      "Section": 9,
-      "Formula": 127,
+      "Section": 8,
+      "ListItem": 4,
       "Equation": 76,
-      "Theorem": 17,
-      "Proof": 10,
-      "Citation": 60
+      "Formula": 311,
+      "Paragraph": 131,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 76,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 9,
       "placed": 20,
@@ -105,14 +105,6 @@
       "numbered": 9,
       "roots": 1
     },
-    "bibliography_entries": 27,
-    "bibliography_with_year": 10,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 60,
-    "tiddlers_path": "2306.04271.tiddlers.json",
-    "tiddlers_count": 354,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We address univariate root isolation when the polynomial&#39;s coefficients are in a multiple field extension. We consider a polynomial $F \\in L[Y]$, where $L$ is a multiple algebraic extension of $\\mathbb{Q}$. We provide aggregate bounds for $F$ and algorithmic and bit-complexity results for the problem of isolating its roots. For the latter problem we follow a common approach based on univariate root isolation algorithms. For the particular case where $F$ does not have multiple roots, we achieve a bit-complexity in $\\tilde{\\mathcal{O}}_B(n d^{2n+2}(d+n\\tau))$, where $d$ is the total degree and $\\tau$ is the bitsize of the involved this http URL the general case we need to enhance our algorithm with a preprocessing step that determines the number of distinct roots of $F$. We follow a numerical, yet certified, approach that has bit-complexity $\\tilde{\\mathcal{O}}_B(n^2d^{3n+3}\\tau + n^3 d^{2n+4}\\tau)$.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -212,7 +204,64 @@
         "page": 9,
         "url": "https://doi.org/10.1007/s11432-010-4154-y"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:2306.04271v1  [cs.SC]  7 Jun 2023",
+      "Creator": "dvips(k) 2023.1 (TeX Live 2023)  Copyright 2023 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Thu Jun  8 03:25:35 2023 CEST",
+      "ModDate": "Thu Jun  8 03:25:35 2023 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "250708 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 9,
+    "image_count": 30,
+    "mathpix_pdf_id": "2733126a-83b6-4d14-9ba1-c9abaea7f79f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2306.04271.lines.json",
+        "bytes": 958205
+      },
+      {
+        "format": "md",
+        "path": "2306.04271.md",
+        "bytes": 67600
+      },
+      {
+        "format": "tex.zip",
+        "path": "2306.04271.tex.zip",
+        "bytes": 70706
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2306.04271.tiddlers.json",
+    "tiddlers_count": 576,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:2306.04271v1  [cs.SC]  7 Jun 2023",
@@ -2341,18 +2390,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5485.9,
       "detail": "60 images, 30 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:11:56Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12340.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:11:57Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 715.0,
+      "detail": "559 objects, 76 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:11:57Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 25.7,
+      "detail": "576 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2306.04271/texsrc/main.tex": "sha256:e1cea3b4eb5a4ea5bc4c536ef8449ad7503801c8c98abd65ff680b1de2739e37"
+        "/home/wkolbe/pdfdrill-library/2306.04271/2306.04271.lines.json": "sha256:e3e30e2cb3edfe513369450cb411b6dfde12a8b5ad6657ee98a4d4304b125b89"
       },
       "params_hash": "sha256:d9b44d22faffb56d361155c89e26a969d02f42a4ba81848b3f4961343ded3826",
       "algo": "sha256",
-      "ts": "2026-08-03T21:06:14Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:11:56Z",
+      "provenance": "mathpix"
     }
   }
 }

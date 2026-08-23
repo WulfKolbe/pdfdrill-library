@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -88,16 +89,19 @@
     "bibkey": "2307.11927",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 1,
-      "Paragraph": 46,
-      "Equation": 2,
+      "Page": 8,
+      "Citation": 21,
+      "Sidenote": 18,
       "Abstract": 1,
-      "Section": 5,
-      "Formula": 54,
-      "Citation": 40
+      "Diagram": 1,
+      "ListItem": 3,
+      "Equation": 20,
+      "Formula": 57,
+      "Paragraph": 79,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 20,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 8,
       "placed": 39,
@@ -107,14 +111,6 @@
       "numbered": 5,
       "roots": 1
     },
-    "bibliography_entries": 39,
-    "bibliography_with_year": 32,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 40,
-    "tiddlers_path": "2307.11927.tiddlers.json",
-    "tiddlers_count": 174,
-    "tiddlers_svg_mode": "inline",
     "abstract": "I propose a version of quantum mechanics featuring a discrete and finite number of states that is plausibly a model of the real world. The model is based on standard unitary quantum theory of a closed system with a finite-dimensional Hilbert space. Given certain simple conditions on the spectrum of the Hamiltonian, Schrödinger evolution is periodic, and it is straightforward to replace continuous time with a discrete version, with the result that the system only visits a discrete and finite set of state vectors. The biggest challenges to the viability of such a model come from cosmological considerations. The theory may have implications for questions of mathematical realism and finitism.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -339,7 +335,72 @@
         "page": 8,
         "url": "https://doi.org/10.1145/3242953.3242964"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Fri Nov  3 03:01:02 2023 CET",
+      "ModDate": "Fri Nov  3 03:01:02 2023 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "367621 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 8,
+    "image_count": 0,
+    "mathpix_pdf_id": "a51b3abc-1a7c-4637-abca-85eab2ed66eb",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2307.11927.lines.json",
+        "bytes": 870226
+      },
+      {
+        "format": "md",
+        "path": "2307.11927.md",
+        "bytes": 38742
+      },
+      {
+        "format": "tex.zip",
+        "path": "2307.11927.tex.zip",
+        "bytes": 84895
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 39,
+    "bibliography_with_year": 32,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "2307.11927.tiddlers.json",
+    "tiddlers_count": 246,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -820,16 +881,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3421.6,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:59:24Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9753.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:59:24Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 155.3,
+      "detail": "209 objects, 20 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:59:25Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "39 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T14:59:25Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.3,
+      "detail": "246 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2307.11927/2307.11927.lines.json": "sha256:e83229d341cfa9384adbe330d36c331c5adce6a6d32cfc543ec89f1a3c5ef39a"
+      },
       "params_hash": "sha256:7ee967649537addf4e5033ca71fd3c4b0ce3c01ae2f88c0a046c0ba5a67a8f9f",
       "algo": "sha256",
-      "ts": "2026-08-03T21:06:37Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:59:24Z",
+      "provenance": "mathpix"
     }
   }
 }

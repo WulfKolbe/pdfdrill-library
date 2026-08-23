@@ -5,14 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 15,
@@ -79,17 +79,22 @@
     "bibkey": "2202.03555",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 76,
-      "LtxCommand": 2,
+      "Page": 15,
+      "Footnote": 12,
+      "Table": 8,
+      "TableRow": 73,
+      "TableCell": 321,
+      "Sidenote": 26,
       "Abstract": 1,
-      "Section": 22,
-      "Formula": 47,
+      "Diagram": 3,
+      "ListItem": 13,
       "Equation": 2,
-      "Table": 2,
-      "Citation": 192
+      "Formula": 48,
+      "Paragraph": 57,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 15,
       "placed": 42,
@@ -99,14 +104,6 @@
       "numbered": 22,
       "roots": 1
     },
-    "bibliography_entries": 94,
-    "bibliography_with_year": 94,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 192,
-    "tiddlers_path": "2202.03555.tiddlers.json",
-    "tiddlers_count": 279,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
     "links": [
       {
@@ -127,7 +124,67 @@
       "Jiatao Gu",
       "Michael Auli"
     ],
-    "arxiv_primary_category": "cs.LG"
+    "arxiv_primary_category": "cs.LG",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "Proceedings of the International Conference on Machine Learning 2022",
+      "Keywords": "",
+      "Author": "Anonymous Submission",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Thu Oct 27 03:18:50 2022 CEST",
+      "ModDate": "Thu Oct 27 03:18:50 2022 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "925969 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 15,
+    "image_count": 5,
+    "mathpix_pdf_id": "1f3b9ac8-07e9-4c61-a198-5808f95d7023",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2202.03555.lines.json",
+        "bytes": 1685369
+      },
+      {
+        "format": "md",
+        "path": "2202.03555.md",
+        "bytes": 63332
+      },
+      {
+        "format": "tex.zip",
+        "path": "2202.03555.tex.zip",
+        "bytes": 228118
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2202.03555.tiddlers.json",
+    "tiddlers_count": 202,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -633,16 +690,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5682.4,
       "detail": "5 images, 5 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:55:57Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12991.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:55:57Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 321.7,
+      "detail": "580 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:55:57Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.2,
+      "detail": "202 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2202.03555/2202.03555.lines.json": "sha256:e92636ad686545eefffd59af24c318f0d6dc23f1152ed4ebbac8051f62d07773"
+      },
       "params_hash": "sha256:969dc38dda24bcfcffaeb4de9bdf5e0d0a247b1a46abd4c2ff7771af2e849a86",
       "algo": "sha256",
-      "ts": "2026-08-03T20:57:29Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:55:57Z",
+      "provenance": "mathpix"
     }
   }
 }

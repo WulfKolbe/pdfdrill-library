@@ -6,12 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -89,23 +90,24 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 8,
-      "ListItem": 7,
-      "Equation": 54,
-      "Paragraph": 52,
+      "Sidenote": 4,
+      "Abstract": 1,
+      "Diagram": 2,
+      "ListItem": 5,
+      "Equation": 46,
+      "Formula": 27,
+      "Paragraph": 70,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 46,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 286 unmapped private-use character(s) remain (U+F8EB×14, U+F8EC×110, U+F8ED×14, U+F8F1×2, U+F8F2×2, U+F8F3×2, U+F8F4×4, U+F8F6×14, U+F8F7×110, U+F8F8×14) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Spinor_wave_equation_of_photon.tiddlers.json",
-    "tiddlers_count": 138,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -188,7 +190,32 @@
         "page": 8,
         "url": "https://www.researchgate.net/publication/233923211"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "342826e1-9990-4931-bd12-6b804233bc65",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Spinor_wave_equation_of_photon.lines.json",
+        "bytes": 293881
+      },
+      {
+        "format": "md",
+        "path": "Spinor_wave_equation_of_photon.md",
+        "bytes": 19062
+      },
+      {
+        "format": "tex.zip",
+        "path": "Spinor_wave_equation_of_photon.tex.zip",
+        "bytes": 24716
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Spinor_wave_equation_of_photon.tiddlers.json",
+    "tiddlers_count": 180,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -2169,18 +2196,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1244.5,
       "detail": "60 images, 31 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:03:02Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6072.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:03:02Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 130.4,
+      "detail": "164 objects, 46 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:03:02Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.4,
+      "detail": "180 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Spinor_wave_equation_of_photon/Spinor_wave_equation_of_photon.lines.json": "sha256:8d9a528894127518ca13ff684f4b6aa156da7a8a0bff22031adca7bbc8cdc0bc"
+        "/home/wkolbe/pdfdrill-library/Spinor_wave_equation_of_photon/Spinor_wave_equation_of_photon.lines.json": "sha256:95bc66819ccdfdb053830b75096a5cefa8b1c71b84a619dd9b229d6953d41778"
       },
       "params_hash": "sha256:ecfc2269d7a0cd891094405242a0bb6f5ce90bad23070a718893b05e0ad44c51",
       "algo": "sha256",
-      "ts": "2026-08-05T23:30:05Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:03:02Z",
+      "provenance": "mathpix"
     }
   }
 }

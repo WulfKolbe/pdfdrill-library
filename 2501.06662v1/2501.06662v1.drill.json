@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 21,
@@ -108,18 +109,18 @@
     "bibkey": "2501.06662v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 77,
+      "Page": 21,
+      "Footnote": 13,
+      "Citation": 64,
       "Abstract": 1,
-      "Section": 16,
-      "Formula": 273,
+      "Diagram": 2,
       "Equation": 59,
-      "Theorem": 20,
-      "Proof": 5,
-      "Diagram": 4,
-      "Citation": 63
+      "Formula": 385,
+      "Paragraph": 106,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 59,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 21,
       "placed": 47,
@@ -129,14 +130,6 @@
       "numbered": 16,
       "roots": 1
     },
-    "bibliography_entries": 23,
-    "bibliography_with_year": 22,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 63,
-    "tiddlers_path": "2501.06662v1.tiddlers.json",
-    "tiddlers_count": 517,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The purpose of this article is twofold. Firstly, we use the next-token probabilities given by a language model to explicitly define a $[0,1]$-enrichment of a category of texts in natural language, in the sense of Bradley, Terilla, and Vlassopoulos. We consider explicitly the terminating conditions for text generation and determine when the enrichment itself can be interpreted as a probability over texts. Secondly, we compute the Möbius function and the magnitude of an associated generalized metric space $\\mathcal{M}$ of texts using a combinatorial version of these quantities recently introduced by Vigneaux. The magnitude function $f(t)$ of $\\mathcal{M}$ is a sum over texts $x$ (prompts) of the Tsallis $t$-entropies of the next-token probability distributions $p(-|x)$ plus the cardinality of the model&#39;s possible outputs. The derivative of $f$ at $t=1$ recovers a sum of Shannon entropies, which justifies seeing magnitude as a partition function. Following Leinster and Schulman, we also express the magnitude function of $\\mathcal M$ as an Euler characteristic of magnitude homology and provide an explicit description of the zeroeth and first magnitude homology groups.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -145,7 +138,72 @@
       "Tai-Danae Bradley",
       "Juan Pablo Vigneaux"
     ],
-    "arxiv_primary_category": "math.CT"
+    "arxiv_primary_category": "math.CT",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "GPL Ghostscript 10.01.2",
+      "CreationDate": "Tue Jan 14 02:35:16 2025 CET",
+      "ModDate": "Tue Jan 14 02:35:16 2025 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "21",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "315626 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 21,
+    "image_count": 16,
+    "mathpix_pdf_id": "bbdabe06-c18b-4cc2-9a91-04158f63a73d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2501.06662v1.lines.json",
+        "bytes": 860121
+      },
+      {
+        "format": "md",
+        "path": "2501.06662v1.md",
+        "bytes": 66034
+      },
+      {
+        "format": "tex.zip",
+        "path": "2501.06662v1.tex.zip",
+        "bytes": 149473
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 20,
+    "bibliography_with_year": 18,
+    "bibliography_numeric_citations": 6,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 6,
+    "tiddlers_path": "2501.06662v1.tiddlers.json",
+    "tiddlers_count": 648,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2135,16 +2193,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4986.8,
       "detail": "32 images, 16 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:18:20Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10099.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:18:21Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 616.2,
+      "detail": "652 objects, 59 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:18:22Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "20 entries, 6+0 cites detected, 6 linked"
+    },
+    {
+      "ts": "2026-08-22T18:18:22Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 19.3,
+      "detail": "648 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2501.06662v1/2501.06662v1.lines.json": "sha256:c51763e3083d1693430711ed04b556c7ea1cd495309aed73a24ccc93374a0cf3"
+      },
       "params_hash": "sha256:4a62095fa6e40dc8170cc9c2dde02ffddc2c5365772df1a346197e2a3086b2ef",
       "algo": "sha256",
-      "ts": "2026-08-03T21:34:20Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:18:21Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,14 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -90,29 +90,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 18,
-      "Citation": 11,
-      "ListItem": 16,
-      "Equation": 139,
-      "Paragraph": 127,
+      "Table": 1,
+      "TableRow": 5,
+      "TableCell": 25,
+      "Abstract": 1,
+      "ListItem": 3,
+      "Equation": 101,
+      "Formula": 63,
+      "Paragraph": 145,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 101,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 3,
-    "bibliography_with_year": 3,
-    "bibliography_numeric_citations": 3,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 3,
-    "tiddlers_path": "Mathematical_Rescue_of_Weinsteins_Geomet.tiddlers.json",
-    "tiddlers_count": 326,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -191,7 +187,33 @@
       }
     ],
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "efb08e23-2b61-44c0-b49f-858f91ee2296",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Mathematical_Rescue_of_Weinsteins_Geomet.lines.json",
+        "bytes": 606526
+      },
+      {
+        "format": "md",
+        "path": "Mathematical_Rescue_of_Weinsteins_Geomet.md",
+        "bytes": 33270
+      },
+      {
+        "format": "tex.zip",
+        "path": "Mathematical_Rescue_of_Weinsteins_Geomet.tex.zip",
+        "bytes": 35303
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "Mathematical_Rescue_of_Weinsteins_Geomet.tiddlers.json",
+    "tiddlers_count": 349,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -620,18 +642,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4200.8,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:37:50Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9347.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:37:51Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 411.0,
+      "detail": "363 objects, 101 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:37:51Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.3,
+      "detail": "349 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Mathematical_Rescue_of_Weinsteins_Geomet/Mathematical_Rescue_of_Weinsteins_Geomet.lines.json": "sha256:5467c0cf5ed853f41cabe83e45b313f044cae1c41f122de67db8784b2605f9c6"
+        "/home/wkolbe/pdfdrill-library/Mathematical_Rescue_of_Weinsteins_Geomet/Mathematical_Rescue_of_Weinsteins_Geomet.lines.json": "sha256:5b8f7f206522142c6c90901e8eb310c518f69de64fa82d7d416ad5e847951bf9"
       },
       "params_hash": "sha256:8120959b51ca3ccfb4950f679e7605e220cfc4cbbf5ae2d5147f237b765e15fc",
       "algo": "sha256",
-      "ts": "2026-08-05T22:03:08Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:37:50Z",
+      "provenance": "mathpix"
     }
   }
 }

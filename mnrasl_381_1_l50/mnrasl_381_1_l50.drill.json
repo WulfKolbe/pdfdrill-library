@@ -6,7 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -66,28 +66,74 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 5,
-      "Citation": 1,
-      "ListItem": 7,
-      "Equation": 4,
-      "Paragraph": 9,
+      "Footnote": 3,
+      "Sidenote": 10,
+      "Abstract": 1,
+      "Picture": 3,
+      "Equation": 21,
+      "Formula": 62,
+      "Paragraph": 40,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 21,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 6,
-    "bibliography_cites": 0,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Coordinate confusion in conformal cosmology★",
+      "Author": "kdn",
+      "Creator": "Textures®: LaserWriter 8 8.7.3",
+      "Producer": "PDFlib PLOP 3.0 (.NET/Win32)/Acrobat Distiller 7.0.5 for Macintosh; modified using iTextSharp 4.1.6 by 1T3XT",
+      "CreationDate": "Mon Sep 17 09:07:12 2007 CEST",
+      "ModDate": "Sun Jan 19 03:15:27 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "5",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "232502 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 5,
+    "image_count": 0,
+    "mathpix_pdf_id": "45544a80-b6e4-46e9-963e-e4873f2d7dd0",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "mnrasl_381_1_l50.lines.json",
+        "bytes": 470017
+      },
+      {
+        "format": "md",
+        "path": "mnrasl_381_1_l50.md",
+        "bytes": 25724
+      },
+      {
+        "format": "tex.zip",
+        "path": "mnrasl_381_1_l50.tex.zip",
+        "bytes": 324955
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "mnrasl_381_1_l50.tiddlers.json",
-    "tiddlers_count": 49,
+    "tiddlers_count": 162,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -317,18 +363,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "49 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:37:13Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9453.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:37:13Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 122.5,
+      "detail": "146 objects, 21 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:37:14Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.6,
+      "detail": "162 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/mnrasl_381_1_l50/mnrasl_381_1_l50.lines.json": "sha256:36d532d5f65dc7a548e4b410ede69ca70ae4995846f84b42696b2a8f7d71e573"
+        "/home/wkolbe/pdfdrill-library/mnrasl_381_1_l50/mnrasl_381_1_l50.lines.json": "sha256:38eef2bf199093197073944dcd596ec61754e9812cd9e8291850245cd54fa24c"
       },
       "params_hash": "sha256:3b7c7a9f4d2798c394679223fef08ec3580f209e058691de8ec8b90cc1e976b3",
       "algo": "sha256",
-      "ts": "2026-08-06T01:29:40Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:37:13Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -84,28 +85,79 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 24,
+      "Footnote": 3,
       "Citation": 2,
-      "ListItem": 13,
-      "Equation": 42,
-      "Paragraph": 58,
+      "Abstract": 1,
+      "Diagram": 7,
+      "Picture": 3,
+      "ListItem": 1,
+      "Equation": 31,
+      "Formula": 296,
+      "Paragraph": 102,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 31,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 34,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "pdftk 2.02 - www.pdftk.com",
+      "Producer": "itext-paulo-155 (itextpdf.sf.net-lowagie.com)",
+      "CreationDate": "Thu Jul  4 14:31:35 2019 CEST",
+      "ModDate": "Thu Jul  4 14:31:35 2019 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "24",
+      "Encrypted": "yes (print:yes copy:yes change:no addNotes:yes algorithm:RC4)",
+      "Page size": "504 x 720 pts",
+      "Page rot": "0",
+      "File size": "497241 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 24,
+    "image_count": 0,
+    "mathpix_pdf_id": "4ad27d0d-6b4e-46ba-98e9-92202637fe6c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "angled-survey.lines.json",
+        "bytes": 1145308
+      },
+      {
+        "format": "md",
+        "path": "angled-survey.md",
+        "bytes": 80195
+      },
+      {
+        "format": "tex.zip",
+        "path": "angled-survey.tex.zip",
+        "bytes": 367748
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 30,
     "bibliography_with_year": 26,
-    "bibliography_numeric_citations": 38,
+    "bibliography_numeric_citations": 33,
     "bibliography_authoryear_citations": 1,
-    "bibliography_cites": 38,
+    "bibliography_cites": 26,
     "tiddlers_path": "angled-survey.tiddlers.json",
-    "tiddlers_count": 190,
+    "tiddlers_count": 520,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -531,18 +583,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 8.9,
       "detail": "190 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T19:08:42Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9559.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:08:42Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 483.8,
+      "detail": "471 objects, 31 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:08:43Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "30 entries, 33+1 cites detected, 26 linked"
+    },
+    {
+      "ts": "2026-08-22T19:08:43Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 17.3,
+      "detail": "520 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/angled-survey/angled-survey.lines.json": "sha256:a33be512d6ebcd5c18f3eab6d5931564dee1d4bdd914335f15faccee813607c6"
+        "/home/wkolbe/pdfdrill-library/angled-survey/angled-survey.lines.json": "sha256:65f3ad547f17de19d5bc47535c4420f1e22758073da811224b88285b2bcd7ba1"
       },
       "params_hash": "sha256:7853335e8df158ecb1370f0b4da9328412c7ed81fbba66cee1e52cd90e29d6b0",
       "algo": "sha256",
-      "ts": "2026-08-06T01:04:44Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:08:42Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -4,18 +4,19 @@
   "facts": [
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
     "MD_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2510.08252",
@@ -23,22 +24,29 @@
     "bibkey": "2510.08252",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 87,
+      "Page": 19,
+      "Footnote": 8,
+      "Citation": 15,
+      "Table": 21,
+      "TableRow": 210,
+      "TableCell": 1235,
+      "Sidenote": 33,
       "Abstract": 1,
-      "Section": 37,
-      "Formula": 25,
-      "Table": 75,
+      "Diagram": 2,
+      "Section": 4,
+      "Picture": 1,
+      "ListItem": 34,
       "Equation": 4,
-      "LtxCommand": 9,
-      "Citation": 90
+      "Formula": 36,
+      "Paragraph": 143,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 4,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "2510.08252.tgz",
     "latex_macros": 5,
@@ -48,11 +56,6 @@
     "latex_graphics": 75,
     "merge_latex_source": "2510.08252.tgz",
     "merge_paragraphs_changed": 13,
-    "bibliography_entries": 25,
-    "bibliography_with_year": 14,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 39,
-    "bibliography_cites": 13,
     "pages": 19,
     "bytes": 591681,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -126,9 +129,6 @@
       "numbered": 37,
       "roots": 1
     },
-    "tiddlers_path": "2510.08252.tiddlers.json",
-    "tiddlers_count": 324,
-    "tiddlers_svg_mode": "inline",
     "abstract": "In this paper, we introduce ReasonEmbed, a novel text embedding model developed for reasoning-intensive document retrieval. Our work includes three key technical contributions. First, we propose ReMixer, a new data synthesis method that overcomes the triviality problem prevalent in previous synthetic datasets, enabling large-scale production of 82K high-quality training samples. Second, we design Redapter, a self-adaptive learning algorithm that dynamically adjusts training each sample&#39;s weight based on its reasoning intensity. This allows the model to effectively capture the complex semantic relationships between queries and documents. Third, we implement ReasonEmbed across multiple backbones of varying sizes, all of which achieve superior performance on reasoning-intensive retrieval tasks. Notably, our ReasonEmbed-Qwen3-8B model offers a record-high nDCG@10 score of 38.1 on the BRIGHT benchmark, which significantly outperforms existing text embedding models. We will fully open-source our created resources in ReasonEmbed to push forward the research advancement in this field.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -155,7 +155,63 @@
         "level": 3
       }
     ],
-    "toc_search_scope": "markdown"
+    "toc_search_scope": "markdown",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "ReasonEmbed: Enhanced Text Embeddings for Reasoning-Intensive Document Retrieval",
+      "Author": "Jianlyu Chen; Junwei Lan; Chaofan Li; Defu Lian; Zheng Liu",
+      "Creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "19",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "591681 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 19,
+    "image_count": 20,
+    "mathpix_pdf_id": "25f6ebd1-38f5-44b7-94e9-f85fd7d551b1",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2510.08252.lines.json",
+        "bytes": 3439897
+      },
+      {
+        "format": "md",
+        "path": "2510.08252.md",
+        "bytes": 85761
+      },
+      {
+        "format": "tex.zip",
+        "path": "2510.08252.tex.zip",
+        "bytes": 409279
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 15,
+    "bibliography_with_year": 13,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 29,
+    "bibliography_cites": 12,
+    "tiddlers_path": "2510.08252.tiddlers.json",
+    "tiddlers_count": 364,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "ReasonEmbed: Enhanced Text Embeddings for Reasoning-Intensive Document Retrieval",
@@ -1892,18 +1948,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7796.9,
       "detail": "10 images, 10 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:51:54Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 16452.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:51:55Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 1269.1,
+      "detail": "1767 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:51:57Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "15 entries, 0+29 cites detected, 12 linked"
+    },
+    {
+      "ts": "2026-08-22T17:51:57Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 29.5,
+      "detail": "364 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2510.08252/texsrc/main.tex": "sha256:207d8b434cfecc457ce1fc8ce92a32ea39cfb236b380050066120f9d63526c8e"
+        "/home/wkolbe/pdfdrill-library/2510.08252/2510.08252.lines.json": "sha256:00a96db744245885ea6b0ad357822327adfc59cb868a7be2836e919a107f5d7c"
       },
       "params_hash": "sha256:e4bda63d1608be822aa516842895ea32582cdc9632d178a73236a78e6c437e9e",
       "algo": "sha256",
-      "ts": "2026-08-03T21:41:00Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:51:55Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

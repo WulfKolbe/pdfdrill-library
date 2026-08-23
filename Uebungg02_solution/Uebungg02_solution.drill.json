@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -70,22 +71,72 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 6,
-      "ListItem": 27,
-      "Equation": 62,
-      "Paragraph": 43,
+      "ListItem": 24,
+      "Equation": 27,
+      "Formula": 123,
+      "Paragraph": 55,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 27,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 160 unmapped private-use character(s) remain (U+F8EB×35, U+F8EC×10, U+F8ED×35, U+F8F6×35, U+F8F7×10, U+F8F8×35) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.28",
+      "CreationDate": "Tue Oct 28 20:07:29 2025 CET",
+      "ModDate": "Tue Oct 28 20:07:29 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "177234 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 6,
+    "image_count": 0,
+    "mathpix_pdf_id": "7b64b1c3-3594-4465-9d55-d36caf0d26de",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Uebungg02_solution.lines.json",
+        "bytes": 247564
+      },
+      {
+        "format": "md",
+        "path": "Uebungg02_solution.md",
+        "bytes": 19775
+      },
+      {
+        "format": "tex.zip",
+        "path": "Uebungg02_solution.tex.zip",
+        "bytes": 21714
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "Uebungg02_solution.tiddlers.json",
-    "tiddlers_count": 155,
+    "tiddlers_count": 252,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -335,18 +386,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.5,
       "detail": "155 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:45:10Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9068.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:45:11Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 171.1,
+      "detail": "236 objects, 27 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:45:11Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.7,
+      "detail": "252 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Uebungg02_solution/Uebungg02_solution.lines.json": "sha256:26c6e1a4c0fff982a96c5f852a4dda5523a7bf6f7711233b434ce2aa2faf6782"
+        "/home/wkolbe/pdfdrill-library/Uebungg02_solution/Uebungg02_solution.lines.json": "sha256:64b4964713f5103677bf6b385e23a87ddee6a27bc4fa405d1e688efb43ff0ef8"
       },
       "params_hash": "sha256:16747eb85cf83129c1ad0a3e9677005a785e2bd903dd460b4a38b89fd0234439",
       "algo": "sha256",
-      "ts": "2026-08-06T00:47:04Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:45:11Z",
+      "provenance": "mathpix"
     }
   }
 }

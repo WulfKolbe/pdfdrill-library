@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 12,
@@ -85,23 +86,27 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 12,
-      "ListItem": 26,
-      "Equation": 23,
-      "Paragraph": 30,
+      "Footnote": 4,
+      "Table": 2,
+      "TableRow": 8,
+      "TableCell": 32,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 22,
+      "Equation": 12,
+      "Formula": 83,
+      "Paragraph": 52,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 12,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Semantic_spaces_Measuring_the_distance_b.tiddlers.json",
-    "tiddlers_count": 108,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Producer": "GPL Ghostscript 9.05",
@@ -154,7 +159,32 @@
         "url": "http://www.ir-facility.org/",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "437db6fb-a780-4e18-a804-6f08a16f1950",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Semantic_spaces_Measuring_the_distance_b.lines.json",
+        "bytes": 547835
+      },
+      {
+        "format": "md",
+        "path": "Semantic_spaces_Measuring_the_distance_b.md",
+        "bytes": 33370
+      },
+      {
+        "format": "tex.zip",
+        "path": "Semantic_spaces_Measuring_the_distance_b.tex.zip",
+        "bytes": 119508
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Semantic_spaces_Measuring_the_distance_b.tiddlers.json",
+    "tiddlers_count": 206,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -622,18 +652,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1827.8,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:18:45Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9234.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:18:45Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 139.5,
+      "detail": "230 objects, 12 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:18:45Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.0,
+      "detail": "206 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Semantic_spaces_Measuring_the_distance_b/Semantic_spaces_Measuring_the_distance_b.lines.json": "sha256:006c2d971ba7c4675cdca2f7c24dfbc9e7e42276b2500d08ddf12625f8bdb1da"
+        "/home/wkolbe/pdfdrill-library/Semantic_spaces_Measuring_the_distance_b/Semantic_spaces_Measuring_the_distance_b.lines.json": "sha256:a58cc03d10f0128863bfc8b0d33d543c099fd26b3172b95349764901ab7b8e4d"
       },
       "params_hash": "sha256:7f0075e64dc6fca7dd4009f34e3005b53d17b1e76eb87460fe428325772d8877",
       "algo": "sha256",
-      "ts": "2026-08-05T23:18:16Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:18:45Z",
+      "provenance": "mathpix"
     }
   }
 }

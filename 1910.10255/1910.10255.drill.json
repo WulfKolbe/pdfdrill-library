@@ -3,17 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1910.10255",
@@ -21,22 +22,22 @@
     "bibkey": "1910.10255",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 36,
-      "Abstract": 1,
-      "Section": 12,
-      "Formula": 26,
+      "Page": 7,
+      "Footnote": 5,
+      "Citation": 9,
       "Table": 3,
-      "LtxCommand": 5,
+      "TableRow": 14,
+      "TableCell": 73,
+      "Abstract": 1,
+      "Picture": 1,
+      "ListItem": 1,
       "Equation": 2,
-      "Citation": 41
+      "Formula": 35,
+      "Paragraph": 27,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 30,
-    "bibliography_with_year": 30,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 41,
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "pages": 7,
     "bytes": 343567,
     "page_size": "612 x 792 pts (letter)",
@@ -117,9 +118,6 @@
       "XPOJAY+CMMI6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1910.10255.tiddlers.json",
-    "tiddlers_count": 140,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The notion of individual fairness requires that similar people receive similar treatment. However, this is hard to achieve in practice since it is difficult to specify the appropriate similarity metric. In this work, we attempt to learn such similarity metric from human annotated data. We gather a new dataset of human judgments on a criminal recidivism prediction (COMPAS) task. By assuming the human supervision obeys the principle of individual fairness, we leverage prior work on metric learning, evaluate the performance of several metric learning methods on our dataset, and show that the learned metrics outperform the Euclidean and Precision metric under various criteria. We do not provide a way to directly learn a similarity metric satisfying the individual fairness, but to provide an empirical study on how to derive the similarity metric from human supervisors, then future work can use this as a tool to understand human supervision.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -149,7 +147,72 @@
         "page": 6,
         "url": "http://arxiv.org/abs/1412.6622"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Fri Nov  1 01:33:53 2019 CET",
+      "ModDate": "Fri Nov  1 01:33:53 2019 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "343567 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 7,
+    "image_count": 2,
+    "mathpix_pdf_id": "e0189f0c-ed25-4501-b7b0-36467fcac4c6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1910.10255.lines.json",
+        "bytes": 451270
+      },
+      {
+        "format": "md",
+        "path": "1910.10255.md",
+        "bytes": 26434
+      },
+      {
+        "format": "tex.zip",
+        "path": "1910.10255.tex.zip",
+        "bytes": 72834
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 28,
+    "bibliography_with_year": 28,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 3,
+    "bibliography_cites": 0,
+    "tiddlers_path": "1910.10255.tiddlers.json",
+    "tiddlers_count": 139,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1069,16 +1132,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2994.1,
       "detail": "1 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:50:30Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9530.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:50:31Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 141.3,
+      "detail": "179 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:50:31Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "28 entries, 0+3 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T14:50:31Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.0,
+      "detail": "139 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1910.10255/1910.10255.lines.json": "sha256:e4459a8f70dd09b761bbc79a082b2e9ae4f0389a97beecdc09a3a2d097a7f1fd"
+      },
       "params_hash": "sha256:d1393d4997348f1f9aeab298db421c48d04f9d763ce1a08693ba90f7c7a92f16",
       "algo": "sha256",
-      "ts": "2026-08-03T19:49:03Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:50:31Z",
+      "provenance": "mathpix"
     }
   }
 }

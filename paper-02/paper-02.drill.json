@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -95,22 +96,78 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 11,
-      "ListItem": 9,
-      "Equation": 13,
-      "Paragraph": 17,
+      "Footnote": 4,
+      "Table": 5,
+      "TableRow": 34,
+      "TableCell": 147,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Picture": 1,
+      "ListItem": 5,
+      "Equation": 6,
+      "Formula": 60,
+      "Paragraph": 45,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "XY-PHOC Symbol Location Embeddings for Math Formula Retrieval and Autocompletion",
+      "Subject": "CEUR Workshop Proceedings (CEUR-WS.org)",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX",
+      "CreationDate": "Sat Jul  3 07:49:01 2021 CEST",
+      "ModDate": "Sat Jul  3 07:49:01 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "807430 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7",
+      "PDF subtype": "PDF/A-3u:2012"
+    },
+    "page_count_text": 11,
+    "image_count": 2,
+    "mathpix_pdf_id": "91982ff5-2da1-4156-be7c-618d1fd9c9ea",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "paper-02.lines.json",
+        "bytes": 645572
+      },
+      {
+        "format": "md",
+        "path": "paper-02.md",
+        "bytes": 32873
+      },
+      {
+        "format": "tex.zip",
+        "path": "paper-02.tex.zip",
+        "bytes": 205690
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "paper-02.tiddlers.json",
-    "tiddlers_count": 67,
+    "tiddlers_count": 157,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -626,18 +683,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.9,
       "detail": "67 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:07:47Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9621.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:07:47Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 172.9,
+      "detail": "322 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:07:47Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.5,
+      "detail": "157 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/paper-02/paper-02.lines.json": "sha256:7924ad03521da4a728dc85bdf2d1cde73eda1c2fcfc1c5c12b3c5a1bdd31ed3a"
+        "/home/wkolbe/pdfdrill-library/paper-02/paper-02.lines.json": "sha256:3e6ae81b731a817cb2a7c6b6fe2762ddbc296af174b4aafbee9f96eb9955b3f8"
       },
       "params_hash": "sha256:433023aa96bd3620f48567419794d7f5cf6e1a92021c2d9057f37810973c3571",
       "algo": "sha256",
-      "ts": "2026-08-06T01:31:57Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:07:47Z",
+      "provenance": "mathpix"
     }
   }
 }

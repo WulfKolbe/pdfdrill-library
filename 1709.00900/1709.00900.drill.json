@@ -3,16 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1709.00900",
@@ -20,23 +21,20 @@
     "bibkey": "1709.00900",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 93,
+      "Page": 23,
+      "Footnote": 6,
+      "Citation": 2,
       "Abstract": 1,
-      "Section": 18,
-      "Formula": 137,
-      "Diagram": 3,
-      "Theorem": 16,
+      "Diagram": 1,
+      "Picture": 2,
+      "ListItem": 18,
       "Equation": 4,
-      "Proof": 7,
-      "Citation": 49
+      "Formula": 338,
+      "Paragraph": 82,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 33,
-    "bibliography_with_year": 33,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 7,
+    "model_equations_with_cdn": 4,
+    "model_source": "mathpix",
     "pages": 23,
     "bytes": 291896,
     "page_size": "612 x 792 pts (letter)",
@@ -126,9 +124,6 @@
       "SKVLCT+CMSY5"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1709.00900.tiddlers.json",
-    "tiddlers_count": 354,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Studying the computational complexity of problems is one of the - if not the - fundamental questions in computer science. Yet, surprisingly little is known about the computational complexity of many central problems in data mining. In this paper we study frequency-based problems and propose a new type of reduction that allows us to compare the complexities of the maximal frequent pattern mining problems in different domains (e.g. graphs or sequences). Our results extend those of Kimelfeld and Kolaitis [ACM TODS, 2014] to a broader range of data mining problems. Our results show that, by allowing constraints in the pattern space, the complexities of many maximal frequent pattern mining problems collapse. These problems include maximal frequent subgraphs in labelled graphs, maximal frequent itemsets, and maximal frequent subsequences with no repetitions. In addition to theoretical interest, our results might yield more efficient algorithms for the studied problems.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -137,7 +132,72 @@
       "Stefan Neumann",
       "Pauli Miettinen"
     ],
-    "arxiv_primary_category": "cs.CC"
+    "arxiv_primary_category": "cs.CC",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Tue Sep  5 02:44:29 2017 CEST",
+      "ModDate": "Tue Sep  5 02:44:29 2017 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "23",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "291896 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 23,
+    "image_count": 32,
+    "mathpix_pdf_id": "0b8ce58a-e162-4871-b4f8-2d420b8632f9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1709.00900.lines.json",
+        "bytes": 975337
+      },
+      {
+        "format": "md",
+        "path": "1709.00900.md",
+        "bytes": 68409
+      },
+      {
+        "format": "tex.zip",
+        "path": "1709.00900.tex.zip",
+        "bytes": 236966
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 33,
+    "bibliography_with_year": 33,
+    "bibliography_numeric_citations": 43,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 43,
+    "tiddlers_path": "1709.00900.tiddlers.json",
+    "tiddlers_count": 527,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2679,18 +2739,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2747.2,
       "detail": "64 images, 32 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:49:42Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9273.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:49:42Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 414.0,
+      "detail": "478 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:49:43Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "33 entries, 43+0 cites detected, 43 linked"
+    },
+    {
+      "ts": "2026-08-22T18:49:43Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.0,
+      "detail": "527 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1709.00900/texsrc/main.tex": "sha256:4127d863729b6c01059abef27392279caa3dd3f9a48a37da8f50b336b7f734ab"
+        "/home/wkolbe/pdfdrill-library/1709.00900/1709.00900.lines.json": "sha256:a22c0103ca38a608db69df9ab297de317924baacc7d9a61d4aa741747f30e217"
       },
       "params_hash": "sha256:790a48cb296724c0ae335e5be5a9bb7ee610494ae1a62260fe0b6eb21aff43fc",
       "algo": "sha256",
-      "ts": "2026-08-03T19:39:18Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:49:42Z",
+      "provenance": "mathpix"
     }
   }
 }

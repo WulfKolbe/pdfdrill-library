@@ -5,8 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +12,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -87,28 +88,24 @@
     "model_object_counts": {
       "Page": 18,
       "Citation": 1,
-      "ListItem": 10,
-      "Formula": 19,
-      "Paragraph": 17,
+      "Sidenote": 3,
+      "Abstract": 1,
+      "Diagram": 9,
+      "ListItem": 17,
+      "Equation": 2,
+      "Formula": 41,
+      "Paragraph": 55,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "RR-1981.tiddlers.json",
-    "tiddlers_count": 99,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "ReLaCS for systolic programming",
@@ -145,7 +142,38 @@
         "page": 1,
         "url": "https://hal.archives-ouvertes.fr"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "c403a5aa-8a7e-4b16-b918-d43adf606c26",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "RR-1981.lines.json",
+        "bytes": 586504
+      },
+      {
+        "format": "md",
+        "path": "RR-1981.md",
+        "bytes": 39716
+      },
+      {
+        "format": "tex.zip",
+        "path": "RR-1981.tex.zip",
+        "bytes": 187043
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 33,
+    "bibliography_with_year": 33,
+    "bibliography_numeric_citations": 35,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 35,
+    "tiddlers_path": "RR-1981.tiddlers.json",
+    "tiddlers_count": 197,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "ReLaCS for systolic programming",
@@ -4218,18 +4246,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3743.9,
       "detail": "210 images, 92 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:40:24Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9476.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:40:24Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 156.9,
+      "detail": "148 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:40:24Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "33 entries, 35+0 cites detected, 35 linked"
+    },
+    {
+      "ts": "2026-08-22T17:40:24Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.5,
+      "detail": "197 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/RR-1981/RR-1981.lines.json": "sha256:836b19d78cda9db17c199cbc0ca20411ca2a09c585427e73318b65bb79fe8a1f"
+        "/home/wkolbe/pdfdrill-library/RR-1981/RR-1981.lines.json": "sha256:49e63e3c057d78b3a755b8ca6df3f5d236c9b125f957092e30203979d1909808"
       },
       "params_hash": "sha256:0adf1450f516a6f01febc1b23c5f6cfd00570844e97c9bb0670071ac57ec6b68",
       "algo": "sha256",
-      "ts": "2026-08-05T23:07:36Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:40:24Z",
+      "provenance": "mathpix"
     }
   }
 }

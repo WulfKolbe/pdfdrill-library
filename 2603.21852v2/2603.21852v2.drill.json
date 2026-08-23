@@ -5,15 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 23,
@@ -104,18 +104,22 @@
     "bibkey": "2603.21852v2",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 78,
+      "Page": 23,
+      "Footnote": 5,
+      "Table": 4,
+      "TableRow": 43,
+      "TableCell": 160,
       "Abstract": 1,
+      "Diagram": 7,
+      "Picture": 8,
+      "ListItem": 9,
       "Equation": 12,
-      "LtxCommand": 3,
-      "Section": 14,
-      "Formula": 101,
-      "Table": 6,
-      "Diagram": 2,
-      "Citation": 72
+      "Formula": 137,
+      "Paragraph": 99,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 12,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 23,
       "placed": 62,
@@ -125,14 +129,6 @@
       "numbered": 14,
       "roots": 1
     },
-    "bibliography_entries": 50,
-    "bibliography_with_year": 50,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 72,
-    "tiddlers_path": "2603.21852v2.tiddlers.json",
-    "tiddlers_count": 308,
-    "tiddlers_svg_mode": "inline",
     "abstract": "A single two-input gate suffices for all of Boolean logic in digital hardware. No comparable primitive has been known for continuous mathematics: computing elementary functions such as sin, cos, sqrt, and log has always required multiple distinct operations. Here I show that a single binary operator, eml(x,y)=exp(x)-ln(y), together with the constant 1, generates the standard repertoire of a scientific calculator. This includes constants such as e, pi, and i; arithmetic operations including addition, subtraction, multiplication, division, and exponentiation as well as the usual transcendental and algebraic functions. For example, exp(x)=eml(x,1), ln(x)=eml(1,eml(eml(1,x),1)), and likewise for all other operations. That such an operator exists was not anticipated; I found it by systematic exhaustive search and established constructively that it suffices for the concrete scientific-calculator basis. In EML (Exp-Minus-Log) form, every such expression becomes a binary tree of identical nodes, yielding a grammar as simple as S -&gt; 1 | eml(S,S). This uniform structure also enables gradient-based symbolic regression: using EML trees as trainable circuits with standard optimizers (Adam), I demonstrate the feasibility of exact recovery of closed-form elementary functions from numerical data at shallow tree depths up to 4. The same architecture can fit arbitrary data, but when the generating law is elementary, it may recover the exact formula.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -141,7 +137,63 @@
       "Andrzej Odrzywołek"
     ],
     "arxiv_primary_category": "cs.SC",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "All elementary functions from a single binary operator",
+      "Author": "Andrzej Odrzywołek",
+      "Creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "23",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "507184 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 23,
+    "image_count": 0,
+    "mathpix_pdf_id": "4794d0fa-3b8e-4720-bf54-6c995034df4c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2603.21852v2.lines.json",
+        "bytes": 1053685
+      },
+      {
+        "format": "md",
+        "path": "2603.21852v2.md",
+        "bytes": 55879
+      },
+      {
+        "format": "tex.zip",
+        "path": "2603.21852v2.tex.zip",
+        "bytes": 399045
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2603.21852v2.tiddlers.json",
+    "tiddlers_count": 322,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "All elementary functions from a single binary operator",
@@ -1591,16 +1643,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4585.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:51:51Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9984.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:51:51Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 362.7,
+      "detail": "509 objects, 12 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:51:52Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.5,
+      "detail": "322 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2603.21852v2/2603.21852v2.lines.json": "sha256:d098f0c267cf4a41753c9d26d1c71ff93a9677c01735e8270ce240e2bc3cbf17"
+      },
       "params_hash": "sha256:796d99acda7cc51e94a718fd885fcc103c3bd0be2e393dd84f31c726b575d2a2",
       "algo": "sha256",
-      "ts": "2026-08-03T21:45:12Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:51:51Z",
+      "provenance": "mathpix"
     }
   }
 }

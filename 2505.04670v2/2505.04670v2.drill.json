@@ -5,15 +5,16 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -72,17 +73,25 @@
     "bibkey": "2505.04670v2",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Abstract": 1,
-      "Paragraph": 91,
-      "LtxCommand": 4,
-      "Section": 24,
+      "Page": 10,
+      "Footnote": 5,
+      "Citation": 5,
       "Table": 3,
-      "Equation": 4,
-      "Formula": 19,
-      "Citation": 61
+      "TableRow": 37,
+      "TableCell": 123,
+      "Sidenote": 19,
+      "Abstract": 1,
+      "Diagram": 7,
+      "Section": 4,
+      "Picture": 1,
+      "ListItem": 42,
+      "Equation": 3,
+      "Formula": 23,
+      "Paragraph": 138,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 10,
       "placed": 91,
@@ -92,14 +101,6 @@
       "numbered": 24,
       "roots": 1
     },
-    "bibliography_entries": 45,
-    "bibliography_with_year": 45,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 58,
-    "tiddlers_path": "2505.04670v2.tiddlers.json",
-    "tiddlers_count": 222,
-    "tiddlers_svg_mode": "inline",
     "abstract": "With the rise of AI-based code generation, customizing existing code out of natural language instructions to modify visual results -such as figures or images -has become possible, promising to reduce the need for deep programming expertise. However, even experienced developers can struggle with this task, as it requires identifying relevant code regions (feature location), generating valid code variants, and ensuring the modifications reliably align with user intent. In this paper, we introduce vTikZ, the first benchmark designed to evaluate the ability of Large Language Models (LLMs) to customize code while preserving coherent visual outcomes. Our benchmark consists of carefully curated vTikZ editing scenarios, parameterized ground truths, and a reviewing tool that leverages visual feedback to assess correctness. Empirical evaluation with stateof-the-art LLMs shows that existing solutions struggle to reliably modify code in alignment with visual intent, highlighting a gap in current AI-assisted code editing approaches. We argue that vTikZ opens new research directions for integrating LLMs with visual feedback mechanisms to improve code customization tasks in various domains beyond TikZ, including image processing, art creation, Web design, and 3D modeling.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -153,7 +154,70 @@
         "page": 10,
         "url": "https://webarena.dev"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "LLM Code Customization with Visual Results: A Benchmark on TikZ",
+      "Subject": "-  Software and its engineering  ->  Automatic programming.Software prototyping.Visual languages.-  Computing methodologies  ->  Artificial intelligence.",
+      "Creator": "LaTeX with acmart 2021/05/01 v1.78 Typesetting articles for the Association for Computing Machinery and hyperref 2023-04-22 v7.00x Hypertext links for LaTeX",
+      "Producer": "pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+      "CreationDate": "Thu Jun  5 02:52:20 2025 CEST",
+      "ModDate": "Thu Jun  5 02:52:20 2025 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "619.2 x 806.4 pts",
+      "Page rot": "0",
+      "File size": "1046035 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 10,
+    "image_count": 8,
+    "mathpix_pdf_id": "60e13662-8ff9-4fe7-9526-6f1b708a674b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2505.04670v2.lines.json",
+        "bytes": 1390126
+      },
+      {
+        "format": "md",
+        "path": "2505.04670v2.md",
+        "bytes": 60481
+      },
+      {
+        "format": "tex.zip",
+        "path": "2505.04670v2.tex.zip",
+        "bytes": 281288
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 51,
+    "bibliography_with_year": 45,
+    "bibliography_numeric_citations": 56,
+    "bibliography_authoryear_citations": 3,
+    "bibliography_cites": 56,
+    "tiddlers_path": "2505.04670v2.tiddlers.json",
+    "tiddlers_count": 329,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "LLM Code Customization with Visual Results: A Benchmark on TikZ",
@@ -1360,18 +1424,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3595.2,
       "detail": "4 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:36:25Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13142.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:36:26Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 355.8,
+      "detail": "422 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:36:26Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "51 entries, 56+3 cites detected, 56 linked"
+    },
+    {
+      "ts": "2026-08-22T15:36:26Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 17.1,
+      "detail": "329 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2505.04670v2/texsrc/main.tex": "sha256:2dca54dd778357c944d976f69716adac0fe47a5b0b972f9cc87c0277715b9692"
+        "/home/wkolbe/pdfdrill-library/2505.04670v2/2505.04670v2.lines.json": "sha256:8266f3365dcd912f5fa325cac2c3136bf7f20fc9d6e8d98b89c0f9e28c796af8"
       },
       "params_hash": "sha256:4ba446f11c8fcc0fabb1380d14dd183d545cd8f8cae5903770222331e91da503",
       "algo": "sha256",
-      "ts": "2026-08-03T21:36:12Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:36:26Z",
+      "provenance": "mathpix"
     }
   }
 }

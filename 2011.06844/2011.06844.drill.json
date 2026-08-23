@@ -3,18 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2011.06844",
@@ -22,22 +22,23 @@
     "bibkey": "2011.06844",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 93,
-      "Abstract": 1,
-      "Section": 13,
-      "LtxCommand": 1,
+      "Page": 11,
+      "Footnote": 6,
       "Table": 6,
-      "Formula": 10,
+      "TableRow": 55,
+      "TableCell": 799,
+      "Sidenote": 22,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Picture": 3,
+      "ListItem": 17,
       "Equation": 4,
-      "Citation": 60
+      "Formula": 26,
+      "Paragraph": 63,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 39,
-    "bibliography_with_year": 39,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 4,
+    "model_equations_with_cdn": 4,
+    "model_source": "mathpix",
     "pages": 11,
     "bytes": 479391,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -129,9 +130,6 @@
       "WUWDGV+CMMI12"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2011.06844.tiddlers.json",
-    "tiddlers_count": 196,
-    "tiddlers_svg_mode": "inline",
     "abstract": "As news and social media exhibit an increasing amount of manipulative polarized content, detecting such propaganda has received attention as a new task for content analysis. Prior work has focused on supervised learning with training data from the same domain. However, as propaganda can be subtle and keeps evolving, manual identification and proper labeling are very demanding. As a consequence, training data is a major bottleneck. In this paper, we tackle this bottleneck and present an approach to leverage cross-domain learning, based on labeled documents and sentences from news and tweets, as well as political speeches with a clear difference in their degrees of being propagandistic. We devise informative features and build various classifiers for propaganda labeling, using cross-domain learning. Our experiments demonstrate the usefulness of this approach, and identify difficulties and limitations in various configurations of sources and targets for the transfer step. We further analyze the influence of various features, and characterize salient indicators of propaganda.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -173,7 +171,67 @@
         "page": 3,
         "url": "https://winstonchurchill.org/resources/speeches/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Tue Nov 24 03:23:54 2020 CET",
+      "ModDate": "Tue Nov 24 03:23:54 2020 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "479391 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 0,
+    "mathpix_pdf_id": "2b62fa0d-c95d-4a40-ad2c-308f2052e4de",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2011.06844.lines.json",
+        "bytes": 2060448
+      },
+      {
+        "format": "md",
+        "path": "2011.06844.md",
+        "bytes": 47965
+      },
+      {
+        "format": "tex.zip",
+        "path": "2011.06844.tex.zip",
+        "bytes": 288202
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2011.06844.tiddlers.json",
+    "tiddlers_count": 178,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1381,16 +1439,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5445.7,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:54:47Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 16394.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:54:48Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 371.9,
+      "detail": "1016 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:54:48Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.3,
+      "detail": "178 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2011.06844/2011.06844.lines.json": "sha256:f3622510694100ee8e357523280996d4800776813874ad6cc97dff2212b9a8d6"
+      },
       "params_hash": "sha256:6f7078bb1bea4f4fa75b12503543f6218530f3dd5fa0704c51646cb1d58bff6c",
       "algo": "sha256",
-      "ts": "2026-08-03T20:38:59Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:54:47Z",
+      "provenance": "mathpix"
     }
   }
 }

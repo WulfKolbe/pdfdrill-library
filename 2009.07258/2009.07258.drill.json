@@ -7,15 +7,15 @@
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "TOC_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2009.07258",
@@ -23,17 +23,24 @@
     "bibkey": "2009.07258",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 49,
-      "Abstract": 1,
-      "Section": 25,
-      "Equation": 6,
-      "Formula": 42,
-      "LtxCommand": 4,
+      "Page": 11,
+      "Footnote": 7,
       "Table": 7,
-      "Citation": 82
+      "TableRow": 63,
+      "TableCell": 387,
+      "Sidenote": 22,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Section": 2,
+      "Picture": 1,
+      "ListItem": 17,
+      "Equation": 6,
+      "Formula": 57,
+      "Paragraph": 53,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "latex_source": "2009.07258.tgz",
     "latex_macros": 2,
     "latex_src_equations": 6,
@@ -119,14 +126,6 @@
       "KKJSHU+CMMI7"
     ],
     "has_math_fonts": true,
-    "bibliography_entries": 38,
-    "bibliography_with_year": 36,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 82,
-    "tiddlers_path": "2009.07258.tiddlers.json",
-    "tiddlers_count": 201,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Query expansion aims to mitigate the mismatch between the language used in a query and in a document. However, query expansion methods can suffer from introducing non-relevant information when expanding the query. To bridge this gap, inspired by recent advances in applying contextualized models like BERT to the document retrieval task, this paper proposes a novel query expansion model that leverages the strength of the BERT model to select relevant document chunks for expansion. In evaluation on the standard TREC Robust04 and GOV2 test collections, the proposed BERT-QE model significantly outperforms BERT-Large models.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -167,7 +166,67 @@
         "page": ""
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Wed Nov  4 03:10:40 2020 CET",
+      "ModDate": "Wed Nov  4 03:10:40 2020 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "489538 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 6,
+    "mathpix_pdf_id": "a9d6114c-8e03-4b72-90c0-4a52b7756ae7",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2009.07258.lines.json",
+        "bytes": 1499690
+      },
+      {
+        "format": "md",
+        "path": "2009.07258.md",
+        "bytes": 45956
+      },
+      {
+        "format": "tex.zip",
+        "path": "2009.07258.tex.zip",
+        "bytes": 173862
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2009.07258.tiddlers.json",
+    "tiddlers_count": 204,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1396,16 +1455,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4225.0,
       "detail": "3 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:53:40Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13616.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:53:41Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 305.1,
+      "detail": "637 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:53:41Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.1,
+      "detail": "204 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2009.07258/2009.07258.lines.json": "sha256:df7a76d733bdd6f93dadf0dcb45a28e36449dc65932bbd64bdbfd28bd0abac6b"
+      },
       "params_hash": "sha256:317bc63ef8b2e08445c80aa744cf5df7c24ed74fe017e7c77fa7823896054e19",
       "algo": "sha256",
-      "ts": "2026-08-03T20:34:18Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:53:41Z",
+      "provenance": "mathpix"
     }
   }
 }

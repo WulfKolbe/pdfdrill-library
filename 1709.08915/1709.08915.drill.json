@@ -3,19 +3,20 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "ABSTRACT_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1709.08915",
@@ -23,23 +24,21 @@
     "bibkey": "1709.08915",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 6,
-      "Paragraph": 100,
+      "Page": 10,
+      "Footnote": 4,
+      "Citation": 5,
+      "Sidenote": 20,
       "Abstract": 1,
-      "Section": 30,
-      "Formula": 165,
+      "Diagram": 6,
+      "Picture": 3,
+      "ListItem": 5,
       "Equation": 13,
-      "Citation": 86,
-      "Algorithm": 1,
-      "AlgorithmStep": 21
+      "Formula": 158,
+      "Paragraph": 100,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 31,
-    "bibliography_with_year": 31,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 86,
+    "model_equations_with_cdn": 13,
+    "model_source": "mathpix",
     "pages": 10,
     "bytes": 501170,
     "page_size": "612 x 792 pts (letter)",
@@ -175,16 +174,78 @@
       "VXFXMF+CMMI5"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1709.08915.tiddlers.json",
-    "tiddlers_count": 374,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
     "links": [
       {
         "page": 6,
         "url": "http://eda.mmci.uni-saarland.de/slope/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Slope",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Alexander Marx and Jilles Vreeken",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Sep 27 02:21:02 2017 CEST",
+      "ModDate": "Wed Sep 27 02:21:02 2017 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "501170 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 10,
+    "image_count": 0,
+    "mathpix_pdf_id": "bfa66c24-2f69-441f-bcd1-86ecea2414bc",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1709.08915.lines.json",
+        "bytes": 1141104
+      },
+      {
+        "format": "md",
+        "path": "1709.08915.md",
+        "bytes": 58948
+      },
+      {
+        "format": "tex.zip",
+        "path": "1709.08915.tex.zip",
+        "bytes": 355635
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 31,
+    "bibliography_with_year": 31,
+    "bibliography_numeric_citations": 86,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 86,
+    "tiddlers_path": "1709.08915.tiddlers.json",
+    "tiddlers_count": 371,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Slope",
@@ -1898,16 +1959,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4995.4,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:27:08Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10467.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:27:08Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 379.4,
+      "detail": "326 objects, 13 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:27:09Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "31 entries, 86+0 cites detected, 86 linked"
+    },
+    {
+      "ts": "2026-08-22T15:27:09Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.4,
+      "detail": "371 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1709.08915/1709.08915.lines.json": "sha256:47f115c6ffe027fcdf3cf5269c958c86f4c91043afdd0f7c6f46830f3d3c6112"
+      },
       "params_hash": "sha256:cffa78eeb04606841041c7abf3c87f56fc733ef7881584e8895fcf28f2e9eb63",
       "algo": "sha256",
-      "ts": "2026-08-03T19:39:29Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:27:08Z",
+      "provenance": "mathpix"
     }
   }
 }

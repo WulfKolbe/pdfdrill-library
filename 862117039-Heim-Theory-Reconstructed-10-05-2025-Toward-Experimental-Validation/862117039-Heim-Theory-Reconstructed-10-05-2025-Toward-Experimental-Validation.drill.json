@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 23,
@@ -82,23 +83,26 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 23,
-      "ListItem": 161,
+      "Table": 1,
+      "TableRow": 6,
+      "TableCell": 24,
+      "Abstract": 1,
+      "Section": 2,
+      "ListItem": 32,
       "Equation": 12,
-      "Paragraph": 34,
+      "Formula": 33,
+      "Paragraph": 141,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 12,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation.tiddlers.json",
-    "tiddlers_count": 247,
-    "tiddlers_svg_mode": "inline",
     "abstract": "This paper presents a first structured attempt to identify testable consequences of\n     Heim Theory and to offer a concrete experimental roadmap for its empirical validation\n     or falsification. Drawing on the formal framework of quantized polymetric geometry,\n     modal selector logic, and syntropic collapse, we describe six potential physical effects\n     that distinguish Heim Theory from general relativity, quantum field theory, and holo-\n     graphic models. These include polymetric torsion signatures, modal boundary phe-\n     nomena, syntropic collapse gradients, and modal-inertial oscillation drives. Theoretical\n     mechanisms are described using formal Heim constructs and supported by practical sug-\n     gestions for laboratory-scale implementation. This document is intended as a working\n     reference for experimentalists, engineers, and theorists interested in exploring Heimian\n     phenomena. It will be continuously refined based on community feedback and collabo-\n     ration.",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
@@ -124,7 +128,59 @@
         "page": ""
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.26",
+      "CreationDate": "Sat May 10 10:50:10 2025 CEST",
+      "ModDate": "Sat May 10 10:50:10 2025 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "23",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "250098 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 23,
+    "image_count": 0,
+    "mathpix_pdf_id": "4239c1d2-5c4d-4600-89ec-c7b475042da9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation.lines.json",
+        "bytes": 695572
+      },
+      {
+        "format": "md",
+        "path": "862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation.md",
+        "bytes": 36481
+      },
+      {
+        "format": "tex.zip",
+        "path": "862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation.tex.zip",
+        "bytes": 41355
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation.tiddlers.json",
+    "tiddlers_count": 263,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1083,18 +1139,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2415.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:52:10Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6013.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:52:10Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 171.8,
+      "detail": "276 objects, 12 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:52:10Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.9,
+      "detail": "263 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation/862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation.lines.json": "sha256:b9a219113b90790e6078189004d6080b7f954eb4d53fb70399b5ca7ad70db1e3"
+        "/home/wkolbe/pdfdrill-library/862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation/862117039-Heim-Theory-Reconstructed-10-05-2025-Toward-Experimental-Validation.lines.json": "sha256:a4bd1ae7762f1016edd022b0a65ee985a6585ae3ccbada12d5bf35447b550576"
       },
       "params_hash": "sha256:36cdf0b5b82247bf3a0d36802d958353655549ab5dc78393a25d09c829f2fe11",
       "algo": "sha256",
-      "ts": "2026-08-03T22:26:07Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:52:10Z",
+      "provenance": "mathpix"
     }
   }
 }

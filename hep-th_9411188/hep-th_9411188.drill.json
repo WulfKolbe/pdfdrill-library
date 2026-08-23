@@ -4,11 +4,11 @@
   "facts": [
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "EQBLOBS_KNOWN",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "hep-th/9411188",
@@ -16,19 +16,20 @@
     "bibkey": "hep-th_9411188",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 55,
-      "Formula": 171,
-      "LtxCommand": 11,
+      "Page": 11,
+      "Diagram": 1,
+      "ListItem": 3,
       "Equation": 34,
-      "Citation": 48
+      "Formula": 159,
+      "Paragraph": 62,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 34,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "math": true,
+      "source": "mathpix"
     },
     "latex_source": "hep-th_9411188.tgz",
     "latex_macros": 148,
@@ -38,14 +39,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "hep-th_9411188.tgz",
     "merge_paragraphs_changed": 3,
-    "bibliography_entries": 30,
-    "bibliography_with_year": 27,
-    "bibliography_numeric_citations": 47,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 47,
-    "tiddlers_path": "hep-th_9411188.tiddlers.json",
-    "tiddlers_count": 324,
-    "tiddlers_svg_mode": "inline",
     "pages": 11,
     "bytes": 178494,
     "page_size": "612 x 792 pts (letter)",
@@ -129,7 +122,59 @@
       "regions": 23,
       "sections": 0,
       "children": 0
-    }
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:hep-th/9411188v1  25 Nov 1994",
+      "Creator": "dvips(k) 5.86 Copyright 1999 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Nov  5 09:11:14 2018 CET",
+      "ModDate": "Mon Nov  5 09:11:14 2018 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "178494 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 11,
+    "image_count": 39,
+    "mathpix_pdf_id": "ee4bfd7c-a455-41cd-96af-9029f19c6091",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "hep-th_9411188.lines.json",
+        "bytes": 587332
+      },
+      {
+        "format": "md",
+        "path": "hep-th_9411188.md",
+        "bytes": 52526
+      },
+      {
+        "format": "tex.zip",
+        "path": "hep-th_9411188.tex.zip",
+        "bytes": 59939
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "hep-th_9411188.tiddlers.json",
+    "tiddlers_count": 287,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -757,16 +802,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.5,
       "detail": "324 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:06:25Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,EQBLOBS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9564.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:06:25Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,EQBLOBS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 175.8,
+      "detail": "271 objects, 34 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:06:26Z",
+      "node": "tiddlers",
+      "from": "EQBLOBS_KNOWN,FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.8,
+      "detail": "287 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/hep-th_9411188/hep-th_9411188.lines.json": "sha256:db6bf80456eaabeef2ce76a3716972574aaca4f2ab6d97f84cdc746638548db1"
+      },
       "params_hash": "sha256:6e1680f0d81451f4e4b5eab95d4e271a543121ea71e30e866a5fe90eea12f534",
       "algo": "sha256",
-      "ts": "2026-08-06T01:20:40Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:06:25Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

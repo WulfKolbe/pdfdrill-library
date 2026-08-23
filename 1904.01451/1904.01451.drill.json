@@ -3,17 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1904.01451",
@@ -21,22 +21,21 @@
     "bibkey": "1904.01451",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 2,
-      "Paragraph": 41,
-      "Abstract": 1,
-      "Section": 18,
-      "Formula": 25,
-      "Equation": 7,
+      "Page": 12,
+      "Footnote": 3,
       "Table": 4,
-      "Citation": 49
+      "TableRow": 28,
+      "TableCell": 129,
+      "Abstract": 1,
+      "Diagram": 4,
+      "ListItem": 4,
+      "Equation": 7,
+      "Formula": 30,
+      "Paragraph": 45,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 30,
-    "bibliography_with_year": 30,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 49,
+    "model_equations_with_cdn": 7,
+    "model_source": "mathpix",
     "pages": 12,
     "bytes": 316391,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -117,9 +116,6 @@
       "VUYPBU+CMMIB10"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1904.01451.tiddlers.json",
-    "tiddlers_count": 158,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Popular word embedding methods such as word2vec and GloVe assign a single vector representation to each word, even if a word has multiple distinct meanings. Multi-sense embeddings instead provide different vectors for each sense of a word. However, they typically cannot serve as a drop-in replacement for conventional single-sense embeddings, because the correct sense vector needs to be selected for each word. In this work, we study the effect of multi-sense embeddings on the task of reverse dictionaries. We propose a technique to easily integrate them into an existing neural network architecture using an attention mechanism. Our experiments demonstrate that large improvements can be obtained when employing multi-sense embeddings both in the input sequence as well as for the target representation. An analysis of the sense distributions and of the learned attention is provided as well.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -168,7 +164,67 @@
         "page": 6,
         "url": "https://code.google.com/archive/p/word2vec/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Apr  3 02:49:11 2019 CEST",
+      "ModDate": "Wed Apr  3 02:49:11 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "316391 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 12,
+    "image_count": 0,
+    "mathpix_pdf_id": "1cce7f7d-2074-492a-8a20-db94af21c4ad",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1904.01451.lines.json",
+        "bytes": 633255
+      },
+      {
+        "format": "md",
+        "path": "1904.01451.md",
+        "bytes": 37384
+      },
+      {
+        "format": "tex.zip",
+        "path": "1904.01451.tex.zip",
+        "bytes": 202027
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1904.01451.tiddlers.json",
+    "tiddlers_count": 127,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1221,18 +1277,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2385.3,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:12:13Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9625.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:12:13Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 145.4,
+      "detail": "268 objects, 7 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:12:13Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.8,
+      "detail": "127 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1904.01451/texsrc/main.tex": "sha256:5d9264bce4a426c9ed309d63abd5c9233ac2cb5bd2a7feb0f45dff0abb3fb308"
+        "/home/wkolbe/pdfdrill-library/1904.01451/1904.01451.lines.json": "sha256:ef6ccfe4e70b21d3268bffb4e115261c074705793af9143f5b9b74a78d8f28ec"
       },
       "params_hash": "sha256:d4913bf7f07e0a159db6a4de3c367f44154455e46872f64f91bc51f18c6f1ce7",
       "algo": "sha256",
-      "ts": "2026-08-03T19:46:05Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:12:13Z",
+      "provenance": "mathpix"
     }
   }
 }

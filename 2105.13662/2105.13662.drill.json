@@ -3,18 +3,19 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2105.13662",
@@ -22,20 +23,22 @@
     "bibkey": "2105.13662",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 44,
+      "Page": 8,
+      "Footnote": 6,
+      "Citation": 1,
+      "Table": 2,
+      "TableRow": 12,
+      "TableCell": 33,
+      "Sidenote": 16,
       "Abstract": 1,
-      "Section": 12,
-      "Formula": 1,
-      "Table": 1,
-      "Citation": 49
+      "Diagram": 2,
+      "ListItem": 18,
+      "Formula": 4,
+      "Paragraph": 57,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 29,
-    "bibliography_with_year": 29,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 49,
+    "model_source": "mathpix",
     "pages": 8,
     "bytes": 793577,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -98,9 +101,6 @@
       "QULFNO+CMMI10"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2105.13662.tiddlers.json",
-    "tiddlers_count": 114,
-    "tiddlers_svg_mode": "inline",
     "abstract": "ASCENT is a fully automated methodology for extracting and consolidating commonsense assertions from web contents (Nguyen et al., WWW 2021). It advances traditional triple-based commonsense knowledge representation by capturing semantic facets like locations and purposes, and composite concepts, i.e., subgroups and related aspects of subjects. In this demo, we present a web portal that allows users to understand its construction process, explore its content, and observe its impact in the use case of question answering. The demo website and an introductory video are both available online.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -144,7 +144,72 @@
         "page": 6,
         "url": "https://quasimodo.r2.enst.fr"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Mon May 31 02:44:34 2021 CEST",
+      "ModDate": "Mon May 31 02:44:34 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "793577 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 8,
+    "image_count": 2,
+    "mathpix_pdf_id": "fc696fa5-7b65-4e21-9a87-fe1e3f268916",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2105.13662.lines.json",
+        "bytes": 755592
+      },
+      {
+        "format": "md",
+        "path": "2105.13662.md",
+        "bytes": 28194
+      },
+      {
+        "format": "tex.zip",
+        "path": "2105.13662.tex.zip",
+        "bytes": 197474
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 6,
+    "bibliography_with_year": 6,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 27,
+    "bibliography_cites": 3,
+    "tiddlers_path": "2105.13662.tiddlers.json",
+    "tiddlers_count": 156,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1086,18 +1151,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3207.4,
       "detail": "2 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:58:23Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9712.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:58:23Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 199.1,
+      "detail": "161 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:58:24Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "6 entries, 0+27 cites detected, 3 linked"
+    },
+    {
+      "ts": "2026-08-22T14:58:24Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.8,
+      "detail": "156 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2105.13662/texsrc/main.tex": "sha256:5289cb2007f698b918341dbeb862320fd4ac428040cc98f411f8409b130a7542"
+        "/home/wkolbe/pdfdrill-library/2105.13662/2105.13662.lines.json": "sha256:1e5ae056e25e791643b09908843995cca2c1f9d13e8e0a731b7a7126c15024b6"
       },
       "params_hash": "sha256:5b736ba61771facd7f96593219088394b40cbedcfcc9ae56c363e98308d319ac",
       "algo": "sha256",
-      "ts": "2026-08-03T20:54:47Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:58:23Z",
+      "provenance": "mathpix"
     }
   }
 }

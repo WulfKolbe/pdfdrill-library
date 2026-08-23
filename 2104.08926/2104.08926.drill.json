@@ -3,18 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "MD_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2104.08926",
@@ -22,22 +22,20 @@
     "bibkey": "2104.08926",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 44,
+      "Page": 12,
+      "Footnote": 5,
+      "Table": 6,
+      "TableRow": 56,
+      "TableCell": 348,
       "Abstract": 1,
-      "Section": 10,
-      "Diagram": 3,
-      "LtxCommand": 5,
-      "Formula": 55,
-      "Table": 8,
-      "Citation": 70
+      "Diagram": 1,
+      "ListItem": 15,
+      "Formula": 91,
+      "Paragraph": 41,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 16,
-    "bibliography_with_year": 16,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 70,
+    "model_source": "mathpix",
     "pages": 12,
     "bytes": 296046,
     "page_size": "612 x 792 pts (letter)",
@@ -110,9 +108,6 @@
       "JTFUYF+CMMI6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2104.08926.tiddlers.json",
-    "tiddlers_count": 172,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Preference judgments have been demonstrated as a better alternative to graded judgments to assess the relevance of documents relative to queries. Existing work has verified transitivity among preference judgments when collected from trained judges, which reduced the number of judgments dramatically. Moreover, strict preference judgments and weak preference judgments, where the latter additionally allow judges to state that two documents are equally relevant for a given query, are both widely used in literature. However, whether transitivity still holds when collected from crowdsourcing, i.e., whether the two kinds of preference judgments behave similarly remains unclear. In this work, we collect judgments from multiple judges using a crowdsourcing platform and aggregate them to compare the two kinds of preference judgments in terms of transitivity, time consumption, and quality. That is, we look into whether aggregated judgments are transitive, how long it takes judges to make them, and whether judges agree with each other and with judgments from TREC. Our key findings are that only strict preference judgments are transitive. Meanwhile, weak preference judgments behave differently in terms of transitivity, time consumption, as well as of quality of judgment.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -202,7 +197,67 @@
         "level": 3
       }
     ],
-    "toc_search_scope": "markdown"
+    "toc_search_scope": "markdown",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Tue Apr 20 03:21:59 2021 CEST",
+      "ModDate": "Tue Apr 20 03:21:59 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "296046 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 12,
+    "image_count": 6,
+    "mathpix_pdf_id": "5a2e807b-434d-4f5a-89aa-d35b077505b3",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2104.08926.lines.json",
+        "bytes": 985517
+      },
+      {
+        "format": "md",
+        "path": "2104.08926.md",
+        "bytes": 39707
+      },
+      {
+        "format": "tex.zip",
+        "path": "2104.08926.tex.zip",
+        "bytes": 81014
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2104.08926.tiddlers.json",
+    "tiddlers_count": 190,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1117,16 +1172,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2276.0,
       "detail": "3 images, 3 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:13:58Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8981.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:13:58Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 222.8,
+      "detail": "577 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:13:59Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.9,
+      "detail": "190 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2104.08926/2104.08926.lines.json": "sha256:95b899428f00445fbe9b977d8159474051495cab2c7e55bcbc809f6e4ff87da1"
+      },
       "params_hash": "sha256:3b906c52edbc71ec557088b0ade2fe82f03546dd1484eac5b2e6956ba28bb9f3",
       "algo": "sha256",
-      "ts": "2026-08-03T20:52:47Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:13:58Z",
+      "provenance": "mathpix"
     }
   }
 }

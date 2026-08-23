@@ -9,14 +9,15 @@
     "MD_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2602.11699v3",
@@ -24,21 +25,28 @@
     "bibkey": "2602.11699v3",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 71,
+      "Page": 13,
+      "Citation": 4,
+      "Table": 5,
+      "TableRow": 37,
+      "TableCell": 188,
+      "Sidenote": 24,
       "Abstract": 1,
-      "Section": 21,
-      "Table": 12,
-      "Formula": 4,
-      "Citation": 50
+      "Diagram": 9,
+      "Section": 4,
+      "ListItem": 6,
+      "Formula": 5,
+      "Paragraph": 84,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
     "latex_source": "2602.11699v3.tgz",
     "latex_macros": 1,
@@ -115,14 +123,6 @@
       "numbered": 21,
       "roots": 1
     },
-    "bibliography_entries": 31,
-    "bibliography_with_year": 31,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 50,
-    "tiddlers_path": "2602.11699v3.tiddlers.json",
-    "tiddlers_count": 171,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Nonsensical and anomalous sentences have been instrumental in the development of computational models of semantic interpretation. A core challenge is to distinguish between what is merely anomalous (but can be interpreted given a supporting context) and what is truly nonsensical. However, it is unclear (a) how nonsensical, rather than merely anomalous, existing datasets are; and (b) how well LLMs can make this distinction. In this paper, we answer both questions by collecting sensicality judgments from human raters and LLMs on sentences from five semantically deviant datasets: both context-free and when providing a context. We find that raters consider most sentences at most anomalous, and only a few as properly nonsensical. We also show that LLMs are substantially skilled in generating plausible contexts for anomalous cases.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -131,7 +131,61 @@
       "Katrina Olsen",
       "Sebastian Padó"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Finding Sense in Nonsense with Generated Contexts: Perspectives from Humans and Language Models",
+      "Author": "Katrina Olsen; Sebastian Padó",
+      "Creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "13",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "888913 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 13,
+    "image_count": 8,
+    "mathpix_pdf_id": "1f360eb6-f0e0-44ac-ad49-0a30352a3c10",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2602.11699v3.lines.json",
+        "bytes": 1465179
+      },
+      {
+        "format": "md",
+        "path": "2602.11699v3.md",
+        "bytes": 52677
+      },
+      {
+        "format": "tex.zip",
+        "path": "2602.11699v3.tex.zip",
+        "bytes": 554419
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 14,
+    "bibliography_with_year": 14,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 9,
+    "bibliography_cites": 2,
+    "tiddlers_path": "2602.11699v3.tiddlers.json",
+    "tiddlers_count": 192,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Finding Sense in Nonsense with Generated Contexts: Perspectives from Humans and Language Models",
@@ -1315,16 +1369,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6608.3,
       "detail": "5 images, 3 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:26:07Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10086.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:26:08Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MD_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 288.7,
+      "detail": "381 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:26:08Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "14 entries, 0+9 cites detected, 2 linked"
+    },
+    {
+      "ts": "2026-08-22T16:26:08Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.9,
+      "detail": "192 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2602.11699v3/2602.11699v3.lines.json": "sha256:85c0ef3b2bc2921802c3f805cc871777540d5ec10aa9955418a59710daf4f854"
+      },
       "params_hash": "sha256:caf49a919471ccbee931763a62f3c61ba4233afa3bce836370b082537108727a",
       "algo": "sha256",
-      "ts": "2026-08-03T21:44:11Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:26:08Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

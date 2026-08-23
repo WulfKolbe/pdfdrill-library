@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -75,28 +76,84 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 18,
-      "Citation": 31,
-      "ListItem": 80,
-      "Equation": 127,
-      "Paragraph": 100,
+      "Citation": 27,
+      "Table": 2,
+      "TableRow": 10,
+      "TableCell": 48,
+      "Sidenote": 3,
+      "Abstract": 1,
+      "ListItem": 62,
+      "Equation": 83,
+      "Formula": 299,
+      "Paragraph": 135,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 83,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 51,
-    "bibliography_with_year": 49,
-    "bibliography_numeric_citations": 65,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Development of the Method of Averaging in Clifford Geometric Algebras",
+      "Subject": "We develop the method of averaging in Clifford (geometric) algebras suggested by the author in previous papers. We consider operators constructed using two different sets of anticommuting elements of real or complexified Clifford algebras. These operators generalize Reynolds operators from the representation theory of finite groups. We prove a number of new properties of these operators. Using the generalized Reynolds operators, we give a complete proof of the generalization of Pauli's theorem to the case of Clifford algebras of arbitrary dimension. The results can be used in geometry, physics, engineering, computer science, and other applications.",
+      "Keywords": "Clifford algebra; geometric algebra; method of averaging; Reynolds operator; Pauli's theorem",
+      "Author": "Dmitry Shirokov",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Mon Aug 21 08:38:00 2023 CEST",
+      "ModDate": "Mon Aug 21 08:40:52 2023 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "18",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "369786 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 18,
+    "image_count": 5,
+    "mathpix_pdf_id": "b879a1fe-6cd3-4fdd-8406-55240f793386",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "mathematics-11-03607.lines.json",
+        "bytes": 891453
+      },
+      {
+        "format": "md",
+        "path": "mathematics-11-03607.md",
+        "bytes": 68686
+      },
+      {
+        "format": "tex.zip",
+        "path": "mathematics-11-03607.tex.zip",
+        "bytes": 72667
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 50,
+    "bibliography_with_year": 48,
+    "bibliography_numeric_citations": 67,
     "bibliography_authoryear_citations": 1,
-    "bibliography_cites": 65,
+    "bibliography_cites": 67,
     "tiddlers_path": "mathematics-11-03607.tiddlers.json",
-    "tiddlers_count": 397,
+    "tiddlers_count": 672,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -382,18 +439,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 12.1,
       "detail": "397 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:43:18Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9437.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:43:19Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 822.6,
+      "detail": "689 objects, 83 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:43:20Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "50 entries, 67+1 cites detected, 67 linked"
+    },
+    {
+      "ts": "2026-08-22T17:43:20Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 37.5,
+      "detail": "672 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/mathematics-11-03607/mathematics-11-03607.lines.json": "sha256:3b7216e990cf7b51fe98b40280f21b9ebe5f36571b13da413f84d052d6eef0d1"
+        "/home/wkolbe/pdfdrill-library/mathematics-11-03607/mathematics-11-03607.lines.json": "sha256:ab6c596f5ab9008b8a3ca87d0cf047c5fc727d088f6ee8de2051be3fc8b97db2"
       },
       "params_hash": "sha256:dc0e9f4c5c9cdbeb4101c031dc4fbbe940b772f5c3bc117193658873129fcc4a",
       "algo": "sha256",
-      "ts": "2026-08-06T01:29:28Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:43:19Z",
+      "provenance": "mathpix"
     }
   }
 }

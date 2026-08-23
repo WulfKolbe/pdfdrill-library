@@ -6,8 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -15,7 +13,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -81,29 +82,31 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
-      "Citation": 6,
-      "ListItem": 4,
-      "Equation": 3,
-      "Paragraph": 13,
+      "Footnote": 11,
+      "Citation": 2,
+      "Table": 1,
+      "TableRow": 20,
+      "TableCell": 90,
+      "Sidenote": 20,
+      "Abstract": 1,
+      "Diagram": 3,
+      "Section": 4,
+      "Picture": 2,
+      "ListItem": 2,
+      "Equation": 12,
+      "Formula": 43,
+      "Paragraph": 68,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 12,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 5 unmapped private-use character(s) remain (U+F8F1×1, U+F8F2×1, U+F8F3×1, U+F8F4×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 2,
-    "bibliography_cites": 0,
-    "tiddlers_path": "Dressler2011.tiddlers.json",
-    "tiddlers_count": 52,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "TeX",
@@ -137,7 +140,38 @@
         "url": "http://labrosa.ee.columbia.edu/projects/melody/",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "abe275df-3bb9-4124-b4d4-5766d51f0d78",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Dressler2011.lines.json",
+        "bytes": 997782
+      },
+      {
+        "format": "md",
+        "path": "Dressler2011.md",
+        "bytes": 39627
+      },
+      {
+        "format": "tex.zip",
+        "path": "Dressler2011.tex.zip",
+        "bytes": 233897
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 21,
+    "bibliography_with_year": 21,
+    "bibliography_numeric_citations": 41,
+    "bibliography_authoryear_citations": 2,
+    "bibliography_cites": 42,
+    "tiddlers_path": "Dressler2011.tiddlers.json",
+    "tiddlers_count": 218,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -612,18 +646,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2478.1,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:41:05Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9653.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:41:06Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 258.8,
+      "detail": "290 objects, 12 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:41:06Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "21 entries, 41+2 cites detected, 42 linked"
+    },
+    {
+      "ts": "2026-08-22T15:41:06Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.7,
+      "detail": "218 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Dressler2011/Dressler2011.lines.json": "sha256:f482bccee730135d182db39b34c930c99dd3e0e7efcd8f0990f70444bb94b6ff"
+        "/home/wkolbe/pdfdrill-library/Dressler2011/Dressler2011.lines.json": "sha256:3f0d3d55cb2edc760a482701f6722627ec4f8e12d713d511f02338fcedf6d70d"
       },
       "params_hash": "sha256:6160bcc98b03a1c0da50fdfd6a3cfac0ec997cc5895c025ecbd802512741566d",
       "algo": "sha256",
-      "ts": "2026-08-05T19:53:46Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:41:06Z",
+      "provenance": "mathpix"
     }
   }
 }

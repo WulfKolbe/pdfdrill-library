@@ -5,10 +5,11 @@
     "MODEL_BUILT",
     "LATEX_INGESTED",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "math-ph/0212032",
@@ -17,18 +18,22 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 18,
-      "Citation": 87,
-      "ListItem": 40,
-      "Equation": 20,
-      "Paragraph": 36,
-      "Document": 1
+      "Citation": 1,
+      "Abstract": 1,
+      "Diagram": 34,
+      "ListItem": 3,
+      "Equation": 23,
+      "Formula": 89,
+      "Paragraph": 64,
+      "Document": 1,
+      "Footnote": 2
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 23,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
     "latex_source": "math-ph_0212032.tgz",
     "latex_macros": 62,
@@ -36,14 +41,6 @@
     "latex_attached": 0,
     "latex_created": 0,
     "latex_graphics": 0,
-    "bibliography_entries": 14,
-    "bibliography_with_year": 14,
-    "bibliography_numeric_citations": 75,
-    "bibliography_authoryear_citations": 13,
-    "bibliography_cites": 79,
-    "tiddlers_path": "math-ph_0212032.tiddlers.json",
-    "tiddlers_count": 142,
-    "tiddlers_svg_mode": "inline",
     "pages": 18,
     "bytes": 213947,
     "page_size": "612 x 792 pts (letter)",
@@ -113,7 +110,62 @@
     ],
     "has_math_fonts": true,
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 112 unmapped private-use character(s) remain (U+F8EE×14, U+F8EF×28, U+F8F0×14, U+F8F9×14, U+F8FA×28, U+F8FB×14) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified."
+    "pua_note": "",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:math-ph/0212032v1  10 Dec 2002",
+      "Creator": "dvips(k) 5.86 Copyright 1999 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Thu Nov 15 01:32:56 2018 CET",
+      "ModDate": "Thu Nov 15 01:32:56 2018 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "18",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "213947 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 18,
+    "image_count": 87,
+    "mathpix_pdf_id": "415ebe86-f134-48f7-850b-d385d3f1353d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "math-ph_0212032.lines.json",
+        "bytes": 726906
+      },
+      {
+        "format": "md",
+        "path": "math-ph_0212032.md",
+        "bytes": 44520
+      },
+      {
+        "format": "tex.zip",
+        "path": "math-ph_0212032.tex.zip",
+        "bytes": 47854
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 14,
+    "bibliography_with_year": 14,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 13,
+    "bibliography_cites": 4,
+    "tiddlers_path": "math-ph_0212032.tiddlers.json",
+    "tiddlers_count": 273,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -542,18 +594,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.7,
       "detail": "142 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:42:44Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9097.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:42:45Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 447.2,
+      "detail": "236 objects, 23 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:42:46Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "14 entries, 0+13 cites detected, 4 linked"
+    },
+    {
+      "ts": "2026-08-22T17:42:46Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.6,
+      "detail": "273 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/math-ph_0212032/math-ph_0212032.lines.json": "sha256:af963136d01d8b2a8a2b236f03f40da4f0fa078fa886a96d74744cb3715da0a4"
+        "/home/wkolbe/pdfdrill-library/math-ph_0212032/math-ph_0212032.lines.json": "sha256:68645b04393f9be503a46c42ee248e1bea3e4ffa2880d7258cbed63e7b06c317"
       },
       "params_hash": "sha256:51855eeaa200f76a5ecdea5819097f9632532d6d46d22d73e3a722716081b843",
       "algo": "sha256",
-      "ts": "2026-08-06T01:29:10Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:42:45Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

@@ -3,17 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1905.10989",
@@ -21,22 +22,24 @@
     "bibkey": "1905.10989",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 64,
+      "Page": 11,
+      "Footnote": 15,
+      "Citation": 1,
+      "Table": 10,
+      "TableRow": 104,
+      "TableCell": 404,
+      "Sidenote": 22,
       "Abstract": 1,
-      "Section": 18,
-      "LtxCommand": 1,
-      "Table": 2,
-      "Formula": 2,
+      "Diagram": 2,
+      "Picture": 4,
+      "ListItem": 19,
       "Equation": 4,
-      "Citation": 1
+      "Formula": 51,
+      "Paragraph": 129,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 44,
-    "bibliography_with_year": 32,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_equations_with_cdn": 4,
+    "model_source": "mathpix",
     "pages": 11,
     "bytes": 749692,
     "page_size": "612 x 792 pts (letter)",
@@ -108,9 +111,6 @@
       "WWREXV+LibertineMathMI7"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1905.10989.tiddlers.json",
-    "tiddlers_count": 122,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Commonsense knowledge about object properties, human behavior and general concepts is crucial for robust AI applications. However, automatic acquisition of this knowledge is challenging because of sparseness and bias in online sources. This paper presents Quasimodo, a methodology and tool suite for distilling commonsense properties from non-standard web sources. We devise novel ways of tapping into search-engine query logs and QA forums, and combining the resulting candidate assertions with statistical cues from encyclopedias, books and image tags in a corroboration step. Unlike prior work on commonsense knowledge bases, Quasimodo focuses on salient properties that are typically associated with certain objects or concepts. Extensive evaluations, including extrinsic use-case studies, show that Quasimodo provides better coverage than state-of-the-art baselines with comparable quality.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -123,7 +123,72 @@
       "Archit Sakhadeo",
       "Gerhard Weikum"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Commonsense Properties from Query Logs  and Question Answering Forums",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Julien Romero, Simon Razniewski, Koninika Pal, Jeff Z. Pan, Archit Sakhadeo, and Gerhard Weikum",
+      "Creator": "LaTeX with acmart 2018/11/11 v1.56 Typesetting articles for the Association for Computing Machinery and hyperref 2020-05-15 v7.00e Hypertext links for LaTeX",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Fri Feb 12 03:27:44 2021 CET",
+      "ModDate": "Fri Feb 12 03:27:44 2021 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "749692 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 3,
+    "mathpix_pdf_id": "d7c32956-92bd-4c4d-8a38-0ffcb9ace7e8",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1905.10989.lines.json",
+        "bytes": 1830503
+      },
+      {
+        "format": "md",
+        "path": "1905.10989.md",
+        "bytes": 66576
+      },
+      {
+        "format": "tex.zip",
+        "path": "1905.10989.tex.zip",
+        "bytes": 276262
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 45,
+    "bibliography_with_year": 44,
+    "bibliography_numeric_citations": 51,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 51,
+    "tiddlers_path": "1905.10989.tiddlers.json",
+    "tiddlers_count": 331,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Commonsense Properties from Query Logs  and Question Answering Forums",
@@ -1442,18 +1507,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5721.2,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:51:47Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13148.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:51:48Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 532.6,
+      "detail": "778 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:51:49Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "45 entries, 51+0 cites detected, 51 linked"
+    },
+    {
+      "ts": "2026-08-22T15:51:49Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.4,
+      "detail": "331 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1905.10989/texsrc/main.tex": "sha256:d7f58551f55dc9944dfb596d492ad4796f8867291096f7abbd2b01a263863d2b"
+        "/home/wkolbe/pdfdrill-library/1905.10989/1905.10989.lines.json": "sha256:202c817a5ef2aa2388fb28841f9c2f5b2f74b6485ff391d486256e28b9ed47f8"
       },
       "params_hash": "sha256:ebc81e9220bb84a58e79564bf1c3356ac89b7ba71ea5056a0a53ab392e51c646",
       "algo": "sha256",
-      "ts": "2026-08-03T19:47:23Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:51:48Z",
+      "provenance": "mathpix"
     }
   }
 }

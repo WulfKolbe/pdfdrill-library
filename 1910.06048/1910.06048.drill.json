@@ -3,16 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1910.06048",
@@ -20,22 +21,23 @@
     "bibkey": "1910.06048",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 37,
-      "Abstract": 1,
-      "Section": 12,
-      "Formula": 23,
-      "LtxCommand": 6,
-      "Equation": 2,
+      "Page": 6,
+      "Footnote": 1,
+      "Citation": 7,
       "Table": 3,
-      "Citation": 36
+      "TableRow": 17,
+      "TableCell": 117,
+      "Sidenote": 12,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 12,
+      "Equation": 2,
+      "Formula": 32,
+      "Paragraph": 34,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 29,
-    "bibliography_with_year": 29,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 3,
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "pages": 6,
     "bytes": 430418,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -119,9 +121,6 @@
       "IEDFPU+CMEX10"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1910.06048.tiddlers.json",
-    "tiddlers_count": 137,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Controversial claims are abundant in online media and discussion forums. A better understanding of such claims requires analyzing them from different perspectives. Stance classification is a necessary step for inferring these perspectives in terms of supporting or opposing the claim. In this work, we present a neural network model for stance classification leveraging BERT representations and augmenting them with a novel consistency constraint. Experiments on the Perspectrum dataset, consisting of claims and users&#39; perspectives from various debate websites, demonstrate the effectiveness of our approach over state-of-the-art baselines.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -132,7 +131,72 @@
       "Andrew Yates",
       "Gerhard Weikum"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Tue Oct 15 03:31:26 2019 CEST",
+      "ModDate": "Tue Oct 15 03:31:26 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "430418 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 6,
+    "image_count": 0,
+    "mathpix_pdf_id": "c8420045-5f5c-40a9-bffc-f5361c11f09b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1910.06048.lines.json",
+        "bytes": 767345
+      },
+      {
+        "format": "md",
+        "path": "1910.06048.md",
+        "bytes": 25991
+      },
+      {
+        "format": "tex.zip",
+        "path": "1910.06048.tex.zip",
+        "bytes": 106164
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 10,
+    "bibliography_with_year": 10,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 5,
+    "bibliography_cites": 0,
+    "tiddlers_path": "1910.06048.tiddlers.json",
+    "tiddlers_count": 137,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -652,16 +716,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2796.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:39:01Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8907.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:39:01Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 97.4,
+      "detail": "246 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:39:01Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "10 entries, 0+5 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T14:39:01Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.3,
+      "detail": "137 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1910.06048/1910.06048.lines.json": "sha256:01204e0c774e03a2bef07f0f1e2aca0c13b242c741f06a353de2d878b2f1c88f"
+      },
       "params_hash": "sha256:81b14b0c8a8471c87243014c641fa03e0b5092b67b4dcafa086ad190cd5c59a8",
       "algo": "sha256",
-      "ts": "2026-08-03T19:48:54Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:39:01Z",
+      "provenance": "mathpix"
     }
   }
 }

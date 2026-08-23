@@ -3,16 +3,16 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1709.01848",
@@ -20,22 +20,22 @@
     "bibkey": "1709.01848",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 50,
-      "Abstract": 1,
-      "Section": 21,
-      "Formula": 36,
+      "Page": 14,
+      "Footnote": 11,
       "Table": 7,
+      "TableRow": 44,
+      "TableCell": 276,
+      "Sidenote": 28,
+      "Abstract": 1,
+      "Diagram": 4,
+      "ListItem": 11,
       "Equation": 2,
-      "LtxCommand": 2,
-      "Citation": 66
+      "Formula": 49,
+      "Paragraph": 61,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 50,
-    "bibliography_with_year": 46,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 66,
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "pages": 14,
     "bytes": 662674,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -126,9 +126,6 @@
       "YYTAMH+CMMI6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1709.01848.tiddlers.json",
-    "tiddlers_count": 201,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Users suffering from mental health conditions often turn to online resources for support, including specialized online support communities or general communities such as Twitter and Reddit. In this work, we present a neural framework for supporting and studying users in both types of communities. We propose methods for identifying posts in support communities that may indicate a risk of self-harm, and demonstrate that our approach outperforms strong previously proposed methods for identifying such posts. Self-harm is closely related to depression, which makes identifying depressed users on general forums a crucial related task. We introduce a large-scale general forum dataset (&#34;RSDD&#34;) consisting of users with self-reported depression diagnoses matched with control users. We show how our method can be applied to effectively identify depressed users from their use of language alone. We demonstrate that our method outperforms strong baselines on this general forum dataset.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -138,7 +135,67 @@
       "Arman Cohan",
       "Nazli Goharian"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Thu Sep  7 02:30:05 2017 CEST",
+      "ModDate": "Thu Sep  7 02:30:05 2017 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "662674 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 14,
+    "image_count": 0,
+    "mathpix_pdf_id": "b2691d45-c577-4c2a-bc15-c153299a5c1f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1709.01848.lines.json",
+        "bytes": 1670619
+      },
+      {
+        "format": "md",
+        "path": "1709.01848.md",
+        "bytes": 57743
+      },
+      {
+        "format": "tex.zip",
+        "path": "1709.01848.tex.zip",
+        "bytes": 210845
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1709.01848.tiddlers.json",
+    "tiddlers_count": 205,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1470,16 +1527,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2037.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:39:59Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12568.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:40:00Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 285.4,
+      "detail": "509 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:40:00Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.4,
+      "detail": "205 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1709.01848/1709.01848.lines.json": "sha256:3610fcac671fdf728085f2e765fe6167e72ad9190c448b84584074bfbe7a496c"
+      },
       "params_hash": "sha256:0c68fa8f98c082858532455329eda7d4573e7248bbbb01f2080739823a5ccaaf",
       "algo": "sha256",
-      "ts": "2026-08-03T19:39:21Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:40:00Z",
+      "provenance": "mathpix"
     }
   }
 }

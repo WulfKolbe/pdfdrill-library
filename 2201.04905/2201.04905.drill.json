@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 15,
@@ -115,16 +116,19 @@
     "bibkey": "2201.04905",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 72,
+      "Page": 15,
+      "Citation": 1,
       "Abstract": 1,
-      "Section": 16,
-      "Formula": 107,
-      "Equation": 11,
-      "Diagram": 7,
-      "Citation": 40
+      "Diagram": 14,
+      "Section": 2,
+      "ListItem": 39,
+      "Equation": 2,
+      "Formula": 106,
+      "Paragraph": 61,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 15,
       "placed": 50,
@@ -134,14 +138,6 @@
       "numbered": 16,
       "roots": 1
     },
-    "bibliography_entries": 28,
-    "bibliography_with_year": 28,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 40,
-    "tiddlers_path": "2201.04905.tiddlers.json",
-    "tiddlers_count": 275,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Data integration and migration processes in polystores and multi-model database management systems highly benefit from data and schema transformations. Rigorous modeling of transformations is a complex problem. The data and schema transformation field is scattered with multiple different transformation frameworks, tools, and mappings. These are usually domain-specific and lack solid theoretical foundations. Our first goal is to define category theoretical foundations for relational, graph, and hierarchical data models and instances. Each data instance is represented as a category theoretical mapping called a functor. We formalize data and schema transformations as Kan lifts utilizing the functorial representation for the instances. A Kan lift is a category theoretical construction consisting of two mappings satisfying a certain universal property. In this work, the two mappings correspond to schema transformation and data transformation.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -168,7 +164,69 @@
         "page": ""
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX",
+      "CreationDate": "Fri Jan 14 02:42:03 2022 CET",
+      "ModDate": "Fri Jan 14 02:42:03 2022 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "961706 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5",
+      "PDF subtype": "PDF/A-1b:2005"
+    },
+    "page_count_text": 15,
+    "image_count": 0,
+    "mathpix_pdf_id": "3002f1ed-416f-4545-9d29-13578439a55b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2201.04905.lines.json",
+        "bytes": 594513
+      },
+      {
+        "format": "md",
+        "path": "2201.04905.md",
+        "bytes": 39382
+      },
+      {
+        "format": "tex.zip",
+        "path": "2201.04905.tex.zip",
+        "bytes": 502251
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 30,
+    "bibliography_with_year": 30,
+    "bibliography_numeric_citations": 30,
+    "bibliography_authoryear_citations": 4,
+    "bibliography_cites": 30,
+    "tiddlers_path": "2201.04905.tiddlers.json",
+    "tiddlers_count": 293,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "ISO 19005 - Electronic document file format for long-term preservation (PDF/A)",
@@ -1587,16 +1645,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4011.3,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:55:39Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9660.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:55:39Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 177.5,
+      "detail": "242 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:55:39Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "30 entries, 30+4 cites detected, 30 linked"
+    },
+    {
+      "ts": "2026-08-22T16:55:40Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.4,
+      "detail": "293 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2201.04905/2201.04905.lines.json": "sha256:e4e0a1a2eeac376d1ff588bb4db017810b156b25c9adcd9d429b19083693a459"
+      },
       "params_hash": "sha256:56cf6f0b63479462402da1d9ff9a26328d2ae1832083dd57de08d2d4d4816f93",
       "algo": "sha256",
-      "ts": "2026-08-03T20:57:04Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:55:39Z",
+      "provenance": "mathpix"
     }
   }
 }

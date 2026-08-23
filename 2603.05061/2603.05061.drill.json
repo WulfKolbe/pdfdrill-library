@@ -6,17 +6,18 @@
     "LATEX_INGESTED",
     "SIZE_KNOWN",
     "ABSTRACT_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
     "MD_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2603.05061",
@@ -24,21 +25,23 @@
     "bibkey": "2603.05061",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 68,
+      "Page": 6,
+      "Citation": 20,
+      "Sidenote": 14,
       "Abstract": 1,
-      "Formula": 111,
       "Equation": 42,
-      "Citation": 62
+      "Formula": 107,
+      "Paragraph": 85,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 42,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "2603.05061.tgz",
     "latex_macros": 26,
@@ -85,11 +88,6 @@
     "arxiv_authors": [
       "Christof Wetterich"
     ],
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 2,
-    "bibliography_cites": 0,
     "fonts": [
       "STYXPH+CMEX10",
       "EWSTSH+CMR7",
@@ -133,9 +131,6 @@
       "sections": 0,
       "children": 0
     },
-    "tiddlers_path": "2603.05061.tiddlers.json",
-    "tiddlers_count": 299,
-    "tiddlers_svg_mode": "inline",
     "toc": [
       {
         "number": "0.1",
@@ -156,7 +151,61 @@
         "page": 1,
         "url": "https://arxiv.org/abs/2603.05061v2"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Quantum field theory for classical fields",
+      "Author": "Christof Wetterich",
+      "Creator": "arXiv GenPDF (tex2pdf:8def8d8)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "213808 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 6,
+    "image_count": 0,
+    "mathpix_pdf_id": "586bc208-403c-4a16-ada8-d58b925aee17",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2603.05061.lines.json",
+        "bytes": 675457
+      },
+      {
+        "format": "md",
+        "path": "2603.05061.md",
+        "bytes": 33798
+      },
+      {
+        "format": "tex.zip",
+        "path": "2603.05061.tex.zip",
+        "bytes": 35508
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 2,
+    "bibliography_cites": 0,
+    "tiddlers_path": "2603.05061.tiddlers.json",
+    "tiddlers_count": 278,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Quantum field theory for classical fields",
@@ -719,16 +768,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2213.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:40:17Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9089.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:40:17Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 167.9,
+      "detail": "276 objects, 42 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:40:17Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+2 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T14:40:17Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.6,
+      "detail": "278 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2603.05061/2603.05061.lines.json": "sha256:8f8a2ce728fd2a4172431052abaa6c9eff5b4d79c8681a2201afdcd6e9011796"
+      },
       "params_hash": "sha256:3af9bdca2b63fae4ab1aed0aec46a77db3d973d5c980019977e32c301768ad8d",
       "algo": "sha256",
-      "ts": "2026-08-03T21:44:29Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:40:17Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

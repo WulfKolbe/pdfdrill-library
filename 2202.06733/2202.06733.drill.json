@@ -5,15 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 20,
@@ -80,16 +80,22 @@
     "bibkey": "2202.06733",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Formula": 212,
-      "Paragraph": 285,
-      "Section": 14,
-      "LtxCommand": 2,
+      "Page": 20,
       "Table": 2,
-      "Diagram": 2,
-      "Citation": 66
+      "TableRow": 18,
+      "TableCell": 160,
+      "Sidenote": 1,
+      "Abstract": 2,
+      "Diagram": 3,
+      "Section": 2,
+      "ListItem": 17,
+      "Equation": 75,
+      "Formula": 231,
+      "Paragraph": 122,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 75,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 20,
       "placed": 151,
@@ -99,14 +105,6 @@
       "numbered": 14,
       "roots": 1
     },
-    "bibliography_entries": 30,
-    "bibliography_with_year": 28,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 66,
-    "tiddlers_path": "2202.06733.tiddlers.json",
-    "tiddlers_count": 585,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Different ways of representing the group $SU(3)$ within a Geometric Algebra approach are explored. As part of this we consider characteristic multivectors for $SU(3)$, and how these are linked with decomposition of generators into commuting bivectors. The setting for this work is within a 6d Euclidean Clifford Algebra. We then go on to consider whether the fundamental forces of particle physics might arise from symmetry considerations in just the 4d geometric algebra of spacetime -- the STA. As part of this, a representation of $SU(3)$ is found wholly within the STA, involving preservation of a bivector norm. We also show how Octonions can be fully represented within the Spacetime Algebra, which we believe will be useful in making them understandable and accessible to a new community in Physics and Engineering. The two strands of the paper are drawn together in showing how preserving the octonion norm is the same as preserving the timelike part of the Dirac current of a particle. This suggests a new model for the symmetries preserved in particle physics. Following on from work by Günaydin and Gürsey on the link between quarks, and octonions, and by Furey on chains of octonionic multiplications, we show how both of these fit well within our scheme, and give some wholly STA versions of the operations involved, which in the cases considered have easily understandable equivalents in terms of 4d geometry. Links with larger groups containing $SU(3)$, such as $G_2$ and $SU(8)$, are also considered.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -136,7 +134,67 @@
         "page": ""
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Overleaf Example",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Tue Feb 15 03:17:33 2022 CET",
+      "ModDate": "Tue Feb 15 03:17:33 2022 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "20",
+      "Encrypted": "no",
+      "Page size": "595.276 x 782.362 pts",
+      "Page rot": "0",
+      "File size": "401873 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 20,
+    "image_count": 1,
+    "mathpix_pdf_id": "7417af95-4257-4f02-800c-1fc5d5ebb29f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2202.06733.lines.json",
+        "bytes": 1196686
+      },
+      {
+        "format": "md",
+        "path": "2202.06733.md",
+        "bytes": 86890
+      },
+      {
+        "format": "tex.zip",
+        "path": "2202.06733.tex.zip",
+        "bytes": 246742
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2202.06733.tiddlers.json",
+    "tiddlers_count": 493,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Overleaf Example",
@@ -1522,18 +1580,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6621.3,
       "detail": "1 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:05:14Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13060.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:05:15Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 572.7,
+      "detail": "654 objects, 75 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:05:15Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 18.0,
+      "detail": "493 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2202.06733/texsrc/main.tex": "sha256:d34a4792211896860843b5e5d846b7e0887df8f64f79dc707dd006c907c09910"
+        "/home/wkolbe/pdfdrill-library/2202.06733/2202.06733.lines.json": "sha256:8dbe5d3a054b69ec55737142c28ba1be558198021bdf9bd08542532ebf1613aa"
       },
       "params_hash": "sha256:d9d45abc57069fc9236d0926c4e6831b8f7406e010573d5ca50f3977ef113da7",
       "algo": "sha256",
-      "ts": "2026-08-03T20:57:34Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:05:15Z",
+      "provenance": "mathpix"
     }
   }
 }

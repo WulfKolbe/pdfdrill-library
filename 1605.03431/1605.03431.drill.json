@@ -5,15 +5,16 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -53,21 +54,24 @@
     "bibkey": "1605.03431",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Formula": 299,
-      "Paragraph": 256,
+      "Page": 18,
+      "Citation": 6,
+      "Sidenote": 37,
       "Abstract": 1,
-      "Section": 18,
-      "Equation": 144,
-      "LtxCommand": 1,
-      "Citation": 246
+      "Section": 8,
+      "ListItem": 12,
+      "Equation": 146,
+      "Formula": 250,
+      "Paragraph": 200,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 146,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "1605.03431.tgz",
     "latex_macros": 34,
@@ -77,14 +81,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "1605.03431.tgz",
     "merge_paragraphs_changed": 17,
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 9,
-    "bibliography_cites": 0,
-    "tiddlers_path": "1605.03431.tiddlers.json",
-    "tiddlers_count": 862,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "RLRMWW+CMTI10",
       "Times-Roman",
@@ -194,7 +190,67 @@
       "Xiangdong Zhang",
       "R. B. Mann",
       "G. J. Fee"
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.08",
+      "CreationDate": "Thu May 12 02:33:32 2016 CEST",
+      "ModDate": "Thu May 12 02:33:32 2016 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "18",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "367239 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 18,
+    "image_count": 441,
+    "mathpix_pdf_id": "52888d58-b459-4f4d-bde9-63c7e5767150",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1605.03431.lines.json",
+        "bytes": 1698474
+      },
+      {
+        "format": "md",
+        "path": "1605.03431.md",
+        "bytes": 94056
+      },
+      {
+        "format": "tex.zip",
+        "path": "1605.03431.tex.zip",
+        "bytes": 97546
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 9,
+    "bibliography_cites": 0,
+    "tiddlers_path": "1605.03431.tiddlers.json",
+    "tiddlers_count": 699,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -15366,16 +15422,58 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5196.1,
       "detail": "882 images, 441 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:31:28Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 15.9,
+      "detail": "862 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T23:11:18Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12901.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T23:11:19Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 809.2,
+      "detail": "680 objects, 146 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T23:11:20Z",
+      "node": "bibliography",
+      "from": "BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+9 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T23:11:20Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 18.4,
+      "detail": "699 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1605.03431/1605.03431.lines.json": "sha256:3fddfd76a8af4ec41b146bcd72f557637804042bb1f27edacc452bafee0d721e"
+      },
       "params_hash": "sha256:ea567038628984f19f0fa6855ff05d521c66140f1b50f287854e16318a63fb2c",
       "algo": "sha256",
-      "ts": "2026-08-03T19:37:07Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T23:11:19Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

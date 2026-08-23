@@ -3,17 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1704.04455",
@@ -21,21 +21,20 @@
     "bibkey": "1704.04455",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 63,
-      "Abstract": 1,
-      "Section": 7,
-      "Formula": 11,
+      "Page": 5,
+      "Footnote": 4,
       "Table": 2,
-      "LtxCommand": 2,
-      "Citation": 25
+      "TableRow": 15,
+      "TableCell": 71,
+      "Sidenote": 10,
+      "Abstract": 1,
+      "ListItem": 10,
+      "Formula": 13,
+      "Paragraph": 29,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 18,
-    "bibliography_with_year": 18,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 25,
+    "model_source": "mathpix",
     "pages": 5,
     "bytes": 93455,
     "page_size": "595 x 842 pts (A4)",
@@ -98,9 +97,6 @@
       "VVRTYZ+CMSY10"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1704.04455.tiddlers.json",
-    "tiddlers_count": 127,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Information extraction (IE) from text has largely focused on relations between individual entities, such as who has won which award. However, some facts are never fully mentioned, and no IE method has perfect recall. Thus, it is beneficial to also tap contents about the cardinalities of these relations, for example, how many awards someone has won. We introduce this novel problem of extracting cardinalities and discusses the specific challenges that set it apart from standard IE. We present a distant supervision method using conditional random fields. A preliminary evaluation results in precision between 3% and 55%, depending on the difficulty of relations.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -117,7 +113,67 @@
         "page": 1,
         "url": "http://arxiv.org/abs/1704.04455v2"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Sun Oct 14 14:34:42 2018 CEST",
+      "ModDate": "Sun Oct 14 14:34:42 2018 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "5",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "93455 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 5,
+    "image_count": 33,
+    "mathpix_pdf_id": "35aa0c68-5286-40bf-9148-eb4dc5e3c183",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1704.04455.lines.json",
+        "bytes": 621501
+      },
+      {
+        "format": "md",
+        "path": "1704.04455.md",
+        "bytes": 21956
+      },
+      {
+        "format": "tex.zip",
+        "path": "1704.04455.tex.zip",
+        "bytes": 25027
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1704.04455.tiddlers.json",
+    "tiddlers_count": 91,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1910,16 +1966,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1621.2,
       "detail": "66 images, 31 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:33:07Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9083.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:33:07Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 161.2,
+      "detail": "161 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:33:08Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.8,
+      "detail": "91 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1704.04455/1704.04455.lines.json": "sha256:5fafc6dae100d01d8a9f4ab2c64df761fc4074f0450a56366a405512dc5d174e"
+      },
       "params_hash": "sha256:e750cc3d9be8833fb6164647779e634d07f32a13a24da05a5bfe9fb13e67e1f0",
       "algo": "sha256",
-      "ts": "2026-08-03T19:38:17Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:33:07Z",
+      "provenance": "mathpix"
     }
   }
 }

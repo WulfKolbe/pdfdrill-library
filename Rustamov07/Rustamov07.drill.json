@@ -6,12 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -77,28 +78,25 @@
     "model_object_counts": {
       "Page": 9,
       "Citation": 63,
-      "ListItem": 10,
-      "Equation": 13,
-      "Paragraph": 19,
+      "Sidenote": 16,
+      "Abstract": 1,
+      "Diagram": 3,
+      "Picture": 2,
+      "ListItem": 7,
+      "Equation": 20,
+      "Formula": 71,
+      "Paragraph": 52,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 20,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 3 unmapped private-use character(s) remain (U+F8F1×1, U+F8F2×1, U+F8F3×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 24,
-    "bibliography_with_year": 24,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "Rustamov07.tiddlers.json",
-    "tiddlers_count": 116,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -125,7 +123,38 @@
     },
     "page_count_text": 9,
     "image_count": 11,
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "3ee46fdd-8b72-4812-8aaf-c41de7fcf1d8",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Rustamov07.lines.json",
+        "bytes": 821557
+      },
+      {
+        "format": "md",
+        "path": "Rustamov07.md",
+        "bytes": 40492
+      },
+      {
+        "format": "tex.zip",
+        "path": "Rustamov07.tex.zip",
+        "bytes": 217581
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 22,
+    "bibliography_with_year": 22,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "Rustamov07.tiddlers.json",
+    "tiddlers_count": 244,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1062,18 +1091,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2433.2,
       "detail": "11 images, 9 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:17:15Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9880.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:17:15Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 134.6,
+      "detail": "245 objects, 20 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:17:16Z",
+      "node": "bibliography",
+      "from": "DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "22 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T15:17:16Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.1,
+      "detail": "244 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Rustamov07/Rustamov07.lines.json": "sha256:8047047e63ff7d11c75b02e3d0607f8fbd7ce2402fd8c4c7446188b1d5005c7b"
+        "/home/wkolbe/pdfdrill-library/Rustamov07/Rustamov07.lines.json": "sha256:d6469d040266677714a62c20cdf4f76ea69134e5a5617f620330db6eea2ea788"
       },
       "params_hash": "sha256:8594be8933b7748782069ded30bfbc341137796c2e1634b94f1af17a45768d22",
       "algo": "sha256",
-      "ts": "2026-08-05T23:14:21Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:17:15Z",
+      "provenance": "mathpix"
     }
   }
 }

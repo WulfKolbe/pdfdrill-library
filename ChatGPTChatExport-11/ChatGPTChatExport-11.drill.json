@@ -6,13 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 7,
@@ -67,23 +68,22 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 7,
+      "Diagram": 2,
       "ListItem": 6,
-      "Equation": 17,
-      "Paragraph": 19,
+      "Equation": 8,
+      "Formula": 36,
+      "Paragraph": 22,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 8,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "ChatGPTChatExport-11.tiddlers.json",
-    "tiddlers_count": 66,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -118,7 +118,32 @@
         "url": "https://www.cs.cmu.edu/~kmcrane/",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "4cd91f8e-09ca-4119-a49c-33b501a88ca8",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "ChatGPTChatExport-11.lines.json",
+        "bytes": 230643
+      },
+      {
+        "format": "md",
+        "path": "ChatGPTChatExport-11.md",
+        "bytes": 14161
+      },
+      {
+        "format": "tex.zip",
+        "path": "ChatGPTChatExport-11.tex.zip",
+        "bytes": 15614
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "ChatGPTChatExport-11.tiddlers.json",
+    "tiddlers_count": 98,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -752,18 +777,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1284.0,
       "detail": "9 images, 9 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:52:24Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5905.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:52:24Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 57.2,
+      "detail": "82 objects, 8 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:52:25Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.9,
+      "detail": "98 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/ChatGPTChatExport-11/ChatGPTChatExport-11.lines.json": "sha256:1ff7879c353052d2427508fb54f8df444fe11397ebf5001ae049b6f22d7c8a00"
+        "/home/wkolbe/pdfdrill-library/ChatGPTChatExport-11/ChatGPTChatExport-11.lines.json": "sha256:d40c364aa16514f60299a14e535328f489dd414caa11532687eab7fef1b19f6c"
       },
       "params_hash": "sha256:f169593cb0deedf9d1e2cc4ec23f5b9a7fe91ffa5799de4c4332ceee1480adf8",
       "algo": "sha256",
-      "ts": "2026-08-05T06:50:03Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:52:24Z",
+      "provenance": "mathpix"
     }
   }
 }

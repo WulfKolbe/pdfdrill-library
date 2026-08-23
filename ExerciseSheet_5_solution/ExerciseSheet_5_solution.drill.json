@@ -6,12 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -82,22 +83,20 @@
     "model_object_counts": {
       "Page": 5,
       "ListItem": 7,
-      "Equation": 47,
-      "Paragraph": 39,
+      "Equation": 48,
+      "Formula": 95,
+      "Paragraph": 54,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 48,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 41 unmapped private-use character(s) remain (U+F8F1×5, U+F8F2×5, U+F8F3×5, U+F8F4×26) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "ExerciseSheet_5_solution.tiddlers.json",
-    "tiddlers_count": 115,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -126,7 +125,32 @@
     "page_count_text": 5,
     "image_count": 0,
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "d3c5d267-50d1-454c-a7d9-2c95f853f5cc",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "ExerciseSheet_5_solution.lines.json",
+        "bytes": 193328
+      },
+      {
+        "format": "md",
+        "path": "ExerciseSheet_5_solution.md",
+        "bytes": 15129
+      },
+      {
+        "format": "tex.zip",
+        "path": "ExerciseSheet_5_solution.tex.zip",
+        "bytes": 16386
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "ExerciseSheet_5_solution.tiddlers.json",
+    "tiddlers_count": 226,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -663,18 +687,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 925.4,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:35:44Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8859.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:35:44Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 130.9,
+      "detail": "210 objects, 48 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:35:44Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.0,
+      "detail": "226 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/ExerciseSheet_5_solution/ExerciseSheet_5_solution.lines.json": "sha256:3339b80edcb8fb1bc7b365e41a08c5fc090e8d5666c14d84d87c13c26ae250b9"
+        "/home/wkolbe/pdfdrill-library/ExerciseSheet_5_solution/ExerciseSheet_5_solution.lines.json": "sha256:b0c8bc91f416fe9a9feae966b68784189f993d38caaa3585d515d837f31f4953"
       },
       "params_hash": "sha256:6a76c5713bfac2d81cde3d04cc9770188f838b4b9177b2d76a98cf27506685a2",
       "algo": "sha256",
-      "ts": "2026-08-05T20:21:23Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:35:44Z",
+      "provenance": "mathpix"
     }
   }
 }

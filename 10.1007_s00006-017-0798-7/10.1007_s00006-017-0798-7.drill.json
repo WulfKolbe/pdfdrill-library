@@ -12,6 +12,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -126,22 +127,79 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 27,
-      "ListItem": 45,
-      "Equation": 103,
-      "Paragraph": 89,
+      "Footnote": 3,
+      "Table": 4,
+      "TableRow": 20,
+      "TableCell": 44,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Section": 2,
+      "ListItem": 22,
+      "Equation": 86,
+      "Formula": 286,
+      "Paragraph": 176,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 86,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Modeling 3D Geometry in the Clifford Algebra R(4, 4)",
+      "Subject": "Advances in Applied Clifford Algebras, doi:10.1007/s00006-017-0798-7",
+      "Keywords": "Mother algebra,Affine geometry,Computer graphics",
+      "Author": "Juan Du",
+      "Creator": "Springer",
+      "Producer": "Acrobat Distiller 10.1.8 (Windows); modified using iText 4.2.0 by 1T3XT",
+      "CreationDate": "Tue Jul 18 09:34:49 2017 CEST",
+      "ModDate": "Sat Jul 22 09:29:59 2017 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "AcroForm",
+      "JavaScript": "no",
+      "Pages": "27",
+      "Encrypted": "no",
+      "Page size": "594.96 x 840.96 pts (A4)",
+      "Page rot": "0",
+      "File size": "923271 bytes",
+      "Optimized": "no",
+      "PDF version": "1.6"
+    },
+    "page_count_text": 27,
+    "image_count": 36,
+    "mathpix_pdf_id": "61f03900-9b00-4623-bdfa-a8ad4a8f82f8",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "10.1007_s00006-017-0798-7.lines.json",
+        "bytes": 1151061
+      },
+      {
+        "format": "md",
+        "path": "10.1007_s00006-017-0798-7.md",
+        "bytes": 75015
+      },
+      {
+        "format": "tex.zip",
+        "path": "10.1007_s00006-017-0798-7.tex.zip",
+        "bytes": 79940
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "10.1007_s00006-017-0798-7.tiddlers.json",
-    "tiddlers_count": 281,
+    "tiddlers_count": 628,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
@@ -2451,18 +2509,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.9,
       "detail": "281 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T19:35:31Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9495.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:35:32Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 772.2,
+      "detail": "674 objects, 86 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:35:33Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 19.4,
+      "detail": "628 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/10.1007_s00006-017-0798-7/10.1007_s00006-017-0798-7.lines.json": "sha256:c94c88653fa3698b90056e9833c36e10e189e9b092cb7d7897b7674415780613"
+        "/home/wkolbe/pdfdrill-library/10.1007_s00006-017-0798-7/10.1007_s00006-017-0798-7.lines.json": "sha256:1a5286ef624b1a301b9a6960027c87bba945ae4309e71ef9a2fe585991f60ce1"
       },
       "params_hash": "sha256:533419b715138db504c72708aada80206f3f84fafcdfda8929e64b584a42c1d3",
       "algo": "sha256",
-      "ts": "2026-08-04T22:15:08Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:35:32Z",
+      "provenance": "mathpix"
     }
   }
 }

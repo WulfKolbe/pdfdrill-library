@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -61,22 +62,70 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 22,
-      "ListItem": 44,
-      "Equation": 68,
-      "Paragraph": 53,
+      "Diagram": 2,
+      "ListItem": 26,
+      "Equation": 26,
+      "Formula": 59,
+      "Paragraph": 64,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 26,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 344 unmapped private-use character(s) remain (U+F8EB×34, U+F8EC×104, U+F8ED×34, U+F8F6×34, U+F8F7×104, U+F8F8×34) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "numinf_3_linear_ausgleich.dvi",
+      "Creator": "dvips(k) 5.995 Copyright 2015 Radical Eye Software",
+      "Producer": "GPL Ghostscript 9.26",
+      "CreationDate": "Mon Apr 15 10:30:14 2019 CEST",
+      "ModDate": "Mon Apr 15 10:30:14 2019 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "22",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "90",
+      "File size": "88236 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 22,
+    "image_count": 49,
+    "mathpix_pdf_id": "b7d34872-17d8-49d2-993d-bfd7c57d38f6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "numinf_3_linear_ausgleich.lines.json",
+        "bytes": 253466
+      },
+      {
+        "format": "md",
+        "path": "numinf_3_linear_ausgleich.md",
+        "bytes": 15110
+      },
+      {
+        "format": "tex.zip",
+        "path": "numinf_3_linear_ausgleich.tex.zip",
+        "bytes": 98764
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "numinf_3_linear_ausgleich.tiddlers.json",
-    "tiddlers_count": 204,
+    "tiddlers_count": 216,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -270,18 +319,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 9.2,
       "detail": "204 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T18:46:02Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6162.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:46:03Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 141.3,
+      "detail": "200 objects, 26 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:46:03Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.5,
+      "detail": "216 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/numinf_3_linear_ausgleich/numinf_3_linear_ausgleich.lines.json": "sha256:9c2b170eff735b8b2ba1d044074e4215d392b005ef258f554f4cebba6086f63a"
+        "/home/wkolbe/pdfdrill-library/numinf_3_linear_ausgleich/numinf_3_linear_ausgleich.lines.json": "sha256:30f920eaf5182b1e89ceee5bce7de329fd06f732f58f14a513e609834106e5d8"
       },
       "params_hash": "sha256:7789e2b16370c7c5f07b5cdde58649d55d25d924196e86060e4e9e9f77e9e0c7",
       "algo": "sha256",
-      "ts": "2026-08-06T01:30:40Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:46:02Z",
+      "provenance": "mathpix"
     }
   }
 }

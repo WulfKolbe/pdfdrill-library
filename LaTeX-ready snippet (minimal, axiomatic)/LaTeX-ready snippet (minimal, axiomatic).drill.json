@@ -6,13 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -66,30 +66,22 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 5,
-      "Citation": 5,
+      "Diagram": 2,
       "ListItem": 6,
-      "Equation": 27,
-      "Formula": 16,
-      "Paragraph": 25,
+      "Equation": 9,
+      "Formula": 78,
+      "Paragraph": 18,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 9,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "LaTeX-ready snippet (minimal, axiomatic).tiddlers.json",
-    "tiddlers_count": 103,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -118,7 +110,33 @@
     "page_count_text": 5,
     "image_count": 4,
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "f56fb2bd-7298-4538-8a41-7f3c69187246",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "LaTeX-ready snippet (minimal, axiomatic).lines.json",
+        "bytes": 172010
+      },
+      {
+        "format": "md",
+        "path": "LaTeX-ready snippet (minimal, axiomatic).md",
+        "bytes": 8106
+      },
+      {
+        "format": "tex.zip",
+        "path": "LaTeX-ready snippet (minimal, axiomatic).tex.zip",
+        "bytes": 9408
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "LaTeX-ready snippet (minimal, axiomatic).tiddlers.json",
+    "tiddlers_count": 135,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -385,18 +403,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 911.5,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:36:55Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5218.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:36:55Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 50.3,
+      "detail": "119 objects, 9 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:36:55Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.2,
+      "detail": "135 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/LaTeX-ready snippet (minimal, axiomatic)/LaTeX-ready snippet (minimal, axiomatic).lines.json": "sha256:b17783641c17fe19940c3c2c12e81ff4fd79414012f98b4eac7bbdb94e1b6105"
+        "/home/wkolbe/pdfdrill-library/LaTeX-ready snippet (minimal, axiomatic)/LaTeX-ready snippet (minimal, axiomatic).lines.json": "sha256:b4122e6f408134e7b0aee3c5bc619ec1afe5ba94c95e436c4c7b18b74c9bf295"
       },
       "params_hash": "sha256:1f9a11f709887831d0b12586e5e21ff1731af21e69c27620a67cfcfc27fe382e",
       "algo": "sha256",
-      "ts": "2026-08-05T21:53:54Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:36:55Z",
+      "provenance": "mathpix"
     }
   }
 }

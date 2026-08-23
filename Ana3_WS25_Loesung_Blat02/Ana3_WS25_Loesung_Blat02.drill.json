@@ -6,15 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 7,
@@ -83,31 +83,76 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 7,
-      "Citation": 6,
-      "ListItem": 32,
-      "Equation": 49,
-      "Paragraph": 37,
+      "ListItem": 29,
+      "Equation": 33,
+      "Formula": 180,
+      "Paragraph": 65,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 33,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "Ana3_WS25_Loesung_Blat02.tiddlers.json",
-    "tiddlers_count": 144,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.28",
+      "CreationDate": "Mon Oct 27 16:20:25 2025 CET",
+      "ModDate": "Mon Oct 27 16:20:25 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "228849 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 7,
+    "image_count": 0,
+    "mathpix_pdf_id": "9c1b9748-54d4-42b0-86b1-a4f641b7c0d5",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Ana3_WS25_Loesung_Blat02.lines.json",
+        "bytes": 314228
+      },
+      {
+        "format": "md",
+        "path": "Ana3_WS25_Loesung_Blat02.md",
+        "bytes": 22773
+      },
+      {
+        "format": "tex.zip",
+        "path": "Ana3_WS25_Loesung_Blat02.tex.zip",
+        "bytes": 24990
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "Ana3_WS25_Loesung_Blat02.tiddlers.json",
+    "tiddlers_count": 331,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -815,18 +860,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2506.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:51:51Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5637.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:51:52Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 149.7,
+      "detail": "315 objects, 33 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:51:52Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.0,
+      "detail": "331 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Ana3_WS25_Loesung_Blat02/Ana3_WS25_Loesung_Blat02.lines.json": "sha256:1e7e62b5f85e4461f479693cf955f1eb91f9fc5ff6840013c2dbd5a7c1bc5b46"
+        "/home/wkolbe/pdfdrill-library/Ana3_WS25_Loesung_Blat02/Ana3_WS25_Loesung_Blat02.lines.json": "sha256:db7fc7f30c1e7f804a47bd3c50d36732172fc3c0826a264afb2f4e1ceecde0a6"
       },
       "params_hash": "sha256:c9c66ce3c384d01a444d566fe49f8818b2bac13128e2e52e14045c894f895e42",
       "algo": "sha256",
-      "ts": "2026-08-05T05:07:55Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:51:52Z",
+      "provenance": "mathpix"
     }
   }
 }

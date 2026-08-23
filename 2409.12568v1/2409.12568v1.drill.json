@@ -5,14 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -81,16 +81,21 @@
     "bibkey": "2409.12568v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 65,
+      "Page": 16,
+      "Footnote": 6,
+      "Table": 6,
+      "TableRow": 56,
+      "TableCell": 305,
+      "Sidenote": 2,
       "Abstract": 1,
-      "Section": 27,
-      "Table": 14,
-      "Formula": 7,
-      "LtxCommand": 2,
-      "Citation": 118
+      "Diagram": 4,
+      "ListItem": 11,
+      "Formula": 11,
+      "Paragraph": 143,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 16,
       "placed": 72,
@@ -100,14 +105,6 @@
       "numbered": 27,
       "roots": 1
     },
-    "bibliography_entries": 85,
-    "bibliography_with_year": 85,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 118,
-    "tiddlers_path": "2409.12568v1.tiddlers.json",
-    "tiddlers_count": 235,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
     "links": [
       {
@@ -142,7 +139,67 @@
         "page": 12,
         "url": "https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Fri Sep 20 02:30:30 2024 CEST",
+      "ModDate": "Fri Sep 20 02:30:30 2024 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "767271 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 1,
+    "mathpix_pdf_id": "356ee46a-c6bc-4ecf-a5a3-2257960ed643",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2409.12568v1.lines.json",
+        "bytes": 1321883
+      },
+      {
+        "format": "md",
+        "path": "2409.12568v1.md",
+        "bytes": 63327
+      },
+      {
+        "format": "tex.zip",
+        "path": "2409.12568v1.tex.zip",
+        "bytes": 303322
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2409.12568v1.tiddlers.json",
+    "tiddlers_count": 217,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1583,16 +1640,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4708.6,
       "detail": "1 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:11:39Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13597.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:11:39Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 328.5,
+      "detail": "562 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:11:39Z",
+      "node": "tiddlers",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.4,
+      "detail": "217 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2409.12568v1/2409.12568v1.lines.json": "sha256:caa0efc11ed09bd492bd683cfb9bf24c1c23c9b55465494e56f03dff3e14cbdd"
+      },
       "params_hash": "sha256:2599250f488464267396e09d706c5eb951962fa613da641bfd7f3872ecb43ee3",
       "algo": "sha256",
-      "ts": "2026-08-03T21:33:10Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:11:39Z",
+      "provenance": "mathpix"
     }
   }
 }

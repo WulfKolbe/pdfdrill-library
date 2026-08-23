@@ -5,14 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 22,
@@ -91,18 +91,20 @@
     "bibkey": "2009.10417",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 90,
-      "Formula": 230,
-      "Section": 23,
-      "Theorem": 43,
-      "Equation": 73,
-      "Proof": 14,
-      "Diagram": 2,
+      "Page": 22,
       "Table": 1,
-      "Citation": 34
+      "TableRow": 9,
+      "TableCell": 42,
+      "Abstract": 1,
+      "Diagram": 2,
+      "ListItem": 10,
+      "Equation": 47,
+      "Formula": 386,
+      "Paragraph": 141,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 47,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 22,
       "placed": 23,
@@ -112,14 +114,6 @@
       "numbered": 23,
       "roots": 1
     },
-    "bibliography_entries": 32,
-    "bibliography_with_year": 32,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 34,
-    "tiddlers_path": "2009.10417.tiddlers.json",
-    "tiddlers_count": 548,
-    "tiddlers_svg_mode": "inline",
     "abstract": "By complexifying a Hamiltonian system one obtains dynamics on a holomorphic symplectic manifold. To invert this construction we present a theory of real forms which not only recovers the original system but also yields different real Hamiltonian systems which share the same complexification. This provides a notion of real forms for holomorphic Hamiltonian systems analogous to that of real forms for complex Lie algebras. Our main result is that the complexification of any analytic mechanical system on a Grassmannian admits a real form on a compact symplectic manifold. This produces a `unitary trick&#39; for Hamiltonian systems which curiously requires an essential use of hyperkähler geometry. We demonstrate this result by finding compact real forms for the simple pendulum, the spherical pendulum, and the rigid body.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -129,7 +123,67 @@
       "Marine Fontaine"
     ],
     "arxiv_primary_category": "math.SG",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Nov  2 04:26:40 2020 CET",
+      "ModDate": "Mon Nov  2 04:26:40 2020 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "22",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "282648 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 22,
+    "image_count": 130,
+    "mathpix_pdf_id": "c02b9178-bc5d-4576-9254-8a072a1d60fb",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2009.10417.lines.json",
+        "bytes": 1018752
+      },
+      {
+        "format": "md",
+        "path": "2009.10417.md",
+        "bytes": 74954
+      },
+      {
+        "format": "tex.zip",
+        "path": "2009.10417.tex.zip",
+        "bytes": 126411
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2009.10417.tiddlers.json",
+    "tiddlers_count": 627,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -4914,16 +4968,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7598.3,
       "detail": "260 images, 127 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:32:52Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10489.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:32:53Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 353.7,
+      "detail": "662 objects, 47 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:32:53Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 17.3,
+      "detail": "627 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2009.10417/2009.10417.lines.json": "sha256:b96c9bb009b8b524d609bd7ac592c5e43c8bef9eb5f972b47c07b99d17c60af7"
+      },
       "params_hash": "sha256:083020e44d0658d174242c52e153245083f9121c5e0d4915ee4e312b487809d9",
       "algo": "sha256",
-      "ts": "2026-08-03T20:37:24Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:32:53Z",
+      "provenance": "mathpix"
     }
   }
 }

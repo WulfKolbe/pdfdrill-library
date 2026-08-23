@@ -3,18 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2005.03529",
@@ -22,20 +22,17 @@
     "bibkey": "2005.03529",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 34,
-      "Formula": 9,
+      "Page": 6,
+      "Footnote": 2,
       "Abstract": 1,
-      "Section": 4,
-      "LtxCommand": 7,
-      "Citation": 11
+      "Diagram": 5,
+      "ListItem": 17,
+      "Formula": 7,
+      "Paragraph": 25,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 9,
-    "bibliography_with_year": 9,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 11,
+    "model_source": "mathpix",
     "pages": 6,
     "bytes": 537158,
     "page_size": "612 x 792 pts (letter)",
@@ -110,9 +107,6 @@
       "APBXHK+CMMI10"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2005.03529.tiddlers.json",
-    "tiddlers_count": 88,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Predicate constraints of general-purpose knowledge bases (KBs) like Wikidata, DBpedia and Freebase are often limited to subproperty, domain and range constraints. In this demo we showcase CounQER, a system that illustrates the alignment of counting predicates, like staffSize, and enumerating predicates, like workInstitution^{-1} . In the demonstration session, attendees can inspect these alignments, and will learn about the importance of these alignments for KB question answering and curation. CounQER is available at this https URL .",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -141,7 +135,67 @@
         "page": 2,
         "url": "https://tinyurl.com/dbpedia-raw"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Fri May  8 02:48:45 2020 CEST",
+      "ModDate": "Fri May  8 02:48:45 2020 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "537158 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 6,
+    "image_count": 8,
+    "mathpix_pdf_id": "84c4f5e4-59aa-4520-ad79-4f28582af214",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2005.03529.lines.json",
+        "bytes": 211659
+      },
+      {
+        "format": "md",
+        "path": "2005.03529.md",
+        "bytes": 12426
+      },
+      {
+        "format": "tex.zip",
+        "path": "2005.03529.tex.zip",
+        "bytes": 313876
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2005.03529.tiddlers.json",
+    "tiddlers_count": 80,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -708,16 +762,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1470.9,
       "detail": "5 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:39:12Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6254.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:39:12Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 47.8,
+      "detail": "64 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:39:12Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.5,
+      "detail": "80 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2005.03529/2005.03529.lines.json": "sha256:c6e16aee2f3d4fd8a99f33f3b7cb2f2257ce09fc2a0e3f37b2bd4c0c380ae715"
+      },
       "params_hash": "sha256:f208141ae17b397fdba98edf4522726959ccb35abd16614f0daad4972a4afe7e",
       "algo": "sha256",
-      "ts": "2026-08-03T20:32:13Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:39:12Z",
+      "provenance": "mathpix"
     }
   }
 }

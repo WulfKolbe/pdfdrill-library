@@ -5,13 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 28,
@@ -100,19 +101,24 @@
     "bibkey": "2505.02322v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 113,
-      "LtxCommand": 21,
+      "Page": 28,
+      "Footnote": 6,
+      "Citation": 5,
+      "Table": 7,
+      "TableRow": 93,
+      "TableCell": 560,
+      "Sidenote": 31,
       "Abstract": 1,
-      "Section": 31,
-      "Formula": 60,
+      "Diagram": 27,
+      "Picture": 1,
+      "ListItem": 35,
       "Equation": 2,
-      "Table": 6,
-      "Citation": 105,
-      "Algorithm": 1,
-      "AlgorithmStep": 28
+      "Formula": 132,
+      "Paragraph": 93,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 28,
       "placed": 92,
@@ -122,14 +128,6 @@
       "numbered": 31,
       "roots": 1
     },
-    "bibliography_entries": 64,
-    "bibliography_with_year": 64,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 105,
-    "tiddlers_path": "2505.02322v1.tiddlers.json",
-    "tiddlers_count": 344,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Recent advancements have significantly enhanced the performance of large language models (LLMs) in tackling complex reasoning tasks, achieving notable success in domains like mathematical and logical reasoning. However, these methods encounter challenges with complex planning tasks, primarily due to extended reasoning steps, diverse constraints, and the challenge of handling multiple distinct sub-tasks. To address these challenges, we propose HyperTree Planning (HTP), a novel reasoning paradigm that constructs hypertree-structured planning outlines for effective planning. The hypertree structure enables LLMs to engage in hierarchical thinking by flexibly employing the divide-and-conquer strategy, effectively breaking down intricate reasoning steps, accommodating diverse constraints, and managing multiple distinct sub-tasks in a well-organized manner. We further introduce an autonomous planning framework that completes the planning process by iteratively refining and expanding the hypertree-structured planning outlines. Experiments demonstrate the effectiveness of HTP, achieving state-of-the-art accuracy on the TravelPlanner benchmark with Gemini-1.5-Pro, resulting in a 3.6 times performance improvement over o1-preview.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -146,7 +144,72 @@
       "Enhong Chen",
       "Feng Wu"
     ],
-    "arxiv_primary_category": "cs.AI"
+    "arxiv_primary_category": "cs.AI",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking",
+      "Subject": "Proceedings of the International Conference on Machine Learning 2025",
+      "Keywords": "Machine Learning, ICML",
+      "Author": "Runquan Gui, Zhihai Wang, Jie Wang, Chi Ma, Huiling Zhen, Mingxuan Yuan, Jianye HAO, Defu Lian, Enhong Chen, Feng Wu",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Tue May  6 03:04:27 2025 CEST",
+      "ModDate": "Tue May  6 03:04:27 2025 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "28",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "899576 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 28,
+    "image_count": 50,
+    "mathpix_pdf_id": "e59648e5-095b-4a19-a446-872f13feeaf0",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2505.02322v1.lines.json",
+        "bytes": 3111062
+      },
+      {
+        "format": "md",
+        "path": "2505.02322v1.md",
+        "bytes": 105675
+      },
+      {
+        "format": "tex.zip",
+        "path": "2505.02322v1.tex.zip",
+        "bytes": 502300
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 61,
+    "bibliography_with_year": 61,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 54,
+    "bibliography_cites": 50,
+    "tiddlers_path": "2505.02322v1.tiddlers.json",
+    "tiddlers_count": 450,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking",
@@ -1308,16 +1371,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7865.1,
       "detail": "26 images, 26 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:57:32Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 16961.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:57:33Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 642.2,
+      "detail": "1022 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:57:34Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "61 entries, 0+54 cites detected, 50 linked"
+    },
+    {
+      "ts": "2026-08-22T19:57:34Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 15.5,
+      "detail": "450 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2505.02322v1/2505.02322v1.lines.json": "sha256:17c7b26ebd79e45a793eb42a4df75de5d87b8af37089b88d9d10bf8fb6e555b3"
+      },
       "params_hash": "sha256:6275055efc5dfcdeb531ec83a6f60ed040aefc2c9c7b0a9ad651a9585f552329",
       "algo": "sha256",
-      "ts": "2026-08-03T21:36:02Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T19:57:33Z",
+      "provenance": "mathpix"
     }
   }
 }

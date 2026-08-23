@@ -6,8 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -15,7 +13,9 @@
     "TOC_ABSENT",
     "BIBTEX_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 14,
@@ -79,30 +79,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 14,
-      "Citation": 2,
-      "ListItem": 23,
-      "Equation": 88,
-      "Paragraph": 62,
+      "Abstract": 1,
+      "Diagram": 10,
+      "ListItem": 4,
+      "Equation": 18,
+      "Formula": 172,
+      "Paragraph": 66,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 18,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
-    "bibliography_entries": 51,
-    "bibliography_with_year": 51,
-    "bibliography_numeric_citations": 52,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 52,
-    "tiddlers_path": "2403.18415.tiddlers.json",
-    "tiddlers_count": 257,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The transformer neural network has significantly out-shined all other neural network architectures as the engine behind large language models. We provide a theoretical analysis of the expressivity of the transformer architecture through the lens of topos theory. From this viewpoint, we show that many common neural network architectures, such as the convolutional, recurrent and graph convolutional networks, can be embedded in a pretopos of piecewise-linear functions, but that the transformer necessarily lives in its topos completion. In particular, this suggests that the two network families instantiate different fragments of logic: the former are first order, whereas transformers are higher-order reasoners. Furthermore, we draw parallels with architecture search and gradient descent, integrating our analysis in the framework of cybernetic agents.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -130,7 +123,60 @@
         "url": "https://arxiv.org/abs/2305.09424"
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "The Topos of Transformer Networks",
+      "Subject": "EPTCS",
+      "Keywords": "",
+      "Author": "Mattia Villani & Peter McBurney",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "GPL Ghostscript 10.01.2",
+      "CreationDate": "Thu Mar 28 02:46:41 2024 CET",
+      "ModDate": "Thu Mar 28 02:46:41 2024 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "172101 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 14,
+    "image_count": 30,
+    "mathpix_pdf_id": "a3c6cefd-9902-49cf-bb4e-bfe2c476ee33",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2403.18415.lines.json",
+        "bytes": 587294
+      },
+      {
+        "format": "md",
+        "path": "2403.18415.md",
+        "bytes": 49790
+      },
+      {
+        "format": "tex.zip",
+        "path": "2403.18415.tex.zip",
+        "bytes": 261945
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2403.18415.tiddlers.json",
+    "tiddlers_count": 302,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "The Topos of Transformer Networks",
@@ -2101,18 +2147,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3618.9,
       "detail": "60 images, 30 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:43:05Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9509.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:43:05Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 187.9,
+      "detail": "286 objects, 18 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:43:06Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.5,
+      "detail": "302 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2403.18415/2403.18415.lines.json": "sha256:c3ace5ef0d5523c8854fb4767506376614981832a5dffcde74a52d552d0466dc"
+        "/home/wkolbe/pdfdrill-library/2403.18415/2403.18415.lines.json": "sha256:04f650b0817e10d8ebcd8c01384cee171b5f7f8d591f67c6762ea6604c13f6e4"
       },
       "params_hash": "sha256:0c38a89d0d98654e10a221134e0e3aa07a029c8f17ec6e83b1477e2cb5fd3f34",
       "algo": "sha256",
-      "ts": "2026-08-03T21:16:58Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:43:05Z",
+      "provenance": "mathpix"
     }
   }
 }

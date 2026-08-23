@@ -2,9 +2,78 @@
   "pdf": "spinors.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
-  "evidence": {},
+  "evidence": {
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.11",
+      "CreationDate": "Wed Nov 23 22:43:34 2011 CET",
+      "ModDate": "Wed Nov 23 22:43:34 2011 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "175710 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 6,
+    "font_count": 16,
+    "image_count": 0,
+    "mathpix_pdf_id": "e7fbea2b-9310-4829-9c81-df1766f57283",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "spinors.lines.json",
+        "bytes": 199646
+      },
+      {
+        "format": "md",
+        "path": "spinors.md",
+        "bytes": 16271
+      },
+      {
+        "format": "tex.zip",
+        "path": "spinors.tex.zip",
+        "bytes": 17893
+      }
+    ],
+    "bibkey": "spinors",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "Footnote": 2,
+      "Equation": 22,
+      "Formula": 65,
+      "Paragraph": 33,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 22,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "spinors.tiddlers.json",
+    "tiddlers_count": 145,
+    "tiddlers_svg_mode": "inline"
+  },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
@@ -246,6 +315,42 @@
       "to": "FONTS_LAYER_KNOWN",
       "cost_ms": 75.0,
       "detail": "16 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-22T14:48:41Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 7095.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:48:41Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 139.3,
+      "detail": "129 objects, 22 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:48:42Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.7,
+      "detail": "145 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/spinors/spinors.lines.json": "sha256:0bb192631550cc0e6491a75b4c86649896e294ceefd5d596fcafec605012b0be"
+      },
+      "params_hash": "sha256:ec786a32421d5ba2020c681c2a0373deb93b89b6849314aca5167626b00087f8",
+      "algo": "sha256",
+      "ts": "2026-08-22T14:48:41Z",
+      "provenance": "mathpix"
+    }
+  }
 }

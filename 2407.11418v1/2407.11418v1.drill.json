@@ -5,13 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -74,16 +75,24 @@
     "bibkey": "2407.11418v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 114,
-      "LtxCommand": 2,
+      "Page": 18,
+      "Footnote": 2,
+      "Citation": 35,
+      "Table": 7,
+      "TableRow": 42,
+      "TableCell": 187,
+      "Sidenote": 37,
       "Abstract": 1,
-      "Section": 40,
-      "Table": 6,
-      "Formula": 33,
-      "Citation": 169
+      "Diagram": 28,
+      "Section": 4,
+      "Picture": 3,
+      "ListItem": 21,
+      "Formula": 37,
+      "Paragraph": 178,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 18,
       "placed": 62,
@@ -93,14 +102,6 @@
       "numbered": 40,
       "roots": 1
     },
-    "bibliography_entries": 88,
-    "bibliography_with_year": 71,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 169,
-    "tiddlers_path": "2407.11418v1.tiddlers.json",
-    "tiddlers_count": 320,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The semantic capabilities of language models (LMs) have the potential to enable rich analytics and reasoning over vast knowledge corpora. Unfortunately, existing systems lack high-level abstractions to perform semantic queries at scale. We introduce semantic operators, a declarative programming interface that extends the relational model with composable AI-based operations for semantic queries over datasets (e.g., sorting or aggregating records using natural language criteria). Each operator can be implemented and optimized in multiple ways, opening a rich space for execution plans similar to relational operators. We implement our operators and several optimizations for them in LOTUS, an open-source query engine with a Pandas-like API. We demonstrate LOTUS&#39; effectiveness across a series of real applications, including fact-checking, extreme multi-label classification, and search. We find that LOTUS&#39; programming model is highly expressive, capturing state-of-the-art query pipelines with low development overhead. Specifically, on the FEVER dataset, LOTUS&#39; programs can reproduce FacTool, a recent state-of-the-art fact-checking pipeline, in few lines of code, and implement a new pipeline that improves accuracy by $9.5\\%$, while offering $7-34\\times$ lower execution time. In the extreme multi-label classification task on the BioDEX dataset, LOTUS reproduces state-of-the art result quality with its join operator, while providing an efficient algorithm that runs $800\\times$ faster than a naive join. In the search and ranking application, LOTUS allows a simple composition of operators to achieve $5.9 - 49.4\\%$ higher nDCG@10 than the vanilla retriever and re-ranker, while also providing query efficiency, with $1.67 - 10\\times$ lower execution time than LM-based ranking methods used by prior works. LOTUS is publicly available at this https URL .",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -449,7 +450,70 @@
         "page": 18,
         "url": "https://doi.org/10.14778/3377369.3377374"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "LOTUS: Enabling Semantic Queries with LLMs Over Tables of Unstructured and Structured Data",
+      "Subject": "",
+      "Creator": "LaTeX with acmart 2023/06/11 v1.90a Typesetting articles for the Association for Computing Machinery and hyperref 2023-04-22 v7.00x Hypertext links for LaTeX",
+      "Producer": "pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+      "CreationDate": "Wed Jul 17 02:26:43 2024 CEST",
+      "ModDate": "Wed Jul 17 02:26:43 2024 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "18",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "1042816 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 18,
+    "image_count": 2,
+    "mathpix_pdf_id": "c9ea319c-9393-4fcf-8459-88c5dcce122d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2407.11418v1.lines.json",
+        "bytes": 2415527
+      },
+      {
+        "format": "md",
+        "path": "2407.11418v1.md",
+        "bytes": 109219
+      },
+      {
+        "format": "tex.zip",
+        "path": "2407.11418v1.tex.zip",
+        "bytes": 252046
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 93,
+    "bibliography_with_year": 73,
+    "bibliography_numeric_citations": 153,
+    "bibliography_authoryear_citations": 10,
+    "bibliography_cites": 153,
+    "tiddlers_path": "2407.11418v1.tiddlers.json",
+    "tiddlers_count": 460,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "LOTUS: Enabling Semantic Queries with LLMs Over Tables of Unstructured and Structured Data",
@@ -3336,18 +3400,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 9830.6,
       "detail": "1 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:33:57Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13259.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:33:58Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 533.8,
+      "detail": "601 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:33:59Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "93 entries, 153+10 cites detected, 153 linked"
+    },
+    {
+      "ts": "2026-08-22T17:33:59Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 22.3,
+      "detail": "460 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2407.11418v1/texsrc/main.tex": "sha256:eaf99223eb04276915cd63839d16f096bd9f80bf168eefd7c140448f4cf77304"
+        "/home/wkolbe/pdfdrill-library/2407.11418v1/2407.11418v1.lines.json": "sha256:4de249a787e286e1620130806e25a9912e23779a50efc9d7f1d4ca65ec3df01f"
       },
       "params_hash": "sha256:ef83cf2806a0278ee7c3ab51cf5bd4362bec3c06aec3b207ff8c91e8cbfc92b5",
       "algo": "sha256",
-      "ts": "2026-08-03T21:31:28Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:33:58Z",
+      "provenance": "mathpix"
     }
   }
 }

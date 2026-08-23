@@ -3,14 +3,14 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1908.11682",
@@ -18,25 +18,23 @@
     "bibkey": "1908.11682",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 73,
-      "Abstract": 1,
-      "Section": 9,
-      "Formula": 221,
-      "Equation": 21,
-      "Theorem": 7,
-      "Proof": 5,
+      "Page": 10,
+      "Footnote": 8,
       "Table": 1,
-      "Citation": 41,
-      "Algorithm": 1,
-      "AlgorithmStep": 10
+      "TableRow": 52,
+      "TableCell": 563,
+      "Sidenote": 18,
+      "Abstract": 1,
+      "Diagram": 5,
+      "Picture": 2,
+      "ListItem": 6,
+      "Equation": 21,
+      "Formula": 294,
+      "Paragraph": 90,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 26,
-    "bibliography_with_year": 26,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 6,
+    "model_equations_with_cdn": 21,
+    "model_source": "mathpix",
     "pages": 10,
     "bytes": 502035,
     "page_size": "612 x 792 pts (letter)",
@@ -242,9 +240,6 @@
       "GUOWTK+CMSY6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1908.11682.tiddlers.json",
-    "tiddlers_count": 392,
-    "tiddlers_svg_mode": "inline",
     "abstract": "In many scientific tasks we are interested in discovering whether there exist any correlations in our data. This raises many questions, such as how to reliably and interpretably measure correlation between a multivariate set of attributes, how to do so without having to make assumptions on distribution of the data or the type of correlation, and, how to efficiently discover the top-most reliably correlated attribute sets from data. In this paper we answer these questions for discovery tasks in categorical data. In particular, we propose a corrected-for-chance, consistent, and efficient estimator for normalized total correlation, by which we obtain a reliable, naturally interpretable, non-parametric measure for correlation over multivariate sets. For the discovery of the top-k correlated sets, we derive an effective algorithmic framework based on a tight bounding function. This framework offers exact, approximate, and heuristic search. Empirical evaluation shows that already for small sample sizes the estimator leads to low-regret optimization outcomes, while the algorithms are shown to be highly effective for both large and high-dimensional data. Through two case studies we confirm that our discovery framework identifies interesting and meaningful correlations.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -254,7 +249,67 @@
       "Mario Boley",
       "Jilles Vreeken"
     ],
-    "arxiv_primary_category": "cs.LG"
+    "arxiv_primary_category": "cs.LG",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Mon Sep  2 02:49:21 2019 CEST",
+      "ModDate": "Mon Sep  2 02:49:21 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "502035 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 10,
+    "image_count": 0,
+    "mathpix_pdf_id": "8ae64854-a82b-4030-94b4-a7029ea1b09d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1908.11682.lines.json",
+        "bytes": 1707741
+      },
+      {
+        "format": "md",
+        "path": "1908.11682.md",
+        "bytes": 68772
+      },
+      {
+        "format": "tex.zip",
+        "path": "1908.11682.tex.zip",
+        "bytes": 345063
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1908.11682.tiddlers.json",
+    "tiddlers_count": 473,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1892,16 +1947,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6675.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:29:36Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12999.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:29:37Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 725.4,
+      "detail": "1072 objects, 21 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:29:37Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 18.0,
+      "detail": "473 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1908.11682/1908.11682.lines.json": "sha256:f4b53a1f3c6e8a51b576e056aeeaf08fdbe63eaa06410a6654caa148c6ebd3ea"
+      },
       "params_hash": "sha256:cfd95aa93ec15c1c99a4433ad12282ed6bb68e639b71c272df7c3461e45d4914",
       "algo": "sha256",
-      "ts": "2026-08-03T19:48:18Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:29:36Z",
+      "provenance": "mathpix"
     }
   }
 }

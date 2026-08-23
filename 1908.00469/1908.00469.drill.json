@@ -3,10 +3,8 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +12,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1908.00469",
@@ -22,21 +22,20 @@
     "bibkey": "1908.00469",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 361,
-      "Formula": 97,
-      "LtxCommand": 13,
+      "Page": 10,
+      "Table": 4,
+      "TableRow": 37,
+      "TableCell": 314,
+      "Sidenote": 20,
       "Abstract": 1,
-      "Section": 20,
-      "Table": 5,
-      "Citation": 129
+      "Diagram": 2,
+      "ListItem": 28,
+      "Formula": 62,
+      "Paragraph": 149,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 117,
-    "bibliography_with_year": 1,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_source": "mathpix",
     "pages": 10,
     "bytes": 858870,
     "page_size": "612 x 792 pts (letter)",
@@ -110,9 +109,6 @@
       "numbered": 20,
       "roots": 1
     },
-    "tiddlers_path": "1908.00469.tiddlers.json",
-    "tiddlers_count": 598,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Direct answering of questions that involve multiple entities and relations is a challenge for text-based QA. This problem is most pronounced when answers can be found only by joining evidence from multiple documents. Curated knowledge graphs (KGs) may yield good answers, but are limited by their inherent incompleteness and potential staleness. This paper presents QUEST, a method that can answer complex questions directly from textual sources on-the-fly, by computing similarity joins over partial results from different documents. Our method is completely unsupervised, avoiding training-data bottlenecks and being able to cope with rapidly evolving ad hoc topics and formulation style in user questions. QUEST builds a noisy quasi KG with node and edge weights, consisting of dynamically retrieved entity names and relational phrases. It augments this graph with types and semantic alignments, and computes the best answers by an algorithm for Group Steiner Trees. We evaluate QUEST on benchmarks of complex questions, and show that it substantially outperforms state-of-the-art baselines.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -157,7 +153,67 @@
         "page": 5,
         "url": "https://trends.google.com/trends/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Answering Complex Questions by JoiningMulti-Document Evidence with Quasi Knowledge Graphs",
+      "Subject": "-  Information systems  ->  -1Question answering;",
+      "Keywords": "",
+      "Author": "Xiaolu Lu, Soumajit Pramanik, Rishiraj Saha Roy, Abdalghani Abujabal, Yafang Wang, and Gerhard Weikum",
+      "Creator": "LaTeX with acmart 2018/12/16 v1.57 Typesetting articles for the Association for Computing Machinery and hyperref 2020-05-15 v7.00e Hypertext links for LaTeX",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Tue Dec  1 03:34:11 2020 CET",
+      "ModDate": "Tue Dec  1 03:34:11 2020 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "858870 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 10,
+    "image_count": 4,
+    "mathpix_pdf_id": "62d7f3c2-b744-40b2-b2fd-0e886b55bc77",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1908.00469.lines.json",
+        "bytes": 1686946
+      },
+      {
+        "format": "md",
+        "path": "1908.00469.md",
+        "bytes": 66516
+      },
+      {
+        "format": "tex.zip",
+        "path": "1908.00469.tex.zip",
+        "bytes": 224101
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1908.00469.tiddlers.json",
+    "tiddlers_count": 293,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Answering Complex Questions by JoiningMulti-Document Evidence with Quasi Knowledge Graphs",
@@ -1516,16 +1572,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4422.2,
       "detail": "3 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:29:19Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13262.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:29:19Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 287.1,
+      "detail": "628 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:29:20Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.9,
+      "detail": "293 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1908.00469/1908.00469.lines.json": "sha256:c6c82f9b1e383863d71473a410af76b913c8e12ad4a52c49af451a653970d43a"
+      },
       "params_hash": "sha256:3aa299527ef2d1c949164117fc028a066084ad6f7cf4f54dd8ba7400b66a5830",
       "algo": "sha256",
-      "ts": "2026-08-03T19:48:06Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:29:19Z",
+      "provenance": "mathpix"
     }
   }
 }

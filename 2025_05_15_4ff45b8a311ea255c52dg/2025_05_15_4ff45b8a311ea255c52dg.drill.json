@@ -6,11 +6,12 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -80,25 +81,74 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 8,
-      "ListItem": 16,
-      "Equation": 75,
+      "Diagram": 1,
+      "Section": 2,
+      "Picture": 1,
+      "ListItem": 8,
+      "Equation": 41,
+      "Formula": 98,
       "Paragraph": 51,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 41,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "2025_05_15_4ff45b8a311ea255c52dg.tiddlers.json",
-    "tiddlers_count": 167,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.22",
+      "CreationDate": "Thu May 15 06:59:16 2025 CEST",
+      "ModDate": "Thu May 15 06:59:16 2025 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "328467 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 8,
+    "image_count": 2,
+    "mathpix_pdf_id": "410ada3b-e31d-4bfd-93e1-a6de730a41a7",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2025_05_15_4ff45b8a311ea255c52dg.lines.json",
+        "bytes": 201240
+      },
+      {
+        "format": "md",
+        "path": "2025_05_15_4ff45b8a311ea255c52dg.md",
+        "bytes": 14709
+      },
+      {
+        "format": "tex.zip",
+        "path": "2025_05_15_4ff45b8a311ea255c52dg.tex.zip",
+        "bytes": 107047
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "2025_05_15_4ff45b8a311ea255c52dg.tiddlers.json",
+    "tiddlers_count": 228,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -520,18 +570,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1728.7,
       "detail": "2 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:57:30Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6799.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:57:30Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 170.5,
+      "detail": "211 objects, 41 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:57:30Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.3,
+      "detail": "228 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2025_05_15_4ff45b8a311ea255c52dg/2025_05_15_4ff45b8a311ea255c52dg.lines.json": "sha256:d4717eb7b409a2e9f8520cae5bf3b8448434d75d2236cf58ec96725bfc0360f3"
+        "/home/wkolbe/pdfdrill-library/2025_05_15_4ff45b8a311ea255c52dg/2025_05_15_4ff45b8a311ea255c52dg.lines.json": "sha256:04723730ca5df6cc746ff812b48842e33ab66a9e0705721d33ba531fa3916758"
       },
       "params_hash": "sha256:1dc31e648b6cd08f5e39a1da0a5603f60dc38d40e2fa2d86fbdf1af75de0d101",
       "algo": "sha256",
-      "ts": "2026-08-03T20:45:24Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:57:30Z",
+      "provenance": "mathpix"
     }
   }
 }

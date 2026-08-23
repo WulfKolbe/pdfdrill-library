@@ -3,15 +3,15 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2411.04920",
@@ -19,24 +19,22 @@
     "bibkey": "2411.04920",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 92,
+      "Page": 14,
+      "Footnote": 7,
+      "Table": 7,
+      "TableRow": 56,
+      "TableCell": 118,
+      "Sidenote": 24,
       "Abstract": 1,
-      "Section": 20,
-      "Table": 3,
-      "Formula": 6,
-      "LtxCommand": 2,
       "Diagram": 6,
-      "Citation": 84,
-      "Algorithm": 2,
-      "AlgorithmStep": 33
+      "Picture": 3,
+      "ListItem": 26,
+      "Formula": 27,
+      "Paragraph": 76,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 55,
-    "bibliography_with_year": 55,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 84,
+    "model_source": "mathpix",
     "pages": 14,
     "bytes": 778281,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -115,9 +113,6 @@
       "JHMCHF+CMSY6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2411.04920.tiddlers.json",
-    "tiddlers_count": 217,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Large language models (LLMs) have majorly advanced NLP and AI, and next to their ability to perform a wide range of procedural tasks, a major success factor is their internalized factual knowledge. Since Petroni et al. (2019), analyzing this knowledge has gained attention. However, most approaches investigate one question at a time via modest-sized pre-defined samples, introducing an ``availability bias&#39;&#39; (Tversky&amp;Kahnemann, 1973) that prevents the analysis of knowledge (or beliefs) of LLMs beyond the experimenter&#39;s predisposition. To address this challenge, we propose a novel methodology to comprehensively materialize an LLM&#39;s factual knowledge through recursive querying and result consolidation. Our approach is a milestone for LLM research, for the first time providing constructive insights into the scope and structure of LLM knowledge (or beliefs). As a prototype, we build GPTKB, a knowledge base (KB) comprising 101 million relational triples for over 2.9 million entities from GPT-4o-mini. We use GPTKB to exemplarily analyze GPT-4o-mini&#39;s factual knowledge in terms of scale, accuracy, bias, cutoff and consistency, at the same time. GPTKB is accessible at this https URL",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -128,7 +123,63 @@
       "Shrestha Ghosh",
       "Simon Razniewski"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Enabling LLM Knowledge Analysis via Extensive Materialization",
+      "Author": "Yujia Hu; Tuan-Phong Nguyen; Shrestha Ghosh; Simon Razniewski",
+      "Creator": "arXiv GenPDF (tex2pdf:)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "778281 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 14,
+    "image_count": 8,
+    "mathpix_pdf_id": "60776053-3e67-41ff-9833-97fa13ef947f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2411.04920.lines.json",
+        "bytes": 1453437
+      },
+      {
+        "format": "md",
+        "path": "2411.04920.md",
+        "bytes": 53649
+      },
+      {
+        "format": "tex.zip",
+        "path": "2411.04920.tex.zip",
+        "bytes": 434282
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2411.04920.tiddlers.json",
+    "tiddlers_count": 209,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -1744,18 +1795,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4590.2,
       "detail": "4 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:43:52Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9444.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:43:52Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 277.9,
+      "detail": "366 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:43:53Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.0,
+      "detail": "209 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2411.04920/texsrc/main.tex": "sha256:d0919ad8a4f05a52482289e23caa7df12be1c3a5a8fc71f2264acf7fa425c32a"
+        "/home/wkolbe/pdfdrill-library/2411.04920/2411.04920.lines.json": "sha256:93e96f26b474be6ba8274e018d105b4fc00dbddbd53da92130fb08668d41d20d"
       },
       "params_hash": "sha256:0314524a88f9aaee004001a83e011618641c2e19d281c3407c6be53ac7eea319",
       "algo": "sha256",
-      "ts": "2026-08-03T21:33:29Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:43:52Z",
+      "provenance": "mathpix"
     }
   }
 }

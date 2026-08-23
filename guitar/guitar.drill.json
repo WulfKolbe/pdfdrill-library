@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -76,22 +77,72 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 7,
-      "ListItem": 2,
-      "Equation": 20,
-      "Paragraph": 20,
+      "Footnote": 3,
+      "Diagram": 9,
+      "ListItem": 1,
+      "Equation": 11,
+      "Formula": 43,
+      "Paragraph": 37,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 11,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "guitar.DVI",
+      "Author": "Kirk",
+      "Creator": "PScript5.dll Version 5.2.2",
+      "Producer": "Acrobat Distiller 11.0 (Windows)",
+      "CreationDate": "Mon Oct 22 07:00:26 2018 CEST",
+      "ModDate": "Mon Oct 22 07:00:26 2018 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "406943 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 7,
+    "image_count": 50,
+    "mathpix_pdf_id": "f47d5b1c-2032-4273-94a7-28346a2c4f33",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "guitar.lines.json",
+        "bytes": 202899
+      },
+      {
+        "format": "md",
+        "path": "guitar.md",
+        "bytes": 15293
+      },
+      {
+        "format": "tex.zip",
+        "path": "guitar.tex.zip",
+        "bytes": 488907
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "guitar.tiddlers.json",
-    "tiddlers_count": 66,
+    "tiddlers_count": 128,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -439,18 +490,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.9,
       "detail": "66 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:54:42Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6376.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:54:43Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 107.2,
+      "detail": "112 objects, 11 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:54:43Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.9,
+      "detail": "128 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/guitar/guitar.lines.json": "sha256:d2d27c172448ab5c56e99d820a2f5e7ecc766e8fa7004155636fd524b483a9e9"
+        "/home/wkolbe/pdfdrill-library/guitar/guitar.lines.json": "sha256:57ffed36386096215de470f0ff71fc2a5a281d79ebcdd19ddaba0af33254c3ff"
       },
       "params_hash": "sha256:61c4ec9f2cbac6e3d6557a8624d24d2f385c6dc67f67781729e0363e3929695d",
       "algo": "sha256",
-      "ts": "2026-08-06T01:17:17Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:54:43Z",
+      "provenance": "mathpix"
     }
   }
 }

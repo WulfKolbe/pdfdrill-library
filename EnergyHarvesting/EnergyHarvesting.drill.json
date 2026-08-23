@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -74,23 +75,29 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 11,
-      "ListItem": 9,
-      "Equation": 2,
-      "Paragraph": 12,
+      "Table": 1,
+      "TableRow": 13,
+      "TableCell": 31,
+      "Sidenote": 25,
+      "Abstract": 1,
+      "Diagram": 13,
+      "Section": 4,
+      "Picture": 8,
+      "ListItem": 2,
+      "Equation": 3,
+      "Formula": 18,
+      "Paragraph": 104,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "EnergyHarvesting.tiddlers.json",
-    "tiddlers_count": 51,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Paper Title (use style: paper title)",
@@ -179,7 +186,32 @@
         "page": 11,
         "url": "https://www.researchgate.net/publication/325350359"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "e7b20a94-6630-480e-9025-4eedc5f2efef",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "EnergyHarvesting.lines.json",
+        "bytes": 1023877
+      },
+      {
+        "format": "md",
+        "path": "EnergyHarvesting.md",
+        "bytes": 43185
+      },
+      {
+        "format": "tex.zip",
+        "path": "EnergyHarvesting.tex.zip",
+        "bytes": 1105144
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "EnergyHarvesting.tiddlers.json",
+    "tiddlers_count": 208,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Paper Title (use style: paper title)",
@@ -1345,18 +1377,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2975.9,
       "detail": "39 images, 27 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:04:00Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9843.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:04:00Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 227.2,
+      "detail": "235 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:04:01Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.6,
+      "detail": "208 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/EnergyHarvesting/EnergyHarvesting.lines.json": "sha256:23f7fad64b497cd881844892b5f9ce483b7ea329f319cbcaa3bc5cf49995481d"
+        "/home/wkolbe/pdfdrill-library/EnergyHarvesting/EnergyHarvesting.lines.json": "sha256:2af9994b9455d7a95ae228d5a6337e0172683781b0b97a58c41d3b3f04a19ac8"
       },
       "params_hash": "sha256:c28a8cc034d64837084dbcfc718e06719078b86027f0a4e92bbf83688395ae5a",
       "algo": "sha256",
-      "ts": "2026-08-05T20:19:47Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:04:00Z",
+      "provenance": "mathpix"
     }
   }
 }

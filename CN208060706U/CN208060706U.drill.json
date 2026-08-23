@@ -6,15 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "OCR_BUILT",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "TOC_ABSENT",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -71,30 +71,20 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "Citation": 2,
-      "Table": 1,
-      "ListItem": 5,
-      "Equation": 1,
-      "Paragraph": 70,
+      "Diagram": 4,
+      "Formula": 7,
+      "Paragraph": 11,
       "Document": 1
     },
-    "model_equations_with_cdn": 1,
-    "model_source": "tesseract",
+    "model_equations_with_cdn": 0,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "tesseract"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "CN208060706U.tiddlers.json",
-    "tiddlers_count": 105,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "PDFsharp 1.50.4740 (www.pdfsharp.com)",
@@ -119,7 +109,33 @@
     "image_count": 9,
     "abstract_search_scope": "first2pages",
     "links": [],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "db8ed1f1-bf29-4793-92e8-e3a7237201fb",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "CN208060706U.lines.json",
+        "bytes": 273942
+      },
+      {
+        "format": "md",
+        "path": "CN208060706U.md",
+        "bytes": 20659
+      },
+      {
+        "format": "tex.zip",
+        "path": "CN208060706U.tex.zip",
+        "bytes": 621337
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "CN208060706U.tiddlers.json",
+    "tiddlers_count": 49,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -477,18 +493,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 215.9,
       "detail": "9 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:14:25Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8996.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:14:25Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 54.8,
+      "detail": "32 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:14:26Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.8,
+      "detail": "49 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/CN208060706U/CN208060706U.lines.json": "sha256:9b23078da06c38ad5ffc3c513fd7cc3b01a92d9b51d317f0bafe610bc5ebf235"
+        "/home/wkolbe/pdfdrill-library/CN208060706U/CN208060706U.lines.json": "sha256:87e2503b01f97e0e0016c3723ac22d5c23c5a859fef31e53a7060bce16feacd6"
       },
       "params_hash": "sha256:06efe22279eba14c6e74f8cd42e6cdff29369f082612114f53f7d330b2e52fdd",
       "algo": "sha256",
-      "ts": "2026-08-05T06:49:13Z",
-      "provenance": "tesseract"
+      "ts": "2026-08-22T15:14:25Z",
+      "provenance": "mathpix"
     }
   }
 }

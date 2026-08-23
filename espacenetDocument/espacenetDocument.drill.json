@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "OCR_BUILT",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -63,21 +64,67 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Equation": 1,
-      "Paragraph": 25,
+      "Sidenote": 8,
+      "Diagram": 1,
+      "Formula": 1,
+      "Paragraph": 9,
       "Document": 1
     },
-    "model_equations_with_cdn": 1,
-    "model_source": "tesseract",
+    "model_equations_with_cdn": 0,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "tesseract"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Producer": "iText 2.0.7 (by lowagie.com)",
+      "CreationDate": "Thu Oct  5 06:19:10 2023 CEST",
+      "ModDate": "Thu Oct  5 06:19:10 2023 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "1",
+      "Encrypted": "yes (print:yes copy:yes change:no addNotes:no algorithm:RC4)",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "37018 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 1,
+    "image_count": 1,
+    "mathpix_pdf_id": "e1fc9938-0db3-4a64-ab2a-a3f1edb319cb",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "espacenetDocument.lines.json",
+        "bytes": 54392
+      },
+      {
+        "format": "md",
+        "path": "espacenetDocument.md",
+        "bytes": 1567
+      },
+      {
+        "format": "tex.zip",
+        "path": "espacenetDocument.tex.zip",
+        "bytes": 89690
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "espacenetDocument.tiddlers.json",
-    "tiddlers_count": 44,
+    "tiddlers_count": 37,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -152,18 +199,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.6,
       "detail": "44 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:12:23Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5528.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:12:23Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 16.9,
+      "detail": "21 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:12:23Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.5,
+      "detail": "37 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/espacenetDocument/espacenetDocument.lines.json": "sha256:23f6802a33e8a3589d205eaddd4424bee8140153028bb738c198bf3fd958c7d9"
+        "/home/wkolbe/pdfdrill-library/espacenetDocument/espacenetDocument.lines.json": "sha256:9f4ad72604f42ed9013576c40a22e5502ff9e4d7236d4cacb2734ac4afb8ab33"
       },
       "params_hash": "sha256:6ed050201d25558c593d4d97bca7d5d960240f089afe14f3b6b73d78bea20b25",
       "algo": "sha256",
-      "ts": "2026-08-06T01:12:22Z",
-      "provenance": "tesseract"
+      "ts": "2026-08-22T14:12:23Z",
+      "provenance": "mathpix"
     }
   }
 }

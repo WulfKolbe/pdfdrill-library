@@ -3,15 +3,16 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2405.02732",
@@ -19,22 +20,24 @@
     "bibkey": "2405.02732",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 105,
+      "Page": 16,
+      "Footnote": 4,
+      "Citation": 4,
+      "Table": 10,
+      "TableRow": 110,
+      "TableCell": 782,
+      "Sidenote": 33,
       "Abstract": 1,
-      "Section": 23,
-      "LtxCommand": 27,
-      "Formula": 30,
-      "Table": 11,
-      "Equation": 1,
-      "Citation": 53
+      "Diagram": 3,
+      "Picture": 1,
+      "ListItem": 29,
+      "Equation": 2,
+      "Formula": 66,
+      "Paragraph": 79,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 42,
-    "bibliography_with_year": 42,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 53,
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "pages": 16,
     "bytes": 634209,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -121,9 +124,6 @@
       "SMLXER+CMMI9"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2405.02732.tiddlers.json",
-    "tiddlers_count": 274,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Methods for relation extraction from text mostly focus on high precision, at the cost of limited recall. High recall is crucial, though, to populate long lists of object entities that stand in a specific relation with a given subject. Cues for relevant objects can be spread across many passages in long texts. This poses the challenge of extracting long lists from long texts. We present the L3X method which tackles the problem in two stages: (1) recall-oriented generation using a large language model (LLM) with judicious techniques for retrieval augmentation, and (2) precision-oriented scrutinization to validate or prune candidates. Our L3X method outperforms LLM-only generations by a substantial margin.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -319,7 +319,72 @@
         "page": 16,
         "url": "https://doi.org/10.1145/3674501"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Thu Mar 20 01:45:18 2025 CET",
+      "ModDate": "Thu Mar 20 01:45:18 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "634209 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 8,
+    "mathpix_pdf_id": "218cf903-54fc-40a2-977d-0e24c8152cf6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2405.02732.lines.json",
+        "bytes": 2503831
+      },
+      {
+        "format": "md",
+        "path": "2405.02732.md",
+        "bytes": 67659
+      },
+      {
+        "format": "tex.zip",
+        "path": "2405.02732.tex.zip",
+        "bytes": 310289
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 13,
+    "bibliography_with_year": 13,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 11,
+    "bibliography_cites": 2,
+    "tiddlers_path": "2405.02732.tiddlers.json",
+    "tiddlers_count": 286,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -959,18 +1024,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4700.7,
       "detail": "5 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:11:01Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 15781.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:11:02Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 566.3,
+      "detail": "1141 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:11:03Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "13 entries, 0+11 cites detected, 2 linked"
+    },
+    {
+      "ts": "2026-08-22T17:11:03Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.5,
+      "detail": "286 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2405.02732/texsrc/main.tex": "sha256:4c339408b524c2477f107a301663ede15fca1f1abfaa5d23abd649f18d5b8c83"
+        "/home/wkolbe/pdfdrill-library/2405.02732/2405.02732.lines.json": "sha256:f19f91584e620a79b75aefd0ff83b07507f0f0aba84eaa66ad8919a32d4677fb"
       },
       "params_hash": "sha256:86bb47de385dca58ccbf04893e1db828eb2306ef99e46ed9c772b463ed4a759a",
       "algo": "sha256",
-      "ts": "2026-08-03T21:23:54Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:11:02Z",
+      "provenance": "mathpix"
     }
   }
 }

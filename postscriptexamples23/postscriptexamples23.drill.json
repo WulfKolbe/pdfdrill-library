@@ -5,6 +5,7 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -56,21 +57,71 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 14,
-      "Formula": 2,
-      "Paragraph": 14,
+      "Footnote": 21,
+      "Sidenote": 20,
+      "Abstract": 1,
+      "Diagram": 76,
+      "Section": 1,
+      "Picture": 1,
+      "Formula": 32,
+      "Paragraph": 87,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Producer": "Acrobat Distiller 2.0 for Windows",
+      "CreationDate": "Fri Feb  7 11:22:14 1997 CET",
+      "ModDate": "Fri Feb  7 11:22:24 1997 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "yes (print:yes copy:yes change:no addNotes:yes algorithm:RC4)",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "163871 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.2"
+    },
+    "page_count_text": 14,
+    "image_count": 0,
+    "mathpix_pdf_id": "91aa21d1-ea21-4a6d-89a6-999d6ce7493b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "postscriptexamples23.lines.json",
+        "bytes": 1428647
+      },
+      {
+        "format": "md",
+        "path": "postscriptexamples23.md",
+        "bytes": 50654
+      },
+      {
+        "format": "tex.zip",
+        "path": "postscriptexamples23.tex.zip",
+        "bytes": 471814
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "postscriptexamples23.tiddlers.json",
-    "tiddlers_count": 47,
+    "tiddlers_count": 271,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -292,18 +343,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.3,
       "detail": "47 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:50:39Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10254.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:50:40Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 285.5,
+      "detail": "254 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:50:40Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.9,
+      "detail": "271 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/postscriptexamples23/postscriptexamples23.lines.json": "sha256:0f7e9305be716a1669ae477be17bf52b399fc8100df71b630a2e0cd03e8e7ad8"
+        "/home/wkolbe/pdfdrill-library/postscriptexamples23/postscriptexamples23.lines.json": "sha256:6ba9bb7c9818125af58feeafdeff831cf6e1aa91edd966dd1ca2262fb36e7b65"
       },
       "params_hash": "sha256:9fcb726db5001d31f9661dd57fb5fac084906bafc01a958a80f63368bad487b1",
       "algo": "sha256",
-      "ts": "2026-08-06T01:32:39Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:50:40Z",
+      "provenance": "mathpix"
     }
   }
 }

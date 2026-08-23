@@ -5,13 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -64,28 +65,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 16,
-      "Citation": 7,
-      "Formula": 1,
-      "Paragraph": 16,
+      "Citation": 3,
+      "Diagram": 2,
+      "Section": 8,
+      "ListItem": 13,
+      "Formula": 2,
+      "Paragraph": 37,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "Qwen_latex_20250812_lac5gdl62.tiddlers.json",
-    "tiddlers_count": 55,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Enrichment Using Conceptual Spaces via Comments - A Framework for Multi-Stage Document Processing",
@@ -114,7 +110,38 @@
     "page_count_text": 16,
     "image_count": 0,
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "bf9aadb9-93aa-4ce4-b219-c6d8f03953fb",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Qwen_latex_20250812_lac5gdl62.lines.json",
+        "bytes": 309484
+      },
+      {
+        "format": "md",
+        "path": "Qwen_latex_20250812_lac5gdl62.md",
+        "bytes": 9847
+      },
+      {
+        "format": "tex.zip",
+        "path": "Qwen_latex_20250812_lac5gdl62.tex.zip",
+        "bytes": 42926
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "Qwen_latex_20250812_lac5gdl62.tiddlers.json",
+    "tiddlers_count": 99,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Enrichment Using Conceptual Spaces via Comments - A Framework for Multi-Stage Document Processing",
@@ -368,18 +395,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1832.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:17:23Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5919.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:17:23Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 76.9,
+      "detail": "82 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:17:23Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T17:17:23Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.3,
+      "detail": "99 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Qwen_latex_20250812_lac5gdl62/Qwen_latex_20250812_lac5gdl62.lines.json": "sha256:9d7198558ff1c9464c37a7a0215c8bc24ccb0dcde3e58609b9ea2f2e0f6fc487"
+        "/home/wkolbe/pdfdrill-library/Qwen_latex_20250812_lac5gdl62/Qwen_latex_20250812_lac5gdl62.lines.json": "sha256:891038221232269671f14deba8089ed968ba0f0c4197c4765b392ba71ed7e27d"
       },
       "params_hash": "sha256:0b680a99c190aff3a325e31eccd06bd77cba666b8a62b3275b661d878f34ea8f",
       "algo": "sha256",
-      "ts": "2026-08-05T23:06:19Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:17:23Z",
+      "provenance": "mathpix"
     }
   }
 }

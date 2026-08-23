@@ -6,12 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -86,23 +87,22 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 11,
-      "ListItem": 14,
-      "Equation": 74,
-      "Paragraph": 67,
+      "Diagram": 3,
+      "ListItem": 2,
+      "Equation": 29,
+      "Formula": 116,
+      "Paragraph": 43,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 29,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "21_hans.tiddlers.json",
-    "tiddlers_count": 183,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
     "links": [
       {
@@ -110,7 +110,56 @@
         "url": "http://mathworld.wolfram.com",
         "kind": "text"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "21_hansman.dvi",
+      "Creator": "dvips(k) 5.86 Copyright 1999 Radical Eye Software",
+      "Producer": "Acrobat Distiller 7.0.5 (Windows)",
+      "CreationDate": "Thu Sep 18 09:28:18 2008 CEST",
+      "ModDate": "Thu Sep 18 09:28:18 2008 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "217148 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 11,
+    "image_count": 33,
+    "mathpix_pdf_id": "a764fe8f-c5cf-491b-8fce-805e4d7a2cae",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "21_hans.lines.json",
+        "bytes": 361859
+      },
+      {
+        "format": "md",
+        "path": "21_hans.md",
+        "bytes": 42061
+      },
+      {
+        "format": "tex.zip",
+        "path": "21_hans.tex.zip",
+        "bytes": 129992
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "21_hans.tiddlers.json",
+    "tiddlers_count": 221,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "21_hansman.dvi",
@@ -1211,18 +1260,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3617.6,
       "detail": "33 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:57:34Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9092.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:57:35Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 298.2,
+      "detail": "205 objects, 29 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:57:35Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.2,
+      "detail": "221 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/21_hans/21_hans.lines.json": "sha256:13a2ef38f5aa8c298a085b081af34c2682349be54d8c3db8f324ff4beab14224"
+        "/home/wkolbe/pdfdrill-library/21_hans/21_hans.lines.json": "sha256:4cfc46ecdc1a30f778c4ec8dbe5542f3b457fff5788a479c7c5c153b33039871"
       },
       "params_hash": "sha256:08b3320af2887bd895bd5c65f3db645db0a7be40932f37553498ec0c8325b849",
       "algo": "sha256",
-      "ts": "2026-08-03T20:56:40Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:57:34Z",
+      "provenance": "mathpix"
     }
   }
 }

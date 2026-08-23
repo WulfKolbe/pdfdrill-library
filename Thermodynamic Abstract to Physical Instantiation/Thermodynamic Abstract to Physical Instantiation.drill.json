@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -58,22 +59,75 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 18,
-      "ListItem": 92,
-      "Equation": 1,
-      "Paragraph": 19,
+      "Table": 4,
+      "TableRow": 20,
+      "TableCell": 73,
+      "Section": 2,
+      "ListItem": 90,
+      "Formula": 10,
+      "Paragraph": 120,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX via pandoc",
+      "Producer": "LuaTeX-1.24.0",
+      "CreationDate": "Sat Apr  4 17:23:47 2026 CEST",
+      "ModDate": "Sat Apr  4 17:23:47 2026 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "18",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "121766 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 18,
+    "image_count": 0,
+    "mathpix_pdf_id": "da48d5b9-1b08-49b7-add2-3119b9c492c6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Thermodynamic Abstract to Physical Instantiation.lines.json",
+        "bytes": 956021
+      },
+      {
+        "format": "md",
+        "path": "Thermodynamic Abstract to Physical Instantiation.md",
+        "bytes": 54378
+      },
+      {
+        "format": "tex.zip",
+        "path": "Thermodynamic Abstract to Physical Instantiation.tex.zip",
+        "bytes": 62547
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "Thermodynamic Abstract to Physical Instantiation.tiddlers.json",
-    "tiddlers_count": 147,
+    "tiddlers_count": 262,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -197,18 +251,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.7,
       "detail": "147 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:40:39Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9654.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:40:40Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 378.9,
+      "detail": "338 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:40:40Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.5,
+      "detail": "262 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Thermodynamic Abstract to Physical Instantiation/Thermodynamic Abstract to Physical Instantiation.lines.json": "sha256:b86d56bf1dcbb5bf36cf8f96041fbe46395f858528f717f0b847edce098faa4b"
+        "/home/wkolbe/pdfdrill-library/Thermodynamic Abstract to Physical Instantiation/Thermodynamic Abstract to Physical Instantiation.lines.json": "sha256:8c2c7f01e8683c0701ca169f9c4ff29483cd8f0773234d3fc625fd1bf7cdc14f"
       },
       "params_hash": "sha256:0fdde9b1656acb2ddeab8d05d761590a3378ec679f33b00bef7cc09bc2fe6373",
       "algo": "sha256",
-      "ts": "2026-08-06T00:38:54Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:40:40Z",
+      "provenance": "mathpix"
     }
   }
 }

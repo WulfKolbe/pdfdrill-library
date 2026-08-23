@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 22,
@@ -98,32 +99,90 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 22,
-      "Citation": 45,
-      "ListItem": 18,
-      "Equation": 86,
-      "Paragraph": 71,
+      "Footnote": 6,
+      "Citation": 16,
+      "Table": 1,
+      "TableRow": 7,
+      "TableCell": 56,
+      "Toc": 1,
+      "Diagram": 6,
+      "Picture": 1,
+      "ListItem": 1,
+      "Equation": 43,
+      "Formula": 338,
+      "Paragraph": 85,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 43,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 52 unmapped private-use character(s) remain (U+F8EB×1, U+F8ED×1, U+F8F1×2, U+F8F2×2, U+F8F3×2, U+F8F4×36, U+F8F6×1, U+F8F8×1, U+F8FC×2, U+F8FD×2, U+F8FE×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Tue Aug 17 11:04:37 2021 CEST",
+      "ModDate": "Tue Aug 17 11:04:37 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "22",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "718867 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 22,
+    "image_count": 5,
+    "mathpix_pdf_id": "76adaa0d-714f-4632-a58c-ea9f76e46f30",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "AGRAIV_Square_tiled_surfaces_(1).lines.json",
+        "bytes": 801437
+      },
+      {
+        "format": "md",
+        "path": "AGRAIV_Square_tiled_surfaces_(1).md",
+        "bytes": 53018
+      },
+      {
+        "format": "tex.zip",
+        "path": "AGRAIV_Square_tiled_surfaces_(1).tex.zip",
+        "bytes": 207859
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "bibliography_entries": 14,
     "bibliography_with_year": 13,
     "bibliography_numeric_citations": 8,
     "bibliography_authoryear_citations": 1,
     "bibliography_cites": 8,
     "tiddlers_path": "AGRAIV_Square_tiled_surfaces_(1).tiddlers.json",
-    "tiddlers_count": 248,
-    "tiddlers_svg_mode": "inline",
-    "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages",
-    "links": []
+    "tiddlers_count": 550,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -768,18 +827,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5173.5,
       "detail": "5 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:39:45Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 11334.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:39:46Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 385.0,
+      "detail": "584 objects, 43 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:39:46Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "14 entries, 8+1 cites detected, 8 linked"
+    },
+    {
+      "ts": "2026-08-22T18:39:46Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 15.0,
+      "detail": "550 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/AGRAIV_Square_tiled_surfaces_(1)/AGRAIV_Square_tiled_surfaces_(1).lines.json": "sha256:5b7aff90ecda0c55695ccd5743458c4e9fca0bb2a68e1516d30249c9dfaf158d"
+        "/home/wkolbe/pdfdrill-library/AGRAIV_Square_tiled_surfaces_(1)/AGRAIV_Square_tiled_surfaces_(1).lines.json": "sha256:9e65c8e3dc0ef66d795cc1557cab5e5cb32b3a6685c59756e81601685b0dfef9"
       },
       "params_hash": "sha256:5b6b8608112dc00df74793a9d98ccd266082a7dd23c1099d13131c345140e6aa",
       "algo": "sha256",
-      "ts": "2026-08-04T07:22:14Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:39:45Z",
+      "provenance": "mathpix"
     }
   }
 }

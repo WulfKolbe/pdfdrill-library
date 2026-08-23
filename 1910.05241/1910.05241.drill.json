@@ -5,15 +5,16 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 27,
@@ -96,22 +97,22 @@
     "bibkey": "1910.05241",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
+      "Page": 27,
+      "Citation": 75,
+      "Table": 7,
+      "TableRow": 71,
+      "TableCell": 289,
       "Abstract": 1,
-      "Paragraph": 101,
-      "Section": 15,
-      "Formula": 235,
-      "Theorem": 28,
-      "Table": 10,
-      "LtxCommand": 13,
-      "Equation": 34,
-      "Proof": 11,
-      "Diagram": 11,
-      "Citation": 61,
-      "Algorithm": 1,
-      "AlgorithmStep": 14
+      "Diagram": 13,
+      "ListItem": 11,
+      "Equation": 43,
+      "Formula": 375,
+      "Paragraph": 100,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 43,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 27,
       "placed": 56,
@@ -121,14 +122,6 @@
       "numbered": 15,
       "roots": 1
     },
-    "bibliography_entries": 25,
-    "bibliography_with_year": 24,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 61,
-    "tiddlers_path": "1910.05241.tiddlers.json",
-    "tiddlers_count": 529,
-    "tiddlers_svg_mode": "inline",
     "abstract": "For $3$-dimensional convex polytopes, inscribability is a classical property that is relatively well-understood due to its relation with Delaunay subdivisions of the plane and hyperbolic geometry. In particular, inscribability can be tested in polynomial time, and for every $f$-vector of $3$-polytopes, there exists an inscribable polytope with that $f$-vector. For higher-dimensional polytopes, much less is known. Of course, for any inscribable polytope, all of its lower-dimensional faces need to be inscribable, but this condition does not appear to be very strong. We observe non-trivial new obstructions to the inscribability of polytopes that arise when imposing that a certain inscribable face be inscribed. Using this obstruction, we show that the duals of the $4$-dimensional cyclic polytopes with at least $8$ vertices---all of whose faces are inscribable---are not inscribable. This result is optimal in the following sense: We prove that the duals of the cyclic $4$-polytopes with up to $7$ vertices are, in fact, inscribable. Moreover, we interpret this obstruction combinatorially as a forbidden subposet of the face lattice of a polytope, show that $d$-dimensional cyclic polytopes with at least $d+4$ vertices are not circumscribable, and that no dual of a neighborly $4$-polytope with $8$ vertices, that is, no polytope with $f$-vector $(20,40,28,8)$, is inscribable.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -152,7 +145,72 @@
         "page": 23,
         "url": "https://arxiv.org/abs/1803.05205"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Mon Dec 23 02:52:45 2019 CET",
+      "ModDate": "Mon Dec 23 02:52:45 2019 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "27",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "658657 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 27,
+    "image_count": 0,
+    "mathpix_pdf_id": "63e9d2e4-6768-466b-990b-4bdf51027ef5",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1910.05241.lines.json",
+        "bytes": 1493441
+      },
+      {
+        "format": "md",
+        "path": "1910.05241.md",
+        "bytes": 90585
+      },
+      {
+        "format": "tex.zip",
+        "path": "1910.05241.tex.zip",
+        "bytes": 769928
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 20,
+    "bibliography_with_year": 20,
+    "bibliography_numeric_citations": 1,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 1,
+    "tiddlers_path": "1910.05241.tiddlers.json",
+    "tiddlers_count": 650,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1580,16 +1638,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 9214.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:39:55Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13170.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:39:56Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 806.0,
+      "detail": "1014 objects, 43 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:39:57Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "20 entries, 1+1 cites detected, 1 linked"
+    },
+    {
+      "ts": "2026-08-22T19:39:57Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 19.0,
+      "detail": "650 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1910.05241/1910.05241.lines.json": "sha256:c997f3c92e1381c03ef8c775e2b9abe00c80a8acdac0e52ee930b7f86cd83a7d"
+      },
       "params_hash": "sha256:e06ee069dcd3baf4c3c16612b59e86a99960c4074447536547bfa77892d96485",
       "algo": "sha256",
-      "ts": "2026-08-03T19:48:53Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T19:39:55Z",
+      "provenance": "mathpix"
     }
   }
 }

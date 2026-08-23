@@ -3,19 +3,19 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "ABSTRACT_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "LINKS_KNOWN",
     "TOC_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1702.06776",
@@ -23,23 +23,18 @@
     "bibkey": "1702.06776",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 2,
-      "Paragraph": 111,
-      "Abstract": 1,
-      "Section": 17,
-      "Formula": 165,
+      "Page": 15,
+      "Footnote": 4,
+      "Diagram": 2,
+      "Picture": 2,
+      "ListItem": 4,
       "Equation": 19,
-      "Theorem": 2,
-      "Diagram": 10,
-      "Citation": 76
+      "Formula": 151,
+      "Paragraph": 57,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 32,
-    "bibliography_with_year": 2,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 76,
+    "model_equations_with_cdn": 19,
+    "model_source": "mathpix",
     "pages": 15,
     "bytes": 790938,
     "page_size": "612 x 792 pts (letter)",
@@ -147,9 +142,6 @@
     ],
     "math_fonts": [],
     "has_math_fonts": false,
-    "tiddlers_path": "1702.06776.tiddlers.json",
-    "tiddlers_count": 392,
-    "tiddlers_svg_mode": "inline",
     "links": [
       {
         "page": 9,
@@ -177,7 +169,67 @@
         "page": ""
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Causal Inference by Stochastic Complexity",
+      "Subject": "",
+      "Keywords": "•Mathematics of computing  Causal networks; Information theory; •Information systems  Data mining;",
+      "Author": "Kailash Budhathoki and Jilles Vreeken",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Thu Feb 23 02:42:31 2017 CET",
+      "ModDate": "Thu Feb 23 02:42:31 2017 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "790938 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 15,
+    "image_count": 0,
+    "mathpix_pdf_id": "a7157b9f-7b18-4492-9be5-72cfb388b310",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1702.06776.lines.json",
+        "bytes": 582357
+      },
+      {
+        "format": "md",
+        "path": "1702.06776.md",
+        "bytes": 51347
+      },
+      {
+        "format": "tex.zip",
+        "path": "1702.06776.tex.zip",
+        "bytes": 259058
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1702.06776.tiddlers.json",
+    "tiddlers_count": 271,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Causal Inference by Stochastic Complexity",
@@ -1618,16 +1670,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3406.8,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:52:09Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9607.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:52:10Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 209.9,
+      "detail": "255 objects, 19 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:52:10Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.0,
+      "detail": "271 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1702.06776/1702.06776.lines.json": "sha256:5004d284323685bd5e188df670770589e5df383d6afa9924defce7b7827a9d66"
+      },
       "params_hash": "sha256:5dfdeb74385ba061fd218acb805fe2416b0c09cda6df8f63a418fd3644dec1b9",
       "algo": "sha256",
-      "ts": "2026-08-03T19:38:01Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:52:10Z",
+      "provenance": "mathpix"
     }
   }
 }

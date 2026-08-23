@@ -6,7 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -85,28 +85,76 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 26,
-      "Citation": 2,
-      "ListItem": 20,
-      "Equation": 11,
-      "Paragraph": 37,
+      "Sidenote": 7,
+      "Diagram": 15,
+      "Picture": 2,
+      "ListItem": 72,
+      "Equation": 22,
+      "Formula": 42,
+      "Paragraph": 87,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 22,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 16 unmapped private-use character(s) remain (U+F8EB×1, U+F8ED×1, U+F8EE×3, U+F8F0×3, U+F8F6×1, U+F8F8×1, U+F8F9×3, U+F8FB×3) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 2,
-    "bibliography_cites": 0,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Discovery of Violations of Fundamental Symmetry Principles in the Decay of Neutral K-mesons",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Stefan Paul",
+      "Creator": "LaTeX with Beamer class version 3.26",
+      "Producer": "pdfTeX-1.40.13",
+      "CreationDate": "Sun Jan 17 15:28:56 2016 CET",
+      "ModDate": "Sun Jan 17 15:28:56 2016 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "26",
+      "Encrypted": "no",
+      "Page size": "362.835 x 272.126 pts",
+      "Page rot": "0",
+      "File size": "936553 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 26,
+    "image_count": 41,
+    "mathpix_pdf_id": "8ac3dbb1-a880-4f14-8d89-72e68ea74771",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "paul_cp_violation.lines.json",
+        "bytes": 575087
+      },
+      {
+        "format": "md",
+        "path": "paul_cp_violation.md",
+        "bytes": 21228
+      },
+      {
+        "format": "tex.zip",
+        "path": "paul_cp_violation.tex.zip",
+        "bytes": 411119
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "paul_cp_violation.tiddlers.json",
-    "tiddlers_count": 115,
+    "tiddlers_count": 290,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -462,18 +510,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.0,
       "detail": "115 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T19:33:56Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9599.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:33:56Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 163.9,
+      "detail": "274 objects, 22 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:33:57Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.5,
+      "detail": "290 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/paul_cp_violation/paul_cp_violation.lines.json": "sha256:1923b84b4a98c232198491260567934e52534bd184b5c8670f4d759c2820e06c"
+        "/home/wkolbe/pdfdrill-library/paul_cp_violation/paul_cp_violation.lines.json": "sha256:ef9d04eb56653ccda78b9eda3eee064dcbef4302de85cc123b19a83554d3b257"
       },
       "params_hash": "sha256:d569934f9f5efed193dce65559f4cf5c0e48a22aa7d065764de3aa5a75412744",
       "algo": "sha256",
-      "ts": "2026-08-06T01:32:06Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:33:56Z",
+      "provenance": "mathpix"
     }
   }
 }

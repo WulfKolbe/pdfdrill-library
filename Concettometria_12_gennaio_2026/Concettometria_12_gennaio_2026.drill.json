@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -87,23 +88,28 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 4,
-      "ListItem": 16,
-      "Equation": 3,
-      "Paragraph": 7,
+      "Table": 2,
+      "TableRow": 12,
+      "TableCell": 29,
+      "Sidenote": 6,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Section": 10,
+      "ListItem": 11,
+      "Equation": 6,
+      "Formula": 36,
+      "Paragraph": 50,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Concettometria_12_gennaio_2026.tiddlers.json",
-    "tiddlers_count": 47,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -180,7 +186,32 @@
       }
     ],
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "a8c12d0c-a594-426b-8675-d0fbb72f45cd",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Concettometria_12_gennaio_2026.lines.json",
+        "bytes": 328482
+      },
+      {
+        "format": "md",
+        "path": "Concettometria_12_gennaio_2026.md",
+        "bytes": 10131
+      },
+      {
+        "format": "tex.zip",
+        "path": "Concettometria_12_gennaio_2026.tex.zip",
+        "bytes": 20659
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Concettometria_12_gennaio_2026.tiddlers.json",
+    "tiddlers_count": 145,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -965,18 +996,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 948.6,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:29:28Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9591.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:29:28Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 92.0,
+      "detail": "169 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:29:29Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.8,
+      "detail": "145 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Concettometria_12_gennaio_2026/Concettometria_12_gennaio_2026.lines.json": "sha256:833af6a6079a6e4d779b1020209bf34824007e8a7597e45e6aa673757c461fe4"
+        "/home/wkolbe/pdfdrill-library/Concettometria_12_gennaio_2026/Concettometria_12_gennaio_2026.lines.json": "sha256:c980f6eadea94447c0ed7e3edb692a79cb3a37d4339d918479ed73eb736f52b2"
       },
       "params_hash": "sha256:a59a6fdac976c243d9d6ee3a46cf1b7f7c2d925f323f2d920b9cd606ab2a9c03",
       "algo": "sha256",
-      "ts": "2026-08-05T06:53:57Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:29:28Z",
+      "provenance": "mathpix"
     }
   }
 }

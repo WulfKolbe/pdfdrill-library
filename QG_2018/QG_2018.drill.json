@@ -6,15 +6,16 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 24,
@@ -100,29 +101,24 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 24,
-      "Citation": 3,
-      "ListItem": 15,
-      "Equation": 32,
-      "Paragraph": 48,
+      "Footnote": 15,
+      "Citation": 2,
+      "Abstract": 1,
+      "ListItem": 12,
+      "Equation": 21,
+      "Formula": 246,
+      "Paragraph": 72,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 21,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 26,
-    "bibliography_with_year": 25,
-    "bibliography_numeric_citations": 1,
-    "bibliography_authoryear_citations": 19,
-    "bibliography_cites": 16,
-    "tiddlers_path": "QG_2018.tiddlers.json",
-    "tiddlers_count": 169,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "TeX output 2018.08.21:1503",
@@ -172,7 +168,38 @@
         "url": "http://philsci-archive.pitt.edu/12016/",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "10e9b0f2-069c-49f3-b819-cf38ccd446fc",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "QG_2018.lines.json",
+        "bytes": 1062727
+      },
+      {
+        "format": "md",
+        "path": "QG_2018.md",
+        "bytes": 75844
+      },
+      {
+        "format": "tex.zip",
+        "path": "QG_2018.tex.zip",
+        "bytes": 78959
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 25,
+    "bibliography_with_year": 25,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 19,
+    "bibliography_cites": 17,
+    "tiddlers_path": "QG_2018.tiddlers.json",
+    "tiddlers_count": 437,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -732,18 +759,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3762.8,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:08:13Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9881.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:08:14Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 423.4,
+      "detail": "394 objects, 21 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:08:14Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "25 entries, 0+19 cites detected, 17 linked"
+    },
+    {
+      "ts": "2026-08-22T19:08:14Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 15.7,
+      "detail": "437 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/QG_2018/QG_2018.lines.json": "sha256:ec41ee9266db1706235254fbe76569ea10697370c653f83e36512dc3ecccf423"
+        "/home/wkolbe/pdfdrill-library/QG_2018/QG_2018.lines.json": "sha256:1ad32a0fd7713fdee2955de02461f227e62d328e658a8138d5a9cb07826fc3c6"
       },
       "params_hash": "sha256:15824914db79566b0cd667dc0174fd29fe374d21282aac7b0bc8165ab15168cb",
       "algo": "sha256",
-      "ts": "2026-08-05T23:01:53Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:08:14Z",
+      "provenance": "mathpix"
     }
   }
 }

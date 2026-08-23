@@ -5,14 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -98,18 +98,19 @@
     "bibkey": "2302.07348",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 7,
-      "Paragraph": 67,
+      "Page": 16,
+      "Footnote": 6,
       "Abstract": 1,
-      "Section": 20,
-      "Formula": 61,
+      "Diagram": 6,
+      "Picture": 3,
+      "ListItem": 12,
       "Equation": 20,
-      "Theorem": 1,
-      "Proof": 1,
-      "Citation": 39
+      "Formula": 86,
+      "Paragraph": 58,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 20,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 16,
       "placed": 43,
@@ -119,14 +120,6 @@
       "numbered": 20,
       "roots": 1
     },
-    "bibliography_entries": 26,
-    "bibliography_with_year": 24,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 39,
-    "tiddlers_path": "2302.07348.tiddlers.json",
-    "tiddlers_count": 238,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We study the data-scaling of transfer learning from foundation models in the low-downstream-data regime. We observe an intriguing phenomenon which we call cliff-learning. Cliff-learning refers to regions of data-scaling laws where performance improves at a faster than power law rate (i.e. regions of concavity on a log-log scaling plot). We conduct an in-depth investigation of foundation-model cliff-learning and study toy models of the phenomenon. We observe that the degree of cliff-learning reflects the degree of compatibility between the priors of a learning algorithm and the task being learned.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -177,7 +170,67 @@
         "page": 9,
         "url": "https://github.com/ankitrohatgi/WebPlotDigitizer"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Thu Jun  8 02:46:15 2023 CEST",
+      "ModDate": "Thu Jun  8 02:46:15 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "550529 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 6,
+    "mathpix_pdf_id": "26214d09-4eae-4680-b2b8-5532e3c08645",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2302.07348.lines.json",
+        "bytes": 460585
+      },
+      {
+        "format": "md",
+        "path": "2302.07348.md",
+        "bytes": 32746
+      },
+      {
+        "format": "tex.zip",
+        "path": "2302.07348.tex.zip",
+        "bytes": 1048059
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2302.07348.tiddlers.json",
+    "tiddlers_count": 225,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -803,18 +856,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4805.3,
       "detail": "3 images, 3 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:09:48Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8973.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:09:48Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 203.2,
+      "detail": "209 objects, 20 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:09:48Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.7,
+      "detail": "225 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2302.07348/texsrc/main.tex": "sha256:eaffd15f79bb8825a62874d8241b87bcc3c351255c3accc003359949dd4851b2"
+        "/home/wkolbe/pdfdrill-library/2302.07348/2302.07348.lines.json": "sha256:6d9ba15bf99236c2d75f7eb671aa2c70d5c2e5c3c61b85e8e6b17afc1abd4e87"
       },
       "params_hash": "sha256:7270948a23065e60f7bf5dc095093b3fd72fb63752e751135ca7ed07d3cb396c",
       "algo": "sha256",
-      "ts": "2026-08-03T21:02:40Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:09:48Z",
+      "provenance": "mathpix"
     }
   }
 }

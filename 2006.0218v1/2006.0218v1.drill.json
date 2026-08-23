@@ -5,13 +5,13 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 14,
@@ -84,20 +84,24 @@
     "bibkey": "2006.0218v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 71,
+      "Page": 14,
+      "Footnote": 26,
+      "Table": 1,
+      "TableRow": 5,
+      "TableCell": 20,
+      "Sidenote": 26,
+      "Toc": 1,
       "Abstract": 1,
-      "LtxCommand": 1,
-      "Section": 19,
-      "Formula": 69,
-      "Equation": 43,
-      "Theorem": 30,
-      "Proof": 5,
-      "Citation": 42,
-      "Algorithm": 1,
-      "AlgorithmStep": 21
+      "Diagram": 12,
+      "Section": 28,
+      "ListItem": 8,
+      "Equation": 17,
+      "Formula": 135,
+      "Paragraph": 74,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 17,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 14,
       "placed": 1,
@@ -107,14 +111,6 @@
       "numbered": 19,
       "roots": 1
     },
-    "bibliography_entries": 32,
-    "bibliography_with_year": 32,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 42,
-    "tiddlers_path": "2006.0218v1.tiddlers.json",
-    "tiddlers_count": 303,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Mathematical models, calibrated to data, have become ubiquitous to make key decision processes in modern quantitative finance. In this work, we propose a novel framework for data-driven model selection by integrating a classical quantitative setup with a generative modelling approach. Leveraging the properties of the signature, a well-known path-transform from stochastic analysis that recently emerged as leading machine learning technology for learning time-series data, we develop the Sig-SDE model. Sig-SDE provides a new perspective on neural SDEs and can be calibrated to exotic financial products that depend, in a non-linear way, on the whole trajectory of asset prices. Furthermore, we our approach enables to consistently calibrate under the pricing measure $\\mathbb Q$ and real-world measure $\\mathbb P$. Finally, we demonstrate the ability of Sig-SDE to simulate future possible market scenarios needed for computing risk profiles or hedging strategies. Importantly, this new model is underpinned by rigorous mathematical analysis, that under appropriate conditions provides theoretical guarantees for convergence of the presented algorithms.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -124,7 +120,63 @@
       "Cristopher Salvi",
       "Lukasz Szpruch"
     ],
-    "arxiv_primary_category": "q-fin.CP"
+    "arxiv_primary_category": "q-fin.CP",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "MiKTeX pdfTeX-1.40.17",
+      "CreationDate": "Thu Jun 25 00:12:20 2020 CEST",
+      "ModDate": "Thu Jun 25 00:12:20 2020 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "595214 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 14,
+    "image_count": 7,
+    "mathpix_pdf_id": "4b9cf502-ed7d-4fde-a6f9-c2fdb16bb66d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2006.0218v1.lines.json",
+        "bytes": 1271495
+      },
+      {
+        "format": "md",
+        "path": "2006.0218v1.md",
+        "bytes": 52512
+      },
+      {
+        "format": "tex.zip",
+        "path": "2006.0218v1.tex.zip",
+        "bytes": 473340
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2006.0218v1.tiddlers.json",
+    "tiddlers_count": 360,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -777,16 +829,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 13129.3,
       "detail": "8 images, 6 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:41:11Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9104.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:41:12Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 346.0,
+      "detail": "369 objects, 17 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:41:12Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.7,
+      "detail": "360 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2006.0218v1/2006.0218v1.lines.json": "sha256:87c04de82dd38d7c2e2401e2f003473320ffe5f5b3ea3a5311266e323c65e653"
+      },
       "params_hash": "sha256:455e5e5f5120eb60a509cacc9616d1ddbda925f305adfc696dafe7aec9203c3a",
       "algo": "sha256",
-      "ts": "2026-08-03T20:32:33Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:41:12Z",
+      "provenance": "mathpix"
     }
   }
 }

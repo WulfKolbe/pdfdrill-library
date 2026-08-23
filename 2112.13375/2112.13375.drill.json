@@ -5,13 +5,13 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -90,17 +90,17 @@
     "bibkey": "2112.13375",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 54,
+      "Page": 9,
       "Abstract": 1,
-      "Section": 6,
-      "Formula": 101,
-      "Theorem": 5,
+      "ListItem": 1,
       "Equation": 46,
-      "Proof": 2,
-      "Citation": 22
+      "Formula": 115,
+      "Paragraph": 68,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 46,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 9,
       "placed": 21,
@@ -110,14 +110,6 @@
       "numbered": 6,
       "roots": 1
     },
-    "bibliography_entries": 15,
-    "bibliography_with_year": 14,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 22,
-    "tiddlers_path": "2112.13375.tiddlers.json",
-    "tiddlers_count": 257,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We implement an iterative numerical method to solve polynomial equations $f(x)=0$ in the $p$-adic numbers, where $f(x) \\in\\mathbb{Z}_p[x]$. This method is a simplified $p$-adic analogue of Jarratt&#39;s method for finding roots of functions over the real numbers. We establish that our method has a higher order of convergence than J.F.T. Rabago&#39;s $p$-adic version of Olver&#39;s method from 2016. Moreover, we weaken the initial conditions in Rabago&#39;s method, which allows us to start the iteration with a multiple root of the congruence $f(x) \\equiv 0 \\bmod{p}$.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -128,7 +120,67 @@
       "Saayan Mukherjee"
     ],
     "arxiv_primary_category": "math.NT",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Tue Dec 28 03:12:41 2021 CET",
+      "ModDate": "Tue Dec 28 03:12:41 2021 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "157591 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 9,
+    "image_count": 85,
+    "mathpix_pdf_id": "9a341817-f28d-4793-9816-1115397e5d74",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2112.13375.lines.json",
+        "bytes": 386917
+      },
+      {
+        "format": "md",
+        "path": "2112.13375.md",
+        "bytes": 28873
+      },
+      {
+        "format": "tex.zip",
+        "path": "2112.13375.tex.zip",
+        "bytes": 31371
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2112.13375.tiddlers.json",
+    "tiddlers_count": 258,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -3959,18 +4011,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2902.9,
       "detail": "170 images, 85 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:11:09Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8495.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:11:09Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 265.8,
+      "detail": "242 objects, 46 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:11:09Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.4,
+      "detail": "258 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2112.13375/texsrc/main.tex": "sha256:4f393cccb921013bea689f0f54ccd8ef0c119cc631b58578467a96f7c5300e9d"
+        "/home/wkolbe/pdfdrill-library/2112.13375/2112.13375.lines.json": "sha256:9202fe121361bcc68bfb497fc1eb56282d56be2ebe1511b8fb648b0353a1b03d"
       },
       "params_hash": "sha256:1be3f8b655920837da2fa2bb89f14206b38aa05b70e83acb026f63a45ccc245d",
       "algo": "sha256",
-      "ts": "2026-08-03T20:56:38Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:11:09Z",
+      "provenance": "mathpix"
     }
   }
 }

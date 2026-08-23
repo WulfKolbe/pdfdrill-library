@@ -6,7 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -64,27 +64,73 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
-      "Citation": 9,
-      "Equation": 21,
-      "Paragraph": 31,
+      "Table": 10,
+      "TableRow": 62,
+      "TableCell": 187,
+      "Picture": 4,
+      "Equation": 29,
+      "Formula": 107,
+      "Paragraph": 3,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 29,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 1 unmapped private-use character(s) remain (U+E020×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Math-Translation — Better exclusion of math statements from tanslation",
+      "Creator": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+      "Producer": "Skia/PDF m139",
+      "CreationDate": "Tue Nov  4 17:14:39 2025 CET",
+      "ModDate": "Tue Nov  4 17:14:39 2025 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "yes",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "1191.12 x 841.92 pts (A3)",
+      "Page rot": "0",
+      "File size": "960094 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 10,
+    "image_count": 61,
+    "mathpix_pdf_id": "dc6dcaa7-b8c2-47fd-b493-b0f087a7f047",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "testtable.lines.json",
+        "bytes": 519031
+      },
+      {
+        "format": "md",
+        "path": "testtable.md",
+        "bytes": 28768
+      },
+      {
+        "format": "tex.zip",
+        "path": "testtable.tex.zip",
+        "bytes": 164794
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "testtable.tiddlers.json",
-    "tiddlers_count": 84,
+    "tiddlers_count": 180,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -342,18 +388,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.6,
       "detail": "84 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T15:46:25Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9648.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:46:25Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 491.5,
+      "detail": "413 objects, 29 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:46:26Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.0,
+      "detail": "180 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/testtable/testtable.lines.json": "sha256:dc6a715c9c6c5a14fe14d764576297356723d514b6696da08b409e408f2415c8"
+        "/home/wkolbe/pdfdrill-library/testtable/testtable.lines.json": "sha256:dae065bcc80e7affcbed29ddc96da3dd03eb57a1a6477f71fe1c4a481528296a"
       },
       "params_hash": "sha256:0804042cc096cb757bab607e382d26dfc1427b8bc2bf99fa7ec2bf812de243d9",
       "algo": "sha256",
-      "ts": "2026-08-06T02:07:20Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:46:25Z",
+      "provenance": "mathpix"
     }
   }
 }

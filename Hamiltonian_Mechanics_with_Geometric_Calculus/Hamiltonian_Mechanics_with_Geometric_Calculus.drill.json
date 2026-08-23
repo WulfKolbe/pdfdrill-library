@@ -6,15 +6,16 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 12,
@@ -80,29 +81,24 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 12,
-      "Citation": 12,
-      "ListItem": 10,
-      "Equation": 35,
-      "Paragraph": 38,
+      "Citation": 11,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "ListItem": 8,
+      "Equation": 70,
+      "Formula": 70,
+      "Paragraph": 84,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 70,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 11,
-    "bibliography_with_year": 7,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 4,
-    "bibliography_cites": 3,
-    "tiddlers_path": "Hamiltonian_Mechanics_with_Geometric_Calculus.tiddlers.json",
-    "tiddlers_count": 126,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Producer": "Acrobat Distiller 3.0 for Power Macintosh",
@@ -163,7 +159,38 @@
         "page": 12,
         "url": "https://www.researchgate.net/publication/242552600"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "2dd31f9c-fdce-4353-80c5-72080f20317c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Hamiltonian_Mechanics_with_Geometric_Calculus.lines.json",
+        "bytes": 439029
+      },
+      {
+        "format": "md",
+        "path": "Hamiltonian_Mechanics_with_Geometric_Calculus.md",
+        "bytes": 26649
+      },
+      {
+        "format": "tex.zip",
+        "path": "Hamiltonian_Mechanics_with_Geometric_Calculus.tex.zip",
+        "bytes": 27884
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 9,
+    "bibliography_with_year": 7,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 4,
+    "bibliography_cites": 3,
+    "tiddlers_path": "Hamiltonian_Mechanics_with_Geometric_Calculus.tiddlers.json",
+    "tiddlers_count": 275,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -650,18 +677,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1484.9,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:17:29Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9205.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:17:30Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 118.2,
+      "detail": "259 objects, 70 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:17:30Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "9 entries, 0+4 cites detected, 3 linked"
+    },
+    {
+      "ts": "2026-08-22T16:17:30Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.7,
+      "detail": "275 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Hamiltonian_Mechanics_with_Geometric_Calculus/Hamiltonian_Mechanics_with_Geometric_Calculus.lines.json": "sha256:422c86af7adb11fd9a8b825de8bde8845d0a2e5186f222b02aa99e0bc65b83d0"
+        "/home/wkolbe/pdfdrill-library/Hamiltonian_Mechanics_with_Geometric_Calculus/Hamiltonian_Mechanics_with_Geometric_Calculus.lines.json": "sha256:c5746a11c15a65e414bf00918623487433b925a0d5fd68f48341f9eac85830de"
       },
       "params_hash": "sha256:5248cab15be0c28954afdbcf453d62cb76e6a7b3138a781b4ec574143ae4e68f",
       "algo": "sha256",
-      "ts": "2026-08-05T20:59:01Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:17:29Z",
+      "provenance": "mathpix"
     }
   }
 }

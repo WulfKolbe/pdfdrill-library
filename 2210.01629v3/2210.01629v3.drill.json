@@ -5,15 +5,16 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "TOC_ABSENT",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -85,18 +86,23 @@
     "bibkey": "2210.01629v3",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 48,
-      "Diagram": 2,
-      "LtxCommand": 8,
-      "Abstract": 1,
-      "Section": 9,
-      "Formula": 42,
-      "Equation": 12,
+      "Page": 4,
+      "Citation": 2,
       "Table": 1,
-      "Citation": 21
+      "TableRow": 5,
+      "TableCell": 24,
+      "Sidenote": 8,
+      "Abstract": 1,
+      "Diagram": 3,
+      "ListItem": 7,
+      "Equation": 12,
+      "Formula": 38,
+      "Paragraph": 50,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 12,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 4,
       "placed": 36,
@@ -106,14 +112,6 @@
       "numbered": 9,
       "roots": 1
     },
-    "bibliography_entries": 15,
-    "bibliography_with_year": 14,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 21,
-    "tiddlers_path": "2210.01629v3.tiddlers.json",
-    "tiddlers_count": 160,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Despite the fact that Shannon and Weaver&#39;s Mathematical Theory of Communication was published over 70 years ago, all communication systems continue to operate at the first of three levels defined in this theory: the technical level. In this letter, we argue that a transition to the semantic level embodies a natural, important step in the evolution of communication technologies. Furthermore, we propose a novel approach to engineering semantic communication using conceptual spaces and functional compression. We introduce a model of semantic communication utilizing this approach, and simulate communication of image semantics demonstrating a 99.79% reduction in rate.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -170,7 +168,72 @@
         "url": "https://doi.org/10.1109/CVPR42600.2020.00294"
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Mon Jan  9 02:49:54 2023 CET",
+      "ModDate": "Mon Jan  9 02:49:54 2023 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "4",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "279425 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 4,
+    "image_count": 8,
+    "mathpix_pdf_id": "fb02e59b-69da-4a3b-9925-4d0a059bf732",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2210.01629v3.lines.json",
+        "bytes": 534953
+      },
+      {
+        "format": "md",
+        "path": "2210.01629v3.md",
+        "bytes": 25382
+      },
+      {
+        "format": "tex.zip",
+        "path": "2210.01629v3.tex.zip",
+        "bytes": 114480
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 19,
+    "bibliography_with_year": 16,
+    "bibliography_numeric_citations": 21,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 21,
+    "tiddlers_path": "2210.01629v3.tiddlers.json",
+    "tiddlers_count": 162,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -978,18 +1041,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1964.8,
       "detail": "4 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:27:30Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10215.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:27:30Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 166.9,
+      "detail": "157 objects, 12 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:27:30Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "19 entries, 21+0 cites detected, 21 linked"
+    },
+    {
+      "ts": "2026-08-22T14:27:30Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.8,
+      "detail": "162 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2210.01629v3/texsrc/main.tex": "sha256:43dece4c1102008427ef1cdb71449b2aa9208af0606a7a2b66b03fc27f6d20c7"
+        "/home/wkolbe/pdfdrill-library/2210.01629v3/2210.01629v3.lines.json": "sha256:5ea988efdff14c9b08e2a31a9389328d6d9020d24e2de0957252ba0be7e6cad7"
       },
       "params_hash": "sha256:770a0fe61d63e7b97963f6635d12d6f1f41527cb2109ef852133aa4db33cddfa",
       "algo": "sha256",
-      "ts": "2026-08-03T20:59:59Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:27:30Z",
+      "provenance": "mathpix"
     }
   }
 }

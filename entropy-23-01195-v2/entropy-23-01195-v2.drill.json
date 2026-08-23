@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -77,28 +78,82 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 11,
-      "Citation": 3,
-      "ListItem": 120,
-      "Equation": 81,
-      "Paragraph": 55,
+      "Citation": 6,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 9,
+      "ListItem": 17,
+      "Equation": 32,
+      "Formula": 186,
+      "Paragraph": 61,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 32,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 23 unmapped private-use character(s) remain (U+F8EB×2, U+F8ED×2, U+F8F1×3, U+F8F2×3, U+F8F3×3, U+F8F4×6, U+F8F6×2, U+F8F8×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Entropy as a Topological Operad Derivation",
+      "Subject": "We share a small connection between information theory, algebra, and topology—namely, a correspondence between Shannon entropy and derivations of the operad of topological simplices. We begin with a brief review of operads and their representations with topological simplices and the real line as the main example. We then give a general definition for a derivation of an operad in any category with values in an abelian bimodule over the operad. The main result is that Shannon entropy defines a derivation of the operad of topological simplices, and that for every derivation of this operad there exists a point at which it is given by a constant multiple of Shannon entropy. We show this is compatible with, and relies heavily on, a well-known characterization of entropy given by Faddeev in 1956 and a recent variation given by Leinster.",
+      "Keywords": "Shannon entropy; topology; operad",
+      "Author": "Tai-Danae Bradley",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Fri Sep 10 11:37:22 2021 CEST",
+      "ModDate": "Fri Sep 10 11:44:05 2021 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "297818 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 11,
+    "image_count": 5,
+    "mathpix_pdf_id": "ddae29e6-de57-4acf-bbc6-4f9c2d4938f0",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "entropy-23-01195-v2.lines.json",
+        "bytes": 476708
+      },
+      {
+        "format": "md",
+        "path": "entropy-23-01195-v2.md",
+        "bytes": 39728
+      },
+      {
+        "format": "tex.zip",
+        "path": "entropy-23-01195-v2.tex.zip",
+        "bytes": 178606
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "bibliography_entries": 16,
     "bibliography_with_year": 16,
-    "bibliography_numeric_citations": 25,
+    "bibliography_numeric_citations": 23,
     "bibliography_authoryear_citations": 2,
-    "bibliography_cites": 25,
+    "bibliography_cites": 23,
     "tiddlers_path": "entropy-23-01195-v2.tiddlers.json",
-    "tiddlers_count": 303,
+    "tiddlers_count": 358,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -412,18 +467,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 9.0,
       "detail": "303 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:05:48Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9105.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:05:49Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 201.0,
+      "detail": "326 objects, 32 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:05:49Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "16 entries, 23+2 cites detected, 23 linked"
+    },
+    {
+      "ts": "2026-08-22T16:05:49Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.9,
+      "detail": "358 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/entropy-23-01195-v2/entropy-23-01195-v2.lines.json": "sha256:8b26d60713f1ca07a0fbed4f2869a98e8d2a70243d2eb49bbe35d9261676d61b"
+        "/home/wkolbe/pdfdrill-library/entropy-23-01195-v2/entropy-23-01195-v2.lines.json": "sha256:a410cd0eb5e3d439cb0deb739bc89fe6b57a00004a86b4c743ad2dc6f6f15853"
       },
       "params_hash": "sha256:9e56e8c9b3dbfc47f217468efd6b648fa44523f0d355b2339a5c4dcec4e87713",
       "algo": "sha256",
-      "ts": "2026-08-06T01:11:56Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:05:48Z",
+      "provenance": "mathpix"
     }
   }
 }

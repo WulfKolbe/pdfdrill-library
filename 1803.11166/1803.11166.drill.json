@@ -5,11 +5,12 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -109,15 +110,20 @@
     "bibkey": "1803.11166",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Formula": 179,
-      "Paragraph": 58,
-      "Equation": 16,
+      "Page": 9,
+      "Citation": 4,
+      "Sidenote": 15,
       "Abstract": 1,
-      "Section": 7,
-      "Citation": 62
+      "Diagram": 4,
+      "Picture": 3,
+      "ListItem": 19,
+      "Equation": 16,
+      "Formula": 186,
+      "Paragraph": 78,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 16,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 9,
       "placed": 38,
@@ -127,14 +133,6 @@
       "numbered": 7,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "1803.11166.tiddlers.json",
-    "tiddlers_count": 330,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Lattice gauge theories are fundamental to our understanding of high-energy physics. Nevertheless, the search for suitable platforms for their quantum simulation has proven difficult. We show that the Abelian Higgs model in 1+1 dimensions is a prime candidate for an experimental quantum simulation of a lattice gauge theory. To this end, we use a discrete tensor reformulation to smoothly connect the space-time isotropic version used in most numerical lattice simulations to the continuous-time limit corresponding to the Hamiltonian formulation. The eigenstates of the Hamiltonian are neutral for periodic boundary conditions, but we probe the nonzero charge sectors by either introducing a Polyakov loop or an external electric field. In both cases we obtain universal functions relating the mass gap, the gauge coupling, and the spatial size which are invariant under the deformation of the temporal lattice spacing. We propose to use a physical multi-leg ladder of atoms trapped in optical lattices and interacting with Rydberg-dressed interactions to quantum simulate the model and check the universal features. Our results provide a path to the analog quantum simulation of lattice gauge theories with atoms in optical lattices.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -146,7 +144,72 @@
       "A. Bazavov",
       "S.-W. Tsai",
       "Y. Meurice"
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Tue May  8 03:19:52 2018 CEST",
+      "ModDate": "Tue May  8 03:19:52 2018 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "865464 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 9,
+    "image_count": 0,
+    "mathpix_pdf_id": "40136231-cd79-4fb1-a366-55a37d4841a1",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1803.11166.lines.json",
+        "bytes": 854069
+      },
+      {
+        "format": "md",
+        "path": "1803.11166.md",
+        "bytes": 44234
+      },
+      {
+        "format": "tex.zip",
+        "path": "1803.11166.tex.zip",
+        "bytes": 352697
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 0,
+    "tiddlers_path": "1803.11166.tiddlers.json",
+    "tiddlers_count": 352,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -813,16 +876,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4994.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:08:41Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10195.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:08:41Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 211.8,
+      "detail": "336 objects, 16 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:08:42Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+1 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T15:08:42Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.2,
+      "detail": "352 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1803.11166/1803.11166.lines.json": "sha256:54561a941599fe2de11da5e73e2ddafc425a8b8bb8a149b772404d1a3c44797f"
+      },
       "params_hash": "sha256:a30b0a8ce1307967fd5854694c8fe38ecb5bf8436a4fed3d3c0ac0d739465dc8",
       "algo": "sha256",
-      "ts": "2026-08-03T19:40:38Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:08:41Z",
+      "provenance": "mathpix"
     }
   }
 }

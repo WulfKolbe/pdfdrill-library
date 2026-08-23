@@ -5,13 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 23,
@@ -98,22 +99,20 @@
     "bibkey": "2211.06384",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 132,
-      "Abstract": 1,
-      "Section": 20,
-      "Formula": 277,
-      "Equation": 98,
-      "Theorem": 33,
-      "LtxCommand": 23,
-      "Table": 2,
-      "Proof": 8,
-      "Diagram": 1,
-      "Citation": 124,
-      "Algorithm": 3,
-      "AlgorithmStep": 103
+      "Page": 23,
+      "Citation": 121,
+      "Table": 1,
+      "TableRow": 3,
+      "TableCell": 8,
+      "Diagram": 5,
+      "ListItem": 24,
+      "Equation": 93,
+      "Formula": 629,
+      "Paragraph": 152,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 93,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 23,
       "placed": 65,
@@ -123,14 +122,6 @@
       "numbered": 20,
       "roots": 1
     },
-    "bibliography_entries": 50,
-    "bibliography_with_year": 49,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 124,
-    "tiddlers_path": "2211.06384.tiddlers.json",
-    "tiddlers_count": 686,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We present an algorithm aimed to recognize if a given tensor is a non-identifiable rank-3 tensor.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -138,7 +129,72 @@
     "arxiv_authors": [
       "Pierpaola Santarsiero"
     ],
-    "arxiv_primary_category": "math.AG"
+    "arxiv_primary_category": "math.AG",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Nov 14 02:41:04 2022 CET",
+      "ModDate": "Mon Nov 14 02:41:04 2022 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "23",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "418121 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 23,
+    "image_count": 99,
+    "mathpix_pdf_id": "5eb7f8bf-58f7-4908-be58-1b186483a76e",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2211.06384.lines.json",
+        "bytes": 1184324
+      },
+      {
+        "format": "md",
+        "path": "2211.06384.md",
+        "bytes": 112933
+      },
+      {
+        "format": "tex.zip",
+        "path": "2211.06384.tex.zip",
+        "bytes": 127136
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 48,
+    "bibliography_with_year": 46,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "2211.06384.tiddlers.json",
+    "tiddlers_count": 1048,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -5349,16 +5405,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 8699.9,
       "detail": "198 images, 84 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:49:59Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9851.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:50:00Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 726.5,
+      "detail": "1060 objects, 93 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:50:01Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "48 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T18:50:01Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 26.6,
+      "detail": "1048 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2211.06384/2211.06384.lines.json": "sha256:3b6b0c7465882a245376a5becce31a8791c7743c15659b35c82ec6a8bd46ca06"
+      },
       "params_hash": "sha256:e3ae37f7c2788e1382588d5b5ff86455607592539a02379427208811231428cc",
       "algo": "sha256",
-      "ts": "2026-08-03T21:00:33Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:49:59Z",
+      "provenance": "mathpix"
     }
   }
 }

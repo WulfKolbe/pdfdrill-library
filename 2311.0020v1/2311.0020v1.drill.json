@@ -5,14 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -72,18 +72,17 @@
     "bibkey": "2311.0020v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 133,
-      "Formula": 195,
-      "Abstract": 1,
-      "Section": 29,
-      "Equation": 60,
-      "Table": 20,
-      "Diagram": 2,
-      "LtxCommand": 2,
-      "Citation": 111
+      "Page": 11,
+      "Diagram": 5,
+      "Picture": 3,
+      "ListItem": 18,
+      "Equation": 3,
+      "Formula": 108,
+      "Paragraph": 44,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 11,
       "placed": 1,
@@ -93,14 +92,6 @@
       "numbered": 29,
       "roots": 1
     },
-    "bibliography_entries": 64,
-    "bibliography_with_year": 64,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 111,
-    "tiddlers_path": "2311.0020v1.tiddlers.json",
-    "tiddlers_count": 535,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We present a comprehensive analysis of electroweak, flavor, and collider bounds on the complete set of dimension-six SMEFT operators in the $U(2)^5$-symmetric limit. This operator basis provides a consistent framework to describe a wide class of new physics models and, in particular, the motivated class of models where the new degrees of freedom couple mostly to the third generation. By analyzing observables from all three sectors, and consistently including renormalization group evolution, we provide bounds on the effective scale of all 124 $U(2)^5$-invariant operators. The relation between flavor-conserving and flavor-violating observables is analyzed taking into account the leading $U(2)^5$ breaking in the Yukawa sector, which is responsible for heavy-light quark mixing. We show that under simple, motivated, and non-tuned hypotheses for the parametric size of the Wilson coefficients at the high scale, all present bounds are consistent with an effective scale as low as 1.5 TeV. We also show that a future circular $e^+ e^-$ collider program such as FCC-ee would push most of these bounds by an order of magnitude. This would rule out or provide clear evidence for a wide class of compelling new physics models that are fully compatible with present data.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -110,7 +101,63 @@
       "Claudia Cornella",
       "Ben A. Stefanek",
       "Gino Isidori"
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "MiKTeX pdfTeX-1.40.22",
+      "CreationDate": "Sat Nov  4 12:53:49 2023 CET",
+      "ModDate": "Sat Nov  4 12:53:49 2023 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "379344 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 16,
+    "mathpix_pdf_id": "b64ee02a-cd15-4930-a38a-aac7d9ac7e13",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2311.0020v1.lines.json",
+        "bytes": 514299
+      },
+      {
+        "format": "md",
+        "path": "2311.0020v1.md",
+        "bytes": 35182
+      },
+      {
+        "format": "tex.zip",
+        "path": "2311.0020v1.tex.zip",
+        "bytes": 349772
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2311.0020v1.tiddlers.json",
+    "tiddlers_count": 209,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -638,18 +685,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2501.7,
       "detail": "8 images, 6 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:59:44Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9431.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:59:45Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 103.2,
+      "detail": "193 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:59:45Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.8,
+      "detail": "209 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2311.0020v1/texsrc/main.tex": "sha256:267a0897553d9c29887114e5678dcad4e5bf895215464beee7c0f6c8143f3fa9"
+        "/home/wkolbe/pdfdrill-library/2311.0020v1/2311.0020v1.lines.json": "sha256:376f90fb09bb2ad753cc9e4ec4c9cd12b6a870dd8f697638d445d79a7ab9d001"
       },
       "params_hash": "sha256:7358d559f6096da6cdfd1749e3215b1ddca3d712623815bcc3274f3df5beab10",
       "algo": "sha256",
-      "ts": "2026-08-03T21:15:25Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:59:45Z",
+      "provenance": "mathpix"
     }
   }
 }

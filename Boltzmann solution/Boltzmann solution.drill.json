@@ -6,8 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -15,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 14,
@@ -121,29 +121,26 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 14,
-      "Citation": 5,
-      "ListItem": 36,
-      "Equation": 95,
-      "Paragraph": 74,
+      "Table": 1,
+      "TableRow": 9,
+      "TableCell": 27,
+      "Toc": 1,
+      "Section": 2,
+      "ListItem": 5,
+      "Equation": 65,
+      "Formula": 93,
+      "Paragraph": 84,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 65,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "Boltzmann solution.tiddlers.json",
-    "tiddlers_count": 240,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Producer": "iLovePDF",
@@ -167,7 +164,33 @@
     "image_count": 9,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "1f382d66-7930-45d8-882c-0c60c7d4b697",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Boltzmann solution.lines.json",
+        "bytes": 427158
+      },
+      {
+        "format": "md",
+        "path": "Boltzmann solution.md",
+        "bytes": 29323
+      },
+      {
+        "format": "tex.zip",
+        "path": "Boltzmann solution.tex.zip",
+        "bytes": 30920
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "Boltzmann solution.tiddlers.json",
+    "tiddlers_count": 282,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1274,18 +1297,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2907.6,
       "detail": "18 images, 9 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:44:22Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8851.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:44:22Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 239.7,
+      "detail": "302 objects, 65 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:44:22Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.9,
+      "detail": "282 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Boltzmann solution/Boltzmann solution.lines.json": "sha256:d9db37aae616d9334bec8aa0b0fb0f26562ffdabe853f75d65bbf4e3133a66e7"
+        "/home/wkolbe/pdfdrill-library/Boltzmann solution/Boltzmann solution.lines.json": "sha256:74ede2a058bc45c3aa9a1010891c17b6adb3c54d2d45ae3a585c6209e94a8bc3"
       },
       "params_hash": "sha256:41f107badd47f3f53038e817f7c28ead937847982f487b295011fc8a449c3847",
       "algo": "sha256",
-      "ts": "2026-08-05T06:42:10Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:44:22Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -3,15 +3,16 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "LINKS_KNOWN",
     "PDFINFO_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1709.03544",
@@ -19,21 +20,24 @@
     "bibkey": "1709.03544",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 74,
-      "Abstract": 1,
-      "Section": 15,
+      "Page": 8,
+      "Citation": 1,
       "Table": 10,
-      "Formula": 20,
+      "TableRow": 77,
+      "TableCell": 300,
+      "Sidenote": 16,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Picture": 1,
+      "ListItem": 5,
       "Equation": 2,
-      "Citation": 97
+      "Formula": 42,
+      "Paragraph": 83,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 10,
-    "bibliography_with_year": 10,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "pages": 8,
     "bytes": 622058,
     "page_size": "612 x 792 pts (letter)",
@@ -106,15 +110,77 @@
     ],
     "math_fonts": [],
     "has_math_fonts": false,
-    "tiddlers_path": "1709.03544.tiddlers.json",
-    "tiddlers_count": 172,
-    "tiddlers_svg_mode": "inline",
     "links": [
       {
         "page": 8,
         "url": "http://www.chokkan.org/software/crfsuite/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "KnowNER: Incremental Multilingual Knowledge in Named Entity Recognition",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Dominic Seyler, Tatiana Dembelova, Luciano Del Corro, Johannes Hoffart, and Gerhard Weikum",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Mon Jun 21 05:04:26 2021 CEST",
+      "ModDate": "Mon Jun 21 05:04:26 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "622058 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 8,
+    "image_count": 0,
+    "mathpix_pdf_id": "00cdda63-5aca-4b7c-8121-fe30e0bd51e9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1709.03544.lines.json",
+        "bytes": 1204700
+      },
+      {
+        "format": "md",
+        "path": "1709.03544.md",
+        "bytes": 40275
+      },
+      {
+        "format": "tex.zip",
+        "path": "1709.03544.tex.zip",
+        "bytes": 508718
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 24,
+    "bibliography_with_year": 24,
+    "bibliography_numeric_citations": 73,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 73,
+    "tiddlers_path": "1709.03544.tiddlers.json",
+    "tiddlers_count": 213,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "KnowNER: Incremental Multilingual Knowledge in Named Entity Recognition",
@@ -605,16 +671,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1466.1,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:57:00Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13170.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:57:01Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 315.5,
+      "detail": "550 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:57:01Z",
+      "node": "bibliography",
+      "from": "BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "24 entries, 73+0 cites detected, 73 linked"
+    },
+    {
+      "ts": "2026-08-22T14:57:01Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.0,
+      "detail": "213 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1709.03544/1709.03544.lines.json": "sha256:b495ab887872741c6c5d64ccb8f7da632db5a755c8ec28c2790fe4f2d0f44ec5"
+      },
       "params_hash": "sha256:8254e2e4582b0f44a537a1fc1c255820d0a509493fd8f808e476cabea98a8946",
       "algo": "sha256",
-      "ts": "2026-08-03T19:39:22Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:57:01Z",
+      "provenance": "mathpix"
     }
   }
 }

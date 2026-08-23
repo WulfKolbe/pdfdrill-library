@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -82,27 +83,79 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 20,
-      "Citation": 298,
-      "Equation": 19,
-      "Paragraph": 33,
+      "Footnote": 2,
+      "Citation": 22,
+      "Table": 3,
+      "TableRow": 26,
+      "TableCell": 52,
+      "Abstract": 1,
+      "Equation": 45,
+      "Formula": 138,
+      "Paragraph": 80,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 45,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 9,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Thu Jan  1 04:17:29 2026 CET",
+      "ModDate": "Thu Jan  1 04:17:29 2026 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "20",
+      "Encrypted": "no",
+      "Page size": "442.205 x 663.307 pts",
+      "Page rot": "0",
+      "File size": "352230 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 20,
+    "image_count": 0,
+    "mathpix_pdf_id": "781b545c-1d79-469d-b222-c47dc21039a5",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "nai-paper-916.lines.json",
+        "bytes": 888029
+      },
+      {
+        "format": "md",
+        "path": "nai-paper-916.md",
+        "bytes": 58144
+      },
+      {
+        "format": "tex.zip",
+        "path": "nai-paper-916.tex.zip",
+        "bytes": 60928
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 8,
     "bibliography_with_year": 8,
-    "bibliography_numeric_citations": 4,
+    "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 20,
-    "bibliography_cites": 4,
+    "bibliography_cites": 0,
     "tiddlers_path": "nai-paper-916.tiddlers.json",
-    "tiddlers_count": 149,
+    "tiddlers_count": 345,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -542,18 +595,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 9.4,
       "detail": "149 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T18:16:00Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9717.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:16:01Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 507.5,
+      "detail": "390 objects, 45 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:16:01Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "8 entries, 0+20 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T18:16:01Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.8,
+      "detail": "345 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/nai-paper-916/nai-paper-916.lines.json": "sha256:86437d26a5efc87efe8c2494e78a3505d0b2085881a4ad4711ff59740c3f0f85"
+        "/home/wkolbe/pdfdrill-library/nai-paper-916/nai-paper-916.lines.json": "sha256:d3e421173e4e0f80d9312b6276d14533f79393b3cf9e4d260c8e0471ad5cf851"
       },
       "params_hash": "sha256:bac9eb9de732348eea7c08a866567aef616452a31f9aaf919c87bff521caa273",
       "algo": "sha256",
-      "ts": "2026-08-06T01:30:19Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:16:00Z",
+      "provenance": "mathpix"
     }
   }
 }

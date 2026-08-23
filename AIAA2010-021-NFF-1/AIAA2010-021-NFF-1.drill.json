@@ -6,13 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -76,25 +77,82 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 17,
-      "ListItem": 26,
-      "Equation": 4,
-      "Paragraph": 21,
+      "Footnote": 5,
+      "Table": 2,
+      "TableRow": 23,
+      "TableCell": 46,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Picture": 1,
+      "ListItem": 13,
+      "Equation": 16,
+      "Formula": 158,
+      "Paragraph": 59,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 16,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "AIAA2010-021-NFF-1.tiddlers.json",
-    "tiddlers_count": 85,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.3",
+      "CreationDate": "Sat Dec 10 12:39:34 2011 CET",
+      "ModDate": "Sat Dec 10 12:39:34 2011 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "17",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "687156 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 17,
+    "image_count": 3,
+    "mathpix_pdf_id": "bc601ff6-7549-48e3-b6f8-ec5e08d4dd4b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "AIAA2010-021-NFF-1.lines.json",
+        "bytes": 979969
+      },
+      {
+        "format": "md",
+        "path": "AIAA2010-021-NFF-1.md",
+        "bytes": 83535
+      },
+      {
+        "format": "tex.zip",
+        "path": "AIAA2010-021-NFF-1.tex.zip",
+        "bytes": 333968
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "AIAA2010-021-NFF-1.tiddlers.json",
+    "tiddlers_count": 291,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -538,18 +596,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7225.3,
       "detail": "3 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:27:43Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9782.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:27:43Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 324.7,
+      "detail": "344 objects, 16 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:27:44Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.6,
+      "detail": "291 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/AIAA2010-021-NFF-1/AIAA2010-021-NFF-1.lines.json": "sha256:1ec0a07667695721684d178773c71734399e8f7e801a415529f578932c96a532"
+        "/home/wkolbe/pdfdrill-library/AIAA2010-021-NFF-1/AIAA2010-021-NFF-1.lines.json": "sha256:034082a07273308774471448ca556d589d315b3f046f71452f68d199ea5d7929"
       },
       "params_hash": "sha256:e8bb41f9899ef5432cc1ba1bbaa759e305dc2292e2d070075b5fb4aefce5c6d9",
       "algo": "sha256",
-      "ts": "2026-08-04T07:23:53Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:27:43Z",
+      "provenance": "mathpix"
     }
   }
 }

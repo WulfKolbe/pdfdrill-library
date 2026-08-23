@@ -3,15 +3,16 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1707.00189",
@@ -19,22 +20,22 @@
     "bibkey": "1707.00189",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 35,
-      "Abstract": 1,
-      "Section": 11,
-      "Formula": 49,
-      "LtxCommand": 2,
-      "Equation": 1,
+      "Page": 5,
+      "Footnote": 9,
+      "Citation": 3,
       "Table": 2,
-      "Citation": 39
+      "TableRow": 35,
+      "TableCell": 142,
+      "Sidenote": 8,
+      "Abstract": 1,
+      "ListItem": 8,
+      "Equation": 1,
+      "Formula": 71,
+      "Paragraph": 47,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 18,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "pages": 5,
     "bytes": 140822,
     "page_size": "612 x 792 pts (letter)",
@@ -97,9 +98,6 @@
       "numbered": 11,
       "roots": 1
     },
-    "tiddlers_path": "1707.00189.tiddlers.json",
-    "tiddlers_count": 142,
-    "tiddlers_svg_mode": "inline",
     "links": [
       {
         "page": 1,
@@ -125,7 +123,72 @@
         "page": 4,
         "url": "http://trec-car.cs.unh.edu"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Content-Based Weak Supervision for Ad-Hoc Re-Ranking",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Sean MacAvaney, Andrew Yates, Kai Hui, and Ophir Frieder",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Jul  8 04:10:29 2019 CEST",
+      "ModDate": "Mon Jul  8 04:10:29 2019 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "5",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "140822 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 5,
+    "image_count": 26,
+    "mathpix_pdf_id": "264a5caa-ba5c-438e-9ee4-a32a8e2a0fb8",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1707.00189.lines.json",
+        "bytes": 718337
+      },
+      {
+        "format": "md",
+        "path": "1707.00189.md",
+        "bytes": 28713
+      },
+      {
+        "format": "tex.zip",
+        "path": "1707.00189.tex.zip",
+        "bytes": 32015
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 18,
+    "bibliography_with_year": 18,
+    "bibliography_numeric_citations": 37,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 37,
+    "tiddlers_path": "1707.00189.tiddlers.json",
+    "tiddlers_count": 191,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Content-Based Weak Supervision for Ad-Hoc Re-Ranking",
@@ -1697,18 +1760,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1885.0,
       "detail": "52 images, 26 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:33:37Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 11712.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:33:37Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 174.7,
+      "detail": "333 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:33:38Z",
+      "node": "bibliography",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "18 entries, 37+1 cites detected, 37 linked"
+    },
+    {
+      "ts": "2026-08-22T14:33:38Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.9,
+      "detail": "191 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1707.00189/texsrc/main.tex": "sha256:5a1c7f79b7758756f6020ea9fa5cfd265b1f1b800293fdddecf2696d9c16ac90"
+        "/home/wkolbe/pdfdrill-library/1707.00189/1707.00189.lines.json": "sha256:0516cf88b060aa7e76593acaecc28d53bf88244c12a2b116be8af50a5563d83c"
       },
       "params_hash": "sha256:2ded416cffd4a22ddd0534e952cf0e6e6a3b8888084228e1607e24299fc4351c",
       "algo": "sha256",
-      "ts": "2026-08-03T19:38:49Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:33:37Z",
+      "provenance": "mathpix"
     }
   }
 }

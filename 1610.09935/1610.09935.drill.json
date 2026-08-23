@@ -3,10 +3,8 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
     "PDFINFO_KNOWN",
@@ -14,7 +12,10 @@
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1610.09935",
@@ -22,22 +23,25 @@
     "bibkey": "1610.09935",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 102,
-      "Formula": 79,
-      "LtxCommand": 12,
-      "Abstract": 1,
-      "Section": 21,
+      "Page": 9,
+      "Citation": 5,
       "Table": 5,
-      "Equation": 3,
-      "Citation": 60
+      "TableRow": 40,
+      "TableCell": 104,
+      "Sidenote": 18,
+      "Abstract": 1,
+      "Diagram": 3,
+      "Section": 2,
+      "Picture": 1,
+      "ListItem": 7,
+      "Equation": 5,
+      "Formula": 106,
+      "Paragraph": 102,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 50,
-    "bibliography_with_year": 49,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 4,
+    "model_equations_with_cdn": 5,
+    "model_source": "mathpix",
     "pages": 9,
     "bytes": 606981,
     "page_size": "612 x 792 pts (letter)",
@@ -78,9 +82,6 @@
     "latex_attached": 0,
     "latex_created": 3,
     "latex_graphics": 4,
-    "tiddlers_path": "1610.09935.tiddlers.json",
-    "tiddlers_count": 300,
-    "tiddlers_svg_mode": "inline",
     "bibsource_references": 50,
     "bibsource_enriched": 0,
     "bibsource_citations_linked": 60,
@@ -155,7 +156,72 @@
       "Mohamed Yahya",
       "Klaus Berberich"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.12",
+      "CreationDate": "Wed Nov  2 01:35:43 2016 CET",
+      "ModDate": "Wed Nov  2 01:35:43 2016 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "606981 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 9,
+    "image_count": 0,
+    "mathpix_pdf_id": "72051e90-5c8c-4bb2-8c32-65ea92559a37",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1610.09935.lines.json",
+        "bytes": 1350020
+      },
+      {
+        "format": "md",
+        "path": "1610.09935.md",
+        "bytes": 57521
+      },
+      {
+        "format": "tex.zip",
+        "path": "1610.09935.tex.zip",
+        "bytes": 179060
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 50,
+    "bibliography_with_year": 49,
+    "bibliography_numeric_citations": 41,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 41,
+    "tiddlers_path": "1610.09935.tiddlers.json",
+    "tiddlers_count": 333,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1477,6 +1543,38 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3672.3,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:06:59Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13250.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:06:59Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 371.3,
+      "detail": "410 objects, 5 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:07:00Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "50 entries, 41+0 cites detected, 41 linked"
+    },
+    {
+      "ts": "2026-08-22T15:07:00Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.2,
+      "detail": "333 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
@@ -1491,11 +1589,13 @@
     },
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1610.09935/1610.09935.lines.json": "sha256:cb29b89a93a2f7d764d6bf0c81fdeceedd09835a998712feeb9e25c83c4eab1a"
+      },
       "params_hash": "sha256:5c1c5c00012a51e577887516f08e0022d893e31e24c1b477a96cc9702a96ca67",
       "algo": "sha256",
-      "ts": "2026-08-03T19:37:22Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:06:59Z",
+      "provenance": "mathpix"
     }
   }
 }

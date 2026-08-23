@@ -6,12 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -85,22 +86,20 @@
     "model_object_counts": {
       "Page": 6,
       "ListItem": 3,
-      "Equation": 52,
-      "Paragraph": 50,
+      "Equation": 58,
+      "Formula": 56,
+      "Paragraph": 62,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 58,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "ExerciseSheet_7_solution.tiddlers.json",
-    "tiddlers_count": 128,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -129,7 +128,32 @@
     "page_count_text": 6,
     "image_count": 0,
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "cf01a48d-643b-49a0-b24d-fc57642a3dc2",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "ExerciseSheet_7_solution.lines.json",
+        "bytes": 232721
+      },
+      {
+        "format": "md",
+        "path": "ExerciseSheet_7_solution.md",
+        "bytes": 16875
+      },
+      {
+        "format": "tex.zip",
+        "path": "ExerciseSheet_7_solution.tex.zip",
+        "bytes": 18092
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "ExerciseSheet_7_solution.tiddlers.json",
+    "tiddlers_count": 202,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -560,18 +584,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 954.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:42:17Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5820.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:42:17Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 124.8,
+      "detail": "186 objects, 58 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:42:17Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.8,
+      "detail": "202 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/ExerciseSheet_7_solution/ExerciseSheet_7_solution.lines.json": "sha256:1ee4d6de97f21da25f8a9d5ec37d7bbcd54551f78f04a8379559c8390011dbcf"
+        "/home/wkolbe/pdfdrill-library/ExerciseSheet_7_solution/ExerciseSheet_7_solution.lines.json": "sha256:3e747d7818678f0518e69948bbda3615819d19747c6e13e66e9191ae49cc4c02"
       },
       "params_hash": "sha256:519c930082bf584c5ea45d616e5a0fb362d4957d4e62a47ca87725e2933b6767",
       "algo": "sha256",
-      "ts": "2026-08-05T20:21:25Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:42:17Z",
+      "provenance": "mathpix"
     }
   }
 }

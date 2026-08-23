@@ -6,15 +6,15 @@
     "LATEX_INGESTED",
     "SIZE_KNOWN",
     "MD_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2501.06699",
@@ -22,17 +22,23 @@
     "bibkey": "2501.06699",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 97,
+      "Page": 14,
+      "Footnote": 4,
+      "Table": 2,
+      "TableRow": 31,
+      "TableCell": 144,
+      "Sidenote": 28,
       "Abstract": 1,
-      "Section": 20,
-      "Table": 13,
       "Diagram": 3,
-      "Formula": 2,
-      "LtxCommand": 1,
-      "Citation": 76
+      "Section": 2,
+      "Picture": 2,
+      "ListItem": 56,
+      "Formula": 4,
+      "Paragraph": 156,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_source": "mathpix",
     "latex_source": "2501.06699.tgz",
     "latex_macros": 33,
     "latex_src_equations": 0,
@@ -88,11 +94,6 @@
     ],
     "math_fonts": [],
     "has_math_fonts": false,
-    "bibliography_entries": 60,
-    "bibliography_with_year": 60,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 76,
     "bibsource_references": 60,
     "bibsource_enriched": 60,
     "bibsource_citations_linked": 76,
@@ -105,9 +106,6 @@
       "numbered": 20,
       "roots": 1
     },
-    "tiddlers_path": "2501.06699.tiddlers.json",
-    "tiddlers_count": 229,
-    "tiddlers_svg_mode": "inline",
     "toc": [
       {
         "number": "1",
@@ -542,7 +540,65 @@
         "page": 12,
         "url": "https://arxiv.org/abs/2308.07107"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Large Language Models, Knowledge Graphs and Search Engines: A Crossroads for Answering Users' Questions",
+      "Subject": "-  Computing methodologies  ->  Natural language processing.Knowledge representation and reasoning.-  Information systems  ->  Graph-based database models.World Wide Web.",
+      "Creator": "LaTeX with acmart 2023/11/05 v2.00 Typesetting articles for the Association for Computing Machinery and hyperref 2023-04-22 v7.00x Hypertext links for LaTeX",
+      "Producer": "pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+      "CreationDate": "Tue Jan 14 02:36:39 2025 CET",
+      "ModDate": "Tue Jan 14 02:36:39 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "697169 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 14,
+    "image_count": 0,
+    "mathpix_pdf_id": "8505fbfb-2271-40ad-b186-ccb62679f188",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2501.06699.lines.json",
+        "bytes": 2122660
+      },
+      {
+        "format": "md",
+        "path": "2501.06699.md",
+        "bytes": 96480
+      },
+      {
+        "format": "tex.zip",
+        "path": "2501.06699.tex.zip",
+        "bytes": 217075
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2501.06699.tiddlers.json",
+    "tiddlers_count": 290,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Large Language Models, Knowledge Graphs and Search Engines: A Crossroads for Answering Users' Questions",
@@ -1760,16 +1816,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6176.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:44:10Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13753.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:44:10Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 440.4,
+      "detail": "448 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:44:11Z",
+      "node": "tiddlers",
+      "from": "BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.7,
+      "detail": "290 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2501.06699/2501.06699.lines.json": "sha256:ce9dbee375c4838dfc5307c2f9fa691e74248866f0d0d31268fa554f938cfe28"
+      },
       "params_hash": "sha256:e7e5fdba890e0de016742f9ad01ad03662d787adab80bded2caa8c3dd6e532bc",
       "algo": "sha256",
-      "ts": "2026-08-03T21:34:27Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:44:10Z",
+      "provenance": "mathpix"
     }
   }
 }

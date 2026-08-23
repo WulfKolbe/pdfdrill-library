@@ -3,16 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1806.01059",
@@ -20,22 +21,24 @@
     "bibkey": "1806.01059",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 227,
+      "Page": 12,
+      "Footnote": 2,
+      "Citation": 1,
+      "Table": 5,
+      "TableRow": 57,
+      "TableCell": 444,
+      "Sidenote": 24,
       "Abstract": 1,
-      "Section": 17,
-      "LtxCommand": 30,
-      "Table": 6,
-      "Formula": 104,
-      "Equation": 17,
-      "Citation": 86
+      "Diagram": 4,
+      "Picture": 1,
+      "ListItem": 22,
+      "Equation": 13,
+      "Formula": 90,
+      "Paragraph": 88,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 29,
-    "bibliography_with_year": 29,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 5,
+    "model_equations_with_cdn": 13,
+    "model_source": "mathpix",
     "pages": 12,
     "bytes": 628196,
     "page_size": "612 x 792 pts (letter)",
@@ -146,9 +149,6 @@
       "YINQYJ+CMMI6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1806.01059.tiddlers.json",
-    "tiddlers_count": 461,
-    "tiddlers_svg_mode": "inline",
     "abstract": "People are rated and ranked, towards algorithmic decision making in an increasing number of applications, typically based on machine learning. Research on how to incorporate fairness into such tasks has prevalently pursued the paradigm of group fairness: giving adequate success rates to specifically protected groups. In contrast, the alternative paradigm of individual fairness has received relatively little attention, and this paper advances this less explored direction. The paper introduces a method for probabilistically mapping user records into a low-rank representation that reconciles individual fairness and the utility of classifiers and rankings in downstream applications. Our notion of individual fairness requires that users who are similar in all task-relevant attributes such as job qualification, and disregarding all potentially discriminating attributes such as gender, should have similar outcomes. We demonstrate the versatility of our method by applying it to classification and learning-to-rank tasks on a variety of real-world datasets. Our experiments show substantial improvements over the best prior work for this setting.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -158,7 +158,72 @@
       "Krishna P. Gummadi",
       "Gerhard Weikum"
     ],
-    "arxiv_primary_category": "cs.LG"
+    "arxiv_primary_category": "cs.LG",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Thu Feb  7 03:14:55 2019 CET",
+      "ModDate": "Thu Feb  7 03:14:55 2019 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "628196 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 12,
+    "image_count": 0,
+    "mathpix_pdf_id": "1c719a5e-8bd8-4954-81af-73e8e804d108",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1806.01059.lines.json",
+        "bytes": 1826105
+      },
+      {
+        "format": "md",
+        "path": "1806.01059.md",
+        "bytes": 64418
+      },
+      {
+        "format": "tex.zip",
+        "path": "1806.01059.tex.zip",
+        "bytes": 550519
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 29,
+    "bibliography_with_year": 29,
+    "bibliography_numeric_citations": 84,
+    "bibliography_authoryear_citations": 2,
+    "bibliography_cites": 84,
+    "tiddlers_path": "1806.01059.tiddlers.json",
+    "tiddlers_count": 311,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1014,18 +1079,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6355.6,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:11:12Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13372.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:11:13Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 373.4,
+      "detail": "765 objects, 13 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:11:13Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "29 entries, 84+2 cites detected, 84 linked"
+    },
+    {
+      "ts": "2026-08-22T16:11:14Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.8,
+      "detail": "311 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1806.01059/texsrc/main.tex": "sha256:09a464023e6680c7fd2f835559b23c06cddb00d64500d8954ce305c321c5ce60"
+        "/home/wkolbe/pdfdrill-library/1806.01059/1806.01059.lines.json": "sha256:7a2d057255346eeb35f229e2c46fb53cfc8d0e3f3e1d23437db07469f6020e03"
       },
       "params_hash": "sha256:a98f7bf90d9662b51f1d1864b3f2ef9253518883ad7e85a4be5ad66575021976",
       "algo": "sha256",
-      "ts": "2026-08-03T19:40:58Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:11:13Z",
+      "provenance": "mathpix"
     }
   }
 }

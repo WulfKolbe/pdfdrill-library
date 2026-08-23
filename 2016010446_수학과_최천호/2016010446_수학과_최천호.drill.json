@@ -6,14 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -84,31 +84,80 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 17,
-      "Citation": 54,
-      "ListItem": 2,
-      "Equation": 5,
-      "Paragraph": 21,
+      "Table": 4,
+      "TableRow": 29,
+      "TableCell": 223,
+      "Diagram": 2,
+      "ListItem": 1,
+      "Equation": 11,
+      "Formula": 46,
+      "Paragraph": 7,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 11,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 88 unmapped private-use character(s) remain (U+F8EB×19, U+F8ED×19, U+F8F1×2, U+F8F2×2, U+F8F3×2, U+F8F6×19, U+F8F8×19, U+F8FC×2, U+F8FD×2, U+F8FE×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 7,
-    "bibliography_with_year": 4,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "2016010446_수학과_최천호.tiddlers.json",
-    "tiddlers_count": 79,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "The root system of the Lie algebra sl3(C)",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with Beamer class version 3.36",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Fri Oct 27 09:08:21 2017 CEST",
+      "ModDate": "Fri Oct 27 09:08:21 2017 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "17",
+      "Encrypted": "no",
+      "Page size": "362.835 x 272.126 pts",
+      "Page rot": "0",
+      "File size": "181059 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 17,
+    "image_count": 0,
+    "mathpix_pdf_id": "13a70f9d-a56f-413e-9283-651b80111427",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2016010446_수학과_최천호.lines.json",
+        "bytes": 624191
+      },
+      {
+        "format": "md",
+        "path": "2016010446_수학과_최천호.md",
+        "bytes": 8637
+      },
+      {
+        "format": "tex.zip",
+        "path": "2016010446_수학과_최천호.tex.zip",
+        "bytes": 38980
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2016010446_수학과_최천호.tiddlers.json",
+    "tiddlers_count": 105,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "The root system of the Lie algebra sl3(C)",
@@ -527,18 +576,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2493.6,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:21:19Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8605.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:21:19Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 145.9,
+      "detail": "341 objects, 11 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:21:19Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.5,
+      "detail": "105 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2016010446_수학과_최천호/2016010446_수학과_최천호.lines.json": "sha256:26373798202c0bc09ee682469c8f0e784ef30c231bdb1256ce7774f26c9b830f"
+        "/home/wkolbe/pdfdrill-library/2016010446_수학과_최천호/2016010446_수학과_최천호.lines.json": "sha256:134bd1a52a9e68013b2db257353c4faedab9d5fbb8368818b3c6c066a706c596"
       },
       "params_hash": "sha256:c73c27ca782696305c4c8016bbdecf286e88147468faa875d3332c6272b24974",
       "algo": "sha256",
-      "ts": "2026-08-03T20:40:37Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:21:19Z",
+      "provenance": "mathpix"
     }
   }
 }

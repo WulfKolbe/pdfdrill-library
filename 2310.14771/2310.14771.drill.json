@@ -3,10 +3,8 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +12,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2310.14771",
@@ -22,21 +22,22 @@
     "bibkey": "2310.14771",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 74,
-      "Abstract": 1,
-      "Section": 18,
-      "Formula": 1,
+      "Page": 12,
+      "Footnote": 4,
       "Table": 4,
-      "LtxCommand": 263,
-      "Citation": 57
+      "TableRow": 76,
+      "TableCell": 592,
+      "Sidenote": 23,
+      "Abstract": 1,
+      "Diagram": 5,
+      "Section": 2,
+      "ListItem": 26,
+      "Formula": 8,
+      "Paragraph": 59,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 42,
-    "bibliography_with_year": 42,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_source": "mathpix",
     "pages": 12,
     "bytes": 268404,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -98,9 +99,6 @@
       "numbered": 18,
       "roots": 1
     },
-    "tiddlers_path": "2310.14771.tiddlers.json",
-    "tiddlers_count": 421,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Structured knowledge bases (KBs) are an asset for search engines and other applications, but are inevitably incomplete. Language models (LMs) have been proposed for unsupervised knowledge base completion (KBC), yet, their ability to do this at scale and with high accuracy remains an open question. Prior experimental studies mostly fall short because they only evaluate on popular subjects, or sample already existing facts from KBs. In this work, we perform a careful evaluation of GPT&#39;s potential to complete the largest public KB: Wikidata. We find that, despite their size and capabilities, models like GPT-3, ChatGPT and GPT-4 do not achieve fully convincing results on this task. Nonetheless, they provide solid improvements over earlier approaches with smaller LMs. In particular, we show that, with proper thresholding, GPT-3 enables to extend Wikidata by 27M facts at 90% precision.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -238,7 +236,67 @@
         "page": 6,
         "url": "https://arxiv.org/pdf/2305.13168.pdf"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Tue Oct 24 04:10:57 2023 CEST",
+      "ModDate": "Tue Oct 24 04:10:57 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "268404 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 12,
+    "image_count": 0,
+    "mathpix_pdf_id": "f76ccc60-c84a-4ed9-aada-2aabc7a27dfa",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2310.14771.lines.json",
+        "bytes": 1873211
+      },
+      {
+        "format": "md",
+        "path": "2310.14771.md",
+        "bytes": 41662
+      },
+      {
+        "format": "tex.zip",
+        "path": "2310.14771.tex.zip",
+        "bytes": 45241
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2310.14771.tiddlers.json",
+    "tiddlers_count": 162,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1235,18 +1293,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3314.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:14:35Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12469.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:14:36Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 385.9,
+      "detail": "813 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:14:36Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.4,
+      "detail": "162 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2310.14771/texsrc/main.tex": "sha256:cd18abee7cf431198154e58cdd67b3c7dec9426993a98392f74054a3d42ce62e"
+        "/home/wkolbe/pdfdrill-library/2310.14771/2310.14771.lines.json": "sha256:ec20346809d23296f7e9bdefeca564c19fdbe502623aa4a382307cbb56bcf05b"
       },
       "params_hash": "sha256:a70d1f845ff800b0cef7468b5f7d5e240fa02cebb6d4677e667ab242db9f4cf0",
       "algo": "sha256",
-      "ts": "2026-08-03T21:15:23Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:14:36Z",
+      "provenance": "mathpix"
     }
   }
 }

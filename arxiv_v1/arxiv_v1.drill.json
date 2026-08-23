@@ -6,7 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -104,28 +104,75 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 19,
-      "Citation": 4,
-      "ListItem": 15,
-      "Equation": 107,
-      "Paragraph": 88,
+      "Footnote": 13,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Equation": 59,
+      "Formula": 385,
+      "Paragraph": 89,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 59,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 39 unmapped private-use character(s) remain (U+F8EB×3, U+F8ED×3, U+F8F1×3, U+F8F2×3, U+F8F3×3, U+F8F4×18, U+F8F6×3, U+F8F8×3) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.26",
+      "CreationDate": "Fri Mar 14 09:20:31 2025 CET",
+      "ModDate": "Fri Mar 14 09:20:31 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "19",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "469313 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 19,
+    "image_count": 0,
+    "mathpix_pdf_id": "018cea85-4bab-459c-9522-e84e6ea5ccaf",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "arxiv_v1.lines.json",
+        "bytes": 778888
+      },
+      {
+        "format": "md",
+        "path": "arxiv_v1.md",
+        "bytes": 62280
+      },
+      {
+        "format": "tex.zip",
+        "path": "arxiv_v1.tex.zip",
+        "bytes": 145399
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "arxiv_v1.tiddlers.json",
-    "tiddlers_count": 248,
+    "tiddlers_count": 585,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -691,18 +738,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 8.4,
       "detail": "248 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:54:04Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9568.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:54:06Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 1164.0,
+      "detail": "569 objects, 59 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:54:06Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 34.0,
+      "detail": "585 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/arxiv_v1/arxiv_v1.lines.json": "sha256:6804edcf66c3833720f39209ea8b65d9d8fe98f2e96eba496bfd99a8bfef60c0"
+        "/home/wkolbe/pdfdrill-library/arxiv_v1/arxiv_v1.lines.json": "sha256:b2e44c8ff9c30c70e3614c0851a3198e972448f7381c252ff1661acaaf31d25a"
       },
       "params_hash": "sha256:023aec77c599b0e0e6e3a4bdf1d3bd9e9a8d2a76ed59b41c27c0b6dbcdfdd06d",
       "algo": "sha256",
-      "ts": "2026-08-06T01:05:19Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:54:06Z",
+      "provenance": "mathpix"
     }
   }
 }

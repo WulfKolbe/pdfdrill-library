@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -84,28 +85,80 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 26,
-      "Citation": 16,
-      "ListItem": 12,
+      "Footnote": 16,
+      "Citation": 1,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Section": 2,
+      "ListItem": 6,
       "Equation": 49,
-      "Paragraph": 63,
+      "Formula": 275,
+      "Paragraph": 117,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 49,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 39,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "MiKTeX pdfTeX-1.40.16",
+      "CreationDate": "Tue Oct 31 19:21:18 2017 CET",
+      "ModDate": "Tue Oct 31 19:21:18 2017 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "26",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "383860 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 26,
+    "image_count": 1,
+    "mathpix_pdf_id": "0aad0633-8220-4b31-b86b-39afdf1737b9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "pola_pojeciowe_drzewiasto_fraktalne_5_z_rysunkami_afiliacje_na_tytuowej.lines.json",
+        "bytes": 1018193
+      },
+      {
+        "format": "md",
+        "path": "pola_pojeciowe_drzewiasto_fraktalne_5_z_rysunkami_afiliacje_na_tytuowej.md",
+        "bytes": 62253
+      },
+      {
+        "format": "tex.zip",
+        "path": "pola_pojeciowe_drzewiasto_fraktalne_5_z_rysunkami_afiliacje_na_tytuowej.tex.zip",
+        "bytes": 78460
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 36,
     "bibliography_with_year": 36,
-    "bibliography_numeric_citations": 6,
+    "bibliography_numeric_citations": 5,
     "bibliography_authoryear_citations": 2,
-    "bibliography_cites": 7,
+    "bibliography_cites": 6,
     "tiddlers_path": "pola_pojeciowe_drzewiasto_fraktalne_5_z_rysunkami_afiliacje_na_tytuowej.tiddlers.json",
-    "tiddlers_count": 217,
+    "tiddlers_count": 551,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -517,18 +570,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 8.4,
       "detail": "217 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T19:34:20Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9580.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:34:20Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 446.4,
+      "detail": "497 objects, 49 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:34:21Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "36 entries, 5+2 cites detected, 6 linked"
+    },
+    {
+      "ts": "2026-08-22T19:34:21Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 17.4,
+      "detail": "551 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/pola_pojeciowe_drzewiasto_fraktalne_5_z_rysunkami_afiliacje_na_tytuowej/pola_pojeciowe_drzewiasto_fraktalne_5_z_rysunkami_afiliacje_na_tytuowej.lines.json": "sha256:fec1e4caab7e007b7d5823279cad14baf57268cfaa96dde67362ae60ac6359ee"
+        "/home/wkolbe/pdfdrill-library/pola_pojeciowe_drzewiasto_fraktalne_5_z_rysunkami_afiliacje_na_tytuowej/pola_pojeciowe_drzewiasto_fraktalne_5_z_rysunkami_afiliacje_na_tytuowej.lines.json": "sha256:fb4f61654ab0ddad534b0344c7e2539bfdd293da3cb46ca268d919dffc259d55"
       },
       "params_hash": "sha256:bdb6cc6b01c3f5cd7da1d57b047c41daee878b1beb3918d31cb50262c860a305",
       "algo": "sha256",
-      "ts": "2026-08-06T01:32:36Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:34:20Z",
+      "provenance": "mathpix"
     }
   }
 }

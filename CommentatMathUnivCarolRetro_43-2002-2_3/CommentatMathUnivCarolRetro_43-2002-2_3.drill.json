@@ -6,8 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -15,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -97,29 +97,27 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 16,
-      "Citation": 152,
-      "ListItem": 8,
-      "Equation": 19,
-      "Paragraph": 33,
+      "Table": 2,
+      "TableRow": 26,
+      "TableCell": 113,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Section": 4,
+      "ListItem": 3,
+      "Equation": 42,
+      "Formula": 312,
+      "Paragraph": 89,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 42,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 37 unmapped private-use character(s) remain (U+F8F1×5, U+F8F2×5, U+F8F3×5, U+F8F4×22) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 16,
-    "bibliography_with_year": 16,
-    "bibliography_numeric_citations": 27,
-    "bibliography_authoryear_citations": 1,
-    "bibliography_cites": 27,
-    "tiddlers_path": "CommentatMathUnivCarolRetro_43-2002-2_3.tiddlers.json",
-    "tiddlers_count": 122,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "pdftk 1.41 - www.pdftk.com",
@@ -154,7 +152,33 @@
         "page": 1,
         "url": "http://project.dml.cz"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "037eead2-95d3-4932-8097-b1222c6d304b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "CommentatMathUnivCarolRetro_43-2002-2_3.lines.json",
+        "bytes": 800281
+      },
+      {
+        "format": "md",
+        "path": "CommentatMathUnivCarolRetro_43-2002-2_3.md",
+        "bytes": 51643
+      },
+      {
+        "format": "tex.zip",
+        "path": "CommentatMathUnivCarolRetro_43-2002-2_3.tex.zip",
+        "bytes": 105648
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "CommentatMathUnivCarolRetro_43-2002-2_3.tiddlers.json",
+    "tiddlers_count": 488,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -8825,18 +8849,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4603.5,
       "detail": "490 images, 217 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:14:23Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9548.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:14:24Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 536.0,
+      "detail": "610 objects, 42 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:14:24Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.1,
+      "detail": "488 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/CommentatMathUnivCarolRetro_43-2002-2_3/CommentatMathUnivCarolRetro_43-2002-2_3.lines.json": "sha256:b8e8b7f8130183bd6a8510c603c55aed02f5d13503c483cd118484863336c66f"
+        "/home/wkolbe/pdfdrill-library/CommentatMathUnivCarolRetro_43-2002-2_3/CommentatMathUnivCarolRetro_43-2002-2_3.lines.json": "sha256:a1ac50e47edf4f46751a855ff57888130705e40ce6583c957f5206fb0ae2206c"
       },
       "params_hash": "sha256:fc25e74d2b7003df490364031cf62ae3ba920927b02fcbb0edff269a30be14bb",
       "algo": "sha256",
-      "ts": "2026-08-05T06:52:25Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:14:23Z",
+      "provenance": "mathpix"
     }
   }
 }

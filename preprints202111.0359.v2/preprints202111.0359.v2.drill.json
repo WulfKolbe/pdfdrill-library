@@ -5,6 +5,7 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -73,16 +74,21 @@
     "bibkey": "preprints202111.0359.v2",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 99,
+      "Page": 21,
+      "Footnote": 2,
+      "Citation": 3,
+      "Sidenote": 2,
       "Abstract": 1,
-      "Formula": 291,
-      "Section": 23,
-      "Equation": 4,
-      "Table": 8,
-      "Citation": 281
+      "Diagram": 1,
+      "Picture": 5,
+      "ListItem": 46,
+      "Equation": 52,
+      "Formula": 378,
+      "Paragraph": 125,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 52,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 21,
       "placed": 1,
@@ -92,13 +98,70 @@
       "numbered": 23,
       "roots": 1
     },
-    "bibliography_entries": 183,
-    "bibliography_with_year": 164,
-    "bibliography_numeric_citations": 0,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "On the Emergence of Spacetime and Matter from Model Sets",
+      "Subject": "We consider partition functions, in the form of state sums, and associated probabilistic measures for aperiodic substrates described by model sets and their associated tiling spaces. We propose model set tiling spaces as microscopic models for small scales in the context of quantum gravity. Model sets possess special self-similarity properties that allow us to consider implications on large and observable scales from the underlying (non-ergodic) dynamics. In particular we consider the implication of the underlying aperiodic substrate for the well known problem of time in quantum gravity, and propose a correspondence between small and large scales, the so-called ergodic correspondence, that addresses the emergence of matter properties and spacetime structure. In the process we find a possible bound in the mass spectrum of fundamental particles.",
+      "Keywords": "Quantum Gravity; Problem of Time; Particle Physics; Emergence; Holographic Principle; Model Sets",
+      "Author": "Marcelo Amaral, Fang Fang, Raymond Aschheim and Klee Irwin",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.16; modified using iText® 7.0.1 ©2000-2016 iText Group NV (AGPL-version)",
+      "CreationDate": "Tue Mar 22 01:25:42 2022 CET",
+      "ModDate": "Wed Mar 23 09:26:35 2022 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "21",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "427462 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 21,
+    "image_count": 9,
+    "mathpix_pdf_id": "652a5b29-bf64-41bd-ae3e-d318e1bb4f75",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "preprints202111.0359.v2.lines.json",
+        "bytes": 1173192
+      },
+      {
+        "format": "md",
+        "path": "preprints202111.0359.v2.md",
+        "bytes": 95609
+      },
+      {
+        "format": "tex.zip",
+        "path": "preprints202111.0359.v2.tex.zip",
+        "bytes": 230425
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 61,
+    "bibliography_with_year": 56,
+    "bibliography_numeric_citations": 93,
     "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 281,
+    "bibliography_cites": 93,
     "tiddlers_path": "preprints202111.0359.v2.tiddlers.json",
-    "tiddlers_count": 648,
+    "tiddlers_count": 713,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -454,16 +517,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 22.5,
       "detail": "648 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T18:30:39Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12702.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:30:39Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 596.6,
+      "detail": "637 objects, 52 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:30:40Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "61 entries, 93+0 cites detected, 93 linked"
+    },
+    {
+      "ts": "2026-08-22T18:30:40Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 20.3,
+      "detail": "713 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/preprints202111.0359.v2/preprints202111.0359.v2.lines.json": "sha256:7538deeec0db3fbc4a7123596a3eb1df78805de53bcba20b7f17437e393959c9"
+      },
       "params_hash": "sha256:908387bcdef478bacf1f95c1cf1cd6570b86ac44e1579c7c654ed75ac23b3b3e",
       "algo": "sha256",
-      "ts": "2026-08-06T01:32:49Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:30:39Z",
+      "provenance": "mathpix"
     }
   }
 }

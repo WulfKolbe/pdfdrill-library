@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 24,
@@ -88,20 +89,23 @@
     "bibkey": "2309.13736",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 43,
-      "Paragraph": 226,
-      "Abstract": 1,
-      "Formula": 510,
-      "Section": 21,
-      "Equation": 110,
-      "Diagram": 3,
-      "Theorem": 37,
-      "Proof": 26,
+      "Page": 24,
+      "Citation": 2,
       "Table": 1,
-      "Citation": 28
+      "TableRow": 4,
+      "TableCell": 16,
+      "Toc": 1,
+      "Abstract": 1,
+      "Diagram": 2,
+      "ListItem": 1,
+      "Equation": 57,
+      "Formula": 415,
+      "Paragraph": 135,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 57,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 24,
       "placed": 31,
@@ -111,14 +115,6 @@
       "numbered": 21,
       "roots": 1
     },
-    "bibliography_entries": 24,
-    "bibliography_with_year": 23,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 28,
-    "tiddlers_path": "2309.13736.tiddlers.json",
-    "tiddlers_count": 1044,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The set of functions parameterized by a linear fully-connected neural network is a determinantal variety. We investigate the subvariety of functions that are equivariant or invariant under the action of a permutation group. Examples of such group actions are translations or $90^\\circ$ rotations on images. We describe such equivariant or invariant subvarieties as direct products of determinantal varieties, from which we deduce their dimension, degree, Euclidean distance degree, and their singularities. We fully characterize invariance for arbitrary permutation groups, and equivariance for cyclic groups. We draw conclusions for the parameterization and the design of equivariant and invariant linear networks in terms of sparsity and weight-sharing properties. We prove that all invariant linear functions can be parameterized by a single linear autoencoder with a weight-sharing property imposed by the cycle decomposition of the considered permutation. The space of rank-bounded equivariant functions has several irreducible components, so it can not be parameterized by a single network-but each irreducible component can. Finally, we show that minimizing the squared-error loss on our invariant or equivariant networks reduces to minimizing the Euclidean distance from determinantal varieties via the Eckart-Young theorem.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -155,7 +151,72 @@
         "page": 24,
         "url": "https://arxiv.org/abs/2106.06020"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Tue Sep 26 03:47:02 2023 CEST",
+      "ModDate": "Tue Sep 26 03:47:02 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "24",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "461893 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 24,
+    "image_count": 0,
+    "mathpix_pdf_id": "73e1493b-40bd-4b73-87f5-db6387804ac4",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2309.13736.lines.json",
+        "bytes": 932467
+      },
+      {
+        "format": "md",
+        "path": "2309.13736.md",
+        "bytes": 83055
+      },
+      {
+        "format": "tex.zip",
+        "path": "2309.13736.tex.zip",
+        "bytes": 139589
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 17,
+    "bibliography_with_year": 16,
+    "bibliography_numeric_citations": 16,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 16,
+    "tiddlers_path": "2309.13736.tiddlers.json",
+    "tiddlers_count": 673,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -636,16 +697,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6024.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:02:06Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9876.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:02:07Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 711.0,
+      "detail": "661 objects, 57 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:02:08Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "17 entries, 16+0 cites detected, 16 linked"
+    },
+    {
+      "ts": "2026-08-22T19:02:08Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 21.2,
+      "detail": "673 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2309.13736/2309.13736.lines.json": "sha256:7a34b378c9b4197c117ff3fe84cdf2076023bc4b8f49eb3f44629cd47a1e1dac"
+      },
       "params_hash": "sha256:7f7bb087bb57cb16bd51c3366229b35b96c14e5344addc340d5e2763c546c36b",
       "algo": "sha256",
-      "ts": "2026-08-03T21:13:05Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T19:02:07Z",
+      "provenance": "mathpix"
     }
   }
 }

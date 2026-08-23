@@ -5,15 +5,16 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 23,
@@ -113,20 +114,20 @@
     "bibkey": "2310.04444v3",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 73,
+      "Page": 23,
+      "Footnote": 2,
+      "Citation": 2,
       "Abstract": 1,
-      "Section": 16,
-      "Formula": 110,
-      "Theorem": 14,
+      "Diagram": 10,
+      "Section": 2,
+      "ListItem": 22,
       "Equation": 17,
-      "LtxCommand": 5,
-      "Proof": 1,
-      "Citation": 69,
-      "Algorithm": 3,
-      "AlgorithmStep": 28
+      "Formula": 237,
+      "Paragraph": 71,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 17,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 23,
       "placed": 67,
@@ -136,14 +137,6 @@
       "numbered": 16,
       "roots": 1
     },
-    "bibliography_entries": 46,
-    "bibliography_with_year": 46,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 69,
-    "tiddlers_path": "2310.04444v3.tiddlers.json",
-    "tiddlers_count": 324,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Prompt engineering is crucial for deploying LLMs but is poorly understood mathematically. We formalize LLM systems as a class of discrete stochastic dynamical systems to explore prompt engineering through the lens of control theory. We investigate the reachable set of output token sequences $R_y(\\mathbf x_0)$ for which there exists a control input sequence $\\mathbf u$ for each $\\mathbf y \\in R_y(\\mathbf x_0)$ that steers the LLM to output $\\mathbf y$ from initial state sequence $\\mathbf x_0$. We offer analytic analysis on the limitations on the controllability of self-attention in terms of reachable set, where we prove an upper bound on the reachable set of outputs $R_y(\\mathbf x_0)$ as a function of the singular values of the parameter matrices. We present complementary empirical analysis on the controllability of a panel of LLMs, including Falcon-7b, Llama-7b, and Falcon-40b. Our results demonstrate a lower bound on the reachable set of outputs $R_y(\\mathbf x_0)$ w.r.t. initial state sequences $\\mathbf x_0$ sampled from the Wikitext dataset. We find that the correct next Wikitext token following sequence $\\mathbf x_0$ is reachable over 97% of the time with prompts of $k\\leq 10$ tokens. We also establish that the top 75 most likely next tokens, as estimated by the LLM itself, are reachable at least 85% of the time with prompts of $k\\leq 10$ tokens. Intriguingly, short prompt sequences can dramatically alter the likelihood of specific outputs, even making the least likely tokens become the most likely ones. This control-centric analysis of LLMs demonstrates the significant and poorly understood role of input sequences in steering output probabilities, offering a foundational perspective for enhancing language model system capabilities.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -184,7 +177,72 @@
         "page": 12,
         "url": "https://arxiv.org/abs/2201.05337"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Thu Jan  4 03:18:51 2024 CET",
+      "ModDate": "Thu Jan  4 03:18:51 2024 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "23",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "980657 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 23,
+    "image_count": 0,
+    "mathpix_pdf_id": "c2d84e73-8518-4d88-be16-a345459cc3c3",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2310.04444v3.lines.json",
+        "bytes": 900848
+      },
+      {
+        "format": "md",
+        "path": "2310.04444v3.md",
+        "bytes": 71822
+      },
+      {
+        "format": "tex.zip",
+        "path": "2310.04444v3.tex.zip",
+        "bytes": 1273435
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 38,
+    "bibliography_with_year": 38,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 28,
+    "bibliography_cites": 19,
+    "tiddlers_path": "2310.04444v3.tiddlers.json",
+    "tiddlers_count": 451,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2060,16 +2118,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 35490.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:51:24Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9812.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:51:25Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 394.7,
+      "detail": "388 objects, 17 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:51:25Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "38 entries, 0+28 cites detected, 19 linked"
+    },
+    {
+      "ts": "2026-08-22T18:51:25Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 15.7,
+      "detail": "451 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2310.04444v3/2310.04444v3.lines.json": "sha256:e293037aead228ae48d6b79bf5b88377a1cd5ec0ee56a965d121f485caa24f16"
+      },
       "params_hash": "sha256:c624b10ad18087a6e23c84808b62b597183e7d55d762abd7bc7f9c62655583da",
       "algo": "sha256",
-      "ts": "2026-08-03T21:14:06Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:51:25Z",
+      "provenance": "mathpix"
     }
   }
 }

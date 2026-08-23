@@ -5,13 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 7,
@@ -75,15 +76,21 @@
     "bibkey": "1904.12577v2",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 57,
-      "Abstract": 1,
-      "Section": 11,
-      "Formula": 20,
+      "Page": 7,
+      "Citation": 5,
       "Table": 4,
-      "Citation": 36
+      "TableRow": 33,
+      "TableCell": 211,
+      "Sidenote": 12,
+      "Abstract": 1,
+      "Diagram": 2,
+      "ListItem": 16,
+      "Formula": 12,
+      "Paragraph": 67,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 7,
       "placed": 42,
@@ -93,14 +100,6 @@
       "numbered": 11,
       "roots": 1
     },
-    "bibliography_entries": 32,
-    "bibliography_with_year": 31,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 36,
-    "tiddlers_path": "1904.12577v2.tiddlers.json",
-    "tiddlers_count": 150,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Abstract--- Table detection and extraction has been studied in the context of documents like reports, where tables are clearly outlined and stand out from the document structure visually. We study this topic in a rather more challenging domain of layout-heavy business documents, particularly invoices. Invoices present the novel challenges of tables being often without outlines - either in the form of borders or surrounding text flow - with ragged columns and widely varying data content. We will also show, that we can extract specific information from structurally different tables or table-like structures with one model. We present a comprehensive representation of a page using graph over word boxes, positional embeddings, trainable textual features and rephrase the table detection as a text box labeling problem. We will work on our newly presented dataset of pro forma invoices, invoices and debit note documents using this representation and propose multiple baselines to solve this labeling problem. We then propose a novel neural network model that achieves strong, practical results on the presented dataset and analyze the model performance and effects of graph convolutions and self-attention in detail.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -111,7 +110,72 @@
       "Petr Baudiš",
       "Pavel Klinger"
     ],
-    "arxiv_primary_category": "cs.IR"
+    "arxiv_primary_category": "cs.IR",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Your Title",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Your Name",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Jul 10 02:41:26 2019 CEST",
+      "ModDate": "Wed Jul 10 02:41:26 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "799474 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 7,
+    "image_count": 3,
+    "mathpix_pdf_id": "6511a96d-7a36-4fbe-811c-e56c603d1a72",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1904.12577v2.lines.json",
+        "bytes": 988830
+      },
+      {
+        "format": "md",
+        "path": "1904.12577v2.md",
+        "bytes": 34441
+      },
+      {
+        "format": "tex.zip",
+        "path": "1904.12577v2.tex.zip",
+        "bytes": 301089
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 36,
+    "bibliography_with_year": 31,
+    "bibliography_numeric_citations": 36,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 36,
+    "tiddlers_path": "1904.12577v2.tiddlers.json",
+    "tiddlers_count": 175,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Your Title",
@@ -513,16 +577,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2897.4,
       "detail": "2 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:50:17Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 19621.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:50:17Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 155.3,
+      "detail": "371 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:50:18Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "36 entries, 36+0 cites detected, 36 linked"
+    },
+    {
+      "ts": "2026-08-22T14:50:18Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.7,
+      "detail": "175 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1904.12577v2/1904.12577v2.lines.json": "sha256:f61f9b7b965886a2271aeab61e205f1feb78f372c05527135248bf0195e042b4"
+      },
       "params_hash": "sha256:802b9d320dcc7785b5a5397f4bf8479e1e0ffa9f26c5a3d878e1e9a3d32255b3",
       "algo": "sha256",
-      "ts": "2026-08-03T19:46:19Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:50:17Z",
+      "provenance": "mathpix"
     }
   }
 }

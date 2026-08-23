@@ -3,16 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2210.07763",
@@ -20,23 +21,24 @@
     "bibkey": "2210.07763",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 174,
+      "Page": 11,
+      "Footnote": 7,
+      "Citation": 1,
+      "Table": 11,
+      "TableRow": 77,
+      "TableCell": 365,
+      "Sidenote": 22,
       "Abstract": 1,
-      "Section": 29,
-      "Table": 25,
-      "Formula": 17,
+      "Diagram": 5,
+      "Section": 2,
+      "ListItem": 16,
       "Equation": 3,
-      "Citation": 90,
-      "Algorithm": 1,
-      "AlgorithmStep": 2
+      "Formula": 24,
+      "Paragraph": 157,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 47,
-    "bibliography_with_year": 47,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 90,
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "pages": 11,
     "bytes": 1029246,
     "page_size": "612 x 792 pts (letter)",
@@ -121,9 +123,6 @@
       "BBKMCZ+LibertineMathMI7"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2210.07763.tiddlers.json",
-    "tiddlers_count": 325,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Structured knowledge is important for many AI applications. Commonsense knowledge, which is crucial for robust human-centric AI, is covered by a small number of structured knowledge projects. However, they lack knowledge about human traits and behaviors conditioned on socio-cultural contexts, which is crucial for situative AI. This paper presents CANDLE, an end-to-end methodology for extracting high-quality cultural commonsense knowledge (CCSK) at scale. CANDLE extracts CCSK assertions from a huge web corpus and organizes them into coherent clusters, for 3 domains of subjects (geography, religion, occupation) and several cultural facets (food, drinks, clothing, traditions, rituals, behaviors). CANDLE includes judicious techniques for classification-based filtering and scoring of interestingness. Experimental evaluations show the superiority of the CANDLE CCSK collection over prior works, and an extrinsic use case demonstrates the benefits of CCSK for the GPT-3 language model. Code and data can be accessed at this https URL .",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -134,7 +133,70 @@
       "Aparna Varde",
       "Gerhard Weikum"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Extracting Cultural Commonsense Knowledge at Scale",
+      "Subject": "",
+      "Creator": "LaTeX with acmart 2022/04/09 v1.84 Typesetting articles for the Association for Computing Machinery and hyperref 2020-05-15 v7.00e Hypertext links for LaTeX",
+      "Producer": "pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+      "CreationDate": "Thu May 11 03:22:08 2023 CEST",
+      "ModDate": "Thu May 11 03:22:08 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "1029246 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 21,
+    "mathpix_pdf_id": "92fcf728-de4b-48fd-a456-40df171ff16b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2210.07763.lines.json",
+        "bytes": 1872843
+      },
+      {
+        "format": "md",
+        "path": "2210.07763.md",
+        "bytes": 68910
+      },
+      {
+        "format": "tex.zip",
+        "path": "2210.07763.tex.zip",
+        "bytes": 278460
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 52,
+    "bibliography_with_year": 48,
+    "bibliography_numeric_citations": 87,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 87,
+    "tiddlers_path": "2210.07763.tiddlers.json",
+    "tiddlers_count": 331,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Extracting Cultural Commonsense Knowledge at Scale",
@@ -1930,18 +1992,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6918.1,
       "detail": "13 images, 13 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:58:44Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13257.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:58:44Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 376.7,
+      "detail": "703 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:58:45Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "52 entries, 87+1 cites detected, 87 linked"
+    },
+    {
+      "ts": "2026-08-22T15:58:45Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.5,
+      "detail": "331 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2210.07763/texsrc/main.tex": "sha256:e4eaf5cfebb3c6df233cba3a315bfce851a9be6e65325d6b1f9a9acd2c8b0067"
+        "/home/wkolbe/pdfdrill-library/2210.07763/2210.07763.lines.json": "sha256:8e9c620d5d56ecf94f7ddddd25a1ad8a2714b6ed3abbc194a0bc325933ea77df"
       },
       "params_hash": "sha256:601f9755e92a0353e18b682d24bd4044e832611a347212ac794bed4203a17612",
       "algo": "sha256",
-      "ts": "2026-08-03T21:00:27Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:58:44Z",
+      "provenance": "mathpix"
     }
   }
 }

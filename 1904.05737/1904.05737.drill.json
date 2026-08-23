@@ -3,17 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1904.05737",
@@ -21,20 +21,20 @@
     "bibkey": "1904.05737",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 37,
-      "Abstract": 1,
-      "Section": 7,
-      "Formula": 20,
+      "Page": 14,
+      "Footnote": 5,
       "Table": 3,
-      "Citation": 56
+      "TableRow": 58,
+      "TableCell": 277,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 41,
+      "Formula": 20,
+      "Paragraph": 46,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 39,
-    "bibliography_with_year": 38,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_source": "mathpix",
     "pages": 14,
     "bytes": 363072,
     "page_size": "612 x 792 pts (letter)",
@@ -114,9 +114,6 @@
       "numbered": 7,
       "roots": 1
     },
-    "tiddlers_path": "1904.05737.tiddlers.json",
-    "tiddlers_count": 139,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We consider algorithm selection in the context of ad-hoc information retrieval. Given a query and a pair of retrieval methods, we propose a meta-learner that predicts how to combine the methods&#39; relevance scores into an overall relevance score. Inspired by neural models&#39; different properties with regard to IR axioms, these predictions are based on features that quantify axiom-related properties of the query and its top ranked documents. We conduct an evaluation on TREC Web Track data and find that the meta-learner often significantly improves over the individual methods. Finally, we conduct feature and query weight analyses to investigate the meta-learner&#39;s behavior.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -131,7 +128,67 @@
         "page": 6,
         "url": "https://code.google.com/archive/p/word2vec/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Fri Apr 12 03:01:36 2019 CEST",
+      "ModDate": "Fri Apr 12 03:01:36 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "363072 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 14,
+    "image_count": 0,
+    "mathpix_pdf_id": "c41b995d-9a9d-4335-900c-fe85356ac85c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1904.05737.lines.json",
+        "bytes": 946096
+      },
+      {
+        "format": "md",
+        "path": "1904.05737.md",
+        "bytes": 38725
+      },
+      {
+        "format": "tex.zip",
+        "path": "1904.05737.tex.zip",
+        "bytes": 162906
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1904.05737.tiddlers.json",
+    "tiddlers_count": 148,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1197,18 +1254,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3511.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:40:37Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9396.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:40:38Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 166.1,
+      "detail": "467 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:40:38Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.9,
+      "detail": "148 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1904.05737/texsrc/main.tex": "sha256:41c4bf0e03e7d1e5c2ae4f9c6586d90365ee312691049efe6d95ba3765d216ad"
+        "/home/wkolbe/pdfdrill-library/1904.05737/1904.05737.lines.json": "sha256:f853f04eecbcda2236efdac7329dfaf6bb11bbc66486be1deff2a8cd8a1cbcc0"
       },
       "params_hash": "sha256:28cfdaded0146dc489fc7116c4e2b178a54e788396f0958f0af140f4e4f065e6",
       "algo": "sha256",
-      "ts": "2026-08-03T19:46:13Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:40:38Z",
+      "provenance": "mathpix"
     }
   }
 }

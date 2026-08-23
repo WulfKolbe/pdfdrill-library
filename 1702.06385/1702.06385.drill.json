@@ -3,22 +3,22 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "ABSTRACT_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "GEOMETRY_FUSED",
     "LISTS_BUILT",
     "MD_BUILT",
     "BIBSOURCE_BUILT",
     "LATEX_INGESTED",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "TOC_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1702.06385",
@@ -26,24 +26,24 @@
     "bibkey": "1702.06385",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 4,
-      "Paragraph": 88,
-      "Abstract": 1,
-      "Section": 25,
-      "Formula": 157,
-      "Equation": 19,
+      "Page": 9,
+      "Footnote": 4,
+      "Citation": 1,
       "Table": 1,
-      "Citation": 78,
-      "Algorithm": 1,
-      "AlgorithmStep": 23
+      "TableRow": 20,
+      "TableCell": 150,
+      "Sidenote": 18,
+      "Abstract": 1,
+      "Diagram": 4,
+      "Picture": 1,
+      "ListItem": 4,
+      "Equation": 18,
+      "Formula": 160,
+      "Paragraph": 48,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 34,
-    "bibliography_with_year": 34,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 78,
+    "model_equations_with_cdn": 18,
+    "model_source": "mathpix",
     "pages": 9,
     "bytes": 459516,
     "page_size": "612 x 792 pts (letter)",
@@ -87,9 +87,6 @@
       "Jilles Vreeken"
     ],
     "arxiv_primary_category": "stat.ML",
-    "geometry_pdf_lines": 652,
-    "geometry_matched": 0,
-    "geometry_mean_sim": null,
     "lists_created": 0,
     "lists_max_depth": 0,
     "lists_items": 0,
@@ -98,12 +95,11 @@
     "bibsource_enriched": 0,
     "bibsource_citations_linked": 78,
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 4 unmapped private-use character(s) remain (U+F8EB×1, U+F8ED×1, U+F8F6×1, U+F8F8×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "1702.06385.tgz",
     "latex_macros": 75,
@@ -195,9 +191,6 @@
       "numbered": 25,
       "roots": 1
     },
-    "tiddlers_path": "1702.06385.tiddlers.json",
-    "tiddlers_count": 356,
-    "tiddlers_svg_mode": "inline",
     "toc": [
       {
         "number": "0.1",
@@ -326,7 +319,66 @@
         "level": 3
       }
     ],
-    "toc_search_scope": "markdown"
+    "toc_search_scope": "markdown",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Causal Inference on Multivariate and Mixed-Type Data",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Alexander Marx and Jilles Vreeken",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Tue Oct 17 03:17:21 2017 CEST",
+      "ModDate": "Tue Oct 17 03:17:21 2017 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "459516 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 9,
+    "image_count": 0,
+    "mathpix_pdf_id": "3bd94e1a-11ea-4552-be6d-8ea1cfdd08e2",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1702.06385.lines.json",
+        "bytes": 1091612
+      },
+      {
+        "format": "md",
+        "path": "1702.06385.md",
+        "bytes": 46382
+      },
+      {
+        "format": "tex.zip",
+        "path": "1702.06385.tex.zip",
+        "bytes": 191658
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "tiddlers"
+    ],
+    "bibliography_entries": 34,
+    "bibliography_with_year": 34,
+    "bibliography_numeric_citations": 76,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 76,
+    "tiddlers_path": "1702.06385.tiddlers.json",
+    "tiddlers_count": 320,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Causal Inference on Multivariate and Mixed-Type Data",
@@ -1959,16 +2011,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2888.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:07:18Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LISTS_BUILT,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9583.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:07:18Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 370.3,
+      "detail": "440 objects, 18 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:07:19Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "34 entries, 76+0 cites detected, 76 linked"
+    },
+    {
+      "ts": "2026-08-22T15:07:19Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.8,
+      "detail": "320 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1702.06385/1702.06385.lines.json": "sha256:592a7fcd40159a2dda5245df6bd460a59ee77412d429ed0508ea3b3a3085d38b"
+      },
       "params_hash": "sha256:9d269f46b3fa24f46b87098f56dd52259ba355f326b4d7ae4a6341c8b0ff546e",
       "algo": "sha256",
-      "ts": "2026-08-03T19:37:58Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:07:18Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

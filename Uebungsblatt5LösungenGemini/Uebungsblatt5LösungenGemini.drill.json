@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -75,22 +76,72 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 4,
-      "ListItem": 12,
-      "Equation": 57,
-      "Paragraph": 41,
+      "ListItem": 8,
+      "Equation": 28,
+      "Formula": 157,
+      "Paragraph": 32,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 28,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.26",
+      "CreationDate": "Fri Nov 21 13:04:19 2025 CET",
+      "ModDate": "Fri Nov 21 13:04:19 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "4",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "208801 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 4,
+    "image_count": 0,
+    "mathpix_pdf_id": "284fc7fd-ff76-4102-aea6-f64069d47d0c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Uebungsblatt5LösungenGemini.lines.json",
+        "bytes": 188693
+      },
+      {
+        "format": "md",
+        "path": "Uebungsblatt5LösungenGemini.md",
+        "bytes": 16549
+      },
+      {
+        "format": "tex.zip",
+        "path": "Uebungsblatt5LösungenGemini.tex.zip",
+        "bytes": 18049
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "Uebungsblatt5LösungenGemini.tiddlers.json",
-    "tiddlers_count": 131,
+    "tiddlers_count": 246,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -382,18 +433,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.7,
       "detail": "131 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:30:23Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9151.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:30:23Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 134.7,
+      "detail": "230 objects, 28 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:30:23Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.5,
+      "detail": "246 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Uebungsblatt5LösungenGemini/Uebungsblatt5LösungenGemini.lines.json": "sha256:9d6ec662f73c5d1ea590529539e9925e9c5cbc795c4fac7e19d9792ad2633c66"
+        "/home/wkolbe/pdfdrill-library/Uebungsblatt5LösungenGemini/Uebungsblatt5LösungenGemini.lines.json": "sha256:7a5a43b31726bc676542e6e425d4463b5a974c64826f783530fc715375a0cb50"
       },
       "params_hash": "sha256:33a127f6b9ff798e8069a119ea46360ce0266de4836ca9830728fddf851dbccc",
       "algo": "sha256",
-      "ts": "2026-08-06T00:47:13Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:30:23Z",
+      "provenance": "mathpix"
     }
   }
 }

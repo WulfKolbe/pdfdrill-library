@@ -5,15 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -93,16 +93,21 @@
     "bibkey": "2306.13098",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Formula": 248,
-      "Paragraph": 139,
-      "Section": 18,
-      "Equation": 51,
-      "LtxCommand": 1,
+      "Page": 18,
+      "Footnote": 6,
       "Table": 1,
-      "Citation": 109
+      "TableRow": 17,
+      "TableCell": 288,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 3,
+      "Equation": 52,
+      "Formula": 262,
+      "Paragraph": 119,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 52,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 18,
       "placed": 63,
@@ -112,14 +117,6 @@
       "numbered": 18,
       "roots": 1
     },
-    "bibliography_entries": 54,
-    "bibliography_with_year": 53,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 109,
-    "tiddlers_path": "2306.13098.tiddlers.json",
-    "tiddlers_count": 548,
-    "tiddlers_svg_mode": "inline",
     "abstract": "An algebraic representation of three generations of fermions with $SU(3)_C$ color symmetry based on the Cayley-Dickson algebra of sedenions $\\mathbb{S}$ is constructed. Recent constructions based on division algebras convincingly describe a single generation of leptons and quarks with Standard Model gauge symmetries. Nonetheless, an algebraic origin for the existence of exactly three generations has proven difficult to substantiate. We motivate $\\mathbb{S}$ as a natural algebraic candidate to describe three generations with $SU(3)_C$ gauge symmetry. We initially represent one generation of leptons and quarks in terms of two minimal left ideals of $\\mathbb{C}\\ell(6)$, generated from a subset of all left actions of the complex sedenions on themselves. Subsequently we employ the finite group $S_3$, which are automorphisms of $\\mathbb{S}$ but not of $\\mathbb{O}$ to generate two additional generations. Given the relative obscurity of sedenions, efforts have been made to present the material in a self-contained manner.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -136,7 +133,67 @@
         "url": "https://preprints.ihes.fr/2022/P/P-22-01.pdf",
         "kind": "text"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Mon Jun 26 02:59:04 2023 CEST",
+      "ModDate": "Mon Jun 26 02:59:04 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "18",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "473467 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 18,
+    "image_count": 1,
+    "mathpix_pdf_id": "d67fff82-e7f3-40d4-85ac-ec84cb5d17ce",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2306.13098.lines.json",
+        "bytes": 1201956
+      },
+      {
+        "format": "md",
+        "path": "2306.13098.md",
+        "bytes": 77664
+      },
+      {
+        "format": "tex.zip",
+        "path": "2306.13098.tex.zip",
+        "bytes": 101167
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2306.13098.tiddlers.json",
+    "tiddlers_count": 480,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -660,16 +717,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5715.1,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:32:34Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 11022.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:32:34Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 669.8,
+      "detail": "769 objects, 52 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:32:35Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.8,
+      "detail": "480 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2306.13098/2306.13098.lines.json": "sha256:b054a0afc8b0992ecde8704c96254b187c4fcb7e264901fbd9ba8b69b1392a65"
+      },
       "params_hash": "sha256:dc5141276e657cf1f3b775b24ce82b59d13edca5592f47ebde9a6f59859dd4f9",
       "algo": "sha256",
-      "ts": "2026-08-03T21:06:17Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:32:34Z",
+      "provenance": "mathpix"
     }
   }
 }

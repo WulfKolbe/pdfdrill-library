@@ -6,15 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 27,
@@ -120,29 +120,22 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 27,
-      "Citation": 18,
-      "ListItem": 6,
-      "Equation": 210,
-      "Paragraph": 137,
+      "Diagram": 3,
+      "ListItem": 19,
+      "Equation": 48,
+      "Formula": 120,
+      "Paragraph": 69,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 48,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 154 unmapped private-use character(s) remain (U+F8EB×10, U+F8EC×40, U+F8ED×10, U+F8EE×4, U+F8EF×6, U+F8F0×4, U+F8F1×1, U+F8F2×1, U+F8F3×1, U+F8F6×10, U+F8F7×40, U+F8F8×10, U+F8F9×4, U+F8FA×6, U+F8FB×4, U+F8FC×1, U+F8FD×1, U+F8FE×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "HitoshiKonno.tiddlers.json",
-    "tiddlers_count": 403,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -171,7 +164,33 @@
     "page_count_text": 27,
     "image_count": 0,
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "ecfe4520-62c9-4bd0-83bd-a1ff65484689",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "HitoshiKonno.lines.json",
+        "bytes": 402092
+      },
+      {
+        "format": "md",
+        "path": "HitoshiKonno.md",
+        "bytes": 31350
+      },
+      {
+        "format": "tex.zip",
+        "path": "HitoshiKonno.tex.zip",
+        "bytes": 312024
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "HitoshiKonno.tiddlers.json",
+    "tiddlers_count": 303,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1383,18 +1402,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3341.7,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:45:42Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6170.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:45:42Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 352.5,
+      "detail": "287 objects, 48 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:45:42Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.9,
+      "detail": "303 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/HitoshiKonno/HitoshiKonno.lines.json": "sha256:ed124aa5a6ac5593de2a64b4b2c46105f21099b62cb0c47e5d8c1cab680c986e"
+        "/home/wkolbe/pdfdrill-library/HitoshiKonno/HitoshiKonno.lines.json": "sha256:8ab2f96097f8ab19f67e9c8247b12c9c9209e8655dde9969001f311c9b26cbac"
       },
       "params_hash": "sha256:587dbfbe15f6555360e3f8b8a24d893ff4d12a748cc303e9be4bc29bfd915866",
       "algo": "sha256",
-      "ts": "2026-08-05T21:14:51Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:45:42Z",
+      "provenance": "mathpix"
     }
   }
 }

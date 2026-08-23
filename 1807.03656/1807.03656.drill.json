@@ -3,16 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1807.03656",
@@ -20,22 +21,21 @@
     "bibkey": "1807.03656",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 167,
+      "Page": 16,
+      "Footnote": 4,
+      "Citation": 1,
+      "Table": 7,
+      "TableRow": 68,
+      "TableCell": 486,
       "Abstract": 1,
-      "Section": 28,
-      "Formula": 28,
-      "LtxCommand": 24,
-      "Theorem": 2,
-      "Table": 9,
-      "Citation": 52
+      "Diagram": 4,
+      "ListItem": 35,
+      "Formula": 38,
+      "Paragraph": 74,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 35,
-    "bibliography_with_year": 35,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 52,
+    "model_source": "mathpix",
     "pages": 16,
     "bytes": 395514,
     "page_size": "612 x 792 pts (letter)",
@@ -108,9 +108,6 @@
       "OGOLZA+CMMI9"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1807.03656.tiddlers.json",
-    "tiddlers_count": 328,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Information extraction traditionally focuses on extracting relations between identifiable entities, such as &lt;Monterey, locatedIn, California&gt;. Yet, texts often also contain Counting information, stating that a subject is in a specific relation with a number of objects, without mentioning the objects themselves, for example, &#34;California is divided into 58 counties&#34;. Such counting quantifiers can help in a variety of tasks such as query answering or knowledge base curation, but are neglected by prior work. This paper develops the first full-fledged system for extracting counting information from text, called CINEX. We employ distant supervision using fact counts from a knowledge base as training seeds, and develop novel techniques for dealing with several challenges: (i) non-maximal training seeds due to the incompleteness of knowledge bases, (ii) sparse and skewed observations in text sources, and (iii) high diversity of linguistic patterns. Experiments with five human-evaluated relations show that CINEX can achieve 60% average precision for extracting counting information. In a large-scale experiment, we demonstrate the potential for knowledge base enrichment by applying CINEX to 2,474 frequent relations in Wikidata. CINEX can assert the existence of 2.5M facts for 110 distinct relations, which is 28% more than the existing Wikidata facts for these relations.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -121,7 +118,72 @@
       "Fariz Darari",
       "Gerhard Weikum"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Jul 11 02:32:29 2018 CEST",
+      "ModDate": "Wed Jul 11 02:32:29 2018 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "395514 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 3,
+    "mathpix_pdf_id": "7f25addf-3bff-49ab-89ae-f62d9b5d76c6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1807.03656.lines.json",
+        "bytes": 1358084
+      },
+      {
+        "format": "md",
+        "path": "1807.03656.md",
+        "bytes": 52417
+      },
+      {
+        "format": "tex.zip",
+        "path": "1807.03656.tex.zip",
+        "bytes": 117268
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 35,
+    "bibliography_with_year": 35,
+    "bibliography_numeric_citations": 17,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 17,
+    "tiddlers_path": "1807.03656.tiddlers.json",
+    "tiddlers_count": 232,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -584,16 +646,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4610.7,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:06:04Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12856.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:06:05Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 228.8,
+      "detail": "735 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:06:05Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "35 entries, 17+0 cites detected, 17 linked"
+    },
+    {
+      "ts": "2026-08-22T17:06:05Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.7,
+      "detail": "232 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1807.03656/1807.03656.lines.json": "sha256:9997e899bedf6241ba5fda6446613b0b2f64c0f1f1961bd77a050e0c36cd631a"
+      },
       "params_hash": "sha256:438389b17fca7a450117fbea08a02cf19354e759d7ddb8be677d36959f006d47",
       "algo": "sha256",
-      "ts": "2026-08-03T19:41:19Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:06:05Z",
+      "provenance": "mathpix"
     }
   }
 }

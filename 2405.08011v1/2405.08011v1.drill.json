@@ -5,13 +5,13 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -86,16 +86,18 @@
     "bibkey": "2405.08011v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 60,
+      "Page": 8,
+      "Sidenote": 16,
       "Abstract": 1,
-      "Section": 28,
-      "LtxCommand": 4,
-      "Formula": 16,
+      "Diagram": 5,
+      "ListItem": 15,
       "Equation": 3,
-      "Citation": 129
+      "Formula": 16,
+      "Paragraph": 113,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 8,
       "placed": 34,
@@ -105,14 +107,6 @@
       "numbered": 28,
       "roots": 1
     },
-    "bibliography_entries": 70,
-    "bibliography_with_year": 68,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 129,
-    "tiddlers_path": "2405.08011v1.tiddlers.json",
-    "tiddlers_count": 208,
-    "tiddlers_svg_mode": "inline",
     "links": [
       {
         "page": 1,
@@ -122,7 +116,67 @@
         "page": 1,
         "url": "https://doi.org/10.1145/nnnnnnn."
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "A Survey of Large Language Models for Graphs",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Xubin Ren, Jiabin Tang, Dawei Yin, Nitesh Chawla, and Chao Huang",
+      "Creator": "LaTeX with acmart 2019/08/05 v1.63a Typesetting articles for the Association for Computing Machinery and hyperref 2023-04-22 v7.00x Hypertext links for LaTeX",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Wed May 15 02:01:42 2024 CEST",
+      "ModDate": "Wed May 15 02:01:42 2024 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "972419 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 8,
+    "image_count": 10,
+    "mathpix_pdf_id": "44938974-a717-4064-8a38-66f36c046f95",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2405.08011v1.lines.json",
+        "bytes": 1042043
+      },
+      {
+        "format": "md",
+        "path": "2405.08011v1.md",
+        "bytes": 53710
+      },
+      {
+        "format": "tex.zip",
+        "path": "2405.08011v1.tex.zip",
+        "bytes": 448776
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2405.08011v1.tiddlers.json",
+    "tiddlers_count": 194,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "A Survey of Large Language Models for Graphs",
@@ -1605,18 +1659,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5084.5,
       "detail": "7 images, 7 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:59:56Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13302.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:59:56Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 129.6,
+      "detail": "178 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:59:56Z",
+      "node": "tiddlers",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.0,
+      "detail": "194 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2405.08011v1/texsrc/main.tex": "sha256:8f52e052a4b7d8f769260fcffa09bfd5ff55fa70ef3b6a476045d3b29b22de40"
+        "/home/wkolbe/pdfdrill-library/2405.08011v1/2405.08011v1.lines.json": "sha256:d8f5af45424ebab6234868f63a11a409305cf3b170d089354d2899bcd85016f1"
       },
       "params_hash": "sha256:e6817e5d009b4d4bd610a00a11381b09ea77cd65ae347f8d27483721f30818d3",
       "algo": "sha256",
-      "ts": "2026-08-03T21:24:09Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:59:56Z",
+      "provenance": "mathpix"
     }
   }
 }

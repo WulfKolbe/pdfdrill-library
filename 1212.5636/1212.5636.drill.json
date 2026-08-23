@@ -5,14 +5,14 @@
     "OCR_BUILT",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1212.5636",
@@ -24,17 +24,21 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 12,
-      "ListItem": 24,
-      "Equation": 7,
-      "Paragraph": 17,
+      "Footnote": 12,
+      "Table": 1,
+      "TableRow": 10,
+      "TableCell": 49,
+      "Sidenote": 23,
+      "Abstract": 1,
+      "Diagram": 7,
+      "Section": 4,
+      "ListItem": 16,
+      "Equation": 8,
+      "Formula": 103,
+      "Paragraph": 120,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_equations_with_cdn": 8,
     "pages": 12,
     "bytes": 605408,
     "page_size": "612 x 792 pts (letter)",
@@ -69,9 +73,6 @@
     "font_count": 27,
     "first_page_chars": 4234,
     "needs_ocr": false,
-    "tiddlers_path": "1212.5636.tiddlers.json",
-    "tiddlers_count": 78,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "MKYPZL+CMR9",
       "NPXPUU+CMR6",
@@ -113,14 +114,13 @@
       "LOMPWM+CMSY8"
     ],
     "has_math_fonts": true,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "abstract": "The increasing interest in Semantic Web technologies has led not only to a rapid growth of semantic data on the Web but also to an increasing number of backend applications with already more than a trillion triples in some cases. Confronted with such huge amounts of data and the future growth, existing state-of-the-art systems for storing RDF and processing SPARQL queries are no longer sufficient. In this paper, we introduce Partout, a distributed engine for efficient RDF processing in a cluster of machines. We propose an effective approach for fragmenting RDF data sets based on a query log, allocating the fragments to nodes in a cluster, and finding the optimal configuration. Partout can efficiently handle updates and its query optimizer produces efficient query execution plans for ad-hoc SPARQL queries. Our experiments show the superiority of our approach to state-of-the-art approaches for partitioning and distributed SPARQL query processing.",
     "abstract_method": "arxiv-abs-page",
@@ -131,7 +131,60 @@
       "Katja Hose",
       "Ralf Schenkel"
     ],
-    "arxiv_primary_category": "cs.DB"
+    "arxiv_primary_category": "cs.DB",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.12",
+      "CreationDate": "Fri Jun 29 13:24:41 2018 CEST",
+      "ModDate": "Fri Jun 29 13:24:41 2018 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "605408 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 12,
+    "image_count": 44,
+    "mathpix_pdf_id": "e4e662c4-7960-4d7b-85b8-91db2203be81",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1212.5636.lines.json",
+        "bytes": 1475488
+      },
+      {
+        "format": "md",
+        "path": "1212.5636.md",
+        "bytes": 65237
+      },
+      {
+        "format": "tex.zip",
+        "path": "1212.5636.tex.zip",
+        "bytes": 476542
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1212.5636.tiddlers.json",
+    "tiddlers_count": 327,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1176,18 +1229,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.6,
       "detail": "78 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:10:23Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 11248.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:10:23Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 395.8,
+      "detail": "367 objects, 8 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:10:24Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.5,
+      "detail": "327 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1212.5636/1212.5636.lines.json": "sha256:5b9f28f400b043c3cc2f837577a4c814568a1f70d0ead706a97eab67752da6de"
+        "/home/wkolbe/pdfdrill-library/1212.5636/1212.5636.lines.json": "sha256:257ac3e0ce3bdd3add102a9b51b65cb5c7a3b8f154083bbc7921badf66d96b19"
       },
       "params_hash": "sha256:f2f331deaf9783e6dfe03cfcf1d44a9457ae149bfeed4f25eaca652088a4904a",
       "algo": "sha256",
-      "ts": "2026-08-04T22:20:06Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:10:23Z",
+      "provenance": "mathpix"
     }
   }
 }

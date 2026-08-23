@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -79,26 +80,80 @@
     "model_object_counts": {
       "Page": 13,
       "Citation": 6,
-      "Equation": 1,
-      "Paragraph": 14,
+      "Diagram": 11,
+      "Section": 6,
+      "ListItem": 3,
+      "Equation": 12,
+      "Formula": 115,
+      "Paragraph": 56,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 12,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 22,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Formality of Sinha's cosimplicial model for long knots spaces and the Gerstenhaber algebra structure of homology",
+      "Subject": "",
+      "Keywords": "multiplicative operads, model categories, long knots",
+      "Author": "Paul Arnaud Songhafouo Tsopméné",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.13",
+      "CreationDate": "Tue Jul 23 21:44:13 2013 CEST",
+      "ModDate": "Tue Jul 23 21:44:13 2013 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "13",
+      "Encrypted": "no",
+      "Page size": "412 x 640 pts",
+      "Page rot": "0",
+      "File size": "250853 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 13,
+    "image_count": 0,
+    "mathpix_pdf_id": "aa41d3af-cb64-417b-8bc0-38a410db58d9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "agt.2013.13.2193.lines.json",
+        "bytes": 406963
+      },
+      {
+        "format": "md",
+        "path": "agt.2013.13.2193.md",
+        "bytes": 28478
+      },
+      {
+        "format": "tex.zip",
+        "path": "agt.2013.13.2193.tex.zip",
+        "bytes": 166603
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 21,
     "bibliography_with_year": 17,
     "bibliography_numeric_citations": 26,
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 26,
     "tiddlers_path": "agt.2013.13.2193.tiddlers.json",
-    "tiddlers_count": 70,
+    "tiddlers_count": 258,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -496,18 +551,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.1,
       "detail": "70 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:31:16Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9069.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:31:16Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 171.0,
+      "detail": "223 objects, 12 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:31:17Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "21 entries, 26+0 cites detected, 26 linked"
+    },
+    {
+      "ts": "2026-08-22T16:31:17Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.8,
+      "detail": "258 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/agt.2013.13.2193/agt.2013.13.2193.lines.json": "sha256:3564b75071af96f40c6436aabbbcbab657337eb83f412d924bbbf1db9da7c978"
+        "/home/wkolbe/pdfdrill-library/agt.2013.13.2193/agt.2013.13.2193.lines.json": "sha256:95bf87206266bd496c1b7a8793df25d4e649740fa03e01cfacba0d686e4a3e4c"
       },
       "params_hash": "sha256:302969b37520e8a8636c379a307e062de80963a7e035d0681f1732cbb2d32265",
       "algo": "sha256",
-      "ts": "2026-08-06T01:04:27Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:31:16Z",
+      "provenance": "mathpix"
     }
   }
 }

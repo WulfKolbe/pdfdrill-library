@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -113,23 +114,28 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 16,
-      "ListItem": 36,
-      "Equation": 43,
-      "Paragraph": 44,
+      "Footnote": 2,
+      "Table": 2,
+      "TableRow": 23,
+      "TableCell": 282,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 22,
+      "Equation": 55,
+      "Formula": 146,
+      "Paragraph": 107,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 55,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "QCGA2018.tiddlers.json",
-    "tiddlers_count": 156,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Quadric Conformal Geometric Algebra of R9,6",
@@ -168,7 +174,32 @@
         "page": 1,
         "url": "https://hal.archives-ouvertes.fr"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "f0a6d286-6260-4a61-8f86-f4c246c386a6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "QCGA2018.lines.json",
+        "bytes": 1013673
+      },
+      {
+        "format": "md",
+        "path": "QCGA2018.md",
+        "bytes": 53181
+      },
+      {
+        "format": "tex.zip",
+        "path": "QCGA2018.tex.zip",
+        "bytes": 83403
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "QCGA2018.tiddlers.json",
+    "tiddlers_count": 371,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Quadric Conformal Geometric Algebra of R9,6",
@@ -981,18 +1012,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2540.5,
       "detail": "6 images, 6 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:16:40Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13134.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:16:41Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 641.1,
+      "detail": "660 objects, 55 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:16:41Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.9,
+      "detail": "371 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/QCGA2018/QCGA2018.lines.json": "sha256:4dfc24370663a7062f40ee6ad4b04e904b4b1a244ed690247ad2627eaf5f1ecb"
+        "/home/wkolbe/pdfdrill-library/QCGA2018/QCGA2018.lines.json": "sha256:4cb93b7bba5653c7e4cab077a1f405feb845b268aea66aadd9d8c2824e471f49"
       },
       "params_hash": "sha256:76c3d98c4105e1efa55443a9d2b78fd19837c7a1c30c1747b23852afabbe6b9e",
       "algo": "sha256",
-      "ts": "2026-08-05T23:01:50Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:16:40Z",
+      "provenance": "mathpix"
     }
   }
 }

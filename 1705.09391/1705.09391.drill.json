@@ -3,16 +3,16 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1705.09391",
@@ -20,27 +20,22 @@
     "bibkey": "1705.09391",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 2,
-      "Paragraph": 81,
-      "Abstract": 1,
-      "Section": 9,
-      "Formula": 187,
-      "Equation": 22,
-      "Diagram": 8,
-      "Theorem": 1,
-      "Proof": 1,
+      "Page": 16,
+      "Footnote": 5,
       "Table": 1,
-      "Citation": 103,
-      "Algorithm": 1,
-      "AlgorithmStep": 11
+      "TableRow": 44,
+      "TableCell": 439,
+      "Abstract": 1,
+      "Diagram": 3,
+      "Picture": 5,
+      "ListItem": 3,
+      "Equation": 22,
+      "Formula": 245,
+      "Paragraph": 59,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 28,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 60,
+    "model_equations_with_cdn": 22,
+    "model_source": "mathpix",
     "pages": 16,
     "bytes": 887611,
     "page_size": "612 x 792 pts (letter)",
@@ -155,9 +150,6 @@
     ],
     "math_fonts": [],
     "has_math_fonts": false,
-    "tiddlers_path": "1705.09391.tiddlers.json",
-    "tiddlers_count": 423,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Given a database and a target attribute of interest, how can we tell whether there exists a functional, or approximately functional dependence of the target on any set of other attributes in the data? How can we reliably, without bias to sample size or dimensionality, measure the strength of such a dependence? And, how can we efficiently discover the optimal or $\\alpha$-approximate top-$k$ dependencies? These are exactly the questions we answer in this paper. As we want to be agnostic on the form of the dependence, we adopt an information-theoretic approach, and construct a reliable, bias correcting score that can be efficiently computed. Moreover, we give an effective optimistic estimator of this score, by which for the first time we can mine the approximate functional dependencies from data with guarantees of optimality. Empirical evaluation shows that the derived score achieves a good bias for variance trade-off, can be used within an efficient discovery algorithm, and indeed discovers meaningful dependencies. Most important, it remains reliable in the face of data sparsity.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -173,7 +165,67 @@
         "page": 11,
         "url": "http://eda.mmci.uni-saarland.de/dora/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Discovering Reliable Approximate Functional Dependencies",
+      "Subject": "",
+      "Keywords": "- Information systems  -> Data mining; - Mathematics of computing  -> Probability and statistics;",
+      "Author": "Panagiotis Mandros, Mario Boley, and Jilles Vreeken",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Tue Jun 20 04:03:02 2017 CEST",
+      "ModDate": "Tue Jun 20 04:03:02 2017 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "887611 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 0,
+    "mathpix_pdf_id": "71a2ccc8-12f2-448e-9ba6-56a2a1144a4b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1705.09391.lines.json",
+        "bytes": 1129877
+      },
+      {
+        "format": "md",
+        "path": "1705.09391.md",
+        "bytes": 59937
+      },
+      {
+        "format": "tex.zip",
+        "path": "1705.09391.tex.zip",
+        "bytes": 340012
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1705.09391.tiddlers.json",
+    "tiddlers_count": 377,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Discovering Reliable Approximate Functional Dependencies",
@@ -1912,16 +1964,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3841.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:05:32Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12671.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:05:33Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 460.9,
+      "detail": "844 objects, 22 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:05:33Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.1,
+      "detail": "377 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1705.09391/1705.09391.lines.json": "sha256:5f7738ecc5e9e126ae60e45c25bb35799b3e59d6970a484d9302b8a6cd26e50e"
+      },
       "params_hash": "sha256:0d5659aa98ed44c43dad5514361987efccfedae04d31e3a250382e95f04b51b0",
       "algo": "sha256",
-      "ts": "2026-08-03T19:38:44Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:05:33Z",
+      "provenance": "mathpix"
     }
   }
 }

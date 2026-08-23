@@ -3,18 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1901.05797",
@@ -22,27 +22,24 @@
     "bibkey": "1901.05797",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 114,
-      "LtxCommand": 2,
+      "Page": 13,
+      "Footnote": 6,
+      "Table": 3,
+      "TableRow": 14,
+      "TableCell": 108,
+      "Sidenote": 24,
       "Abstract": 1,
-      "Section": 22,
-      "Formula": 94,
-      "Equation": 18,
-      "Theorem": 15,
-      "Proof": 13,
-      "Diagram": 10,
-      "Table": 4,
-      "Citation": 32,
-      "Algorithm": 1,
-      "AlgorithmStep": 12
+      "Diagram": 6,
+      "Section": 2,
+      "Picture": 1,
+      "ListItem": 2,
+      "Equation": 14,
+      "Formula": 197,
+      "Paragraph": 86,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 18,
-    "bibliography_with_year": 18,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 32,
+    "model_equations_with_cdn": 14,
+    "model_source": "mathpix",
     "pages": 13,
     "bytes": 232291,
     "page_size": "612 x 792 pts (letter)",
@@ -117,9 +114,6 @@
       "KHFNCL+CMMIB10"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1901.05797.tiddlers.json",
-    "tiddlers_count": 342,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Boolean matrix factorization is a natural and a popular technique for summarizing binary matrices. In this paper, we study a problem of Boolean matrix factorization where we additionally require that the factor matrices have consecutive ones property (OBMF). A major application of this optimization problem comes from graph visualization: standard techniques for visualizing graphs are circular or linear layout, where nodes are ordered in circle or on a line. A common problem with visualizing graphs is clutter due to too many edges. The standard approach to deal with this is to bundle edges together and represent them as ribbon. We also show that we can use OBMF for edge bundling combined with circular or linear layout techniques. We demonstrate that not only this problem is NP-hard but we cannot have a polynomial-time algorithm that yields a multiplicative approximation guarantee (unless P = NP). On the positive side, we develop a greedy algorithm where at each step we look for the best 1-rank factorization. Since even obtaining 1-rank factorization is NP-hard, we propose an iterative algorithm where we fix one side and and find the other, reverse the roles, and repeat. We show that this step can be done in linear time using pq-trees. We also extend the problem to cyclic ones property and symmetric factorizations. Our experiments show that our algorithms find high-quality factorizations and scale well.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -146,7 +140,67 @@
         "page": ""
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Fri Jan 18 03:03:42 2019 CET",
+      "ModDate": "Fri Jan 18 03:03:42 2019 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "13",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "232291 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 13,
+    "image_count": 27,
+    "mathpix_pdf_id": "de75aed2-d7a7-4fe6-b391-92eeea138f43",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1901.05797.lines.json",
+        "bytes": 1166629
+      },
+      {
+        "format": "md",
+        "path": "1901.05797.md",
+        "bytes": 51296
+      },
+      {
+        "format": "tex.zip",
+        "path": "1901.05797.tex.zip",
+        "bytes": 433591
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1901.05797.tiddlers.json",
+    "tiddlers_count": 373,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2330,16 +2384,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4070.1,
       "detail": "54 images, 24 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:23:24Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9542.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:23:24Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 310.4,
+      "detail": "478 objects, 14 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:23:24Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.5,
+      "detail": "373 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1901.05797/1901.05797.lines.json": "sha256:d40555eb09ef67bd965f008ea7624b1b4968f7e8971c1cc14768af3ea970b765"
+      },
       "params_hash": "sha256:7d0e51192cb85f65c32e76f48e8a95e9dc69d71c1532cdc94043a010fb7e9f85",
       "algo": "sha256",
-      "ts": "2026-08-03T19:45:11Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:23:24Z",
+      "provenance": "mathpix"
     }
   }
 }

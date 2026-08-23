@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -95,23 +96,26 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "ListItem": 20,
-      "Equation": 33,
-      "Paragraph": 35,
+      "Footnote": 8,
+      "Sidenote": 16,
+      "Abstract": 1,
+      "Diagram": 4,
+      "Picture": 1,
+      "ListItem": 12,
+      "Equation": 14,
+      "Formula": 125,
+      "Paragraph": 55,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 14,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 4 unmapped private-use character(s) remain (U+F8EE×1, U+F8F0×1, U+F8F9×1, U+F8FB×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "49_learning_lie_group_symmetry_tr.tiddlers.json",
-    "tiddlers_count": 114,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The problem of detecting and quantifying the pres-\n       ence of symmetries in datasets is useful for model\n       selection, generative modeling, and data analy-\n       sis, amongst others. While existing methods for\n       hard-coding transformations in neural networks\n       require prior knowledge of the symmetries of the\n       task at hand, this work focuses on discovering\n       and characterizing unknown symmetries present\n       in the dataset, namely, Lie group symmetry trans-\n       formations beyond the traditional ones usually\n       considered in the field (rotation, scaling, and trans-\n       lation). Specifically, we consider a scenario in\n       which a dataset has been transformed by a one-\n       parameter subgroup of transformations with dif-\n       ferent parameter values for each data point. Our\n       goal is to characterize the transformation group              Figure 1. The distribution of transformations in a toy dataset that\n       and the distribution of the parameter values. The             correspond to the Lie groups of rotation and (isotropic) scaling,\n       results showcase the effectiveness of the approach            given in terms of the parameters degree and scaling factor respec-\n       in both these settings.                                       tively; crucially, these groups are differentiable and can be (locally)\n                                                                     decomposed into one-parameter subgroups.",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
@@ -133,7 +137,59 @@
         "page": 8,
         "url": "https://books.google.nl/books?id=sI2bAxgLMXYC"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Learning Lie Group Symmetry Transformations with Neural Networks",
+      "Subject": "Proceedings of the International Conference on Machine Learning 2023",
+      "Keywords": "Machine Learning, ICML",
+      "Author": "Alex Gabel, Victoria Klein, Riccardo Valperga, Jeroen S. W. Lamb, Kevin Webster, Rick Quax, Efstratios Gavves",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.24",
+      "CreationDate": "Sat Jul  1 15:02:09 2023 CEST",
+      "ModDate": "Sat Jul  1 15:02:09 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "898763 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 9,
+    "image_count": 11,
+    "mathpix_pdf_id": "a4a1319a-22a9-4454-969b-862c0bf7a3c1",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "49_learning_lie_group_symmetry_tr.lines.json",
+        "bytes": 703854
+      },
+      {
+        "format": "md",
+        "path": "49_learning_lie_group_symmetry_tr.md",
+        "bytes": 35186
+      },
+      {
+        "format": "tex.zip",
+        "path": "49_learning_lie_group_symmetry_tr.tex.zip",
+        "bytes": 358655
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "49_learning_lie_group_symmetry_tr.tiddlers.json",
+    "tiddlers_count": 262,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Learning Lie Group Symmetry Transformations with Neural Networks",
@@ -1450,18 +1506,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3681.0,
       "detail": "8 images, 6 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:14:02Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9341.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:14:03Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 256.4,
+      "detail": "246 objects, 14 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:14:03Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.6,
+      "detail": "262 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/49_learning_lie_group_symmetry_tr/49_learning_lie_group_symmetry_tr.lines.json": "sha256:68d2b1b9177ee4c41ddb7ac6e540333291b1649a88864a5ae56b3058b103f8e5"
+        "/home/wkolbe/pdfdrill-library/49_learning_lie_group_symmetry_tr/49_learning_lie_group_symmetry_tr.lines.json": "sha256:889aa7c98103d19c656dc7c1e7c01a64fde9f1e65c4ae07f26c95e2d387e37b0"
       },
       "params_hash": "sha256:010a6f8c44c8c188470242cae9f24d6bd25be43c30eec51d758249e1c0455d62",
       "algo": "sha256",
-      "ts": "2026-08-03T22:15:15Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:14:02Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,12 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "TOC_ABSENT",
     "ABSTRACT_ABSENT",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -63,25 +64,78 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 8,
-      "ListItem": 6,
-      "Equation": 1,
-      "Paragraph": 9,
+      "Footnote": 7,
+      "Table": 4,
+      "TableRow": 25,
+      "TableCell": 100,
+      "Sidenote": 16,
+      "Abstract": 1,
+      "Diagram": 3,
+      "Section": 4,
+      "ListItem": 4,
+      "Formula": 31,
+      "Paragraph": 34,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "2025_ICEIS__Jlio___SUBMISSION_.tiddlers.json",
-    "tiddlers_count": 41,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
-    "abstract_search_scope": "first2pages"
+    "abstract_search_scope": "first2pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.26",
+      "CreationDate": "Wed Jan 21 15:47:34 2026 CET",
+      "ModDate": "Wed Jan 21 15:47:34 2026 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "155807 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 8,
+    "image_count": 0,
+    "mathpix_pdf_id": "b08e4184-77cf-49bf-a63d-012a2b4a3d59",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2025_ICEIS__Jlio___SUBMISSION_.lines.json",
+        "bytes": 959889
+      },
+      {
+        "format": "md",
+        "path": "2025_ICEIS__Jlio___SUBMISSION_.md",
+        "bytes": 36848
+      },
+      {
+        "format": "tex.zip",
+        "path": "2025_ICEIS__Jlio___SUBMISSION_.tex.zip",
+        "bytes": 40836
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "2025_ICEIS__Jlio___SUBMISSION_.tiddlers.json",
+    "tiddlers_count": 130,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -341,18 +395,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3165.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:58:10Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8998.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:58:10Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 229.7,
+      "detail": "238 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:58:10Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.7,
+      "detail": "130 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2025_ICEIS__Jlio___SUBMISSION_/2025_ICEIS__Jlio___SUBMISSION_.lines.json": "sha256:a1f076429031e89a1eee8ab7f48484921210c36f8dc22d16611eb6cc6873a8b1"
+        "/home/wkolbe/pdfdrill-library/2025_ICEIS__Jlio___SUBMISSION_/2025_ICEIS__Jlio___SUBMISSION_.lines.json": "sha256:a05c5d3e8d3ff9828ebd41c6089d2bba1db0e7a1de15a5c4a2420b7baeca7f30"
       },
       "params_hash": "sha256:625bd195dc60ac4173858299bbb3fe9cdfdfa93df5310463f687e8ed046e02bc",
       "algo": "sha256",
-      "ts": "2026-08-03T20:45:25Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:58:10Z",
+      "provenance": "mathpix"
     }
   }
 }

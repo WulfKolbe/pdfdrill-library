@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -72,22 +73,73 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 11,
+      "Footnote": 7,
+      "Sidenote": 2,
+      "Diagram": 15,
       "ListItem": 2,
-      "Equation": 15,
-      "Paragraph": 22,
+      "Equation": 16,
+      "Formula": 48,
+      "Paragraph": 67,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 16,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "hering_circuit.DVI",
+      "Author": "kirk",
+      "Creator": "PScript5.dll Version 5.2.2",
+      "Producer": "Acrobat Distiller 15.0 (Windows)",
+      "CreationDate": "Sat Jul 25 03:21:15 2020 CEST",
+      "ModDate": "Sat Jul 25 03:21:15 2020 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "143269 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 55,
+    "mathpix_pdf_id": "e782d0ce-1300-411e-9d4a-63555cece5bf",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "hering_circuit.lines.json",
+        "bytes": 458383
+      },
+      {
+        "format": "md",
+        "path": "hering_circuit.md",
+        "bytes": 31638
+      },
+      {
+        "format": "tex.zip",
+        "path": "hering_circuit.tex.zip",
+        "bytes": 67154
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "hering_circuit.tiddlers.json",
-    "tiddlers_count": 67,
+    "tiddlers_count": 185,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -393,18 +445,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "67 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:07:03Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9048.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:07:03Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 151.7,
+      "detail": "169 objects, 16 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:07:03Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.5,
+      "detail": "185 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/hering_circuit/hering_circuit.lines.json": "sha256:b0d49b79a3956534677259e60f9a41653c32835bac4a2dadb29a435e655cd608"
+        "/home/wkolbe/pdfdrill-library/hering_circuit/hering_circuit.lines.json": "sha256:72903719bf3055b8d2e867e43799deb637e25d49487c689e9f37e342b89b4773"
       },
       "params_hash": "sha256:5ccffd20bbdf53ab2a0fb98203e66b495ead404edaecd5307d2d186c8fde8819",
       "algo": "sha256",
-      "ts": "2026-08-06T01:20:42Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:07:03Z",
+      "provenance": "mathpix"
     }
   }
 }

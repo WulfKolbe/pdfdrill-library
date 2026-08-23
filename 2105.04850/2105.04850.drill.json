@@ -3,16 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2105.04850",
@@ -20,24 +21,23 @@
     "bibkey": "2105.04850",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 288,
-      "Formula": 173,
-      "LtxCommand": 32,
+      "Page": 11,
+      "Citation": 5,
+      "Table": 8,
+      "TableRow": 60,
+      "TableCell": 234,
+      "Sidenote": 20,
       "Abstract": 1,
-      "Section": 22,
-      "Table": 9,
+      "Diagram": 5,
+      "ListItem": 27,
       "Equation": 6,
-      "Citation": 111,
-      "Algorithm": 1,
-      "AlgorithmStep": 40
+      "Formula": 201,
+      "Paragraph": 122,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 76,
-    "bibliography_with_year": 76,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 111,
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "pages": 11,
     "bytes": 1001372,
     "page_size": "612 x 792 pts (letter)",
@@ -131,8 +131,70 @@
       "MGWEZM+LibertineMathBMI5"
     ],
     "has_math_fonts": true,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Reinforcement Learning from Reformulations in Conversational Question Answering over Knowledge Graphs",
+      "Subject": "-  Information systems  ->  Question answering;",
+      "Keywords": "",
+      "Author": "Magdalena Kaiser, Rishiraj Saha Roy, and Gerhard Weikum",
+      "Creator": "LaTeX with acmart 2018/04/14 v1.53 Typesetting articles for the Association for Computing Machinery and hyperref 2020-05-15 v7.00e Hypertext links for LaTeX",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Mon Aug 23 03:42:04 2021 CEST",
+      "ModDate": "Mon Aug 23 03:42:04 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "1001372 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 5,
+    "mathpix_pdf_id": "d69c53aa-9dd8-4eaa-8f4b-dafab6b7735a",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2105.04850.lines.json",
+        "bytes": 1654561
+      },
+      {
+        "format": "md",
+        "path": "2105.04850.md",
+        "bytes": 72073
+      },
+      {
+        "format": "tex.zip",
+        "path": "2105.04850.tex.zip",
+        "bytes": 300594
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 80,
+    "bibliography_with_year": 76,
+    "bibliography_numeric_citations": 104,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 104,
     "tiddlers_path": "2105.04850.tiddlers.json",
-    "tiddlers_count": 636,
+    "tiddlers_count": 504,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
@@ -776,16 +838,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5181.3,
       "detail": "4 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:55:31Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13465.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:55:32Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 440.2,
+      "detail": "702 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:55:33Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "80 entries, 104+0 cites detected, 104 linked"
+    },
+    {
+      "ts": "2026-08-22T15:55:33Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.0,
+      "detail": "504 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2105.04850/2105.04850.lines.json": "sha256:ef0466709c172d696b7ffcf5a467c46f8368099f6416597268ff8bb9d09c97b5"
+      },
       "params_hash": "sha256:c6f75b43c723012454bdd50bbda1a813bece68cd2a5ae6ab953df4f707d68e69",
       "algo": "sha256",
-      "ts": "2026-08-03T20:54:38Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:55:32Z",
+      "provenance": "mathpix"
     }
   }
 }

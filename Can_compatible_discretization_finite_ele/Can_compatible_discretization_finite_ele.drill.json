@@ -2,9 +2,81 @@
   "pdf": "Can_compatible_discretization_finite_ele.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
-  "evidence": {},
+  "evidence": {
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "CMBX6",
+      "Creator": "David M. Jones",
+      "Producer": "GPL Ghostscript 9.05",
+      "CreationDate": "Tue Jan 28 06:33:45 2014 CET",
+      "ModDate": "Tue Jan 28 06:33:45 2014 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "28",
+      "Encrypted": "no",
+      "Page size": "362.83 x 272.13 pts",
+      "Page rot": "0",
+      "File size": "257447 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 28,
+    "font_count": 18,
+    "image_count": 2,
+    "mathpix_pdf_id": "a964cdad-23b1-4fdc-828e-716b078e3ffd",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Can_compatible_discretization_finite_ele.lines.json",
+        "bytes": 713925
+      },
+      {
+        "format": "md",
+        "path": "Can_compatible_discretization_finite_ele.md",
+        "bytes": 15288
+      },
+      {
+        "format": "tex.zip",
+        "path": "Can_compatible_discretization_finite_ele.tex.zip",
+        "bytes": 42276
+      }
+    ],
+    "bibkey": "Can_compatible_discretization_finite_ele",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 28,
+      "Diagram": 1,
+      "Section": 2,
+      "ListItem": 2,
+      "Equation": 7,
+      "Formula": 28,
+      "Paragraph": 41,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 7,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "Can_compatible_discretization_finite_ele.tiddlers.json",
+    "tiddlers_count": 127,
+    "tiddlers_svg_mode": "inline"
+  },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
@@ -62,6 +134,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2321.0,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:57:46Z",
+      "node": "mathpix",
+      "from": "IMAGES_LAYER_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6317.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:57:46Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN,MATHPIX_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 174.1,
+      "detail": "110 objects, 7 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:57:47Z",
+      "node": "tiddlers",
+      "from": "IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.6,
+      "detail": "127 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Can_compatible_discretization_finite_ele/Can_compatible_discretization_finite_ele.lines.json": "sha256:2b3092ee0467daf50c00207bad2ced4da3f127705061e40bb2f602ea09ad1012"
+      },
+      "params_hash": "sha256:1fa09bcceef71ebe011a1e4c771f94b5c17ea450a45355ab1b5d2a294d6d4096",
+      "algo": "sha256",
+      "ts": "2026-08-22T19:57:46Z",
+      "provenance": "mathpix"
+    }
+  }
 }

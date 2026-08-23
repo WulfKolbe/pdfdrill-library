@@ -5,6 +5,7 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -50,21 +51,67 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "Formula": 63,
-      "Paragraph": 9,
+      "Diagram": 11,
+      "Formula": 87,
+      "Paragraph": 21,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "Chromium",
+      "Producer": "Skia/PDF m90",
+      "CreationDate": "Sun Oct 10 11:21:08 2021 CEST",
+      "ModDate": "Sun Oct 10 11:21:08 2021 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "594.96 x 841.92 pts (A4)",
+      "Page rot": "0",
+      "File size": "233904 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 9,
+    "image_count": 2,
+    "mathpix_pdf_id": "4818af30-d40e-4e90-8f9f-81a2819a2e4e",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "wordpress.discretization.de-A Quick and Dirty Introduction to Exterior Calculus  Part IV Differential Operators.lines.json",
+        "bytes": 256240
+      },
+      {
+        "format": "md",
+        "path": "wordpress.discretization.de-A Quick and Dirty Introduction to Exterior Calculus  Part IV Differential Operators.md",
+        "bytes": 18678
+      },
+      {
+        "format": "tex.zip",
+        "path": "wordpress.discretization.de-A Quick and Dirty Introduction to Exterior Calculus  Part IV Differential Operators.tex.zip",
+        "bytes": 230284
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "wordpress.discretization.de-A Quick and Dirty Introduction to Exterior Calculus  Part IV Differential Operators.tiddlers.json",
-    "tiddlers_count": 114,
+    "tiddlers_count": 154,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -188,18 +235,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 8.4,
       "detail": "114 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T15:23:53Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9236.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:23:54Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 82.5,
+      "detail": "129 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:23:54Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.1,
+      "detail": "154 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/wordpress.discretization.de-A Quick and Dirty Introduction to Exterior Calculus  Part IV Differential Operators/wordpress.discretization.de-A Quick and Dirty Introduction to Exterior Calculus  Part IV Differential Operators.lines.json": "sha256:dd8b476b52d5437497d5a6d84f161c4c95e342ec61ace55f4acf040d055d30b5"
+        "/home/wkolbe/pdfdrill-library/wordpress.discretization.de-A Quick and Dirty Introduction to Exterior Calculus  Part IV Differential Operators/wordpress.discretization.de-A Quick and Dirty Introduction to Exterior Calculus  Part IV Differential Operators.lines.json": "sha256:44b2ca11170ee05465f34e0f4395a86ca4aae64ae2e288b951f5fb495c21beb6"
       },
       "params_hash": "sha256:21c771d1a82f88faf5d4e1d6c271a5fc387b6035feb44c2c6f7d101dfc56e41f",
       "algo": "sha256",
-      "ts": "2026-08-06T02:09:43Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:23:53Z",
+      "provenance": "mathpix"
     }
   }
 }

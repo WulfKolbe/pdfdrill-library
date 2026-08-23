@@ -5,14 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -102,16 +102,21 @@
     "bibkey": "2105.06220 (1)",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 65,
+      "Page": 16,
+      "Footnote": 6,
+      "Table": 7,
+      "TableRow": 48,
+      "TableCell": 531,
       "Abstract": 1,
-      "Section": 26,
-      "Formula": 97,
-      "Equation": 12,
-      "Table": 23,
-      "Citation": 97
+      "Diagram": 4,
+      "ListItem": 52,
+      "Equation": 8,
+      "Formula": 98,
+      "Paragraph": 71,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 8,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 16,
       "placed": 47,
@@ -121,14 +126,6 @@
       "numbered": 26,
       "roots": 1
     },
-    "bibliography_entries": 43,
-    "bibliography_with_year": 43,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 97,
-    "tiddlers_path": "2105.06220 (1).tiddlers.json",
-    "tiddlers_count": 301,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Document layout analysis is crucial for understanding document structures. On this task, vision and semantics of documents, and relations between layout components contribute to the understanding process. Though many works have been proposed to exploit the above information, they show unsatisfactory results. NLP-based methods model layout analysis as a sequence labeling task and show insufficient capabilities in layout modeling. CV-based methods model layout analysis as a detection or segmentation task, but bear limitations of inefficient modality fusion and lack of relation modeling between layout components. To address the above limitations, we propose a unified framework VSR for document layout analysis, combining vision, semantics and relations. VSR supports both NLP-based and CV-based methods. Specifically, we first introduce vision through document image and semantics through text embedding maps. Then, modality-specific visual and semantic features are extracted using a two-stream network, which are adaptively fused to make full use of complementary information. Finally, given component candidates, a relation module based on graph neural network is incorported to model relations between components and output final results. On three popular benchmarks, VSR outperforms previous models by large margins. Code will be released soon.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -149,7 +146,67 @@
         "url": "https://icdar2021.org/competitions/competition-on-scientific-literature-parsing/",
         "kind": "text"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Fri May 14 02:55:53 2021 CEST",
+      "ModDate": "Fri May 14 02:55:53 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "889132 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 115,
+    "mathpix_pdf_id": "17215042-035b-4b62-9108-d5dab3e980f4",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2105.06220 (1).lines.json",
+        "bytes": 1399799
+      },
+      {
+        "format": "md",
+        "path": "2105.06220 (1).md",
+        "bytes": 47317
+      },
+      {
+        "format": "tex.zip",
+        "path": "2105.06220 (1).tex.zip",
+        "bytes": 366502
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2105.06220 (1).tiddlers.json",
+    "tiddlers_count": 280,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2073,18 +2130,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3442.3,
       "detail": "63 images, 63 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:08:12Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13221.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:08:12Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 378.1,
+      "detail": "843 objects, 8 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:08:12Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.1,
+      "detail": "280 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2105.06220 (1)/texsrc/main.tex": "sha256:fc2058435dd4f6470c17e8a35d9df20828e86691b520467b8e0f2148e53a7132"
+        "/home/wkolbe/pdfdrill-library/2105.06220 (1)/2105.06220 (1).lines.json": "sha256:91e7ca99dcb860833f021964926d761698bfb55ba2ccbda8e2700c54d253605c"
       },
       "params_hash": "sha256:639b3e4f962adc3a7e4cd74508984465911678a6922b2f4b0d4115978c84f5b3",
       "algo": "sha256",
-      "ts": "2026-08-03T20:54:44Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:08:12Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -7,13 +7,13 @@
     "MODEL_BUILT",
     "LATEX_INGESTED",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 26,
@@ -105,21 +105,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 26,
-      "Citation": 10,
-      "ListItem": 17,
-      "Equation": 359,
-      "Paragraph": 167,
+      "Footnote": 9,
+      "Abstract": 1,
+      "Section": 6,
+      "ListItem": 8,
+      "Equation": 113,
+      "Formula": 226,
+      "Paragraph": 154,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 113,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 14 unmapped private-use character(s) remain (U+F8F1×1, U+F8F2×1, U+F8F3×1, U+F8F4×8, U+F8FC×1, U+F8FD×1, U+F8FE×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "2205.13449v2.tgz",
     "latex_macros": 25,
@@ -127,14 +129,6 @@
     "latex_attached": 0,
     "latex_created": 0,
     "latex_graphics": 0,
-    "bibliography_entries": 32,
-    "bibliography_with_year": 30,
-    "bibliography_numeric_citations": 75,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 75,
-    "tiddlers_path": "2205.13449v2.tiddlers.json",
-    "tiddlers_count": 627,
-    "tiddlers_svg_mode": "inline",
     "abstract": "In this paper, we discuss characteristic polynomials in (Clifford) geometric algebras ${\\mathcal {G}}_{p,q}$ of vector space of dimension $n=p+q$. We present basis-free formulas for all characteristic polynomial coefficients in the cases $n\\leq 6$, alongside with a method to obtain general form of these formulas. The formulas involve only the operations of geometric product, summation, and operations of conjugation. All the formulas are verified using computer calculations. We present an analytical proof of all formulas in the case $n=4$, and one of the formulas in the case $n=5$. We present some new properties of the operations of conjugation and grade projection and use them to obtain the results of this paper. We also present formulas for characteristic polynomial coefficients in some special cases. In particular, the formulas for vectors (elements of grade $1$) and basis elements are presented in the case of arbitrary $n$, the formulas for rotors (elements of spin groups) are presented in the cases $n\\leq 5$. The results of this paper can be used in different applications of geometric algebras in computer graphics, computer vision, engineering, and physics. The presented basis-free formulas for characteristic polynomial coefficients can also be used in symbolic computation.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -142,7 +136,57 @@
     "arxiv_authors": [
       "K. S. Abdulkhaev",
       "D. S. Shirokov"
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:2205.13449v2  [math-ph]  11 Sep 2022",
+      "Creator": "dvips(k) 2020.1 Copyright 2020 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Tue Sep 13 03:59:51 2022 CEST",
+      "ModDate": "Tue Sep 13 03:59:51 2022 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "26",
+      "Encrypted": "no",
+      "Page size": "439.37 x 666.14 pts",
+      "Page rot": "0",
+      "File size": "245887 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 26,
+    "image_count": 83,
+    "mathpix_pdf_id": "ed8f991a-d00c-4117-b4f0-808cdfc316eb",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2205.13449v2.lines.json",
+        "bytes": 1052294
+      },
+      {
+        "format": "md",
+        "path": "2205.13449v2.md",
+        "bytes": 117655
+      },
+      {
+        "format": "tex.zip",
+        "path": "2205.13449v2.tex.zip",
+        "bytes": 121390
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2205.13449v2.tiddlers.json",
+    "tiddlers_count": 561,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:2205.13449v2  [math-ph]  11 Sep 2022",
@@ -3485,18 +3529,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7295.6,
       "detail": "166 images, 83 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:25:46Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9526.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:25:47Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 1555.8,
+      "detail": "544 objects, 113 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:25:49Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.5,
+      "detail": "561 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2205.13449v2/2205.13449v2.lines.json": "sha256:f4d99caa0bcd456d79168163326971bbda6e456fa674796806902a5f1b8d4623"
+        "/home/wkolbe/pdfdrill-library/2205.13449v2/2205.13449v2.lines.json": "sha256:17dd6a991902feac1618c858c69cadf85b189f823998076e4a6b138c4ea73846"
       },
       "params_hash": "sha256:23c0ef43e4d14e659d7a163cfe0ff4299f23562a7cf0f2bcd45c14d023ec97b5",
       "algo": "sha256",
-      "ts": "2026-08-03T20:58:38Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:25:47Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

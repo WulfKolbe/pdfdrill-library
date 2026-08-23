@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 7,
@@ -50,22 +51,27 @@
     "bibkey": "1609.04938v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 47,
+      "Page": 7,
+      "Footnote": 14,
+      "Citation": 1,
+      "Table": 5,
+      "TableRow": 29,
+      "TableCell": 107,
+      "Sidenote": 14,
       "Abstract": 1,
-      "Section": 12,
-      "Formula": 54,
-      "Equation": 5,
-      "LtxCommand": 2,
-      "Table": 7,
-      "Citation": 75
+      "Diagram": 5,
+      "ListItem": 5,
+      "Equation": 6,
+      "Formula": 59,
+      "Paragraph": 44,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "1609.04938v1.tgz",
     "latex_macros": 1,
@@ -75,14 +81,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "1609.04938v1.tgz",
     "merge_paragraphs_changed": 6,
-    "bibliography_entries": 16,
-    "bibliography_with_year": 15,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 14,
-    "bibliography_cites": 7,
-    "tiddlers_path": "1609.04938v1.tiddlers.json",
-    "tiddlers_count": 220,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "ACKPER+CMSY9",
       "FVWIRX+NimbusRomNo9L-Medi",
@@ -133,7 +131,65 @@
       "Anssi Kanervisto",
       "Alexander M. Rush"
     ],
-    "arxiv_primary_category": "cs.CV"
+    "arxiv_primary_category": "cs.CV",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "WYGIWYS: A Visual LaTeX Decompiler",
+      "Author": "Yuntian Deng, Anssi Kanervisto, Alexander M. Rush",
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.12",
+      "CreationDate": "Mon Sep 19 02:11:57 2016 CEST",
+      "ModDate": "Mon Sep 19 02:11:57 2016 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "847216 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 7,
+    "image_count": 22,
+    "mathpix_pdf_id": "e080a39b-8a11-4cff-8bad-45eba4835527",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1609.04938v1.lines.json",
+        "bytes": 874345
+      },
+      {
+        "format": "md",
+        "path": "1609.04938v1.md",
+        "bytes": 35608
+      },
+      {
+        "format": "tex.zip",
+        "path": "1609.04938v1.tex.zip",
+        "bytes": 204092
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 16,
+    "bibliography_with_year": 15,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 14,
+    "bibliography_cites": 7,
+    "tiddlers_path": "1609.04938v1.tiddlers.json",
+    "tiddlers_count": 199,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "WYGIWYS: A Visual LaTeX Decompiler",
@@ -801,18 +857,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1981.6,
       "detail": "11 images, 9 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:49:48Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9332.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:49:48Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 263.5,
+      "detail": "298 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:49:49Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "16 entries, 0+14 cites detected, 7 linked"
+    },
+    {
+      "ts": "2026-08-22T14:49:49Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.3,
+      "detail": "199 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1609.04938v1/texsrc/main.tex": "sha256:afaa7abaf6f5f64588948394eb7d837badd850e42fa340e87d64d232f8e64c94"
+        "/home/wkolbe/pdfdrill-library/1609.04938v1/1609.04938v1.lines.json": "sha256:2820683de9d6a1a8b5b8b4364693b82f4f5b872e98ae60a53cf18d941c6dc8aa"
       },
       "params_hash": "sha256:99258097fd4e7ea0d0c8e52a351998b3bb734d27bb6059728092d58a278d7a40",
       "algo": "sha256",
-      "ts": "2026-08-03T19:37:18Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:49:48Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

@@ -5,13 +5,13 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 19,
@@ -80,16 +80,17 @@
     "bibkey": "2404.12981v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 96,
+      "Page": 19,
       "Abstract": 1,
-      "Section": 16,
-      "Formula": 403,
+      "ListItem": 6,
       "Equation": 18,
-      "Theorem": 7,
-      "Citation": 30
+      "Formula": 427,
+      "Paragraph": 69,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 18,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 19,
       "placed": 37,
@@ -99,14 +100,6 @@
       "numbered": 16,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "2404.12981v1.tiddlers.json",
-    "tiddlers_count": 598,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We investigate the geometry of holomorphic vector bundles $E$ over a Riemann surface $C$ together with a section of the endomorphism bundle tensored with $K^{1/2}$ -- a square root of the canonical bundle $K$. These parallel to some extent the various features of usual Higgs bundles, such as spectral curve constructions, but some features are radically different. We make essential use of the mod 2 index to distinguish two families of moduli spaces, and provide examples in low genus.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -114,7 +107,67 @@
     "arxiv_authors": [
       "Nigel Hitchin"
     ],
-    "arxiv_primary_category": "math.AG"
+    "arxiv_primary_category": "math.AG",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "GPL Ghostscript 10.01.2",
+      "CreationDate": "Mon Apr 22 02:59:34 2024 CEST",
+      "ModDate": "Mon Apr 22 02:59:34 2024 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "19",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "203177 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 19,
+    "image_count": 15,
+    "mathpix_pdf_id": "cce1ca5e-5d86-4fdb-bedc-718ee6c14ce6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2404.12981v1.lines.json",
+        "bytes": 683041
+      },
+      {
+        "format": "md",
+        "path": "2404.12981v1.md",
+        "bytes": 55937
+      },
+      {
+        "format": "tex.zip",
+        "path": "2404.12981v1.tex.zip",
+        "bytes": 59260
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2404.12981v1.tiddlers.json",
+    "tiddlers_count": 558,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1026,16 +1079,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3973.1,
       "detail": "30 images, 15 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:50:47Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9214.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:50:48Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 862.2,
+      "detail": "542 objects, 18 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:50:48Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 18.2,
+      "detail": "558 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2404.12981v1/2404.12981v1.lines.json": "sha256:c2ac051bc19ba5f3bb24d4607c24d11d9d830098666fa6aa3e3f22d0176171a9"
+      },
       "params_hash": "sha256:be06faebf07523cd7b1841de42a517eba33a4213f064459805d70d4d217f9dd2",
       "algo": "sha256",
-      "ts": "2026-08-03T21:23:33Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:50:47Z",
+      "provenance": "mathpix"
     }
   }
 }

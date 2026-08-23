@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -66,22 +67,69 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 4,
-      "ListItem": 15,
-      "Equation": 10,
-      "Paragraph": 7,
+      "Section": 4,
+      "ListItem": 12,
+      "Equation": 9,
+      "Formula": 30,
+      "Paragraph": 22,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 9,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 8 unmapped private-use character(s) remain (U+F8EB×2, U+F8ED×2, U+F8F6×2, U+F8F8×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.26",
+      "CreationDate": "Sat May 24 13:12:11 2025 CEST",
+      "ModDate": "Sat May 24 13:12:11 2025 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "4",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "129701 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 4,
+    "image_count": 0,
+    "mathpix_pdf_id": "88874f39-7c48-4c2d-a665-6caaa983c474",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "lattic_constants_bigmodel.lines.json",
+        "bytes": 105095
+      },
+      {
+        "format": "md",
+        "path": "lattic_constants_bigmodel.md",
+        "bytes": 6014
+      },
+      {
+        "format": "tex.zip",
+        "path": "lattic_constants_bigmodel.tex.zip",
+        "bytes": 7259
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "lattic_constants_bigmodel.tiddlers.json",
-    "tiddlers_count": 53,
+    "tiddlers_count": 99,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -303,18 +351,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.9,
       "detail": "53 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:32:30Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5699.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:32:30Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 62.9,
+      "detail": "82 objects, 9 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:32:30Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.4,
+      "detail": "99 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/lattic_constants_bigmodel/lattic_constants_bigmodel.lines.json": "sha256:12c3631a3ae07bad7c5fdd50d7706ebab4a51b325bf05ade152ac3a6f375537a"
+        "/home/wkolbe/pdfdrill-library/lattic_constants_bigmodel/lattic_constants_bigmodel.lines.json": "sha256:f55225cd6bf7a66c58f2faa4a9b594433cd3a1d26ca507549e145340078e43e3"
       },
       "params_hash": "sha256:277d374216aa579de36b86b3d7fd3489a83f3da86b0d031d763de6335919859c",
       "algo": "sha256",
-      "ts": "2026-08-06T01:23:31Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:32:30Z",
+      "provenance": "mathpix"
     }
   }
 }

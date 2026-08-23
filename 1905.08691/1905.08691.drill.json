@@ -5,12 +5,12 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 25,
@@ -120,19 +120,19 @@
     "bibkey": "1905.08691",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 122,
+      "Page": 25,
+      "Footnote": 2,
+      "Sidenote": 1,
       "Abstract": 1,
-      "Section": 18,
-      "Formula": 264,
-      "LtxCommand": 27,
-      "Proof": 17,
+      "Diagram": 18,
+      "ListItem": 30,
       "Equation": 5,
-      "Citation": 43,
-      "Algorithm": 3,
-      "AlgorithmStep": 27
+      "Formula": 494,
+      "Paragraph": 88,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 5,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 25,
       "placed": 48,
@@ -142,14 +142,6 @@
       "numbered": 18,
       "roots": 1
     },
-    "bibliography_entries": 22,
-    "bibliography_with_year": 22,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 43,
-    "tiddlers_path": "1905.08691.tiddlers.json",
-    "tiddlers_count": 519,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Voronoi diagrams are a fundamental geometric data structure for obtaining proximity relations. We consider collections of axis-aligned orthogonal polyhedra in two and three-dimensional space under the max-norm, which is a particularly useful scenario in certain application domains. We construct the exact Voronoi diagram inside an orthogonal polyhedron with holes defined by such polyhedra. Our approach avoids creating full-dimensional elements on the Voronoi diagram and yields a skeletal representation of the input object. We introduce a complete algorithm in 2D and 3D that follows the subdivision paradigm relying on a bounding-volume hierarchy; this is an original approach to the problem. The complexity is adaptive and comparable to that of previous methods. Under a mild assumption it is $O(n / \\Delta + 1 / \\Delta^2)$ in 2D or $O(n\\alpha^2 / \\Delta^2 +1 / \\Delta^3)$ in 3D, where $n$ is the number of sites, namely edges or facets resp., $\\Delta$ is the maximum cell size for the subdivision to stop, and $\\alpha$ bounds vertex cardinality per facet. We also provide a numerically stable, open-source implementation in Julia, illustrating the practical nature of our algorithm.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -158,7 +150,67 @@
       "Ioannis Z. Emiris",
       "Christina Katsamaki"
     ],
-    "arxiv_primary_category": "cs.CG"
+    "arxiv_primary_category": "cs.CG",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Aug 21 03:25:10 2019 CEST",
+      "ModDate": "Wed Aug 21 03:25:10 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "25",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "732191 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 25,
+    "image_count": 50,
+    "mathpix_pdf_id": "0743c57f-6360-4366-b443-55bd636686a7",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1905.08691.lines.json",
+        "bytes": 1018186
+      },
+      {
+        "format": "md",
+        "path": "1905.08691.md",
+        "bytes": 79012
+      },
+      {
+        "format": "tex.zip",
+        "path": "1905.08691.tex.zip",
+        "bytes": 426457
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1905.08691.tiddlers.json",
+    "tiddlers_count": 681,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2200,16 +2252,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5377.1,
       "detail": "62 images, 48 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:13:38Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9955.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:13:39Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 409.5,
+      "detail": "665 objects, 5 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:13:39Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 26.3,
+      "detail": "681 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1905.08691/1905.08691.lines.json": "sha256:2b0b216eeb2ab9736785d0b9404f2c9e8a6ac8b330bbd564531eba0d76bfa686"
+      },
       "params_hash": "sha256:68551ad4b7f4af8e97c569ab45efa51f68dcf97b2499f02aac45e0eab1da0611",
       "algo": "sha256",
-      "ts": "2026-08-03T19:47:21Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T19:13:39Z",
+      "provenance": "mathpix"
     }
   }
 }

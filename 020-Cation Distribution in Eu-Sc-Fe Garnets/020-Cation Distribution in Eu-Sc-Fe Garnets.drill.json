@@ -8,7 +8,7 @@
     "IMAGES_LAYER_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -69,28 +69,78 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 7,
-      "Citation": 9,
-      "ListItem": 23,
-      "Formula": 1,
-      "Paragraph": 7,
-      "Document": 1
+      "Table": 1,
+      "TableRow": 37,
+      "TableCell": 170,
+      "Sidenote": 14,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Picture": 4,
+      "ListItem": 27,
+      "Equation": 8,
+      "Formula": 147,
+      "Paragraph": 55,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 8,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 2,
-    "bibliography_cites": 0,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "PII: 0022-3697(84)90108-2",
+      "Creator": "Acrobat 3.0 Capture Plug-in\u0000",
+      "Producer": "Acrobat 3.0 Import Plug-in\u0000",
+      "CreationDate": "Thu May  9 15:53:08 2002 CEST",
+      "ModDate": "Wed May 22 11:58:26 2002 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "540 x 792 pts",
+      "Page rot": "0",
+      "File size": "647518 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.2"
+    },
+    "page_count_text": 7,
+    "image_count": 203,
+    "mathpix_pdf_id": "5096a3e6-f25a-4d7e-b22b-3835ef46e589",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "020-Cation Distribution in Eu-Sc-Fe Garnets.lines.json",
+        "bytes": 793782
+      },
+      {
+        "format": "md",
+        "path": "020-Cation Distribution in Eu-Sc-Fe Garnets.md",
+        "bytes": 31833
+      },
+      {
+        "format": "tex.zip",
+        "path": "020-Cation Distribution in Eu-Sc-Fe Garnets.tex.zip",
+        "bytes": 385151
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "020-Cation Distribution in Eu-Sc-Fe Garnets.tiddlers.json",
-    "tiddlers_count": 65,
+    "tiddlers_count": 283,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
@@ -4597,18 +4647,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 51.4,
       "detail": "65 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:49:11Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10009.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:49:11Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 335.3,
+      "detail": "474 objects, 8 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:49:12Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.2,
+      "detail": "283 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/020-Cation Distribution in Eu-Sc-Fe Garnets/020-Cation Distribution in Eu-Sc-Fe Garnets.lines.json": "sha256:72d6fda71a72f7b88c246e1e131fb28e325d741880590c105531084294fe61e5"
+        "/home/wkolbe/pdfdrill-library/020-Cation Distribution in Eu-Sc-Fe Garnets/020-Cation Distribution in Eu-Sc-Fe Garnets.lines.json": "sha256:b6eff18d86b9a1bf20c65f6fd625cd0d50762f70b1b18b6703844cdba9b3c58f"
       },
       "params_hash": "sha256:cc6184d6bb68a5054f411ed0bf56ff05eb8789d929b9f4ce5fc6f3ce83a1d63c",
       "algo": "sha256",
-      "ts": "2026-08-04T15:41:53Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:49:11Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -74,22 +75,73 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
+      "Footnote": 6,
+      "Table": 2,
+      "TableRow": 8,
+      "TableCell": 16,
+      "Diagram": 1,
+      "Picture": 2,
       "ListItem": 7,
-      "Equation": 19,
-      "Paragraph": 27,
+      "Equation": 39,
+      "Formula": 88,
+      "Paragraph": 66,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 39,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX output 2006.02.10:1123",
+      "Producer": "dvipdfm 0.13.2c, Copyright © 1998, by Mark A. Wicks",
+      "CreationDate": "Fri Feb 10 12:24:26 2006 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "121134 bytes",
+      "Optimized": "no",
+      "PDF version": "1.2"
+    },
+    "page_count_text": 9,
+    "image_count": 0,
+    "mathpix_pdf_id": "ae6aa1bf-29a3-40fd-a171-1e8bf14599b6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "discrete-di-erence-equations.lines.json",
+        "bytes": 308881
+      },
+      {
+        "format": "md",
+        "path": "discrete-di-erence-equations.md",
+        "bytes": 18711
+      },
+      {
+        "format": "tex.zip",
+        "path": "discrete-di-erence-equations.tex.zip",
+        "bytes": 109116
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "discrete-di-erence-equations.tiddlers.json",
-    "tiddlers_count": 79,
+    "tiddlers_count": 237,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -423,18 +475,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.5,
       "detail": "79 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T15:18:08Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 7407.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:18:08Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 146.6,
+      "detail": "245 objects, 39 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:18:09Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.2,
+      "detail": "237 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/discrete-di-erence-equations/discrete-di-erence-equations.lines.json": "sha256:c547f98aac3d53afb420abacddc0476d07aaac25529e17153202cb155637fa4d"
+        "/home/wkolbe/pdfdrill-library/discrete-di-erence-equations/discrete-di-erence-equations.lines.json": "sha256:067be4b3de272d082ccba9633aa54ec2cdfa8cbb7459fb3606b2139915e51c01"
       },
       "params_hash": "sha256:466ae0226db3fe86621862dfc353bc76e16b91c42b5736132fe1fef2ae805f65",
       "algo": "sha256",
-      "ts": "2026-08-06T01:10:58Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:18:08Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -5,14 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 22,
@@ -70,17 +70,18 @@
     "bibkey": "2304.05000",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 97,
-      "Formula": 505,
-      "LtxCommand": 4,
+      "Page": 22,
+      "Footnote": 2,
       "Abstract": 1,
-      "Section": 7,
-      "Equation": 89,
-      "Proof": 13,
-      "Citation": 38
+      "Diagram": 1,
+      "ListItem": 1,
+      "Equation": 93,
+      "Formula": 498,
+      "Paragraph": 127,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 93,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 22,
       "placed": 14,
@@ -90,14 +91,6 @@
       "numbered": 7,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "2304.05000.tiddlers.json",
-    "tiddlers_count": 780,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Let $R$ be a left-symmetric conformal algebra and $Q$ be a $\\mathbb{C}[\\partial]$-module. We introduce the notion of a unified product for left-symmetric conformal algebras and apply it to construct an object $\\mathcal{H}^2_R(Q,R)$ to describe and classify all left-symmetric conformal algebra structures on the direct sum $E=R\\oplus Q$ as a $\\mathbb{C}[\\partial]$-module such that $R$ is a subalgebra of $E$ up to isomorphism whose restriction on $R$ is the identity map. Moreover, we study $\\mathcal{H}^2_R(Q,R)$ in detail when $Q$, $R$ are free as $\\mathbb{C}[\\partial]$-modules and $\\text{rank}Q=1$. Some special products such as crossed product and bicrossed product are also investigated.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -106,7 +99,64 @@
       "Zhongyin Xu",
       "Yanyong Hong"
     ],
-    "arxiv_primary_category": "math.RA"
+    "arxiv_primary_category": "math.RA",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:2304.05000v1  [math.RA]  11 Apr 2023",
+      "Creator": "dvips(k) 2020.1 Copyright 2020 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Wed Apr 12 02:44:41 2023 CEST",
+      "ModDate": "Wed Apr 12 02:44:41 2023 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "22",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "251331 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 22,
+    "image_count": 17,
+    "mathpix_pdf_id": "ba1c1a62-24e8-4428-b495-551776cc5f3c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2304.05000.lines.json",
+        "bytes": 985778
+      },
+      {
+        "format": "md",
+        "path": "2304.05000.md",
+        "bytes": 95721
+      },
+      {
+        "format": "tex.zip",
+        "path": "2304.05000.tex.zip",
+        "bytes": 108937
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2304.05000.tiddlers.json",
+    "tiddlers_count": 762,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:2304.05000v1  [math.RA]  11 Apr 2023",
@@ -1075,16 +1125,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 9691.2,
       "detail": "34 images, 17 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:35:30Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 11354.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:35:32Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 1035.8,
+      "detail": "746 objects, 93 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:35:32Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 22.6,
+      "detail": "762 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2304.05000/2304.05000.lines.json": "sha256:5a4101596533246a508cd2dba24a5d0caeddd2b240fd4928fdfffae14073e780"
+      },
       "params_hash": "sha256:7ed2da61e29253f1b1f929c23a0e308fc21fdf3bfdb83e68d95ec1532405bb5c",
       "algo": "sha256",
-      "ts": "2026-08-03T21:03:52Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:35:31Z",
+      "provenance": "mathpix"
     }
   }
 }

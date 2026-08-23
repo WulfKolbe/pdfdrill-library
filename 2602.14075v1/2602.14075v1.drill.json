@@ -8,14 +8,15 @@
     "BIBSOURCE_BUILT",
     "NEEDS_VISION_OCR",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 26,
@@ -53,21 +54,22 @@
     "bibkey": "2602.14075v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 61,
+      "Page": 26,
+      "Footnote": 1,
+      "Citation": 63,
       "Abstract": 1,
-      "Section": 19,
-      "Formula": 38,
-      "Theorem": 39,
+      "ListItem": 58,
       "Equation": 201,
-      "Proof": 19,
-      "Citation": 39
+      "Formula": 191,
+      "Paragraph": 284,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 201,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
     "latex_source": "2602.14075v1.tgz",
     "latex_macros": 1,
@@ -137,14 +139,6 @@
       "numbered": 19,
       "roots": 1
     },
-    "bibliography_entries": 28,
-    "bibliography_with_year": 28,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 39,
-    "tiddlers_path": "2602.14075v1.tiddlers.json",
-    "tiddlers_count": 450,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Classical algebraic structures require exact satisfaction of their defining axioms. We propose similarity algebra, a framework extending algebraic and Lie structures to settings where operations satisfy quantitative bounds up to a tolerance $\\varepsilon$. Instead of strict associativity, inverses, or distributivity, we study families of operations controlled by explicit $\\varepsilon$-estimates and analyze their behavior under limit collapse. Under uniform error control and $C^1_{\\mathrm{loc}}$ convergence of the structure maps, we prove a general collapse theorem showing that similarity structures converge to classical algebraic objects, as $\\varepsilon \\rightarrow 0$. We develop a hierarchy of approximate structures, including similarity groups, rings, fields, vector spaces, and Lie groups, formalized through axioms satisfied within metric distance $\\varepsilon$. We further define a category of similarity algebras governing morphisms between approximate systems. Moreover, we clarify the relationship between similarity algebra and fuzzy algebra, showing that the former generalizes the latter. The proposed similarity algebra can be useful to model real-world phenomena where operations or relations are inherently approximate.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -160,7 +154,61 @@
         "page": 1,
         "url": "https://arxiv.org/abs/2602.14075v1"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Similarity Algebra: A Framework for Approximate Algebraic and Lie Structures with Collapse to Classical Algebra",
+      "Author": "Benyamin Ghojogh; Golbahar Amanpour",
+      "Creator": "arXiv GenPDF (tex2pdf:57610bf)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "26",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "601086 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 26,
+    "image_count": 0,
+    "mathpix_pdf_id": "89f3e0bb-58f0-485e-8883-c6e3838a0dcf",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2602.14075v1.lines.json",
+        "bytes": 1216211
+      },
+      {
+        "format": "md",
+        "path": "2602.14075v1.md",
+        "bytes": 78617
+      },
+      {
+        "format": "tex.zip",
+        "path": "2602.14075v1.tex.zip",
+        "bytes": 83058
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 2,
+    "bibliography_with_year": 2,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "2602.14075v1.tiddlers.json",
+    "tiddlers_count": 809,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Similarity Algebra: A Framework for Approximate Algebraic and Lie Structures with Collapse to Classical Algebra",
@@ -2414,18 +2462,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5326.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:29:36Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10037.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:29:36Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 544.8,
+      "detail": "826 objects, 201 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:29:37Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "2 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T19:29:37Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 22.7,
+      "detail": "809 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2602.14075v1/texsrc/main.tex": "sha256:0ee3d7c6fb3d317ba4b4958e7d77e4c5b5e6dc2087f4a23e52011e88a27f0186"
+        "/home/wkolbe/pdfdrill-library/2602.14075v1/2602.14075v1.lines.json": "sha256:3ce408cf0fb4653f9010712473bf79f9abcce2b1004b9884f9a3487fa91879b3"
       },
       "params_hash": "sha256:7f988477601bbd344dbe35db53fa0b83a2804d41044587df8d5d9ef138a1d1c8",
       "algo": "sha256",
-      "ts": "2026-08-03T21:44:14Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T19:29:36Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

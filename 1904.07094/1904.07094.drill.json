@@ -3,17 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1904.07094",
@@ -21,21 +22,24 @@
     "bibkey": "1904.07094",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 28,
-      "Abstract": 1,
-      "Section": 9,
-      "Formula": 21,
-      "Equation": 1,
+      "Page": 4,
+      "Footnote": 7,
+      "Citation": 21,
       "Table": 1,
-      "Citation": 43
+      "TableRow": 22,
+      "TableCell": 128,
+      "Sidenote": 7,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Picture": 1,
+      "ListItem": 10,
+      "Equation": 1,
+      "Formula": 28,
+      "Paragraph": 53,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 24,
-    "bibliography_with_year": 6,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 43,
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "pages": 4,
     "bytes": 856623,
     "page_size": "612 x 792 pts (letter)",
@@ -104,9 +108,6 @@
     ],
     "math_fonts": [],
     "has_math_fonts": false,
-    "tiddlers_path": "1904.07094.tiddlers.json",
-    "tiddlers_count": 107,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Although considerable attention has been given to neural ranking architectures recently, far less attention has been paid to the term representations that are used as input to these models. In this work, we investigate how two pretrained contextualized language models (ELMo and BERT) can be utilized for ad-hoc document ranking. Through experiments on TREC benchmarks, we find that several existing neural ranking architectures can benefit from the additional context provided by contextualized language models. Furthermore, we propose a joint approach that incorporates BERT&#39;s classification vector into existing neural models and show that it outperforms state-of-the-art ad-hoc ranking baselines. We call this joint approach CEDR (Contextualized Embeddings for Document Ranking). We also address practical challenges in using these models for ranking, including the maximum input length imposed by BERT and runtime performance impacts of contextualized language models.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -143,7 +144,72 @@
         "page": 3,
         "url": "https://nlp.stanford.edu/projects/glove/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "CEDR: Contextualized Embeddings for Document Ranking",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Sean MacAvaney, Andrew Yates, Arman Cohan, and Nazli Goharian",
+      "Creator": "LaTeX with acmart 2018/12/16 v1.57 Typesetting articles for the Association for Computing Machinery and hyperref 2016/06/24 v6.83q Hypertext links for LaTeX",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Tue Aug 20 03:36:38 2019 CEST",
+      "ModDate": "Tue Aug 20 03:36:38 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "4",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "856623 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 4,
+    "image_count": 26,
+    "mathpix_pdf_id": "13c25b39-64c1-49dd-aba5-a060d1a78f36",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1904.07094.lines.json",
+        "bytes": 650979
+      },
+      {
+        "format": "md",
+        "path": "1904.07094.md",
+        "bytes": 26421
+      },
+      {
+        "format": "tex.zip",
+        "path": "1904.07094.tex.zip",
+        "bytes": 105173
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 25,
+    "bibliography_with_year": 24,
+    "bibliography_numeric_citations": 41,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 41,
+    "tiddlers_path": "1904.07094.tiddlers.json",
+    "tiddlers_count": 163,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "CEDR: Contextualized Embeddings for Document Ranking",
@@ -1233,18 +1299,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2605.9,
       "detail": "13 images, 13 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:27:15Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 15052.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:27:16Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 173.3,
+      "detail": "286 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:27:16Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "25 entries, 41+0 cites detected, 41 linked"
+    },
+    {
+      "ts": "2026-08-22T14:27:16Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.0,
+      "detail": "163 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1904.07094/texsrc/main.tex": "sha256:bf01c9d3b5f1e225419419dcf88c2d36166259d925f633b668e824274bae0bd7"
+        "/home/wkolbe/pdfdrill-library/1904.07094/1904.07094.lines.json": "sha256:7c958a115bff180ea897e0f557c51ea7269e8006e79bf400f00fdf4c571ae6e3"
       },
       "params_hash": "sha256:858c167413c30592ef33c3bd41d1f6100863646df9c1fae2aef06e1bc072384d",
       "algo": "sha256",
-      "ts": "2026-08-03T19:46:14Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:27:16Z",
+      "provenance": "mathpix"
     }
   }
 }

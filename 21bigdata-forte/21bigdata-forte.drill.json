@@ -6,14 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -98,29 +98,28 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 11,
-      "Citation": 2,
-      "ListItem": 25,
+      "Footnote": 6,
+      "Table": 6,
+      "TableRow": 43,
+      "TableCell": 176,
+      "Sidenote": 22,
+      "Abstract": 1,
+      "Diagram": 6,
+      "ListItem": 31,
       "Equation": 16,
-      "Paragraph": 23,
+      "Formula": 145,
+      "Paragraph": 58,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 16,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "21bigdata-forte.tiddlers.json",
-    "tiddlers_count": 94,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
     "abstract_search_scope": "first2pages",
     "links": [
@@ -174,7 +173,56 @@
         "url": "https://github.com/usnistgov/trec",
         "kind": "text"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Fri Jan 21 04:37:27 2022 CET",
+      "ModDate": "Fri Jan 21 04:37:27 2022 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "1019473 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 18,
+    "mathpix_pdf_id": "6bf8425d-5bf3-4766-b7ff-3c3a569e3bfe",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "21bigdata-forte.lines.json",
+        "bytes": 1452532
+      },
+      {
+        "format": "md",
+        "path": "21bigdata-forte.md",
+        "bytes": 66617
+      },
+      {
+        "format": "tex.zip",
+        "path": "21bigdata-forte.tex.zip",
+        "bytes": 373128
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "21bigdata-forte.tiddlers.json",
+    "tiddlers_count": 319,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -911,18 +959,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4316.4,
       "detail": "9 images, 6 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:58:14Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12953.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:58:14Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 394.9,
+      "detail": "522 objects, 16 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:58:15Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.5,
+      "detail": "319 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/21bigdata-forte/21bigdata-forte.lines.json": "sha256:271549b18031d9fac0a482dbb1e6f97bcd29670229aedc4716e3421ccb856e5d"
+        "/home/wkolbe/pdfdrill-library/21bigdata-forte/21bigdata-forte.lines.json": "sha256:6157f59a57aedb81f24a66f0c9896383ba4ac2946f0463314628790da2c0d585"
       },
       "params_hash": "sha256:5de8daca828d0fecd740fd3c67ee7e2a256f3405ee73a3cc682ae52f51e43229",
       "algo": "sha256",
-      "ts": "2026-08-03T20:56:43Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:58:14Z",
+      "provenance": "mathpix"
     }
   }
 }

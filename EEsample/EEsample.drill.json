@@ -6,15 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 24,
@@ -110,29 +110,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 24,
-      "Citation": 16,
-      "ListItem": 21,
-      "Equation": 49,
-      "Paragraph": 59,
+      "Footnote": 1,
+      "Sidenote": 13,
+      "Diagram": 9,
+      "Section": 2,
+      "ListItem": 32,
+      "Equation": 21,
+      "Formula": 486,
+      "Paragraph": 110,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 21,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 10,
-    "bibliography_cites": 0,
-    "tiddlers_path": "EEsample.tiddlers.json",
-    "tiddlers_count": 185,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Diestel, Graph Theory (4th edition), sample chapter",
@@ -160,7 +156,33 @@
     "page_count_text": 24,
     "image_count": 0,
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "c8afa945-5331-459b-a770-7729b40c6886",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "EEsample.lines.json",
+        "bytes": 1086863
+      },
+      {
+        "format": "md",
+        "path": "EEsample.md",
+        "bytes": 63198
+      },
+      {
+        "format": "tex.zip",
+        "path": "EEsample.tex.zip",
+        "bytes": 185370
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "EEsample.tiddlers.json",
+    "tiddlers_count": 716,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Diestel, Graph Theory (4th edition), sample chapter",
@@ -809,18 +831,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4157.3,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:07:47Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9760.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:07:47Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 516.9,
+      "detail": "699 objects, 21 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:07:48Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 24.5,
+      "detail": "716 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/EEsample/EEsample.lines.json": "sha256:51359980ffb5eaade5f0af9875d0419ae76b72fefacbaf7786bfe93fc57dc506"
+        "/home/wkolbe/pdfdrill-library/EEsample/EEsample.lines.json": "sha256:fb408892e5ded39cf2af381d699de3ee3353b65d056118d2fbc2b047df7fe846"
       },
       "params_hash": "sha256:331c8c51498e05f8b76b736385446e7d2510ff17647bcefd186a0c7171a76aad",
       "algo": "sha256",
-      "ts": "2026-08-05T19:55:01Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:07:47Z",
+      "provenance": "mathpix"
     }
   }
 }

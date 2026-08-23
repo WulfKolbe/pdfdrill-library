@@ -6,15 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -79,29 +79,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 17,
-      "Citation": 3,
-      "ListItem": 4,
-      "Equation": 29,
-      "Paragraph": 41,
+      "Diagram": 23,
+      "Picture": 1,
+      "ListItem": 2,
+      "Equation": 45,
+      "Formula": 106,
+      "Paragraph": 72,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 45,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 3 unmapped private-use character(s) remain (U+F8FF×3) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "CMU_DDG_FA17_CurvesSurfacesIntro.tiddlers.json",
-    "tiddlers_count": 111,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Untitled",
@@ -131,7 +125,33 @@
     "image_count": 0,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "ec7e9e59-cdf7-449b-853e-81f56e5e5ceb",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "CMU_DDG_FA17_CurvesSurfacesIntro.lines.json",
+        "bytes": 464944
+      },
+      {
+        "format": "md",
+        "path": "CMU_DDG_FA17_CurvesSurfacesIntro.md",
+        "bytes": 37832
+      },
+      {
+        "format": "tex.zip",
+        "path": "CMU_DDG_FA17_CurvesSurfacesIntro.tex.zip",
+        "bytes": 811526
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "CMU_DDG_FA17_CurvesSurfacesIntro.tiddlers.json",
+    "tiddlers_count": 283,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Untitled",
@@ -501,18 +521,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4588.3,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:28:07Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9430.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:28:07Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 143.6,
+      "detail": "267 objects, 45 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:28:08Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.3,
+      "detail": "283 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/CMU_DDG_FA17_CurvesSurfacesIntro/CMU_DDG_FA17_CurvesSurfacesIntro.lines.json": "sha256:0fb2c4f9f377a9d34ff5924b650f3f1b1c279f90d4d2fa883762cb8f4c0da79e"
+        "/home/wkolbe/pdfdrill-library/CMU_DDG_FA17_CurvesSurfacesIntro/CMU_DDG_FA17_CurvesSurfacesIntro.lines.json": "sha256:d79750fcab62bc073fc79c35d1853cbd584c4b3c2deb7f5cfba89242dad50b8b"
       },
       "params_hash": "sha256:a40abfbc9b11c246b6ab52b6cf13af8a6186f61d91fc9fc9cadc75d9adbb64d4",
       "algo": "sha256",
-      "ts": "2026-08-05T06:48:00Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:28:07Z",
+      "provenance": "mathpix"
     }
   }
 }

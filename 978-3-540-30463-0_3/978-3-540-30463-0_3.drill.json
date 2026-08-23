@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 12,
@@ -92,23 +93,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 12,
-      "ListItem": 11,
-      "Equation": 75,
-      "Paragraph": 51,
+      "Abstract": 1,
+      "Diagram": 3,
+      "Section": 2,
+      "Picture": 1,
+      "ListItem": 5,
+      "Equation": 35,
+      "Formula": 118,
+      "Paragraph": 56,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 35,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 20 unmapped private-use character(s) remain (U+F8EE×1, U+F8EF×8, U+F8F0×1, U+F8F9×1, U+F8FA×8, U+F8FB×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "978-3-540-30463-0_3.tiddlers.json",
-    "tiddlers_count": 166,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
     "toc": [
       {
@@ -139,7 +142,57 @@
         "url": "http://www.gdl.cinvestav.mx/~edb",
         "kind": "text"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "LNCS 3287 - Clifford Geometric Algebra: A Promising Framework for Computer Vision, Robotics and Learning",
+      "Subject": "Progress in Pattern Recognition, Image Analysis and Applications",
+      "Author": "Eduardo Bayro-Corrochano",
+      "Producer": "Acrobat Distiller 5.0.5 (Windows)",
+      "CreationDate": "Wed Nov  3 09:13:58 2004 CET",
+      "ModDate": "Thu Sep 23 15:56:30 2010 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "AcroForm",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "430 x 660 pts",
+      "Page rot": "0",
+      "File size": "466052 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.3"
+    },
+    "page_count_text": 12,
+    "image_count": 42,
+    "mathpix_pdf_id": "82944727-afc2-4df1-857f-f35972e9887d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "978-3-540-30463-0_3.lines.json",
+        "bytes": 417165
+      },
+      {
+        "format": "md",
+        "path": "978-3-540-30463-0_3.md",
+        "bytes": 35284
+      },
+      {
+        "format": "tex.zip",
+        "path": "978-3-540-30463-0_3.tex.zip",
+        "bytes": 310506
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "978-3-540-30463-0_3.tiddlers.json",
+    "tiddlers_count": 251,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "LNCS 3287 - Clifford Geometric Algebra: A Promising Framework for Computer Vision, Robotics and Learning",
@@ -1495,18 +1548,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5013.4,
       "detail": "42 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:15:42Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9600.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:15:43Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 271.9,
+      "detail": "234 objects, 35 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:15:43Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.7,
+      "detail": "251 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/978-3-540-30463-0_3/978-3-540-30463-0_3.lines.json": "sha256:a98d4fd843e81b4c68914abb07e245d4722e4c155e8d90e35912f50a173409de"
+        "/home/wkolbe/pdfdrill-library/978-3-540-30463-0_3/978-3-540-30463-0_3.lines.json": "sha256:6d6d324b7661b1f2585ee940162a1c456c9be591da6d10ccea520717f887f5cd"
       },
       "params_hash": "sha256:1055ea7eb591f4f76c05fc0d64b7c2f783eada4d775fb7d2acaf2032310695d1",
       "algo": "sha256",
-      "ts": "2026-08-03T22:30:01Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:15:43Z",
+      "provenance": "mathpix"
     }
   }
 }

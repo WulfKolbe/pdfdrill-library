@@ -6,15 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -118,29 +118,24 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 17,
-      "Citation": 18,
-      "ListItem": 15,
-      "Equation": 108,
-      "Paragraph": 63,
+      "Footnote": 4,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Section": 2,
+      "ListItem": 27,
+      "Formula": 451,
+      "Paragraph": 80,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 12 unmapped private-use character(s) remain (U+F8EB×2, U+F8EC×2, U+F8ED×2, U+F8F6×2, U+F8F7×2, U+F8F8×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 38,
-    "bibliography_with_year": 38,
-    "bibliography_numeric_citations": 75,
-    "bibliography_authoryear_citations": 1,
-    "bibliography_cites": 65,
-    "tiddlers_path": "LIPIcs-CPM-2021-15.tiddlers.json",
-    "tiddlers_count": 266,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Data Structures for Categorical Path Counting Queries",
@@ -214,7 +209,33 @@
         "page": 1,
         "url": "https://www.dagstuhl.de"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "dcac1b34-80cd-497a-92b7-008f4f57407c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "LIPIcs-CPM-2021-15.lines.json",
+        "bytes": 878004
+      },
+      {
+        "format": "md",
+        "path": "LIPIcs-CPM-2021-15.md",
+        "bytes": 68248
+      },
+      {
+        "format": "tex.zip",
+        "path": "LIPIcs-CPM-2021-15.tex.zip",
+        "bytes": 113562
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "LIPIcs-CPM-2021-15.tiddlers.json",
+    "tiddlers_count": 601,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Data Structures for Categorical Path Counting Queries",
@@ -1877,18 +1898,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4856.1,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:30:24Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.9,
+      "detail": "266 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T23:06:23Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10032.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T23:06:24Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 373.6,
+      "detail": "584 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T23:06:24Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.3,
+      "detail": "601 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/LIPIcs-CPM-2021-15/LIPIcs-CPM-2021-15.lines.json": "sha256:78b44cc1c8ddf02611e7e48244fe57c832d60b787ff527ccf7041ffff766f266"
+        "/home/wkolbe/pdfdrill-library/LIPIcs-CPM-2021-15/LIPIcs-CPM-2021-15.lines.json": "sha256:2f4034568d681ec38cfd4139344af6b8c96067ed0c7329ef14cd6d964c89d9d6"
       },
       "params_hash": "sha256:0c3cb0d9f7b7c546fc9065997b63c3beeb62b9add264fc6ab12f815c2b22bf98",
       "algo": "sha256",
-      "ts": "2026-08-05T21:53:32Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T23:06:23Z",
+      "provenance": "mathpix"
     }
   }
 }

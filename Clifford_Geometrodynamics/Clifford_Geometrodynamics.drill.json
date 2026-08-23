@@ -6,15 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 4,
@@ -81,29 +81,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 4,
-      "Citation": 10,
-      "ListItem": 6,
-      "Equation": 54,
-      "Paragraph": 35,
+      "Footnote": 1,
+      "Abstract": 1,
+      "ListItem": 4,
+      "Equation": 22,
+      "Formula": 43,
+      "Paragraph": 32,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 22,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 3,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 3,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 3,
-    "tiddlers_path": "Clifford_Geometrodynamics.tiddlers.json",
-    "tiddlers_count": 128,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -134,7 +128,33 @@
     "abstract": "Classical anti-commuting spinor fields and their dynamics are derived from the geometry of the Clifford bundle over space-\n                                          time via the BRST formulation. In conjunction with Kaluza-Klein theory, this results in a geometric description of all the fields\n                                          and dynamics of the standard model coupled to gravity and provides the starting point for a new approach to quantum gravity.",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "015f13f8-8a37-4db1-a7f1-67d7088617ad",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Clifford_Geometrodynamics.lines.json",
+        "bytes": 175904
+      },
+      {
+        "format": "md",
+        "path": "Clifford_Geometrodynamics.md",
+        "bytes": 19544
+      },
+      {
+        "format": "tex.zip",
+        "path": "Clifford_Geometrodynamics.tex.zip",
+        "bytes": 21275
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "Clifford_Geometrodynamics.tiddlers.json",
+    "tiddlers_count": 124,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2353,18 +2373,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1575.9,
       "detail": "112 images, 56 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:28:59Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8609.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:28:59Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 134.4,
+      "detail": "108 objects, 22 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:29:00Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.4,
+      "detail": "124 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Clifford_Geometrodynamics/Clifford_Geometrodynamics.lines.json": "sha256:26dcb19a3f6b051bcb5e2b40a6b060c599520fe3e2da95690bc565aa013739b6"
+        "/home/wkolbe/pdfdrill-library/Clifford_Geometrodynamics/Clifford_Geometrodynamics.lines.json": "sha256:da0bf27bae90b233c909644083fe6d04ca137e26050113094c509b4ef422bf7f"
       },
       "params_hash": "sha256:76c20b32061b812cc4643d7b42400f0694cac1214e0a8a5e0811153546518924",
       "algo": "sha256",
-      "ts": "2026-08-05T06:50:33Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:28:59Z",
+      "provenance": "mathpix"
     }
   }
 }

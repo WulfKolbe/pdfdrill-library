@@ -3,15 +3,16 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1705.02522",
@@ -19,21 +20,24 @@
     "bibkey": "1705.02522",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 101,
-      "Formula": 83,
-      "LtxCommand": 22,
-      "Section": 17,
-      "Equation": 12,
-      "Table": 10,
-      "Citation": 65
+      "Page": 10,
+      "Footnote": 3,
+      "Citation": 2,
+      "Table": 8,
+      "TableRow": 65,
+      "TableCell": 248,
+      "Sidenote": 19,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Picture": 1,
+      "ListItem": 14,
+      "Equation": 11,
+      "Formula": 56,
+      "Paragraph": 94,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 54,
-    "bibliography_with_year": 53,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 65,
+    "model_equations_with_cdn": 11,
+    "model_source": "mathpix",
     "pages": 10,
     "bytes": 670787,
     "page_size": "612 x 792 pts (letter)",
@@ -115,9 +119,6 @@
       "EXPITJ+CMSY5"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1705.02522.tiddlers.json",
-    "tiddlers_count": 326,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Online health communities are a valuable source of information for patients and physicians. However, such user-generated resources are often plagued by inaccuracies and misinformation. In this work we propose a method for automatically establishing the credibility of user-generated medical statements and the trustworthiness of their authors by exploiting linguistic cues and distant supervision from expert sources. To this end we introduce a probabilistic graphical model that jointly learns user trustworthiness, statement credibility, and language objectivity. We apply this methodology to the task of extracting rare or unknown side-effects of medical drugs --- this being one of the problems where large scale non-expert data has the potential to complement expert medical knowledge. We show that our method can reliably extract side-effects and filter out false statements, while identifying trustworthy users that are likely to contribute valuable medical information.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -127,7 +128,72 @@
       "Gerhard Weikum",
       "Cristian Danescu-Niculescu-Mizil"
     ],
-    "arxiv_primary_category": "cs.AI"
+    "arxiv_primary_category": "cs.AI",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Tue May  9 02:56:23 2017 CEST",
+      "ModDate": "Tue May  9 02:56:23 2017 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "670787 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 10,
+    "image_count": 4,
+    "mathpix_pdf_id": "f2600dd9-93b5-4543-b16e-0716381d6d8b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1705.02522.lines.json",
+        "bytes": 1560984
+      },
+      {
+        "format": "md",
+        "path": "1705.02522.md",
+        "bytes": 58476
+      },
+      {
+        "format": "tex.zip",
+        "path": "1705.02522.tex.zip",
+        "bytes": 321084
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 55,
+    "bibliography_with_year": 53,
+    "bibliography_numeric_citations": 51,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 51,
+    "tiddlers_path": "1705.02522.tiddlers.json",
+    "tiddlers_count": 294,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1484,16 +1550,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3675.3,
       "detail": "4 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:24:54Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10443.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:24:55Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 457.4,
+      "detail": "535 objects, 11 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:24:55Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "55 entries, 51+1 cites detected, 51 linked"
+    },
+    {
+      "ts": "2026-08-22T15:24:55Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.5,
+      "detail": "294 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1705.02522/1705.02522.lines.json": "sha256:3e451f19a678cd9b41580b57fe469e2f0f348814eafaf93a749e16a36e8cd74a"
+      },
       "params_hash": "sha256:9f5539cb3664ff71fc9850216f7fc6da6cd75276fc1b3f86d6852931934682b2",
       "algo": "sha256",
-      "ts": "2026-08-03T19:38:30Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:24:55Z",
+      "provenance": "mathpix"
     }
   }
 }

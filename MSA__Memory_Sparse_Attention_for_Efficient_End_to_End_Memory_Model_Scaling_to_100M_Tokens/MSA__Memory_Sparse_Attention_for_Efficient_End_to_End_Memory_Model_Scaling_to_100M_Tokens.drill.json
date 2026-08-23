@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 20,
@@ -97,23 +98,28 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 20,
-      "ListItem": 15,
-      "Equation": 5,
-      "Paragraph": 24,
-      "Document": 1
+      "Table": 6,
+      "TableRow": 95,
+      "TableCell": 610,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Picture": 1,
+      "ListItem": 16,
+      "Equation": 6,
+      "Formula": 100,
+      "Paragraph": 127,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens.tiddlers.json",
-    "tiddlers_count": 81,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -144,7 +150,32 @@
     "abstract": "Long-term memory is a cornerstone of human intelligence. Enabling AI to process\n            lifetime-scale information, reaching hundreds of millions of tokens, remains a long-\n            standing pursuit in the field. Due to the constraints of full-attention architectures,\n            the effective context length of large language models (LLMs) is typically limited\n            to 1M tokens. Existing explorations, such as hybrid linear attention, fixed-size\n            memory states (e.g., RNNs), and external storage methods like RAG or agent\n            systems, attempt to extend this limit. However, these approaches often suffer\n            from severe precision degradation and rapidly increasing latency as context length\n            grows, an inability to dynamically modify memory content, or a lack of end-to-end\n            optimization. These bottlenecks impede complex scenarios like large-corpus sum-\n            marization, Digital Twins with stable personas, and long-history agent reasoning,\n            while limiting memory capacity and slowing inference. We present Memory Sparse\n            Attention (MSA), an end-to-end trainable, efficient, and massively scalable memory\n            model framework. Through core innovations including scalable sparse attention\n            architecture and document-wise RoPE, MSA achieves linear complexity in both\n            training and inference while maintaining exceptional precision stability, exhibiting\n            less than 9% degradation when scaling from 16K to 100M tokens. Furthermore,\n            KV cache compression, combined with Memory Parallel during inference, enables\n            100M tokens inference on 2×A800 GPUs. In addition, we propose a Memory Inter-\n            leaving mechanism that effectively facilitates complex multi-hop reasoning across\n            scattered memory segments. MSA significantly surpasses frontier language models,\n            state-of-the-art (SOTA) RAG systems, and leading memory agents in long-context\n            benchmarks. These results demonstrate that by decoupling memory capacity from\n            reasoning, MSA provides a scalable foundation to endow general-purpose models\n            with intrinsic, lifetime-scale memory.",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "6c9a7da9-f0f0-49c9-8732-4ea38bf6fa4d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens.lines.json",
+        "bytes": 1810482
+      },
+      {
+        "format": "md",
+        "path": "MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens.md",
+        "bytes": 75267
+      },
+      {
+        "format": "tex.zip",
+        "path": "MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens.tex.zip",
+        "bytes": 474739
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens.tiddlers.json",
+    "tiddlers_count": 297,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1812,18 +1843,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 8256.7,
       "detail": "11 images, 10 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:12:41Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12534.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:12:42Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 717.3,
+      "detail": "986 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:12:43Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.4,
+      "detail": "297 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens/MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens.lines.json": "sha256:1edb2fb48f8cd78049cbb23917c5a8decde9a2eb525d94129e324c7eafd4a061"
+        "/home/wkolbe/pdfdrill-library/MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens/MSA__Memory_Sparse_Attention_for_Efficient_End_to_End_Memory_Model_Scaling_to_100M_Tokens.lines.json": "sha256:822ee525424839cdb0084284475f8a14d86111f8c6018e3ec8e3c782cd67e65b"
       },
       "params_hash": "sha256:1a431628dd6460b0c210ce6e08eb9eb2053cb96c80c8f62fe02cb5caadef7e78",
       "algo": "sha256",
-      "ts": "2026-08-05T21:59:33Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:12:42Z",
+      "provenance": "mathpix"
     }
   }
 }

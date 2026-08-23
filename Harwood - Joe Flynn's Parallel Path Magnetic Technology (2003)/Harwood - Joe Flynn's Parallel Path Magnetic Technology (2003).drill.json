@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "OCR_BUILT",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -77,23 +78,22 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "Table": 4,
-      "Formula": 1,
-      "Paragraph": 84,
+      "Diagram": 9,
+      "Section": 2,
+      "Picture": 2,
+      "Formula": 3,
+      "Paragraph": 24,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "tesseract",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "tesseract"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Harwood - Joe Flynn's Parallel Path Magnetic Technology (2003).tiddlers.json",
-    "tiddlers_count": 115,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Producer": "OpenOffice.org 1.1.0",
@@ -128,7 +128,32 @@
         "url": "http://www.rexresearch.com/meg/meg.htm",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "6f5a9243-03b4-484f-aaba-e44498ff1941",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Harwood - Joe Flynn's Parallel Path Magnetic Technology (2003).lines.json",
+        "bytes": 236495
+      },
+      {
+        "format": "md",
+        "path": "Harwood - Joe Flynn's Parallel Path Magnetic Technology (2003).md",
+        "bytes": 18064
+      },
+      {
+        "format": "tex.zip",
+        "path": "Harwood - Joe Flynn's Parallel Path Magnetic Technology (2003).tex.zip",
+        "bytes": 634723
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Harwood - Joe Flynn's Parallel Path Magnetic Technology (2003).tiddlers.json",
+    "tiddlers_count": 67,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -557,18 +582,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1742.9,
       "detail": "10 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:14:50Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 7027.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:14:50Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 69.4,
+      "detail": "50 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:14:51Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.4,
+      "detail": "67 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Harwood - Joe Flynn's Parallel Path Magnetic Technology (2003)/Harwood - Joe Flynn's Parallel Path Magnetic Technology (2003).lines.json": "sha256:af5b91dddb543ec6a4ef5d3d0286bb1c53cc8e533360088171aa06407bb558ec"
+        "/home/wkolbe/pdfdrill-library/Harwood - Joe Flynn's Parallel Path Magnetic Technology (2003)/Harwood - Joe Flynn's Parallel Path Magnetic Technology (2003).lines.json": "sha256:469dcf4c171e2b4a33f7e7af550e8609578bbcddbae956073a964f184a0152a0"
       },
       "params_hash": "sha256:039fb0795c3320107326beac5b360a5686273dff7039dadf17d46119ef4feb1b",
       "algo": "sha256",
-      "ts": "2026-08-05T21:13:44Z",
-      "provenance": "tesseract"
+      "ts": "2026-08-22T15:14:50Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -106,23 +107,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 17,
-      "ListItem": 11,
-      "Equation": 54,
-      "Paragraph": 42,
+      "Abstract": 1,
+      "Diagram": 6,
+      "ListItem": 19,
+      "Equation": 3,
+      "Formula": 214,
+      "Paragraph": 65,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "LIPIcs.WABI.2024.3.tiddlers.json",
-    "tiddlers_count": 141,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "An Efficient Algorithm for the Reconciliation of a Gene Network and Species Tree",
@@ -181,7 +182,32 @@
         "page": 1,
         "url": "https://www.dagstuhl.de"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "3e74f592-6e4f-4ec0-8b16-5e129e1adc19",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "LIPIcs.WABI.2024.3.lines.json",
+        "bytes": 744498
+      },
+      {
+        "format": "md",
+        "path": "LIPIcs.WABI.2024.3.md",
+        "bytes": 52054
+      },
+      {
+        "format": "tex.zip",
+        "path": "LIPIcs.WABI.2024.3.tex.zip",
+        "bytes": 507419
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "LIPIcs.WABI.2024.3.tiddlers.json",
+    "tiddlers_count": 342,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "An Efficient Algorithm for the Reconciliation of a Gene Network and Species Tree",
@@ -1486,18 +1512,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4514.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:30:28Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.3,
+      "detail": "141 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T23:06:35Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9369.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T23:06:36Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 153.0,
+      "detail": "326 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T23:06:36Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.1,
+      "detail": "342 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/LIPIcs.WABI.2024.3/LIPIcs.WABI.2024.3.lines.json": "sha256:01dbf67ffb43460e7e49d453419f97b224e5964491a0bd245ad19425fa89da2a"
+        "/home/wkolbe/pdfdrill-library/LIPIcs.WABI.2024.3/LIPIcs.WABI.2024.3.lines.json": "sha256:3d38d920bed4d78e3ab76a5f5fbb254925b533256df20d8cc32ec9b24a9f3c73"
       },
       "params_hash": "sha256:b7669786e8720f5fb8022257ab7d030b18db5d3a1f81a63bd1baa54b994418dd",
       "algo": "sha256",
-      "ts": "2026-08-05T21:53:36Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T23:06:36Z",
+      "provenance": "mathpix"
     }
   }
 }

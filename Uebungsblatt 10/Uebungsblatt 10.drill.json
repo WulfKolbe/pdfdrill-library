@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -77,22 +78,73 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 2,
-      "ListItem": 12,
-      "Equation": 4,
-      "Paragraph": 5,
+      "Section": 2,
+      "ListItem": 5,
+      "Equation": 5,
+      "Formula": 47,
+      "Paragraph": 11,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 5,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "MiKTeX pdfTeX-1.40.26",
+      "CreationDate": "Mon Dec 22 16:43:13 2025 CET",
+      "ModDate": "Mon Dec 22 16:43:13 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "2",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "174632 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 2,
+    "image_count": 0,
+    "mathpix_pdf_id": "0d164ac5-7b7d-4e1c-8742-e64739124e2f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Uebungsblatt 10.lines.json",
+        "bytes": 65706
+      },
+      {
+        "format": "md",
+        "path": "Uebungsblatt 10.md",
+        "bytes": 4655
+      },
+      {
+        "format": "tex.zip",
+        "path": "Uebungsblatt 10.tex.zip",
+        "bytes": 5729
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "Uebungsblatt 10.tiddlers.json",
-    "tiddlers_count": 40,
+    "tiddlers_count": 90,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -412,18 +464,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.6,
       "detail": "40 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:17:49Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5486.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:17:49Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 60.0,
+      "detail": "73 objects, 5 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:17:49Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.1,
+      "detail": "90 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Uebungsblatt 10/Uebungsblatt 10.lines.json": "sha256:a49bf2d22bd206e15faf03ecdae6a7b48e62357be99924b4039fe8ffee997a1b"
+        "/home/wkolbe/pdfdrill-library/Uebungsblatt 10/Uebungsblatt 10.lines.json": "sha256:85ed587b63788561e895ca469575ff62df9a57f7b219372d576aea55c29e7fc0"
       },
       "params_hash": "sha256:87b81499f8b0ce0d7f721e626b8031b224b993129375c5253f46a878f6e86a26",
       "algo": "sha256",
-      "ts": "2026-08-06T00:47:11Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:17:49Z",
+      "provenance": "mathpix"
     }
   }
 }

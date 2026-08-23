@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -67,23 +68,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 13,
+      "Diagram": 6,
+      "Picture": 4,
       "ListItem": 9,
-      "Equation": 33,
-      "Paragraph": 37,
+      "Equation": 24,
+      "Formula": 72,
+      "Paragraph": 57,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 24,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Der_Einfluss_des_Magnetfeldes_bei_der_Th.tiddlers.json",
-    "tiddlers_count": 109,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -144,7 +145,32 @@
         "page": 12,
         "url": "http://arxiv.org/pdf/physics/9810036v3.pdf"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "5c670ddc-81ba-400c-9546-4f8cf1c7ebc8",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Der_Einfluss_des_Magnetfeldes_bei_der_Th.lines.json",
+        "bytes": 471784
+      },
+      {
+        "format": "md",
+        "path": "Der_Einfluss_des_Magnetfeldes_bei_der_Th.md",
+        "bytes": 34085
+      },
+      {
+        "format": "tex.zip",
+        "path": "Der_Einfluss_des_Magnetfeldes_bei_der_Th.tex.zip",
+        "bytes": 527859
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Der_Einfluss_des_Magnetfeldes_bei_der_Th.tiddlers.json",
+    "tiddlers_count": 202,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -597,18 +623,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2673.6,
       "detail": "9 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:28:37Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9438.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:28:37Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 128.3,
+      "detail": "186 objects, 24 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:28:37Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.3,
+      "detail": "202 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Der_Einfluss_des_Magnetfeldes_bei_der_Th/Der_Einfluss_des_Magnetfeldes_bei_der_Th.lines.json": "sha256:71628f9703023fb9896e78c6bbafeefee727082d56f2056b72591ad84bc1b042"
+        "/home/wkolbe/pdfdrill-library/Der_Einfluss_des_Magnetfeldes_bei_der_Th/Der_Einfluss_des_Magnetfeldes_bei_der_Th.lines.json": "sha256:9fde9e42e8a739306d96c5f9500d455913159c1e5d828ceec5b2bf97c284974f"
       },
       "params_hash": "sha256:98604f5428f759c142d9cd17bd8dbe47f6fc683bdb179c5e5ef974385e0a2f38",
       "algo": "sha256",
-      "ts": "2026-08-05T07:00:21Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:28:37Z",
+      "provenance": "mathpix"
     }
   }
 }

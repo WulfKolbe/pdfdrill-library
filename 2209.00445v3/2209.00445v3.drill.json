@@ -6,13 +6,11 @@
     "MODEL_BUILT",
     "LATEX_INGESTED",
     "BIBSOURCE_BUILT",
-    "TIDDLERS_BUILT",
     "MD_BUILT",
     "ABSTRACT_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
     "MATHPIX_KNOWN",
-    "GEOMETRY_FUSED",
     "EQNUMS_FUSED",
     "LISTS_BUILT",
     "ALGORITHMS_BUILT",
@@ -21,12 +19,12 @@
     "ANNOTATIONS_BUILT",
     "REPORT_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
     "FONTS_LAYER_KNOWN",
     "LINKS_KNOWN",
     "IMAGES_LAYER_KNOWN",
     "FONTS_KNOWN",
-    "TOC_KNOWN"
+    "TOC_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -68,22 +66,27 @@
     "bibkey": "2209.00445v3",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 85,
-      "Abstract": 1,
-      "Section": 24,
-      "Formula": 73,
-      "Equation": 1,
+      "Page": 16,
+      "Footnote": 13,
       "Table": 16,
-      "Citation": 60,
-      "Algorithm": 1,
-      "AlgorithmStep": 9
+      "TableRow": 109,
+      "TableCell": 592,
+      "Sidenote": 26,
+      "Abstract": 1,
+      "Diagram": 3,
+      "Section": 6,
+      "ListItem": 22,
+      "Equation": 2,
+      "Formula": 112,
+      "Paragraph": 197,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
     "latex_source": "2209.00445v3.tgz",
     "latex_macros": 2,
@@ -96,12 +99,6 @@
     "bibsource_references": 46,
     "bibsource_enriched": 46,
     "bibsource_citations_linked": 60,
-    "tiddlers_path": "2209.00445v3.tiddlers.json",
-    "tiddlers_count": 280,
-    "tiddlers_svg_mode": "inline",
-    "svg_rendered": 16,
-    "svg_errors": 0,
-    "svg_skipped": 0,
     "abstract": "One of the main methods for computational interpretation of a text is mapping it into a vector in some embedding space. Such vectors can then be used for a variety of textual processing tasks. Recently, most embedding spaces are a product of training large language models (LLMs). One major drawback of this type of representation is their incomprehensibility to humans. Understanding the embedding space is crucial for several important needs, including the need to debug the embedding method and compare it to alternatives, and the need to detect biases hidden in the model. In this paper, we present a novel method of understanding embeddings by transforming a latent embedding space into a comprehensible conceptual space. We present an algorithm for deriving a conceptual space with dynamic on-demand granularity. We devise a new evaluation method, using either human rater or LLM-based raters, to show that the conceptualized vectors indeed represent the semantics of the original latent ones. We show the use of our method for various tasks, including comparing the semantics of alternative models and tracing the layers of the LLM. The code is available online this https URL .",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -111,13 +108,13 @@
       "Shaul Markovitch"
     ],
     "arxiv_primary_category": "cs.CL",
-    "mathpix_pdf_id": "5b641daf-fcdb-440d-9a60-018beb443ac2",
+    "mathpix_pdf_id": "e2f39048-aa0d-43ec-a04e-ab5c7fd47509",
     "mathpix_status": "downloaded",
     "mathpix_files": [
       {
         "format": "lines.json",
         "path": "2209.00445v3.lines.json",
-        "bytes": 2365603
+        "bytes": 2365664
       },
       {
         "format": "md",
@@ -137,9 +134,6 @@
     },
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
-    "geometry_pdf_lines": 613,
-    "geometry_matched": 0,
-    "geometry_mean_sim": null,
     "eqnums_from_mathpix": 0,
     "eqnums_recovered": 0,
     "lists_created": 12,
@@ -163,11 +157,6 @@
       "numbered": 24,
       "roots": 1
     },
-    "bibliography_entries": 46,
-    "bibliography_with_year": 46,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 60,
     "inspect_path": "2209.00445v3.inspect.html",
     "fonts": [
       "ZNRFPV+NimbusRomNo9L-Medi",
@@ -623,7 +612,16 @@
       "PDF version": "1.5"
     },
     "page_count_text": 16,
-    "image_count": 2
+    "image_count": 2,
+    "retracted_layers": [
+      "bibliography",
+      "geometry",
+      "svg",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2209.00445v3.tiddlers.json",
+    "tiddlers_count": 432,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -7343,16 +7341,58 @@
       "to": "TOC_KNOWN",
       "cost_ms": 55.9,
       "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-22T17:09:18Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,LISTS_BUILT,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN,URLS_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 0.1,
+      "detail": "cached"
+    },
+    {
+      "ts": "2026-08-22T17:09:19Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SIZE_KNOWN,TOC_KNOWN,URLS_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.3,
+      "detail": "280 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T23:02:36Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,LISTS_BUILT,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN,URLS_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 14627.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T23:02:37Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN,URLS_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 508.1,
+      "detail": "1116 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T23:02:37Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,ALGORITHMS_BUILT,ANNOTATIONS_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,LISTS_BUILT,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SIZE_KNOWN,TOC_KNOWN,URLS_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.4,
+      "detail": "432 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2209.00445v3/2209.00445v3.lines.json": "sha256:ae21418ade11fe255c53e8a968810267b5d3c6e72a975607db3596e93f6ac4be"
+      },
       "params_hash": "sha256:9be25bd74c6b711fa34224a74069075a1915924eee2bcdb3a361b44c97dd396a",
       "algo": "sha256",
-      "ts": "2026-08-03T20:59:32Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T23:02:37Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

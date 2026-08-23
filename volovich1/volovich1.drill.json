@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -82,27 +83,77 @@
     "model_object_counts": {
       "Page": 11,
       "Citation": 1,
-      "ListItem": 55,
-      "Equation": 30,
-      "Paragraph": 34,
-      "Document": 1
+      "Abstract": 1,
+      "ListItem": 35,
+      "Equation": 26,
+      "Formula": 99,
+      "Paragraph": 57,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 26,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 46,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Creator": "dvips(k) 5.96dev Copyright 2007 Radical Eye Software",
+      "Producer": "Acrobat Distiller 9.0.0 (Windows)",
+      "CreationDate": "Mon Feb  1 11:28:13 2010 CET",
+      "ModDate": "Mon Feb  1 12:50:24 2010 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "537273 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.3"
+    },
+    "page_count_text": 11,
+    "image_count": 22,
+    "mathpix_pdf_id": "418ffa9e-b67b-49e3-85af-3f1111a9f9e5",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "volovich1.lines.json",
+        "bytes": 575384
+      },
+      {
+        "format": "md",
+        "path": "volovich1.md",
+        "bytes": 44392
+      },
+      {
+        "format": "tex.zip",
+        "path": "volovich1.tex.zip",
+        "bytes": 46923
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 45,
     "bibliography_with_year": 44,
-    "bibliography_numeric_citations": 61,
+    "bibliography_numeric_citations": 58,
     "bibliography_authoryear_citations": 10,
-    "bibliography_cites": 61,
+    "bibliography_cites": 58,
     "tiddlers_path": "volovich1.tiddlers.json",
-    "tiddlers_count": 204,
+    "tiddlers_count": 303,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -472,18 +523,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.3,
       "detail": "204 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:08:21Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9520.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:08:21Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 200.0,
+      "detail": "232 objects, 26 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:08:22Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "45 entries, 58+10 cites detected, 58 linked"
+    },
+    {
+      "ts": "2026-08-22T16:08:22Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.7,
+      "detail": "303 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/volovich1/volovich1.lines.json": "sha256:90fdd6360e4fbcbf5084d4926e22d2df550e842525cb3bfe1100ea871f447824"
+        "/home/wkolbe/pdfdrill-library/volovich1/volovich1.lines.json": "sha256:556d89514d3f3584133ebedee3907628f4d3681026f7549d6c4d788a9670a1f1"
       },
       "params_hash": "sha256:10bae63c848836d2db4ca6a2fbb1d7a82a970d11280d075bc5c93a4bdefe8df0",
       "algo": "sha256",
-      "ts": "2026-08-06T02:09:09Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:08:21Z",
+      "provenance": "mathpix"
     }
   }
 }

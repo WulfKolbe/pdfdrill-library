@@ -5,13 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 26,
@@ -96,18 +97,18 @@
     "bibkey": "2501.06662v2",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 153,
+      "Page": 26,
+      "Footnote": 11,
+      "Citation": 41,
       "Abstract": 1,
-      "Section": 14,
-      "Formula": 331,
-      "LtxCommand": 6,
+      "ListItem": 12,
       "Equation": 60,
-      "Theorem": 11,
-      "Proof": 5,
-      "Citation": 86
+      "Formula": 386,
+      "Paragraph": 89,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 60,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 26,
       "placed": 61,
@@ -117,14 +118,6 @@
       "numbered": 14,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "2501.06662v2.tiddlers.json",
-    "tiddlers_count": 659,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The purpose of this article is twofold. Firstly, we use the next-token probabilities given by a language model to explicitly define a category of texts in natural language enriched over the unit interval, in the sense of Bradley, Terilla, and Vlassopoulos. We consider explicitly the terminating conditions for text generation and determine when the enrichment itself can be interpreted as a probability over texts. Secondly, we compute the Möbius function and the magnitude of an associated generalized metric space of texts. The magnitude function of that space is a sum over texts (prompts) of the $t$-logarithmic (Tsallis) entropies of the next-token probability distributions associated with each prompt, plus the cardinality of the model&#39;s possible outputs. A suitable evaluation of the magnitude function&#39;s derivative recovers a sum of Shannon entropies, which justifies seeing magnitude as a partition function. Following Leinster and Shulman, we also express the magnitude function of the generalized metric space as an Euler characteristic of magnitude homology and provide an explicit description of the zeroeth and first magnitude homology groups.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -133,7 +126,68 @@
       "Tai-Danae Bradley",
       "Juan Pablo Vigneaux"
     ],
-    "arxiv_primary_category": "math.CT"
+    "arxiv_primary_category": "math.CT",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "The magnitude of categories of texts enriched by language models",
+      "Author": "Tai-Danae Bradley; Juan Pablo Vigneaux",
+      "Creator": "arXiv GenPDF (tex2pdf:4177c2c)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "26",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "531127 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 26,
+    "image_count": 0,
+    "mathpix_pdf_id": "28c80231-00f5-47f5-bd8b-6e38209a451b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2501.06662v2.lines.json",
+        "bytes": 955032
+      },
+      {
+        "format": "md",
+        "path": "2501.06662v2.md",
+        "bytes": 77639
+      },
+      {
+        "format": "tex.zip",
+        "path": "2501.06662v2.tex.zip",
+        "bytes": 81581
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 22,
+    "bibliography_with_year": 22,
+    "bibliography_numeric_citations": 9,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 14,
+    "tiddlers_path": "2501.06662v2.tiddlers.json",
+    "tiddlers_count": 647,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "The magnitude of categories of texts enriched by language models",
@@ -1651,16 +1705,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5814.7,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:28:04Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9876.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:28:05Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 627.7,
+      "detail": "627 objects, 60 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:28:05Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "22 entries, 9+1 cites detected, 14 linked"
+    },
+    {
+      "ts": "2026-08-22T19:28:05Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 17.9,
+      "detail": "647 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2501.06662v2/2501.06662v2.lines.json": "sha256:432eb079d8cdb4fb04b111cde4957f0c825f2fe82cb7f7dc1e9bb36e15626278"
+      },
       "params_hash": "sha256:23c3a34d58cfd6eb6bb591dcc24592bf93709c4e1c6b5010cadba152a7cba48c",
       "algo": "sha256",
-      "ts": "2026-08-03T21:34:23Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T19:28:04Z",
+      "provenance": "mathpix"
     }
   }
 }

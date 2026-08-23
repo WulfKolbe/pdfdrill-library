@@ -6,14 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -81,32 +81,79 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
-      "Citation": 135,
-      "ListItem": 33,
-      "Equation": 61,
-      "Paragraph": 60,
+      "Footnote": 4,
+      "Table": 1,
+      "TableRow": 3,
+      "TableCell": 5,
+      "Sidenote": 18,
+      "Abstract": 1,
+      "Diagram": 3,
+      "ListItem": 5,
+      "Equation": 63,
+      "Formula": 100,
+      "Paragraph": 102,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 63,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 28 unmapped private-use character(s) remain (U+F8EB×3, U+F8EC×8, U+F8ED×3, U+F8F6×3, U+F8F7×8, U+F8F8×3) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 5,
-    "bibliography_with_year": 5,
-    "bibliography_numeric_citations": 10,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 10,
-    "tiddlers_path": "AltenkirchMcBrided-TowardsOTT.tiddlers.json",
-    "tiddlers_count": 208,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfeTeX-1.21a",
+      "CreationDate": "Fri Feb 17 15:11:55 2006 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "182650 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 10,
+    "image_count": 0,
+    "mathpix_pdf_id": "5f1f0314-a2e2-41fc-b376-1163e2742ac9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "AltenkirchMcBrided-TowardsOTT.lines.json",
+        "bytes": 819789
+      },
+      {
+        "format": "md",
+        "path": "AltenkirchMcBrided-TowardsOTT.md",
+        "bytes": 51717
+      },
+      {
+        "format": "tex.zip",
+        "path": "AltenkirchMcBrided-TowardsOTT.tex.zip",
+        "bytes": 54602
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "AltenkirchMcBrided-TowardsOTT.tiddlers.json",
+    "tiddlers_count": 324,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -564,18 +611,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3891.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:37:05Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9626.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:37:06Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 533.2,
+      "detail": "316 objects, 63 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:37:06Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.0,
+      "detail": "324 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/AltenkirchMcBrided-TowardsOTT/AltenkirchMcBrided-TowardsOTT.lines.json": "sha256:eaa8f2a3496868ac1876f06fda15e4aad337829a7fdf6d0ddee3cf198e1afeaa"
+        "/home/wkolbe/pdfdrill-library/AltenkirchMcBrided-TowardsOTT/AltenkirchMcBrided-TowardsOTT.lines.json": "sha256:9c3f9ec7749f862a09af186e3196bf17c69628024f23499a7474dd5a505e5a2c"
       },
       "params_hash": "sha256:e172a14a68b41cbb1afc329ab608899a80bf9a168e026dd262fb2c27c71f4932",
       "algo": "sha256",
-      "ts": "2026-08-04T08:46:58Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:37:06Z",
+      "provenance": "mathpix"
     }
   }
 }

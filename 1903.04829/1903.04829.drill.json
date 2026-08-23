@@ -3,19 +3,20 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1903.04829",
@@ -23,22 +24,20 @@
     "bibkey": "1903.04829",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 105,
+      "Page": 18,
+      "Footnote": 3,
+      "Citation": 6,
       "Abstract": 1,
-      "Section": 25,
-      "Formula": 180,
-      "Theorem": 12,
+      "Diagram": 10,
+      "Picture": 3,
+      "ListItem": 3,
       "Equation": 34,
-      "Proof": 5,
-      "Citation": 55
+      "Formula": 239,
+      "Paragraph": 92,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 28,
-    "bibliography_with_year": 28,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 55,
+    "model_equations_with_cdn": 34,
+    "model_source": "mathpix",
     "pages": 18,
     "bytes": 944632,
     "page_size": "612 x 792 pts (letter)",
@@ -341,16 +340,78 @@
       "ZBECCH+CMSY7"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1903.04829.tiddlers.json",
-    "tiddlers_count": 426,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
     "links": [
       {
         "page": 2,
         "url": "https://eda.mmci.uni-saarland.de/sci"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Mar 13 01:59:07 2019 CET",
+      "ModDate": "Wed Mar 13 01:59:07 2019 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "18",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "944632 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 18,
+    "image_count": 0,
+    "mathpix_pdf_id": "d01620ea-74a3-4c1a-a988-1935ce92fe46",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1903.04829.lines.json",
+        "bytes": 766574
+      },
+      {
+        "format": "md",
+        "path": "1903.04829.md",
+        "bytes": 62416
+      },
+      {
+        "format": "tex.zip",
+        "path": "1903.04829.tex.zip",
+        "bytes": 866798
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 14,
+    "bibliography_with_year": 14,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 29,
+    "bibliography_cites": 10,
+    "tiddlers_path": "1903.04829.tiddlers.json",
+    "tiddlers_count": 448,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -3793,16 +3854,58 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 9999.1,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:31:37Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.1,
+      "detail": "426 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T23:13:22Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9559.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T23:13:23Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 282.1,
+      "detail": "410 objects, 34 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T23:13:23Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "14 entries, 0+29 cites detected, 10 linked"
+    },
+    {
+      "ts": "2026-08-22T23:13:23Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.5,
+      "detail": "448 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1903.04829/1903.04829.lines.json": "sha256:ca77e6888bddb2b6582766d59811b073db4f62a50ab4aa7bbe1655e3cafc95c6"
+      },
       "params_hash": "sha256:557705ee59a0ed5da4af0957216ec7b50d7f5aa883a3b80c6ba55f81c6f9dc79",
       "algo": "sha256",
-      "ts": "2026-08-03T19:45:58Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T23:13:23Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 26,
@@ -73,27 +74,78 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 26,
-      "Equation": 526,
-      "Paragraph": 209,
-      "Document": 1
+      "Abstract": 1,
+      "Section": 2,
+      "ListItem": 4,
+      "Equation": 134,
+      "Formula": 199,
+      "Paragraph": 167,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 134,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "1414674613.tiddlers.json",
-    "tiddlers_count": 778,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Eigenvalues of the Laplace-Beltrami operator on a spherical cap is considered under\n      the homogeneous Robin condition. The asymptotic behavior of eigenvalues and the\n      inﬂuence of the eigenvalues by the boundary conditions are discussed as the cap becomes\n      large so that the domain covers almost the whole sphere.",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "KMJ_37-3_08 620..645",
+      "Creator": "3B2 Total Publishing System 7.51a/W",
+      "Producer": "Acrobat Distiller 5.0.5 (Windows)",
+      "CreationDate": "Tue Oct 21 05:21:55 2014 CEST",
+      "ModDate": "Tue Oct 21 05:38:49 2014 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "26",
+      "Encrypted": "no",
+      "Page size": "516 x 728 pts",
+      "Page rot": "0",
+      "File size": "178200 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 26,
+    "image_count": 0,
+    "mathpix_pdf_id": "9baee8e4-06d8-429c-a189-28bbd0b1e19e",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1414674613.lines.json",
+        "bytes": 759501
+      },
+      {
+        "format": "md",
+        "path": "1414674613.md",
+        "bytes": 58743
+      },
+      {
+        "format": "tex.zip",
+        "path": "1414674613.tex.zip",
+        "bytes": 61501
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "1414674613.tiddlers.json",
+    "tiddlers_count": 553,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "KMJ_37-3_08 620..645",
@@ -482,18 +534,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 20.6,
       "detail": "778 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T19:19:50Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9366.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:19:51Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 737.9,
+      "detail": "535 objects, 134 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:19:51Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.9,
+      "detail": "553 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1414674613/1414674613.lines.json": "sha256:0d6fd71873a32ef2ae6c4e1a59e2726e9d25ee524f670e273fe360466dc7d966"
+        "/home/wkolbe/pdfdrill-library/1414674613/1414674613.lines.json": "sha256:6ad042b745a5e03bab08aa9be26347b386625f0a9170d45d6c9907cbcec0bd38"
       },
       "params_hash": "sha256:bd1e256f5715e6f9e19808e0263aa8515b72ff87e27b3d3054f8da2788061fff",
       "algo": "sha256",
-      "ts": "2026-08-04T22:21:35Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:19:50Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -3,19 +3,20 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SEMANTIC_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2303.11082",
@@ -23,21 +24,21 @@
     "bibkey": "2303.11082",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 9,
-      "Paragraph": 60,
-      "Abstract": 1,
-      "Section": 23,
-      "Formula": 29,
+      "Page": 17,
+      "Footnote": 9,
+      "Citation": 4,
       "Table": 6,
-      "Citation": 51
+      "TableRow": 62,
+      "TableCell": 409,
+      "Abstract": 1,
+      "Diagram": 3,
+      "ListItem": 35,
+      "Formula": 19,
+      "Paragraph": 82,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 27,
-    "bibliography_with_year": 27,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 51,
+    "model_source": "mathpix",
     "semantic_scientific": {
       "sections": 17,
       "equations": 0,
@@ -137,9 +138,6 @@
       "DFVIKH+CMMI6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2303.11082.tiddlers.json",
-    "tiddlers_count": 190,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Structured knowledge bases (KBs) are a foundation of many intelligent applications, yet are notoriously incomplete. Language models (LMs) have recently been proposed for unsupervised knowledge base completion (KBC), yet, despite encouraging initial results, questions regarding their suitability remain open. Existing evaluations often fall short because they only evaluate on popular subjects, or sample already existing facts from KBs. In this work, we introduce a novel, more challenging benchmark dataset, and a methodology tailored for a realistic assessment of the KBC potential of LMs. For automated assessment, we curate a dataset called WD-KNOWN, which provides an unbiased random sample of Wikidata, containing over 3.9 million facts. In a second step, we perform a human evaluation on predictions that are not yet in the KB, as only this provides real insights into the added value over existing KBs. Our key finding is that biases in dataset conception of previous benchmarks lead to a systematic overestimate of LM performance for KBC. However, our results also reveal strong areas of LMs. We could, for example, perform a significant completion of Wikidata on the relations nativeLanguage, by a factor of ~21 (from 260k to 5.8M) at 82% precision, usedLanguage, by a factor of ~2.1 (from 2.1M to 6.6M) at 82% precision, and citizenOf by a factor of ~0.3 (from 4.2M to 5.3M) at 90% precision. Moreover, we find that LMs possess surprisingly strong generalization capabilities: even on relations where most facts were not directly observed in LM training, prediction quality can be high.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -172,7 +170,72 @@
         "page": 14,
         "url": "https://en.Wikipedia.org/wiki/Marcus_Adams_(Canadian_football)"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Tue Mar 21 02:14:01 2023 CET",
+      "ModDate": "Tue Mar 21 02:14:01 2023 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "17",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "460032 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 17,
+    "image_count": 2,
+    "mathpix_pdf_id": "7439de85-492d-4e88-9a9e-25596ffc1391",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2303.11082.lines.json",
+        "bytes": 1289361
+      },
+      {
+        "format": "md",
+        "path": "2303.11082.md",
+        "bytes": 47946
+      },
+      {
+        "format": "tex.zip",
+        "path": "2303.11082.tex.zip",
+        "bytes": 145270
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 27,
+    "bibliography_with_year": 27,
+    "bibliography_numeric_citations": 38,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 38,
+    "tiddlers_path": "2303.11082.tiddlers.json",
+    "tiddlers_count": 217,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1456,18 +1519,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3683.0,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:25:49Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SEMANTIC_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9660.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:25:50Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SEMANTIC_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 308.7,
+      "detail": "648 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:25:50Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SEMANTIC_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "27 entries, 38+0 cites detected, 38 linked"
+    },
+    {
+      "ts": "2026-08-22T17:25:50Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SEMANTIC_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.7,
+      "detail": "217 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2303.11082/texsrc/main.tex": "sha256:d0e3cfafe02ae86232b457c35a6c2a9bfd627dd4395becc9e21a189a44526348"
+        "/home/wkolbe/pdfdrill-library/2303.11082/2303.11082.lines.json": "sha256:642ad3b5a4989ead32b082a03a921263fa7ae95804b59e871b235358b0226149"
       },
       "params_hash": "sha256:eddeaeeac2a0a091c7f930911de5f44871aa2aa5e10c61279c1ba19a2528403a",
       "algo": "sha256",
-      "ts": "2026-08-03T21:03:04Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:25:50Z",
+      "provenance": "mathpix"
     }
   }
 }

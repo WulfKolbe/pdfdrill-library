@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 15,
@@ -86,23 +87,29 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 15,
-      "ListItem": 20,
-      "Equation": 9,
-      "Paragraph": 23,
+      "Footnote": 4,
+      "Table": 11,
+      "TableRow": 192,
+      "TableCell": 474,
+      "Sidenote": 18,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Section": 6,
+      "ListItem": 17,
+      "Equation": 7,
+      "Formula": 76,
+      "Paragraph": 64,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 7,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Concept_Layers_Enhancing_Interpretability_and_Inte.tiddlers.json",
-    "tiddlers_count": 84,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -261,7 +268,32 @@
         "page": 10,
         "url": "https://arxiv.org/abs/1509.01626"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "60ba25d3-442f-4bb5-a178-dfaac85bbfb0",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Concept_Layers_Enhancing_Interpretability_and_Inte.lines.json",
+        "bytes": 1729964
+      },
+      {
+        "format": "md",
+        "path": "Concept_Layers_Enhancing_Interpretability_and_Inte.md",
+        "bytes": 49425
+      },
+      {
+        "format": "tex.zip",
+        "path": "Concept_Layers_Enhancing_Interpretability_and_Inte.tex.zip",
+        "bytes": 109262
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Concept_Layers_Enhancing_Interpretability_and_Inte.tiddlers.json",
+    "tiddlers_count": 239,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1644,18 +1676,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4802.6,
       "detail": "5 images, 5 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:59:15Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9728.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:59:16Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 503.4,
+      "detail": "888 objects, 7 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:59:16Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.8,
+      "detail": "239 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Concept_Layers_Enhancing_Interpretability_and_Inte/Concept_Layers_Enhancing_Interpretability_and_Inte.lines.json": "sha256:f4c2d79c8db5c6319ead0676ee85c58c6b1a16af45f7d97c8d97b7cd09a0229f"
+        "/home/wkolbe/pdfdrill-library/Concept_Layers_Enhancing_Interpretability_and_Inte/Concept_Layers_Enhancing_Interpretability_and_Inte.lines.json": "sha256:522b3b1715b00afcb961590c1fbbcc14173a9c98120d0f529456f6c073420cf9"
       },
       "params_hash": "sha256:782d95367df668eb86318f1b8b707200635adddb44bfed8ddbd840fc9dc95586",
       "algo": "sha256",
-      "ts": "2026-08-05T06:53:48Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:59:15Z",
+      "provenance": "mathpix"
     }
   }
 }

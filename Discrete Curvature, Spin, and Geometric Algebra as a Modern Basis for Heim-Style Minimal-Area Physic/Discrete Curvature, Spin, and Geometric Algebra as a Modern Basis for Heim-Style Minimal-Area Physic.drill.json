@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 7,
@@ -64,22 +65,21 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 7,
-      "Equation": 6,
-      "Paragraph": 9,
+      "Section": 10,
+      "ListItem": 3,
+      "Formula": 20,
+      "Paragraph": 40,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic.tiddlers.json",
-    "tiddlers_count": 39,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic",
@@ -178,7 +178,32 @@
         "page": 5,
         "url": "https://link.springer.com/content/pdf/10.1007/BF00759853.pdf"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "938accd2-b728-492a-8e94-6db90f7cf23c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic.lines.json",
+        "bytes": 279881
+      },
+      {
+        "format": "md",
+        "path": "Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic.md",
+        "bytes": 19636
+      },
+      {
+        "format": "tex.zip",
+        "path": "Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic.tex.zip",
+        "bytes": 23751
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic.tiddlers.json",
+    "tiddlers_count": 98,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic",
@@ -483,18 +508,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 913.1,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:54:15Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5562.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:54:15Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 84.9,
+      "detail": "81 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:54:15Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.7,
+      "detail": "98 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic/Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic.lines.json": "sha256:26f87843083587a5cdccd925306132eeef7d33206697df12431003ab3e154582"
+        "/home/wkolbe/pdfdrill-library/Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic/Discrete Curvature, Spin, and Geometric Algebra as a Modern Basis for Heim-Style Minimal-Area Physic.lines.json": "sha256:dd3671d241a7a2feca3f2c54766fe91173dfa43dcf1c177153123d6c92a41855"
       },
       "params_hash": "sha256:e3358ee41080e43d1c65bf41efa733ed4d6f14876b47258d6cb024cd769bffd1",
       "algo": "sha256",
-      "ts": "2026-08-05T18:44:41Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:54:15Z",
+      "provenance": "mathpix"
     }
   }
 }

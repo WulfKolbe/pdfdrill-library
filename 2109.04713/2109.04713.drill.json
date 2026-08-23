@@ -3,18 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2109.04713",
@@ -22,22 +22,22 @@
     "bibkey": "2109.04713",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 43,
-      "Abstract": 1,
-      "LtxCommand": 34,
-      "Section": 11,
-      "Formula": 25,
-      "Equation": 1,
+      "Page": 5,
       "Table": 1,
-      "Citation": 49
+      "TableRow": 8,
+      "TableCell": 73,
+      "Sidenote": 10,
+      "Abstract": 1,
+      "Diagram": 2,
+      "ListItem": 11,
+      "Equation": 1,
+      "Formula": 23,
+      "Paragraph": 71,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 39,
-    "bibliography_with_year": 21,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 49,
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "pages": 5,
     "bytes": 624766,
     "page_size": "612 x 792 pts (letter)",
@@ -108,9 +108,6 @@
       "SQQYDA+LibertineMathMI5"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2109.04713.tiddlers.json",
-    "tiddlers_count": 178,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Prior work on personalizing web search results has focused on considering query-and-click logs to capture users individual interests. For product search, extensive user histories about purchases and ratings have been exploited. However, for general entity search, such as for books on specific topics or travel destinations with certain features, personalization is largely underexplored. In this paper, we address personalization of book search, as an exemplary case of entity search, by exploiting sparse user profiles obtained through online questionnaires. We devise and compare a variety of re-ranking methods based on language models or neural learning. Our experiments show that even very sparse information about individuals can enhance the effectiveness of the search results.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -146,7 +143,67 @@
         "page": 5,
         "url": "http://arxiv.org/abs/1804.11192"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Personalized Entity Search by Sparse and Scrutable User Profiles",
+      "Subject": "-  Information systems  ->  Personalization.",
+      "Keywords": "personalized entity search, sparse user profile, knowledge graph",
+      "Author": "Ghazaleh H. Torbati, Andrew Yates, and Gerhard Weikum",
+      "Creator": "LaTeX with acmart 2019/08/24 v1.64 Typesetting articles for the Association for Computing Machinery and hyperref 2020-05-15 v7.00e Hypertext links for LaTeX",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Mon Sep 13 02:49:14 2021 CEST",
+      "ModDate": "Mon Sep 13 02:49:14 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "5",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "624766 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 5,
+    "image_count": 2,
+    "mathpix_pdf_id": "50d9a735-4799-4763-8c4b-9b31b8d91e13",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2109.04713.lines.json",
+        "bytes": 751477
+      },
+      {
+        "format": "md",
+        "path": "2109.04713.md",
+        "bytes": 35214
+      },
+      {
+        "format": "tex.zip",
+        "path": "2109.04713.tex.zip",
+        "bytes": 152121
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2109.04713.tiddlers.json",
+    "tiddlers_count": 143,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Personalized Entity Search by Sparse and Scrutable User Profiles",
@@ -1110,18 +1167,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2215.2,
       "detail": "2 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:34:55Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9530.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:34:55Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 142.9,
+      "detail": "208 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:34:55Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.8,
+      "detail": "143 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2109.04713/texsrc/main.tex": "sha256:c1786be785408ed734f9fe92350423170c401adff07a0542ead8f6ee25548350"
+        "/home/wkolbe/pdfdrill-library/2109.04713/2109.04713.lines.json": "sha256:3993cd191581c5ec6a9634eed5ebbf2033c0c81bfeda5d712cd7544830aba6f3"
       },
       "params_hash": "sha256:9e6b74ee9988f2168b39679f297c03646bc79aaa0bd062b5a1c8110a490420c0",
       "algo": "sha256",
-      "ts": "2026-08-03T20:55:35Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:34:55Z",
+      "provenance": "mathpix"
     }
   }
 }

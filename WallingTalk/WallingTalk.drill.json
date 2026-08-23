@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -80,22 +81,67 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 6,
-      "ListItem": 25,
-      "Equation": 35,
-      "Paragraph": 28,
+      "ListItem": 14,
+      "Equation": 26,
+      "Formula": 83,
+      "Paragraph": 44,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 26,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 34 unmapped private-use character(s) remain (U+F8EB×2, U+F8EC×3, U+F8ED×2, U+F8F1×2, U+F8F2×2, U+F8F3×2, U+F8F4×14, U+F8F6×2, U+F8F7×3, U+F8F8×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-0.14f",
+      "CreationDate": "Tue Mar 20 22:22:00 1990 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "167317 bytes",
+      "Optimized": "no",
+      "PDF version": "1.3"
+    },
+    "page_count_text": 6,
+    "image_count": 0,
+    "mathpix_pdf_id": "9623a6b5-4ef1-4964-a6c0-26e7d08cfddc",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "WallingTalk.lines.json",
+        "bytes": 196223
+      },
+      {
+        "format": "md",
+        "path": "WallingTalk.md",
+        "bytes": 13886
+      },
+      {
+        "format": "tex.zip",
+        "path": "WallingTalk.tex.zip",
+        "bytes": 15312
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "WallingTalk.tiddlers.json",
-    "tiddlers_count": 111,
+    "tiddlers_count": 190,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -471,18 +517,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.0,
       "detail": "111 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:46:10Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6301.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:46:10Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 114.3,
+      "detail": "174 objects, 26 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:46:11Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.9,
+      "detail": "190 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/WallingTalk/WallingTalk.lines.json": "sha256:2bd5b6ab233ebd3d291113c11d2bba7774745dc9be31a4abb774ab5e0f4da254"
+        "/home/wkolbe/pdfdrill-library/WallingTalk/WallingTalk.lines.json": "sha256:ca7532946d7b47b1896efb682e2351b91a6a0560dbd429cf416088983c5861a2"
       },
       "params_hash": "sha256:efd5be16336ac2994307f7d1fab91b7cca1be7171dad5e8a226c0834d434736f",
       "algo": "sha256",
-      "ts": "2026-08-06T01:00:01Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:46:10Z",
+      "provenance": "mathpix"
     }
   }
 }

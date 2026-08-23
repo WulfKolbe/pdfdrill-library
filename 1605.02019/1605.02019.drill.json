@@ -5,15 +5,15 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -49,21 +49,26 @@
     "bibkey": "1605.02019",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 26,
-      "Abstract": 1,
-      "Section": 11,
-      "Formula": 56,
-      "Equation": 4,
+      "Page": 8,
+      "Footnote": 6,
       "Table": 5,
-      "Citation": 34
+      "TableRow": 40,
+      "TableCell": 154,
+      "Sidenote": 16,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 3,
+      "Equation": 4,
+      "Formula": 49,
+      "Paragraph": 38,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 4,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "1605.02019.tgz",
     "latex_macros": 0,
@@ -73,9 +78,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "1605.02019.tgz",
     "merge_paragraphs_changed": 8,
-    "tiddlers_path": "1605.02019.tiddlers.json",
-    "tiddlers_count": 149,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "HOMQFW+NimbusRomNo9L-Medi",
       "HSDQKQ+NimbusRomNo9L-Regu",
@@ -111,11 +113,6 @@
       "numbered": 11,
       "roots": 1
     },
-    "bibliography_entries": 20,
-    "bibliography_with_year": 17,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 34,
     "toc_search_scope": "first3pages",
     "links": [
       {
@@ -128,7 +125,58 @@
         "url": "https://github.com/cemoody/lda2vec/blob/",
         "kind": "text"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.12",
+      "CreationDate": "Mon May  9 02:33:06 2016 CEST",
+      "ModDate": "Mon May  9 02:33:06 2016 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "223058 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 8,
+    "image_count": 10,
+    "mathpix_pdf_id": "e3fd11b8-50bf-4cb3-ad33-3750c38693fe",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1605.02019.lines.json",
+        "bytes": 941582
+      },
+      {
+        "format": "md",
+        "path": "1605.02019.md",
+        "bytes": 32300
+      },
+      {
+        "format": "tex.zip",
+        "path": "1605.02019.tex.zip",
+        "bytes": 139094
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1605.02019.tiddlers.json",
+    "tiddlers_count": 148,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -649,16 +697,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2023.6,
       "detail": "5 images, 5 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:56:28Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10164.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:56:29Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 226.4,
+      "detail": "326 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:56:29Z",
+      "node": "tiddlers",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.1,
+      "detail": "148 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1605.02019/1605.02019.lines.json": "sha256:b0c72ee954dddb23fe716ca8f587c7bc5ce88317fadfea10f3d2b629b88da8ce"
+      },
       "params_hash": "sha256:8a378bec5bf16c4231bcee61157fe167cc4ba15ff62d21227261216b104af20e",
       "algo": "sha256",
-      "ts": "2026-08-03T19:36:53Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:56:29Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

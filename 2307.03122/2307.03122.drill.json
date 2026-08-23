@@ -3,10 +3,8 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +12,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2307.03122",
@@ -22,21 +23,22 @@
     "bibkey": "2307.03122",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 28,
-      "Abstract": 1,
-      "Section": 8,
-      "Formula": 8,
-      "LtxCommand": 4,
+      "Page": 16,
+      "Footnote": 1,
+      "Citation": 53,
       "Table": 15,
-      "Citation": 31
+      "TableRow": 470,
+      "TableCell": 2785,
+      "Sidenote": 10,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 4,
+      "Formula": 26,
+      "Paragraph": 31,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 28,
-    "bibliography_with_year": 27,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_source": "mathpix",
     "pages": 16,
     "bytes": 294964,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -101,9 +103,6 @@
       "numbered": 8,
       "roots": 1
     },
-    "tiddlers_path": "2307.03122.tiddlers.json",
-    "tiddlers_count": 121,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The widespread usage of latent language representations via pre-trained language models (LMs) suggests that they are a promising source of structured knowledge. However, existing methods focus only on a single object per subject-relation pair, even though often multiple objects are correct. To overcome this limitation, we analyze these representations for their potential to yield materialized multi-object relational knowledge. We formulate the problem as a rank-then-select task. For ranking candidate objects, we evaluate existing prompting techniques and propose new ones incorporating domain knowledge. Among the selection methods, we find that choosing objects with a likelihood above a learned relation-specific threshold gives a 49.5% F1 score. Our results highlight the difficulty of employing LMs for the multi-valued slot-filling task and pave the way for further research on extracting relational knowledge from latent language representations.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -192,7 +191,72 @@
         "page": 6,
         "url": "https://doi.org/10.18653/v1/2021.naacl-main.398"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Mon Jul 10 02:15:39 2023 CEST",
+      "ModDate": "Mon Jul 10 02:15:39 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "294964 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 0,
+    "mathpix_pdf_id": "2f43a5d6-f3e1-49ad-a330-2f77f2df7423",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2307.03122.lines.json",
+        "bytes": 4226291
+      },
+      {
+        "format": "md",
+        "path": "2307.03122.md",
+        "bytes": 68360
+      },
+      {
+        "format": "tex.zip",
+        "path": "2307.03122.tex.zip",
+        "bytes": 141223
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 8,
+    "bibliography_with_year": 8,
+    "bibliography_numeric_citations": 1,
+    "bibliography_authoryear_citations": 7,
+    "bibliography_cites": 3,
+    "tiddlers_path": "2307.03122.tiddlers.json",
+    "tiddlers_count": 139,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1112,16 +1176,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4897.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:10:23Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 16908.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:10:24Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 595.0,
+      "detail": "3414 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:10:25Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "8 entries, 1+7 cites detected, 3 linked"
+    },
+    {
+      "ts": "2026-08-22T17:10:25Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.3,
+      "detail": "139 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2307.03122/2307.03122.lines.json": "sha256:8c2dc386d3b835acd1e6e5fb85bae210a74593457ac323e896258714ed8eb591"
+      },
       "params_hash": "sha256:4e6ae37fc155d157b4e65ed0171f01cf585e1feb27ae53c99d12bc744b4d9cda",
       "algo": "sha256",
-      "ts": "2026-08-03T21:06:22Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:10:24Z",
+      "provenance": "mathpix"
     }
   }
 }

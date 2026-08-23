@@ -5,13 +5,13 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -94,17 +94,22 @@
     "bibkey": "1805.08511",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 65,
-      "LtxCommand": 3,
-      "Abstract": 1,
-      "Section": 18,
-      "Formula": 107,
-      "Equation": 6,
+      "Page": 11,
+      "Footnote": 6,
       "Table": 2,
-      "Citation": 141
+      "TableRow": 12,
+      "TableCell": 91,
+      "Sidenote": 20,
+      "Abstract": 1,
+      "Diagram": 4,
+      "ListItem": 22,
+      "Equation": 6,
+      "Formula": 106,
+      "Paragraph": 90,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 11,
       "placed": 51,
@@ -114,14 +119,6 @@
       "numbered": 18,
       "roots": 1
     },
-    "bibliography_entries": 66,
-    "bibliography_with_year": 66,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 141,
-    "tiddlers_path": "1805.08511.tiddlers.json",
-    "tiddlers_count": 297,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We propose a novel part-based method for tracking an arbitrary object in challenging video sequences. The colour distribution of tracked image patches on the target object are represented by pairs of RGB samples and counts of how many pixels in the patch are similar to them. Patches are placed by segmenting the object in the given bounding box and placing patches in homogeneous regions of the object. These are located in subsequent image frames by applying non-shearing affine transformations to the patches&#39; previous locations, locally optimising the best of these, and evaluating their quality using a modified Bhattacharyya distance. In experiments carried out on VOT2018 and OTB100 benchmarks, the tracker achieves higher performance than all other part-based trackers. An ablation study is used to reveal the effectiveness of each tracking component, with largest performance gains found when using the patch placement scheme.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -130,7 +127,67 @@
       "George De Ath",
       "Richard M. Everson"
     ],
-    "arxiv_primary_category": "cs.CV"
+    "arxiv_primary_category": "cs.CV",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Fri Oct 11 04:08:23 2019 CEST",
+      "ModDate": "Fri Oct 11 04:08:23 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "815510 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 59,
+    "mathpix_pdf_id": "adb0b6e3-6547-4f08-a240-d3b920f96fce",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1805.08511.lines.json",
+        "bytes": 1234370
+      },
+      {
+        "format": "md",
+        "path": "1805.08511.md",
+        "bytes": 55219
+      },
+      {
+        "format": "tex.zip",
+        "path": "1805.08511.tex.zip",
+        "bytes": 500307
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1805.08511.tiddlers.json",
+    "tiddlers_count": 285,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2646,16 +2703,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3939.3,
       "detail": "59 images, 59 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:49:27Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10063.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:49:28Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 372.5,
+      "detail": "372 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:49:28Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.0,
+      "detail": "285 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1805.08511/1805.08511.lines.json": "sha256:beca39520bfd2a931e2ff78eb5ec7c26ba5da34685e9035a6f0f93327b8ab810"
+      },
       "params_hash": "sha256:0e3b4f59f0db28cbc62c7d08858c171c665d28deed9585513332edf28cf08734",
       "algo": "sha256",
-      "ts": "2026-08-03T19:40:55Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:49:27Z",
+      "provenance": "mathpix"
     }
   }
 }

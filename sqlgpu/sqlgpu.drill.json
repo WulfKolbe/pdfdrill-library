@@ -6,7 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -118,29 +118,79 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 12,
-      "Citation": 2,
-      "ListItem": 16,
-      "Equation": 17,
-      "Formula": 3,
-      "Paragraph": 22,
+      "Footnote": 4,
+      "Table": 1,
+      "TableRow": 5,
+      "TableCell": 19,
+      "Sidenote": 22,
+      "Abstract": 1,
+      "Diagram": 28,
+      "Picture": 1,
+      "ListItem": 9,
+      "Equation": 3,
+      "Formula": 81,
+      "Paragraph": 137,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 26 unmapped private-use character(s) remain (U+F8F4×20, U+F8FC×2, U+F8FD×2, U+F8FE×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 70,
-    "bibliography_with_year": 68,
-    "bibliography_numeric_citations": 74,
-    "bibliography_authoryear_citations": 4,
-    "bibliography_cites": 74,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "In-Database Machine Learning with SQL on GPUs",
+      "Subject": "",
+      "Creator": "LaTeX with acmart 2020/09/13 v1.73 Typesetting articles for the Association for Computing Machinery and hyperref 2020-05-15 v7.00e Hypertext links for LaTeX",
+      "Producer": "pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+      "CreationDate": "Sat May 29 12:18:44 2021 CEST",
+      "ModDate": "Sat May 29 12:18:44 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "1010529 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 12,
+    "image_count": 0,
+    "mathpix_pdf_id": "d76089e9-34af-4b5f-b454-980872cbf87a",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "sqlgpu.lines.json",
+        "bytes": 1293052
+      },
+      {
+        "format": "md",
+        "path": "sqlgpu.md",
+        "bytes": 66637
+      },
+      {
+        "format": "tex.zip",
+        "path": "sqlgpu.tex.zip",
+        "bytes": 1212215
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "sqlgpu.tiddlers.json",
-    "tiddlers_count": 164,
+    "tiddlers_count": 316,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -1000,18 +1050,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 8.0,
       "detail": "164 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:20:37Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10120.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:20:38Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 282.2,
+      "detail": "324 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:20:38Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.3,
+      "detail": "316 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/sqlgpu/sqlgpu.lines.json": "sha256:b7de1fcad258850dbc67956a305dd629302891b5db369434f973f3f68608c315"
+        "/home/wkolbe/pdfdrill-library/sqlgpu/sqlgpu.lines.json": "sha256:98cc675e5e1df63d0c7ae7f63d12ede97b04f808d4d8abe065263a81884103a9"
       },
       "params_hash": "sha256:ac1f247ab5c056b856b4f738f6e0904a198e89ba9cce2808f38a7ab32da80f58",
       "algo": "sha256",
-      "ts": "2026-08-06T02:06:35Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:20:38Z",
+      "provenance": "mathpix"
     }
   }
 }

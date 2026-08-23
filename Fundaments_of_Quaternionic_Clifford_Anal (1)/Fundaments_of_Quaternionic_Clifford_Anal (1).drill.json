@@ -6,15 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 23,
@@ -110,29 +110,24 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 23,
-      "Citation": 14,
-      "ListItem": 2,
-      "Equation": 264,
-      "Paragraph": 176,
+      "Sidenote": 4,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 5,
+      "Equation": 142,
+      "Formula": 313,
+      "Paragraph": 191,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 142,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 8 unmapped private-use character(s) remain (U+F8EB×1, U+F8EC×2, U+F8ED×1, U+F8F6×1, U+F8F7×2, U+F8F8×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 26,
-    "bibliography_with_year": 22,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 1,
-    "bibliography_cites": 0,
-    "tiddlers_path": "Fundaments_of_Quaternionic_Clifford_Anal (1).tiddlers.json",
-    "tiddlers_count": 517,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -209,7 +204,33 @@
         "page": 1,
         "url": "https://www.researchgate.net/profile/Vladimir_Soucek?enrichId=rgreq-97ba102c-db2f-469d-8d97-b3be7ca6fbff&enrichSource=Y292ZXJQYWdlOzI2MTYzNTg5NjtBUzoxNzU2NDI1OTk1MDE4MjZAMTQxODg4Nzg2NzU2Nw%3D%3D&el=1_x_7"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "e4fc8284-fe67-4479-8bc2-93d4867bcacf",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Fundaments_of_Quaternionic_Clifford_Anal (1).lines.json",
+        "bytes": 791996
+      },
+      {
+        "format": "md",
+        "path": "Fundaments_of_Quaternionic_Clifford_Anal (1).md",
+        "bytes": 72969
+      },
+      {
+        "format": "tex.zip",
+        "path": "Fundaments_of_Quaternionic_Clifford_Anal (1).tex.zip",
+        "bytes": 126534
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "Fundaments_of_Quaternionic_Clifford_Anal (1).tiddlers.json",
+    "tiddlers_count": 697,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -871,18 +892,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3860.7,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:56:23Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9488.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:56:24Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 633.7,
+      "detail": "681 objects, 142 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:56:25Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 19.6,
+      "detail": "697 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Fundaments_of_Quaternionic_Clifford_Anal (1)/Fundaments_of_Quaternionic_Clifford_Anal (1).lines.json": "sha256:e27ce48ec540a72e791d49598f3952da874bac3c5af2da6274c2e79ecb75d6c8"
+        "/home/wkolbe/pdfdrill-library/Fundaments_of_Quaternionic_Clifford_Anal (1)/Fundaments_of_Quaternionic_Clifford_Anal (1).lines.json": "sha256:f5032b3920fc0bb7a54977c31fb38d2451cfdb7b7988980bdb83c565352cfdd6"
       },
       "params_hash": "sha256:164a33f1742c8587e1cd97ab2d3e56805a72c0f55b0ad58a04f1c2f6f6604cac",
       "algo": "sha256",
-      "ts": "2026-08-05T20:24:49Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:56:24Z",
+      "provenance": "mathpix"
     }
   }
 }

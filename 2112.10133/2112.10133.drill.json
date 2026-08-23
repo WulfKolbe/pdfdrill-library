@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -94,15 +95,18 @@
     "bibkey": "2112.10133",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Formula": 153,
-      "Paragraph": 86,
-      "Section": 18,
-      "Equation": 32,
-      "Theorem": 1,
-      "Citation": 130
+      "Page": 8,
+      "Citation": 2,
+      "Sidenote": 16,
+      "Abstract": 1,
+      "ListItem": 10,
+      "Equation": 25,
+      "Formula": 141,
+      "Paragraph": 65,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 25,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 8,
       "placed": 22,
@@ -112,14 +116,6 @@
       "numbered": 18,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "2112.10133.tiddlers.json",
-    "tiddlers_count": 370,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Information field theory (IFT), the information theory for fields, is a mathematical framework for signal reconstruction and non-parametric inverse problems. Artificial intelligence (AI) and machine learning (ML) aim at generating intelligent systems including such for perception, cognition, and learning. This overlaps with IFT, which is designed to address perception, reasoning, and inference tasks. Here, the relation between concepts and tools in IFT and those in AI and ML research are discussed. In the context of IFT, fields denote physical quantities that change continuously as a function of space (and time) and information theory refers to Bayesian probabilistic logic equipped with the associated entropic information measures. Reconstructing a signal with IFT is a computational problem similar to training a generative neural network (GNN) in ML. In this paper, the process of inference in IFT is reformulated in terms of GNN training. In contrast to classical neural networks, IFT based GNNs can operate without pre-training thanks to incorporating expert knowledge into their architecture. Furthermore, the cross-fertilization of variational inference methods used in IFT and ML are discussed. These discussions suggests that IFT is well suited to address many problems in AI and ML research and application.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -421,7 +417,72 @@
         "page": 8,
         "url": "https://arxiv.org/abs/1605.00660"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Tue Dec 21 03:10:57 2021 CET",
+      "ModDate": "Tue Dec 21 03:10:57 2021 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "224151 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 8,
+    "image_count": 55,
+    "mathpix_pdf_id": "81002f9c-3114-4a7b-a834-597bbd04f031",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2112.10133.lines.json",
+        "bytes": 899790
+      },
+      {
+        "format": "md",
+        "path": "2112.10133.md",
+        "bytes": 46168
+      },
+      {
+        "format": "tex.zip",
+        "path": "2112.10133.tex.zip",
+        "bytes": 48978
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 48,
+    "bibliography_with_year": 47,
+    "bibliography_numeric_citations": 67,
+    "bibliography_authoryear_citations": 34,
+    "bibliography_cites": 67,
+    "tiddlers_path": "2112.10133.tiddlers.json",
+    "tiddlers_count": 366,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2801,16 +2862,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3574.3,
       "detail": "110 images, 55 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:58:36Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9294.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:58:36Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 269.0,
+      "detail": "269 objects, 25 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:58:37Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "48 entries, 67+34 cites detected, 67 linked"
+    },
+    {
+      "ts": "2026-08-22T14:58:37Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.4,
+      "detail": "366 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2112.10133/2112.10133.lines.json": "sha256:876fbe96f0bf1429311dd02b832a6f0c7d49f8ae3907df3c5a63766356d57106"
+      },
       "params_hash": "sha256:75c8318fc920d58476ee07a0fe6fb318edb01a0f74f4ab62d4c99a8ba8634689",
       "algo": "sha256",
-      "ts": "2026-08-03T20:56:29Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:58:36Z",
+      "provenance": "mathpix"
     }
   }
 }

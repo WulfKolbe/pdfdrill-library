@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -69,23 +70,19 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "ListItem": 1,
-      "Equation": 1,
-      "Paragraph": 2,
+      "Formula": 16,
+      "Paragraph": 6,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "11.Uebung_VK_25.tiddlers.json",
-    "tiddlers_count": 22,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
     "links": [
@@ -94,7 +91,55 @@
         "url": "http://www.mi.uni-koeln.de/vorkurs/all/",
         "kind": "text"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "MiKTeX pdfTeX-1.40.19",
+      "CreationDate": "Fri Sep 26 10:59:16 2025 CEST",
+      "ModDate": "Mon Sep 29 11:03:09 2025 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "1",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "102989 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 1,
+    "image_count": 0,
+    "mathpix_pdf_id": "9acea703-3e84-4f56-8712-7736f2da1bbf",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "11.Uebung_VK_25.lines.json",
+        "bytes": 30000
+      },
+      {
+        "format": "md",
+        "path": "11.Uebung_VK_25.md",
+        "bytes": 1378
+      },
+      {
+        "format": "tex.zip",
+        "path": "11.Uebung_VK_25.tex.zip",
+        "bytes": 2410
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "11.Uebung_VK_25.tiddlers.json",
+    "tiddlers_count": 40,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -423,18 +468,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 0.4,
       "detail": "22 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:10:39Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5074.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:10:39Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 18.4,
+      "detail": "24 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:10:39Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.2,
+      "detail": "40 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/11.Uebung_VK_25/11.Uebung_VK_25.lines.json": "sha256:95f0e57bec7d3775a98ff38dd88e40feef1d7df77214f7d98f5a90fb5ff252a3"
+        "/home/wkolbe/pdfdrill-library/11.Uebung_VK_25/11.Uebung_VK_25.lines.json": "sha256:b3ca77c3509bee5fa887e622b4f720c5efed984911c1343ff51b59af6a47d3b3"
       },
       "params_hash": "sha256:70dbd42787a38b51a42ff38217b1576dbdfd85f892d4fe930c816859533e9d2c",
       "algo": "sha256",
-      "ts": "2026-08-04T22:19:21Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:10:39Z",
+      "provenance": "mathpix"
     }
   }
 }

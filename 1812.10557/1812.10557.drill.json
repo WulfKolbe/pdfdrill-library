@@ -5,14 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 3,
@@ -76,15 +76,18 @@
     "bibkey": "1812.10557",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 18,
+      "Page": 3,
+      "Sidenote": 8,
       "Abstract": 1,
       "Section": 4,
-      "Formula": 26,
-      "Equation": 1,
-      "Citation": 10
+      "ListItem": 1,
+      "Equation": 15,
+      "Formula": 28,
+      "Paragraph": 36,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 15,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 3,
       "placed": 11,
@@ -94,21 +97,73 @@
       "numbered": 4,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "1812.10557.tiddlers.json",
-    "tiddlers_count": 81,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Noether&#39;s theorem is widely regarded as one of the most elegant results in theoretical physics. The article presents two simple examples that can be used to demonstrate the basic idea behind Noether&#39;s theorem, by deriving a relation between translational symmetry in the time coordinate and energy conservation in a way that is accessible to beginning students.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
     "arxiv_title": "Energy conservation in explicit solutions as a simple illustration of Noether&#39;s theorem",
     "arxiv_authors": [
       "Markus Pössel"
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Dec 31 02:46:33 2018 CET",
+      "ModDate": "Mon Dec 31 02:46:33 2018 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "3",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "85204 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 3,
+    "image_count": 23,
+    "mathpix_pdf_id": "3a738add-19b8-4aaf-9358-827c2ddfacc7",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1812.10557.lines.json",
+        "bytes": 303042
+      },
+      {
+        "format": "md",
+        "path": "1812.10557.md",
+        "bytes": 13509
+      },
+      {
+        "format": "tex.zip",
+        "path": "1812.10557.tex.zip",
+        "bytes": 14722
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1812.10557.tiddlers.json",
+    "tiddlers_count": 114,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1489,16 +1544,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1679.2,
       "detail": "46 images, 23 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:20:28Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8624.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:20:28Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 97.9,
+      "detail": "97 objects, 15 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:20:28Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.0,
+      "detail": "114 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1812.10557/1812.10557.lines.json": "sha256:b8f5a2dbea4ae2693c4fcab8130d8814ae9f30ae8178b3b34208496ff30d594a"
+      },
       "params_hash": "sha256:858a4bd35dfa76da629c31ac53d1b23637af0d8e880e0cf092f9baf9bf9015ca",
       "algo": "sha256",
-      "ts": "2026-08-03T19:42:56Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:20:28Z",
+      "provenance": "mathpix"
     }
   }
 }

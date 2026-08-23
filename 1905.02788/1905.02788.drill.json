@@ -5,12 +5,12 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "ABSTRACT_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -77,16 +77,16 @@
     "bibkey": "1905.02788",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 2,
-      "Paragraph": 18,
+      "Page": 16,
       "Abstract": 1,
-      "Formula": 197,
-      "Section": 5,
-      "Equation": 18,
-      "Citation": 22
+      "Section": 4,
+      "Equation": 17,
+      "Formula": 187,
+      "Paragraph": 38,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 17,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 16,
       "placed": 5,
@@ -96,21 +96,73 @@
       "numbered": 5,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "1905.02788.tiddlers.json",
-    "tiddlers_count": 288,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Physicists usually understand that physics cannot (and should not) derive that $c\\approx 3\\cdot 10^8m/s$ and $\\hbar \\approx 1.054\\cdot 10^{-34}kg\\cdot m^2/s$. At the same time they usually believe that physics should derive the value of the cosmological constant $\\Lambda$ and that the solution of the dark energy problem depends on this value. However, background space in General Relativity (GR) is only a classical notion while on quantum level symmetry is defined by a Lie algebra of basic operators. We prove that the theory based on Poincare Lie algebra is a special degenerate case of the theories based on de Sitter (dS) or anti-de Sitter (AdS) Lie algebras in the formal limit $R\\to\\infty$ where R is the parameter of contraction from the latter algebras to the former one, and $R$ has nothing to do with the radius of background space. As a consequence, $R$ is necessarily finite, is fundamental to the same extent as $c$ and $\\hbar$, and a question why $R$ is as is does not arise. Following our previous publications, we consider a system of two free bodies in dS quantum mechanics and show that in semiclassical approximation the cosmological dS acceleration is necessarily nonzero and is the same as in GR if the radius of dS space equals $R$ and $\\Lambda=3/R^2$. This result follows from basic principles of quantum theory. It has nothing to do with existence or nonexistence of dark energy and therefore for explaining cosmological acceleration dark energy is not needed. The result is obtained without using the notion of dS background space (in particular, its metric and connection) but simply as a consequence of quantum mechanics based on the dS Lie algebra. Therefore, $\\Lambda$ has a physical meaning only on classical level and the cosmological constant problem and the dark energy problem do not arise.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
     "arxiv_title": "Cosmological Acceleration as a Consequence of Quantum de Sitter Symmetry",
     "arxiv_authors": [
       "Felix M. Lev"
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Tue Sep  7 08:50:56 2021 CEST",
+      "ModDate": "Tue Sep  7 08:50:56 2021 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "189270 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 16,
+    "image_count": 12,
+    "mathpix_pdf_id": "640e2e3e-b710-4a54-ab7c-6dd2f0117ccf",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1905.02788.lines.json",
+        "bytes": 711932
+      },
+      {
+        "format": "md",
+        "path": "1905.02788.md",
+        "bytes": 53688
+      },
+      {
+        "format": "tex.zip",
+        "path": "1905.02788.tex.zip",
+        "bytes": 55530
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1905.02788.tiddlers.json",
+    "tiddlers_count": 281,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -873,16 +925,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4074.0,
       "detail": "24 images, 12 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:06:30Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9319.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:06:31Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 306.5,
+      "detail": "264 objects, 17 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:06:31Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.5,
+      "detail": "281 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1905.02788/1905.02788.lines.json": "sha256:4ffd5d5a5df45c7062e0b0060d6fcafd59a06bc1e2d79047d1c637031cdc38de"
+      },
       "params_hash": "sha256:0883202cf6c77ca079ff483fa4f5efe8bd8e6f135f1860a53d6f86e1d3fd933a",
       "algo": "sha256",
-      "ts": "2026-08-03T19:46:22Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:06:31Z",
+      "provenance": "mathpix"
     }
   }
 }

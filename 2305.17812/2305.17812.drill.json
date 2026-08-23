@@ -5,14 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -89,17 +89,23 @@
     "bibkey": "2305.17812",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 74,
+      "Page": 17,
+      "Footnote": 20,
+      "Table": 13,
+      "TableRow": 113,
+      "TableCell": 491,
+      "Sidenote": 20,
       "Abstract": 1,
-      "Section": 20,
-      "Formula": 7,
-      "LtxCommand": 1,
+      "Diagram": 6,
+      "Section": 2,
+      "ListItem": 12,
       "Equation": 2,
-      "Table": 22,
-      "Citation": 44
+      "Formula": 57,
+      "Paragraph": 71,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 17,
       "placed": 52,
@@ -109,14 +115,6 @@
       "numbered": 20,
       "roots": 1
     },
-    "bibliography_entries": 16,
-    "bibliography_with_year": 16,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 44,
-    "tiddlers_path": "2305.17812.tiddlers.json",
-    "tiddlers_count": 178,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The chain-of-though (CoT) prompting methods were successful in various natural language processing (NLP) tasks thanks to their ability to unveil the underlying complex reasoning processes. Such reasoning processes typically exhibit implicitly structured steps. Recent efforts also started investigating methods to encourage more explicitly structured reasoning procedures to be captured. In this work, we propose Tab-CoT, a novel tabular-format CoT prompting method, which allows the complex reasoning process to be explicitly modelled in a highly structured manner. Despite its simplicity, we show that our approach is capable of performing reasoning across multiple dimensions (i.e., both rows and columns). We demonstrate our approach&#39;s strong zero-shot and few-shot capabilities through extensive experiments on a range of reasoning tasks.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -126,7 +124,67 @@
       "Wei Lu"
     ],
     "arxiv_primary_category": "cs.CL",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Tue May 30 03:17:45 2023 CEST",
+      "ModDate": "Tue May 30 03:17:45 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "17",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "435652 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 17,
+    "image_count": 0,
+    "mathpix_pdf_id": "abed1c67-d410-4c00-9ba5-303425c45d86",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2305.17812.lines.json",
+        "bytes": 2012503
+      },
+      {
+        "format": "md",
+        "path": "2305.17812.md",
+        "bytes": 66334
+      },
+      {
+        "format": "tex.zip",
+        "path": "2305.17812.tex.zip",
+        "bytes": 444145
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2305.17812.tiddlers.json",
+    "tiddlers_count": 240,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -677,16 +735,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3499.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:26:07Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13400.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:26:08Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 718.1,
+      "detail": "826 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:26:09Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.0,
+      "detail": "240 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2305.17812/2305.17812.lines.json": "sha256:f38101c0ce9ebf0006a9397b7ce9e6c602152321e6ff1475907337acc5a6d7c5"
+      },
       "params_hash": "sha256:dd5958b3acb29fc85b14f36a5f642b50b1d9957b77a38268f854d09ee2405d46",
       "algo": "sha256",
-      "ts": "2026-08-03T21:05:07Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:26:08Z",
+      "provenance": "mathpix"
     }
   }
 }

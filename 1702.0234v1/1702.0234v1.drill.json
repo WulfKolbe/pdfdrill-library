@@ -5,13 +5,14 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
     "NEEDS_VISION_OCR",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -48,17 +49,17 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 8,
-      "ListItem": 2,
-      "Equation": 4,
-      "Paragraph": 12,
+      "Abstract": 1,
+      "Formula": 120,
+      "Paragraph": 29,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
     "latex_source": "1702.0234v1.tgz",
     "latex_macros": 0,
@@ -68,9 +69,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "1702.0234v1.tgz",
     "merge_paragraphs_changed": 7,
-    "tiddlers_path": "1702.0234v1.tiddlers.json",
-    "tiddlers_count": 43,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "AAAAAD+EuropeanComputerModern-BoldExtended17pt",
       "AAAAAU+CMMIB10",
@@ -116,7 +114,55 @@
     "has_math_fonts": true,
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
-    "links": []
+    "links": [],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "On the k-MACGA Mother Algebras of Conformal Geometric Algebras and the k-CGA Algebras",
+      "Author": "Robert Benjamin Easter",
+      "Creator": "TeXmacs 1.99.4",
+      "Producer": "TeXmacs 1.99.4 + Hummus",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "595.279 x 841.895 pts (A4)",
+      "Page rot": "0",
+      "File size": "192270 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 8,
+    "image_count": 0,
+    "mathpix_pdf_id": "c5dd9b41-32de-482d-b7f6-9b4fdd8d2bbe",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1702.0234v1.lines.json",
+        "bytes": 367643
+      },
+      {
+        "format": "md",
+        "path": "1702.0234v1.md",
+        "bytes": 28318
+      },
+      {
+        "format": "tex.zip",
+        "path": "1702.0234v1.tex.zip",
+        "bytes": 31149
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "1702.0234v1.tiddlers.json",
+    "tiddlers_count": 175,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "On the k-MACGA Mother Algebras of Conformal Geometric Algebras and the k-CGA Algebras",
@@ -678,18 +724,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3593.3,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:56:44Z",
+      "node": "mathpix",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8847.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:56:44Z",
+      "node": "model",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 101.4,
+      "detail": "159 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:56:44Z",
+      "node": "tiddlers",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.6,
+      "detail": "175 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1702.0234v1/1702.0234v1.lines.json": "sha256:dce41c30ee9b020c59fe18e47f23d375b59a0f2d102b3590995eb8fd758ca24c"
+        "/home/wkolbe/pdfdrill-library/1702.0234v1/1702.0234v1.lines.json": "sha256:58e6ecdac89b5a34bb67fc2c73a8abd6960dcea74bf782557d7f611bdfef084b"
       },
       "params_hash": "sha256:325957e06438c6152f7bfdb5de099f8050005ddcbc56364e5452b58a59e0b7f5",
       "algo": "sha256",
-      "ts": "2026-08-03T19:37:56Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:56:44Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -81,23 +82,29 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 13,
-      "ListItem": 21,
-      "Equation": 5,
-      "Paragraph": 15,
+      "Footnote": 6,
+      "Table": 2,
+      "TableRow": 10,
+      "TableCell": 20,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 7,
+      "Picture": 1,
+      "ListItem": 27,
+      "Equation": 2,
+      "Formula": 3,
+      "Paragraph": 56,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 2,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "IDEAL2020___Zaki.tiddlers.json",
-    "tiddlers_count": 71,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "TeX",
@@ -192,7 +199,32 @@
         "page": 13,
         "url": "https://www.researchgate.net/publication/343987891"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "e68cc6db-2613-43d0-b723-1c476e6ddaf7",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "IDEAL2020___Zaki.lines.json",
+        "bytes": 494596
+      },
+      {
+        "format": "md",
+        "path": "IDEAL2020___Zaki.md",
+        "bytes": 26341
+      },
+      {
+        "format": "tex.zip",
+        "path": "IDEAL2020___Zaki.tex.zip",
+        "bytes": 318765
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "IDEAL2020___Zaki.tiddlers.json",
+    "tiddlers_count": 137,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -872,18 +904,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1793.1,
       "detail": "11 images, 9 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:29:07Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9504.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:29:07Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 107.9,
+      "detail": "151 objects, 2 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:29:07Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.9,
+      "detail": "137 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/IDEAL2020___Zaki/IDEAL2020___Zaki.lines.json": "sha256:81dfc4d51fc4b087ab469a7908b7a552434c61f2d86e92a17924333bc68815f1"
+        "/home/wkolbe/pdfdrill-library/IDEAL2020___Zaki/IDEAL2020___Zaki.lines.json": "sha256:d906dd493f9ef5603bb26114ab43ccaeff8b4c17eea535f01f370525fd8bd290"
       },
       "params_hash": "sha256:f0ef52515d1f8ff01427bd498761e7021085e1ad1762fcdb2641069054c27f09",
       "algo": "sha256",
-      "ts": "2026-08-05T21:16:34Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:29:07Z",
+      "provenance": "mathpix"
     }
   }
 }

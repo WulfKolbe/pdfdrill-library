@@ -3,14 +3,15 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2210.04530",
@@ -18,20 +19,22 @@
     "bibkey": "2210.04530",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 33,
+      "Page": 6,
+      "Footnote": 3,
+      "Citation": 16,
+      "Table": 10,
+      "TableRow": 50,
+      "TableCell": 234,
+      "Sidenote": 12,
       "Abstract": 1,
-      "Section": 8,
-      "Formula": 4,
-      "Table": 14,
-      "Citation": 36
+      "Picture": 1,
+      "ListItem": 6,
+      "Formula": 16,
+      "Paragraph": 46,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 22,
-    "bibliography_with_year": 22,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 36,
+    "model_source": "mathpix",
     "pages": 6,
     "bytes": 254141,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -101,9 +104,6 @@
       "SFHQIQ+CMSY7"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2210.04530.tiddlers.json",
-    "tiddlers_count": 106,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Compiling comprehensive repositories of commonsense knowledge is a long-standing problem in AI. Many concerns revolve around the issue of reporting bias, i.e., that frequency in text sources is not a good proxy for relevance or truth. This paper explores whether children&#39;s texts hold the key to commonsense knowledge compilation, based on the hypothesis that such content makes fewer assumptions on the reader&#39;s knowledge, and therefore spells out commonsense more explicitly. An analysis with several corpora shows that children&#39;s texts indeed contain much more, and more typical commonsense assertions. Moreover, experiments show that this advantage can be leveraged in popular language-model-based commonsense knowledge extraction settings, where task-unspecific fine-tuning on small amounts of children texts (childBERT) already yields significant improvements. This provides a refreshing perspective different from the common trend of deriving progress from ever larger models and corpora.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -112,7 +112,72 @@
       "Julien Romero",
       "Simon Razniewski"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Tue Oct 11 02:57:37 2022 CEST",
+      "ModDate": "Tue Oct 11 02:57:37 2022 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "254141 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 6,
+    "image_count": 2,
+    "mathpix_pdf_id": "847246d5-595a-4a41-8280-f1e475e18893",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2210.04530.lines.json",
+        "bytes": 913133
+      },
+      {
+        "format": "md",
+        "path": "2210.04530.md",
+        "bytes": 24253
+      },
+      {
+        "format": "tex.zip",
+        "path": "2210.04530.tex.zip",
+        "bytes": 60594
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 4,
+    "bibliography_with_year": 4,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 27,
+    "bibliography_cites": 4,
+    "tiddlers_path": "2210.04530.tiddlers.json",
+    "tiddlers_count": 137,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -455,18 +520,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2101.2,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:40:05Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12448.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:40:05Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 162.9,
+      "detail": "402 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:40:05Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "4 entries, 0+27 cites detected, 4 linked"
+    },
+    {
+      "ts": "2026-08-22T14:40:05Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.9,
+      "detail": "137 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2210.04530/texsrc/main.tex": "sha256:f551e1d2d8dae57a0b75d6f8dd35c6d273ec69677df6efbce3ebfa7118ad3779"
+        "/home/wkolbe/pdfdrill-library/2210.04530/2210.04530.lines.json": "sha256:0898f0c21db3c4b255cfbca60ee2863525ca182db601fa094dbeb8ab6f0eef98"
       },
       "params_hash": "sha256:fe82d396e02e108e2bfd5617ca2ea28e44b40913ff384c8391527b761aaad717",
       "algo": "sha256",
-      "ts": "2026-08-03T21:00:00Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:40:05Z",
+      "provenance": "mathpix"
     }
   }
 }

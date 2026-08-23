@@ -3,17 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1704.05730",
@@ -21,22 +21,19 @@
     "bibkey": "1704.05730",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 56,
+      "Page": 6,
+      "Footnote": 4,
+      "Sidenote": 12,
       "Abstract": 1,
-      "Section": 7,
-      "Formula": 24,
-      "LtxCommand": 11,
-      "Theorem": 3,
+      "Diagram": 1,
+      "ListItem": 9,
       "Equation": 5,
-      "Citation": 50
+      "Formula": 32,
+      "Paragraph": 70,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 44,
-    "bibliography_with_year": 44,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 1,
+    "model_equations_with_cdn": 5,
+    "model_source": "mathpix",
     "pages": 6,
     "bytes": 370282,
     "page_size": "612 x 792 pts (letter)",
@@ -110,9 +107,6 @@
       "XJYBQL+CMSY7"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1704.05730.tiddlers.json",
-    "tiddlers_count": 175,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Bias in online information has recently become a pressing issue, with search engines, social networks and recommendation services being accused of exhibiting some form of bias. In this vision paper, we make the case for a systematic approach towards measuring bias. To this end, we discuss formal measures for quantifying the various types of bias, we outline the system components necessary for realizing them, and we highlight the related research challenges and open problems.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -188,7 +182,67 @@
         "url": "http://politecho.org/",
         "kind": "text"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Oct  4 03:22:02 2017 CEST",
+      "ModDate": "Wed Oct  4 03:22:02 2017 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "370282 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 6,
+    "image_count": 1,
+    "mathpix_pdf_id": "3e49f223-946b-4d7c-8ed2-68d995483e95",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1704.05730.lines.json",
+        "bytes": 802078
+      },
+      {
+        "format": "md",
+        "path": "1704.05730.md",
+        "bytes": 35999
+      },
+      {
+        "format": "tex.zip",
+        "path": "1704.05730.tex.zip",
+        "bytes": 87617
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1704.05730.tiddlers.json",
+    "tiddlers_count": 157,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -667,16 +721,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2015.6,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:38:33Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9615.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:38:34Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 164.3,
+      "detail": "141 objects, 5 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:38:34Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.4,
+      "detail": "157 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1704.05730/1704.05730.lines.json": "sha256:f33f612554b293a4c4c3073ed9dc51504c9832ffc288cb22ec2fe8b6762d16fa"
+      },
       "params_hash": "sha256:30a2ee7a0ad0e873d889fec989c72dd9bf626088641d6241043a3e4f0aee337e",
       "algo": "sha256",
-      "ts": "2026-08-03T19:38:18Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T14:38:34Z",
+      "provenance": "mathpix"
     }
   }
 }

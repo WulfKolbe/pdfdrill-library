@@ -6,11 +6,11 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "LINKS_KNOWN",
     "PDFINFO_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 22,
@@ -100,29 +100,29 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 22,
-      "Citation": 96,
-      "ListItem": 31,
-      "Equation": 148,
-      "Paragraph": 125,
+      "Footnote": 13,
+      "Table": 2,
+      "TableRow": 20,
+      "TableCell": 117,
+      "Sidenote": 40,
+      "Diagram": 4,
+      "Section": 8,
+      "Picture": 4,
+      "ListItem": 46,
+      "Equation": 64,
+      "Formula": 352,
+      "Paragraph": 174,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 64,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 108 unmapped private-use character(s) remain (U+F8EE×14, U+F8EF×26, U+F8F0×14, U+F8F9×14, U+F8FA×26, U+F8FB×14) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 23,
-    "bibliography_with_year": 21,
-    "bibliography_numeric_citations": 106,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 105,
-    "tiddlers_path": "Dorst_fitting_final_JMIV.tiddlers.json",
-    "tiddlers_count": 386,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -195,7 +195,33 @@
         "page": 22,
         "url": "https://www.researchgate.net/publication/266149530"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "4c2d9513-5fd8-4f27-9d23-87216f353945",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Dorst_fitting_final_JMIV.lines.json",
+        "bytes": 2202497
+      },
+      {
+        "format": "md",
+        "path": "Dorst_fitting_final_JMIV.md",
+        "bytes": 104374
+      },
+      {
+        "format": "tex.zip",
+        "path": "Dorst_fitting_final_JMIV.tex.zip",
+        "bytes": 766540
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "Dorst_fitting_final_JMIV.tiddlers.json",
+    "tiddlers_count": 747,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1019,18 +1045,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5379.3,
       "detail": "13 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:41:03Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 14610.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:41:04Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 954.9,
+      "detail": "867 objects, 64 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:41:05Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 25.3,
+      "detail": "747 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Dorst_fitting_final_JMIV/Dorst_fitting_final_JMIV.lines.json": "sha256:6608d127b047f53e4ee718f3991ae970907aab905ce55e0e69733b109a293421"
+        "/home/wkolbe/pdfdrill-library/Dorst_fitting_final_JMIV/Dorst_fitting_final_JMIV.lines.json": "sha256:efeae5823a10654644612f1ce547f21b9fa6bad2e7ae29c3f8bc627e8fb35320"
       },
       "params_hash": "sha256:ea5a0884465e55f6a3635b4359a9ab3d0ff600a90c44fb2380e767e67b424001",
       "algo": "sha256",
-      "ts": "2026-08-05T19:50:57Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:41:04Z",
+      "provenance": "mathpix"
     }
   }
 }

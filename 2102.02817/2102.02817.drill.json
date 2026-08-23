@@ -5,15 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 26,
@@ -83,15 +83,19 @@
     "bibkey": "2102.02817",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
+      "Page": 26,
+      "Table": 8,
+      "TableRow": 54,
+      "TableCell": 279,
       "Abstract": 1,
-      "Paragraph": 321,
-      "Section": 60,
-      "Formula": 313,
-      "Equation": 109,
-      "Citation": 99
+      "ListItem": 4,
+      "Equation": 36,
+      "Formula": 175,
+      "Paragraph": 78,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 36,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 26,
       "placed": 107,
@@ -101,14 +105,6 @@
       "numbered": 60,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "2102.02817.tiddlers.json",
-    "tiddlers_count": 914,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
     "abstract": "Finite symmetries abound in particle physics, from the weak doublets and generation triplets to the baryon octet and many others. These are usually studied by starting from a Lie group, and breaking the symmetry by choosing a particular copy of the Weyl group. I investigate the possibility of instead taking the finite symmetries as fundamental, and building the Lie groups from them by means of a group algebra construction. Finite group algebras are the natural algebraic structures in which finite symmetry groups, such as the symmetry group of three generations of elementary fermions, are embedded in Lie groups, that are necessary for the formalism of quantum field theory, including the gauge groups of the fundamental forces. They are also the natural algebraic structures for describing representations of groups, which are used for describing elementary particles and their quantum properties. It is natural therefore to ask the question whether finite group algebras can provide a formal underpinning for the standard model of particle physics, and if so, whether this foundation can explain any aspects of the model that are otherwise unexplained, such as the curious structure of the combined gauge group, or the mixing angles between the different forces. In this paper I investigate the relationships between finite symmetry groups and the gauge groups of each of the fundamental forces individually and in combination, and show that the geometry of representations of the finite groups can be used to predict accurate values for a number of the mixing angles in the standard model, including the electro-weak mixing angle, one lepton mixing angle, one quark mixing angle and one of the CP-violating phases.",
     "abstract_method": "arxiv-abs-page",
@@ -147,7 +143,67 @@
         "page": 25,
         "url": "http://arxiv.org/abs/1602.02469"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Thu Jul 29 02:43:04 2021 CEST",
+      "ModDate": "Thu Jul 29 02:43:04 2021 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "26",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "283067 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 26,
+    "image_count": 38,
+    "mathpix_pdf_id": "2849c5a4-8873-4ec2-9928-13ffe3742605",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2102.02817.lines.json",
+        "bytes": 1618212
+      },
+      {
+        "format": "md",
+        "path": "2102.02817.md",
+        "bytes": 87583
+      },
+      {
+        "format": "tex.zip",
+        "path": "2102.02817.tex.zip",
+        "bytes": 91147
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2102.02817.tiddlers.json",
+    "tiddlers_count": 345,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1834,16 +1890,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 9228.7,
       "detail": "76 images, 38 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T19:25:07Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13085.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:25:07Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 307.4,
+      "detail": "662 objects, 36 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:25:08Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.5,
+      "detail": "345 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2102.02817/2102.02817.lines.json": "sha256:df234e8c5ccf0e630dbfc1f102d64e69def145741ca50799e0c904cf8772419b"
+      },
       "params_hash": "sha256:fdc0c36e20b9f94867482522824988b75ebba12b77cf0831e56e09b72c64b2c0",
       "algo": "sha256",
-      "ts": "2026-08-03T20:50:22Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T19:25:07Z",
+      "provenance": "mathpix"
     }
   }
 }

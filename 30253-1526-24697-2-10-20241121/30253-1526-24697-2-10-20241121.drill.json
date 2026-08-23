@@ -6,8 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -15,7 +13,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -81,29 +82,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "Citation": 46,
-      "ListItem": 4,
-      "Equation": 15,
-      "Paragraph": 23,
+      "Citation": 11,
+      "Sidenote": 17,
+      "Abstract": 1,
+      "Diagram": 8,
+      "ListItem": 2,
+      "Equation": 22,
+      "Formula": 213,
+      "Paragraph": 65,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 22,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 13,
-    "bibliography_with_year": 13,
-    "bibliography_numeric_citations": 20,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 20,
-    "tiddlers_path": "30253-1526-24697-2-10-20241121.tiddlers.json",
-    "tiddlers_count": 88,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Combinatory logic and its combinators BCKWI are a founda-          B𝑞 𝑓 𝑥     −→ 𝑞 (𝑓 𝑥)           S 𝑞𝑓 𝑥      −→ 𝑞 𝑥 (𝑓 𝑥)\ntion for tacit (point-free) programming. But what does each        C𝑞𝑥𝑦       −→ 𝑞 𝑦 𝑥             W𝑞𝑥         −→ 𝑞 𝑥 𝑥\nletter mean? Informally, B stands for composing, C for swap-       K𝑞𝑥        −→ 𝑞                 I 𝑥         −→ 𝑥\nping, K for discarding, W for duplicating and I is the identity\n                                                                     We can understand combinators by their effects. C per-\nfunction. However, B does more than that: depending on\n                                                                  mutes 𝑥 and 𝑦, K discards 𝑥, W duplicates 𝑥, and I is the\nwhere it appears in the expression, it can also call functions\n                                                                  identity function. B is often described as function composi-\nor defer values for later. To help tell these purposes apart,\n                                                                  tion, but it actually does more than that. For starters, if 𝑓 is\nwe relate combinatory logic to the concatenative calculus of\n                                                                  a curried function, the composition may also be seen as par-\nKerby, which features separate primitives for the different\n                                                                  tial application. Furthermore, B can help other combinators\nfacets of B.\n                                                                  reach deeper arguments. For example, in B K the B makes K\n   We provide translations from combinatory logic to con-\n                                                                  discard the second argument after 𝑞, instead of the first:\ncatenative calculus and vice versa. In both directions we\nhave contributions. From concatenative to combinatory, we                      B K 𝑞 𝑥 𝑦 −→ K (𝑞 𝑥) 𝑦 −→ 𝑞 𝑥\nshow that first-order stack programs map to regular com-             We want to be able to look at a combinator and intuitively\nbinators, and which patterns of combinators higher-order          understand what it means. A first obstacle is that some com-\nstack programs map to. From combinatory to concatenative,         binators serve more than one purpose. That was already\nwe extend an algorithm of Kerby to make it compatible with        bad for B, and it gets even worse for S. A famous result of\na call-by-value evaluation order, in addition to call-by-name.    combinatory logic is that any combinator can be expressed\n   To enforce a strong association between the two worlds,        in terms of only S and K. Thus, combinations of S and K can\nour translations are simulations. That is, one evaluation step    literally do anything.\nin the original program is simulated by zero or more evalua-         A second obstacle is that the combinator basis BCKWI\ntions steps in the translated program.                            encourages continuation-passing style, because their first\nKeywords: concatenative calculus, combinatory logic, stack        argument behaves like a continuation callback. This is ser-\nlanguages, conversion, simulation, tacit programming, point-      viceable, but can take some time to get used to.\nfree programming                                                     Higher-order concatenative programming. The higher-\n                                                                  order concatenative (stack) languages, such as Joy [12, 13]",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
@@ -129,7 +126,63 @@
         "page": 9,
         "url": "https://web.archive.org/web/20111007025556/http://www.latrobe.edu.au/phimvt/joy/j02maf.html"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Converting Combinatory Logic to and from Concatenative Calculus",
+      "Subject": "",
+      "Creator": "LaTeX with acmart 2024/04/17 v2.07 Typesetting articles for the Association for Computing Machinery and hyperref 2023-02-07 v7.00v Hypertext links for LaTeX",
+      "Producer": "pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) kpathsea version 6.3.5",
+      "CreationDate": "Thu Nov 21 20:44:43 2024 CET",
+      "ModDate": "Thu Nov 21 20:44:43 2024 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "9",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "510586 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 9,
+    "image_count": 0,
+    "mathpix_pdf_id": "326f9cb8-a90f-4e2b-953d-737d81cef5cb",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "30253-1526-24697-2-10-20241121.lines.json",
+        "bytes": 926834
+      },
+      {
+        "format": "md",
+        "path": "30253-1526-24697-2-10-20241121.md",
+        "bytes": 50082
+      },
+      {
+        "format": "tex.zip",
+        "path": "30253-1526-24697-2-10-20241121.tex.zip",
+        "bytes": 160188
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 13,
+    "bibliography_with_year": 13,
+    "bibliography_numeric_citations": 20,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 20,
+    "tiddlers_path": "30253-1526-24697-2-10-20241121.tiddlers.json",
+    "tiddlers_count": 372,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Converting Combinatory Logic to and from Concatenative Calculus",
@@ -1075,18 +1128,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3403.4,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:13:31Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9603.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:13:32Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 257.6,
+      "detail": "349 objects, 22 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:13:32Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "13 entries, 20+0 cites detected, 20 linked"
+    },
+    {
+      "ts": "2026-08-22T15:13:32Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.3,
+      "detail": "372 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/30253-1526-24697-2-10-20241121/30253-1526-24697-2-10-20241121.lines.json": "sha256:04380b0400ed29c5c4c272bda96b84487c9a4b746f6b86aa53ab8be9d1874855"
+        "/home/wkolbe/pdfdrill-library/30253-1526-24697-2-10-20241121/30253-1526-24697-2-10-20241121.lines.json": "sha256:c1f0991f1ff37511ffe930723b724023b7c25ea25a89f74090734ab2b242db7a"
       },
       "params_hash": "sha256:1a9404cfe83043b80d7b28597b6091e68a88b6b693e8f1d1c053f9cedd9a3381",
       "algo": "sha256",
-      "ts": "2026-08-03T21:48:38Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:13:32Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,14 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "TOC_ABSENT",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 14,
@@ -106,29 +106,26 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 14,
-      "Citation": 1,
-      "ListItem": 6,
-      "Equation": 71,
-      "Paragraph": 72,
+      "Sidenote": 25,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Section": 12,
+      "Picture": 6,
+      "ListItem": 10,
+      "Equation": 58,
+      "Formula": 192,
+      "Paragraph": 101,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 58,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 17 unmapped private-use character(s) remain (U+F6BE×13, U+F8EB×1, U+F8ED×1, U+F8F6×1, U+F8F8×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 1,
-    "bibliography_cites": 0,
-    "tiddlers_path": "Method_for_narrow-band_search_of_continuous_gravit.tiddlers.json",
-    "tiddlers_count": 182,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -243,7 +240,33 @@
         "url": "https://www.researchgate.net/publication/260605354"
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "d3890ad6-46ef-4060-8fdc-7765b98fa0e0",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Method_for_narrow-band_search_of_continuous_gravit.lines.json",
+        "bytes": 1082346
+      },
+      {
+        "format": "md",
+        "path": "Method_for_narrow-band_search_of_continuous_gravit.md",
+        "bytes": 55168
+      },
+      {
+        "format": "tex.zip",
+        "path": "Method_for_narrow-band_search_of_continuous_gravit.tex.zip",
+        "bytes": 934862
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "Method_for_narrow-band_search_of_continuous_gravit.tiddlers.json",
+    "tiddlers_count": 439,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -6275,18 +6298,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 14873.7,
       "detail": "280 images, 142 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:47:01Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9971.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:47:02Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 389.1,
+      "detail": "422 objects, 58 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:47:02Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.2,
+      "detail": "439 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Method_for_narrow-band_search_of_continuous_gravit/Method_for_narrow-band_search_of_continuous_gravit.lines.json": "sha256:17e1bfc4f47e2b7334f094f9b0886eb984890caf9c1da340a12a40d6681a8759"
+        "/home/wkolbe/pdfdrill-library/Method_for_narrow-band_search_of_continuous_gravit/Method_for_narrow-band_search_of_continuous_gravit.lines.json": "sha256:f46dec7fec804e8ddad35e50ecd4b06bec8c521dd8067236758ac48f5643b727"
       },
       "params_hash": "sha256:6e04cc42e471a00d572acec63926ba4b50764ff8e397d1386fdc15a7de9ae3f4",
       "algo": "sha256",
-      "ts": "2026-08-05T22:06:08Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:47:02Z",
+      "provenance": "mathpix"
     }
   }
 }

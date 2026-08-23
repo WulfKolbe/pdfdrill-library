@@ -3,17 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2001.04170",
@@ -21,22 +21,23 @@
     "bibkey": "2001.04170",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
+      "Page": 11,
+      "Footnote": 4,
+      "Table": 9,
+      "TableRow": 53,
+      "TableCell": 258,
+      "Sidenote": 22,
       "Abstract": 1,
-      "Paragraph": 205,
-      "Section": 22,
-      "Formula": 103,
-      "Table": 15,
-      "LtxCommand": 11,
-      "Equation": 16,
-      "Citation": 72
+      "Diagram": 5,
+      "Section": 2,
+      "ListItem": 17,
+      "Equation": 9,
+      "Formula": 88,
+      "Paragraph": 152,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 102,
-    "bibliography_with_year": 102,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_equations_with_cdn": 9,
+    "model_source": "mathpix",
     "pages": 11,
     "bytes": 1028432,
     "page_size": "612 x 792 pts (letter)",
@@ -105,9 +106,6 @@
       "numbered": 22,
       "roots": 1
     },
-    "tiddlers_path": "2001.04170.tiddlers.json",
-    "tiddlers_count": 454,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Commonsense knowledge (CSK) supports a variety of AI applications, from visual understanding to chatbots. Prior works on acquiring CSK, such as ConceptNet, have compiled statements that associate concepts, like everyday objects or activities, with properties that hold for most or some instances of the concept. Each concept is treated in isolation from other concepts, and the only quantitative measure (or ranking) of properties is a confidence score that the statement is valid. This paper aims to overcome these limitations by introducing a multi-faceted model of CSK statements and methods for joint reasoning over sets of inter-related statements. Our model captures four different dimensions of CSK statements: plausibility, typicality, remarkability and salience, with scoring and ranking along each dimension. For example, hyenas drinking water is typical but not salient, whereas hyenas eating carcasses is salient. For reasoning and ranking, we develop a method with soft constraints, to couple the inference over concepts that are related in in a taxonomic hierarchy. The reasoning is cast into an integer linear programming (ILP), and we leverage the theory of reduction costs of a relaxed LP to compute informative rankings. This methodology is applied to several large CSK collections. Our evaluation shows that we can consolidate these inputs into much cleaner and more expressive knowledge. Results are available at this https URL .",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -143,7 +141,67 @@
         "page": 11,
         "url": "http://www.gurobi.com"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Joint Reasoning for Multi-Faceted Commonsense Knowledge",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Yohan Chalier, Simon Razniewski, and Gerhard Weikum",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed May  6 02:28:26 2020 CEST",
+      "ModDate": "Wed May  6 02:28:26 2020 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "1028432 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 10,
+    "mathpix_pdf_id": "72d6d9ed-4905-4d03-a670-a393a433e79f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2001.04170.lines.json",
+        "bytes": 1638139
+      },
+      {
+        "format": "md",
+        "path": "2001.04170.md",
+        "bytes": 65246
+      },
+      {
+        "format": "tex.zip",
+        "path": "2001.04170.tex.zip",
+        "bytes": 230653
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2001.04170.tiddlers.json",
+    "tiddlers_count": 338,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Joint Reasoning for Multi-Faceted Commonsense Knowledge",
@@ -1632,18 +1690,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7303.2,
       "detail": "5 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:52:07Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12349.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:52:08Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 500.3,
+      "detail": "632 objects, 9 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:52:08Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 20.5,
+      "detail": "338 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2001.04170/texsrc/main.tex": "sha256:5cf3328c47688b58cad8392988c33c0beeeb84d15e2d79390b46a6440b656107"
+        "/home/wkolbe/pdfdrill-library/2001.04170/2001.04170.lines.json": "sha256:6d259de3980d4f489ff517a5527f20a94805b53c74621ebfec0e0abcf925bb76"
       },
       "params_hash": "sha256:c88c638e79fe707088b4fc800554e996416f98679f0eee63359dbea7a1fece42",
       "algo": "sha256",
-      "ts": "2026-08-03T19:51:26Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:52:08Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -4,15 +4,16 @@
   "facts": [
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2208.09292",
@@ -20,32 +21,30 @@
     "bibkey": "2208.09292",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 96,
+      "Page": 10,
+      "Footnote": 10,
+      "Citation": 4,
+      "Table": 8,
+      "TableRow": 69,
+      "TableCell": 211,
+      "Sidenote": 17,
       "Abstract": 1,
-      "Section": 18,
-      "LtxCommand": 24,
-      "Formula": 31,
-      "Theorem": 1,
-      "Equation": 4,
-      "Table": 14,
-      "Diagram": 8,
-      "Citation": 99,
-      "Algorithm": 1,
-      "AlgorithmStep": 24
+      "Diagram": 3,
+      "Section": 2,
+      "ListItem": 17,
+      "Equation": 6,
+      "Formula": 51,
+      "Paragraph": 113,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "latex_source": "2208.09292.tgz",
     "latex_macros": 7,
     "latex_src_equations": 4,
     "latex_attached": 4,
     "latex_created": 0,
     "latex_graphics": 0,
-    "bibliography_entries": 50,
-    "bibliography_with_year": 49,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 99,
     "pages": 10,
     "bytes": 691289,
     "page_size": "612 x 792 pts (letter)",
@@ -119,9 +118,6 @@
       "MYANCV+LibertineMathMI5"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2208.09292.tiddlers.json",
-    "tiddlers_count": 275,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Commonsense knowledge about everyday concepts is an important asset for AI applications, such as question answering and chatbots. Recently, we have seen an increasing interest in the construction of structured commonsense knowledge bases (CSKBs). An important part of human commonsense is about properties that do not apply to concepts, yet existing CSKBs only store positive statements. Moreover, since CSKBs operate under the open-world assumption, absent statements are considered to have unknown truth rather than being invalid. This paper presents the UNCOMMONSENSE framework for materializing informative negative commonsense statements. Given a target concept, comparable concepts are identified in the CSKB, for which a local closed-world assumption is postulated. This way, positive statements about comparable concepts that are absent for the target concept become seeds for negative statement candidates. The large set of candidates is then scrutinized, pruned and ranked by informativeness. Intrinsic and extrinsic evaluations show that our method significantly outperforms the state-of-the-art. A large dataset of informative negations is released as a resource for future research.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -132,7 +128,70 @@
       "Gerhard Weikum",
       "Jeff Z. Pan"
     ],
-    "arxiv_primary_category": "cs.AI"
+    "arxiv_primary_category": "cs.AI",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "UnCommonSense: Informative Negative Knowledge about Everyday Concepts",
+      "Subject": "-  Information systems  ->  Retrieval models and ranking.",
+      "Creator": "LaTeX with acmart 2022/04/09 v1.84 Typesetting articles for the Association for Computing Machinery and hyperref 2020-05-15 v7.00e Hypertext links for LaTeX",
+      "Producer": "pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+      "CreationDate": "Wed Sep  7 02:31:08 2022 CEST",
+      "ModDate": "Wed Sep  7 02:31:08 2022 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "691289 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 10,
+    "image_count": 2,
+    "mathpix_pdf_id": "d55e800b-aef2-4e79-ac53-a00f7f6ed81c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2208.09292.lines.json",
+        "bytes": 1402388
+      },
+      {
+        "format": "md",
+        "path": "2208.09292.md",
+        "bytes": 55066
+      },
+      {
+        "format": "tex.zip",
+        "path": "2208.09292.tex.zip",
+        "bytes": 302605
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 56,
+    "bibliography_with_year": 51,
+    "bibliography_numeric_citations": 91,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 91,
+    "tiddlers_path": "2208.09292.tiddlers.json",
+    "tiddlers_count": 315,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "UnCommonSense: Informative Negative Knowledge about Everyday Concepts",
@@ -644,18 +703,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4077.7,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:34:06Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13344.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:34:07Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 378.7,
+      "detail": "523 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:34:08Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "56 entries, 91+0 cites detected, 91 linked"
+    },
+    {
+      "ts": "2026-08-22T15:34:08Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.0,
+      "detail": "315 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2208.09292/texsrc/main.tex": "sha256:384c06560bdefe5ff1b7afb47afb26d1166e571d8b45c22f68993a34c919d05b"
+        "/home/wkolbe/pdfdrill-library/2208.09292/2208.09292.lines.json": "sha256:12fc5e895cc97d0d5f6eb73f118e79f654558a7ad2cdddb609a3f2a73047dd77"
       },
       "params_hash": "sha256:e951b76cfa792ed2ef64effaf94172e41ee56a801f1f5100392baa8722fde241",
       "algo": "sha256",
-      "ts": "2026-08-03T20:59:26Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:34:07Z",
+      "provenance": "mathpix"
     }
   }
 }

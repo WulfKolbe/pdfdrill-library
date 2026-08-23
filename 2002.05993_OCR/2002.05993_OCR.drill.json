@@ -5,8 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +12,9 @@
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -106,18 +106,20 @@
     "bibkey": "2002.05993_OCR",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 62,
-      "Abstract": 1,
-      "Section": 10,
-      "Formula": 89,
-      "Equation": 31,
-      "Theorem": 8,
-      "Proof": 2,
+      "Page": 11,
       "Table": 1,
-      "Citation": 18
+      "TableRow": 3,
+      "TableCell": 50,
+      "Abstract": 1,
+      "Diagram": 5,
+      "Equation": 31,
+      "Formula": 119,
+      "Paragraph": 58,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 31,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 11,
       "placed": 32,
@@ -127,14 +129,6 @@
       "numbered": 10,
       "roots": 1
     },
-    "bibliography_entries": 11,
-    "bibliography_with_year": 10,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 18,
-    "tiddlers_path": "2002.05993_OCR.tiddlers.json",
-    "tiddlers_count": 244,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We show that if PGA is understood as a subalgebra of CGA in mathematically correct sense, then the flat objects share the same representation in PGA and CGA. Particularly, we treat duality in PGA. This leads to unification of PGA and CGA objects which is important especially for software implementation and symbolic calculations.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -163,7 +157,65 @@
         "url": "https://zenodo.org/record/3635774",
         "kind": "text"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Keywords": "",
+      "Author": "",
+      "Creator": "ocrmypdf 14.4.0 / Tesseract OCR-PDF 5.3.4",
+      "Producer": "pikepdf 8.13.0",
+      "CreationDate": "Tue May  5 05:34:51 2020 CEST",
+      "ModDate": "Fri May  3 22:41:10 2024 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "237984 bytes",
+      "Optimized": "no",
+      "PDF version": "1.6"
+    },
+    "page_count_text": 11,
+    "image_count": 1,
+    "mathpix_pdf_id": "ab65a723-edd2-49a8-840a-0bbcf620de31",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2002.05993_OCR.lines.json",
+        "bytes": 579118
+      },
+      {
+        "format": "md",
+        "path": "2002.05993_OCR.md",
+        "bytes": 34682
+      },
+      {
+        "format": "tex.zip",
+        "path": "2002.05993_OCR.tex.zip",
+        "bytes": 95428
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2002.05993_OCR.tiddlers.json",
+    "tiddlers_count": 244,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -861,16 +913,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5021.5,
       "detail": "1 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:53:02Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9268.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:53:02Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 239.2,
+      "detail": "281 objects, 31 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:53:03Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.3,
+      "detail": "244 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2002.05993_OCR/2002.05993_OCR.lines.json": "sha256:13a88a79fd5f5ef85353c414df895bf9e3bda797781f95387391367b5b00b406"
+      },
       "params_hash": "sha256:07b4fd969fea0aa61727393173db8a478505131c410f40d4bb08e686dabccfdd",
       "algo": "sha256",
-      "ts": "2026-08-03T19:51:39Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:53:02Z",
+      "provenance": "mathpix"
     }
   }
 }

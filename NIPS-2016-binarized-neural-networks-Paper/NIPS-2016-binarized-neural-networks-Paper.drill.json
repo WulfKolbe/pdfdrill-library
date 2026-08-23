@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -78,23 +79,27 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "ListItem": 13,
-      "Equation": 7,
-      "Paragraph": 16,
+      "Footnote": 4,
+      "Table": 3,
+      "TableRow": 25,
+      "TableCell": 70,
+      "Sidenote": 9,
+      "Abstract": 1,
+      "ListItem": 10,
+      "Equation": 9,
+      "Formula": 78,
+      "Paragraph": 45,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 9,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "NIPS-2016-binarized-neural-networks-Paper.tiddlers.json",
-    "tiddlers_count": 62,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Binarized Neural Networks",
@@ -132,7 +137,32 @@
         "page": 2,
         "url": "https://github.com/itayhubara/BinaryNet"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "dac26f05-8105-4ac8-a818-6218b20e00e5",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "NIPS-2016-binarized-neural-networks-Paper.lines.json",
+        "bytes": 682094
+      },
+      {
+        "format": "md",
+        "path": "NIPS-2016-binarized-neural-networks-Paper.md",
+        "bytes": 36732
+      },
+      {
+        "format": "tex.zip",
+        "path": "NIPS-2016-binarized-neural-networks-Paper.tex.zip",
+        "bytes": 39946
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "NIPS-2016-binarized-neural-networks-Paper.tiddlers.json",
+    "tiddlers_count": 185,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Binarized Neural Networks",
@@ -553,18 +583,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2789.2,
       "detail": "2 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:16:55Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10423.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:16:56Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 208.8,
+      "detail": "264 objects, 9 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:16:56Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.3,
+      "detail": "185 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/NIPS-2016-binarized-neural-networks-Paper/NIPS-2016-binarized-neural-networks-Paper.lines.json": "sha256:4b672fa9feaf181d150a739a18d97f8df259bc916790af006e2206e76612cb77"
+        "/home/wkolbe/pdfdrill-library/NIPS-2016-binarized-neural-networks-Paper/NIPS-2016-binarized-neural-networks-Paper.lines.json": "sha256:24f711e672334c9849b6b04f746b2a80043ab4b6d1e7bcd80457b9f50453a1b4"
       },
       "params_hash": "sha256:2823bd0c9f97f90d6e7c876afe3f8cd97bc9b17935782182678123abb79ec831",
       "algo": "sha256",
-      "ts": "2026-08-05T22:16:58Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:16:56Z",
+      "provenance": "mathpix"
     }
   }
 }

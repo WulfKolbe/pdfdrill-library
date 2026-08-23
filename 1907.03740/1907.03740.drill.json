@@ -5,15 +5,16 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -97,21 +98,21 @@
     "bibkey": "1907.03740",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 96,
+      "Page": 13,
+      "Citation": 52,
+      "Table": 2,
+      "TableRow": 32,
+      "TableCell": 70,
       "Abstract": 1,
-      "Section": 15,
-      "Formula": 118,
-      "Table": 3,
-      "Theorem": 35,
-      "Equation": 21,
-      "Proof": 9,
-      "LtxCommand": 15,
-      "Citation": 41,
-      "Algorithm": 6,
-      "AlgorithmStep": 63
+      "Diagram": 12,
+      "Equation": 15,
+      "Formula": 332,
+      "Paragraph": 63,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 15,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 13,
       "placed": 52,
@@ -121,14 +122,6 @@
       "numbered": 15,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "1907.03740.tiddlers.json",
-    "tiddlers_count": 357,
-    "tiddlers_svg_mode": "inline",
     "abstract": "In this article, we describe an implementation of a polynomial system solver to compute the approximate solutions of a 0-dimensional polynomial system with finite precision p-adic arithmetic. We also describe an improvement to an algorithm of Caruso, Roe, and Vaccon for calculating the eigenvalues and eigenvectors of a p-adic matrix.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -150,7 +143,72 @@
         "page": 2,
         "url": "https://github.com/a-kulkarn/Dory"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Tue Jul  9 02:47:30 2019 CEST",
+      "ModDate": "Tue Jul  9 02:47:30 2019 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "13",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "219733 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 13,
+    "image_count": 120,
+    "mathpix_pdf_id": "061d2fa7-40ae-452b-92bf-c3f1f66dff81",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1907.03740.lines.json",
+        "bytes": 720990
+      },
+      {
+        "format": "md",
+        "path": "1907.03740.md",
+        "bytes": 50627
+      },
+      {
+        "format": "tex.zip",
+        "path": "1907.03740.tex.zip",
+        "bytes": 86369
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 8,
+    "bibliography_with_year": 8,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 0,
+    "tiddlers_path": "1907.03740.tiddlers.json",
+    "tiddlers_count": 482,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -5839,16 +5897,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5023.4,
       "detail": "240 images, 106 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:24:14Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9377.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:24:14Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 331.1,
+      "detail": "594 objects, 15 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:24:15Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "8 entries, 0+1 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T16:24:15Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.4,
+      "detail": "482 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1907.03740/1907.03740.lines.json": "sha256:d18382da291c4a08c35e58f5a8dacebf46fbc77d259771ed7f8f6212eae82e5d"
+      },
       "params_hash": "sha256:a709b52e931a78a326adb7f1b8a6888849e827b73e09bbabc4ae4712f8709a4b",
       "algo": "sha256",
-      "ts": "2026-08-03T19:48:03Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:24:14Z",
+      "provenance": "mathpix"
     }
   }
 }

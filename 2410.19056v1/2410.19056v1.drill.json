@@ -5,15 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 8,
@@ -76,15 +76,21 @@
     "bibkey": "2410.19056v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 45,
-      "Abstract": 1,
-      "Section": 9,
-      "Formula": 2,
+      "Page": 8,
       "Table": 1,
-      "Citation": 32
+      "TableRow": 15,
+      "TableCell": 154,
+      "Sidenote": 14,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 4,
+      "Formula": 2,
+      "Paragraph": 24,
+      "Document": 1,
+      "Footnote": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 8,
       "placed": 22,
@@ -94,14 +100,6 @@
       "numbered": 9,
       "roots": 1
     },
-    "bibliography_entries": 21,
-    "bibliography_with_year": 21,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 32,
-    "tiddlers_path": "2410.19056v1.tiddlers.json",
-    "tiddlers_count": 105,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Existing math datasets evaluate the reasoning abilities of large language models (LLMs) by either using the final answer or the intermediate reasoning steps derived from static examples. However, the former approach fails to surface model&#39;s uses of shortcuts and wrong reasoning while the later poses challenges in accommodating alternative solutions. In this work, we seek to use symbolic programs as a means for automated evaluation if a model can consistently produce correct final answers across various inputs to the program. We begin by extracting programs for popular math datasets (GSM8K and MATH) using GPT4-o. For those executable programs verified using the original input-output pairs, they are found to encapsulate the proper reasoning required to solve the original text questions. We then prompt GPT4-o to generate new questions using alternative input-output pairs based the extracted program. We apply the resulting datasets to evaluate a collection of LLMs. In our experiments, we observe significant accuracy drops using our proposed evaluation compared with original static examples, suggesting the fragility of math reasoning in state-of-the-art LLMs.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -146,7 +144,67 @@
         "page": 8,
         "url": "https://doi.org/10.18653/v1/2024.findings-naacl.85"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Mon Oct 28 01:02:20 2024 CET",
+      "ModDate": "Mon Oct 28 01:02:20 2024 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "8",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "300462 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 8,
+    "image_count": 4,
+    "mathpix_pdf_id": "a5a85301-a2a2-4d36-9d78-b4804066a78f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2410.19056v1.lines.json",
+        "bytes": 984903
+      },
+      {
+        "format": "md",
+        "path": "2410.19056v1.md",
+        "bytes": 34962
+      },
+      {
+        "format": "tex.zip",
+        "path": "2410.19056v1.tex.zip",
+        "bytes": 260613
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2410.19056v1.tiddlers.json",
+    "tiddlers_count": 73,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -943,18 +1001,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3134.0,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:00:11Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9547.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:00:11Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 231.2,
+      "detail": "226 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:00:12Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.9,
+      "detail": "73 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2410.19056v1/texsrc/main.tex": "sha256:e58f6f01a7a6477bc4ec421816a9d68496236ed8b555e508f31b462cc62c11e5"
+        "/home/wkolbe/pdfdrill-library/2410.19056v1/2410.19056v1.lines.json": "sha256:25c456700c35e298ab4232156c05d50cbf3e44db281381cabbf233f91e4eb5e8"
       },
       "params_hash": "sha256:a5c42872b753cfec25eb497c79d0d5970ce133045223a7d31d72ed8b28f2e140",
       "algo": "sha256",
-      "ts": "2026-08-03T21:33:19Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:00:11Z",
+      "provenance": "mathpix"
     }
   }
 }

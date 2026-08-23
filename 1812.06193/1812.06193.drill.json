@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -75,14 +76,15 @@
     "bibkey": "1812.06193",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 63,
-      "Section": 9,
-      "LtxCommand": 4,
-      "Formula": 16,
-      "Citation": 118
+      "Page": 16,
+      "Citation": 82,
+      "ListItem": 93,
+      "Formula": 25,
+      "Paragraph": 44,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 16,
       "placed": 42,
@@ -92,14 +94,6 @@
       "numbered": 9,
       "roots": 1
     },
-    "bibliography_entries": 102,
-    "bibliography_with_year": 100,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 118,
-    "tiddlers_path": "1812.06193.tiddlers.json",
-    "tiddlers_count": 228,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The review paper &#34;Discrete Structures in Physics&#34;, written in 2000, describes how Regge&#39;s discretization of Einstein&#39;s theory has been applied in classical relativity and quantum gravity. Here, developments since 2000 are reviewed briefly, with particular emphasis on progress in quantum gravity through spin foam models and group field theories.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -114,7 +108,69 @@
         "page": 1,
         "url": "http://arxiv.org/abs/1812.06193v2"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:1812.06193v2  [gr-qc]  29 May 2019",
+      "Creator": "dvips(k) 5.996 Copyright 2016 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Fri May 31 02:35:10 2019 CEST",
+      "ModDate": "Fri May 31 02:35:10 2019 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "178297 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 16,
+    "image_count": 144,
+    "mathpix_pdf_id": "2226c0b1-bb86-4155-b69c-9ff9490e0061",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1812.06193.lines.json",
+        "bytes": 782758
+      },
+      {
+        "format": "md",
+        "path": "1812.06193.md",
+        "bytes": 55233
+      },
+      {
+        "format": "tex.zip",
+        "path": "1812.06193.tex.zip",
+        "bytes": 57113
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 103,
+    "bibliography_with_year": 101,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 4,
+    "bibliography_cites": 0,
+    "tiddlers_path": "1812.06193.tiddlers.json",
+    "tiddlers_count": 304,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:1812.06193v2  [gr-qc]  29 May 2019",
@@ -5260,16 +5316,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3977.1,
       "detail": "288 images, 128 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:06:17Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8886.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:06:18Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 123.1,
+      "detail": "261 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:06:18Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "103 entries, 0+4 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T17:06:18Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.2,
+      "detail": "304 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1812.06193/1812.06193.lines.json": "sha256:703300a1ccbfba2c51a9249f3fe37c5184a8f2bb6d45e1913f7b38ea6f1129e8"
+      },
       "params_hash": "sha256:7f24b3bdaf1c80738377ef1bcf593119732c79c724375d059640cc1a4d648e0c",
       "algo": "sha256",
-      "ts": "2026-08-03T19:42:54Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:06:18Z",
+      "provenance": "mathpix"
     }
   }
 }

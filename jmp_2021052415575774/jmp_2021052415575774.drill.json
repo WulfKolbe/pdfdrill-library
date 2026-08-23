@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -68,22 +69,78 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 17,
-      "ListItem": 27,
-      "Equation": 1,
-      "Paragraph": 18,
+      "Table": 1,
+      "TableRow": 8,
+      "TableCell": 56,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Section": 2,
+      "ListItem": 6,
+      "Equation": 72,
+      "Formula": 191,
+      "Paragraph": 118,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 72,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 99 unmapped private-use character(s) remain (U+F025×19, U+F03F×2, U+F04C×1, U+F068×11, U+F8EB×3, U+F8EC×3, U+F8ED×3, U+F8EE×12, U+F8F0×12, U+F8F6×3, U+F8F7×3, U+F8F8×3, U+F8F9×12, U+F8FB×12) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Mass, Fine Structure Constant, and the Classification of Elementary Particles by Masses",
+      "Subject": "The equations of motion of physical bodies are given, the characteristic parameters of which become the basis for determining a fundamental property of all matter—“mass”. The equations of motion are characterized by two constants, the derivative of one of which is the fine structure constant. Using these constants, energy scales are compiled, which are the basis for classifying particles by mass.",
+      "Keywords": "Mass, Energy, Structure, Quantum Numbers, Elementary Particles",
+      "Author": "Khachatur Kirakosyan",
+      "Creator": "Acrobat PDFMaker 11 Word 版",
+      "Producer": "Adobe PDF Library 11.0",
+      "CreationDate": "Tue Jun  8 11:44:43 2021 CEST",
+      "ModDate": "Tue Jun  8 11:44:47 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "17",
+      "Encrypted": "no",
+      "Page size": "595.38 x 808.02 pts",
+      "Page rot": "0",
+      "File size": "372901 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 17,
+    "image_count": 5,
+    "mathpix_pdf_id": "9e8563fb-5a25-4b07-8b07-388aa488b9e1",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "jmp_2021052415575774.lines.json",
+        "bytes": 906468
+      },
+      {
+        "format": "md",
+        "path": "jmp_2021052415575774.md",
+        "bytes": 47714
+      },
+      {
+        "format": "tex.zip",
+        "path": "jmp_2021052415575774.tex.zip",
+        "bytes": 50816
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "jmp_2021052415575774.tiddlers.json",
-    "tiddlers_count": 80,
+    "tiddlers_count": 428,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -361,18 +418,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.4,
       "detail": "80 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:30:54Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.8,
+      "detail": "80 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T23:08:22Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9479.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T23:08:22Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 343.5,
+      "detail": "475 objects, 72 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T23:08:22Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.9,
+      "detail": "428 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/jmp_2021052415575774/jmp_2021052415575774.lines.json": "sha256:53ca495d39bb7bded156fa2a8a10bd6a0f91d0b0b5effe76cabc290a22a17bcf"
+        "/home/wkolbe/pdfdrill-library/jmp_2021052415575774/jmp_2021052415575774.lines.json": "sha256:8ad488783a2e44b048bc97cc5ea0ed37791e83863a60e3887ef300b6e431df12"
       },
       "params_hash": "sha256:efdfbf631c80e6969ca03e0975a8f91786d1b2b4b5858642e8e45247dfc78067",
       "algo": "sha256",
-      "ts": "2026-08-06T01:22:28Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T23:08:22Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -90,23 +91,28 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "ListItem": 4,
-      "Equation": 2,
-      "Paragraph": 11,
+      "Footnote": 8,
+      "Table": 5,
+      "TableRow": 49,
+      "TableCell": 331,
+      "Sidenote": 18,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 5,
+      "Equation": 6,
+      "Formula": 48,
+      "Paragraph": 57,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "K19-1013.tiddlers.json",
-    "tiddlers_count": 43,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Learning Conceptual Spaces with Disentangled Facets",
@@ -163,7 +169,32 @@
         "page": 6,
         "url": "https://github.com/rana-alshaikh/Disentangled-Facets"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "7cb9b9ad-8541-4877-bfb6-0f535fa455bf",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "K19-1013.lines.json",
+        "bytes": 1404542
+      },
+      {
+        "format": "md",
+        "path": "K19-1013.md",
+        "bytes": 43164
+      },
+      {
+        "format": "tex.zip",
+        "path": "K19-1013.tex.zip",
+        "bytes": 166617
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "K19-1013.tiddlers.json",
+    "tiddlers_count": 175,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Learning Conceptual Spaces with Disentangled Facets",
@@ -1020,18 +1051,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2373.1,
       "detail": "2 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:15:20Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13149.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:15:20Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 337.9,
+      "detail": "539 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:15:21Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.2,
+      "detail": "175 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/K19-1013/K19-1013.lines.json": "sha256:788fe2f783af0a309a2a0de8f9bd2e09bba32773eb88f886ef483ee5eff4924a"
+        "/home/wkolbe/pdfdrill-library/K19-1013/K19-1013.lines.json": "sha256:8dfbac7db4129050be0e3e02d22761581baeb771911e335dba2dd7467651306f"
       },
       "params_hash": "sha256:7af1ebbe77f07c6c69069245d6cfa3f9523dc4ba4b3b9532fbd3c773316667ef",
       "algo": "sha256",
-      "ts": "2026-08-05T21:50:13Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:15:20Z",
+      "provenance": "mathpix"
     }
   }
 }

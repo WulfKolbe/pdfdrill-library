@@ -6,15 +6,16 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 16,
@@ -88,30 +89,27 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 16,
-      "Citation": 7,
-      "ListItem": 6,
-      "Equation": 8,
-      "Formula": 1,
-      "Paragraph": 21,
-      "Document": 1
+      "Citation": 5,
+      "Sidenote": 8,
+      "Toc": 1,
+      "Abstract": 1,
+      "Diagram": 2,
+      "ListItem": 4,
+      "Equation": 74,
+      "Formula": 228,
+      "Paragraph": 104,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 74,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 34 unmapped private-use character(s) remain (U+F8EB×2, U+F8EC×13, U+F8ED×2, U+F8F6×2, U+F8F7×13, U+F8F8×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 7,
-    "bibliography_with_year": 4,
-    "bibliography_numeric_citations": 1,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 1,
-    "tiddlers_path": "FangStationaryphaseprinciple.tiddlers.json",
-    "tiddlers_count": 82,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "The principle of stationary phasefor the Fourier transform of D-modules",
@@ -140,7 +138,38 @@
     "page_count_text": 16,
     "image_count": 1,
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "bda45d8f-2c47-46e5-8503-3e0fd0078f8f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "FangStationaryphaseprinciple.lines.json",
+        "bytes": 608767
+      },
+      {
+        "format": "md",
+        "path": "FangStationaryphaseprinciple.md",
+        "bytes": 43065
+      },
+      {
+        "format": "tex.zip",
+        "path": "FangStationaryphaseprinciple.tex.zip",
+        "bytes": 57440
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 10,
+    "bibliography_with_year": 2,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "FangStationaryphaseprinciple.tiddlers.json",
+    "tiddlers_count": 470,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "The principle of stationary phasefor the Fourier transform of D-modules",
@@ -722,18 +751,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2129.1,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:15:01Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9257.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:15:02Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 506.2,
+      "detail": "445 objects, 74 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:15:02Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "10 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T17:15:03Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.6,
+      "detail": "470 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/FangStationaryphaseprinciple/FangStationaryphaseprinciple.lines.json": "sha256:1bc57a0f87ae30be530fb27f8ed6f955142a4b6ed1226e6d0d624b3493ea019a"
+        "/home/wkolbe/pdfdrill-library/FangStationaryphaseprinciple/FangStationaryphaseprinciple.lines.json": "sha256:ae52956661c143da3a4af6e8ad034716797e20343a75c88d99b441b5287d9a1d"
       },
       "params_hash": "sha256:a29912c1b651579f8abac0d301f8055cdeb4d0e7a790b4b130bfa469a3635277",
       "algo": "sha256",
-      "ts": "2026-08-05T20:22:37Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:15:02Z",
+      "provenance": "mathpix"
     }
   }
 }

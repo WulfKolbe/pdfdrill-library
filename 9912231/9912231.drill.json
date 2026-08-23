@@ -6,8 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -15,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -86,29 +86,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 13,
-      "Citation": 3,
-      "ListItem": 4,
-      "Equation": 100,
-      "Paragraph": 86,
+      "Footnote": 1,
+      "Table": 4,
+      "TableRow": 16,
+      "TableCell": 52,
+      "Abstract": 1,
+      "Equation": 90,
+      "Formula": 144,
+      "Paragraph": 102,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 90,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 20 unmapped private-use character(s) remain (U+F8EB×4, U+F8EC×2, U+F8ED×4, U+F8F6×4, U+F8F7×2, U+F8F8×4) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 5,
-    "bibliography_cites": 0,
-    "tiddlers_path": "9912231.tiddlers.json",
-    "tiddlers_count": 228,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
     "links": [
@@ -116,7 +112,57 @@
         "page": 1,
         "url": "http://arxiv.org/abs/hep-th/9912231v1"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:hep-th/9912231v1  22 Dec 1999",
+      "Creator": "dvips(k) 5.86 Copyright 1999 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Thu Oct  4 00:33:00 2018 CEST",
+      "ModDate": "Thu Oct  4 00:33:00 2018 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "13",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "187905 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 13,
+    "image_count": 84,
+    "mathpix_pdf_id": "e9f5e3fe-af54-4757-ac8a-656360bfb935",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "9912231.lines.json",
+        "bytes": 699706
+      },
+      {
+        "format": "md",
+        "path": "9912231.md",
+        "bytes": 49796
+      },
+      {
+        "format": "tex.zip",
+        "path": "9912231.tex.zip",
+        "bytes": 52619
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "9912231.tiddlers.json",
+    "tiddlers_count": 372,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "arXiv:hep-th/9912231v1  22 Dec 1999",
@@ -3348,18 +3394,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4119.5,
       "detail": "168 images, 65 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:27:21Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9622.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:27:22Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 243.1,
+      "detail": "424 objects, 90 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:27:22Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.6,
+      "detail": "372 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/9912231/9912231.lines.json": "sha256:e5104a9a4420466279fd5f2e29cf895934350b580bc2d268ef347cc63d4cc81f"
+        "/home/wkolbe/pdfdrill-library/9912231/9912231.lines.json": "sha256:24017ff3a19283589a60a16f3c90f77115eefa66a683e7a55cf8a7fc3e92d722"
       },
       "params_hash": "sha256:0e9d13e58a06f29ac155d62d828aea6115dbee2ff30eeb620b61a681601f4d3d",
       "algo": "sha256",
-      "ts": "2026-08-04T05:38:27Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:27:21Z",
+      "provenance": "mathpix"
     }
   }
 }

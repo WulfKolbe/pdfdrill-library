@@ -5,7 +5,7 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -76,19 +76,18 @@
     "bibkey": "preprints201901.0053.v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 48,
+      "Page": 12,
       "Abstract": 1,
-      "Section": 6,
-      "Formula": 64,
-      "Theorem": 26,
-      "Equation": 48,
-      "Diagram": 13,
-      "Proof": 10,
-      "LtxCommand": 3,
-      "Citation": 26
+      "Diagram": 4,
+      "Picture": 7,
+      "ListItem": 8,
+      "Equation": 20,
+      "Formula": 41,
+      "Paragraph": 46,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 20,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 12,
       "placed": 1,
@@ -98,13 +97,65 @@
       "numbered": 6,
       "roots": 1
     },
-    "bibliography_entries": 16,
-    "bibliography_with_year": 16,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 26,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Doppler Shift Time Expansion Resolution and Spectral Performance in Wideband Real-Time RF Channel Emulators",
+      "Subject": "The possibility to test a radio frequency transceiver through the use of appropriate channel emulators allows to evaluate their performance under various operating conditions. Many systems are able to operate with a relatively limited instantaneous bandwidth by applying known statistical models. Sometimes it is necessary to evaluate the performance of a RF transceiver installed on high or very high speed platforms over predictable trajectories using optionally DEMs (Digital Elevation Models) data of the terrain to estimate the number of stimulated paths and their contributions during the flight. When the instantaneous bandwidth of the signal becomes high (over several hundreds of MHz), one of the most important phenomenon to consider is the Doppler spread induced by the channel and traditional narrowband models become unuseful. In this paper there are presented some results when a time expansion is adopted in order to emulate the transceiver dynamic and the consequent Doppler spread with the aim to control the spectral purity of the emulated propagation channel.",
+      "Keywords": "Channel Emulator; Doppler; Propagation Channel",
+      "Author": "Massimiliano Rossi",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.18; modified using iText® 7.0.1 ©2000-2016 iText Group NV (AGPL-version)",
+      "CreationDate": "Mon Jan  7 10:34:28 2019 CET",
+      "ModDate": "Tue Mar  5 07:42:23 2019 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "851697 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 12,
+    "image_count": 21,
+    "mathpix_pdf_id": "bc6ed3b6-2cc6-4548-8fea-404f45ac3730",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "preprints201901.0053.v1.lines.json",
+        "bytes": 322062
+      },
+      {
+        "format": "md",
+        "path": "preprints201901.0053.v1.md",
+        "bytes": 26750
+      },
+      {
+        "format": "tex.zip",
+        "path": "preprints201901.0053.v1.tex.zip",
+        "bytes": 662578
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "preprints201901.0053.v1.tiddlers.json",
-    "tiddlers_count": 265,
+    "tiddlers_count": 156,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -460,18 +511,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 9.0,
       "detail": "265 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:19:21Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9948.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:19:21Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 125.7,
+      "detail": "140 objects, 20 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:19:22Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.7,
+      "detail": "156 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/preprints201901.0053.v1/texsrc/main.tex": "sha256:981e3a10340fcb5aa151665ba1af4323410d4db9b58e673d34dd28e1de1ca8d6"
+        "/home/wkolbe/pdfdrill-library/preprints201901.0053.v1/preprints201901.0053.v1.lines.json": "sha256:9dde367a5e208a1228d495a9a6a699be3233fd43f4a864ab0c6782beb1d12778"
       },
       "params_hash": "sha256:47659c83fc0bc8a7520e42877190f78789925bc2398a3532d0df10d395ae4d6d",
       "algo": "sha256",
-      "ts": "2026-08-06T01:32:41Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:19:21Z",
+      "provenance": "mathpix"
     }
   }
 }

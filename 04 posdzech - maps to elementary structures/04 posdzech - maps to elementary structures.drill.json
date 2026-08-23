@@ -11,6 +11,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -85,23 +86,77 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 23,
-      "ListItem": 94,
-      "Equation": 30,
-      "Formula": 2,
-      "Paragraph": 52,
+      "Table": 6,
+      "TableRow": 28,
+      "TableCell": 62,
+      "Sidenote": 1,
+      "Diagram": 30,
+      "Section": 4,
+      "Picture": 13,
+      "ListItem": 9,
+      "Equation": 7,
+      "Formula": 52,
+      "Paragraph": 40,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 7,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 76 unmapped private-use character(s) remain (U+F8E7×4, U+F8EB×3, U+F8EC×9, U+F8ED×3, U+F8EE×3, U+F8EF×15, U+F8F0×3, U+F8F6×3, U+F8F7×9, U+F8F8×3, U+F8F9×3, U+F8FA×15, U+F8FB×3) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "short 1-1.doc",
+      "Author": "Olaf",
+      "Creator": "PScript5.dll Version 5.2",
+      "Producer": "Acrobat Distiller 5.0 (Windows)",
+      "CreationDate": "Sun Aug 31 13:17:19 2008 CEST",
+      "ModDate": "Sun Aug 31 12:26:27 2008 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "AcroForm",
+      "JavaScript": "no",
+      "Pages": "23",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "829367 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 23,
+    "image_count": 0,
+    "mathpix_pdf_id": "7c6e57ec-44e0-46d1-bf27-b0e20509fded",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "04 posdzech - maps to elementary structures.lines.json",
+        "bytes": 343380
+      },
+      {
+        "format": "md",
+        "path": "04 posdzech - maps to elementary structures.md",
+        "bytes": 13151
+      },
+      {
+        "format": "tex.zip",
+        "path": "04 posdzech - maps to elementary structures.tex.zip",
+        "bytes": 5480701
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "04 posdzech - maps to elementary structures.tiddlers.json",
-    "tiddlers_count": 223,
+    "tiddlers_count": 203,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
@@ -546,18 +601,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.0,
       "detail": "223 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T18:49:03Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 11957.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:49:03Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 134.1,
+      "detail": "276 objects, 7 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:49:03Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.5,
+      "detail": "203 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/04 posdzech - maps to elementary structures/04 posdzech - maps to elementary structures.lines.json": "sha256:ab0abffb8238bf8a78516acdc91c40957fdd494ad62fcd87350e722100452629"
+        "/home/wkolbe/pdfdrill-library/04 posdzech - maps to elementary structures/04 posdzech - maps to elementary structures.lines.json": "sha256:b07add14718fc71ae537b764605edb98a9c6a09280e90a99b832fc79f226176d"
       },
       "params_hash": "sha256:fbdc10f00647ab58d13e63c13f2b43e5cf1431363b0c142014291a33c1c42355",
       "algo": "sha256",
-      "ts": "2026-08-04T22:06:58Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:49:03Z",
+      "provenance": "mathpix"
     }
   }
 }

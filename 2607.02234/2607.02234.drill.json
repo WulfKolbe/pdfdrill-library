@@ -3,7 +3,6 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "MD_BUILT",
     "REPORT_BUILT",
     "IMAGES_LAYER_KNOWN",
@@ -12,11 +11,13 @@
     "LINKS_KNOWN",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
-    "DESTS_KNOWN"
+    "DESTS_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2607.02234",
@@ -24,22 +25,21 @@
     "bibkey": "2607.02234",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 80,
-      "Abstract": 1,
-      "Section": 16,
-      "Formula": 49,
-      "Equation": 23,
-      "LtxCommand": 2,
+      "Page": 15,
+      "Citation": 11,
       "Table": 1,
-      "Citation": 70
+      "TableRow": 14,
+      "TableCell": 124,
+      "Abstract": 1,
+      "Diagram": 7,
+      "ListItem": 1,
+      "Equation": 23,
+      "Formula": 66,
+      "Paragraph": 60,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 37,
-    "bibliography_with_year": 36,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 70,
+    "model_equations_with_cdn": 23,
+    "model_source": "mathpix",
     "report_path": "2607.02234.pdf.drill/formula-report.html",
     "pyramid": {
       "dpi": 600,
@@ -189,7 +189,7 @@
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer"
+      "source": "mathpix"
     },
     "pages": 15,
     "bytes": 904410,
@@ -343,9 +343,6 @@
       "numbered": 16,
       "roots": 1
     },
-    "tiddlers_path": "2607.02234.tiddlers.json",
-    "tiddlers_count": 242,
-    "tiddlers_svg_mode": "inline",
     "abstract": "On-policy self-distillation (OPSD) has emerged as a promising paradigm for improving LLM reasoning, where a privileged teacher with access to reference solutions provides token-level supervision on the student&#39;s own generated trajectories. However, we find that OPSD consistently fails on long chain-of-thought (long-CoT) reasoning models, yielding at best marginal gains while destabilizing the reflective reasoning capability these models depend on. Through a novel decomposition of the teacher&#39;s supervision signal, we identify the root cause: the teacher&#39;s supervision is dominated by a reference-induced component that drives rote memorization of reference-specific shortcuts, while the question-conditioned, inference-transferable component is ignored or actively opposed. Based on this diagnosis, we propose a two-step solution. First, we construct a reference-only teacher (the same model conditioned on the reference without the question) to isolate the non-transferable component of the supervision signal; the residual after subtracting this component captures the question-conditioned, inference-transferable correction. Second, we use pointwise mutual information (PMI) as the mechanism to transform this residual into a well-formed PMI target distribution that the student can directly distill from, filtering out the reference-induced shortcut. Experiments on four long-CoT models across two datasets demonstrate consistent improvements over both the base model and standard OPSD, while preserving the models&#39; natural epistemic behavior throughout training.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -364,7 +361,63 @@
       "Gang Chen",
       "Jieping Ye"
     ],
-    "arxiv_primary_category": "cs.AI"
+    "arxiv_primary_category": "cs.AI",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Purified OPSD: On-Policy Self-Distillation Without Losing How to Think",
+      "Author": "Zhanming Shen; Jintao Tong; Shaotian Yan; Chen Shen; Hao Chen; Wentao Ye; Xiaomeng Hu; Rui Miao; Haobo Wang; Junbo Zhao; Gang Chen; Jieping Ye",
+      "Creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "904410 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 15,
+    "image_count": 0,
+    "mathpix_pdf_id": "8be69211-b4b5-4db7-8f06-c10f015d26e1",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2607.02234.lines.json",
+        "bytes": 808039
+      },
+      {
+        "format": "md",
+        "path": "2607.02234.md",
+        "bytes": 51276
+      },
+      {
+        "format": "tex.zip",
+        "path": "2607.02234.tex.zip",
+        "bytes": 645079
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 35,
+    "bibliography_with_year": 35,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 1,
+    "tiddlers_path": "2607.02234.tiddlers.json",
+    "tiddlers_count": 234,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Purified OPSD: On-Policy Self-Distillation Without Losing How to Think",
@@ -3038,16 +3091,50 @@
       "to": "DESTS_KNOWN",
       "cost_ms": 16.3,
       "detail": "151 dests across 8 kinds"
+    },
+    {
+      "ts": "2026-08-22T16:58:32Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,ENTITIES_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORT_BUILT,SEGMENTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9138.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:58:32Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,ENTITIES_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,PDFINFO_KNOWN,REPORT_BUILT,SEGMENTED,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 177.1,
+      "detail": "324 objects, 23 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:58:32Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,ENTITIES_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORT_BUILT,SEGMENTED,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "35 entries, 0+1 cites detected, 1 linked"
+    },
+    {
+      "ts": "2026-08-22T16:58:32Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,ENTITIES_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORT_BUILT,SEGMENTED,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.9,
+      "detail": "234 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2607.02234/2607.02234.lines.json": "sha256:1464a7e0e8701254a26915aa9f2132dc701d0429b7b18fb07b0453b60d188209"
+      },
       "params_hash": "sha256:ff19180b95d1e49ab1b2fdc3fadbd283e72034ee2a8537a2801d5a493fe15565",
       "algo": "sha256",
-      "ts": "2026-08-03T21:47:19Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:58:32Z",
+      "provenance": "mathpix"
     }
   }
 }

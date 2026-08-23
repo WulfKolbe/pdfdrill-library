@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 19,
@@ -90,17 +91,22 @@
     "bibkey": "2404.04837v3",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 125,
-      "Abstract": 1,
-      "Section": 19,
-      "Equation": 2,
+      "Page": 19,
+      "Footnote": 12,
+      "Citation": 6,
       "Table": 1,
-      "Formula": 29,
-      "LtxCommand": 5,
-      "Citation": 52
+      "TableRow": 4,
+      "TableCell": 16,
+      "Abstract": 1,
+      "Diagram": 37,
+      "ListItem": 5,
+      "Equation": 1,
+      "Formula": 55,
+      "Paragraph": 105,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 19,
       "placed": 114,
@@ -110,14 +116,6 @@
       "numbered": 19,
       "roots": 1
     },
-    "bibliography_entries": 40,
-    "bibliography_with_year": 39,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 52,
-    "tiddlers_path": "2404.04837v3.tiddlers.json",
-    "tiddlers_count": 259,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Categories and categorical structures are increasingly recognized as useful abstractions for modeling in science and engineering. To uniformly implement category-theoretic mathematical models in software, we introduce GATlab, a domain-specific language for algebraic specification embedded in a technical programming language. GATlab is based on generalized algebraic theories (GATs), a logical system extending algebraic theories with dependent types so as to encompass category theory. Using GATlab, the programmer can specify generalized algebraic theories and their models, including both free models, based on symbolic expressions, and computational models, defined by arbitrary code in the host language. Moreover, the programmer can define maps between theories and use them to declaratively migrate models of one theory to models of another. In short, GATlab aims to provide a unified environment for both computer algebra and software interface design with generalized algebraic theories. In this paper, we describe the design, implementation, and applications of GATlab.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -298,7 +296,72 @@
         "page": 17,
         "url": "https://doi.org/10.1145/3434304"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Tue Dec 10 02:38:12 2024 CET",
+      "ModDate": "Tue Dec 10 02:38:12 2024 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "19",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "426219 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 19,
+    "image_count": 0,
+    "mathpix_pdf_id": "c61dee7e-0769-4c24-8b1c-aa40f0158c86",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2404.04837v3.lines.json",
+        "bytes": 1020883
+      },
+      {
+        "format": "md",
+        "path": "2404.04837v3.md",
+        "bytes": 60619
+      },
+      {
+        "format": "tex.zip",
+        "path": "2404.04837v3.tex.zip",
+        "bytes": 66719
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 48,
+    "bibliography_with_year": 42,
+    "bibliography_numeric_citations": 45,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 45,
+    "tiddlers_path": "2404.04837v3.tiddlers.json",
+    "tiddlers_count": 307,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -3587,18 +3650,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4980.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:50:30Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9376.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:50:30Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 533.5,
+      "detail": "263 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:50:31Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "48 entries, 45+1 cites detected, 45 linked"
+    },
+    {
+      "ts": "2026-08-22T17:50:31Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 20.6,
+      "detail": "307 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2404.04837v3/texsrc/main.tex": "sha256:8e2676113806459ecef8352a927771bb8c7fd77d21c7a8ed54afa9210ed7d8eb"
+        "/home/wkolbe/pdfdrill-library/2404.04837v3/2404.04837v3.lines.json": "sha256:806df85400c4ff82f2ed2fe2cf01499ce92c2d2b7904ea8bcedff515f734da31"
       },
       "params_hash": "sha256:07f03143273fdaf6336b9de889dfe21206e6e43b0c647b6c64ff1c41fbd08445",
       "algo": "sha256",
-      "ts": "2026-08-03T21:17:09Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:50:30Z",
+      "provenance": "mathpix"
     }
   }
 }

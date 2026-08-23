@@ -5,8 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +12,9 @@
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 18,
@@ -94,19 +94,22 @@
     "bibkey": "2112.06360",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 96,
+      "Page": 18,
+      "Footnote": 2,
+      "Table": 2,
+      "TableRow": 8,
+      "TableCell": 75,
       "Abstract": 1,
-      "Section": 20,
-      "Table": 5,
-      "Formula": 60,
-      "LtxCommand": 27,
-      "Theorem": 17,
-      "Equation": 21,
-      "Proof": 5,
-      "Citation": 28
+      "Diagram": 7,
+      "Picture": 4,
+      "ListItem": 1,
+      "Equation": 19,
+      "Formula": 112,
+      "Paragraph": 76,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 19,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 18,
       "placed": 67,
@@ -116,14 +119,6 @@
       "numbered": 20,
       "roots": 1
     },
-    "bibliography_entries": 18,
-    "bibliography_with_year": 18,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 28,
-    "tiddlers_path": "2112.06360.tiddlers.json",
-    "tiddlers_count": 306,
-    "tiddlers_svg_mode": "inline",
     "abstract": "A fundamental way to study 3-manifolds is through the geometric lens, one of the most prominent geometries being the hyperbolic one. We focus on the computation of a complete hyperbolic structure on a connected orientable hyperbolic 3-manifold with torus boundaries. This family of 3-manifolds includes the knot complements. This computation of a hyperbolic structure requires the resolution of gluing equations on a triangulation of the space, but not all triangulations admit a solution to the equations. In this paper, we propose a new method to find a triangulation that admits a solution to the gluing equations, using convex optimization and combinatorial modifications. It is based on Casson and Rivin s reformulation of the equations. We provide a novel approach to modify a triangulation and update its geometry, along with experimental results to support the new method.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -147,7 +142,67 @@
         "page": 18,
         "url": "https://snappy.math.uic.edu/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Fri Aug 26 02:35:21 2022 CEST",
+      "ModDate": "Fri Aug 26 02:35:21 2022 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "18",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "992187 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 18,
+    "image_count": 12,
+    "mathpix_pdf_id": "73cb4e4a-3bb9-4129-a9fb-98abc3698a45",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2112.06360.lines.json",
+        "bytes": 851977
+      },
+      {
+        "format": "md",
+        "path": "2112.06360.md",
+        "bytes": 58449
+      },
+      {
+        "format": "tex.zip",
+        "path": "2112.06360.tex.zip",
+        "bytes": 670971
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2112.06360.tiddlers.json",
+    "tiddlers_count": 259,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1522,16 +1577,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3510.8,
       "detail": "6 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:31:46Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.5,
+      "detail": "306 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T23:14:01Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9640.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T23:14:01Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 170.6,
+      "detail": "326 objects, 19 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T23:14:01Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.9,
+      "detail": "259 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2112.06360/2112.06360.lines.json": "sha256:6c11e0862c0cd920da0a196328493ca36106fc691903142ab65d11bba69adcea"
+      },
       "params_hash": "sha256:f23553864ebcee762b1137071ff7cbb1c8739e072d14c73f879af91314de6ede",
       "algo": "sha256",
-      "ts": "2026-08-03T20:56:21Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T23:14:01Z",
+      "provenance": "mathpix"
     }
   }
 }

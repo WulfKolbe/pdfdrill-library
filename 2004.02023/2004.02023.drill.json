@@ -3,11 +3,9 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -15,7 +13,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2004.02023",
@@ -23,21 +24,21 @@
     "bibkey": "2004.02023",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 132,
-      "Abstract": 1,
-      "Section": 26,
-      "Formula": 76,
+      "Page": 16,
+      "Footnote": 4,
+      "Citation": 1,
       "Table": 5,
-      "LtxCommand": 8,
-      "Citation": 71
+      "TableRow": 32,
+      "TableCell": 71,
+      "Abstract": 1,
+      "Diagram": 2,
+      "ListItem": 51,
+      "Formula": 23,
+      "Paragraph": 56,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 51,
-    "bibliography_with_year": 51,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 71,
+    "model_source": "mathpix",
     "pages": 16,
     "bytes": 481328,
     "page_size": "612 x 792 pts (letter)",
@@ -117,9 +118,6 @@
       "ASRNYH+CMMI5"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2004.02023.tiddlers.json",
-    "tiddlers_count": 333,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Translating verbose information needs into crisp search queries is a phenomenon that is ubiquitous but hardly understood. Insights into this process could be valuable in several applications, including synthesizing large privacy-friendly query logs from public Web sources which are readily available to the academic research community. In this work, we take a step towards understanding query formulation by tapping into the rich potential of community question answering (CQA) forums. Specifically, we sample natural language (NL) questions spanning diverse themes from the Stack Exchange platform, and conduct a large-scale conversion experiment where crowdworkers submit search queries they would use when looking for equivalent information. We provide a careful analysis of this data, accounting for possible sources of bias during conversion, along with insights into user-specific linguistic patterns and search behaviors. We release a dataset of 7,000 question-query pairs from this study to facilitate further research on query understanding.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -177,7 +175,72 @@
         "page": 13,
         "url": "https://bit.ly/2upwz0x"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Fri Jun  4 04:34:54 2021 CEST",
+      "ModDate": "Fri Jun  4 04:34:54 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "481328 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 4,
+    "mathpix_pdf_id": "8980e1e9-6cb2-47ac-ac71-fe09d4fd7ca3",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2004.02023.lines.json",
+        "bytes": 779826
+      },
+      {
+        "format": "md",
+        "path": "2004.02023.md",
+        "bytes": 42337
+      },
+      {
+        "format": "tex.zip",
+        "path": "2004.02023.tex.zip",
+        "bytes": 247106
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 48,
+    "bibliography_with_year": 48,
+    "bibliography_numeric_citations": 27,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 27,
+    "tiddlers_path": "2004.02023.tiddlers.json",
+    "tiddlers_count": 226,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1456,16 +1519,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4398.0,
       "detail": "2 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:06:56Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9930.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:06:56Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 138.0,
+      "detail": "263 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:06:57Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "48 entries, 27+0 cites detected, 27 linked"
+    },
+    {
+      "ts": "2026-08-22T17:06:57Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.2,
+      "detail": "226 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2004.02023/2004.02023.lines.json": "sha256:39a928b3c68c6c754ac244345558575f3712505d08528474b470697c272721f4"
+      },
       "params_hash": "sha256:bfe9bb95aa40302014fe6eba71b83e369d212bb5ec452089b1f23eb1d38bc602",
       "algo": "sha256",
-      "ts": "2026-08-03T20:02:02Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:06:56Z",
+      "provenance": "mathpix"
     }
   }
 }

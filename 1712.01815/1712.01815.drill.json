@@ -5,15 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 19,
@@ -81,17 +81,21 @@
     "bibkey": "1712.01815",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 61,
+      "Page": 19,
+      "Footnote": 3,
+      "Table": 5,
+      "TableRow": 38,
+      "TableCell": 150,
       "Abstract": 1,
-      "Formula": 48,
+      "Diagram": 3,
+      "ListItem": 73,
       "Equation": 1,
-      "Table": 7,
-      "LtxCommand": 13,
-      "Section": 9,
-      "Citation": 50
+      "Formula": 45,
+      "Paragraph": 59,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 19,
       "placed": 48,
@@ -101,14 +105,6 @@
       "numbered": 9,
       "roots": 1
     },
-    "bibliography_entries": 32,
-    "bibliography_with_year": 32,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 50,
-    "tiddlers_path": "1712.01815.tiddlers.json",
-    "tiddlers_count": 209,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The game of chess is the most widely-studied domain in the history of artificial intelligence. The strongest programs are based on a combination of sophisticated search techniques, domain-specific adaptations, and handcrafted evaluation functions that have been refined by human experts over several decades. In contrast, the AlphaGo Zero program recently achieved superhuman performance in the game of Go, by tabula rasa reinforcement learning from games of self-play. In this paper, we generalise this approach into a single AlphaZero algorithm that can achieve, tabula rasa, superhuman performance in many challenging domains. Starting from random play, and given no domain knowledge except the game rules, AlphaZero achieved within 24 hours a superhuman level of play in the games of chess and shogi (Japanese chess) as well as Go, and convincingly defeated a world-champion program in each case.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -139,7 +135,67 @@
         "page": 9,
         "url": "https://stockfishchess.org/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Dec  6 15:22:41 2017 CET",
+      "ModDate": "Wed Dec  6 15:22:41 2017 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "19",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "636527 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 19,
+    "image_count": 34,
+    "mathpix_pdf_id": "f53dedce-a8ba-41ce-aba2-3c719a4a3f03",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1712.01815.lines.json",
+        "bytes": 897083
+      },
+      {
+        "format": "md",
+        "path": "1712.01815.md",
+        "bytes": 48255
+      },
+      {
+        "format": "tex.zip",
+        "path": "1712.01815.tex.zip",
+        "bytes": 643424
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1712.01815.tiddlers.json",
+    "tiddlers_count": 226,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -913,18 +969,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4833.4,
       "detail": "17 images, 15 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:47:38Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9260.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:47:39Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 365.2,
+      "detail": "398 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:47:39Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.2,
+      "detail": "226 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1712.01815/texsrc/main.tex": "sha256:71b1102391fcf6e1b7a0183895d66f0a379c1d2499a616baf1ecdeac5cb28ea7"
+        "/home/wkolbe/pdfdrill-library/1712.01815/1712.01815.lines.json": "sha256:3ffb321ed56396990c46d60ace5c0388446bdf1115ec680474f5c6c49555a3ac"
       },
       "params_hash": "sha256:45daad7a45d7d17cab245dba870477ae4ea9b8dc4028e0c662b832b3c81121fa",
       "algo": "sha256",
-      "ts": "2026-08-03T19:40:15Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:47:39Z",
+      "provenance": "mathpix"
     }
   }
 }

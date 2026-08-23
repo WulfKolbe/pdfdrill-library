@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -114,22 +115,80 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 18,
-      "ListItem": 40,
-      "Equation": 33,
-      "Paragraph": 33,
-      "Document": 1
+      "Table": 1,
+      "TableRow": 3,
+      "TableCell": 12,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Section": 4,
+      "Picture": 9,
+      "ListItem": 4,
+      "Equation": 8,
+      "Formula": 105,
+      "Paragraph": 47,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 8,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Optimal Control of Distributed Energy Resources and Demand Response under Uncertainty",
+      "Subject": "Energy conservation, consumption, and utilization, Energy planning, policy and economy",
+      "Keywords": "Distributed generation, demand response, CO2 emissions, stochastic optimization",
+      "Author": "Afzal Siddiqui",
+      "Creator": "Appligent APSetDocInfo 2.2.2",
+      "Producer": "Acrobat 9.0.0; modified using iText® 7.1.4 ©2000-2018 iText Group NV (AGPL-version)",
+      "CreationDate": "Fri Aug  6 03:14:49 2010 CEST",
+      "ModDate": "Tue May 12 08:40:23 2020 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "AcroForm",
+      "JavaScript": "no",
+      "Pages": "18",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "768238 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.6"
+    },
+    "page_count_text": 18,
+    "image_count": 0,
+    "mathpix_pdf_id": "f0b005da-1608-4d4a-9b43-066d222cafd2",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "qt62k441m6.lines.json",
+        "bytes": 480138
+      },
+      {
+        "format": "md",
+        "path": "qt62k441m6.md",
+        "bytes": 33196
+      },
+      {
+        "format": "tex.zip",
+        "path": "qt62k441m6.tex.zip",
+        "bytes": 763272
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "qt62k441m6.tiddlers.json",
-    "tiddlers_count": 148,
+    "tiddlers_count": 218,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -911,18 +970,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.9,
       "detail": "148 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:44:36Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9479.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:44:36Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 318.6,
+      "detail": "215 objects, 8 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:44:36Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.3,
+      "detail": "218 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/qt62k441m6/qt62k441m6.lines.json": "sha256:7a7f319c494474d0c79b23fa259230a915dbea8c16ed83bed44d8633e2126f2a"
+        "/home/wkolbe/pdfdrill-library/qt62k441m6/qt62k441m6.lines.json": "sha256:b4fc656b739fb9704cbe524010a8567ca88f8c77969114d08f8cca3897ffa109"
       },
       "params_hash": "sha256:b7800b21af77c446d3471816f17327d003c8768cae597079154ce136e567dcf2",
       "algo": "sha256",
-      "ts": "2026-08-06T01:33:39Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:44:36Z",
+      "provenance": "mathpix"
     }
   }
 }

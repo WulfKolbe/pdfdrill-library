@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -95,22 +96,75 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 16,
-      "ListItem": 3,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Picture": 3,
       "Equation": 56,
-      "Paragraph": 53,
-      "Document": 1
+      "Formula": 133,
+      "Paragraph": 86,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 56,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "A 1d Up Approach to Conformal Geometric Algebra: Applications in Line Fitting and Quantum Mechanics",
+      "Subject": "Advances in Applied Clifford Algebras, https://doi.org/10.1007/s00006-020-1046-0",
+      "Keywords": "Conformal geometric algebra,Computer vision,Quantum theory",
+      "Author": "Anthony N. Lasenby",
+      "Creator": "Springer",
+      "Producer": "Acrobat Distiller 10.1.8 (Windows)",
+      "CreationDate": "Thu Feb 20 08:54:15 2020 CET",
+      "ModDate": "Sat Apr  4 16:46:01 2020 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "AcroForm",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "439.37 x 666.142 pts",
+      "Page rot": "0",
+      "File size": "1044444 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.6"
+    },
+    "page_count_text": 16,
+    "image_count": 1,
+    "mathpix_pdf_id": "660e48e7-2f8b-45a4-b705-322ee20c5ae0",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "s00006-020-1046-0.lines.json",
+        "bytes": 690639
+      },
+      {
+        "format": "md",
+        "path": "s00006-020-1046-0.md",
+        "bytes": 41201
+      },
+      {
+        "format": "tex.zip",
+        "path": "s00006-020-1046-0.tex.zip",
+        "bytes": 283380
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "s00006-020-1046-0.tiddlers.json",
-    "tiddlers_count": 145,
+    "tiddlers_count": 314,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -598,18 +652,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.7,
       "detail": "145 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:19:23Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10100.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:19:24Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 301.0,
+      "detail": "298 objects, 56 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:19:24Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.8,
+      "detail": "314 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/s00006-020-1046-0/s00006-020-1046-0.lines.json": "sha256:bf0c57f8dba8505894251f88e23c1984120ac22ecd79aa5022bd05b809ae9819"
+        "/home/wkolbe/pdfdrill-library/s00006-020-1046-0/s00006-020-1046-0.lines.json": "sha256:1f36acb3a7f86abde827ccfc7d5c8bf005c8a861eda7f040d3c43e9124adfb1c"
       },
       "params_hash": "sha256:2e6434ec8ec43334b57d8bc413159c7f7a349a3e4fb472da12bed5aa17d8d576",
       "algo": "sha256",
-      "ts": "2026-08-06T01:34:52Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:19:24Z",
+      "provenance": "mathpix"
     }
   }
 }

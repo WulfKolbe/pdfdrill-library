@@ -9,7 +9,11 @@
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -98,7 +102,56 @@
       "AICAWW+MSBM10"
     ],
     "has_math_fonts": true,
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "8239f5b7-5402-4013-ac33-81d6bed0eb36",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Leopardi-ICCA9-FE-GC.lines.json",
+        "bytes": 402936
+      },
+      {
+        "format": "md",
+        "path": "Leopardi-ICCA9-FE-GC.md",
+        "bytes": 27925
+      },
+      {
+        "format": "tex.zip",
+        "path": "Leopardi-ICCA9-FE-GC.tex.zip",
+        "bytes": 54729
+      }
+    ],
+    "bibkey": "Leopardi-ICCA9-FE-GC",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "Citation": 1,
+      "Abstract": 1,
+      "Diagram": 3,
+      "ListItem": 3,
+      "Equation": 6,
+      "Formula": 35,
+      "Paragraph": 39,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "bibliography_entries": 59,
+    "bibliography_with_year": 56,
+    "bibliography_numeric_citations": 63,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 63,
+    "tiddlers_path": "Leopardi-ICCA9-FE-GC.tiddlers.json",
+    "tiddlers_count": 174,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1021,6 +1074,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1766.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:42:10Z",
+      "node": "mathpix",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10470.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:42:10Z",
+      "node": "model",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 87.9,
+      "detail": "99 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:42:11Z",
+      "node": "bibliography",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "59 entries, 63+0 cites detected, 63 linked"
+    },
+    {
+      "ts": "2026-08-22T15:42:11Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.5,
+      "detail": "174 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Leopardi-ICCA9-FE-GC/Leopardi-ICCA9-FE-GC.lines.json": "sha256:63e8a444ede30af9ca9a1f7b3ebbfb0051fc810fc38dac8fc9fb6135717de18d"
+      },
+      "params_hash": "sha256:b0e97c0b41cddd80c59d6e426889780309d9c9d92558dead82c5541d4d712aba",
+      "algo": "sha256",
+      "ts": "2026-08-22T15:42:10Z",
+      "provenance": "mathpix"
+    }
+  }
 }

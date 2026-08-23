@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -73,28 +74,79 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 27,
-      "Citation": 14,
-      "ListItem": 14,
-      "Equation": 24,
-      "Paragraph": 49,
+      "Footnote": 2,
+      "Citation": 6,
+      "Sidenote": 1,
+      "Diagram": 74,
+      "Picture": 3,
+      "ListItem": 5,
+      "Equation": 52,
+      "Formula": 81,
+      "Paragraph": 156,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 52,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 78 unmapped private-use character(s) remain (U+F8EE×13, U+F8EF×13, U+F8F0×13, U+F8F9×13, U+F8FA×13, U+F8FB×13) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.14",
+      "CreationDate": "Sun Jan  3 10:58:04 2016 CET",
+      "ModDate": "Sun Jan  3 10:58:04 2016 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "27",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "659367 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 27,
+    "image_count": 15,
+    "mathpix_pdf_id": "c46e1f4f-1bcd-4545-9a3f-a06c2f1e3195",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "fricas_intro.lines.json",
+        "bytes": 999621
+      },
+      {
+        "format": "md",
+        "path": "fricas_intro.md",
+        "bytes": 49791
+      },
+      {
+        "format": "tex.zip",
+        "path": "fricas_intro.tex.zip",
+        "bytes": 896575
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "bibliography_entries": 0,
     "bibliography_with_year": 0,
     "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 1,
     "bibliography_cites": 0,
     "tiddlers_path": "fricas_intro.tiddlers.json",
-    "tiddlers_count": 140,
+    "tiddlers_count": 422,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -422,18 +474,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.0,
       "detail": "140 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T19:47:12Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9906.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T19:47:12Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 300.8,
+      "detail": "408 objects, 52 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T19:47:13Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+1 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T19:47:13Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.5,
+      "detail": "422 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/fricas_intro/fricas_intro.lines.json": "sha256:b55229b668459aff0aa9b0801f154aef5387d0eb83ec62ae16030442d4b3a903"
+        "/home/wkolbe/pdfdrill-library/fricas_intro/fricas_intro.lines.json": "sha256:81243c764248b6d3d73535e5ba1686acbfa35731d97259f454522c4981869c3b"
       },
       "params_hash": "sha256:ad1e28cf4b80a022ea1a2fba718bab3d0a05bd6c29ba50429f4d55dd42cbb09d",
       "algo": "sha256",
-      "ts": "2026-08-06T01:13:00Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T19:47:12Z",
+      "provenance": "mathpix"
     }
   }
 }

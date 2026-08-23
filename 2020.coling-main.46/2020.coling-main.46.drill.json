@@ -6,8 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -15,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 15,
@@ -93,29 +93,27 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 15,
-      "Citation": 1,
-      "ListItem": 183,
-      "Equation": 89,
-      "Paragraph": 55,
-      "Document": 1
+      "Table": 6,
+      "TableRow": 55,
+      "TableCell": 438,
+      "Abstract": 1,
+      "Diagram": 3,
+      "ListItem": 12,
+      "Equation": 31,
+      "Formula": 199,
+      "Paragraph": 69,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 31,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 24 unmapped private-use character(s) remain (U+F8EE×3, U+F8EF×6, U+F8F0×3, U+F8F9×3, U+F8FA×6, U+F8FB×3) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 13,
-    "bibliography_with_year": 13,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 49,
-    "bibliography_cites": 18,
-    "tiddlers_path": "2020.coling-main.46.tiddlers.json",
-    "tiddlers_count": 390,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Knowledge graph (KG) embedding aims at embedding entities and relations in a KG into a low\n     dimensional latent representation space. Existing KG embedding approaches model entities and\n     relations in a KG by utilizing real-valued , complex-valued, or hypercomplex-valued (Quaternion\n     or Octonion) representations, all of which are subsumed into a geometric algebra. In this work,\n     we introduce a novel geometric algebra-based KG embedding framework, GeomE, which uti-\n     lizes multivector representations and the geometric product to model entities and relations. Our\n     framework subsumes several state-of-the-art KG embedding approaches and is advantageous\n     with its ability of modeling various key relation patterns, including (anti-)symmetry, inversion\n     and composition, rich expressiveness with higher degree of freedom as well as good general-\n     ization capacity. Experimental results on multiple benchmark knowledge graphs show that the\n     proposed approach outperforms existing state-of-the-art models for link prediction.\n 1   Introduction\n Knowledge graphs (KGs) are directed graphs where nodes represent entities and (labeled) edges repre-\n sent the types of relationships among entities. This can be represented as a collection of triples (h, r, t),\n each representing a relation r between a ”head-entity” h and an ”tail-entity” t. Some real-world knowl-\n edge graphs include Freebase (Bollacker et al., 2008), WordNet (Miller, 1995), YAGO (Suchanek et al.,\n 2007), and DBpedia (Auer et al., 2007).\n    However, most existing KGs are incomplete. The task of link prediction alleviates this drawback\n by inferring missing facts based on the known facts in a KG and thus has gained growing interest.\n Embedding KGs into a low-dimensional space and learning latent representations of entities and relations\n in KGs is an effective solution for this task. In general, most existing KG embedding models learn to\n embed KGs by optimizing a scoring function which assigns higher scores to true facts than invalid ones.\n    Recently, learning KG embeddings in the complex or hypercomplex spaces has been proven to be a\n highly effective inductive bias. ComplEx (Trouillon et al., 2016), RotatE, pRotatE (Sun et al., 2019), and\n QuatE (Zhang et al., 2019) achieved the state-of-the-art results on link prediction, due to their abilities of\n capturing various relations (i.e., modeling symmetry and anti-symmetry). They both use the asymmetri-\n cal Hermitian product to score relational triples where the components of entity/relation embeddings are\n complex numbers or quaternions.\n    Complex numbers and quaternions can be described by the various components within a Clifford mul-\n tivector (Chappell et al., 2015). In other words, the geometric algebra of Clifford (1882) provides an\n elegant and efficient rotation representation in terms of multivector which is more general than Hamil-\n ton (1844)’s unit quaternion.\n    In this paper, we propose a novel KG embedding approach, GeomE, which is based on Clifford mul-\n tivectors and the geometric product. Concretely, we utilize N multivector embeddings of N grades\n (N = 2, 3) to represent entity and relation. Each component of an entity/relation embedding is a multi-\n vector in a geometric algebra of N grades, GN , with scalars, vectors and bivectors, as well as trivectors",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
@@ -126,7 +124,59 @@
         "url": "https://github.com/soledad921/GeomE",
         "kind": "text"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Knowledge Graph Embeddings in Geometric Algebras",
+      "Subject": "COLING2020 2020",
+      "Author": "Chengjin Xu ; Mojtaba Nayyeri ; Yung-Yu Chen ; Jens Lehmann",
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.20",
+      "CreationDate": "Sat Oct 31 11:01:30 2020 CET",
+      "ModDate": "Sat Oct 31 11:01:30 2020 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "447071 bytes",
+      "Optimized": "no",
+      "PDF version": "1.3"
+    },
+    "page_count_text": 15,
+    "image_count": 5,
+    "mathpix_pdf_id": "6cb9bf83-402e-482b-8a5e-01e28a2c1243",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2020.coling-main.46.lines.json",
+        "bytes": 1233852
+      },
+      {
+        "format": "md",
+        "path": "2020.coling-main.46.md",
+        "bytes": 67793
+      },
+      {
+        "format": "tex.zip",
+        "path": "2020.coling-main.46.tex.zip",
+        "bytes": 250252
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2020.coling-main.46.tiddlers.json",
+    "tiddlers_count": 354,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Knowledge Graph Embeddings in Geometric Algebras",
@@ -705,18 +755,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6122.2,
       "detail": "3 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:54:29Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10596.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:54:30Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 533.4,
+      "detail": "831 objects, 31 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:54:30Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.7,
+      "detail": "354 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2020.coling-main.46/2020.coling-main.46.lines.json": "sha256:6940d0b1303e62af7f0280aed41fc527682b6764a9e3666e365a5cd4f5a46f7a"
+        "/home/wkolbe/pdfdrill-library/2020.coling-main.46/2020.coling-main.46.lines.json": "sha256:b0b1424031b2c4fa304597e700178c9c420b6ea5d74e506565855eab3f454326"
       },
       "params_hash": "sha256:57d1fb1eea11057c0e8624f3d4eb52400bfbb9a90b59a62720c9ab4381216b2b",
       "algo": "sha256",
-      "ts": "2026-08-03T20:44:02Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:54:30Z",
+      "provenance": "mathpix"
     }
   }
 }

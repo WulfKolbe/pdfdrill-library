@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -114,27 +115,83 @@
     "model_object_counts": {
       "Page": 7,
       "Citation": 3,
-      "ListItem": 10,
-      "Equation": 12,
-      "Paragraph": 19,
+      "Table": 1,
+      "TableRow": 8,
+      "TableCell": 36,
+      "Abstract": 1,
+      "Diagram": 8,
+      "ListItem": 4,
+      "Equation": 5,
+      "Formula": 48,
+      "Paragraph": 34,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 5,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 12 unmapped private-use character(s) remain (U+F8EB×3, U+F8ED×3, U+F8F6×3, U+F8F8×3) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Cabinet of Curiosities: The Interesting Geometry of the Angle = arccos( (3 - 1)/4 )",
+      "Subject": "In this paper, we present the construction of several aggregates of tetrahedra. Each construction is obtained by performing rotations on an initial set of tetrahedra that either (1) contains gaps between adjacent tetrahedra, or (2) exhibits an aperiodic nature. Following this rotation, gaps of the former case are ``closed'' (in the sense that faces of adjacent tetrahedra are brought into contact to form a ``face junction''), while translational and rotational symmetries are obtained in the latter case. In all cases, an angular displacement of = arccos(3-1)/4 (or a closely related angle), where = (1+5)/2 is the golden ratio, is observed between faces of a junction. Additionally, the overall number of plane classes, defined as the number of distinct facial orientations in the collection of tetrahedra, is reduced following the transformation. Finally, we present several ``curiosities'' involving the structures discussed here with the goal of inspiring the reader's interest in constructions of this nature and their attending, interesting properties.",
+      "Keywords": "tetrahedron; Golden Ratio; rotational transformation",
+      "Author": "Fang Fang, Klee Irwin, Julio Kovacs and Garrett Sadler",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Oct 30 12:02:52 2019 CET",
+      "ModDate": "Wed Oct 30 12:02:52 2019 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "7",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "819237 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 7,
+    "image_count": 5,
+    "mathpix_pdf_id": "e3d8f70c-81eb-4634-99e0-395ccaedd9a9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "fractalfract-03-00048.lines.json",
+        "bytes": 330795
+      },
+      {
+        "format": "md",
+        "path": "fractalfract-03-00048.md",
+        "bytes": 21840
+      },
+      {
+        "format": "tex.zip",
+        "path": "fractalfract-03-00048.tex.zip",
+        "bytes": 473964
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "bibliography_entries": 5,
     "bibliography_with_year": 5,
     "bibliography_numeric_citations": 5,
     "bibliography_authoryear_citations": 0,
     "bibliography_cites": 5,
     "tiddlers_path": "fractalfract-03-00048.tiddlers.json",
-    "tiddlers_count": 71,
+    "tiddlers_count": 131,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -798,18 +855,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.7,
       "detail": "71 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:54:28Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9688.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:54:28Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 71.6,
+      "detail": "156 objects, 5 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:54:28Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "5 entries, 5+0 cites detected, 5 linked"
+    },
+    {
+      "ts": "2026-08-22T14:54:28Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.9,
+      "detail": "131 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/fractalfract-03-00048/fractalfract-03-00048.lines.json": "sha256:cce030e4a065baa953e273409f68838c7e3239239d0b64634ad5e234a36f866f"
+        "/home/wkolbe/pdfdrill-library/fractalfract-03-00048/fractalfract-03-00048.lines.json": "sha256:d78d8fb5a17f2add6641148d40fa84380bf0247961cfc3f6f74f7bb0094618d7"
       },
       "params_hash": "sha256:345728217ef3b685cf658bb289ccdd119ad6adf8e1bb51b02711aeac1245cda0",
       "algo": "sha256",
-      "ts": "2026-08-06T01:12:57Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:54:28Z",
+      "provenance": "mathpix"
     }
   }
 }

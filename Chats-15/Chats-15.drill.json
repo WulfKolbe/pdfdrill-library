@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -66,22 +67,21 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 2,
-      "Equation": 12,
-      "Paragraph": 9,
+      "Toc": 1,
+      "Equation": 5,
+      "Formula": 11,
+      "Paragraph": 8,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 5,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Chats-15.tiddlers.json",
-    "tiddlers_count": 40,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -116,7 +116,32 @@
         "url": "https://math.stackexchange.com/questions/562694/integral-int-11-frac1x-sqrt-frac1x1-x-ln-left-frac2-x22-x1/563063#563063",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "0666b264-7e0e-430e-b413-d370a8b78aca",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Chats-15.lines.json",
+        "bytes": 52686
+      },
+      {
+        "format": "md",
+        "path": "Chats-15.md",
+        "bytes": 2665
+      },
+      {
+        "format": "tex.zip",
+        "path": "Chats-15.tex.zip",
+        "bytes": 3623
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Chats-15.tiddlers.json",
+    "tiddlers_count": 44,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -498,18 +523,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 465.4,
       "detail": "4 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:15:29Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5146.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:15:30Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 23.9,
+      "detail": "28 objects, 5 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:15:30Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.4,
+      "detail": "44 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Chats-15/Chats-15.lines.json": "sha256:dcef90311482182b37138cf1b4eb03a2be701e4926ce87ddaa4cc26a12320403"
+        "/home/wkolbe/pdfdrill-library/Chats-15/Chats-15.lines.json": "sha256:4e3597ec0e65347c12eed6b7d14baf828ad4c35045bb98b4b012deed640b3eff"
       },
       "params_hash": "sha256:955021f4c7342281c08d0cc233222cd3c99b10e13b9e1e8f7e1fab310e559fd6",
       "algo": "sha256",
-      "ts": "2026-08-05T06:50:05Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:15:30Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -3,17 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1911.02850",
@@ -21,22 +22,22 @@
     "bibkey": "1911.02850",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 88,
-      "Abstract": 1,
-      "Section": 20,
-      "LtxCommand": 13,
+      "Page": 14,
+      "Footnote": 3,
+      "Citation": 1,
       "Table": 5,
-      "Formula": 71,
+      "TableRow": 47,
+      "TableCell": 209,
+      "Abstract": 1,
+      "Diagram": 2,
+      "ListItem": 32,
       "Equation": 11,
-      "Citation": 26
+      "Formula": 100,
+      "Paragraph": 73,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 25,
-    "bibliography_with_year": 25,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 26,
+    "model_equations_with_cdn": 11,
+    "model_source": "mathpix",
     "pages": 14,
     "bytes": 571513,
     "page_size": "612 x 792 pts (letter)",
@@ -122,9 +123,6 @@
       "EXPITJ+CMSY5"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1911.02850.tiddlers.json",
-    "tiddlers_count": 266,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Information needs around a topic cannot be satisfied in a single turn; users typically ask follow-up questions referring to the same theme and a system must be capable of understanding the conversational context of a request to retrieve correct answers. In this paper, we present our submission to the TREC Conversational Assistance Track 2019, in which such a conversational setting is explored. We propose a simple unsupervised method for conversational passage ranking by formulating the passage score for a query as a combination of similarity and coherence. To be specific, passages are preferred that contain words semantically similar to the words used in the question, and where such words appear close by. We built a word-proximity network (WPN) from a large corpus, where words are nodes and there is an edge between two nodes if they co-occur in the same passages in a statistically significant way, within a context window. Our approach, named CROWN, improved nDCG scores over a provided Indri baseline on the CAsT training data. On the evaluation data for CAsT, our best run submission achieved above-average performance with respect to AP@5 and nDCG@1000.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -140,7 +138,72 @@
         "page": 1,
         "url": "http://www.treccast.ai/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Feb 12 02:36:09 2020 CET",
+      "ModDate": "Wed Feb 12 02:36:09 2020 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "571513 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 14,
+    "image_count": 8,
+    "mathpix_pdf_id": "4d9caf3e-2f2d-4380-b9d3-36a45a75a6e0",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1911.02850.lines.json",
+        "bytes": 828041
+      },
+      {
+        "format": "md",
+        "path": "1911.02850.md",
+        "bytes": 35701
+      },
+      {
+        "format": "tex.zip",
+        "path": "1911.02850.tex.zip",
+        "bytes": 183990
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 25,
+    "bibliography_with_year": 25,
+    "bibliography_numeric_citations": 24,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 24,
+    "tiddlers_path": "1911.02850.tiddlers.json",
+    "tiddlers_count": 285,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1352,16 +1415,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3216.7,
       "detail": "4 images, 3 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:40:50Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9507.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:40:50Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 234.2,
+      "detail": "499 objects, 11 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:40:51Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "25 entries, 24+0 cites detected, 24 linked"
+    },
+    {
+      "ts": "2026-08-22T16:40:51Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.8,
+      "detail": "285 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1911.02850/1911.02850.lines.json": "sha256:4f01fe4ca87a206d265bbf31a900719d583256d368a3c43f81bd9f9e1c65228a"
+      },
       "params_hash": "sha256:0e21eab53465f0651ae35fed76cd2b49efe7b3cb1534b53b96ad1c7561859c97",
       "algo": "sha256",
-      "ts": "2026-08-03T19:49:04Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:40:50Z",
+      "provenance": "mathpix"
     }
   }
 }

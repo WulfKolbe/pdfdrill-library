@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -74,23 +75,24 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
+      "Sidenote": 2,
+      "Diagram": 4,
+      "Section": 2,
       "ListItem": 20,
-      "Equation": 16,
-      "Paragraph": 24,
+      "Equation": 23,
+      "Formula": 24,
+      "Paragraph": 49,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 23,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Derivation_of_O3_Electrodynamics_from_the_Irreduci.tiddlers.json",
-    "tiddlers_count": 87,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "TeX",
@@ -115,7 +117,32 @@
     "page_count_text": 10,
     "image_count": 8,
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "35ab4953-11c2-4c50-9cc9-fe3833dde411",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Derivation_of_O3_Electrodynamics_from_the_Irreduci.lines.json",
+        "bytes": 384093
+      },
+      {
+        "format": "md",
+        "path": "Derivation_of_O3_Electrodynamics_from_the_Irreduci.md",
+        "bytes": 20344
+      },
+      {
+        "format": "tex.zip",
+        "path": "Derivation_of_O3_Electrodynamics_from_the_Irreduci.tex.zip",
+        "bytes": 30310
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Derivation_of_O3_Electrodynamics_from_the_Irreduci.tiddlers.json",
+    "tiddlers_count": 152,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -611,18 +638,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2203.0,
       "detail": "6 images, 6 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:40:10Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9152.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:40:11Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 136.1,
+      "detail": "135 objects, 23 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:40:11Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.1,
+      "detail": "152 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Derivation_of_O3_Electrodynamics_from_the_Irreduci/Derivation_of_O3_Electrodynamics_from_the_Irreduci.lines.json": "sha256:944306121b6914259c2e4994098e8c12b45c67d1df78a364bc603b16ffa69a57"
+        "/home/wkolbe/pdfdrill-library/Derivation_of_O3_Electrodynamics_from_the_Irreduci/Derivation_of_O3_Electrodynamics_from_the_Irreduci.lines.json": "sha256:b75c67350020ea3b8c798002c8c9868e40d0dff31c3bc8033253b3148705c920"
       },
       "params_hash": "sha256:c10b0b0b8d64a60eb04cc8f137ccbcaaa7b28c7a49b592b74f8b34acb01f1020",
       "algo": "sha256",
-      "ts": "2026-08-05T07:00:22Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T15:40:11Z",
+      "provenance": "mathpix"
     }
   }
 }

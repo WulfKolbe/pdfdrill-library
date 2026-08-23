@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -72,22 +73,70 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 15,
-      "ListItem": 13,
-      "Equation": 103,
-      "Paragraph": 71,
+      "Toc": 1,
+      "Abstract": 1,
+      "Diagram": 10,
+      "Equation": 60,
+      "Formula": 117,
+      "Paragraph": 83,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 60,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.14",
+      "CreationDate": "Wed Sep 16 19:56:39 2015 CEST",
+      "ModDate": "Wed Sep 16 19:56:39 2015 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "744479 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 15,
+    "image_count": 12,
+    "mathpix_pdf_id": "e61038be-2bad-4f72-a74c-0f8e15f7beae",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Upadhyay.lines.json",
+        "bytes": 430607
+      },
+      {
+        "format": "md",
+        "path": "Upadhyay.md",
+        "bytes": 26380
+      },
+      {
+        "format": "tex.zip",
+        "path": "Upadhyay.tex.zip",
+        "bytes": 281724
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "Upadhyay.tiddlers.json",
-    "tiddlers_count": 219,
+    "tiddlers_count": 304,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -379,18 +428,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.4,
       "detail": "219 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:00:03Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5283.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:00:04Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 145.0,
+      "detail": "288 objects, 60 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:00:04Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.7,
+      "detail": "304 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Upadhyay/Upadhyay.lines.json": "sha256:2cd829e9cf53313541af0cd2f1b55c9f317e397d58e1bffece88dfd34b1bd211"
+        "/home/wkolbe/pdfdrill-library/Upadhyay/Upadhyay.lines.json": "sha256:32afc03620d2788f8e6278ed76fc1066f2cb037e52af7c17258486012cb53725"
       },
       "params_hash": "sha256:f770dca633cb67a048453488c0d7e2b0ebae5ddb5cd5b6fdcc5aec9d25c8c2d9",
       "algo": "sha256",
-      "ts": "2026-08-06T00:50:00Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:00:03Z",
+      "provenance": "mathpix"
     }
   }
 }

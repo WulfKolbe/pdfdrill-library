@@ -5,8 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +12,9 @@
     "TOC_ABSENT",
     "BIBTEX_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 20,
@@ -106,15 +106,18 @@
     "bibkey": "2605.30882v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 146,
+      "Page": 20,
+      "Footnote": 8,
       "Abstract": 1,
-      "Section": 27,
-      "Formula": 143,
+      "Diagram": 1,
+      "ListItem": 5,
       "Equation": 53,
-      "Citation": 48
+      "Formula": 145,
+      "Paragraph": 120,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 53,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 20,
       "placed": 113,
@@ -124,14 +127,6 @@
       "numbered": 27,
       "roots": 1
     },
-    "bibliography_entries": 27,
-    "bibliography_with_year": 2,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 48,
-    "tiddlers_path": "2605.30882v1.tiddlers.json",
-    "tiddlers_count": 435,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The sensory cortices of the brain perform perceptual inference efficiently through their complex networks of neurons. One of the theoretical accounts of this process is the free-energy principle (FEP), which postulates that the brain performs variational Bayesian inference. Pioneering studies have shown that FEP can correspond to the predictive coding (PC) hypothesis under the Gaussian assumption and Laplace approximation. However, PC-based implementations of FEP within such a limited Gaussian regime have failed to capture several properties of biological neural networks, such as nonlinearity and heterogeneity of input--output properties within a network, and the biological implausibility of negative firing rates. This study shows that, when a broader class of probability distributions, namely the exponential family of distributions (EFD), is assumed for the variational posterior and prior, these missing characteristics are exhibited within the network, maintaining the FEP--PC correspondence up to the second cumulant of the posterior. We also show that the proposed model can be trained by biologically plausible local plasticity rules. Our results enrich the explanatory power of FEP regarding neural dynamics involved in perception as variational inference.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -159,7 +154,63 @@
         "url": "http://dx.doi.org/10.1007/s00161-003-0145-1"
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Extended predictive coding framework as variational free-energy minimisation under exponential-family assumption",
+      "Author": "Asaki Kataoka; Kenji Doya",
+      "Creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "20",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "514624 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 20,
+    "image_count": 1,
+    "mathpix_pdf_id": "203ab576-cba6-4cda-a118-0743c93eda0a",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2605.30882v1.lines.json",
+        "bytes": 1048421
+      },
+      {
+        "format": "md",
+        "path": "2605.30882v1.md",
+        "bytes": 86617
+      },
+      {
+        "format": "tex.zip",
+        "path": "2605.30882v1.tex.zip",
+        "bytes": 185010
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2605.30882v1.tiddlers.json",
+    "tiddlers_count": 370,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Extended predictive coding framework as variational free-energy minimisation under exponential-family assumption",
@@ -1687,18 +1738,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5398.0,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:10:38Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9967.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:10:39Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 523.8,
+      "detail": "354 objects, 53 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:10:40Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 23.9,
+      "detail": "370 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2605.30882v1/texsrc/main.tex": "sha256:75eb5868b8da70f640e69dcdc3088fb904fe1da7692f0af48c55ab14c8f823b4"
+        "/home/wkolbe/pdfdrill-library/2605.30882v1/2605.30882v1.lines.json": "sha256:757638ec132d30e20866c875b72c6cde3a66bd39e7ce0f2f9da669665a643a01"
       },
       "params_hash": "sha256:0e1fd0178782721e0d0e79cfc2223c25ab6a70c94ffbe3638510ba758044c2f3",
       "algo": "sha256",
-      "ts": "2026-08-03T21:46:26Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:10:39Z",
+      "provenance": "mathpix"
     }
   }
 }

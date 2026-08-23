@@ -12,6 +12,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -119,28 +120,79 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 18,
-      "Citation": 87,
-      "ListItem": 40,
-      "Equation": 20,
-      "Paragraph": 36,
-      "Document": 1
+      "Citation": 1,
+      "Abstract": 1,
+      "Diagram": 34,
+      "ListItem": 3,
+      "Equation": 23,
+      "Formula": 89,
+      "Paragraph": 64,
+      "Document": 1,
+      "Footnote": 2
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 23,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 112 unmapped private-use character(s) remain (U+F8EE×14, U+F8EF×28, U+F8F0×14, U+F8F9×14, U+F8FA×28, U+F8FB×14) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:math-ph/0212032v1  10 Dec 2002",
+      "Creator": "dvips(k) 5.86 Copyright 1999 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Thu Nov 15 01:32:56 2018 CET",
+      "ModDate": "Thu Nov 15 01:32:56 2018 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "18",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "213947 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 18,
+    "image_count": 87,
+    "mathpix_pdf_id": "38e43da7-a839-4909-8025-7f330af70d19",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "0212032.lines.json",
+        "bytes": 726908
+      },
+      {
+        "format": "md",
+        "path": "0212032.md",
+        "bytes": 44520
+      },
+      {
+        "format": "tex.zip",
+        "path": "0212032.tex.zip",
+        "bytes": 47854
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "bibliography_entries": 14,
     "bibliography_with_year": 14,
-    "bibliography_numeric_citations": 75,
+    "bibliography_numeric_citations": 0,
     "bibliography_authoryear_citations": 13,
-    "bibliography_cites": 79,
+    "bibliography_cites": 4,
     "tiddlers_path": "0212032.tiddlers.json",
-    "tiddlers_count": 142,
+    "tiddlers_count": 273,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
@@ -3544,18 +3596,58 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.7,
       "detail": "142 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:31:20Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.2,
+      "detail": "142 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T23:10:44Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6602.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T23:10:44Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 217.1,
+      "detail": "236 objects, 23 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T23:10:44Z",
+      "node": "bibliography",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "14 entries, 0+13 cites detected, 4 linked"
+    },
+    {
+      "ts": "2026-08-22T23:10:44Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.0,
+      "detail": "273 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/0212032/0212032.lines.json": "sha256:af963136d01d8b2a8a2b236f03f40da4f0fa078fa886a96d74744cb3715da0a4"
+        "/home/wkolbe/pdfdrill-library/0212032/0212032.lines.json": "sha256:ab1980d8bdff48eb424d2f4130351d448432b6d14b19844edfd1e6ee41985508"
       },
       "params_hash": "sha256:63bfcc63d1e78e01bd389ad2205ea48d1fd918edc14c6ff4d3698c1c83341aac",
       "algo": "sha256",
-      "ts": "2026-08-04T22:06:52Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T23:10:44Z",
+      "provenance": "mathpix"
     }
   }
 }

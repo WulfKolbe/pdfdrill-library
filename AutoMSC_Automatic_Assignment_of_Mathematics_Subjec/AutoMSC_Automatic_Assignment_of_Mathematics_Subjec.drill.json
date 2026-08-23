@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 15,
@@ -97,23 +98,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 15,
-      "ListItem": 7,
+      "Footnote": 6,
+      "Abstract": 1,
+      "Diagram": 5,
+      "Picture": 5,
+      "ListItem": 2,
       "Equation": 1,
-      "Paragraph": 16,
+      "Formula": 44,
+      "Paragraph": 35,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "AutoMSC_Automatic_Assignment_of_Mathematics_Subjec.tiddlers.json",
-    "tiddlers_count": 56,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Authors of research papers in the fields of mathematics, and other\n                                                   math-heavy disciplines commonly employ the Mathematics Subject Clas-\n                                                   sification (MSC) scheme to search for relevant literature. The MSC is a\n                                                   hierarchical alphanumerical classification scheme that allows librarians to\n                                                   specify one or multiple codes for publications. Digital Libraries in Mathe-\n                                                   matics, as well as reviewing services, such as zbMATH and Mathematical\n                                                   Reviews (MR) rely on these MSC labels in their workflows to organize the\n                                                   abstracting and reviewing process. Especially, the coarse-grained classi-\n                                                   fication determines the subject editor who is responsible for the actual\n                                                   reviewing process.\n                                                        In this paper, we investigate the feasibility of automatically assigning a\n                                                   coarse-grained primary classification using the MSC scheme, by regarding\n                                                   the problem as a multi class classification machine learning task. We find\n                                                   that the our method achieves an F1 -score of over 77%, which is remarkably\n                                                   close to the agreement of zbMATH and MR (F1 -score of 81%). Moreover,\n                                                   we find that the method’s confidence score allows for reducing the effort\n                                                   by 86% compared to the manual coarse-grained classification effort while\n                                                   maintaining a precision of 81% for automatically classified articles.",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
@@ -204,7 +207,59 @@
         "page": 14,
         "url": "https://doi.org/10.1109/JCDL.2017.7991566"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Tue May 26 03:39:26 2020 CEST",
+      "ModDate": "Tue May 26 03:39:26 2020 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "634557 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 15,
+    "image_count": 16,
+    "mathpix_pdf_id": "eae05e42-0071-4f89-86b4-eb7e94a8095a",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "AutoMSC_Automatic_Assignment_of_Mathematics_Subjec.lines.json",
+        "bytes": 498630
+      },
+      {
+        "format": "md",
+        "path": "AutoMSC_Automatic_Assignment_of_Mathematics_Subjec.md",
+        "bytes": 31693
+      },
+      {
+        "format": "tex.zip",
+        "path": "AutoMSC_Automatic_Assignment_of_Mathematics_Subjec.tex.zip",
+        "bytes": 629001
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "AutoMSC_Automatic_Assignment_of_Mathematics_Subjec.tiddlers.json",
+    "tiddlers_count": 131,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1465,18 +1520,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2077.5,
       "detail": "8 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:59:01Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9761.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:59:02Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 144.4,
+      "detail": "115 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:59:02Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.1,
+      "detail": "131 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/AutoMSC_Automatic_Assignment_of_Mathematics_Subjec/AutoMSC_Automatic_Assignment_of_Mathematics_Subjec.lines.json": "sha256:b681d5faa03899a2185034223a4391019a52a973a5610845a67b709c17621aba"
+        "/home/wkolbe/pdfdrill-library/AutoMSC_Automatic_Assignment_of_Mathematics_Subjec/AutoMSC_Automatic_Assignment_of_Mathematics_Subjec.lines.json": "sha256:3ca5d6dc19825751c12c6e879f1260ab3d5a47a9896850f63c983ef02661848d"
       },
       "params_hash": "sha256:68d5781033ca851b8d3ef563bbdec47b363b4fb477ce4c9b614c97bca5a8b9ff",
       "algo": "sha256",
-      "ts": "2026-08-05T06:05:13Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:59:02Z",
+      "provenance": "mathpix"
     }
   }
 }

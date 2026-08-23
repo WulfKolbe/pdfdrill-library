@@ -6,7 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -83,28 +83,78 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 6,
-      "Citation": 50,
-      "ListItem": 9,
-      "Equation": 28,
-      "Paragraph": 27,
+      "Footnote": 7,
+      "Table": 1,
+      "TableRow": 2,
+      "TableCell": 10,
+      "Sidenote": 12,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Equation": 29,
+      "Formula": 85,
+      "Paragraph": 66,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 29,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 1 unmapped private-use character(s) remain (U+F6BE×1) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 10,
-    "bibliography_with_year": 10,
-    "bibliography_numeric_citations": 14,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 14,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Sinusoidal Extraction Using an Efficient Implementation of a Multi-Resolution FFT",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Karin Dressler",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfeTeX-1.304",
+      "CreationDate": "Sun Aug 27 23:53:21 2006 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "6",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "207922 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 6,
+    "image_count": 10,
+    "mathpix_pdf_id": "3598955c-27df-42ee-bfdb-6edcb57d04ea",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "p_247.lines.json",
+        "bytes": 686545
+      },
+      {
+        "format": "md",
+        "path": "p_247.md",
+        "bytes": 33659
+      },
+      {
+        "format": "tex.zip",
+        "path": "p_247.tex.zip",
+        "bytes": 379775
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "p_247.tiddlers.json",
-    "tiddlers_count": 101,
+    "tiddlers_count": 226,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -502,18 +552,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.9,
       "detail": "101 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:47:29Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9442.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:47:30Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 253.2,
+      "detail": "222 objects, 29 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:47:30Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.7,
+      "detail": "226 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/p_247/p_247.lines.json": "sha256:3f9db0d9d8632831d1af6d30f87bf09864eb73444bc0cc60516f3ce294bbba2c"
+        "/home/wkolbe/pdfdrill-library/p_247/p_247.lines.json": "sha256:88fcd2439c3d7bde57f21591cbdb0d939df82d665f1360ffd3ef8f58bc4918c8"
       },
       "params_hash": "sha256:a0784acda9a67be71720d5a36f3e3f228d0385f0ee2bb18c8ab19c51c733e5fd",
       "algo": "sha256",
-      "ts": "2026-08-06T01:31:54Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:47:30Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -3,17 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1704.03940",
@@ -21,22 +21,23 @@
     "bibkey": "1704.03940",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 30,
-      "Abstract": 1,
-      "Section": 9,
-      "Formula": 41,
-      "Equation": 1,
+      "Page": 10,
+      "Footnote": 6,
       "Table": 3,
-      "LtxCommand": 1,
-      "Citation": 41
+      "TableRow": 41,
+      "TableCell": 359,
+      "Sidenote": 20,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Picture": 2,
+      "ListItem": 4,
+      "Equation": 1,
+      "Formula": 66,
+      "Paragraph": 41,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 23,
-    "bibliography_with_year": 23,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 11,
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "pages": 10,
     "bytes": 390479,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -117,9 +118,6 @@
       "Cmmi10"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "1704.03940.tiddlers.json",
-    "tiddlers_count": 137,
-    "tiddlers_svg_mode": "inline",
     "abstract": "In order to adopt deep learning for information retrieval, models are needed that can capture all relevant information required to assess the relevance of a document to a given user query. While previous works have successfully captured unigram term matches, how to fully employ position-dependent information such as proximity and term dependencies has been insufficiently explored. In this work, we propose a novel neural IR model named PACRR aiming at better modeling position-dependent interactions between a query and a document. Extensive experiments on six years&#39; TREC Web Track data confirm that the proposed model yields better results under multiple benchmarks.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -130,7 +128,67 @@
       "Klaus Berberich",
       "Gerard de Melo"
     ],
-    "arxiv_primary_category": "cs.IR"
+    "arxiv_primary_category": "cs.IR",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Tue Jul 25 02:51:48 2017 CEST",
+      "ModDate": "Tue Jul 25 02:51:48 2017 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "390479 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 10,
+    "image_count": 6,
+    "mathpix_pdf_id": "dae4e4ac-66dd-4a04-8400-d5d36eac9922",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1704.03940.lines.json",
+        "bytes": 1436187
+      },
+      {
+        "format": "md",
+        "path": "1704.03940.md",
+        "bytes": 46404
+      },
+      {
+        "format": "tex.zip",
+        "path": "1704.03940.tex.zip",
+        "bytes": 241009
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1704.03940.tiddlers.json",
+    "tiddlers_count": 172,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1098,16 +1156,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3005.5,
       "detail": "3 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:24:39Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12605.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:24:39Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 366.9,
+      "detail": "556 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:24:39Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.2,
+      "detail": "172 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1704.03940/1704.03940.lines.json": "sha256:390da2675417a674290e9aea3fb80d869018af7aee376b9329c55da55445fe89"
+      },
       "params_hash": "sha256:9dea14584743eb80471e05b3434b10e53761aa75608cb6bc32d070a52da2092a",
       "algo": "sha256",
-      "ts": "2026-08-03T19:38:16Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:24:39Z",
+      "provenance": "mathpix"
     }
   }
 }

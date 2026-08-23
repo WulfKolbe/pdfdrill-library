@@ -8,8 +8,6 @@
     "SIZE_KNOWN",
     "MD_BUILT",
     "FONTS_LAYER_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -17,7 +15,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2606.14243",
@@ -28,16 +29,23 @@
     "bibkey": "2606.14243",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 94,
-      "Abstract": 1,
-      "Section": 37,
-      "Formula": 49,
-      "Equation": 10,
-      "LtxCommand": 6,
+      "Page": 16,
+      "Citation": 1,
       "Table": 9,
-      "Citation": 72
+      "TableRow": 69,
+      "TableCell": 365,
+      "Sidenote": 30,
+      "Abstract": 1,
+      "Diagram": 4,
+      "Section": 4,
+      "Picture": 2,
+      "ListItem": 9,
+      "Equation": 9,
+      "Formula": 46,
+      "Paragraph": 91,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
+    "model_equations_with_cdn": 9,
     "latex_source": "2606.14243.tgz",
     "latex_macros": 1,
     "latex_src_equations": 10,
@@ -108,7 +116,7 @@
       "EFDLOV+CMMI6"
     ],
     "has_math_fonts": true,
-    "model_source": "latex",
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 16,
       "placed": 57,
@@ -118,14 +126,6 @@
       "numbered": 37,
       "roots": 1
     },
-    "bibliography_entries": 62,
-    "bibliography_with_year": 62,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 72,
-    "tiddlers_path": "2606.14243.tiddlers.json",
-    "tiddlers_count": 302,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Knowledge injection aims to equip large language models (LLMs) with external, domain-specific, or time-sensitive knowledge. Existing approaches typically face a trade-off between flexibility and integration: retrieval-augmented generation keeps knowledge outside the model but only provides prompt-level augmentation, whereas post-training based methods encode new knowledge into shared parameters but may introduce catastrophic forgetting, knowledge conflict, and costly updates. In this paper, we propose Decoupled Mixture-of-Experts (DMoE), a modular architecture for parametric knowledge injection that decouples both experts and the router from the base model. DMoE converts external knowledge corpora into independently updatable expert modules and uses a lightweight uncertainty-aware router to activate relevant experts only when the base model lacks sufficient knowledge during generation. To support efficient auto-regressive inference, DMoE attaches experts only to the final-layer feed-forward network, preserving KV-cache reuse while enabling parameter-level knowledge augmentation. Experiments on knowledge-intensive benchmarks show that DMoE consistently improves answer quality over retrieval and adapter-based baselines.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -457,7 +457,68 @@
         "page": 11,
         "url": "https://doi.org/10.1145/3726302.3730295"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Decoupled Mixture-of-Experts for Parametric Knowledge Injection",
+      "Author": "Baoqing Yue; Weihang Su; Qingyao Ai; Yichen Tang; Changyue Wang; Jiacheng Kang; Jingtao Zhan; Yiqun Liu",
+      "Creator": "arXiv GenPDF (tex2pdf:a6404ea)",
+      "Producer": "pikepdf 8.15.1",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "593720 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 16,
+    "image_count": 12,
+    "mathpix_pdf_id": "42852b49-ebf3-48a5-bf1a-58569642fc35",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2606.14243.lines.json",
+        "bytes": 2000543
+      },
+      {
+        "format": "md",
+        "path": "2606.14243.md",
+        "bytes": 66176
+      },
+      {
+        "format": "tex.zip",
+        "path": "2606.14243.tex.zip",
+        "bytes": 433267
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 28,
+    "bibliography_with_year": 24,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 18,
+    "bibliography_cites": 5,
+    "tiddlers_path": "2606.14243.tiddlers.json",
+    "tiddlers_count": 280,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Decoupled Mixture-of-Experts for Parametric Knowledge Injection",
@@ -2177,16 +2238,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6993.4,
       "detail": "6 images, 6 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:12:32Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12822.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:12:32Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 431.9,
+      "detail": "657 objects, 9 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:12:33Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "28 entries, 0+18 cites detected, 5 linked"
+    },
+    {
+      "ts": "2026-08-22T17:12:33Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.4,
+      "detail": "280 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2606.14243/2606.14243.lines.json": "sha256:4d02e67fcbb903c4ae10044642ab1a2ddd4f430c7d7d2b815ce441957b8907b3"
+      },
       "params_hash": "sha256:18265bc77310f79632c5e841b00ba876b631408d3b5f8e54b0501f0d9f2db88d",
       "algo": "sha256",
-      "ts": "2026-08-03T21:46:50Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:12:32Z",
+      "provenance": "mathpix"
     }
   }
 }

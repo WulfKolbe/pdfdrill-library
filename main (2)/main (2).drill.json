@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -75,22 +76,78 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 22,
-      "ListItem": 8,
-      "Equation": 32,
-      "Paragraph": 40,
+      "Footnote": 5,
+      "Table": 5,
+      "TableRow": 37,
+      "TableCell": 227,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 9,
+      "ListItem": 1,
+      "Equation": 65,
+      "Formula": 136,
+      "Paragraph": 124,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 65,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 14 unmapped private-use character(s) remain (U+F8F1×2, U+F8F2×2, U+F8F3×2, U+F8F4×8) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Three-dimensional quadrics in extended conformal geometric algebras of higher dimensions from control points, implicit equations and axis alignment",
+      "Subject": "Mathematics [math]/Algebraic Geometry [math.AG]",
+      "Author": "Stéphane Breuils, Laurent Fuchs, Eckhard Hitzer, Vincent Nozick, Akihiro Sugimoto",
+      "Creator": "HAL",
+      "Producer": "PDFLaTeX",
+      "CreationDate": "Tue Mar 12 16:58:40 2024 CET",
+      "ModDate": "Mon Jul  1 11:26:27 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "22",
+      "Encrypted": "no",
+      "Page size": "595.28 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "603067 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 22,
+    "image_count": 18,
+    "mathpix_pdf_id": "f3dfe9b7-c7fa-4dd6-87fc-acb7844333ec",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "main (2).lines.json",
+        "bytes": 1130493
+      },
+      {
+        "format": "md",
+        "path": "main (2).md",
+        "bytes": 70346
+      },
+      {
+        "format": "tex.zip",
+        "path": "main (2).tex.zip",
+        "bytes": 146808
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "main (2).tiddlers.json",
-    "tiddlers_count": 119,
+    "tiddlers_count": 387,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -410,18 +467,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.4,
       "detail": "119 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T18:44:54Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10634.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:44:55Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 775.4,
+      "detail": "635 objects, 65 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:44:56Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.0,
+      "detail": "387 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/main (2)/main (2).lines.json": "sha256:bad85d9f96b541e22223cf202e43e18ba01c68f869cb5f2e8bdb1bae1a6ceed7"
+        "/home/wkolbe/pdfdrill-library/main (2)/main (2).lines.json": "sha256:22632afc6a565b872d9db0f2ad58fac63ba7efa014541de3386fa06a7b9bcec1"
       },
       "params_hash": "sha256:c3f974b507c9c4ccbf490869419b3a2f4bf605c93634c2ad6eb32a078492a6de",
       "algo": "sha256",
-      "ts": "2026-08-06T01:28:53Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:44:55Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -5,13 +5,14 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -66,22 +67,27 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 6,
-      "Formula": 2,
-      "Paragraph": 6,
+      "Table": 4,
+      "TableRow": 43,
+      "TableCell": 235,
+      "Sidenote": 21,
+      "Diagram": 5,
+      "Section": 8,
+      "Picture": 2,
+      "ListItem": 44,
+      "Formula": 4,
+      "Paragraph": 87,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "QZ101337.tiddlers.json",
-    "tiddlers_count": 46,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "qz101337 1..99999",
@@ -114,7 +120,32 @@
         "url": "www.qm-infocenter.de",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "15842810-c3d8-499d-a2fe-82cdaa63e0d7",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "QZ101337.lines.json",
+        "bytes": 1103134
+      },
+      {
+        "format": "md",
+        "path": "QZ101337.md",
+        "bytes": 24556
+      },
+      {
+        "format": "tex.zip",
+        "path": "QZ101337.tex.zip",
+        "bytes": 354132
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "QZ101337.tiddlers.json",
+    "tiddlers_count": 199,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "qz101337 1..99999",
@@ -735,18 +766,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1494.9,
       "detail": "15 images, 8 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:44:58Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12758.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:44:58Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 255.5,
+      "detail": "460 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:44:59Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.2,
+      "detail": "199 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/QZ101337/QZ101337.lines.json": "sha256:205f42996d0d54dcdeae4cce07aece894d8b9ba89109c7a4c89256c3450a26ae"
+        "/home/wkolbe/pdfdrill-library/QZ101337/QZ101337.lines.json": "sha256:d20d6b4db3821079ebe4befc431f5cae671392e726843d1a1f0374d2604c409b"
       },
       "params_hash": "sha256:84b0012f8b45403c9579f73b003a7e156b27000429f1a88b32bee144dc8639fd",
       "algo": "sha256",
-      "ts": "2026-08-05T23:01:55Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:44:58Z",
+      "provenance": "mathpix"
     }
   }
 }

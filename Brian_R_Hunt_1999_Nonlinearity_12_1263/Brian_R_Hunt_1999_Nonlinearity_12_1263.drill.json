@@ -6,15 +6,16 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 14,
@@ -75,29 +76,26 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 14,
-      "Citation": 81,
-      "ListItem": 7,
-      "Equation": 3,
-      "Paragraph": 15,
+      "Citation": 78,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Section": 2,
+      "ListItem": 6,
+      "Equation": 39,
+      "Formula": 283,
+      "Paragraph": 70,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 39,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 28,
-    "bibliography_with_year": 28,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "Brian_R_Hunt_1999_Nonlinearity_12_1263.tiddlers.json",
-    "tiddlers_count": 122,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "D:EJSNO9503.DVI",
@@ -131,7 +129,38 @@
         "page": 1,
         "url": "https://doi.org/10.1088/0951-7715/12/5/303"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "c4f23e06-b1e1-4c3d-974f-9e821e948320",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Brian_R_Hunt_1999_Nonlinearity_12_1263.lines.json",
+        "bytes": 621957
+      },
+      {
+        "format": "md",
+        "path": "Brian_R_Hunt_1999_Nonlinearity_12_1263.md",
+        "bytes": 48653
+      },
+      {
+        "format": "tex.zip",
+        "path": "Brian_R_Hunt_1999_Nonlinearity_12_1263.tex.zip",
+        "bytes": 62590
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 28,
+    "bibliography_with_year": 28,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "Brian_R_Hunt_1999_Nonlinearity_12_1263.tiddlers.json",
+    "tiddlers_count": 502,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "D:EJSNO9503.DVI",
@@ -541,18 +570,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4123.8,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:45:18Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9497.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:45:19Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 319.6,
+      "detail": "497 objects, 39 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:45:19Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "28 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T16:45:19Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.2,
+      "detail": "502 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Brian_R_Hunt_1999_Nonlinearity_12_1263/Brian_R_Hunt_1999_Nonlinearity_12_1263.lines.json": "sha256:d91200c5a21d210d6505786b342a6941eaa7d8d3e3b86f5fde7eb0c38e98017f"
+        "/home/wkolbe/pdfdrill-library/Brian_R_Hunt_1999_Nonlinearity_12_1263/Brian_R_Hunt_1999_Nonlinearity_12_1263.lines.json": "sha256:d9fad6fbf3441dc16dc2b27bc63add95a7066ed78d5cf3847254b1aa56abce02"
       },
       "params_hash": "sha256:e34695ecf366ceb3e4fa7e5237780479819e63c9609e97bcbd031f8061abbb81",
       "algo": "sha256",
-      "ts": "2026-08-05T06:46:59Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:45:19Z",
+      "provenance": "mathpix"
     }
   }
 }

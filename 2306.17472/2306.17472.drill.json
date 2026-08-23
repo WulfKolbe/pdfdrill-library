@@ -3,18 +3,19 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2306.17472",
@@ -22,21 +23,24 @@
     "bibkey": "2306.17472",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 54,
-      "Abstract": 1,
-      "Section": 13,
-      "Formula": 6,
-      "LtxCommand": 18,
+      "Page": 10,
+      "Footnote": 8,
+      "Citation": 39,
       "Table": 6,
-      "Citation": 59
+      "TableRow": 52,
+      "TableCell": 427,
+      "Sidenote": 17,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Section": 2,
+      "Picture": 1,
+      "ListItem": 12,
+      "Formula": 12,
+      "Paragraph": 58,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 38,
-    "bibliography_with_year": 38,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 59,
+    "model_source": "mathpix",
     "pages": 10,
     "bytes": 604781,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -119,9 +123,6 @@
       "QSVBKC+CMMI10"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2306.17472.tiddlers.json",
-    "tiddlers_count": 164,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Despite their impressive scale, knowledge bases (KBs), such as Wikidata, still contain significant gaps. Language models (LMs) have been proposed as a source for filling these gaps. However, prior works have focused on prominent entities with rich coverage by LMs, neglecting the crucial case of long-tail entities. In this paper, we present a novel method for LM-based-KB completion that is specifically geared for facts about long-tail entities. The method leverages two different LMs in two stages: for candidate retrieval and for candidate verification and disambiguation. To evaluate our method and various baselines, we introduce a novel dataset, called MALT, rooted in Wikidata. Our method outperforms all baselines in F1, with major gains especially in recall.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -193,7 +194,72 @@
         "page": 9,
         "url": "https://huggingface.co/MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Mon Jul  3 02:31:03 2023 CEST",
+      "ModDate": "Mon Jul  3 02:31:03 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "604781 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 10,
+    "image_count": 5,
+    "mathpix_pdf_id": "852c8d8f-2bc1-402d-8721-3c52b53c8ddd",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2306.17472.lines.json",
+        "bytes": 1420558
+      },
+      {
+        "format": "md",
+        "path": "2306.17472.md",
+        "bytes": 38252
+      },
+      {
+        "format": "tex.zip",
+        "path": "2306.17472.tex.zip",
+        "bytes": 329698
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 31,
+    "bibliography_with_year": 27,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 31,
+    "bibliography_cites": 17,
+    "tiddlers_path": "2306.17472.tiddlers.json",
+    "tiddlers_count": 191,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1510,16 +1576,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3591.2,
       "detail": "5 images, 5 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:35:06Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13039.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:35:07Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 359.8,
+      "detail": "648 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:35:07Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "31 entries, 0+31 cites detected, 17 linked"
+    },
+    {
+      "ts": "2026-08-22T15:35:07Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.1,
+      "detail": "191 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2306.17472/2306.17472.lines.json": "sha256:eb0b70cfff84784f9b2bb478ca547269f25957d7fb33325035fdfd1522ef6c3b"
+      },
       "params_hash": "sha256:c033f56314ea3085051fc136aed62fde25d2089d9bd5bc872790a343ef4f3618",
       "algo": "sha256",
-      "ts": "2026-08-03T21:06:19Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:35:07Z",
+      "provenance": "mathpix"
     }
   }
 }

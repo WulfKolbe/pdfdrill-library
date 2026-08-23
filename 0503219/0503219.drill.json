@@ -5,14 +5,14 @@
     "SIZE_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 19,
@@ -53,27 +53,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 19,
-      "Citation": 8,
-      "ListItem": 10,
-      "Equation": 36,
-      "Paragraph": 46,
-      "Document": 1
+      "Abstract": 1,
+      "Diagram": 5,
+      "Section": 4,
+      "ListItem": 4,
+      "Equation": 29,
+      "Formula": 267,
+      "Paragraph": 67,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 29,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 22,
-    "bibliography_with_year": 20,
-    "bibliography_numeric_citations": 35,
-    "bibliography_authoryear_citations": 1,
-    "bibliography_cites": 35,
-    "tiddlers_path": "0503219.tiddlers.json",
-    "tiddlers_count": 130,
-    "tiddlers_svg_mode": "inline",
     "fonts": [
       "EKMWLA+CMTI10",
       "XTZXQR+CMR12",
@@ -118,7 +114,60 @@
       }
     ],
     "lines_upgraded_from_ocr": false,
-    "pua_note": ""
+    "pua_note": "",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "A variational principle for hyperideal circle patterns",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "Boris A. Springborn",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript SVN PRE-RELEASE 8.62",
+      "CreationDate": "Fri Feb  1 23:00:43 2008 CET",
+      "ModDate": "Fri Feb  1 23:00:43 2008 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "19",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "234882 bytes",
+      "Optimized": "no",
+      "PDF version": "1.2"
+    },
+    "page_count_text": 19,
+    "image_count": 54,
+    "mathpix_pdf_id": "c8e9c318-c6a5-43fc-9acd-9d23bf6a491d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "0503219.lines.json",
+        "bytes": 711308
+      },
+      {
+        "format": "md",
+        "path": "0503219.md",
+        "bytes": 50008
+      },
+      {
+        "format": "tex.zip",
+        "path": "0503219.tex.zip",
+        "bytes": 198132
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "0503219.tiddlers.json",
+    "tiddlers_count": 415,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "A variational principle for hyperideal circle patterns",
@@ -3031,18 +3080,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "130 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:46:16Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9703.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:46:17Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 538.6,
+      "detail": "398 objects, 29 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:46:17Z",
+      "node": "tiddlers",
+      "from": "DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 20.1,
+      "detail": "415 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/0503219/0503219.lines.json": "sha256:cccd0265fea4869b8e7d584df592700bd0d4138aa226fef786239f1634583ddc"
+        "/home/wkolbe/pdfdrill-library/0503219/0503219.lines.json": "sha256:6dc047283ae4f52ed0e4a48f7b38a5feec7faa29ff4f8252a0a46d5bcb06cd48"
       },
       "params_hash": "sha256:47c249b05f3d38f3dad0a38f9d42608105eead0346fa7d26fa3e7f813a3c0481",
       "algo": "sha256",
-      "ts": "2026-08-04T22:07:04Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:46:17Z",
+      "provenance": "mathpix"
     }
   }
 }

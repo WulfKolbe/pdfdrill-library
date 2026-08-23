@@ -12,7 +12,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -108,28 +108,75 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 13,
-      "Citation": 17,
-      "ListItem": 33,
-      "Equation": 32,
-      "Paragraph": 41,
-      "Document": 1
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 6,
+      "ListItem": 10,
+      "Equation": 16,
+      "Formula": 420,
+      "Paragraph": 58,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 16,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 19,
-    "bibliography_with_year": 18,
-    "bibliography_numeric_citations": 74,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 74,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "On database query languages for K-relations",
+      "Author": "Floris Geerts; Antonella Poggi",
+      "Creator": "Elsevier",
+      "Producer": "Acrobat Distiller 7.0.5 (Windows)",
+      "CreationDate": "Wed Mar  3 11:36:26 2010 CET",
+      "ModDate": "Wed Mar  3 11:36:38 2010 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "13",
+      "Encrypted": "no",
+      "Page size": "544.252 x 742.677 pts",
+      "Page rot": "0",
+      "File size": "319689 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 13,
+    "image_count": 2,
+    "mathpix_pdf_id": "272b846c-52d4-4d0b-99bd-8523b85b9cbf",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1-s2.0-S157086830900041X-main.lines.json",
+        "bytes": 743843
+      },
+      {
+        "format": "md",
+        "path": "1-s2.0-S157086830900041X-main.md",
+        "bytes": 83039
+      },
+      {
+        "format": "tex.zip",
+        "path": "1-s2.0-S157086830900041X-main.tex.zip",
+        "bytes": 324411
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "1-s2.0-S157086830900041X-main.tiddlers.json",
-    "tiddlers_count": 137,
+    "tiddlers_count": 544,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
@@ -734,18 +781,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.6,
       "detail": "137 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T16:22:01Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9397.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:22:02Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 425.8,
+      "detail": "528 objects, 16 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:22:02Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.9,
+      "detail": "544 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1-s2.0-S157086830900041X-main/1-s2.0-S157086830900041X-main.lines.json": "sha256:a8f9532114f2a3518e8022484888339605b80ee12f816b8d739965a391707a20"
+        "/home/wkolbe/pdfdrill-library/1-s2.0-S157086830900041X-main/1-s2.0-S157086830900041X-main.lines.json": "sha256:2e50c92a2578cc2555fa2fa193c9da36792aba1623d838f82dcd5ca1aee55821"
       },
       "params_hash": "sha256:869ca630fc3fd3ef10309888cf94bbc0a718711b0b9f8dcdba83e9bc886e2bb1",
       "algo": "sha256",
-      "ts": "2026-08-04T22:14:04Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:22:02Z",
+      "provenance": "mathpix"
     }
   }
 }

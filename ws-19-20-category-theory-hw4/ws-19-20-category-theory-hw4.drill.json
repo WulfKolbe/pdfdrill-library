@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -54,22 +55,71 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 2,
-      "ListItem": 5,
-      "Equation": 7,
-      "Paragraph": 7,
+      "Diagram": 1,
+      "ListItem": 4,
+      "Equation": 3,
+      "Formula": 26,
+      "Paragraph": 8,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Homework for Introduction to Category Theory (week 4)",
+      "Author": "Joshua Moerman",
+      "Creator": "LuaTeX 2.00 20191029 + ConTeXt MkIV 2019.10.29 15:09",
+      "Producer": "LuaTeX-2.00",
+      "CreationDate": "Thu Nov 14 10:33:43 2019 CET",
+      "ModDate": "Thu Nov 14 10:33:43 2019 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "2",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "31799 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 2,
+    "image_count": 0,
+    "mathpix_pdf_id": "7a95418d-6fc7-4fa2-a0f5-24a1614f3170",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "ws-19-20-category-theory-hw4.lines.json",
+        "bytes": 41796
+      },
+      {
+        "format": "md",
+        "path": "ws-19-20-category-theory-hw4.md",
+        "bytes": 2754
+      },
+      {
+        "format": "tex.zip",
+        "path": "ws-19-20-category-theory-hw4.tex.zip",
+        "bytes": 34702
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
     "tiddlers_path": "ws-19-20-category-theory-hw4.tiddlers.json",
-    "tiddlers_count": 38,
+    "tiddlers_count": 61,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -179,18 +229,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.4,
       "detail": "38 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:20:03Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5357.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:20:03Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 24.6,
+      "detail": "45 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:20:03Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.3,
+      "detail": "61 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/ws-19-20-category-theory-hw4/ws-19-20-category-theory-hw4.lines.json": "sha256:0c8991422c9312618e666ce841b65a2e8f3cf2ffb8e7cb7c06480fac2e9485f5"
+        "/home/wkolbe/pdfdrill-library/ws-19-20-category-theory-hw4/ws-19-20-category-theory-hw4.lines.json": "sha256:179f7c45198ec6c31bfec835e6faa87b1bd691b38044c0b1dbddf2911c74e843"
       },
       "params_hash": "sha256:b8ad1762712e5b8d66e70c7b52a1c8f7de989e27cd01b3ad4519355377d076d8",
       "algo": "sha256",
-      "ts": "2026-08-06T02:09:44Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:20:03Z",
+      "provenance": "mathpix"
     }
   }
 }

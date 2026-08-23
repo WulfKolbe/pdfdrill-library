@@ -3,17 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2109.04716",
@@ -21,22 +22,21 @@
     "bibkey": "2109.04716",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 25,
-      "Paragraph": 50,
-      "Abstract": 1,
-      "Section": 14,
-      "Formula": 33,
-      "Equation": 3,
+      "Page": 16,
+      "Citation": 1,
       "Table": 4,
-      "Citation": 65
+      "TableRow": 42,
+      "TableCell": 307,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 73,
+      "Equation": 3,
+      "Formula": 27,
+      "Paragraph": 101,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 53,
-    "bibliography_with_year": 52,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 65,
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
     "pages": 16,
     "bytes": 328818,
     "page_size": "612 x 792 pts (letter)",
@@ -120,9 +120,6 @@
       "GUOWTK+CMSY6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2109.04716.tiddlers.json",
-    "tiddlers_count": 217,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Prior work on personalized recommendations has focused on exploiting explicit signals from user-specific queries, clicks, likes, and ratings. This paper investigates tapping into a different source of implicit signals of interests and tastes: online chats between users. The paper develops an expressive model and effective methods for personalizing search-based entity recommendations. User models derived from chats augment different methods for re-ranking entity answers for medium-grained queries. The paper presents specific techniques to enhance the user models by capturing domain-specific vocabularies and by entity-based expansion. Experiments are based on a collection of online chats from a controlled user study covering three domains: books, travel, food. We evaluate different configurations and compare chat-based user models against concise user profiles from questionnaires. Overall, these two variants perform on par in terms of NCDG@20, but each has advantages in certain domains.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -132,7 +129,72 @@
       "Andrew Yates",
       "Gerhard Weikum"
     ],
-    "arxiv_primary_category": "cs.IR"
+    "arxiv_primary_category": "cs.IR",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Mon Sep 13 02:50:08 2021 CEST",
+      "ModDate": "Mon Sep 13 02:50:08 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "328818 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 16,
+    "image_count": 0,
+    "mathpix_pdf_id": "d41f18b4-cf9b-4ea4-96ab-1b93cb499231",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2109.04716.lines.json",
+        "bytes": 1120905
+      },
+      {
+        "format": "md",
+        "path": "2109.04716.md",
+        "bytes": 48345
+      },
+      {
+        "format": "tex.zip",
+        "path": "2109.04716.tex.zip",
+        "bytes": 202026
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 53,
+    "bibliography_with_year": 52,
+    "bibliography_numeric_citations": 38,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 38,
+    "tiddlers_path": "2109.04716.tiddlers.json",
+    "tiddlers_count": 297,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1312,18 +1374,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2604.1,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:08:31Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9552.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:08:31Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 201.2,
+      "detail": "577 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:08:32Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "53 entries, 38+0 cites detected, 38 linked"
+    },
+    {
+      "ts": "2026-08-22T17:08:32Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.7,
+      "detail": "297 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2109.04716/texsrc/main.tex": "sha256:55b88169cae1858f112c02665323fa1598b7b064ff787f9f39ef6bbf77f1d70d"
+        "/home/wkolbe/pdfdrill-library/2109.04716/2109.04716.lines.json": "sha256:43c47ccd6276252459b369626842ce7ecf59882c20c6c0a56c865166a5d90145"
       },
       "params_hash": "sha256:b3a0cbe07076c1c430225645e9e6692c2db743fc5b4bdbe98f6f52191ec8f839",
       "algo": "sha256",
-      "ts": "2026-08-03T20:55:37Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:08:31Z",
+      "provenance": "mathpix"
     }
   }
 }

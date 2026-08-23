@@ -5,15 +5,16 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -93,16 +94,20 @@
     "bibkey": "1910.08395",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 49,
-      "Paragraph": 124,
+      "Page": 10,
+      "Citation": 8,
+      "Sidenote": 22,
       "Abstract": 1,
-      "Section": 12,
-      "Formula": 210,
-      "Equation": 43,
-      "Citation": 45
+      "Diagram": 2,
+      "Section": 4,
+      "ListItem": 6,
+      "Equation": 39,
+      "Formula": 197,
+      "Paragraph": 122,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 39,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 10,
       "placed": 40,
@@ -112,14 +117,6 @@
       "numbered": 12,
       "roots": 1
     },
-    "bibliography_entries": 47,
-    "bibliography_with_year": 44,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 45,
-    "tiddlers_path": "1910.08395.tiddlers.json",
-    "tiddlers_count": 514,
-    "tiddlers_svg_mode": "inline",
     "abstract": "A considerable amount of the standard model&#39;s three-generation structure can be realised from just the $8\\hspace{.3mm}\\mathbb{C}$-dimensional algebra of the complex octonions. Indeed, it is a little-known fact that the complex octonions can generate on their own a $64\\hspace{.3mm}\\mathbb{C}$-dimensional space. Here we identify an $su(3)\\oplus u(1)$ action which splits this $64\\hspace{.3mm}\\mathbb{C}$-dimensional space into complexified generators of $SU(3)$, together with 48 states. These 48 states exhibit the behaviour of exactly three generations of quarks and leptons under the standard model&#39;s two unbroken gauge symmetries. This article builds on a previous one, [1], by incorporating electric charge. Finally, we close this discussion by outlining a proposal for how the standard model&#39;s full set of states might be identified within the left action maps of $\\mathbb{R}\\otimes\\mathbb{C}\\otimes\\mathbb{H}\\otimes\\mathbb{O}$ (the Clifford algebra $\\mathbb{C} l(8)$). Our aim is to include not only the standard model&#39;s three generations of quarks and leptons, but also its gauge bosons.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -181,7 +178,72 @@
         "page": 10,
         "url": "http://arxiv.org/abs/0904.1556"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Oct 21 02:27:46 2019 CEST",
+      "ModDate": "Mon Oct 21 02:27:46 2019 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "282704 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 10,
+    "image_count": 168,
+    "mathpix_pdf_id": "10e01436-93e1-4afa-83b9-ceee243a7c66",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1910.08395.lines.json",
+        "bytes": 1007461
+      },
+      {
+        "format": "md",
+        "path": "1910.08395.md",
+        "bytes": 55742
+      },
+      {
+        "format": "tex.zip",
+        "path": "1910.08395.tex.zip",
+        "bytes": 105585
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 47,
+    "bibliography_with_year": 44,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "1910.08395.tiddlers.json",
+    "tiddlers_count": 471,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -6008,16 +6070,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4600.4,
       "detail": "318 images, 168 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:31:19Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9599.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:31:20Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 577.2,
+      "detail": "412 objects, 39 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:31:21Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "47 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T15:31:21Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 17.0,
+      "detail": "471 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1910.08395/1910.08395.lines.json": "sha256:30bfd9d943aa892348d42a04258a1d033c1802067b91f6eccf1bd8a2fec1fa1f"
+      },
       "params_hash": "sha256:ee07ace94e3068a87dabeefdb5b0c1e928c61e8918b704a7e621e81defde0f22",
       "algo": "sha256",
-      "ts": "2026-08-03T19:48:58Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:31:20Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -8,7 +8,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -82,28 +82,72 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 20,
-      "Citation": 4,
-      "ListItem": 23,
-      "Equation": 110,
-      "Paragraph": 108,
+      "Footnote": 3,
+      "Abstract": 1,
+      "ListItem": 6,
+      "Equation": 75,
+      "Formula": 231,
+      "Paragraph": 122,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 75,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 6,
-    "bibliography_cites": 0,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:gr-qc/0111016v2  22 Mar 2002",
+      "Creator": "dvips(k) 5.86 Copyright 1999 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Jul 16 12:24:16 2018 CEST",
+      "ModDate": "Mon Jul 16 12:24:16 2018 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "20",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "276217 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 20,
+    "image_count": 88,
+    "mathpix_pdf_id": "b7405014-94fd-4623-b2f0-971767d4709a",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "0111016.lines.json",
+        "bytes": 1048919
+      },
+      {
+        "format": "md",
+        "path": "0111016.md",
+        "bytes": 96387
+      },
+      {
+        "format": "tex.zip",
+        "path": "0111016.tex.zip",
+        "bytes": 99359
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "0111016.tiddlers.json",
-    "tiddlers_count": 281,
+    "tiddlers_count": 475,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
@@ -3459,18 +3503,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 223.9,
       "detail": "281 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:57:47Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9289.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:57:49Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 1100.0,
+      "detail": "459 objects, 75 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:57:49Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 35.5,
+      "detail": "475 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/0111016/0111016.lines.json": "sha256:3508457f37938a5951062d2faddc13c0b406b3ca952897a0109579b54be24598"
+        "/home/wkolbe/pdfdrill-library/0111016/0111016.lines.json": "sha256:52abda8ed7a7b5a684ed55e4189ad5281b2e8729028b5ce3a4de2b3abf540917"
       },
       "params_hash": "sha256:859fbf449cd79b62aa23fe2ee54cfd1bd1d7f95826cc0f08ba0f7fbb06c95833",
       "algo": "sha256",
-      "ts": "2026-08-04T15:41:47Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:57:49Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -3,17 +3,17 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2204.10432",
@@ -21,21 +21,23 @@
     "bibkey": "2204.10432",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 92,
-      "Abstract": 1,
-      "Section": 28,
-      "Formula": 30,
+      "Page": 14,
+      "Footnote": 4,
       "Table": 8,
-      "LtxCommand": 2,
-      "Citation": 56
+      "TableRow": 76,
+      "TableCell": 361,
+      "Sidenote": 26,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Section": 4,
+      "Picture": 2,
+      "ListItem": 15,
+      "Formula": 67,
+      "Paragraph": 68,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 40,
-    "bibliography_with_year": 39,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 56,
+    "model_source": "mathpix",
     "pages": 14,
     "bytes": 612222,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -117,9 +119,6 @@
       "GUOWTK+CMSY6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2204.10432.tiddlers.json",
-    "tiddlers_count": 233,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Automated methods have been widely used to identify and analyze mental health conditions (e.g., depression) from various sources of information, including social media. Yet, deployment of such models in real-world healthcare applications faces challenges including poor out-of-domain generalization and lack of trust in black box models. In this work, we propose approaches for depression detection that are constrained to different degrees by the presence of symptoms described in PHQ9, a questionnaire used by clinicians in the depression screening process. In dataset-transfer experiments on three social media datasets, we find that grounding the model in PHQ9&#39;s symptoms substantially improves its ability to generalize to out-of-distribution data compared to a standard BERT-based approach. Furthermore, this approach can still perform competitively on in-domain data. These results and our qualitative analyses suggest that grounding model predictions in clinically-relevant symptoms can improve generalizability while producing a model that is easier to inspect.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -201,7 +200,67 @@
         "page": 12,
         "url": "https://doi.org/10.18653/v1/D17-1322"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Mon Apr 25 02:42:10 2022 CEST",
+      "ModDate": "Mon Apr 25 02:42:10 2022 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "14",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "612222 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 14,
+    "image_count": 4,
+    "mathpix_pdf_id": "19524153-14bf-4a93-a29e-74b6fa48f7bd",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2204.10432.lines.json",
+        "bytes": 1830956
+      },
+      {
+        "format": "md",
+        "path": "2204.10432.md",
+        "bytes": 60663
+      },
+      {
+        "format": "tex.zip",
+        "path": "2204.10432.tex.zip",
+        "bytes": 193731
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2204.10432.tiddlers.json",
+    "tiddlers_count": 228,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -770,16 +829,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5878.5,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:42:40Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12583.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:42:41Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 370.0,
+      "detail": "648 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:42:41Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.4,
+      "detail": "228 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2204.10432/2204.10432.lines.json": "sha256:7378af22ec7765327ae8f5cdd70c458c7cfe9c5d78b8abc49bca1df6734f9f7d"
+      },
       "params_hash": "sha256:7f83a29d0c930ea31d3645c0c1746ec30f21253de8ea93bd238e1dd216e4c315",
       "algo": "sha256",
-      "ts": "2026-08-03T20:57:48Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:42:41Z",
+      "provenance": "mathpix"
     }
   }
 }

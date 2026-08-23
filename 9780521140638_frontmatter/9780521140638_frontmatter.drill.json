@@ -6,7 +6,10 @@
     "PDFINFO_KNOWN",
     "SIZE_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 12,
@@ -15,7 +18,78 @@
     "producer": "Acrobat Distiller 6.0 (Windows)",
     "creator": "PScript5.dll Version 5.2",
     "encrypted": false,
-    "text_layer": true
+    "text_layer": true,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "crop.pdf",
+      "Author": "Administrator",
+      "Creator": "PScript5.dll Version 5.2",
+      "Producer": "Acrobat Distiller 6.0 (Windows)",
+      "CreationDate": "Sat Jun  5 10:50:04 2010 CEST",
+      "ModDate": "Fri Jun 11 14:03:31 2010 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "612 x 900 pts",
+      "Page rot": "0",
+      "File size": "352680 bytes",
+      "Optimized": "no",
+      "PDF version": "1.3"
+    },
+    "page_count_text": 12,
+    "font_count": 20,
+    "image_count": 3,
+    "mathpix_pdf_id": null,
+    "mathpix_status": "cached",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "9780521140638_frontmatter.lines.json",
+        "bytes": 944954
+      },
+      {
+        "format": "md",
+        "path": "9780521140638_frontmatter.md",
+        "bytes": 33501
+      },
+      {
+        "format": "tex.zip",
+        "path": "9780521140638_frontmatter.tex.zip",
+        "bytes": 129257
+      }
+    ],
+    "bibkey": "9780521140638_frontmatter",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 12,
+      "Footnote": 4,
+      "Sidenote": 14,
+      "Toc": 1,
+      "Diagram": 1,
+      "Section": 16,
+      "ListItem": 34,
+      "Formula": 75,
+      "Paragraph": 30,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "9780521140638_frontmatter.tiddlers.json",
+    "tiddlers_count": 205,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "crop.pdf",
@@ -156,6 +230,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3800.2,
       "detail": "3 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:16:06Z",
+      "node": "mathpix",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 0.1,
+      "detail": "cached"
+    },
+    {
+      "ts": "2026-08-22T16:16:06Z",
+      "node": "model",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 171.5,
+      "detail": "188 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:16:06Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.6,
+      "detail": "205 tiddlers, svg=inline"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/9780521140638_frontmatter/9780521140638_frontmatter.lines.json": "sha256:6104498dc2de90f4fca36896ca5540d51ff4ff1682895cda89ce49af1723c47d"
+      },
+      "params_hash": "sha256:5cf2099978622bdf9b0d8d0d83459f94f4516ea98a4eb4a4a67967cbfbf821c0",
+      "algo": "sha256",
+      "ts": "2026-08-22T16:16:06Z",
+      "provenance": "mathpix"
+    }
+  }
 }

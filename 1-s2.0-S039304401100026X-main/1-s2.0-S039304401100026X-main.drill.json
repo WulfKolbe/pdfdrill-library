@@ -13,7 +13,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -159,28 +159,78 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 16,
-      "Citation": 6,
-      "ListItem": 30,
-      "Equation": 4,
-      "Paragraph": 20,
+      "Footnote": 5,
+      "Table": 1,
+      "TableRow": 8,
+      "TableCell": 16,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "ListItem": 1,
+      "Equation": 97,
+      "Formula": 454,
+      "Paragraph": 148,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 97,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 12 unmapped private-use character(s) remain (U+ED0A×2, U+ED4E×4, U+ED5D×1, U+ED61×1, U+F8E6×4) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 43,
-    "bibliography_with_year": 40,
-    "bibliography_numeric_citations": 56,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 56,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Manifolds with parallel differential forms and K&#x00E4;hler identities for G2-manifolds",
+      "Subject": "Journal of Geometry and Physics, 61 (2011) 1001-1016. doi:10.1016/j.geomphys.2011.01.010",
+      "Author": "Misha Verbitsky",
+      "Creator": "Elsevier",
+      "Producer": "pdfTeX-1.40.3",
+      "CreationDate": "Fri Mar 18 07:47:50 2011 CET",
+      "ModDate": "Fri Mar 18 07:56:03 2011 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "16",
+      "Encrypted": "no",
+      "Page size": "544.252 x 742.677 pts",
+      "Page rot": "0",
+      "File size": "329065 bytes",
+      "Optimized": "yes",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 16,
+    "image_count": 2,
+    "mathpix_pdf_id": "18d08393-1b9c-49f5-b391-22a727fe6f06",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1-s2.0-S039304401100026X-main.lines.json",
+        "bytes": 908966
+      },
+      {
+        "format": "md",
+        "path": "1-s2.0-S039304401100026X-main.md",
+        "bytes": 77278
+      },
+      {
+        "format": "tex.zip",
+        "path": "1-s2.0-S039304401100026X-main.tex.zip",
+        "bytes": 81991
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "1-s2.0-S039304401100026X-main.tiddlers.json",
-    "tiddlers_count": 89,
+    "tiddlers_count": 742,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
@@ -2105,18 +2155,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "89 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T17:03:39Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9532.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:03:40Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 464.7,
+      "detail": "750 objects, 97 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:03:40Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 20.8,
+      "detail": "742 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1-s2.0-S039304401100026X-main/1-s2.0-S039304401100026X-main.lines.json": "sha256:4c963743faa5d2bbf6a05a6523d62a5255e2275a4caa026792d282ae27b07b78"
+        "/home/wkolbe/pdfdrill-library/1-s2.0-S039304401100026X-main/1-s2.0-S039304401100026X-main.lines.json": "sha256:798bf3d94b2933308e642aaa5b3e15fc18487faac48eed7c2acc7f3fd5306534"
       },
       "params_hash": "sha256:79497450590f98fcb1f74cb674545474abfd11c5aa1027b12e834dd776fbb64f",
       "algo": "sha256",
-      "ts": "2026-08-04T22:13:51Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T17:03:40Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -86,17 +87,23 @@
     "bibkey": "2404.14619v1",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 39,
-      "LtxCommand": 2,
-      "Table": 17,
-      "Formula": 16,
+      "Page": 10,
+      "Footnote": 1,
+      "Citation": 2,
+      "Table": 10,
+      "TableRow": 131,
+      "TableCell": 778,
+      "Sidenote": 19,
       "Abstract": 1,
-      "Section": 14,
+      "Diagram": 3,
+      "ListItem": 14,
       "Equation": 1,
-      "Citation": 93
+      "Formula": 24,
+      "Paragraph": 5,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 10,
       "placed": 33,
@@ -106,14 +113,6 @@
       "numbered": 14,
       "roots": 1
     },
-    "bibliography_entries": 56,
-    "bibliography_with_year": 56,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 93,
-    "tiddlers_path": "2404.14619v1.tiddlers.json",
-    "tiddlers_count": 174,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
     "links": [
       {
@@ -159,7 +158,72 @@
       "Peter Zatloukal",
       "Mohammad Rastegari"
     ],
-    "arxiv_primary_category": "cs.CL"
+    "arxiv_primary_category": "cs.CL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Wed Apr 24 02:11:44 2024 CEST",
+      "ModDate": "Wed Apr 24 02:11:44 2024 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "403243 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 10,
+    "image_count": 0,
+    "mathpix_pdf_id": "316b5527-22a5-4f80-af9e-5b5de2a7e02a",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2404.14619v1.lines.json",
+        "bytes": 1881906
+      },
+      {
+        "format": "md",
+        "path": "2404.14619v1.md",
+        "bytes": 43828
+      },
+      {
+        "format": "tex.zip",
+        "path": "2404.14619v1.tex.zip",
+        "bytes": 534818
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 60,
+    "bibliography_with_year": 56,
+    "bibliography_numeric_citations": 67,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 67,
+    "tiddlers_path": "2404.14619v1.tiddlers.json",
+    "tiddlers_count": 166,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -676,18 +740,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3858.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:35:30Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 20245.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:35:31Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 230.5,
+      "detail": "1000 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:35:31Z",
+      "node": "bibliography",
+      "from": "BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "60 entries, 67+0 cites detected, 67 linked"
+    },
+    {
+      "ts": "2026-08-22T15:35:32Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.3,
+      "detail": "166 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2404.14619v1/texsrc/main.tex": "sha256:34e523d3299b955f3050e38845e7472f2a04a5cf186845daac6c10074683ff4b"
+        "/home/wkolbe/pdfdrill-library/2404.14619v1/2404.14619v1.lines.json": "sha256:36de4dc106284a4c764e3fd7be5370cb06428cbb1cd239fbe6d6dbfbc45d6c34"
       },
       "params_hash": "sha256:2b9160e61345ccbadbf40afe2a9f6782eb15074fe23034669f48f4be6bdef5ab",
       "algo": "sha256",
-      "ts": "2026-08-03T21:23:36Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:35:31Z",
+      "provenance": "mathpix"
     }
   }
 }

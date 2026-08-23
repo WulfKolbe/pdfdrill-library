@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -104,16 +105,22 @@
     "bibkey": "1712.05204",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 92,
+      "Page": 17,
+      "Footnote": 5,
+      "Citation": 3,
+      "Table": 3,
+      "TableRow": 22,
+      "TableCell": 69,
       "Abstract": 1,
-      "Section": 8,
-      "Formula": 245,
-      "Equation": 15,
-      "LtxCommand": 8,
-      "Citation": 40
+      "Section": 2,
+      "ListItem": 13,
+      "Equation": 34,
+      "Formula": 307,
+      "Paragraph": 54,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 34,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 17,
       "placed": 26,
@@ -123,14 +130,6 @@
       "numbered": 8,
       "roots": 1
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "1712.05204.tiddlers.json",
-    "tiddlers_count": 424,
-    "tiddlers_svg_mode": "inline",
     "abstract": "The algorithm of finding inverse multivector (MV) numerically and symbolically is of paramount importance in the applied Clifford geometric algebra (GA) $Cl_{p,q}$. The first general MV inversion algorithm was based on matrix representation of MV. The complexity of calculations and size of the answer in a symbolic form grow exponentially with the GA dimension $n=p+q$. The breakthrough occurred when D. Lundholm and then P. Dadbeh found compact inverse formulas up to dimension $n\\le5$. The formulas were constructed in a form of Clifford product of initial MV and its carefully chosen grade-negation counterparts. In this report we show that the grade-negation self-product method can be extended beyond $n=5$ threshold if, in addition, properly constructed linear combinations of such MV products are used. In particular, we present compact explicit MV inverse formulas for algebras of vector space dimension $n=6$ and show that they embrace all lower dimensional cases as well. For readers convenience, we have also given various MV formulas in a form of grade negations when $n\\le5$.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -138,7 +137,72 @@
     "arxiv_authors": [
       "A. Acus",
       "A. Dargys"
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Fri Oct 19 08:16:01 2018 CEST",
+      "ModDate": "Fri Oct 19 08:16:01 2018 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "17",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "264362 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 17,
+    "image_count": 134,
+    "mathpix_pdf_id": "41c47577-82dc-4e0a-8b8e-4ef7b16e4d69",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1712.05204.lines.json",
+        "bytes": 995663
+      },
+      {
+        "format": "md",
+        "path": "1712.05204.md",
+        "bytes": 84215
+      },
+      {
+        "format": "tex.zip",
+        "path": "1712.05204.tex.zip",
+        "bytes": 88203
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 20,
+    "bibliography_with_year": 20,
+    "bibliography_numeric_citations": 38,
+    "bibliography_authoryear_citations": 2,
+    "bibliography_cites": 38,
+    "tiddlers_path": "1712.05204.tiddlers.json",
+    "tiddlers_count": 478,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -5616,16 +5680,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5071.5,
       "detail": "268 images, 131 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T17:20:38Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9171.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T17:20:39Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 858.1,
+      "detail": "531 objects, 34 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T17:20:40Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "20 entries, 38+2 cites detected, 38 linked"
+    },
+    {
+      "ts": "2026-08-22T17:20:40Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.5,
+      "detail": "478 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1712.05204/1712.05204.lines.json": "sha256:e1e8eee3e261fc56ee8cdfce032a55ec54a592bcc046b66896fbd7a0a1a806d6"
+      },
       "params_hash": "sha256:9c5a385dd2372ee9ccb4e3c9c513f1c75088095f899b3c914b25da2c9e779543",
       "algo": "sha256",
-      "ts": "2026-08-03T19:40:19Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T17:20:39Z",
+      "provenance": "mathpix"
     }
   }
 }

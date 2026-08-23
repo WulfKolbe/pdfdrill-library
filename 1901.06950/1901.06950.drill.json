@@ -3,18 +3,19 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "1901.06950",
@@ -22,22 +23,21 @@
     "bibkey": "1901.06950",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 24,
+      "Page": 10,
+      "Footnote": 4,
+      "Citation": 2,
+      "Sidenote": 18,
       "Abstract": 1,
-      "Section": 5,
-      "Formula": 10,
-      "Equation": 4,
-      "Theorem": 3,
-      "Proof": 1,
-      "Citation": 26
+      "Diagram": 4,
+      "Picture": 2,
+      "ListItem": 9,
+      "Equation": 20,
+      "Formula": 110,
+      "Paragraph": 91,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 37,
-    "bibliography_with_year": 37,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 3,
+    "model_equations_with_cdn": 20,
+    "model_source": "mathpix",
     "pages": 10,
     "bytes": 716962,
     "page_size": "612 x 792 pts (letter)",
@@ -135,9 +135,6 @@
     ],
     "math_fonts": [],
     "has_math_fonts": false,
-    "tiddlers_path": "1901.06950.tiddlers.json",
-    "tiddlers_count": 85,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Given data over variables $(X_1,...,X_m, Y)$ we consider the problem of finding out whether $X$ jointly causes $Y$ or whether they are all confounded by an unobserved latent variable $Z$. To do so, we take an information-theoretic approach based on Kolmogorov complexity. In a nutshell, we follow the postulate that first encoding the true cause, and then the effects given that cause, results in a shorter description than any other encoding of the observed variables. The ideal score is not computable, and hence we have to approximate it. We propose to do so using the Minimum Description Length (MDL) principle. We compare the MDL scores under the models where $X$ causes $Y$ and where there exists a latent variables $Z$ confounding both $X$ and $Y$ and show our scores are consistent. To find potential confounders we propose using latent factor modeling, in particular, probabilistic PCA (PPCA). Empirical evaluation on both synthetic and real-world data shows that our method, CoCa, performs very well -- even when the true generating process of the data is far from the assumptions made by the models we use. Moreover, it is robust as its accuracy goes hand in hand with its confidence.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -156,7 +153,72 @@
         "page": 7,
         "url": "https://webdav.tuebingen.mpg.de/cause-effect/"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "We Are Not Your Real Parents: Telling Causal from Confounded using MDL",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "David Kaltenpoth and Jilles Vreeken",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Wed Jan 23 03:09:24 2019 CET",
+      "ModDate": "Wed Jan 23 03:09:24 2019 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "10",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "716962 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 10,
+    "image_count": 0,
+    "mathpix_pdf_id": "43162cf0-e737-40fa-92df-0295bc8803ff",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1901.06950.lines.json",
+        "bytes": 970357
+      },
+      {
+        "format": "md",
+        "path": "1901.06950.md",
+        "bytes": 50420
+      },
+      {
+        "format": "tex.zip",
+        "path": "1901.06950.tex.zip",
+        "bytes": 231003
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 38,
+    "bibliography_with_year": 37,
+    "bibliography_numeric_citations": 64,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 64,
+    "tiddlers_path": "1901.06950.tiddlers.json",
+    "tiddlers_count": 326,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "We Are Not Your Real Parents: Telling Causal from Confounded using MDL",
@@ -1603,16 +1665,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4250.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:28:45Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9418.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:28:45Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 317.4,
+      "detail": "272 objects, 20 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:28:46Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "38 entries, 64+0 cites detected, 64 linked"
+    },
+    {
+      "ts": "2026-08-22T15:28:46Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.1,
+      "detail": "326 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1901.06950/1901.06950.lines.json": "sha256:c900ab42b64d473a00b0af7d8bc9fc52509086a22c93f89c8d999c690f4e0f5d"
+      },
       "params_hash": "sha256:a2b0892842895cc1cd00cfce9fefe5391bd04de7a3a6ef91c4c5f7384e0e2b65",
       "algo": "sha256",
-      "ts": "2026-08-03T19:45:21Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:28:45Z",
+      "provenance": "mathpix"
     }
   }
 }

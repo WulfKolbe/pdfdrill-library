@@ -6,7 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -114,28 +114,78 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 22,
-      "Citation": 7,
-      "ListItem": 41,
-      "Equation": 143,
-      "Paragraph": 125,
+      "Table": 2,
+      "TableRow": 21,
+      "TableCell": 60,
+      "Section": 2,
+      "Picture": 2,
+      "ListItem": 8,
+      "Equation": 58,
+      "Formula": 123,
+      "Paragraph": 77,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 58,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 101 unmapped private-use character(s) remain (U+F8EB×4, U+F8ED×4, U+F8EE×7, U+F8EF×25, U+F8F0×7, U+F8F1×1, U+F8F2×1, U+F8F3×1, U+F8F4×4, U+F8F6×4, U+F8F8×4, U+F8F9×7, U+F8FA×25, U+F8FB×7) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.28",
+      "CreationDate": "Tue Jan 27 18:02:46 2026 CET",
+      "ModDate": "Tue Jan 27 18:02:46 2026 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "22",
+      "Encrypted": "no",
+      "Page size": "592.777 x 838.854 pts",
+      "Page rot": "0",
+      "File size": "781386 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 22,
+    "image_count": 2,
+    "mathpix_pdf_id": "f3d1be0c-5abb-4d62-a0e2-4b301e324f6d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "problemstatement.lines.json",
+        "bytes": 660225
+      },
+      {
+        "format": "md",
+        "path": "problemstatement.md",
+        "bytes": 43581
+      },
+      {
+        "format": "tex.zip",
+        "path": "problemstatement.tex.zip",
+        "bytes": 298822
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "problemstatement.tiddlers.json",
-    "tiddlers_count": 349,
+    "tiddlers_count": 312,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -771,18 +821,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 13.6,
       "detail": "349 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T18:46:46Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 11042.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:46:47Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 510.7,
+      "detail": "376 objects, 58 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:46:47Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.4,
+      "detail": "312 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/problemstatement/problemstatement.lines.json": "sha256:a3534a1b9229f8d4309d716cbc56f59ce853ccde9be7e43af711732ca93933f6"
+        "/home/wkolbe/pdfdrill-library/problemstatement/problemstatement.lines.json": "sha256:b35abf33ca7a5c0bec56e848879b4e808124c10ad11da9894fba88fd29ced4b7"
       },
       "params_hash": "sha256:eccdca6140f77dd9636aa061eeb2f9795c5691e4406b537a831aef8418ffc331",
       "algo": "sha256",
-      "ts": "2026-08-06T01:32:53Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T18:46:46Z",
+      "provenance": "mathpix"
     }
   }
 }

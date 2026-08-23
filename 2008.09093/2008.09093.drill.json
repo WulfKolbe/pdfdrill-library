@@ -3,17 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2008.09093",
@@ -21,22 +22,25 @@
     "bibkey": "2008.09093",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 69,
-      "Formula": 32,
-      "LtxCommand": 4,
-      "Abstract": 1,
-      "Section": 23,
-      "Equation": 6,
+      "Page": 12,
+      "Footnote": 15,
+      "Citation": 14,
       "Table": 12,
-      "Citation": 126
+      "TableRow": 103,
+      "TableCell": 633,
+      "Sidenote": 24,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Section": 6,
+      "Picture": 1,
+      "ListItem": 15,
+      "Equation": 6,
+      "Formula": 155,
+      "Paragraph": 158,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 82,
-    "bibliography_with_year": 61,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 55,
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "pages": 12,
     "bytes": 742212,
     "page_size": "612 x 792 pts (letter)",
@@ -100,9 +104,6 @@
       "VBMOCA+LibertineMathMI"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2008.09093.tiddlers.json",
-    "tiddlers_count": 261,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Pretrained transformer models, such as BERT and T5, have shown to be highly effective at ad-hoc passage and document ranking. Due to inherent sequence length limits of these models, they need to be run over a document&#39;s passages, rather than processing the entire document sequence at once. Although several approaches for aggregating passage-level signals have been proposed, there has yet to be an extensive comparison of these techniques. In this work, we explore strategies for aggregating relevance signals from a document&#39;s passages into a final ranking score. We find that passage representation aggregation techniques can significantly improve over techniques proposed in prior work, such as taking the maximum passage score. We call this new approach PARADE. In particular, PARADE can significantly improve results on collections with broad information needs where relevance signals can be spread throughout the document (such as TREC Robust04 and GOV2). Meanwhile, less complex aggregation techniques may work better on collections with an information need that can often be pinpointed to a single passage (such as TREC DL and TREC Genomics). We also conduct efficiency analyses, and highlight several strategies for improving transformer-based aggregation.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -156,7 +157,70 @@
         "page": 12,
         "url": "https://ir.nist.gov/covidSubmit/archive.html"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "PARADE: Passage Representation Aggregation for Document Reranking",
+      "Subject": "",
+      "Creator": "LaTeX with acmart 2021/05/01 v1.78 Typesetting articles for the Association for Computing Machinery and hyperref 2020-05-15 v7.00e Hypertext links for LaTeX",
+      "Producer": "pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+      "CreationDate": "Fri Jun 11 02:28:48 2021 CEST",
+      "ModDate": "Fri Jun 11 02:28:48 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "742212 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 12,
+    "image_count": 12,
+    "mathpix_pdf_id": "b6bc4baa-7bf2-479f-9b99-05804879869e",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2008.09093.lines.json",
+        "bytes": 2209584
+      },
+      {
+        "format": "md",
+        "path": "2008.09093.md",
+        "bytes": 73021
+      },
+      {
+        "format": "tex.zip",
+        "path": "2008.09093.tex.zip",
+        "bytes": 277114
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 90,
+    "bibliography_with_year": 87,
+    "bibliography_numeric_citations": 116,
+    "bibliography_authoryear_citations": 2,
+    "bibliography_cites": 116,
+    "tiddlers_path": "2008.09093.tiddlers.json",
+    "tiddlers_count": 519,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "PARADE: Passage Representation Aggregation for Document Reranking",
@@ -1812,16 +1876,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7084.0,
       "detail": "6 images, 5 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:12:57Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13076.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:12:57Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 522.2,
+      "detail": "1158 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:12:58Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "90 entries, 116+2 cites detected, 116 linked"
+    },
+    {
+      "ts": "2026-08-22T16:12:58Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.3,
+      "detail": "519 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2008.09093/2008.09093.lines.json": "sha256:ce842d772db507fdfd9cd754f750b9388d9b53c1b0f6c448a19f56a992f8610f"
+      },
       "params_hash": "sha256:a8534ad66fe4bb07a7ff5ab59ea53af2a034d73cf03dd2dd7f3940663eac4ec1",
       "algo": "sha256",
-      "ts": "2026-08-03T20:34:05Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:12:57Z",
+      "provenance": "mathpix"
     }
   }
 }

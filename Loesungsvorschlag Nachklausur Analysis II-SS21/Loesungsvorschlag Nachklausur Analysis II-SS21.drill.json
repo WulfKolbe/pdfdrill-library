@@ -6,12 +6,12 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "PDFINFO_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -80,29 +80,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 13,
-      "Citation": 29,
-      "ListItem": 61,
-      "Equation": 49,
-      "Paragraph": 52,
+      "Diagram": 3,
+      "Picture": 1,
+      "ListItem": 5,
+      "Equation": 58,
+      "Formula": 139,
+      "Paragraph": 92,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 58,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 25 unmapped private-use character(s) remain (U+F8EB×2, U+F8EC×1, U+F8ED×2, U+F8F1×3, U+F8F2×3, U+F8F3×3, U+F8F4×6, U+F8F6×2, U+F8F7×1, U+F8F8×2) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "Loesungsvorschlag Nachklausur Analysis II-SS21.tiddlers.json",
-    "tiddlers_count": 196,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "TeX",
@@ -127,7 +121,33 @@
     "page_count_text": 13,
     "image_count": 5,
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "babfb4ab-0e5c-4ec5-9208-baab62940f02",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Loesungsvorschlag Nachklausur Analysis II-SS21.lines.json",
+        "bytes": 394425
+      },
+      {
+        "format": "md",
+        "path": "Loesungsvorschlag Nachklausur Analysis II-SS21.md",
+        "bytes": 23901
+      },
+      {
+        "format": "tex.zip",
+        "path": "Loesungsvorschlag Nachklausur Analysis II-SS21.tex.zip",
+        "bytes": 79084
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "Loesungsvorschlag Nachklausur Analysis II-SS21.tiddlers.json",
+    "tiddlers_count": 328,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -606,18 +626,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2055.7,
       "detail": "4 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:29:46Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6821.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:29:46Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 139.6,
+      "detail": "312 objects, 58 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:29:46Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.1,
+      "detail": "328 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Loesungsvorschlag Nachklausur Analysis II-SS21/Loesungsvorschlag Nachklausur Analysis II-SS21.lines.json": "sha256:c4777099882bbdb13fd52e94537d60e9027019382c1e1fabf405d79a9ecf1261"
+        "/home/wkolbe/pdfdrill-library/Loesungsvorschlag Nachklausur Analysis II-SS21/Loesungsvorschlag Nachklausur Analysis II-SS21.lines.json": "sha256:b91bcbd577b52525914d7f0513dbcfa84570c6e57e63890adde6a335354e19f5"
       },
       "params_hash": "sha256:6be7eb8efae92484625495fa3649465b837f0ff0b2533c37cbff97119c08ef00",
       "algo": "sha256",
-      "ts": "2026-08-05T21:58:10Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T16:29:46Z",
+      "provenance": "mathpix"
     }
   }
 }

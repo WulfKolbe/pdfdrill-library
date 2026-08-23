@@ -3,18 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2109.04432",
@@ -22,22 +22,21 @@
     "bibkey": "2109.04432",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "LtxCommand": 47,
-      "Paragraph": 95,
-      "Abstract": 1,
-      "Section": 17,
-      "Formula": 59,
-      "Equation": 10,
+      "Page": 11,
       "Table": 3,
-      "Citation": 107
+      "TableRow": 25,
+      "TableCell": 539,
+      "Sidenote": 22,
+      "Abstract": 1,
+      "Diagram": 8,
+      "ListItem": 21,
+      "Equation": 10,
+      "Formula": 51,
+      "Paragraph": 121,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 39,
-    "bibliography_with_year": 2,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 2,
+    "model_equations_with_cdn": 10,
+    "model_source": "mathpix",
     "pages": 11,
     "bytes": 1022699,
     "page_size": "612 x 792 pts (letter)",
@@ -165,9 +164,6 @@
       "PMYKBB+CMSY8"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2109.04432.tiddlers.json",
-    "tiddlers_count": 300,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Reliably predicting potential failure risks of machine learning (ML) systems when deployed with production data is a crucial aspect of trustworthy AI. This paper introduces Risk Advisor, a novel post-hoc meta-learner for estimating failure risks and predictive uncertainties of any already-trained black-box classification model. In addition to providing a risk score, the Risk Advisor decomposes the uncertainty estimates into aleatoric and epistemic uncertainty components, thus giving informative insights into the sources of uncertainty inducing the failures. Consequently, Risk Advisor can distinguish between failures caused by data variability, data shifts and model limitations and advise on mitigation actions (e.g., collecting more data to counter data shift). Extensive experiments on various families of black-box classification models and on real-world and synthetic datasets covering common ML failure scenarios show that the Risk Advisor reliably predicts deployment-time failure risks in all the scenarios, and outperforms strong baselines.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -178,7 +174,67 @@
       "Gerhard Weikum"
     ],
     "arxiv_primary_category": "cs.LG",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.21",
+      "CreationDate": "Fri Sep 10 02:56:12 2021 CEST",
+      "ModDate": "Fri Sep 10 02:56:12 2021 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "11",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "1022699 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 11,
+    "image_count": 4,
+    "mathpix_pdf_id": "725639bd-9a90-43d4-9738-0db20c86679a",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2109.04432.lines.json",
+        "bytes": 1895247
+      },
+      {
+        "format": "md",
+        "path": "2109.04432.md",
+        "bytes": 64492
+      },
+      {
+        "format": "tex.zip",
+        "path": "2109.04432.tex.zip",
+        "bytes": 482883
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2109.04432.tiddlers.json",
+    "tiddlers_count": 265,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1944,18 +2000,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 14077.1,
       "detail": "4 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T15:56:14Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13467.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T15:56:15Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 246.4,
+      "detail": "813 objects, 10 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T15:56:15Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.9,
+      "detail": "265 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2109.04432/texsrc/main.tex": "sha256:ee6e438415271c28c39fae0861125af10dd758e433963dc7a39b3077b42a6b64"
+        "/home/wkolbe/pdfdrill-library/2109.04432/2109.04432.lines.json": "sha256:ccf3f76401a57f9517d368814bcde0c550996739f81787196e53c45f1d0a1eab"
       },
       "params_hash": "sha256:b7efce3da493ed15415003deeeec599e5ef623718856c9e77ea5628d8c508558",
       "algo": "sha256",
-      "ts": "2026-08-03T20:55:34Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T15:56:15Z",
+      "provenance": "mathpix"
     }
   }
 }

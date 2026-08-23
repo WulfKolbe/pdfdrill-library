@@ -6,7 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -76,28 +76,70 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 3,
-      "Citation": 5,
-      "ListItem": 6,
-      "Equation": 24,
-      "Paragraph": 19,
+      "Section": 2,
+      "ListItem": 4,
+      "Equation": 14,
+      "Formula": 19,
+      "Paragraph": 20,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 14,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.18",
+      "CreationDate": "Tue Jan 14 17:48:10 2020 CET",
+      "ModDate": "Tue Jan 14 17:48:10 2020 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "3",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "177123 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 3,
+    "image_count": 0,
+    "mathpix_pdf_id": "174a274a-1b1e-40fb-9e71-05281128550b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "qft2_Exercise2-13.lines.json",
+        "bytes": 101242
+      },
+      {
+        "format": "md",
+        "path": "qft2_Exercise2-13.md",
+        "bytes": 6102
+      },
+      {
+        "format": "tex.zip",
+        "path": "qft2_Exercise2-13.tex.zip",
+        "bytes": 6964
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
     "tiddlers_path": "qft2_Exercise2-13.tiddlers.json",
-    "tiddlers_count": 70,
+    "tiddlers_count": 80,
     "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
@@ -411,18 +453,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.5,
       "detail": "70 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T14:23:52Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5860.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:23:52Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 83.5,
+      "detail": "63 objects, 14 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:23:52Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.5,
+      "detail": "80 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/qft2_Exercise2-13/qft2_Exercise2-13.lines.json": "sha256:c1b6d15a6cde2fb547f88ac740596c2105b9ad6272d01dfa70e4a6eb1ef40562"
+        "/home/wkolbe/pdfdrill-library/qft2_Exercise2-13/qft2_Exercise2-13.lines.json": "sha256:03176835b0702daf756bf3cf7a87ca0152ceda36d63989fd2ed7d7006bc5a5af"
       },
       "params_hash": "sha256:79c799503409f8da9d8c09cdcdf3d7ae4f488c1540fd1b0022bd1161c947dfcd",
       "algo": "sha256",
-      "ts": "2026-08-06T01:33:03Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:23:52Z",
+      "provenance": "mathpix"
     }
   }
 }

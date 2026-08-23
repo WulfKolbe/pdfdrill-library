@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -88,16 +89,24 @@
     "bibkey": "1804.10694v5",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 117,
+      "Page": 13,
+      "Footnote": 4,
+      "Citation": 2,
+      "Table": 6,
+      "TableRow": 66,
+      "TableCell": 240,
+      "Sidenote": 27,
       "Abstract": 1,
-      "Section": 22,
-      "Formula": 49,
-      "Table": 7,
-      "LtxCommand": 14,
-      "Citation": 85
+      "Diagram": 9,
+      "Picture": 3,
+      "ListItem": 25,
+      "Equation": 7,
+      "Formula": 58,
+      "Paragraph": 148,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 7,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 13,
       "placed": 47,
@@ -107,14 +116,6 @@
       "numbered": 22,
       "roots": 1
     },
-    "bibliography_entries": 52,
-    "bibliography_with_year": 52,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 85,
-    "tiddlers_path": "1804.10694v5.tiddlers.json",
-    "tiddlers_count": 293,
-    "tiddlers_svg_mode": "inline",
     "abstract": "This paper introduces Tiramisu, a polyhedral framework designed to generate high performance code for multiple platforms including multicores, GPUs, and distributed machines. Tiramisu introduces a scheduling language with novel extensions to explicitly manage the complexities that arise when targeting these systems. The framework is designed for the areas of image processing, stencils, linear algebra and deep learning. Tiramisu has two main features: it relies on a flexible representation based on the polyhedral model and it has a rich scheduling language allowing fine-grained control of optimizations. Tiramisu uses a four-level intermediate representation that allows full separation between the algorithms, loop transformations, data layouts, and communication. This separation simplifies targeting multiple hardware architectures with the same algorithm. We evaluate Tiramisu by writing a set of image processing, deep learning, and linear algebra benchmarks and compare them with state-of-the-art compilers and hand-tuned libraries. We show that Tiramisu matches or outperforms existing compilers and libraries on different hardware architectures, including multicore CPUs, GPUs, and distributed machines.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -130,7 +131,72 @@
       "Shoaib Kamil",
       "Saman Amarasinghe"
     ],
-    "arxiv_primary_category": "cs.PL"
+    "arxiv_primary_category": "cs.PL",
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref package",
+      "Producer": "pdfTeX-1.40.17",
+      "CreationDate": "Fri Dec 21 02:43:51 2018 CET",
+      "ModDate": "Fri Dec 21 02:43:51 2018 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "13",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "518522 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 13,
+    "image_count": 8,
+    "mathpix_pdf_id": "c195a42a-b20c-41a1-bc53-3496defca0ba",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1804.10694v5.lines.json",
+        "bytes": 1871121
+      },
+      {
+        "format": "md",
+        "path": "1804.10694v5.md",
+        "bytes": 72698
+      },
+      {
+        "format": "tex.zip",
+        "path": "1804.10694v5.tex.zip",
+        "bytes": 284922
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 54,
+    "bibliography_with_year": 52,
+    "bibliography_numeric_citations": 85,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 85,
+    "tiddlers_path": "1804.10694v5.tiddlers.json",
+    "tiddlers_count": 374,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2716,18 +2782,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5317.7,
       "detail": "4 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:22:46Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 13436.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:22:47Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 382.8,
+      "detail": "610 objects, 7 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:22:47Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "54 entries, 85+0 cites detected, 85 linked"
+    },
+    {
+      "ts": "2026-08-22T16:22:47Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.7,
+      "detail": "374 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1804.10694v5/texsrc/main.tex": "sha256:b6659508821901b4f357aef36990815666759f13726bf4b40436faa82b2c3004"
+        "/home/wkolbe/pdfdrill-library/1804.10694v5/1804.10694v5.lines.json": "sha256:8d5ebd45aa71a640e4fb3f920c55dd0002bbf55b34c34bbe8bfd3873a0d3bb5d"
       },
       "params_hash": "sha256:0a3c9f9a59b3d01c882b6415a7a621c84c4fc7b56adbafadb599f6f3d449574d",
       "algo": "sha256",
-      "ts": "2026-08-03T19:40:48Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:22:46Z",
+      "provenance": "mathpix"
     }
   }
 }

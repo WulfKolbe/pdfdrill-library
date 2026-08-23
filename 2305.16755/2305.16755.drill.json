@@ -3,17 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2305.16755",
@@ -21,21 +22,22 @@
     "bibkey": "2305.16755",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 52,
-      "Abstract": 1,
+      "Page": 15,
+      "Footnote": 4,
+      "Citation": 6,
       "Table": 8,
-      "Section": 9,
-      "LtxCommand": 16,
-      "Formula": 2,
-      "Citation": 33
+      "TableRow": 74,
+      "TableCell": 294,
+      "Abstract": 1,
+      "Diagram": 5,
+      "Picture": 1,
+      "ListItem": 14,
+      "Formula": 12,
+      "Paragraph": 86,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 17,
-    "bibliography_with_year": 1,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
+    "model_source": "mathpix",
     "pages": 15,
     "bytes": 944463,
     "page_size": "595.276 x 841.89 pts (A4)",
@@ -115,9 +117,6 @@
       "JSIZDE+CMMI12"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2305.16755.tiddlers.json",
-    "tiddlers_count": 138,
-    "tiddlers_svg_mode": "inline",
     "abstract": "We examine the ability of large language models (LLMs) to generate salient (interesting) negative statements about real-world entities; an emerging research topic of the last few years. We probe the LLMs using zero- and k-shot unconstrained probes, and compare with traditional methods for negation generation, i.e., pattern-based textual extractions and knowledge-graph-based inferences, as well as crowdsourced gold statements. We measure the correctness and salience of the generated lists about subjects from different domains. Our evaluation shows that guided probes do in fact improve the quality of generated negatives, compared to the zero-shot variant. Nevertheless, using both prompts, LLMs still struggle with the notion of factuality of negatives, frequently generating many ambiguous statements, or statements with negative keywords but a positive meaning.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -160,7 +159,71 @@
         "page": 9,
         "url": "https://crfm.stanford.edu/2023/03/13/alpaca.html"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "Can large language models generate salient negative statements?",
+      "Subject": "CEUR Workshop Proceedings (CEUR-WS.org)",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX",
+      "CreationDate": "Fri Sep 22 03:25:45 2023 CEST",
+      "ModDate": "Fri Sep 22 03:25:45 2023 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "944463 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7",
+      "PDF subtype": "PDF/A-1a:2005"
+    },
+    "page_count_text": 15,
+    "image_count": 0,
+    "mathpix_pdf_id": "29416827-9e13-4145-bc53-30843f932e95",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2305.16755.lines.json",
+        "bytes": 910821
+      },
+      {
+        "format": "md",
+        "path": "2305.16755.md",
+        "bytes": 30717
+      },
+      {
+        "format": "tex.zip",
+        "path": "2305.16755.tex.zip",
+        "bytes": 168604
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 17,
+    "bibliography_with_year": 17,
+    "bibliography_numeric_citations": 33,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 33,
+    "tiddlers_path": "2305.16755.tiddlers.json",
+    "tiddlers_count": 184,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "ISO 19005 - Electronic document file format for long-term preservation (PDF/A)",
@@ -1081,16 +1144,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3021.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:57:04Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9622.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:57:05Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 195.2,
+      "detail": "521 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:57:05Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "17 entries, 33+1 cites detected, 33 linked"
+    },
+    {
+      "ts": "2026-08-22T16:57:05Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.7,
+      "detail": "184 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2305.16755/2305.16755.lines.json": "sha256:dd67aa0ec53d9bda7cecb25df413bb726aa56a937a48f0e3279797fcd1ae705b"
+      },
       "params_hash": "sha256:f0f86e3dc55bfcbe10eaa09ca3a93a530c85a2506cf868d5d0d4aac5134d4e0a",
       "algo": "sha256",
-      "ts": "2026-08-03T21:05:00Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:57:04Z",
+      "provenance": "mathpix"
     }
   }
 }

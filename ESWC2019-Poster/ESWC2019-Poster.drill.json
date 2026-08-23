@@ -6,13 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 5,
@@ -84,29 +84,27 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 5,
-      "Citation": 3,
-      "ListItem": 10,
-      "Equation": 2,
-      "Paragraph": 7,
+      "Footnote": 5,
+      "Table": 2,
+      "TableRow": 13,
+      "TableCell": 39,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 4,
+      "ListItem": 15,
+      "Formula": 24,
+      "Paragraph": 30,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 10,
-    "bibliography_with_year": 9,
-    "bibliography_numeric_citations": 10,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 10,
-    "tiddlers_path": "ESWC2019-Poster.tiddlers.json",
-    "tiddlers_count": 53,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "pdftk 2.02 - www.pdftk.com",
@@ -130,7 +128,33 @@
     },
     "page_count_text": 5,
     "image_count": 4,
-    "abstract_search_scope": "first2pages"
+    "abstract_search_scope": "first2pages",
+    "mathpix_pdf_id": "61ed387f-8de8-4e59-bb64-69661860d7da",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "ESWC2019-Poster.lines.json",
+        "bytes": 283999
+      },
+      {
+        "format": "md",
+        "path": "ESWC2019-Poster.md",
+        "bytes": 12926
+      },
+      {
+        "format": "tex.zip",
+        "path": "ESWC2019-Poster.tex.zip",
+        "bytes": 23442
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "ESWC2019-Poster.tiddlers.json",
+    "tiddlers_count": 105,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -675,18 +699,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1137.0,
       "detail": "4 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T14:35:33Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 8858.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T14:35:33Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 67.7,
+      "detail": "141 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T14:35:33Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.8,
+      "detail": "105 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/ESWC2019-Poster/ESWC2019-Poster.lines.json": "sha256:f7601f8a57542310134984453bbd14ff9f50b6fbbdaebe6e8c37e4072ecb1e71"
+        "/home/wkolbe/pdfdrill-library/ESWC2019-Poster/ESWC2019-Poster.lines.json": "sha256:cfe644c36782dab3c88cfce9920d468584f697cda308742e70e64a62c3807cb1"
       },
       "params_hash": "sha256:af5acbf24e4dbf9813ca7d2a517923bd1934c6ba7b8e23dfc80f1317772afbf9",
       "algo": "sha256",
-      "ts": "2026-08-05T19:55:13Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-22T14:35:33Z",
+      "provenance": "mathpix"
     }
   }
 }

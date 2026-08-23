@@ -5,15 +5,16 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 12,
@@ -92,18 +93,18 @@
     "bibkey": "1902.03118",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Formula": 184,
-      "Paragraph": 89,
+      "Page": 12,
+      "Citation": 77,
       "Abstract": 1,
-      "Section": 4,
-      "Equation": 33,
-      "Theorem": 4,
-      "Diagram": 3,
-      "LtxCommand": 1,
-      "Citation": 45
+      "Diagram": 2,
+      "ListItem": 1,
+      "Equation": 32,
+      "Formula": 170,
+      "Paragraph": 55,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 32,
+    "model_source": "mathpix",
     "merged_geometry": {
       "pages": 12,
       "placed": 41,
@@ -113,14 +114,6 @@
       "numbered": 4,
       "roots": 1
     },
-    "bibliography_entries": 39,
-    "bibliography_with_year": 34,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 45,
-    "tiddlers_path": "1902.03118.tiddlers.json",
-    "tiddlers_count": 388,
-    "tiddlers_svg_mode": "inline",
     "abstract": "This article is a short and elementary introduction to the monstrous moonshine aiming to be as accessible as possible. I first review the classification of finite simple groups out of which the monster naturally arises, and features of the latter that are needed in order to state the moonshine conjecture of Conway and Norton. Then I motivate modular functions and modular forms from the classification of complex tori, with the definitions of the J-invariant and its q-expansion as a goal. I eventually provide evidence for the monstrous moonshine correspondence, state the conjecture, and then present the ideas that led to its proof. Lastly I give a brief account of some recent developments and current research directions in the field.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -163,7 +156,72 @@
         "page": 11,
         "url": "https://www.jmilne.org/math/CourseNotes/MF.pdf"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Tue May 25 03:02:44 2021 CEST",
+      "ModDate": "Tue May 25 03:02:44 2021 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "12",
+      "Encrypted": "no",
+      "Page size": "595 x 842 pts (A4)",
+      "Page rot": "0",
+      "File size": "190670 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 12,
+    "image_count": 13,
+    "mathpix_pdf_id": "bd3a5873-8ff6-4ccc-b4fd-54626e6c5d9f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1902.03118.lines.json",
+        "bytes": 557636
+      },
+      {
+        "format": "md",
+        "path": "1902.03118.md",
+        "bytes": 41329
+      },
+      {
+        "format": "tex.zip",
+        "path": "1902.03118.tex.zip",
+        "bytes": 118703
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 35,
+    "bibliography_with_year": 34,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "1902.03118.tiddlers.json",
+    "tiddlers_count": 364,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1095,16 +1153,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 3372.3,
       "detail": "26 images, 13 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:11:36Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9623.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:11:36Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 148.1,
+      "detail": "351 objects, 32 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:11:37Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "35 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-22T16:11:37Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.2,
+      "detail": "364 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/1902.03118/1902.03118.lines.json": "sha256:9de443e9a3c4aad95299ed7e0099b9305e0e61f734f584adc4d732f2da6a6b83"
+      },
       "params_hash": "sha256:8c7566195073bdc00689c3f296ca50a87ceb44f8895cd5c3b2cea73872fe9983",
       "algo": "sha256",
-      "ts": "2026-08-03T19:45:47Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:11:36Z",
+      "provenance": "mathpix"
     }
   }
 }

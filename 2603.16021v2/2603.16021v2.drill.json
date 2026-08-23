@@ -6,13 +6,11 @@
     "SIZE_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "BIBLIOGRAPHY_BUILT",
     "MD_BUILT",
     "TABLES_KNOWN",
     "REPORT_BUILT",
     "LATEX_INGESTED",
     "ABSTRACT_KNOWN",
-    "TIDDLERS_BUILT",
     "SEMANTIC_BUILT",
     "NEEDS_VISION_OCR",
     "FONTS_LAYER_KNOWN",
@@ -20,7 +18,10 @@
     "TOC_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2603.16021v2",
@@ -28,16 +29,21 @@
     "bibkey": "2603.16021v2",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Abstract": 1,
-      "Paragraph": 124,
-      "Section": 27,
+      "Page": 21,
+      "Footnote": 9,
+      "Citation": 1,
       "Table": 2,
-      "Diagram": 5,
-      "Formula": 2,
-      "Citation": 61
+      "TableRow": 18,
+      "TableCell": 53,
+      "Diagram": 4,
+      "Picture": 2,
+      "ListItem": 5,
+      "Formula": 3,
+      "Paragraph": 92,
+      "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_source": "mathpix",
     "pages": 21,
     "bytes": 600063,
     "page_size": "612 x 792 pts (letter)",
@@ -100,17 +106,9 @@
       "David McDermott"
     ],
     "arxiv_primary_category": "cs.AI",
-    "bibliography_entries": 54,
-    "bibliography_with_year": 54,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
     "tables_count": 2,
     "tables_path": "tables.json",
     "report_path": "2603.16021v2.pdf.drill/formula-report.html",
-    "svg_rendered": 7,
-    "svg_errors": 0,
-    "svg_skipped": 0,
     "latex_source": "2603.16021v2.tgz",
     "latex_macros": 0,
     "latex_src_equations": 0,
@@ -120,9 +118,6 @@
     "abstract": "Current approaches to AI agent orchestration typically involve building multi-agent frameworks that manage context passing, memory, error handling, and step coordination through code. These frameworks work well for complex, concurrent systems. But for sequential workflows where a human reviews output at each step, they introduce engineering overhead that the problem does not require. This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. Numbered folders represent stages. Plain markdown files carry the prompts and context that tell a single AI agent what role to play at each step. Local scripts handle the mechanical work that does not need AI at all. The result is a system where one agent, reading the right files at the right moment, does the work that would otherwise require a multi-agent framework. This approach applies ideas from Unix pipeline design, modular decomposition, multi-pass compilation, and literate programming to the specific problem of structuring context for AI agents. The protocol is open source under the MIT license.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
-    "tiddlers_path": "2603.16021v2.tiddlers.json",
-    "tiddlers_count": 243,
-    "tiddlers_svg_mode": "inline",
     "classification": {
       "present": [
         "msc",
@@ -331,8 +326,8 @@
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
     "merged_geometry": {
       "pages": 21,
@@ -742,7 +737,39 @@
       "PDF version": "1.7"
     },
     "page_count_text": 21,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "81d23216-f4c9-44af-838e-10f1d87e15a6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2603.16021v2.lines.json",
+        "bytes": 1030175
+      },
+      {
+        "format": "md",
+        "path": "2603.16021v2.md",
+        "bytes": 74772
+      },
+      {
+        "format": "tex.zip",
+        "path": "2603.16021v2.tex.zip",
+        "bytes": 262977
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "svg",
+      "tiddlers"
+    ],
+    "bibliography_entries": 98,
+    "bibliography_with_year": 61,
+    "bibliography_numeric_citations": 61,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 61,
+    "tiddlers_path": "2603.16021v2.tiddlers.json",
+    "tiddlers_count": 254,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Interpretable Context Methodology: Folder Structure as Agentic Architecture",
@@ -2226,16 +2253,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6907.8,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T18:20:24Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SEMANTIC_BUILT,SIZE_KNOWN,TABLES_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9697.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:20:25Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SEMANTIC_BUILT,SIZE_KNOWN,TABLES_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 269.7,
+      "detail": "211 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:20:25Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SEMANTIC_BUILT,SIZE_KNOWN,TABLES_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "98 entries, 61+0 cites detected, 61 linked"
+    },
+    {
+      "ts": "2026-08-22T18:20:25Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORT_BUILT,SEMANTIC_BUILT,SIZE_KNOWN,TABLES_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.9,
+      "detail": "254 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/2603.16021v2/2603.16021v2.lines.json": "sha256:d70cb4909057ec923e3f9636152c8ad6175250f7c21ab408ec3c31c88829b89b"
+      },
       "params_hash": "sha256:1e89e0df76cf6e0594b1516405bdd7a5e372e5a2d5694c1ce8b740301607f304",
       "algo": "sha256",
-      "ts": "2026-08-03T21:45:09Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:20:25Z",
+      "provenance": "mathpix"
     }
   }
 }

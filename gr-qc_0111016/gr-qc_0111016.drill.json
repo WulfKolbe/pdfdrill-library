@@ -4,10 +4,10 @@
   "facts": [
     "MODEL_BUILT",
     "LATEX_INGESTED",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "SIZE_KNOWN",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "gr-qc/0111016",
@@ -15,20 +15,21 @@
     "bibkey": "gr-qc_0111016",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Formula": 251,
-      "Paragraph": 176,
+      "Page": 20,
+      "Footnote": 3,
       "Abstract": 1,
-      "Section": 20,
+      "ListItem": 6,
       "Equation": 75,
-      "Citation": 32
+      "Formula": 230,
+      "Paragraph": 122,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
+    "model_equations_with_cdn": 75,
+    "model_source": "mathpix",
     "model_caps": {
       "geometry": true,
       "math": true,
-      "source": "pdfminer-chars",
-      "merged": "latex"
+      "source": "mathpix"
     },
     "latex_source": "gr-qc_0111016.tgz",
     "latex_macros": 6,
@@ -38,14 +39,6 @@
     "latex_graphics": 0,
     "merge_latex_source": "gr-qc_0111016.tgz",
     "merge_paragraphs_changed": 19,
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 6,
-    "bibliography_cites": 0,
-    "tiddlers_path": "gr-qc_0111016.tiddlers.json",
-    "tiddlers_count": 580,
-    "tiddlers_svg_mode": "inline",
     "pages": 20,
     "bytes": 276217,
     "page_size": "612 x 792 pts (letter)",
@@ -120,7 +113,59 @@
       "children": 509,
       "numbered": 20,
       "roots": 1
-    }
+    },
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "arXiv:gr-qc/0111016v2  22 Mar 2002",
+      "Creator": "dvips(k) 5.86 Copyright 1999 Radical Eye Software",
+      "Producer": "GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Mon Jul 16 12:24:16 2018 CEST",
+      "ModDate": "Mon Jul 16 12:24:16 2018 CEST",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "20",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "276217 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 20,
+    "image_count": 88,
+    "mathpix_pdf_id": "fde45793-7302-47de-b028-9d060677f708",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "gr-qc_0111016.lines.json",
+        "bytes": 1048894
+      },
+      {
+        "format": "md",
+        "path": "gr-qc_0111016.md",
+        "bytes": 96386
+      },
+      {
+        "format": "tex.zip",
+        "path": "gr-qc_0111016.tex.zip",
+        "bytes": 99356
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "gr-qc_0111016.tiddlers.json",
+    "tiddlers_count": 474,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -507,16 +552,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 18.4,
       "detail": "580 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-22T18:14:14Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9430.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T18:14:15Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 706.4,
+      "detail": "458 objects, 75 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T18:14:16Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 19.2,
+      "detail": "474 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
-      "inputs": {},
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/gr-qc_0111016/gr-qc_0111016.lines.json": "sha256:67b1ff4ae95efcef924bb707642ddf761db0fd83dfbd379be02838db02ddfe51"
+      },
       "params_hash": "sha256:05a117cf166c214adbf85d49e6c65516aa9e0def9e65d9f7be03b67f9ed940c1",
       "algo": "sha256",
-      "ts": "2026-08-06T01:13:32Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T18:14:15Z",
+      "provenance": "mathpix"
     },
     "LATEX_INGESTED": {
       "produced_by": "latex",

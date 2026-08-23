@@ -3,17 +3,18 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
     "SIZE_KNOWN",
     "BIBSOURCE_BUILT",
     "FONTS_LAYER_KNOWN",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
     "BIBTEX_KNOWN",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "source_arxiv_id": "2103.05256",
@@ -21,22 +22,21 @@
     "bibkey": "2103.05256",
     "model_path": "model.docmodel.json",
     "model_object_counts": {
-      "Paragraph": 81,
-      "Formula": 37,
-      "Abstract": 1,
-      "Section": 17,
-      "LtxCommand": 15,
-      "Equation": 6,
+      "Page": 15,
+      "Footnote": 1,
+      "Citation": 4,
       "Table": 6,
-      "Citation": 65
+      "TableRow": 44,
+      "TableCell": 237,
+      "Abstract": 1,
+      "ListItem": 47,
+      "Equation": 6,
+      "Formula": 93,
+      "Paragraph": 63,
+      "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "latex",
-    "bibliography_entries": 41,
-    "bibliography_with_year": 41,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 65,
+    "model_equations_with_cdn": 6,
+    "model_source": "mathpix",
     "pages": 15,
     "bytes": 192731,
     "page_size": "612 x 792 pts (letter)",
@@ -118,9 +118,6 @@
       "YHRGUH+CMSY6"
     ],
     "has_math_fonts": true,
-    "tiddlers_path": "2103.05256.tiddlers.json",
-    "tiddlers_count": 237,
-    "tiddlers_svg_mode": "inline",
     "abstract": "In this work we leverage recent advances in context-sensitive language models to improve the task of query expansion. Contextualized word representation models, such as ELMo and BERT, are rapidly replacing static embedding models. We propose a new model, Contextualized Embeddings for Query Expansion (CEQE), that utilizes query-focused contextualized embedding vectors. We study the behavior of contextual representations generated for query expansion in ad-hoc document retrieval. We conduct our experiments on probabilistic retrieval models as well as in combination with neural ranking models. We evaluate CEQE on two standard TREC collections: Robust and Deep Learning. We find that CEQE outperforms static embedding-based expansion methods on multiple collections (by up to 18% on Robust and 31% on Deep Learning on average precision) and also improves over proven probabilistic pseudo-relevance feedback (PRF) models. We further find that multiple passes of expansion and reranking result in continued gains in effectiveness with CEQE-based approaches outperforming other approaches. The final model incorporating neural and CEQE-based expansion score achieves gains of up to 5% in P@20 and 2% in AP on Robust over the state-of-the-art transformer-based re-ranking model, Birch.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -142,7 +139,72 @@
         "page": 7,
         "url": "http://www.lemurproject.org/galago.php"
       }
-    ]
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+      "CreationDate": "Wed Mar 10 03:25:19 2021 CET",
+      "ModDate": "Wed Mar 10 03:25:19 2021 CET",
+      "Custom Metadata": "no",
+      "Metadata Stream": "yes",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "15",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "192731 bytes",
+      "Optimized": "no",
+      "PDF version": "1.4"
+    },
+    "page_count_text": 15,
+    "image_count": 31,
+    "mathpix_pdf_id": "5927d573-5e14-4a6e-a463-e09c01f70b7a",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2103.05256.lines.json",
+        "bytes": 997687
+      },
+      {
+        "format": "md",
+        "path": "2103.05256.md",
+        "bytes": 45510
+      },
+      {
+        "format": "tex.zip",
+        "path": "2103.05256.tex.zip",
+        "bytes": 48982
+      }
+    ],
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 45,
+    "bibliography_with_year": 45,
+    "bibliography_numeric_citations": 33,
+    "bibliography_authoryear_citations": 6,
+    "bibliography_cites": 33,
+    "tiddlers_path": "2103.05256.tiddlers.json",
+    "tiddlers_count": 303,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1651,18 +1713,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4762.8,
       "detail": "62 images, 9 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-22T16:55:08Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9496.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-22T16:55:08Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 140.6,
+      "detail": "518 objects, 6 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-22T16:55:09Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "45 entries, 33+6 cites detected, 33 linked"
+    },
+    {
+      "ts": "2026-08-22T16:55:09Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.0,
+      "detail": "303 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2103.05256/texsrc/main.tex": "sha256:d055d2b5e1f6ba03e4300d3ecc810fcfdbd9242ddf773838250be75374ddc214"
+        "/home/wkolbe/pdfdrill-library/2103.05256/2103.05256.lines.json": "sha256:c34b98fa87107c397cd2bfa4c27b49f87cc91716ee7961232d7fc89dc854b6b8"
       },
       "params_hash": "sha256:e8a4db91ed4cf3954204c75cb364ce36bba80a7f9aaa6892151e28caf904da93",
       "algo": "sha256",
-      "ts": "2026-08-03T20:52:27Z",
-      "provenance": "latex-source"
+      "ts": "2026-08-22T16:55:08Z",
+      "provenance": "mathpix"
     }
   }
 }
