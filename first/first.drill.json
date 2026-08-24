@@ -6,6 +6,9 @@
     "FONTS_LAYER_KNOWN",
     "OCR_BUILT",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "LATEX_INGESTED",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -63,20 +66,19 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
+      "Formula": 1,
+      "Paragraph": 1,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "tesseract",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "tesseract"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "first.tiddlers.json",
-    "tiddlers_count": 18,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "TeX",
@@ -99,7 +101,44 @@
       "PDF version": "1.5"
     },
     "page_count_text": 1,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "5989cf32-8211-4ccf-86a5-f59cee38dc91",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "first.lines.json",
+        "bytes": 1083
+      },
+      {
+        "format": "md",
+        "path": "first.md",
+        "bytes": 14
+      },
+      {
+        "format": "tex.zip",
+        "path": "first.tex.zip",
+        "bytes": 670
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 0,
+    "geometry_matched": 0,
+    "geometry_mean_sim": null,
+    "latex_source_checked": "no .tex member is named by a MathPix image_id",
+    "latex_source_path": "/home/wkolbe/pdfdrill-library/first/first.tex",
+    "latex_source_kind": "local (author .tex)",
+    "latex_source": "first.tex",
+    "latex_macros": 0,
+    "latex_src_equations": 0,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 1,
+    "tiddlers_path": "first.tiddlers.json",
+    "tiddlers_count": 21,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -173,18 +212,67 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.2,
       "detail": "18 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:42:25Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 4743.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:42:25Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 8.0,
+      "detail": "4 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:42:26Z",
+      "node": "geometry",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 12.0,
+      "detail": "0/0 matched"
+    },
+    {
+      "ts": "2026-08-23T10:42:26Z",
+      "node": "latex",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/0 eqs matched, 0 created, 1 graphics, 0 macros"
+    },
+    {
+      "ts": "2026-08-23T10:42:26Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.5,
+      "detail": "21 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/first/first.lines.json": "sha256:1ea897cc134395644ebf3481fa0b84e3af09eb77365c678b1a69e2c376065ae0"
+        "/home/wkolbe/pdfdrill-library/first/first.lines.json": "sha256:3d5cd06b479a95b557df421adeccc782792e24065a4ba164577ab8ed8232e87b"
       },
       "params_hash": "sha256:d6295e8ec6d6826d1f0e371bbb243a9c1234dc12e01b84c94f27ffde502ec080",
       "algo": "sha256",
-      "ts": "2026-08-06T01:12:40Z",
-      "provenance": "tesseract"
+      "ts": "2026-08-23T10:42:25Z",
+      "provenance": "mathpix"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/first/first.tex": "sha256:c17d97a03f7bdcf1c4abd2a60d400e470b56b23f3dfd9d88b77f3586e503a38a"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-08-23T10:42:26Z"
     }
   }
 }

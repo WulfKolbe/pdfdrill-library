@@ -6,14 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 42,
@@ -110,22 +111,28 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 42,
-      "ListItem": 6,
-      "Paragraph": 42,
+      "Footnote": 2,
+      "Table": 4,
+      "TableRow": 13,
+      "TableCell": 80,
+      "Abstract": 1,
+      "Diagram": 24,
+      "Picture": 2,
+      "ListItem": 9,
+      "Equation": 82,
+      "Formula": 189,
+      "Paragraph": 161,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 82,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "Garamon_A_Geometric_Algebra_Library_Generator.tiddlers.json",
-    "tiddlers_count": 107,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Producer": "iText® 5.5.8 ©2000-2015 iText Group NV (SPRINGER SBM; licensed version) (SPRINGER SBM; licensed version) (SPRINGER SBM; licensed version) (SPRINGER SBM; licensed version)",
@@ -149,7 +156,32 @@
     "page_count_text": 42,
     "image_count": 2,
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "58584147-7037-4bf3-8386-72f4410fe753",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Garamon_A_Geometric_Algebra_Library_Generator.lines.json",
+        "bytes": 1845151
+      },
+      {
+        "format": "md",
+        "path": "Garamon_A_Geometric_Algebra_Library_Generator.md",
+        "bytes": 111732
+      },
+      {
+        "format": "tex.zip",
+        "path": "Garamon_A_Geometric_Algebra_Library_Generator.tex.zip",
+        "bytes": 517522
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Garamon_A_Geometric_Algebra_Library_Generator.tiddlers.json",
+    "tiddlers_count": 533,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -899,18 +931,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7641.0,
       "detail": "2 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T09:49:41Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10749.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T09:49:42Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 628.5,
+      "detail": "610 objects, 82 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T09:49:43Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.0,
+      "detail": "533 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Garamon_A_Geometric_Algebra_Library_Generator/Garamon_A_Geometric_Algebra_Library_Generator.lines.json": "sha256:056b854d0a9e780470a298a951fa60e0a54e75e3395cedb673c1315c3c95d867"
+        "/home/wkolbe/pdfdrill-library/Garamon_A_Geometric_Algebra_Library_Generator/Garamon_A_Geometric_Algebra_Library_Generator.lines.json": "sha256:834e01b421bb859c7e16cfa1971b74339093c882de122c4120a4e3cab790352e"
       },
       "params_hash": "sha256:115b76f975f66164782aa0f84d86e6d8c17a6384f27654ab8a1bb0d13287fac4",
       "algo": "sha256",
-      "ts": "2026-08-05T20:27:52Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T09:49:42Z",
+      "provenance": "mathpix"
     }
   }
 }

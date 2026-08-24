@@ -5,6 +5,8 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -48,21 +50,20 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Paragraph": 1,
+      "Sidenote": 2,
+      "Formula": 2,
+      "Paragraph": 2,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "deepseek_postscript_20260228_780a1a.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Business Card Sheet (DIN A4, 90x55mm)",
@@ -86,7 +87,35 @@
       "PDF version": "1.7"
     },
     "page_count_text": 1,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "36a6abbc-cce6-4079-ae1c-c5329095b64d",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "deepseek_postscript_20260228_780a1a.lines.json",
+        "bytes": 38777
+      },
+      {
+        "format": "md",
+        "path": "deepseek_postscript_20260228_780a1a.md",
+        "bytes": 672
+      },
+      {
+        "format": "tex.zip",
+        "path": "deepseek_postscript_20260228_780a1a.tex.zip",
+        "bytes": 1461
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 6,
+    "geometry_matched": 38,
+    "geometry_mean_sim": 0.163,
+    "tiddlers_path": "deepseek_postscript_20260228_780a1a.tiddlers.json",
+    "tiddlers_count": 24,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -167,18 +196,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.2,
       "detail": "19 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:40:39Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 4653.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:40:39Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 11.8,
+      "detail": "8 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:40:39Z",
+      "node": "geometry",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 20.4,
+      "detail": "38/6 matched"
+    },
+    {
+      "ts": "2026-08-23T10:40:40Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.3,
+      "detail": "24 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/deepseek_postscript_20260228_780a1a/deepseek_postscript_20260228_780a1a.lines.json": "sha256:40489bb0401f2da9d6cfcb8c3b04355f4664cb711f21addffacb02b3654d20a9"
+        "/home/wkolbe/pdfdrill-library/deepseek_postscript_20260228_780a1a/deepseek_postscript_20260228_780a1a.lines.json": "sha256:c6d76cfc124fcc133aacea084ffd929010c9cae97bf2e53ba1ae07cf78f2de93"
       },
       "params_hash": "sha256:afa1d31723c4334ce3fc7e6bb13d75e8bff21de3932a3bb17738f53cdb569eb2",
       "algo": "sha256",
-      "ts": "2026-08-06T01:10:49Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:40:39Z",
+      "provenance": "mathpix"
     }
   }
 }

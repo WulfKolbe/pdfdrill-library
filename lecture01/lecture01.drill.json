@@ -5,6 +5,9 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "LATEX_INGESTED",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -57,17 +60,14 @@
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "lecture01.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Example Domain",
@@ -94,7 +94,44 @@
       "PDF version": "1.5"
     },
     "page_count_text": 1,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "67538541-9ce3-4da4-a0f4-c34cb385ccba",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "lecture01.lines.json",
+        "bytes": 5574
+      },
+      {
+        "format": "md",
+        "path": "lecture01.md",
+        "bytes": 153
+      },
+      {
+        "format": "tex.zip",
+        "path": "lecture01.tex.zip",
+        "bytes": 685
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 4,
+    "geometry_matched": 6,
+    "geometry_mean_sim": 0.651,
+    "latex_source_checked": "no .tex member is named by a MathPix image_id",
+    "latex_source_path": "/home/wkolbe/pdfdrill-library/lecture01/lecture01.tex",
+    "latex_source_kind": "local (author .tex)",
+    "latex_source": "lecture01.tex",
+    "latex_macros": 0,
+    "latex_src_equations": 0,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "tiddlers_path": "lecture01.tiddlers.json",
+    "tiddlers_count": 19,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -203,18 +240,67 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.2,
       "detail": "19 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:43:07Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5201.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:43:08Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 8.1,
+      "detail": "3 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:43:08Z",
+      "node": "geometry",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 13.5,
+      "detail": "6/4 matched"
+    },
+    {
+      "ts": "2026-08-23T10:43:08Z",
+      "node": "latex",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/0 eqs matched, 0 created, 0 graphics, 0 macros"
+    },
+    {
+      "ts": "2026-08-23T10:43:08Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.1,
+      "detail": "19 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/lecture01/lecture01.lines.json": "sha256:f9c4afa439071cf3a3d4819da1a52140f568284dbfe77d70fc16d0e0ae123dbb"
+        "/home/wkolbe/pdfdrill-library/lecture01/lecture01.lines.json": "sha256:df053692243de02b8191758dc56754321e9ffa3f63aa9a8051f5cdbfed12a48f"
       },
       "params_hash": "sha256:514f02b445f8978c95a4b97634d4a8101e027c18677b3fca27e66ee6702d828b",
       "algo": "sha256",
-      "ts": "2026-08-06T01:23:40Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:43:08Z",
+      "provenance": "mathpix"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/lecture01/lecture01.tex": "sha256:618403848a9ddb5c3fc3fdfec0368618cbe4d06caac53093417430022a2f9092"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-08-23T10:43:08Z"
     }
   }
 }

@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -64,22 +65,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 2,
-      "ListItem": 5,
-      "Paragraph": 2,
+      "Table": 1,
+      "TableRow": 13,
+      "TableCell": 21,
+      "ListItem": 4,
+      "Formula": 1,
+      "Paragraph": 18,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "cv.tiddlers.json",
-    "tiddlers_count": 26,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Min-Joo Jang – Curriculum Vitae",
@@ -106,7 +108,32 @@
       "PDF version": "1.5"
     },
     "page_count_text": 2,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "3bc6880f-8832-4352-91e6-0d2e61111ef3",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "cv.lines.json",
+        "bytes": 104404
+      },
+      {
+        "format": "md",
+        "path": "cv.md",
+        "bytes": 2733
+      },
+      {
+        "format": "tex.zip",
+        "path": "cv.tex.zip",
+        "bytes": 3628
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "cv.tiddlers.json",
+    "tiddlers_count": 43,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -313,18 +340,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.6,
       "detail": "26 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:13:19Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 7531.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:13:19Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 26.7,
+      "detail": "61 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:13:20Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.5,
+      "detail": "43 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/cv/cv.lines.json": "sha256:6e9b67206302384456f2560002cc0f7678ccdcef05304dca7b6a8ecf00157591"
+        "/home/wkolbe/pdfdrill-library/cv/cv.lines.json": "sha256:5dfd3d8e0626dcf908850e2224392bf21a930a1fa05fa9cb565f93c5b7dc9516"
       },
       "params_hash": "sha256:d6686e4e7146f3807824fd85924f6bd1e9f65c2041b82159ae0de30d6877271f",
       "algo": "sha256",
-      "ts": "2026-08-06T01:10:25Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:13:19Z",
+      "provenance": "mathpix"
     }
   }
 }

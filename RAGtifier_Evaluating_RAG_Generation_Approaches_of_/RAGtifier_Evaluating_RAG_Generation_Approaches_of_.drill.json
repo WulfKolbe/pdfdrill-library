@@ -6,13 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 7,
@@ -73,28 +74,29 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 7,
+      "Footnote": 3,
       "Citation": 7,
-      "ListItem": 21,
-      "Paragraph": 7,
+      "Table": 1,
+      "TableRow": 8,
+      "TableCell": 60,
+      "Sidenote": 14,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Picture": 2,
+      "ListItem": 16,
+      "Formula": 20,
+      "Paragraph": 87,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "bibliography_entries": 50,
-    "bibliography_with_year": 44,
-    "bibliography_numeric_citations": 56,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 56,
-    "tiddlers_path": "RAGtifier_Evaluating_RAG_Generation_Approaches_of_.tiddlers.json",
-    "tiddlers_count": 106,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "RAGtifier: Evaluating RAG Generation Approaches of State-of-the-Art RAG Systems for the SIGIR LiveRAG Competition",
@@ -159,7 +161,38 @@
         "page": ""
       }
     ],
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "f7634a10-8912-4a83-97da-f4f507c906a6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "RAGtifier_Evaluating_RAG_Generation_Approaches_of_.lines.json",
+        "bytes": 897478
+      },
+      {
+        "format": "md",
+        "path": "RAGtifier_Evaluating_RAG_Generation_Approaches_of_.md",
+        "bytes": 39710
+      },
+      {
+        "format": "tex.zip",
+        "path": "RAGtifier_Evaluating_RAG_Generation_Approaches_of_.tex.zip",
+        "bytes": 147766
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 48,
+    "bibliography_with_year": 43,
+    "bibliography_numeric_citations": 54,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 54,
+    "tiddlers_path": "RAGtifier_Evaluating_RAG_Generation_Approaches_of_.tiddlers.json",
+    "tiddlers_count": 221,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -1128,18 +1161,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2386.5,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:10:24Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10521.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:10:24Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 146.4,
+      "detail": "228 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:10:24Z",
+      "node": "bibliography",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TOC_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "48 entries, 54+0 cites detected, 54 linked"
+    },
+    {
+      "ts": "2026-08-23T10:10:24Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 7.0,
+      "detail": "221 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/RAGtifier_Evaluating_RAG_Generation_Approaches_of_/RAGtifier_Evaluating_RAG_Generation_Approaches_of_.lines.json": "sha256:ba949ba68db9af7360f97e317a0ccc9985d9ae2786f97fcb4a6f214288c57b76"
+        "/home/wkolbe/pdfdrill-library/RAGtifier_Evaluating_RAG_Generation_Approaches_of_/RAGtifier_Evaluating_RAG_Generation_Approaches_of_.lines.json": "sha256:cf985a35f474382accf7ecbc206b00143533cf46106aba7e902cb80e04896f98"
       },
       "params_hash": "sha256:01954acad2b0dd5662dbfd303d25aa10f3237c8581e0a2adf4ddace266f34fde",
       "algo": "sha256",
-      "ts": "2026-08-05T23:06:38Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:10:24Z",
+      "provenance": "mathpix"
     }
   }
 }

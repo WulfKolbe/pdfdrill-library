@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "OCR_BUILT",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -75,17 +77,14 @@
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "tesseract",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "tesseract"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Qwen_postscript_20260228_8h8efjc7u.tiddlers.json",
-    "tiddlers_count": 18,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "DIN A4 Business Card Sheet (90x55mm)",
@@ -112,7 +111,35 @@
     "image_count": 0,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "23a6b8f7-7271-496b-bfae-2150a78342a7",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Qwen_postscript_20260228_8h8efjc7u.lines.json",
+        "bytes": 180
+      },
+      {
+        "format": "md",
+        "path": "Qwen_postscript_20260228_8h8efjc7u.md",
+        "bytes": 0
+      },
+      {
+        "format": "tex.zip",
+        "path": "Qwen_postscript_20260228_8h8efjc7u.tex.zip",
+        "bytes": 518
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 0,
+    "geometry_matched": 0,
+    "geometry_mean_sim": null,
+    "tiddlers_path": "Qwen_postscript_20260228_8h8efjc7u.tiddlers.json",
+    "tiddlers_count": 18,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "DIN A4 Business Card Sheet (90x55mm)",
@@ -288,18 +315,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 187.7,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:39:08Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 4673.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:39:08Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 8.5,
+      "detail": "2 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:39:08Z",
+      "node": "geometry",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 10.6,
+      "detail": "0/0 matched"
+    },
+    {
+      "ts": "2026-08-23T10:39:08Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 0.4,
+      "detail": "18 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Qwen_postscript_20260228_8h8efjc7u/Qwen_postscript_20260228_8h8efjc7u.lines.json": "sha256:039c1c02e08bf7ca9c4158b31d922153e1c6d735e060972d23f0014fc4b8f15c"
+        "/home/wkolbe/pdfdrill-library/Qwen_postscript_20260228_8h8efjc7u/Qwen_postscript_20260228_8h8efjc7u.lines.json": "sha256:0c718242d16778df0a372f85294380bcb1cf56d46db502870e9ea3e69961ee1e"
       },
       "params_hash": "sha256:fa6ffa8519e1d36da7c15acd55ce0ffe8b1543b61c3717fd04b2e0bf574ee4a3",
       "algo": "sha256",
-      "ts": "2026-08-05T23:06:24Z",
-      "provenance": "tesseract"
+      "ts": "2026-08-23T10:39:08Z",
+      "provenance": "mathpix"
     }
   }
 }

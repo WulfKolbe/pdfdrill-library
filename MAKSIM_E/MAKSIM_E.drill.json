@@ -5,7 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -13,7 +12,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -60,21 +61,21 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Paragraph": 1,
+      "Sidenote": 3,
+      "Diagram": 1,
+      "Section": 2,
+      "Paragraph": 4,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "MAKSIM_E.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "Adobe InDesign 14.0 (Macintosh)",
@@ -106,7 +107,32 @@
         "url": "www.fit.fraunhofer.de",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "bf01cdca-f0fb-4389-95f1-370350e218ee",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "MAKSIM_E.lines.json",
+        "bytes": 90546
+      },
+      {
+        "format": "md",
+        "path": "MAKSIM_E.md",
+        "bytes": 2743
+      },
+      {
+        "format": "tex.zip",
+        "path": "MAKSIM_E.tex.zip",
+        "bytes": 175946
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "MAKSIM_E.tiddlers.json",
+    "tiddlers_count": 29,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -420,18 +446,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 618.4,
       "detail": "3 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:38:25Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6070.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:38:25Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 20.8,
+      "detail": "12 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:38:25Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.0,
+      "detail": "29 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/MAKSIM_E/MAKSIM_E.lines.json": "sha256:51830f43b33073399d49dff9817539507212035277054e65a62619e532603e3b"
+        "/home/wkolbe/pdfdrill-library/MAKSIM_E/MAKSIM_E.lines.json": "sha256:ad3d49f03eb6aead312513cc7114ce5c2a7663e340f66e6df4b44dae4518030b"
       },
       "params_hash": "sha256:0e29492ccb592fd0e582581a71bf459fc61befef5e280a26fe0bc24291a5b3c0",
       "algo": "sha256",
-      "ts": "2026-08-05T21:58:56Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:38:25Z",
+      "provenance": "mathpix"
     }
   }
 }

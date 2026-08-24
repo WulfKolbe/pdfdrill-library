@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -58,22 +59,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "ListItem": 1,
-      "Paragraph": 1,
-      "Document": 1
+      "Table": 1,
+      "TableRow": 57,
+      "TableCell": 337,
+      "ListItem": 2,
+      "Paragraph": 5,
+      "Document": 1,
+      "Footnote": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "PrimaryElectionsCalendar.tiddlers.json",
-    "tiddlers_count": 20,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "Adobe InDesign 19.1 (Windows)",
@@ -99,7 +101,32 @@
     "image_count": 0,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "8c5b5e09-6b0b-465c-b741-f74cdc917ffd",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "PrimaryElectionsCalendar.lines.json",
+        "bytes": 447723
+      },
+      {
+        "format": "md",
+        "path": "PrimaryElectionsCalendar.md",
+        "bytes": 3456
+      },
+      {
+        "format": "tex.zip",
+        "path": "PrimaryElectionsCalendar.tex.zip",
+        "bytes": 5404
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "PrimaryElectionsCalendar.tiddlers.json",
+    "tiddlers_count": 27,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -315,18 +342,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 490.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:39:01Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12226.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:39:01Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 75.4,
+      "detail": "405 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:39:01Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.3,
+      "detail": "27 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/PrimaryElectionsCalendar/PrimaryElectionsCalendar.lines.json": "sha256:5b8b9ff01d4474b66d1f479d1da718b626e856dda8ecac4bedffac628f34de13"
+        "/home/wkolbe/pdfdrill-library/PrimaryElectionsCalendar/PrimaryElectionsCalendar.lines.json": "sha256:004b15e6ac62cbd804a687b2b6081a6c53905c641c7f04780a401398b2d0d434"
       },
       "params_hash": "sha256:2a2356b72b4ce2067ef11b56fca4f7c04e2e0745d0b9a28b559904ce8b778be5",
       "algo": "sha256",
-      "ts": "2026-08-05T22:46:26Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:39:01Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -73,28 +74,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 12,
-      "Citation": 11,
-      "ListItem": 11,
-      "Paragraph": 12,
+      "Footnote": 1,
+      "Citation": 6,
+      "Sidenote": 3,
+      "Abstract": 1,
+      "Diagram": 9,
+      "ListItem": 9,
+      "Formula": 12,
+      "Paragraph": 51,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "bibliography_entries": 19,
-    "bibliography_with_year": 17,
-    "bibliography_numeric_citations": 22,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 22,
-    "tiddlers_path": "raw-python.tiddlers.json",
-    "tiddlers_count": 79,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Processing RAW images in Python",
@@ -121,7 +119,38 @@
       "PDF version": "1.5"
     },
     "page_count_text": 12,
-    "image_count": 13
+    "image_count": 13,
+    "mathpix_pdf_id": "1ebfb2c9-b328-44cc-8c96-34bc753d4acf",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "raw-python.lines.json",
+        "bytes": 376886
+      },
+      {
+        "format": "md",
+        "path": "raw-python.md",
+        "bytes": 19741
+      },
+      {
+        "format": "tex.zip",
+        "path": "raw-python.tex.zip",
+        "bytes": 134502
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 17,
+    "bibliography_with_year": 17,
+    "bibliography_numeric_citations": 21,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 21,
+    "tiddlers_path": "raw-python.tiddlers.json",
+    "tiddlers_count": 135,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -434,18 +463,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.7,
       "detail": "79 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:22:06Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 7630.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:22:07Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 52.6,
+      "detail": "105 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:22:07Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "17 entries, 21+0 cites detected, 21 linked"
+    },
+    {
+      "ts": "2026-08-23T10:22:07Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.2,
+      "detail": "135 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/raw-python/raw-python.lines.json": "sha256:55a60e35323e0aaa5de25998503daefaaf8cbed79aec27f808feff31fe1864e9"
+        "/home/wkolbe/pdfdrill-library/raw-python/raw-python.lines.json": "sha256:257e8cb8b85d46c49431e5433256d2c91ec685984ff7480ac0b8cb658bfd9a1d"
       },
       "params_hash": "sha256:2ff27a1db6f3d646722b7dd2009599ff2a280adbeba448a9fbc21157a9cadd04",
       "algo": "sha256",
-      "ts": "2026-08-06T01:34:15Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:22:07Z",
+      "provenance": "mathpix"
     }
   }
 }

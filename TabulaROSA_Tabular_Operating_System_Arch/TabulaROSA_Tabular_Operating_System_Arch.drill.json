@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 9,
@@ -100,22 +101,30 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "ListItem": 24,
-      "Paragraph": 9,
-      "Document": 1
+      "Table": 10,
+      "TableRow": 86,
+      "TableCell": 175,
+      "Sidenote": 14,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Section": 2,
+      "Picture": 14,
+      "ListItem": 18,
+      "Equation": 20,
+      "Formula": 90,
+      "Paragraph": 116,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 20,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "TabulaROSA_Tabular_Operating_System_Arch.tiddlers.json",
-    "tiddlers_count": 59,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -161,7 +170,32 @@
         "url": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "f0108c1f-3cfd-4f67-8361-e545d90e2068",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "TabulaROSA_Tabular_Operating_System_Arch.lines.json",
+        "bytes": 1197890
+      },
+      {
+        "format": "md",
+        "path": "TabulaROSA_Tabular_Operating_System_Arch.md",
+        "bytes": 47837
+      },
+      {
+        "format": "tex.zip",
+        "path": "TabulaROSA_Tabular_Operating_System_Arch.tex.zip",
+        "bytes": 309853
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "TabulaROSA_Tabular_Operating_System_Arch.tiddlers.json",
+    "tiddlers_count": 315,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1002,18 +1036,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2862.2,
       "detail": "11 images, 10 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:06:26Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10331.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:06:26Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 291.7,
+      "detail": "559 objects, 20 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:06:27Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.7,
+      "detail": "315 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/TabulaROSA_Tabular_Operating_System_Arch/TabulaROSA_Tabular_Operating_System_Arch.lines.json": "sha256:f13113f4e9d8a070ddad06e68583bafffe34d396d1b65731ee82df548918f212"
+        "/home/wkolbe/pdfdrill-library/TabulaROSA_Tabular_Operating_System_Arch/TabulaROSA_Tabular_Operating_System_Arch.lines.json": "sha256:fdd61082c7f88690d5b73a555f249e6924aa448a41b8b813d87e4632130eff69"
       },
       "params_hash": "sha256:c3eb6d9ef1239b7406d796d3e2fc311e3b482ed584e0087c005b472f128760c0",
       "algo": "sha256",
-      "ts": "2026-08-05T23:58:08Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:06:26Z",
+      "provenance": "mathpix"
     }
   }
 }

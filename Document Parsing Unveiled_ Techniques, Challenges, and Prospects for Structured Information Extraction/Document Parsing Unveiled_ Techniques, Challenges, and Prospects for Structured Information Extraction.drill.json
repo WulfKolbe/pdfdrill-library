@@ -5,14 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -54,21 +55,19 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
+      "Diagram": 1,
       "Paragraph": 1,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Document Parsing Unveiled_ Techniques, Challenges, and Prospects for Structured Information Extraction.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "PDFium",
@@ -92,7 +91,32 @@
     "page_count_text": 1,
     "image_count": 0,
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "865c36b8-d526-4fce-b252-6e15314513a0",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Document Parsing Unveiled_ Techniques, Challenges, and Prospects for Structured Information Extraction.lines.json",
+        "bytes": 14337
+      },
+      {
+        "format": "md",
+        "path": "Document Parsing Unveiled_ Techniques, Challenges, and Prospects for Structured Information Extraction.md",
+        "bytes": 1004
+      },
+      {
+        "format": "tex.zip",
+        "path": "Document Parsing Unveiled_ Techniques, Challenges, and Prospects for Structured Information Extraction.tex.zip",
+        "bytes": 265436
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Document Parsing Unveiled_ Techniques, Challenges, and Prospects for Structured Information Extraction.tiddlers.json",
+    "tiddlers_count": 20,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -297,18 +321,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 520.9,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:37:51Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5472.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:37:51Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 8.9,
+      "detail": "4 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:37:51Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.5,
+      "detail": "20 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Document Parsing Unveiled_ Techniques, Challenges, and Prospects for Structured Information Extraction/Document Parsing Unveiled_ Techniques, Challenges, and Prospects for Structured Information Extraction.lines.json": "sha256:187bee1088d4c9dad5d98180ee4e8bdae15cd09a87053d1c6840214e194146f0"
+        "/home/wkolbe/pdfdrill-library/Document Parsing Unveiled_ Techniques, Challenges, and Prospects for Structured Information Extraction/Document Parsing Unveiled_ Techniques, Challenges, and Prospects for Structured Information Extraction.lines.json": "sha256:f3b641e4f538835b8f1588d41ecf2007f0c36597d7d83dfd18948dcb6cb91967"
       },
       "params_hash": "sha256:aded3557b9748b8b85a39ec4e4840e5d4f04456ceedc6e468334cfd5dc37ad17",
       "algo": "sha256",
-      "ts": "2026-08-05T19:50:46Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:37:51Z",
+      "provenance": "mathpix"
     }
   }
 }

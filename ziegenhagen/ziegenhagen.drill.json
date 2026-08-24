@@ -6,6 +6,8 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
+    "LATEX_INGESTED",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -58,22 +60,23 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
-      "ListItem": 17,
-      "Paragraph": 10,
+      "Table": 10,
+      "TableRow": 26,
+      "TableCell": 79,
+      "ListItem": 2,
+      "Formula": 2,
+      "Paragraph": 38,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "ziegenhagen.tiddlers.json",
-    "tiddlers_count": 54,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -100,7 +103,41 @@
       "PDF version": "1.5"
     },
     "page_count_text": 10,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "026f7475-e5bf-40f2-ae35-210b4f937044",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "ziegenhagen.lines.json",
+        "bytes": 365999
+      },
+      {
+        "format": "md",
+        "path": "ziegenhagen.md",
+        "bytes": 11578
+      },
+      {
+        "format": "tex.zip",
+        "path": "ziegenhagen.tex.zip",
+        "bytes": 13759
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "latex_source_checked": "no .tex member is named by a MathPix image_id",
+    "latex_source_path": "/home/wkolbe/pdfdrill-library/ziegenhagen/ziegenhagen.tex",
+    "latex_source_kind": "local (author .tex)",
+    "latex_source": "ziegenhagen.tex",
+    "latex_macros": 4,
+    "latex_src_equations": 0,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 10,
+    "tiddlers_path": "ziegenhagen.tiddlers.json",
+    "tiddlers_count": 79,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -237,18 +274,59 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.3,
       "detail": "54 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:24:02Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6061.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:24:02Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 39.1,
+      "detail": "168 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:24:03Z",
+      "node": "latex",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/0 eqs matched, 0 created, 10 graphics, 4 macros"
+    },
+    {
+      "ts": "2026-08-23T10:24:03Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.5,
+      "detail": "79 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/ziegenhagen/ziegenhagen.lines.json": "sha256:756ce8f6df7f58737749aa5b740dd66a68a1143e7e233885ceaa5ea7f5a71eb2"
+        "/home/wkolbe/pdfdrill-library/ziegenhagen/ziegenhagen.lines.json": "sha256:13064000f557cd8fd0bffdabfe7f3fbe3527de42c65fe64ff6883a9289353068"
       },
       "params_hash": "sha256:811b9bceec37a5280db89af1521aa4c684bf14614b4536f790747d40db525280",
       "algo": "sha256",
-      "ts": "2026-08-06T02:10:28Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:24:02Z",
+      "provenance": "mathpix"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/ziegenhagen/ziegenhagen.tex": "sha256:7ce4e86d48874b831cdcaa8b6cf96b482348a5dab60aedc793298f2732218569"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-08-23T10:24:03Z"
     }
   }
 }

@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 6,
@@ -68,22 +70,20 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 6,
-      "ListItem": 11,
-      "Paragraph": 6,
+      "ListItem": 10,
+      "Formula": 7,
+      "Paragraph": 41,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "DE120100028-project-description.tiddlers.json",
-    "tiddlers_count": 40,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "TeX",
@@ -115,7 +115,35 @@
         "url": "http://www.fenics.org",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "acea249a-8adf-428d-b604-bc888ebb0cfd",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "DE120100028-project-description.lines.json",
+        "bytes": 343652
+      },
+      {
+        "format": "md",
+        "path": "DE120100028-project-description.md",
+        "bytes": 26885
+      },
+      {
+        "format": "tex.zip",
+        "path": "DE120100028-project-description.tex.zip",
+        "bytes": 28465
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 291,
+    "geometry_matched": 324,
+    "geometry_mean_sim": 0.898,
+    "tiddlers_path": "DE120100028-project-description.tiddlers.json",
+    "tiddlers_count": 81,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -428,18 +456,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2377.4,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:07:06Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9124.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:07:06Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 57.4,
+      "detail": "65 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:07:07Z",
+      "node": "geometry",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 239.7,
+      "detail": "324/291 matched"
+    },
+    {
+      "ts": "2026-08-23T10:07:07Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.0,
+      "detail": "81 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/DE120100028-project-description/DE120100028-project-description.lines.json": "sha256:b8d55e003809673064381218fdc50daddd4e3cfb69182383be8dd3c2f9c44adc"
+        "/home/wkolbe/pdfdrill-library/DE120100028-project-description/DE120100028-project-description.lines.json": "sha256:96aded9337611ebd7cd8211dac6d4013c3879c4dfbfdc9c2a17d52010b67026d"
       },
       "params_hash": "sha256:c31ef901f83e8941347f348f7fa0d3429da4a21f628c0f99a4f9f4bd0184d5d1",
       "algo": "sha256",
-      "ts": "2026-08-05T06:57:08Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:07:06Z",
+      "provenance": "mathpix"
     }
   }
 }

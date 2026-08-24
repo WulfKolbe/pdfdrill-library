@@ -6,12 +6,13 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 40,
@@ -87,22 +88,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 40,
-      "ListItem": 6,
-      "Paragraph": 40,
+      "Footnote": 8,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Section": 4,
+      "ListItem": 17,
+      "Equation": 1,
+      "Formula": 93,
+      "Paragraph": 103,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 1,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "New_Applications_of_Cliffords_Geometric_Algebra.tiddlers.json",
-    "tiddlers_count": 103,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Producer": "iText® 5.5.8 ©2000-2015 iText Group NV (SPRINGER SBM; licensed version)",
@@ -126,7 +130,32 @@
     "page_count_text": 40,
     "image_count": 1,
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "8614d678-9091-4601-bf05-413ad8d87b32",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "New_Applications_of_Cliffords_Geometric_Algebra.lines.json",
+        "bytes": 2020663
+      },
+      {
+        "format": "md",
+        "path": "New_Applications_of_Cliffords_Geometric_Algebra.md",
+        "bytes": 122272
+      },
+      {
+        "format": "tex.zip",
+        "path": "New_Applications_of_Cliffords_Geometric_Algebra.tex.zip",
+        "bytes": 221354
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "New_Applications_of_Cliffords_Geometric_Algebra.tiddlers.json",
+    "tiddlers_count": 288,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -627,18 +656,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6573.4,
       "detail": "1 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T09:52:20Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9911.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T09:52:20Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 345.3,
+      "detail": "270 objects, 1 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T09:52:21Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 9.8,
+      "detail": "288 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/New_Applications_of_Cliffords_Geometric_Algebra/New_Applications_of_Cliffords_Geometric_Algebra.lines.json": "sha256:46e3839b5c04c9631899cee35b3a07de80ae35f668e0e9bcc91fa6be75e5d232"
+        "/home/wkolbe/pdfdrill-library/New_Applications_of_Cliffords_Geometric_Algebra/New_Applications_of_Cliffords_Geometric_Algebra.lines.json": "sha256:80faca931194c32d712214690fe466add653f7c9feb743d9ebc503b11d78f255"
       },
       "params_hash": "sha256:4f48514b6a12bb25de948f1f5a6edebc4169b567452c751c1c181087a887a5eb",
       "algo": "sha256",
-      "ts": "2026-08-05T22:21:33Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T09:52:20Z",
+      "provenance": "mathpix"
     }
   }
 }

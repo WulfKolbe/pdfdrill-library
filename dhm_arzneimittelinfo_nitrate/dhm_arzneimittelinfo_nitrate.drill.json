@@ -5,6 +5,8 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -53,21 +55,19 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Paragraph": 1,
+      "Formula": 1,
+      "Paragraph": 3,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "dhm_arzneimittelinfo_nitrate.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "arzneimittelinfo.indd",
@@ -92,7 +92,35 @@
       "PDF subtype": "PDF/X-1:2001"
     },
     "page_count_text": 1,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "47a659a5-aae4-4136-a51b-4bb224b2306a",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "dhm_arzneimittelinfo_nitrate.lines.json",
+        "bytes": 37669
+      },
+      {
+        "format": "md",
+        "path": "dhm_arzneimittelinfo_nitrate.md",
+        "bytes": 2681
+      },
+      {
+        "format": "tex.zip",
+        "path": "dhm_arzneimittelinfo_nitrate.tex.zip",
+        "bytes": 3513
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 25,
+    "geometry_matched": 36,
+    "geometry_mean_sim": 0.686,
+    "tiddlers_path": "dhm_arzneimittelinfo_nitrate.tiddlers.json",
+    "tiddlers_count": 22,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -187,18 +215,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.0,
       "detail": "19 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:40:53Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5260.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:40:53Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 12.7,
+      "detail": "6 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:40:53Z",
+      "node": "geometry",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 43.9,
+      "detail": "36/25 matched"
+    },
+    {
+      "ts": "2026-08-23T10:40:53Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.1,
+      "detail": "22 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/dhm_arzneimittelinfo_nitrate/dhm_arzneimittelinfo_nitrate.lines.json": "sha256:0b2029328766eef15e5be02af8889da12a7b81f3eaec433ab2258ed79eef4e80"
+        "/home/wkolbe/pdfdrill-library/dhm_arzneimittelinfo_nitrate/dhm_arzneimittelinfo_nitrate.lines.json": "sha256:ea1c3fab983195a90a4b866de1859c678c5ef2b35b8803197cd5d6d6537e56b0"
       },
       "params_hash": "sha256:ccb8d5f7da9b4bf41013af753efb3aadfde6d6c121aa23954ee4c30c5b947344",
       "algo": "sha256",
-      "ts": "2026-08-06T01:10:57Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:40:53Z",
+      "provenance": "mathpix"
     }
   }
 }

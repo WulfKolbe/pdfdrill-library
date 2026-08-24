@@ -5,13 +5,15 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "TOC_ABSENT",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -55,21 +57,18 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Paragraph": 1,
+      "Abstract": 1,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Netzverkehrsimulation+und+Angriffserkennung+anhand+von+Machine+Learning+in+IEC61850-basierten+Netzwerken.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Author": "Luca Kotewitz",
@@ -95,7 +94,35 @@
     "page_count_text": 1,
     "image_count": 0,
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "mathpix_pdf_id": "b4eb0ceb-8b75-4230-936f-d6cc4a7adc27",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Netzverkehrsimulation+und+Angriffserkennung+anhand+von+Machine+Learning+in+IEC61850-basierten+Netzwerken.lines.json",
+        "bytes": 29669
+      },
+      {
+        "format": "md",
+        "path": "Netzverkehrsimulation+und+Angriffserkennung+anhand+von+Machine+Learning+in+IEC61850-basierten+Netzwerken.md",
+        "bytes": 2084
+      },
+      {
+        "format": "tex.zip",
+        "path": "Netzverkehrsimulation+und+Angriffserkennung+anhand+von+Machine+Learning+in+IEC61850-basierten+Netzwerken.tex.zip",
+        "bytes": 2617
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 25,
+    "geometry_matched": 26,
+    "geometry_mean_sim": 0.962,
+    "tiddlers_path": "Netzverkehrsimulation+und+Angriffserkennung+anhand+von+Machine+Learning+in+IEC61850-basierten+Netzwerken.tiddlers.json",
+    "tiddlers_count": 19,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -261,18 +288,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 285.6,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:38:39Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5245.7,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:38:39Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 9.1,
+      "detail": "3 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:38:40Z",
+      "node": "geometry",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 29.4,
+      "detail": "26/25 matched"
+    },
+    {
+      "ts": "2026-08-23T10:38:40Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 0.5,
+      "detail": "19 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Netzverkehrsimulation+und+Angriffserkennung+anhand+von+Machine+Learning+in+IEC61850-basierten+Netzwerken/Netzverkehrsimulation+und+Angriffserkennung+anhand+von+Machine+Learning+in+IEC61850-basierten+Netzwerken.lines.json": "sha256:241695010f25de729e223833ebf87434796ebd9c4cb67ec5b632f1929dac75e9"
+        "/home/wkolbe/pdfdrill-library/Netzverkehrsimulation+und+Angriffserkennung+anhand+von+Machine+Learning+in+IEC61850-basierten+Netzwerken/Netzverkehrsimulation+und+Angriffserkennung+anhand+von+Machine+Learning+in+IEC61850-basierten+Netzwerken.lines.json": "sha256:d7138fbd9cf38d0fcc1d55474492081e5fbe896f5b0e5daa099c8ef9dab683f9"
       },
       "params_hash": "sha256:3359b43f557ddb686f83aa5e841eb0faf9e6efd77efb3f72dcad1f33ae7fbcd0",
       "algo": "sha256",
-      "ts": "2026-08-05T22:21:18Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:38:39Z",
+      "provenance": "mathpix"
     }
   }
 }

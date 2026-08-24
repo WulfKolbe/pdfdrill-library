@@ -5,7 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -13,7 +12,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -61,21 +62,21 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Paragraph": 1,
+      "Sidenote": 3,
+      "Diagram": 3,
+      "Section": 2,
+      "Paragraph": 4,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "SMA_Passwortrichtlinie-de-10.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "SMA Passwortrichtlinie",
@@ -104,7 +105,32 @@
     "image_count": 1,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "cacad6dd-0da3-4b96-b8da-39548df2af20",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "SMA_Passwortrichtlinie-de-10.lines.json",
+        "bytes": 27775
+      },
+      {
+        "format": "md",
+        "path": "SMA_Passwortrichtlinie-de-10.md",
+        "bytes": 1464
+      },
+      {
+        "format": "tex.zip",
+        "path": "SMA_Passwortrichtlinie-de-10.tex.zip",
+        "bytes": 39030
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "SMA_Passwortrichtlinie-de-10.tiddlers.json",
+    "tiddlers_count": 31,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "SMA Passwortrichtlinie",
@@ -352,18 +378,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 325.1,
       "detail": "1 images, 1 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:39:33Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5559.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:39:33Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 12.7,
+      "detail": "14 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:39:33Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.0,
+      "detail": "31 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/SMA_Passwortrichtlinie-de-10/SMA_Passwortrichtlinie-de-10.lines.json": "sha256:5fab1a3147eb31abdf06d949cd5bdc927354499b332d35a810aa5b4bcfc87fdc"
+        "/home/wkolbe/pdfdrill-library/SMA_Passwortrichtlinie-de-10/SMA_Passwortrichtlinie-de-10.lines.json": "sha256:142b6fdb63b0e84f92d4fe8a286f18271da01d84830daf242ee23018015e22f5"
       },
       "params_hash": "sha256:bc163328dd8a8934abdf65562948965139c98e257bb5067a717569ae84dc7799",
       "algo": "sha256",
-      "ts": "2026-08-05T23:15:23Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:39:33Z",
+      "provenance": "mathpix"
     }
   }
 }

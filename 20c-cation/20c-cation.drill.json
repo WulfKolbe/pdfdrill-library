@@ -6,14 +6,17 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "LATEX_INGESTED",
+    "TIDDLERS_BUILT",
+    "CDN_CROPS_BUILT"
   ],
   "evidence": {
     "pages": 2,
@@ -66,22 +69,20 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 2,
-      "ListItem": 1,
-      "Paragraph": 2,
+      "Equation": 4,
+      "Formula": 14,
+      "Paragraph": 6,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 4,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "20c-cation.tiddlers.json",
-    "tiddlers_count": 22,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
     "abstract_search_scope": "first2pages",
     "links": [],
@@ -107,7 +108,42 @@
       "PDF version": "1.5"
     },
     "page_count_text": 2,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "7b6ef9dc-8cf0-4688-a17d-e744433ad045",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "20c-cation.lines.json",
+        "bytes": 38237
+      },
+      {
+        "format": "md",
+        "path": "20c-cation.md",
+        "bytes": 2395
+      },
+      {
+        "format": "tex.zip",
+        "path": "20c-cation.tex.zip",
+        "bytes": 3103
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "latex_source_checked": "no .tex member is named by a MathPix image_id",
+    "latex_source_path": "/home/wkolbe/pdfdrill-library/20c-cation/20c-cation.tex",
+    "latex_source_kind": "explicit (--tex)",
+    "edit_runs": 4,
+    "latex_source": "20c-cation.tex",
+    "latex_macros": 0,
+    "latex_src_equations": 4,
+    "latex_attached": 4,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "tiddlers_path": "20c-cation.tiddlers.json",
+    "tiddlers_count": 43,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -383,18 +419,91 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 665.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T09:04:34Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5244.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T09:04:38Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 14.7,
+      "detail": "27 objects, 4 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T09:04:47Z",
+      "node": "latex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "4/4 eqs matched, 0 created, 0 graphics, 0 macros"
+    },
+    {
+      "ts": "2026-08-23T09:05:31Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.6,
+      "detail": "43 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T09:10:25Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.8,
+      "detail": "43 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T09:10:48Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.8,
+      "detail": "43 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T09:11:02Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.9,
+      "detail": "43 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T09:14:37Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,CDN_CROPS_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.6,
+      "detail": "43 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/20c-cation/20c-cation.lines.json": "sha256:0554a1b210e7b4c414da72b10269d8d20446873b732427a1c16ed1f267e62fe3"
+        "/home/wkolbe/pdfdrill-library/20c-cation/20c-cation.lines.json": "sha256:21c1087d6303ee659258aeaceb101a19bd294fba98c6c5fc13ea4a8f9d7fc602"
       },
       "params_hash": "sha256:f5efb733f7415229ff8e21b5b2090659eabbfb9b4246502a8f85ad244156bbd1",
       "algo": "sha256",
-      "ts": "2026-08-03T20:49:45Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T09:04:38Z",
+      "provenance": "mathpix"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/20c-cation/20c-cation.tex": "sha256:b20e66b9de687925fc5575df320c0a21feacf49dab486f862240fd1a748f8552"
+      },
+      "params_hash": "sha256:d2ec46426c66d5702807459aa0a6804e76db8f9a3c790d7f75b237c098901e96",
+      "algo": "sha256",
+      "ts": "2026-08-23T09:04:47Z"
     }
   }
 }

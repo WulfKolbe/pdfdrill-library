@@ -7,7 +7,14 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -163,12 +170,788 @@
       "PDF version": "1.5"
     },
     "page_count_text": 6,
-    "image_count": 2
+    "image_count": 2,
+    "abstract": "Recent advances in information extraction have paved the way for the automatic construction and growth of large, semantic knowledge bases from Web sources. However, the very nature of these extraction techniques entails that the resulting RDF knowledge bases may face a significant amount of incorrect, incomplete, or even inconsistent (i.e., uncertain) factual knowledge, which makes efficient query answering over this kind of uncertain RDF data a challenge. Our engine, coined URDF, augments first-order reasoning by a combination of *soft rules* (Datalog-style implications), which are grounded in a deductive fashion in order to derive new facts from existing ones, and *hard rules* (mutual-exclusiveness constraints), which enforce additional consistency constraints among both base and derived facts. At the core of our approach is an efficient approximation algorithm for this *constrained* form of the *weighted MaxSAT problem* with soft and hard rules, allowing us to dynamically resolve inconsistencies directly *at query-time*. Experiments on real-world and synthetic data confirm a high robustness and significantly improved runtime of our framework in comparison to state-of-the-art MCMC techniques.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Query-Time Reasoning in",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "Bases with Soft",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "Ndapandula Nakashole,",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "Fabian Suchanek",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "Keywords",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.4",
+        "title": "1. INTRODUCTION",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "3",
+        "title": "Uncertain RDF Knowledge",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4",
+        "title": "and Hard Rules",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4.1",
+        "title": "Mauro Sozio",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.2",
+        "title": "Martin Theobald",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.3",
+        "title": "2. DEFINITIONS AND NOTATIONS",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.3.1",
+        "title": "2.1 Soft Deduction Rules",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.3.2",
+        "title": "2.2 Hard Consistency Constraints",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.3.3",
+        "title": "2.3 Problem Definition",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.4",
+        "title": "3. ALGORITHM",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.5",
+        "title": "Algorithm 1 Weighted MaxSAT with Soft and Hard Rules",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.6",
+        "title": "4. REASONING FRAMEWORK",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.7",
+        "title": "Algorithm 2 URDF Reasoning Framework",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.8",
+        "title": "Require:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.9",
+        "title": "5. EXPERIMENTS",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.9.1",
+        "title": "5.1 YAGOKnowledgeBase, Rules andQueries",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.9.2",
+        "title": "5.2 Markov Logic: MAP and MC-SAT",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.9.3",
+        "title": "5.2.1 Basic Query Processing over YAGO.",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.10",
+        "title": "mmss 11,,00mm0000ss,,000000",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.11",
+        "title": "|C|+|S| |C|+|S| ,1 ,1 ,1 ,2",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.12",
+        "title": "Figure 1: Asymptotic MaxSAT behavior (a) and MaxSAT vs.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.13",
+        "title": "MAP and MC-SAT (b).",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.13.1",
+        "title": "5.2.2 Synthetic Rule Expansions.",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.13.2",
+        "title": "5.2.3 Inductively Learned Rules.",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.14",
+        "title": "Figure 2: SLD deduction levels (a) and LUBM results (b).",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.14.1",
+        "title": "5.2.4 LUBM Benchmark.",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.15",
+        "title": "6. RELATEDWORK",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.16",
+        "title": "Table 1: Basic",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.17",
+        "title": "7. CONCLUSIONS",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.18",
+        "title": "8. REFERENCES",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.19",
+        "title": "YAGO results.",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.12",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2012-07-20T15:47:09+02",
+    "mod_date": "2012-07-20T15:47:09+02",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 6,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 439915,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) kpathsea version 6.0.1",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "querytime2012",
+    "title": "Query-Time Reasoning in Uncertain RDF Knowledge Bases with Soft and Hard Rules",
+    "author": "",
+    "year": "2012",
+    "pages": 6,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "for the",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 560.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 53.0,
+      "y": 776.0,
+      "name": "page.",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 564.0,
+      "name": "section*.1",
+      "kind": "section"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 347.0,
+      "name": "section*.2",
+      "kind": "section"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 316.0,
+      "name": "section.1",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 54.0,
+      "y": 568.0,
+      "name": "section.2",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 54.0,
+      "y": 158.0,
+      "name": "subsection.2.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 2,
+      "x": 317.0,
+      "y": 647.0,
+      "name": "subsection.2.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 2,
+      "x": 317.0,
+      "y": 443.0,
+      "name": "subsection.2.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 317.0,
+      "y": 723.0,
+      "name": "ALC@unique.1",
+      "kind": "other"
+    },
+    {
+      "page": 3,
+      "x": 553.0,
+      "y": 717.0,
+      "name": "ALC@unique.2",
+      "kind": "other"
+    },
+    {
+      "page": 3,
+      "x": 431.0,
+      "y": 706.0,
+      "name": "ALC@unique.3",
+      "kind": "other"
+    },
+    {
+      "page": 3,
+      "x": 473.0,
+      "y": 675.0,
+      "name": "ALC@unique.4",
+      "kind": "other"
+    },
+    {
+      "page": 3,
+      "x": 321.0,
+      "y": 93.0,
+      "name": "Hfootnote.1",
+      "kind": "other"
+    },
+    {
+      "page": 3,
+      "x": 317.0,
+      "y": 738.0,
+      "name": "algorithm.1",
+      "kind": "other"
+    },
+    {
+      "page": 3,
+      "x": 317.0,
+      "y": 552.0,
+      "name": "corollary.1",
+      "kind": "corollary"
+    },
+    {
+      "page": 3,
+      "x": 358.0,
+      "y": 305.0,
+      "name": "definition.1",
+      "kind": "definition"
+    },
+    {
+      "page": 3,
+      "x": 107.0,
+      "y": 366.0,
+      "name": "equation.3.1",
+      "kind": "equation"
+    },
+    {
+      "page": 3,
+      "x": 54.0,
+      "y": 670.0,
+      "name": "section.3",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 317.0,
+      "y": 413.0,
+      "name": "section.4",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 54.0,
+      "y": 73.0,
+      "name": "theorem.1",
+      "kind": "theorem"
+    },
+    {
+      "page": 4,
+      "x": 151.0,
+      "y": 633.0,
+      "name": "ALC@unique.10",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 138.0,
+      "y": 612.0,
+      "name": "ALC@unique.11",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 280.0,
+      "y": 717.0,
+      "name": "ALC@unique.5",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 219.0,
+      "y": 706.0,
+      "name": "ALC@unique.6",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 141.0,
+      "y": 685.0,
+      "name": "ALC@unique.7",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 120.0,
+      "y": 664.0,
+      "name": "ALC@unique.8",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 274.0,
+      "y": 654.0,
+      "name": "ALC@unique.9",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 321.0,
+      "y": 84.0,
+      "name": "Hfootnote.2",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 54.0,
+      "y": 738.0,
+      "name": "algorithm.2",
+      "kind": "other"
+    },
+    {
+      "page": 4,
+      "x": 54.0,
+      "y": 284.0,
+      "name": "section.5",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 54.0,
+      "y": 155.0,
+      "name": "subsection.5.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 317.0,
+      "y": 582.0,
+      "name": "subsection.5.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 317.0,
+      "y": 342.0,
+      "name": "subsubsection.5.2.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 321.0,
+      "y": 84.0,
+      "name": "Hfootnote.3",
+      "kind": "other"
+    },
+    {
+      "page": 5,
+      "x": 94.0,
+      "y": 658.0,
+      "name": "figure.1",
+      "kind": "figure"
+    },
+    {
+      "page": 5,
+      "x": 364.0,
+      "y": 658.0,
+      "name": "figure.2",
+      "kind": "figure"
+    },
+    {
+      "page": 5,
+      "x": 317.0,
+      "y": 506.0,
+      "name": "section.6",
+      "kind": "section"
+    },
+    {
+      "page": 5,
+      "x": 54.0,
+      "y": 577.0,
+      "name": "subsubsection.5.2.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 54.0,
+      "y": 169.0,
+      "name": "subsubsection.5.2.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 317.0,
+      "y": 626.0,
+      "name": "subsubsection.5.2.4",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 542.0,
+      "name": "cite.CarlsonBWHM10",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 54.0,
+      "y": 100.0,
+      "name": "cite.DBLP:books/wi/AlonS92",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 518.0,
+      "name": "cite.DBLP:conf/aaai/ChangRRR08",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 274.0,
+      "name": "cite.DBLP:conf/aaai/PoonDS08",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 197.0,
+      "name": "cite.DBLP:conf/aaai/SinglaD06",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 105.0,
+      "name": "cite.DBLP:conf/cidr/Widom05",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 333.0,
+      "name": "cite.DBLP:conf/cikm/MeiserDT11",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 54.0,
+      "y": 89.0,
+      "name": "cite.DBLP:conf/icde/AntovaKO07a",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 232.0,
+      "name": "cite.DBLP:conf/ijcai/RaedtKT07",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 298.0,
+      "name": "cite.DBLP:conf/kr/PichlerRSW10",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 567.0,
+      "name": "cite.DBLP:conf/sigmod/BoulosDMMRS05",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 604.0,
+      "name": "cite.DBLP:journals/jacm/AptE82",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 214.0,
+      "name": "cite.DBLP:journals/ml/RichardsonD06",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 315.0,
+      "name": "cite.DBLP:journals/pvldb/NiuRDS11",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 122.0,
+      "name": "cite.DBLP:journals/pvldb/WickMM10",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 500.0,
+      "name": "cite.DBLP:journals/siamdm/GoemansW94",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 483.0,
+      "name": "cite.Gottlob:2003",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 449.0,
+      "name": "cite.Jaumard19871",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 432.0,
+      "name": "cite.Johnson",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 415.0,
+      "name": "cite.Kautz96",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 357.0,
+      "name": "cite.NIPS2009_0857",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 249.0,
+      "name": "cite.Quinlan:1990",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 466.0,
+      "name": "cite.citeulike:1019367",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 584.0,
+      "name": "cite.dbpedia",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 390.0,
+      "name": "cite.probabilisticDL",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 163.0,
+      "name": "cite.sofie",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 374.0,
+      "name": "cite.stracciaWS2008",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 147.0,
+      "name": "cite.urdf",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 181.0,
+      "name": "cite.yago",
+      "kind": "other"
+    },
+    {
+      "page": 6,
+      "x": 54.0,
+      "y": 310.0,
+      "name": "section.7",
+      "kind": "section"
+    },
+    {
+      "page": 6,
+      "x": 54.0,
+      "y": 113.0,
+      "name": "section.8",
+      "kind": "section"
+    },
+    {
+      "page": 6,
+      "x": 283.0,
+      "y": 621.0,
+      "name": "table.1",
+      "kind": "table"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "HMFGDN+NimbusSanL-Bold",
@@ -577,7 +1360,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 5,
+      "x0": 322.19,
+      "y0": 53.8,
+      "x1": 432.18,
+      "y1": 113.89,
+      "w_pt": 109.98,
+      "h_pt": 60.09,
+      "name": "Im3",
+      "imagemask": false,
+      "width_px": 1465,
+      "height_px": 822,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 959,
+      "y_ppi": 985,
+      "size_bytes": 33484,
+      "object_id": "198 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 5,
+      "x0": 442.93,
+      "y0": 53.8,
+      "x1": 552.92,
+      "y1": 113.89,
+      "w_pt": 109.98,
+      "h_pt": 60.09,
+      "name": "Im4",
+      "imagemask": false,
+      "width_px": 1295,
+      "height_px": 747,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 848,
+      "y_ppi": 895,
+      "size_bytes": 36864,
+      "object_id": "199 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -694,6 +1518,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 10.8,
       "detail": "243 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-24T00:38:42Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 27.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-24T00:38:43Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "29 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-24T00:38:43Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 9.1,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-24T00:38:43Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 0.9,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-24T00:38:43Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 13.9,
+      "detail": "73 dests across 11 kinds"
+    },
+    {
+      "ts": "2026-08-24T00:38:44Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 130.4,
+      "detail": "citekey=querytime2012"
+    },
+    {
+      "ts": "2026-08-24T00:38:47Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3774.6,
+      "detail": "2 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {

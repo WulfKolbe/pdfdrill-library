@@ -6,12 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 24,
@@ -83,22 +85,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 24,
-      "ListItem": 6,
-      "Paragraph": 24,
+      "Footnote": 16,
+      "Citation": 1,
+      "Abstract": 1,
+      "Diagram": 1,
+      "ListItem": 11,
+      "Equation": 50,
+      "Formula": 284,
+      "Paragraph": 101,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 50,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "A_Class_of_Conceptual_Spaces_Consisting_of_Boundar.tiddlers.json",
-    "tiddlers_count": 71,
-    "tiddlers_svg_mode": "inline",
     "links": [
       {
         "page": 1,
@@ -127,7 +132,37 @@
       "PDF version": "1.7"
     },
     "page_count_text": 24,
-    "image_count": 23
+    "image_count": 23,
+    "mathpix_pdf_id": "2aa0ecd1-9a12-440e-bc3b-5b6d5b8153a8",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "A_Class_of_Conceptual_Spaces_Consisting_of_Boundar.lines.json",
+        "bytes": 1005985
+      },
+      {
+        "format": "md",
+        "path": "A_Class_of_Conceptual_Spaces_Consisting_of_Boundar.md",
+        "bytes": 67153
+      },
+      {
+        "format": "tex.zip",
+        "path": "A_Class_of_Conceptual_Spaces_Consisting_of_Boundar.tex.zip",
+        "bytes": 82023
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "bibliography_entries": 15,
+    "bibliography_with_year": 15,
+    "bibliography_numeric_citations": 4,
+    "bibliography_authoryear_citations": 2,
+    "bibliography_cites": 5,
+    "tiddlers_path": "A_Class_of_Conceptual_Spaces_Consisting_of_Boundar.tiddlers.json",
+    "tiddlers_count": 523,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1099,18 +1134,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6910.3,
       "detail": "23 images, 23 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T09:53:55Z",
+      "node": "mathpix",
+      "from": "BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9434.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T09:53:55Z",
+      "node": "model",
+      "from": "BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 292.3,
+      "detail": "490 objects, 50 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T09:53:56Z",
+      "node": "bibliography",
+      "from": "BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "15 entries, 4+2 cites detected, 5 linked"
+    },
+    {
+      "ts": "2026-08-23T09:53:56Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.5,
+      "detail": "523 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/A_Class_of_Conceptual_Spaces_Consisting_of_Boundar/A_Class_of_Conceptual_Spaces_Consisting_of_Boundar.lines.json": "sha256:8a2a542500d87fa7d526f66ba07ed18bde1ea133613325dc9afcc3d1248cc9ef"
+        "/home/wkolbe/pdfdrill-library/A_Class_of_Conceptual_Spaces_Consisting_of_Boundar/A_Class_of_Conceptual_Spaces_Consisting_of_Boundar.lines.json": "sha256:06b5c3170eb2fa0f1d4e3d4ff609c6fcf86294caaf2043d9862d14e76e9bc5fd"
       },
       "params_hash": "sha256:4e648d2225ed6281b377931bd93d03a6e459b0cc0b8d4cb00d59e98386193610",
       "algo": "sha256",
-      "ts": "2026-08-04T07:29:31Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T09:53:55Z",
+      "provenance": "mathpix"
     }
   }
 }

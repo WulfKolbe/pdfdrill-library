@@ -6,6 +6,8 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -56,22 +58,19 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 5,
-      "ListItem": 5,
-      "Paragraph": 5,
+      "Toc": 1,
+      "Paragraph": 16,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "idmt_real_time_pitch_detection_documentation.tiddlers.json",
-    "tiddlers_count": 32,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Real-Time Pitch Detection – Documentation",
@@ -95,7 +94,35 @@
       "PDF version": "1.4"
     },
     "page_count_text": 5,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "a7476690-5dd0-4346-a48e-2b2cf1b3adfd",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "idmt_real_time_pitch_detection_documentation.lines.json",
+        "bytes": 136678
+      },
+      {
+        "format": "md",
+        "path": "idmt_real_time_pitch_detection_documentation.md",
+        "bytes": 6133
+      },
+      {
+        "format": "tex.zip",
+        "path": "idmt_real_time_pitch_detection_documentation.tex.zip",
+        "bytes": 7187
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 44,
+    "geometry_matched": 139,
+    "geometry_mean_sim": 0.346,
+    "tiddlers_path": "idmt_real_time_pitch_detection_documentation.tiddlers.json",
+    "tiddlers_count": 39,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -246,18 +273,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.5,
       "detail": "32 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:15:39Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5691.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:15:39Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 17.4,
+      "detail": "23 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:15:39Z",
+      "node": "geometry",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 68.8,
+      "detail": "139/44 matched"
+    },
+    {
+      "ts": "2026-08-23T10:15:39Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.8,
+      "detail": "39 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/idmt_real_time_pitch_detection_documentation/idmt_real_time_pitch_detection_documentation.lines.json": "sha256:be422b578636f73d6c396b9bdfb94bbefd12caf12ff6e0df54c03bdb606b0408"
+        "/home/wkolbe/pdfdrill-library/idmt_real_time_pitch_detection_documentation/idmt_real_time_pitch_detection_documentation.lines.json": "sha256:1740af3266d3aa8ba4a43f037c4ffe346cbea9a1573ccfa79a398eae423050ce"
       },
       "params_hash": "sha256:84ccabde05703a9c01b483eab12521e5662691869c0df486558ddde7e41c75d2",
       "algo": "sha256",
-      "ts": "2026-08-06T01:21:21Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:15:39Z",
+      "provenance": "mathpix"
     }
   }
 }

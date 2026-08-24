@@ -6,7 +6,16 @@
     "FONTS_LAYER_KNOWN",
     "OCR_BUILT",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT"
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -64,21 +73,18 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Paragraph": 2,
+      "Paragraph": 1,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "tesseract",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "tesseract"
+      "source": "mathpix"
     },
-    "tiddlers_path": "Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models.tiddlers.json",
-    "tiddlers_count": 20,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Sairam_MA_thesis.pdf",
@@ -102,14 +108,82 @@
       "PDF version": "1.7"
     },
     "page_count_text": 1,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "922df518-3980-4e8d-a715-bcfe1cc64b16",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models.lines.json",
+        "bytes": 29715
+      },
+      {
+        "format": "md",
+        "path": "Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models.md",
+        "bytes": 2112
+      },
+      {
+        "format": "tex.zip",
+        "path": "Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models.tex.zip",
+        "bytes": 2637
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 0,
+    "geometry_matched": 0,
+    "geometry_mean_sim": null,
+    "tiddlers_path": "Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models.tiddlers.json",
+    "tiddlers_count": 19,
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Sairam_MA_thesis.pdf",
+    "author": "uhu",
+    "producer": "Microsoft: Print To PDF",
+    "creator": "",
+    "creation_date": "2021-12-22T14:33:54+01",
+    "mod_date": "2021-12-22T14:33:54+01",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 1,
+    "encrypted": false,
+    "page_size": "595.32 x 841.92 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 169187,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "uhu2021",
+    "title": "Sairam_MA_thesis.pdf",
+    "author": "uhu",
+    "year": "2021",
+    "pages": 1,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -176,18 +250,106 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.0,
       "detail": "20 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:39:48Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 4475.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:39:48Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 10.0,
+      "detail": "3 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:39:48Z",
+      "node": "geometry",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 41.2,
+      "detail": "0/0 matched"
+    },
+    {
+      "ts": "2026-08-23T10:39:49Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.4,
+      "detail": "19 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-24T00:40:23Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 32.4,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-24T00:40:24Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.1,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-24T00:40:25Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 180.3,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-24T00:40:25Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 200.3,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-24T00:40:26Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 17.6,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-24T00:40:26Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=uhu2021"
+    },
+    {
+      "ts": "2026-08-24T00:40:31Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 5274.9,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models/Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models.lines.json": "sha256:d39ca22e516183be2ae03588eaacb04b7b4ee06d3a60e8f3307b9c60337009f1"
+        "/home/wkolbe/pdfdrill-library/Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models/Vorausschauende+Instandhaltung+von+Stromnetzanlagen+mittels+Deep+Generative+Models.lines.json": "sha256:850908004489759b253fbf2d7822319593e34b908a648828a9e40b6a49b663c2"
       },
       "params_hash": "sha256:fc78f8ffd5af4d9dea953789c7861d2ea05fc7f636c4ec54f65fbd2f93657cbc",
       "algo": "sha256",
-      "ts": "2026-08-06T00:57:58Z",
-      "provenance": "tesseract"
+      "ts": "2026-08-23T10:39:48Z",
+      "provenance": "mathpix"
     }
   }
 }

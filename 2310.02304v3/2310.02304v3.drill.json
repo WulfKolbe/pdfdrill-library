@@ -5,8 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "ABSTRACT_KNOWN",
     "TOC_ABSENT",
@@ -115,14 +113,6 @@
       "numbered": 41,
       "roots": 1
     },
-    "bibliography_entries": 80,
-    "bibliography_with_year": 70,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 102,
-    "tiddlers_path": "2310.02304v3.tiddlers.json",
-    "tiddlers_count": 477,
-    "tiddlers_svg_mode": "inline",
     "abstract": "Several recent advances in AI systems solve problems by providing a &#34;scaffolding&#34; program that structures multiple calls to language models (LMs) to generate better outputs. A scaffolding program is written in a programming language such as Python. In this work, we use a language-model-infused scaffolding program to improve itself. We start with a seed &#34;improver&#34; that improves an input program according to a given utility function by querying an LM several times and returning the best solution. We then run this seed improver to improve itself. Across a small set of downstream tasks, the resulting improved improver generates programs with significantly better performance than its seed improver. A variety of self-improvement strategies are proposed by the language model, including beam search, genetic algorithms, and simulated annealing. Since the language models themselves are not altered, this is not full recursive self-improvement. Nonetheless, it demonstrates that a modern language model, GPT-4 in our experiments, is capable of writing code that can call itself to improve itself. We consider concerns around the development of self-improving technologies and evaluate the frequency with which the generated code bypasses a sandbox.",
     "abstract_method": "arxiv-abs-page",
     "abstract_search_scope": "arxiv",
@@ -192,6 +182,37 @@
         "page": 45,
         "url": "https://github.com/microsoft/stop"
       }
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "pdfTeX-1.40.25",
+      "CreationDate": "Mon Aug 19 02:42:50 2024 CEST",
+      "ModDate": "Mon Aug 19 02:42:50 2024 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "46",
+      "Encrypted": "no",
+      "Page size": "612 x 792 pts (letter)",
+      "Page rot": "0",
+      "File size": "966894 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 46,
+    "image_count": 26,
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
     ]
   },
   "pdfinfo": {
@@ -11735,6 +11756,14 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 15123.2,
       "detail": "13 images, 13 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T19:48:19Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 0,
+      "detail": "453 objects from arXiv LaTeX source"
     }
   ],
   "capabilities": {
@@ -11745,7 +11774,7 @@
       },
       "params_hash": "sha256:86777d7709f20dc1744bbf96aae5790723384781de75e6e0adfc44f91ca7c7c6",
       "algo": "sha256",
-      "ts": "2026-08-03T21:13:16Z",
+      "ts": "2026-08-23T19:48:19Z",
       "provenance": "latex-source"
     }
   }

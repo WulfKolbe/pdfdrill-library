@@ -6,11 +6,12 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 45,
@@ -95,22 +96,29 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 45,
-      "ListItem": 35,
-      "Paragraph": 45,
+      "Footnote": 1,
+      "Table": 6,
+      "TableRow": 40,
+      "TableCell": 134,
+      "Sidenote": 2,
+      "Toc": 1,
+      "Abstract": 1,
+      "Diagram": 9,
+      "Section": 6,
+      "ListItem": 25,
+      "Formula": 5,
+      "Paragraph": 100,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "CH-3127.tiddlers.json",
-    "tiddlers_count": 142,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -155,7 +163,32 @@
         "page": 36,
         "url": "http://svn.nordugrid.org/repos/workarea/florido_paganelli/performance/"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "e4eae2e8-9cfb-48b0-b4d8-c0cbf1b666f7",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "CH-3127.lines.json",
+        "bytes": 1408851
+      },
+      {
+        "format": "md",
+        "path": "CH-3127.md",
+        "bytes": 62815
+      },
+      {
+        "format": "tex.zip",
+        "path": "CH-3127.tex.zip",
+        "bytes": 614017
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "CH-3127.tiddlers.json",
+    "tiddlers_count": 218,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -2118,18 +2151,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 6074.4,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T09:49:28Z",
+      "node": "mathpix",
+      "from": "DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10456.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T09:49:29Z",
+      "node": "model",
+      "from": "DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 227.6,
+      "detail": "376 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T09:49:29Z",
+      "node": "tiddlers",
+      "from": "DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.3,
+      "detail": "218 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/CH-3127/CH-3127.lines.json": "sha256:f8448821a08fed3985dc4de9e517f675d529a904f081df52e28872300cf9e9e8"
+        "/home/wkolbe/pdfdrill-library/CH-3127/CH-3127.lines.json": "sha256:96d556f9e00f6a130e9df7cca688ae573172025037d1aabd3f8db3aba49e5807"
       },
       "params_hash": "sha256:2b815188045ac58c5d73f5e0d78a00c9ed35fab57d03a7362d797a416e0ba9e2",
       "algo": "sha256",
-      "ts": "2026-08-05T06:47:55Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T09:49:28Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -5,7 +5,6 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -13,7 +12,11 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "LATEX_INGESTED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -60,21 +63,18 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Paragraph": 1,
+      "Paragraph": 5,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "ChatGPT Chat Export-10.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -131,7 +131,44 @@
       }
     ],
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "3e036497-388e-4746-8c75-bb7ce1ab59a6",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "ChatGPT Chat Export-10.lines.json",
+        "bytes": 18072
+      },
+      {
+        "format": "md",
+        "path": "ChatGPT Chat Export-10.md",
+        "bytes": 837
+      },
+      {
+        "format": "tex.zip",
+        "path": "ChatGPT Chat Export-10.tex.zip",
+        "bytes": 1407
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 5,
+    "geometry_matched": 19,
+    "geometry_mean_sim": 0.3,
+    "latex_source_checked": "no .tex member is named by a MathPix image_id",
+    "latex_source_path": "/home/wkolbe/pdfdrill-library/ChatGPT Chat Export-10/ChatGPT Chat Export-10.tex",
+    "latex_source_kind": "local (author .tex)",
+    "latex_source": "ChatGPT Chat Export-10.tex",
+    "latex_macros": 0,
+    "latex_src_equations": 0,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "tiddlers_path": "ChatGPT Chat Export-10.tiddlers.json",
+    "tiddlers_count": 23,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -486,18 +523,67 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 308.5,
       "detail": "4 images, 4 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:37:35Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 4797.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:37:35Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 9.3,
+      "detail": "7 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:37:36Z",
+      "node": "geometry",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 17.6,
+      "detail": "19/5 matched"
+    },
+    {
+      "ts": "2026-08-23T10:37:36Z",
+      "node": "latex",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/0 eqs matched, 0 created, 0 graphics, 0 macros"
+    },
+    {
+      "ts": "2026-08-23T10:37:36Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.4,
+      "detail": "23 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/ChatGPT Chat Export-10/ChatGPT Chat Export-10.lines.json": "sha256:62f88c0b5e369f0cab4ced18fd41e55395261167e99be3f46b3f9e54de925999"
+        "/home/wkolbe/pdfdrill-library/ChatGPT Chat Export-10/ChatGPT Chat Export-10.lines.json": "sha256:d8e9dc118c34d20fd149100dafe7c337ed0c854e348fb22a2d94f61e5a70a0ad"
       },
       "params_hash": "sha256:c3e3f15ca0f5c3c166193df3bc8b6db5c1294f8d9e1f23169db8e56d1af46549",
       "algo": "sha256",
-      "ts": "2026-08-05T06:50:02Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:37:35Z",
+      "provenance": "mathpix"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/ChatGPT Chat Export-10/ChatGPT Chat Export-10.tex": "sha256:5f6f025547c6264af8510c5267bf318d56e1e397940c1f19b645bd4d1c76a66b"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-08-23T10:37:36Z"
     }
   }
 }

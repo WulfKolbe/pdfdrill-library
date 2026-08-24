@@ -5,6 +5,7 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -48,21 +49,20 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Paragraph": 1,
+      "Table": 1,
+      "TableRow": 63,
+      "TableCell": 693,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "percussion map.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Author": "Samuel Collins",
@@ -85,7 +85,32 @@
       "PDF version": "1.7"
     },
     "page_count_text": 1,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "a184d164-9281-4f50-bd46-6ac36262cb7a",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "percussion map.lines.json",
+        "bytes": 835441
+      },
+      {
+        "format": "md",
+        "path": "percussion map.md",
+        "bytes": 9106
+      },
+      {
+        "format": "tex.zip",
+        "path": "percussion map.tex.zip",
+        "bytes": 10016
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "percussion map.tiddlers.json",
+    "tiddlers_count": 19,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -180,18 +205,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.1,
       "detail": "19 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:45:08Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 18457.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:45:08Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 70.9,
+      "detail": "759 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:45:09Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.5,
+      "detail": "19 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/percussion map/percussion map.lines.json": "sha256:0fe787f29a2e060425f064a2f6e2654e71e14c2f131a16956c96377ceca2d4e7"
+        "/home/wkolbe/pdfdrill-library/percussion map/percussion map.lines.json": "sha256:a108ed304bb51781b704eefce165850aade33512ff5e08cdc8772a38f84b382d"
       },
       "params_hash": "sha256:93d3d90c454b87dfd87d8e3274d0222d770009b647ca6d79d0e8a1cdcb94f471",
       "algo": "sha256",
-      "ts": "2026-08-06T01:32:08Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:45:08Z",
+      "provenance": "mathpix"
     }
   }
 }

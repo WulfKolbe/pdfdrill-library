@@ -6,13 +6,15 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 17,
@@ -67,22 +69,21 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 17,
-      "ListItem": 148,
-      "Paragraph": 17,
+      "Abstract": 1,
+      "ListItem": 85,
+      "Formula": 8,
+      "Paragraph": 154,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "Intelligent-Internet-Whitepaper.tiddlers.json",
-    "tiddlers_count": 199,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Whitepaper of the Intelligent Internet",
@@ -113,7 +114,35 @@
     "abstract": "This whitepaper introduces the Intelligent Internet (II), a novel protocol designed to address\ngovernance failures in AI development: the Great Race towards centralization and the Gradual Dis-\nempowerment of human agency. We propose a \"Third Path\" by building a Bitcoin for the Intelligence\nAge, gifting every human a sovereign AI (II-Agent), scaling intelligence through permissionless\ncoordination via the Common-Ground protocol, and anchoring all knowledge on auditable, open-\nlicensed datasets. The framework relies on Proof-of-Benefit, minting Foundation Coins only when\nverifiable societal benefit is performed. We outline a three-layer architecture (Foundation, Culture,\nPersonal layers), define key actors and guiding principles (Openness, Verifiable Public Benefit, Cred-\nible Neutrality, Human + Agent Dignity, Sovereign Interoperability), and detail economic design,\nBFT finality, Anchor-Set provenance, Common-Ground orchestration, Universal AI access tiers, and\nprogressive governance models. We provide a comprehensive security and threat model and discuss\ninteroperability, ensuring the Intelligent Internet remains a transparent, auditable, and resilient public\nutility for the Intelligence Age.",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "62deb8dd-39d3-4500-a1f0-a615fb05156b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Intelligent-Internet-Whitepaper.lines.json",
+        "bytes": 706436
+      },
+      {
+        "format": "md",
+        "path": "Intelligent-Internet-Whitepaper.md",
+        "bytes": 42261
+      },
+      {
+        "format": "tex.zip",
+        "path": "Intelligent-Internet-Whitepaper.tex.zip",
+        "bytes": 46544
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 523,
+    "geometry_matched": 700,
+    "geometry_mean_sim": 0.737,
+    "tiddlers_path": "Intelligent-Internet-Whitepaper.tiddlers.json",
+    "tiddlers_count": 282,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Whitepaper of the Intelligent Internet",
@@ -384,18 +413,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2109.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T09:58:07Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9696.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T09:58:07Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 81.7,
+      "detail": "266 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T09:58:08Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 344.8,
+      "detail": "700/523 matched"
+    },
+    {
+      "ts": "2026-08-23T09:58:08Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.9,
+      "detail": "282 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Intelligent-Internet-Whitepaper/Intelligent-Internet-Whitepaper.lines.json": "sha256:25d636b2abd3e20741dd1be8333958bf251c211bc485c23ac0feef7110074271"
+        "/home/wkolbe/pdfdrill-library/Intelligent-Internet-Whitepaper/Intelligent-Internet-Whitepaper.lines.json": "sha256:3da4c10bdf89af93bbcd259daf47894a63b396b8ea8a23c43bab6604ac91d615"
       },
       "params_hash": "sha256:b30921a9ea18dbef2c4eb81c30fc4d8d4b5eaa3c368a8480c48e5ce5f051d84f",
       "algo": "sha256",
-      "ts": "2026-08-05T21:19:55Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T09:58:07Z",
+      "provenance": "mathpix"
     }
   }
 }

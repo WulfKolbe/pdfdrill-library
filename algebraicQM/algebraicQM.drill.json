@@ -6,6 +6,8 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -65,22 +67,20 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 3,
-      "ListItem": 22,
-      "Paragraph": 3,
+      "ListItem": 19,
+      "Formula": 64,
+      "Paragraph": 23,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "algebraicQM.tiddlers.json",
-    "tiddlers_count": 45,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "TeX",
@@ -102,7 +102,35 @@
       "PDF version": "1.4"
     },
     "page_count_text": 3,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "ea6dcb8d-8dfd-4c06-9b4c-c8ede5121139",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "algebraicQM.lines.json",
+        "bytes": 175338
+      },
+      {
+        "format": "md",
+        "path": "algebraicQM.md",
+        "bytes": 12920
+      },
+      {
+        "format": "tex.zip",
+        "path": "algebraicQM.tex.zip",
+        "bytes": 14369
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 145,
+    "geometry_matched": 166,
+    "geometry_mean_sim": 0.843,
+    "tiddlers_path": "algebraicQM.tiddlers.json",
+    "tiddlers_count": 126,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -351,18 +379,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.5,
       "detail": "45 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:11:51Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 7474.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:11:51Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 37.5,
+      "detail": "110 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:11:52Z",
+      "node": "geometry",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 132.2,
+      "detail": "166/145 matched"
+    },
+    {
+      "ts": "2026-08-23T10:11:52Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.3,
+      "detail": "126 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/algebraicQM/algebraicQM.lines.json": "sha256:d4db099da78965871bfbd7ef99267c085b6825c7c0ea30fca2e943ca2762a91c"
+        "/home/wkolbe/pdfdrill-library/algebraicQM/algebraicQM.lines.json": "sha256:f408d04175a3b3806dd39a639a204c01e407fb1c5d3364b4735d7d10bc358e5b"
       },
       "params_hash": "sha256:e7663e3db1c1a629db0c612c63361481c6341daff27de31baa0b22e547f04fbe",
       "algo": "sha256",
-      "ts": "2026-08-06T01:04:33Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:11:51Z",
+      "provenance": "mathpix"
     }
   }
 }

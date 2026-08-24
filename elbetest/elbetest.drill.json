@@ -6,6 +6,8 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
+    "LATEX_INGESTED",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -59,22 +61,22 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 2,
-      "ListItem": 5,
-      "Paragraph": 2,
+      "Diagram": 1,
+      "Picture": 3,
+      "ListItem": 1,
+      "Formula": 3,
+      "Paragraph": 7,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "elbetest.tiddlers.json",
-    "tiddlers_count": 26,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": ".elbetest.tex.dvi",
@@ -98,7 +100,41 @@
       "PDF version": "1.4"
     },
     "page_count_text": 2,
-    "image_count": 4
+    "image_count": 4,
+    "mathpix_pdf_id": "11c8ed4e-888c-4f1e-8c60-43bd9b8ca4c8",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "elbetest.lines.json",
+        "bytes": 43072
+      },
+      {
+        "format": "md",
+        "path": "elbetest.md",
+        "bytes": 1780
+      },
+      {
+        "format": "tex.zip",
+        "path": "elbetest.tex.zip",
+        "bytes": 128547
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "latex_source_checked": "no .tex member is named by a MathPix image_id",
+    "latex_source_path": "/home/wkolbe/pdfdrill-library/elbetest/elbetest.tex",
+    "latex_source_kind": "local (author .tex)",
+    "latex_source": "elbetest.tex",
+    "latex_macros": 2,
+    "latex_src_equations": 0,
+    "latex_attached": 0,
+    "latex_created": 0,
+    "latex_graphics": 0,
+    "tiddlers_path": "elbetest.tiddlers.json",
+    "tiddlers_count": 34,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -291,18 +327,59 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.1,
       "detail": "26 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:14:08Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5277.0,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:14:09Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 14.1,
+      "detail": "18 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:14:09Z",
+      "node": "latex",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "0/0 eqs matched, 0 created, 0 graphics, 2 macros"
+    },
+    {
+      "ts": "2026-08-23T10:14:09Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.5,
+      "detail": "34 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/elbetest/elbetest.lines.json": "sha256:c8aadcef5530e97483ef555ea12031f5d76b862a47150b9aa1dac936489205f3"
+        "/home/wkolbe/pdfdrill-library/elbetest/elbetest.lines.json": "sha256:ec7bbd3a3e64d0d7b987e96df2b4ff2c868217daaa670fb031953d33585c1ed6"
       },
       "params_hash": "sha256:d5ce42f89d5da5bcc621fca4036075e17e579b1a8661d46814b40210e6f10d35",
       "algo": "sha256",
-      "ts": "2026-08-06T01:11:47Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:14:09Z",
+      "provenance": "mathpix"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/elbetest/elbetest.tex": "sha256:5daca0876998b5b82eba39ecf7e5d6ea5d0e6d7e6883ae0869b8ee9b8346bfa2"
+      },
+      "params_hash": "sha256:4775c8b2d9d1e60a9ef15f0a4c566a2dc62648b4ff4575e0677a6196fbe395f3",
+      "algo": "sha256",
+      "ts": "2026-08-23T10:14:09Z"
     }
   }
 }

@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -79,28 +80,29 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 7,
-      "Citation": 14,
-      "ListItem": 9,
-      "Paragraph": 7,
-      "Document": 1
+      "Citation": 1,
+      "Table": 3,
+      "TableRow": 7,
+      "TableCell": 44,
+      "Sidenote": 12,
+      "Abstract": 1,
+      "Diagram": 4,
+      "ListItem": 4,
+      "Equation": 12,
+      "Formula": 65,
+      "Paragraph": 68,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 12,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "bibliography_entries": 21,
-    "bibliography_with_year": 18,
-    "bibliography_numeric_citations": 33,
-    "bibliography_authoryear_citations": 1,
-    "bibliography_cites": 33,
-    "tiddlers_path": "breuils_engage_2017.tiddlers.json",
-    "tiddlers_count": 66,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "A hybrid approach for computing products of high-dimensional geometric algebras",
@@ -127,7 +129,38 @@
       "PDF version": "1.5"
     },
     "page_count_text": 7,
-    "image_count": 3
+    "image_count": 3,
+    "mathpix_pdf_id": "39e88e20-33c7-4ebe-9538-60ab6fd3c4cf",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "breuils_engage_2017.lines.json",
+        "bytes": 717049
+      },
+      {
+        "format": "md",
+        "path": "breuils_engage_2017.md",
+        "bytes": 32359
+      },
+      {
+        "format": "tex.zip",
+        "path": "breuils_engage_2017.tex.zip",
+        "bytes": 73976
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 20,
+    "bibliography_with_year": 20,
+    "bibliography_numeric_citations": 33,
+    "bibliography_authoryear_citations": 1,
+    "bibliography_cites": 33,
+    "tiddlers_path": "breuils_engage_2017.tiddlers.json",
+    "tiddlers_count": 216,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -580,18 +613,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.0,
       "detail": "66 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:12:36Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 12095.5,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:12:36Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 159.9,
+      "detail": "230 objects, 12 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:12:36Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "20 entries, 33+1 cites detected, 33 linked"
+    },
+    {
+      "ts": "2026-08-23T10:12:36Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 5.8,
+      "detail": "216 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/breuils_engage_2017/breuils_engage_2017.lines.json": "sha256:795226070984a16466e8b781df75ea08d3814c1cc08c9b00ac9945c6c343a0a3"
+        "/home/wkolbe/pdfdrill-library/breuils_engage_2017/breuils_engage_2017.lines.json": "sha256:18dd007637c40c422f49705b3c0a57e908ad7302e7926affc3c77978f98919ba"
       },
       "params_hash": "sha256:22bca8a56829fb3c9d4eb6cd32bd7812ac8e81889ac0fca5bd8cd17923e040d6",
       "algo": "sha256",
-      "ts": "2026-08-06T01:08:29Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:12:36Z",
+      "provenance": "mathpix"
     }
   }
 }

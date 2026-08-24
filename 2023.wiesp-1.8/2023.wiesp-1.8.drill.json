@@ -6,8 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -15,7 +13,9 @@
     "LINKS_KNOWN",
     "BIBTEX_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 12,
@@ -85,28 +85,28 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 12,
-      "Citation": 2,
-      "ListItem": 42,
-      "Paragraph": 12,
+      "Footnote": 20,
+      "Table": 1,
+      "TableRow": 12,
+      "TableCell": 48,
+      "Sidenote": 22,
+      "Abstract": 1,
+      "Diagram": 5,
+      "Section": 8,
+      "ListItem": 37,
+      "Formula": 12,
+      "Paragraph": 76,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "bibliography_entries": 12,
-    "bibliography_with_year": 12,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 22,
-    "bibliography_cites": 6,
-    "tiddlers_path": "2023.wiesp-1.8.tiddlers.json",
-    "tiddlers_count": 111,
-    "tiddlers_svg_mode": "inline",
     "abstract_search_scope": "first2pages",
     "toc": [
       {
@@ -403,7 +403,33 @@
       "PDF version": "1.3"
     },
     "page_count_text": 12,
-    "image_count": 3
+    "image_count": 3,
+    "mathpix_pdf_id": "02a29c77-660a-4377-b089-c570f78a0c16",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "2023.wiesp-1.8.lines.json",
+        "bytes": 1243992
+      },
+      {
+        "format": "md",
+        "path": "2023.wiesp-1.8.md",
+        "bytes": 49522
+      },
+      {
+        "format": "tex.zip",
+        "path": "2023.wiesp-1.8.tex.zip",
+        "bytes": 314029
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "2023.wiesp-1.8.tiddlers.json",
+    "tiddlers_count": 212,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "LaTeX Rainbow: Universal LaTeX to PDF Document Semantic & Layout Annotation Framework",
@@ -1719,18 +1745,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 5559.6,
       "detail": "3 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:03:01Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9882.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:03:01Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 212.6,
+      "detail": "255 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:03:02Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.7,
+      "detail": "212 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/2023.wiesp-1.8/2023.wiesp-1.8.lines.json": "sha256:445d079dbba09c98445cfbda476c361968cef4f1a7163e45a947f1fb8186d918"
+        "/home/wkolbe/pdfdrill-library/2023.wiesp-1.8/2023.wiesp-1.8.lines.json": "sha256:fe528085012ee49d681cc62d3140dce3b86c9b026a098fb4f4cb56571e255033"
       },
       "params_hash": "sha256:b02947d1bcb1799fa9f34071d1f7b39af6cbfb88546516a945143eb539bbd0af",
       "algo": "sha256",
-      "ts": "2026-08-03T20:45:22Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:03:01Z",
+      "provenance": "mathpix"
     }
   }
 }

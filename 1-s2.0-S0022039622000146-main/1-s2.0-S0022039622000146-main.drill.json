@@ -13,7 +13,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -246,28 +246,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 40,
-      "Citation": 31,
-      "ListItem": 121,
-      "Paragraph": 40,
-      "Document": 1
+      "Abstract": 1,
+      "Diagram": 4,
+      "Section": 2,
+      "ListItem": 7,
+      "Equation": 117,
+      "Formula": 943,
+      "Paragraph": 195,
+      "Document": 1,
+      "Footnote": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 117,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "bibliography_entries": 38,
-    "bibliography_with_year": 35,
-    "bibliography_numeric_citations": 106,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 106,
-    "tiddlers_path": "1-s2.0-S0022039622000146-main.tiddlers.json",
-    "tiddlers_count": 246,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Geometric analysis of nonlinear differential-algebraic equations via nonlinear control theory",
@@ -293,7 +290,33 @@
       "PDF version": "1.7"
     },
     "page_count_text": 40,
-    "image_count": 1
+    "image_count": 1,
+    "mathpix_pdf_id": "1e499392-3374-465d-a30d-ea4900915265",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1-s2.0-S0022039622000146-main.lines.json",
+        "bytes": 1596923
+      },
+      {
+        "format": "md",
+        "path": "1-s2.0-S0022039622000146-main.md",
+        "bytes": 151221
+      },
+      {
+        "format": "tex.zip",
+        "path": "1-s2.0-S0022039622000146-main.tex.zip",
+        "bytes": 198100
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "1-s2.0-S0022039622000146-main.tiddlers.json",
+    "tiddlers_count": 1328,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Geometric analysis of nonlinear differential-algebraic equations via nonlinear control theory",
@@ -728,18 +751,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.2,
       "detail": "246 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T09:50:49Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 11673.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T09:50:50Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 1161.1,
+      "detail": "1311 objects, 117 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T09:50:51Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 24.2,
+      "detail": "1328 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1-s2.0-S0022039622000146-main/1-s2.0-S0022039622000146-main.lines.json": "sha256:62936a1d8ef7ab0691060da7763380ab801b7254971f15b24d79040c7229a433"
+        "/home/wkolbe/pdfdrill-library/1-s2.0-S0022039622000146-main/1-s2.0-S0022039622000146-main.lines.json": "sha256:35aafd03203b42b4791b98931cf537d70ecf58890bac6eb6b706002577cbb8a1"
       },
       "params_hash": "sha256:d2d0f514f1a3120ac706d12175fd259ebe3ee9aa2973016347acdfeefc0dcca1",
       "algo": "sha256",
-      "ts": "2026-08-04T22:13:39Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T09:50:50Z",
+      "provenance": "mathpix"
     }
   }
 }

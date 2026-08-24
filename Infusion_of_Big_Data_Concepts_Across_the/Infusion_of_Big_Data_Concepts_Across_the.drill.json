@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -73,22 +74,26 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
-      "ListItem": 9,
-      "Paragraph": 10,
+      "Table": 2,
+      "TableRow": 16,
+      "TableCell": 188,
+      "Sidenote": 4,
+      "Section": 2,
+      "Picture": 8,
+      "ListItem": 11,
+      "Formula": 5,
+      "Paragraph": 60,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 14 unmapped private-use character(s) remain (U+F0B7×14) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "Infusion_of_Big_Data_Concepts_Across_the.tiddlers.json",
-    "tiddlers_count": 46,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -118,7 +123,32 @@
     "image_count": 9,
     "abstract_search_scope": "first2pages",
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "69422960-57cf-4067-9109-79337cb6775f",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Infusion_of_Big_Data_Concepts_Across_the.lines.json",
+        "bytes": 671110
+      },
+      {
+        "format": "md",
+        "path": "Infusion_of_Big_Data_Concepts_Across_the.md",
+        "bytes": 27690
+      },
+      {
+        "format": "tex.zip",
+        "path": "Infusion_of_Big_Data_Concepts_Across_the.tex.zip",
+        "bytes": 267970
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Infusion_of_Big_Data_Concepts_Across_the.tiddlers.json",
+    "tiddlers_count": 120,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -641,18 +671,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1652.9,
       "detail": "9 images, 9 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:05:44Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9594.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:05:44Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 113.2,
+      "detail": "307 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:05:44Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.6,
+      "detail": "120 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Infusion_of_Big_Data_Concepts_Across_the/Infusion_of_Big_Data_Concepts_Across_the.lines.json": "sha256:487ad86e102e1667992baaec30b7e446f154f0434865732752a270f6a9f03a3b"
+        "/home/wkolbe/pdfdrill-library/Infusion_of_Big_Data_Concepts_Across_the/Infusion_of_Big_Data_Concepts_Across_the.lines.json": "sha256:257c98d5fb6ee9347a55740e3dd614d68898ff41e370a9ef04d1c88ae19f8f4e"
       },
       "params_hash": "sha256:cdcb21e2f1c35ef4ea5db99d8e49188b9a3cc9f71e1e4000d614f420bcd2b0b4",
       "algo": "sha256",
-      "ts": "2026-08-05T21:19:24Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:05:44Z",
+      "provenance": "mathpix"
     }
   }
 }

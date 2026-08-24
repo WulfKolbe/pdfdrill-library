@@ -12,6 +12,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -184,22 +185,24 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 23,
-      "ListItem": 24,
-      "Paragraph": 23,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 7,
+      "Section": 2,
+      "ListItem": 3,
+      "Formula": 9,
+      "Paragraph": 61,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem.tiddlers.json",
-    "tiddlers_count": 87,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -224,7 +227,32 @@
       "PDF version": "1.4"
     },
     "page_count_text": 23,
-    "image_count": 24
+    "image_count": 24,
+    "mathpix_pdf_id": "52206038-a7d4-48a0-bc16-ad373ad749a5",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem.lines.json",
+        "bytes": 893903
+      },
+      {
+        "format": "md",
+        "path": "1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem.md",
+        "bytes": 53693
+      },
+      {
+        "format": "tex.zip",
+        "path": "1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem.tex.zip",
+        "bytes": 1207250
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem.tiddlers.json",
+    "tiddlers_count": 126,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -1418,18 +1446,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.4,
       "detail": "87 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T09:54:50Z",
+      "node": "mathpix",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10629.3,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T09:54:50Z",
+      "node": "model",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 163.5,
+      "detail": "109 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T09:54:50Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.6,
+      "detail": "126 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem/1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem.lines.json": "sha256:09c60b46df5f6f7e1d20deb94fe2cb9d52920aee541cda7f366826ff8ffc7255"
+        "/home/wkolbe/pdfdrill-library/1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem/1.AACA_GeometricAlgebraforMultidimension-UnifiedGeographicalInformationSystem.lines.json": "sha256:c285b1d75324aecebb3d2126c0bda3960035671487c99adf91501b7916caaa55"
       },
       "params_hash": "sha256:f2a9fd9acc1c661e84d41c07e156994b4c5ea0bf014391ae05a922cf83e51db8",
       "algo": "sha256",
-      "ts": "2026-08-04T22:14:50Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T09:54:50Z",
+      "provenance": "mathpix"
     }
   }
 }

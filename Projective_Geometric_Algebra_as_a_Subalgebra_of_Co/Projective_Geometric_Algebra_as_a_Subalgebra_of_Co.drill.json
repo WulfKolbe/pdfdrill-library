@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
@@ -14,7 +13,9 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 15,
@@ -104,22 +105,26 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 15,
-      "ListItem": 6,
-      "Paragraph": 15,
+      "Table": 1,
+      "TableRow": 3,
+      "TableCell": 50,
+      "Abstract": 1,
+      "Diagram": 5,
+      "ListItem": 5,
+      "Equation": 31,
+      "Formula": 129,
+      "Paragraph": 71,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 31,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "Projective_Geometric_Algebra_as_a_Subalgebra_of_Co.tiddlers.json",
-    "tiddlers_count": 53,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Producer": "iText® 5.5.8 ©2000-2015 iText Group NV (SPRINGER SBM (SPRINGER SBM; licensed version)",
@@ -175,7 +180,32 @@
         "url": "https://zenodo.org/record/3635774",
         "kind": "text"
       }
-    ]
+    ],
+    "mathpix_pdf_id": "389a1b35-355a-498d-8a45-a58c9175bee3",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Projective_Geometric_Algebra_as_a_Subalgebra_of_Co.lines.json",
+        "bytes": 755288
+      },
+      {
+        "format": "md",
+        "path": "Projective_Geometric_Algebra_as_a_Subalgebra_of_Co.md",
+        "bytes": 41758
+      },
+      {
+        "format": "tex.zip",
+        "path": "Projective_Geometric_Algebra_as_a_Subalgebra_of_Co.tex.zip",
+        "bytes": 113552
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Projective_Geometric_Algebra_as_a_Subalgebra_of_Co.tiddlers.json",
+    "tiddlers_count": 275,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -869,18 +899,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2995.5,
       "detail": "1 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:02:06Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9432.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:02:06Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 155.6,
+      "detail": "312 objects, 31 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:02:07Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 6.7,
+      "detail": "275 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Projective_Geometric_Algebra_as_a_Subalgebra_of_Co/Projective_Geometric_Algebra_as_a_Subalgebra_of_Co.lines.json": "sha256:e1fb24952df361e9f008c834bd760bc7b84b6b45e7eec83483584f82aa4bb825"
+        "/home/wkolbe/pdfdrill-library/Projective_Geometric_Algebra_as_a_Subalgebra_of_Co/Projective_Geometric_Algebra_as_a_Subalgebra_of_Co.lines.json": "sha256:57b5da3e2a4638d63a0c210c3b67f052c766b2af7030a43580cfb6a4a4143bbc"
       },
       "params_hash": "sha256:a93001a875dac194e234a176507b0ad9e8cf7cf86f3fc377eed4bd508b5ebcfd",
       "algo": "sha256",
-      "ts": "2026-08-05T22:58:31Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:02:06Z",
+      "provenance": "mathpix"
     }
   }
 }

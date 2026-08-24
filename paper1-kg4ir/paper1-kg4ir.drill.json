@@ -7,7 +7,8 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "GEOMETRY_FUSED"
   ],
   "evidence": {
     "pages": 2,
@@ -58,8 +59,8 @@
       "GSKNIF+CMSY10"
     ],
     "has_math_fonts": true,
-    "mathpix_pdf_id": "cf89342e-dcf2-4a7a-b2c6-5e9150cd1f79",
-    "mathpix_status": "downloaded",
+    "mathpix_pdf_id": null,
+    "mathpix_status": "cached",
     "mathpix_files": [
       {
         "format": "lines.json",
@@ -69,7 +70,7 @@
       {
         "format": "md",
         "path": "paper1-kg4ir.md",
-        "bytes": 4447
+        "bytes": 4408
       },
       {
         "format": "tex.zip",
@@ -121,7 +122,10 @@
       "PDF version": "1.5"
     },
     "page_count_text": 2,
-    "image_count": 2
+    "image_count": 2,
+    "geometry_pdf_lines": 38,
+    "geometry_matched": 55,
+    "geometry_mean_sim": 0.627
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -391,6 +395,30 @@
       "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.3,
+      "detail": "27 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:21:09Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 0.7,
+      "detail": "cached"
+    },
+    {
+      "ts": "2026-08-23T10:21:10Z",
+      "node": "geometry",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 52.1,
+      "detail": "55/38 matched"
+    },
+    {
+      "ts": "2026-08-23T10:21:10Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.6,
       "detail": "27 tiddlers, svg=inline"
     }
   ],

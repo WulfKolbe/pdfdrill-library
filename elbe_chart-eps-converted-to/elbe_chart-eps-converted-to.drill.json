@@ -5,6 +5,7 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -50,21 +51,19 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
+      "Diagram": 1,
       "Paragraph": 1,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "elbe_chart-eps-converted-to.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "elbe_chart.eps",
@@ -88,7 +87,32 @@
       "PDF version": "1.5"
     },
     "page_count_text": 1,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "456bc04d-d743-4986-873a-d12ce68a6693",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "elbe_chart-eps-converted-to.lines.json",
+        "bytes": 7893
+      },
+      {
+        "format": "md",
+        "path": "elbe_chart-eps-converted-to.md",
+        "bytes": 343
+      },
+      {
+        "format": "tex.zip",
+        "path": "elbe_chart-eps-converted-to.tex.zip",
+        "bytes": 168573
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "elbe_chart-eps-converted-to.tiddlers.json",
+    "tiddlers_count": 20,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -197,18 +221,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.0,
       "detail": "19 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:41:39Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5266.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:41:39Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 8.6,
+      "detail": "4 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:41:39Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.5,
+      "detail": "20 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/elbe_chart-eps-converted-to/elbe_chart-eps-converted-to.lines.json": "sha256:20ca49154d53f6f64027d228b73b8e8bdbf9d0ebfb8b33e8f2cdf68e03ff7b22"
+        "/home/wkolbe/pdfdrill-library/elbe_chart-eps-converted-to/elbe_chart-eps-converted-to.lines.json": "sha256:9a7485b2b61b1a85f44d1d158f8277deb25c3ff17bb1ebb38a129a1ec2219582"
       },
       "params_hash": "sha256:b11b5cf59fdaecb76529dfccbf2e1f891cdf1f851d5cf080f6d2ed7d296bdfbe",
       "algo": "sha256",
-      "ts": "2026-08-06T01:11:46Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:41:39Z",
+      "provenance": "mathpix"
     }
   }
 }

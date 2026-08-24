@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -84,28 +85,29 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 29,
-      "Citation": 24,
-      "ListItem": 160,
-      "Paragraph": 29,
+      "Footnote": 5,
+      "Citation": 21,
+      "Table": 1,
+      "TableRow": 7,
+      "TableCell": 28,
+      "Sidenote": 3,
+      "Diagram": 38,
+      "Picture": 8,
+      "ListItem": 27,
+      "Equation": 11,
+      "Formula": 125,
+      "Paragraph": 89,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 11,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "bibliography_entries": 20,
-    "bibliography_with_year": 20,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 16,
-    "bibliography_cites": 0,
-    "tiddlers_path": "narcissus.tiddlers.json",
-    "tiddlers_count": 292,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Narcissus: Correct-by-Construction Derivation of Decoders and Encoders from Binary Formats",
@@ -132,7 +134,38 @@
       "PDF version": "1.5"
     },
     "page_count_text": 29,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "11beae79-0a1f-43cc-937f-92b88204e095",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "narcissus.lines.json",
+        "bytes": 1510933
+      },
+      {
+        "format": "md",
+        "path": "narcissus.md",
+        "bytes": 104476
+      },
+      {
+        "format": "tex.zip",
+        "path": "narcissus.tex.zip",
+        "bytes": 811150
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 18,
+    "bibliography_with_year": 17,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 16,
+    "bibliography_cites": 0,
+    "tiddlers_path": "narcissus.tiddlers.json",
+    "tiddlers_count": 407,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -613,18 +646,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 11.8,
       "detail": "292 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:20:57Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9960.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:20:57Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 334.6,
+      "detail": "393 objects, 11 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:20:58Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "18 entries, 0+16 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-23T10:20:58Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.3,
+      "detail": "407 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/narcissus/narcissus.lines.json": "sha256:1749471f50cc291b897d8ccae692e4b9f1e31a04118834770de769b3120406a3"
+        "/home/wkolbe/pdfdrill-library/narcissus/narcissus.lines.json": "sha256:70659b8d17e95688b40904931a5b3d860e0ed5e5d13af36a746ebba504d0d90b"
       },
       "params_hash": "sha256:3ed9cf8e6aa3403e6331271ab7727dd3f46fa535937f1de6a80768d1ae98dc91",
       "algo": "sha256",
-      "ts": "2026-08-06T01:30:25Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:20:57Z",
+      "provenance": "mathpix"
     }
   }
 }

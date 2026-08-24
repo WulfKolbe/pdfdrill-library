@@ -6,6 +6,8 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
+    "LATEX_INGESTED",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -85,28 +87,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 10,
-      "Citation": 15,
-      "ListItem": 9,
-      "Paragraph": 10,
+      "Citation": 2,
+      "Table": 1,
+      "TableRow": 6,
+      "TableCell": 24,
+      "ListItem": 1,
+      "Equation": 13,
+      "Formula": 27,
+      "Paragraph": 27,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 13,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "bibliography_entries": 3,
-    "bibliography_with_year": 3,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 1,
-    "tiddlers_path": "discretegeomclaude.tiddlers.json",
-    "tiddlers_count": 63,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Expressing Discrete Geometry using the Conformal Model",
@@ -133,7 +132,48 @@
       "PDF version": "1.5"
     },
     "page_count_text": 10,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "3dea2a3d-3467-45f5-b9db-c08108fed331",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "discretegeomclaude.lines.json",
+        "bytes": 272056
+      },
+      {
+        "format": "md",
+        "path": "discretegeomclaude.md",
+        "bytes": 4891
+      },
+      {
+        "format": "tex.zip",
+        "path": "discretegeomclaude.tex.zip",
+        "bytes": 6077
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "latex_source_checked": "no .tex member is named by a MathPix image_id",
+    "latex_source_path": "/home/wkolbe/pdfdrill-library/discretegeomclaude/discretegeomclaude.tex",
+    "latex_source_kind": "local (author .tex)",
+    "edit_runs": 13,
+    "latex_source": "discretegeomclaude.tex",
+    "latex_macros": 0,
+    "latex_src_equations": 13,
+    "latex_attached": 13,
+    "latex_created": 0,
+    "latex_graphics": 1,
+    "bibliography_entries": 1,
+    "bibliography_with_year": 1,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "discretegeomclaude.tiddlers.json",
+    "tiddlers_count": 100,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -516,18 +556,67 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.4,
       "detail": "63 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:13:43Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6444.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:13:43Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 43.3,
+      "detail": "112 objects, 13 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:13:43Z",
+      "node": "latex",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "LATEX_INGESTED",
+      "cost_ms": 0,
+      "detail": "13/13 eqs matched, 0 created, 1 graphics, 0 macros"
+    },
+    {
+      "ts": "2026-08-23T10:13:43Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "1 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-23T10:13:43Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.0,
+      "detail": "100 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/discretegeomclaude/discretegeomclaude.lines.json": "sha256:8024fbf227c3519b8db65c6ff6e00d049049087595ae29689baf5699ac600b70"
+        "/home/wkolbe/pdfdrill-library/discretegeomclaude/discretegeomclaude.lines.json": "sha256:c6802ca7b0b1d9004a1e5ea46f0c9bf6ccaf7dc1c3acf011e239d5d17db2d064"
       },
       "params_hash": "sha256:281ea3aea395c31ee7633c1ffb772664f179da564e5637549e16c739e6373a23",
       "algo": "sha256",
-      "ts": "2026-08-06T01:11:00Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:13:43Z",
+      "provenance": "mathpix"
+    },
+    "LATEX_INGESTED": {
+      "produced_by": "latex",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/discretegeomclaude/discretegeomclaude.tex": "sha256:c0afde23ac625e76475ee7613f01b090a289b7f3062afa57c53a5341dd391607"
+      },
+      "params_hash": "sha256:2022ed7dc62dd78b459781f048cd919690deb4bbde0ab69199c470691b6a912c",
+      "algo": "sha256",
+      "ts": "2026-08-23T10:13:43Z"
     }
   }
 }

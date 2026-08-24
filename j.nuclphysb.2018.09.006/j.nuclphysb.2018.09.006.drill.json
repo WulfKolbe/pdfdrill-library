@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -71,28 +72,24 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 40,
-      "Citation": 23,
-      "ListItem": 73,
-      "Paragraph": 40,
+      "Footnote": 4,
+      "Citation": 11,
+      "Abstract": 1,
+      "ListItem": 3,
+      "Equation": 220,
+      "Formula": 402,
+      "Paragraph": 275,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 220,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "bibliography_entries": 23,
-    "bibliography_with_year": 19,
-    "bibliography_numeric_citations": 41,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 41,
-    "tiddlers_path": "j.nuclphysb.2018.09.006.tiddlers.json",
-    "tiddlers_count": 200,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Fermions, differential forms and doubled geometry",
@@ -118,7 +115,38 @@
       "PDF version": "1.7"
     },
     "page_count_text": 40,
-    "image_count": 1
+    "image_count": 1,
+    "mathpix_pdf_id": "8390e16f-cc29-4a5d-a72a-89a90aa47212",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "j.nuclphysb.2018.09.006.lines.json",
+        "bytes": 1669717
+      },
+      {
+        "format": "md",
+        "path": "j.nuclphysb.2018.09.006.md",
+        "bytes": 134822
+      },
+      {
+        "format": "tex.zip",
+        "path": "j.nuclphysb.2018.09.006.tex.zip",
+        "bytes": 139337
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 23,
+    "bibliography_with_year": 19,
+    "bibliography_numeric_citations": 41,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 41,
+    "tiddlers_path": "j.nuclphysb.2018.09.006.tiddlers.json",
+    "tiddlers_count": 988,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -389,18 +417,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 10.9,
       "detail": "200 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:17:24Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9925.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:17:25Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 986.6,
+      "detail": "957 objects, 220 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:17:26Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "23 entries, 41+0 cites detected, 41 linked"
+    },
+    {
+      "ts": "2026-08-23T10:17:27Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 28.3,
+      "detail": "988 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/j.nuclphysb.2018.09.006/j.nuclphysb.2018.09.006.lines.json": "sha256:bc50d42afda7defc74b787c0c6c5ad5bb6c6df0aadced8295606af833c3c8b1a"
+        "/home/wkolbe/pdfdrill-library/j.nuclphysb.2018.09.006/j.nuclphysb.2018.09.006.lines.json": "sha256:6d92fe0133e671ca53e3180129a98e9ea535d4b1885dfc5024daf601344c24da"
       },
       "params_hash": "sha256:26e1fc81675d67c792789e558bae70f6ad9dadda64ad4857a240b9080a3da0bc",
       "algo": "sha256",
-      "ts": "2026-08-06T01:22:22Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:17:25Z",
+      "provenance": "mathpix"
     }
   }
 }

@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +13,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 3,
@@ -72,22 +74,21 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 3,
-      "ListItem": 8,
-      "Paragraph": 3,
+      "Abstract": 1,
+      "ListItem": 7,
+      "Formula": 4,
+      "Paragraph": 19,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "Recasting_Transfinite_Set_Theory_through.tiddlers.json",
-    "tiddlers_count": 31,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "",
@@ -156,7 +157,35 @@
       }
     ],
     "toc_search_scope": "first3pages",
-    "links": []
+    "links": [],
+    "mathpix_pdf_id": "754db526-5016-4f5f-b4c3-a5cb12ce89ab",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Recasting_Transfinite_Set_Theory_through.lines.json",
+        "bytes": 107583
+      },
+      {
+        "format": "md",
+        "path": "Recasting_Transfinite_Set_Theory_through.md",
+        "bytes": 6148
+      },
+      {
+        "format": "tex.zip",
+        "path": "Recasting_Transfinite_Set_Theory_through.tex.zip",
+        "bytes": 6987
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 53,
+    "geometry_matched": 106,
+    "geometry_mean_sim": 0.519,
+    "tiddlers_path": "Recasting_Transfinite_Set_Theory_through.tiddlers.json",
+    "tiddlers_count": 51,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -468,18 +497,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 547.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:07:24Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5462.1,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:07:24Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 18.3,
+      "detail": "35 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:07:25Z",
+      "node": "geometry",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 60.0,
+      "detail": "106/53 matched"
+    },
+    {
+      "ts": "2026-08-23T10:07:25Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.9,
+      "detail": "51 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Recasting_Transfinite_Set_Theory_through/Recasting_Transfinite_Set_Theory_through.lines.json": "sha256:36ede6f7ee8b94139d928f3b2cb92418412189ee439deb2c3cdbcd2f0aa3733c"
+        "/home/wkolbe/pdfdrill-library/Recasting_Transfinite_Set_Theory_through/Recasting_Transfinite_Set_Theory_through.lines.json": "sha256:a04565d75960a5aa13f0bc9e3a4a9faaec569af5939456d742d950369291557e"
       },
       "params_hash": "sha256:cccf6669c75091cf78ae5902cab42cd06782ec65d0e5098cf3125ad4f928c136",
       "algo": "sha256",
-      "ts": "2026-08-05T23:07:49Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:07:24Z",
+      "provenance": "mathpix"
     }
   }
 }

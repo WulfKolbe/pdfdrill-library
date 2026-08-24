@@ -5,6 +5,7 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -48,21 +49,19 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
+      "Diagram": 1,
       "Paragraph": 1,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "e12s43.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Producer": "GPL Ghostscript 9.05",
@@ -84,7 +83,32 @@
       "PDF version": "1.4"
     },
     "page_count_text": 1,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "ef94d2b6-d42d-4056-9182-b8ee289fc345",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "e12s43.lines.json",
+        "bytes": 6516
+      },
+      {
+        "format": "md",
+        "path": "e12s43.md",
+        "bytes": 273
+      },
+      {
+        "format": "tex.zip",
+        "path": "e12s43.tex.zip",
+        "bytes": 467894
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "e12s43.tiddlers.json",
+    "tiddlers_count": 20,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -193,18 +217,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.0,
       "detail": "19 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:41:31Z",
+      "node": "mathpix",
+      "from": "FONTS_LAYER_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5245.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:41:32Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 8.4,
+      "detail": "4 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:41:32Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.4,
+      "detail": "20 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/e12s43/e12s43.lines.json": "sha256:f6258906e34f499886ccb7b77ab2052c5d6738b4b3d839e43f03a1b5db97d6b4"
+        "/home/wkolbe/pdfdrill-library/e12s43/e12s43.lines.json": "sha256:2a2b30af80927a32aff02bf957fae8af440fa5b2c33e268fd3d24f930dffad71"
       },
       "params_hash": "sha256:99716d346e7edc5bd00600d1c61c385dd7dd75bcc0f4056f9f0c8ee9d0a5f76b",
       "algo": "sha256",
-      "ts": "2026-08-06T01:11:45Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:41:32Z",
+      "provenance": "mathpix"
     }
   }
 }

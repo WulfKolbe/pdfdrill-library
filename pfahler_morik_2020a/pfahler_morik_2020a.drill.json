@@ -6,7 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "BIBLIOGRAPHY_BUILT",
+    "MATHPIX_KNOWN",
     "TIDDLERS_BUILT"
   ],
   "evidence": {
@@ -76,28 +76,29 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 9,
-      "Citation": 3,
-      "ListItem": 4,
-      "Paragraph": 9,
+      "Footnote": 6,
+      "Table": 5,
+      "TableRow": 43,
+      "TableCell": 115,
+      "Sidenote": 18,
+      "Abstract": 1,
+      "Diagram": 1,
+      "Picture": 2,
+      "ListItem": 3,
+      "Equation": 17,
+      "Formula": 87,
+      "Paragraph": 96,
       "Document": 1
     },
-    "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_equations_with_cdn": 17,
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
-    "pua_note": "\nNOTE: 9 unmapped private-use character(s) remain (U+F8F1×1, U+F8F2×1, U+F8F3×1, U+F8F4×6) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "bibliography_entries": 35,
-    "bibliography_with_year": 33,
-    "bibliography_numeric_citations": 46,
-    "bibliography_authoryear_citations": 1,
-    "bibliography_cites": 46,
-    "tiddlers_path": "pfahler_morik_2020a.tiddlers.json",
-    "tiddlers_count": 78,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Semantic Search in Millions of Equations",
@@ -124,7 +125,33 @@
       "PDF version": "1.5"
     },
     "page_count_text": 9,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "c4761707-ce3e-4068-a861-f2fb0d26fb7b",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "pfahler_morik_2020a.lines.json",
+        "bytes": 1218822
+      },
+      {
+        "format": "md",
+        "path": "pfahler_morik_2020a.md",
+        "bytes": 58426
+      },
+      {
+        "format": "tex.zip",
+        "path": "pfahler_morik_2020a.tex.zip",
+        "bytes": 145269
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "tiddlers_path": "pfahler_morik_2020a.tiddlers.json",
+    "tiddlers_count": 262,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -535,18 +562,42 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 8.8,
       "detail": "78 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:21:22Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 10389.9,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:21:22Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 255.5,
+      "detail": "404 objects, 17 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:21:22Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.4,
+      "detail": "262 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/pfahler_morik_2020a/pfahler_morik_2020a.lines.json": "sha256:8eeb9881ae19e91f72b888995ff6b3791a2147e9cd1580f989eddf0458609882"
+        "/home/wkolbe/pdfdrill-library/pfahler_morik_2020a/pfahler_morik_2020a.lines.json": "sha256:a38a0300487f69f433f457268a58e65dc193daf54371b9c688cb48a0c8fd81c8"
       },
       "params_hash": "sha256:59b1648fdd85288f5fbf50e739a654dfcf8277dccd85921fdb0b5e0ed20b6d6a",
       "algo": "sha256",
-      "ts": "2026-08-06T01:32:09Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:21:22Z",
+      "provenance": "mathpix"
     }
   }
 }

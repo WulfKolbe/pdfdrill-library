@@ -5,12 +5,13 @@
     "SIZE_KNOWN",
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
-    "TIDDLERS_BUILT",
     "ABSTRACT_ABSENT",
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -83,21 +84,20 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Paragraph": 1,
+      "Diagram": 1,
+      "Formula": 1,
+      "Paragraph": 2,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "Google Gemini.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Title": "Google Gemini",
@@ -122,7 +122,32 @@
     },
     "page_count_text": 1,
     "image_count": 8,
-    "abstract_search_scope": "first2pages"
+    "abstract_search_scope": "first2pages",
+    "mathpix_pdf_id": "620fecd1-1fb1-4ae4-80c9-dc70cc6ed6cb",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "Google Gemini.lines.json",
+        "bytes": 45062
+      },
+      {
+        "format": "md",
+        "path": "Google Gemini.md",
+        "bytes": 1453
+      },
+      {
+        "format": "tex.zip",
+        "path": "Google Gemini.tex.zip",
+        "bytes": 38825
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "tiddlers_path": "Google Gemini.tiddlers.json",
+    "tiddlers_count": 22,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "Google Gemini",
@@ -743,18 +768,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 575.8,
       "detail": "8 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:37:58Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 5405.2,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:37:58Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 11.3,
+      "detail": "6 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:37:59Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.7,
+      "detail": "22 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/Google Gemini/Google Gemini.lines.json": "sha256:c227bfc6c2b290b40f5e8a4cb744aee4f96ded7b1de7ba99fd060ef85ec79c06"
+        "/home/wkolbe/pdfdrill-library/Google Gemini/Google Gemini.lines.json": "sha256:b1bf22725fb099b0a6be114f13c0e3db6b71659869722eda8bcad2349541de9d"
       },
       "params_hash": "sha256:3e9e04fababec395e94e7d7b56d60ee87964792579560e88cdd8144241e2603e",
       "algo": "sha256",
-      "ts": "2026-08-05T20:46:43Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:37:58Z",
+      "provenance": "mathpix"
     }
   }
 }

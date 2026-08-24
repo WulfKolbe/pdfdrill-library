@@ -6,14 +6,16 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "TOC_ABSENT",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN",
+    "GEOMETRY_FUSED",
+    "TIDDLERS_BUILT"
   ],
   "evidence": {
     "pages": 1,
@@ -68,21 +70,19 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 1,
-      "Paragraph": 1,
+      "Abstract": 1,
+      "Paragraph": 3,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "tiddlers_path": "A_new_theory_of_light_and_matter.tiddlers.json",
-    "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline",
     "toc_search_scope": "first3pages",
     "abstract_search_scope": "first2pages",
     "links": [
@@ -114,7 +114,35 @@
       "PDF version": "1.5"
     },
     "page_count_text": 1,
-    "image_count": 0
+    "image_count": 0,
+    "mathpix_pdf_id": "3cbb06cc-6a74-48b0-be8a-9b6b04c7e2f9",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "A_new_theory_of_light_and_matter.lines.json",
+        "bytes": 32370
+      },
+      {
+        "format": "md",
+        "path": "A_new_theory_of_light_and_matter.md",
+        "bytes": 1547
+      },
+      {
+        "format": "tex.zip",
+        "path": "A_new_theory_of_light_and_matter.tex.zip",
+        "bytes": 2756
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
+    ],
+    "geometry_pdf_lines": 19,
+    "geometry_matched": 32,
+    "geometry_mean_sim": 0.619,
+    "tiddlers_path": "A_new_theory_of_light_and_matter.tiddlers.json",
+    "tiddlers_count": 22,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": {
     "title": "",
@@ -418,18 +446,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 600.6,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-23T10:07:33Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 6925.8,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:07:34Z",
+      "node": "model",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 12.1,
+      "detail": "6 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:07:34Z",
+      "node": "geometry",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "GEOMETRY_FUSED",
+      "cost_ms": 37.2,
+      "detail": "32/19 matched"
+    },
+    {
+      "ts": "2026-08-23T10:07:34Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.2,
+      "detail": "22 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/A_new_theory_of_light_and_matter/A_new_theory_of_light_and_matter.lines.json": "sha256:d515716e5873c5b9989aae41ac7e2e34c6dbc07216dae61133fffbabe6f1aa91"
+        "/home/wkolbe/pdfdrill-library/A_new_theory_of_light_and_matter/A_new_theory_of_light_and_matter.lines.json": "sha256:a625f6be4ef85929a514e591d9dcf79e97195b22ff1e069b4c04eeda1413a2d2"
       },
       "params_hash": "sha256:e5d2ab15247742c9a645ca08e00bfcd23320ab96cb0bb3aa2eeee9af2f952f45",
       "algo": "sha256",
-      "ts": "2026-08-04T07:30:16Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:07:34Z",
+      "provenance": "mathpix"
     }
   }
 }

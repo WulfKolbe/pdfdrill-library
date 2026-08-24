@@ -6,6 +6,7 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
+    "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT"
   ],
@@ -74,28 +75,25 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 21,
+      "Footnote": 12,
       "Citation": 2,
-      "ListItem": 10,
-      "Paragraph": 20,
+      "Sidenote": 2,
+      "Toc": 1,
+      "Diagram": 4,
+      "Picture": 3,
+      "ListItem": 8,
+      "Paragraph": 38,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
       "math": false,
-      "source": "pdfminer-chars"
+      "source": "mathpix"
     },
-    "bibliography_entries": 0,
-    "bibliography_with_year": 0,
-    "bibliography_numeric_citations": 0,
-    "bibliography_authoryear_citations": 0,
-    "bibliography_cites": 0,
-    "tiddlers_path": "auto-tune-1.1.tiddlers.json",
-    "tiddlers_count": 70,
-    "tiddlers_svg_mode": "inline",
     "probe_version": 3,
     "pdfinfo_fields": {
       "Creator": "TeX",
@@ -118,7 +116,38 @@
       "PDF version": "1.4"
     },
     "page_count_text": 21,
-    "image_count": 8
+    "image_count": 8,
+    "mathpix_pdf_id": "5721eed5-4d46-4039-ab2d-a73713491f71",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "auto-tune-1.1.lines.json",
+        "bytes": 382414
+      },
+      {
+        "format": "md",
+        "path": "auto-tune-1.1.md",
+        "bytes": 22193
+      },
+      {
+        "format": "tex.zip",
+        "path": "auto-tune-1.1.tex.zip",
+        "bytes": 264516
+      }
+    ],
+    "retracted_layers": [
+      "bibliography",
+      "tiddlers"
+    ],
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "auto-tune-1.1.tiddlers.json",
+    "tiddlers_count": 108,
+    "tiddlers_svg_mode": "inline"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -487,18 +516,50 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.1,
       "detail": "70 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-23T10:12:03Z",
+      "node": "mathpix",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9539.4,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-23T10:12:03Z",
+      "node": "model",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 65.0,
+      "detail": "92 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-23T10:12:04Z",
+      "node": "bibliography",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-23T10:12:04Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 4.1,
+      "detail": "108 tiddlers, svg=inline"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/auto-tune-1.1/auto-tune-1.1.lines.json": "sha256:810416616e9f7e8aef0fdd0bd02878050afade24efcc1a8c76a24369a08eb1ce"
+        "/home/wkolbe/pdfdrill-library/auto-tune-1.1/auto-tune-1.1.lines.json": "sha256:bda385750f2dbeca8ae28601233f7d943ff41563b7567ea0885b39ccbf3a0ded"
       },
       "params_hash": "sha256:20f2fd3f63876174f81f18628c3c7aa712bce503a6fc7ea9af6a4e2e99bc19ed",
       "algo": "sha256",
-      "ts": "2026-08-06T01:05:41Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-23T10:12:03Z",
+      "provenance": "mathpix"
     }
   }
 }
