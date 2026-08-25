@@ -7,7 +7,14 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -135,12 +142,52 @@
     ],
     "tiddlers_path": "aflb342m679.tiddlers.json",
     "tiddlers_count": 133,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Introduction",
+        "page": ""
+      },
+      {
+        "number": "2",
+        "title": "The solution to the Dirac equation",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfeTeX-1.30.4",
+    "creator": "TeX",
+    "creation_date": "2010-05-18T11:04:59+02",
+    "mod_date": "2023-07-17T14:56:53+02",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 6,
+    "encrypted": false,
+    "page_size": "425.197 x 595.276 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 140533,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfeTeX, Version 3.141592-1.30.4-2.2 (Web2C 7.5.5) kpathsea version 3.5.5"
+    }
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "ASYCHK+CMMI7",
@@ -395,7 +442,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -478,6 +525,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.0,
       "detail": "133 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-25T06:50:44Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 86.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-25T06:50:44Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 8.3,
+      "detail": "18 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-25T06:50:44Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 70.4,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-25T06:50:44Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 66.8,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-25T06:50:45Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 103.0,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-25T06:50:45Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 18.4,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-25T06:50:47Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1311.5,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -6,7 +6,6 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
-    "TIDDLERS_BUILT",
     "PDFINFO_KNOWN",
     "FONTS_KNOWN",
     "ABSTRACT_KNOWN",
@@ -14,7 +13,8 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MATHPIX_KNOWN"
   ],
   "evidence": {
     "pages": 4,
@@ -80,22 +80,27 @@
     "model_path": "model.docmodel.json",
     "model_object_counts": {
       "Page": 4,
-      "ListItem": 6,
-      "Paragraph": 4,
+      "Footnote": 4,
+      "Table": 2,
+      "TableRow": 12,
+      "TableCell": 54,
+      "Sidenote": 8,
+      "Abstract": 1,
+      "Diagram": 5,
+      "Picture": 1,
+      "Formula": 7,
+      "Paragraph": 33,
       "Document": 1
     },
     "model_equations_with_cdn": 0,
-    "model_source": "pdfminer-chars",
+    "model_source": "mathpix",
     "lines_upgraded_from_ocr": false,
     "pua_note": "",
     "model_caps": {
       "geometry": true,
-      "math": false,
-      "source": "pdfminer-chars"
+      "math": true,
+      "source": "mathpix"
     },
-    "tiddlers_path": "BH1.tiddlers.json",
-    "tiddlers_count": 31,
-    "tiddlers_svg_mode": "inline",
     "abstract": "300\nMelody extraction is arguably one of the most challenging\nand potentially rewarding problems in Music Information                                250\nRetrieval. It is melody that we are likely to recall after\nlistening to a song and so it is one of the most relevant as-\n                                                                                       200",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
@@ -138,6 +143,51 @@
         "url": "https://essentia.upf.edu",
         "kind": "text"
       }
+    ],
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Creator": "TeX",
+      "Producer": "pdfTeX-1.40.20",
+      "CreationDate": "Mon Sep 30 17:02:16 2019 CEST",
+      "ModDate": "Mon Sep 30 17:02:16 2019 CEST",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "4",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "342653 bytes",
+      "Optimized": "no",
+      "PDF version": "1.5"
+    },
+    "page_count_text": 4,
+    "image_count": 2,
+    "mathpix_pdf_id": "b0eecd46-9f7e-4662-b282-a2dab326d83c",
+    "mathpix_status": "downloaded",
+    "mathpix_files": [
+      {
+        "format": "lines.json",
+        "path": "BH1.lines.json",
+        "bytes": 462052
+      },
+      {
+        "format": "md",
+        "path": "BH1.md",
+        "bytes": 17070
+      },
+      {
+        "format": "tex.zip",
+        "path": "BH1.tex.zip",
+        "bytes": 362727
+      }
+    ],
+    "retracted_layers": [
+      "tiddlers"
     ]
   },
   "pdfinfo": {
@@ -660,18 +710,34 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2413.2,
       "detail": "2 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-24T07:17:42Z",
+      "node": "mathpix",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MATHPIX_KNOWN",
+      "cost_ms": 9228.6,
+      "detail": "downloaded"
+    },
+    {
+      "ts": "2026-08-24T07:17:42Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 90.9,
+      "detail": "132 objects, 0 eq w/ cdn"
     }
   ],
   "capabilities": {
     "MODEL_BUILT": {
       "produced_by": "model",
       "inputs": {
-        "/home/wkolbe/pdfdrill-library/BH1/BH1.lines.json": "sha256:701406d3c4474af059b7c1632d064d6760499dbe067836f34075420383b9a333"
+        "/home/wkolbe/pdfdrill-library/BH1/BH1.lines.json": "sha256:d94e92be1ffd3f20782883a5188b6831325efb5c1692a3723bb48a60312caa4e"
       },
       "params_hash": "sha256:0211fe3de613e7e156edf2d2ed2ca2a9a06bdc070a613aeeb36c15d671864ac2",
       "algo": "sha256",
-      "ts": "2026-08-05T06:13:53Z",
-      "provenance": "pdfminer-chars"
+      "ts": "2026-08-24T07:17:42Z",
+      "provenance": "mathpix"
     }
   }
 }
