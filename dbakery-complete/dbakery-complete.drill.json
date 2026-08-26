@@ -8,7 +8,12 @@
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 29,
@@ -144,10 +149,93 @@
     "bibliography_cites": 31,
     "tiddlers_path": "dbakery-complete.tiddlers.json",
     "tiddlers_count": 339,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract": "We connect two well-known concurrent algorithms, the bakery algo-\n    rithm and a distributed state-machine algorithm, by a sequence of\n    three mutual exclusion algorithms. Each algorithm is derived from the\n    preceding one.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Introduction",
+        "page": "1"
+      },
+      {
+        "number": "2",
+        "title": "The Original Bakery Algorithm",
+        "page": "2"
+      },
+      {
+        "number": "3",
+        "title": "Generalization of the Original Algorithm",
+        "page": "4"
+      },
+      {
+        "number": "4",
+        "title": "The Deconstructed Bakery Algorithm",
+        "page": "6"
+      },
+      {
+        "number": "5",
+        "title": "The Distributed Bakery Algorithm",
+        "page": "8"
+      },
+      {
+        "number": "6",
+        "title": "A Distributed State Machine",
+        "page": "12"
+      },
+      {
+        "number": "7",
+        "title": "Ancient and Recent History",
+        "page": "15"
+      }
+    ],
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.10",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2022-01-07T19:53:53Z",
+    "mod_date": "2022-01-07T19:53:53Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 29,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 265198,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "Keywords": "",
+      "PTEX.Fullbanner": "This is MiKTeX-pdfTeX 2.8.3759 (1.40.10)",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "lamport2022",
+    "title": "Deconstructing the Bakery to Build a Distributed State Machine",
+    "author": "Leslie Lamport",
+    "year": "2022",
+    "pages": 29,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -320,7 +408,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -419,6 +507,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 9.7,
       "detail": "339 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-26T00:33:01Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 88.9,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-26T00:33:02Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 23.8,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-08-26T00:33:02Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 79.2,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-26T00:33:02Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 79.3,
+      "detail": "citekey=lamport2022"
+    },
+    {
+      "ts": "2026-08-26T00:33:06Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4010.7,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

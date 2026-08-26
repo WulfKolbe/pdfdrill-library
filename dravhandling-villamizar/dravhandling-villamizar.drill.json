@@ -7,7 +7,13 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 25,
@@ -156,9 +162,46 @@
     ],
     "tiddlers_path": "dravhandling-villamizar.tiddlers.json",
     "tiddlers_count": 259,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 23,
+        "url": "http://arxiv.org/abs/1006.4903",
+        "kind": "text"
+      },
+      {
+        "page": 24,
+        "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.4635",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "ThesisNOV21.dvi",
+    "author": "SSolli",
+    "producer": "Acrobat Distiller 10.1.4 (Windows)",
+    "creator": "dvips(k) 5.98 Copyright 2009 Radical Eye Software",
+    "creation_date": "2012-11-22T10:52:25+01",
+    "mod_date": "2013-10-03T11:31:47+02",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 25,
+    "encrypted": false,
+    "page_size": "482 x 680 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 627611,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.6",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -556,7 +599,108 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 191.9,
+      "y0": 378.25,
+      "x1": 281.08,
+      "y1": 467.13,
+      "w_pt": 89.17,
+      "h_pt": 88.87,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 432,
+      "height_px": 431,
+      "encoding": "image",
+      "color": "index",
+      "x_ppi": 349,
+      "y_ppi": 349,
+      "size_bytes": 15462,
+      "object_id": "254 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 13,
+      "x0": 125.96,
+      "y0": 354.37,
+      "x1": 381.04,
+      "y1": 432.39,
+      "w_pt": 255.07,
+      "h_pt": 78.01,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 1358,
+      "height_px": 415,
+      "encoding": "image",
+      "color": "cmyk",
+      "x_ppi": 383,
+      "y_ppi": 383,
+      "size_bytes": 38502,
+      "object_id": "41 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 15,
+      "x0": 103.64,
+      "y0": 155.83,
+      "x1": 404.92,
+      "y1": 256.05,
+      "w_pt": 301.27,
+      "h_pt": 100.21,
+      "name": "Im3",
+      "imagemask": false,
+      "width_px": 1365,
+      "height_px": 454,
+      "encoding": "jpeg",
+      "color": "cmyk",
+      "x_ppi": 326,
+      "y_ppi": 326,
+      "size_bytes": 274432,
+      "object_id": "50 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 15,
+      "x0": 121.52,
+      "y0": 286.69,
+      "x1": 215.02,
+      "y1": 375.75,
+      "w_pt": 93.49,
+      "h_pt": 89.05,
+      "name": "Im4",
+      "imagemask": false,
+      "width_px": 420,
+      "height_px": 400,
+      "encoding": "image",
+      "color": "cmyk",
+      "x_ppi": 323,
+      "y_ppi": 323,
+      "size_bytes": 10219,
+      "object_id": "51 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 15,
+      "x0": 280.82,
+      "y0": 286.93,
+      "x1": 373.96,
+      "y1": 375.99,
+      "w_pt": 93.13,
+      "h_pt": 89.05,
+      "name": "Im5",
+      "imagemask": false,
+      "width_px": 414,
+      "height_px": 396,
+      "encoding": "image",
+      "color": "cmyk",
+      "x_ppi": 320,
+      "y_ppi": 320,
+      "size_bytes": 12492,
+      "object_id": "52 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -647,6 +791,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 9.3,
       "detail": "259 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-26T00:33:38Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 93.3,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-26T00:33:38Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "28 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-26T00:33:39Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 75.1,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-26T00:33:39Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 17.1,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-26T00:33:39Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 213.4,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-26T00:33:43Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3049.7,
+      "detail": "5 images, 4 pix2latex candidates"
     }
   ],
   "capabilities": {
