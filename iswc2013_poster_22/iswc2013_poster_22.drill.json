@@ -7,7 +7,14 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_KNOWN",
+    "DESTS_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 4,
@@ -140,12 +147,138 @@
       "PDF version": "1.5"
     },
     "page_count_text": 4,
-    "image_count": 0
+    "image_count": 0,
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Efficient Computation of Relationship-Centrality",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "in Large Entity-Relationship Graphs",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "Abstract.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "2 Relationship Centrality",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.4",
+        "title": "Table 1. Top ranked entities for example queries",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.5",
+        "title": "3 Application",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.6",
+        "title": "Example:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.7",
+        "title": "SELECT",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.8",
+        "title": "SELECT",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.9",
+        "title": "4 Experimental Evaluation",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.10",
+        "title": "Table 2. Computation time and ranking quality",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.11",
+        "title": "Q1:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.12",
+        "title": "Q2:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.13",
+        "title": "Q3:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.14",
+        "title": "5 Conclusions & Outlook",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.12",
+    "creator": "TeX",
+    "creation_date": "2013-08-31T00:44:17+02",
+    "mod_date": "2013-08-31T00:44:17+02",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 4,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 183039,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) kpathsea version 6.0.1"
+    }
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "BWGHQT+NimbusRomNo9L-Medi",
@@ -400,7 +533,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -517,6 +650,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.9,
       "detail": "106 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-27T00:38:59Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 118.5,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-27T00:38:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "18 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-27T00:38:59Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 9.8,
+      "detail": "scope=markdown method=none"
+    },
+    {
+      "ts": "2026-08-27T00:38:59Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 0.8,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-27T00:39:00Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 66.7,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-27T00:39:00Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 118.6,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-27T00:39:02Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1627.2,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

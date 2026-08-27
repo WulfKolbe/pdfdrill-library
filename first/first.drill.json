@@ -9,7 +9,13 @@
     "MATHPIX_KNOWN",
     "GEOMETRY_FUSED",
     "LATEX_INGESTED",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -138,14 +144,42 @@
     "latex_graphics": 1,
     "tiddlers_path": "first.tiddlers.json",
     "tiddlers_count": 21,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.26",
+    "creator": "TeX",
+    "creation_date": "2025-10-25T19:16:50+02",
+    "mod_date": "2025-10-25T19:16:50+02",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 1,
+    "encrypted": false,
+    "page_size": "9.96 x 10.389 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 1151,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Solus) kpathsea version 6.4.0"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
   "fonts_layer": [],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -252,6 +286,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.5,
       "detail": "21 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-27T00:36:05Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 94.9,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-27T00:36:05Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 1.0,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-27T00:36:05Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 27.2,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-27T00:36:05Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 31.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-27T00:36:06Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 108.0,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-27T00:36:06Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 394.9,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
