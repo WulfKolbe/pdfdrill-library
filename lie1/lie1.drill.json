@@ -7,7 +7,12 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 7,
@@ -133,9 +138,37 @@
     ],
     "tiddlers_path": "lie1.tiddlers.json",
     "tiddlers_count": 168,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "MiKTeX pdfTeX-1.40.17",
+    "creator": "TeX",
+    "creation_date": "2019-05-03T13:48:10-07",
+    "mod_date": "2019-05-03T13:48:10-07",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 7,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 193605,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is MiKTeX-pdfTeX 2.9.6211 (1.40.17)"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -337,7 +370,68 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 5,
+      "x0": 208.5,
+      "y0": 124.81,
+      "x1": 403.5,
+      "y1": 241.06,
+      "w_pt": 195.0,
+      "h_pt": 116.25,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 520,
+      "height_px": 310,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 192,
+      "y_ppi": 192,
+      "size_bytes": 570,
+      "object_id": "23 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 6,
+      "x0": 223.12,
+      "y0": 167.21,
+      "x1": 388.88,
+      "y1": 291.33,
+      "w_pt": 165.75,
+      "h_pt": 124.12,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 442,
+      "height_px": 331,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 192,
+      "y_ppi": 192,
+      "size_bytes": 1001,
+      "object_id": "32 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 7,
+      "x0": 207.94,
+      "y0": 215.36,
+      "x1": 404.06,
+      "y1": 343.99,
+      "w_pt": 196.12,
+      "h_pt": 128.62,
+      "name": "Im3",
+      "imagemask": false,
+      "width_px": 523,
+      "height_px": 343,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 192,
+      "y_ppi": 192,
+      "size_bytes": 8349,
+      "object_id": "37 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -428,6 +522,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 6.3,
       "detail": "168 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-28T00:35:01Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 36.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-28T00:35:01Z",
+      "node": "abstract",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 32.3,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-28T00:35:01Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 35.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-28T00:35:01Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 68.0,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-28T00:35:02Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 843.3,
+      "detail": "3 images, 3 pix2latex candidates"
     }
   ],
   "capabilities": {

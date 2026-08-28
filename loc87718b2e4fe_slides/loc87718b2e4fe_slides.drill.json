@@ -8,7 +8,11 @@
     "MODEL_BUILT",
     "MATHPIX_KNOWN",
     "GEOMETRY_FUSED",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -127,14 +131,74 @@
     "geometry_mean_sim": null,
     "tiddlers_path": "loc87718b2e4fe_slides.tiddlers.json",
     "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "GPL Ghostscript 10.07.1",
+    "creator": "",
+    "creation_date": "2026-06-12T14:35:35+02",
+    "mod_date": "2026-06-12T14:35:35+02",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 1,
+    "encrypted": false,
+    "page_size": "1316.57 x 740.57 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 53541,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2026",
+    "title": "",
+    "author": "",
+    "year": "2026",
+    "pages": 1,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 0.0,
+      "y0": -0.0,
+      "x1": 1316.57,
+      "y1": 740.57,
+      "w_pt": 1316.57,
+      "h_pt": 740.57,
+      "name": "R7",
+      "imagemask": false,
+      "width_px": 1280,
+      "height_px": 720,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 70,
+      "y_ppi": 70,
+      "size_bytes": 50790,
+      "object_id": "7 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -233,6 +297,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 1.1,
       "detail": "19 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-28T00:35:22Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 55.2,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-28T00:35:22Z",
+      "node": "links",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 38.9,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-28T00:35:22Z",
+      "node": "bibtex",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 31.2,
+      "detail": "citekey=unknown2026"
+    },
+    {
+      "ts": "2026-08-28T00:35:23Z",
+      "node": "images",
+      "from": "BIBTEX_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 199.7,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
