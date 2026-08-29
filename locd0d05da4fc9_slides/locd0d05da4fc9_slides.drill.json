@@ -8,7 +8,13 @@
     "MODEL_BUILT",
     "MATHPIX_KNOWN",
     "GEOMETRY_FUSED",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -126,14 +132,61 @@
     "geometry_mean_sim": null,
     "tiddlers_path": "locd0d05da4fc9_slides.tiddlers.json",
     "tiddlers_count": 18,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "toc_search_scope": "first3pages",
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "GPL Ghostscript 10.07.1",
+    "creator": "",
+    "creation_date": "2026-06-12T15:43:28+02",
+    "mod_date": "2026-06-12T15:43:28+02",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 1,
+    "encrypted": false,
+    "page_size": "658.29 x 370.29 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 18899,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
   "fonts_layer": [],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 658.29,
+      "y1": 370.29,
+      "w_pt": 658.29,
+      "h_pt": 370.29,
+      "name": "R7",
+      "imagemask": false,
+      "width_px": 640,
+      "height_px": 360,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 70,
+      "y_ppi": 70,
+      "size_bytes": 16179,
+      "object_id": "7 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -232,6 +285,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 0.4,
       "detail": "18 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-29T00:32:00Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 40.5,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-29T00:32:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "0 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-29T00:32:00Z",
+      "node": "toc",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 19.3,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-29T00:32:00Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 20.4,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-29T00:32:00Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 49.4,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-29T00:32:00Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 179.8,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

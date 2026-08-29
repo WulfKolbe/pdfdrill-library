@@ -7,7 +7,13 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -146,9 +152,432 @@
       "PDF version": "1.4"
     },
     "page_count_text": 12,
-    "image_count": 0
+    "image_count": 0,
+    "abstract": "This paper describes Jaql, a declarative scripting language for analyzing large semistructured datasets in parallel using Hadoop’s MapReduce framework. Jaql is currently used in IBM’s InfoSphere BigInsights [5] and Cognos Consumer Insight [9] products. Jaql’s design features are: (1) a flexible data model, (2) reusability, (3) varying levels of abstraction, and (4) scalability. Jaql’s data model is inspired by JSON and can be used to represent datasets that vary from flat, relational tables to collections of semistructured documents. A Jaql script can start without any schema and evolve over time from a partial to a rigid schema. Reusability is provided through the use of higher-order functions and by packaging related functions into modules. Most Jaql scripts work at a high level of abstraction for concise specification of logical operations (e.g., join), but Jaql’s notion of *physical transparency* also provides a lower level of abstraction if necessary. This allows users to pin down the evaluation plan of a script for greater control or even add new operators. The Jaql compiler automatically rewrites Jaql scripts so they can run in parallel on Hadoop. In addition to describing Jaql’s design, we present the results of scale-up experiments on Hadoop running Jaql scripts for intranet data analysis and log processing.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Jaql: A Scripting Lan",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "Semistructured",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "Kevin S. Beyer Vuk Ercegovac",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "Mohamed Eltabakh Carl-Christian Kan",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "1. INTRODUCTION",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "3",
+        "title": "guage for Large Scale",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4",
+        "title": "Data Analysis",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4.1",
+        "title": "Rainer Gemulla Andrey Balmin",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.2",
+        "title": "ne Fatma Ozcan Eugene J. Shekita",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.3",
+        "title": "Flexible Data Model: Jaql’s data model is based on JSON,",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.4",
+        "title": "Reusability and Modularity: Jaql blends ideas from program-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.5",
+        "title": "Physical Transparency: Building on higher order functions,",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.6",
+        "title": "Scalability",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.7",
+        "title": "2. RELATEDWORK",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.8",
+        "title": "3. HADOOP BACKGROUND",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.9",
+        "title": "4. JAQL’S DATA MODEL AND SCHEMA",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.9.1",
+        "title": "4.1 The Data Model",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.10",
+        "title": "Textual Representation. Figure 1 shows the grammar for the",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.11",
+        "title": "Figure 1: Grammar for textual representation of Jaql values.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.12",
+        "title": "Example 1 Consider a hypothetical company KnowItAll, Inc.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.13",
+        "title": "Relationship to other data models. JDM consciously avoids",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.13.1",
+        "title": "4.2 The Schema",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.14",
+        "title": "Figure 2: Grammar for schema language.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.15",
+        "title": "Example 2",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.16",
+        "title": "Example Data",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.17",
+        "title": "Data Flow countFields",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.18",
+        "title": "HDFS read transform expand group write HDFS",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.19",
+        "title": "Figure 3: Conceptual data flow for counting fields.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.20",
+        "title": "5. JAQL LANGUAGE OVERVIEW",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.20.1",
+        "title": "5.1 Core Expressions",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.21",
+        "title": "Example 3",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.22",
+        "title": "transform: The transform expression applies a function (or",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.23",
+        "title": "expand:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.24",
+        "title": "group by: Similar to SQL’s GROUP BY, Jaql’s group by",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.25",
+        "title": "filter:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.26",
+        "title": "join:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.27",
+        "title": "union: The union expression is a Jaql function that merges",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.28",
+        "title": "tee:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.29",
+        "title": "Control-flow: The two most commonly used control-flow ex-",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.29.1",
+        "title": "5.2 Functions",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.29.2",
+        "title": "5.3 Extensibility",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.30",
+        "title": "Example 4 Continuing from Example 3, suppose that the user",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.30.1",
+        "title": "5.4 Processing Semistructured Data",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.30.2",
+        "title": "5.4.1 Language Composability",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.31",
+        "title": "Example 5 Consider a wroteAbout dataset that contains pairs",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.31.1",
+        "title": "5.4.2 Path Expressions and Constructors",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.31.2",
+        "title": "5.5 Error Handling",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.32",
+        "title": "6. JAQL’S PHYSICAL TRANSPARENCY",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.33",
+        "title": "Example 6 Consider a log dataset that resembles many Apache",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.34",
+        "title": "S2’",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 3,
+        "url": "http://www.acme.com/prod/1.1reviews",
+        "kind": "text"
+      },
+      {
+        "page": 6,
+        "url": "http://www.r-project.org",
+        "kind": "text"
+      },
+      {
+        "page": 6,
+        "url": "http://www.spss.com",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://hadoop.apache.org",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://nutch.apache.org/",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://www-01.ibm.com/software/data/db2/xml/",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://publib.boulder.ibm.com/10",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://laurentszyster.be/jsonr/",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://json-schema.org/",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://msdn.microsoft.com/en-Parallel",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://www-01.ibm.com/software/data/",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://developer.marklogic.com/pubs/4.1/books/cluster.pdf",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://www.oracle.com/technology/sample",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://www.cascading.org/",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://relaxng.org/",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://saxon.sourceforge.net/",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://www.w3.org/XML/Schema",
+        "kind": "text"
+      },
+      {
+        "page": 12,
+        "url": "http://www.w3.org/TR/xquery",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "MiKTeX pdfTeX-1.40.11; modified using iText® 5.1.1 ©2000-2011 1T3XT BVBA",
+    "creator": "TeX",
+    "creation_date": "2011-06-27T14:20:11-07",
+    "mod_date": "2011-08-07T21:53:50+10",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 12,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 423019,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is MiKTeX-pdfTeX 2.9.3824 (1.40.11)"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -532,7 +961,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -641,6 +1070,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 14.6,
       "detail": "259 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-29T00:33:23Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 49.6,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-29T00:33:23Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "27 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-29T00:33:23Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 2.4,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-29T00:33:24Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 2.6,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-29T00:33:24Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 161.7,
+      "detail": "18 external urls"
+    },
+    {
+      "ts": "2026-08-29T00:33:27Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2943.8,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

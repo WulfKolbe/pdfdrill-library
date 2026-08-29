@@ -8,7 +8,13 @@
     "MODEL_BUILT",
     "MATHPIX_KNOWN",
     "GEOMETRY_FUSED",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "TOC_ABSENT",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -126,14 +132,76 @@
     "geometry_mean_sim": null,
     "tiddlers_path": "locf2dcd5dd47f_slides.tiddlers.json",
     "tiddlers_count": 18,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "toc_search_scope": "first3pages",
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "GPL Ghostscript 10.07.1",
+    "creator": "",
+    "creation_date": "2026-06-12T15:39:37+02",
+    "mod_date": "2026-06-12T15:39:37+02",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 1,
+    "encrypted": false,
+    "page_size": "658.29 x 370.29 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 16270,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2026",
+    "title": "",
+    "author": "",
+    "year": "2026",
+    "pages": 1,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 658.29,
+      "y1": 370.29,
+      "w_pt": 658.29,
+      "h_pt": 370.29,
+      "name": "R7",
+      "imagemask": false,
+      "width_px": 640,
+      "height_px": 360,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 70,
+      "y_ppi": 70,
+      "size_bytes": 13619,
+      "object_id": "7 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -232,6 +300,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 0.4,
       "detail": "18 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-29T00:32:13Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 42.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-29T00:32:14Z",
+      "node": "toc",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 18.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-29T00:32:14Z",
+      "node": "abstract",
+      "from": "FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 17.7,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-29T00:32:14Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 41.6,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-29T00:32:14Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 33.0,
+      "detail": "citekey=unknown2026"
+    },
+    {
+      "ts": "2026-08-29T00:32:14Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,OCR_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 166.6,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -8,7 +8,13 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 10,
@@ -229,12 +235,115 @@
       "PDF version": "1.5"
     },
     "page_count_text": 10,
-    "image_count": 0
+    "image_count": 0,
+    "abstract": "Testing for conditional independence is a core aspect of constraint-based causal discovery. Although commonly used tests are perfect in theory, they often fail to reject independence in practice—especially when conditioning on multiple variables. We focus on discrete data and propose a new test based on the notion of algorithmic independence that we instantiate using stochastic complexity. Amongst others, we show that our proposed test, SCI , is an asymptotically unbiased as well as $L$ consistent estimator 2 for conditional mutual information (CMI ). Further, we show that SCI can be reformulated to find a sensible threshold for CMI that works well on limited samples. Empirical evaluation shows that SCI has a lower type II error than commonly used tests. As a result, we obtain a higher recall when we use SCI in causal discovery algorithms, without compromising the precision.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Testing Conditional Indep",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "using Stochas",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "3",
+        "title": "endence on Discrete Data",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4",
+        "title": "tic Complexity",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4.1",
+        "title": "2 Conditional Independence Testing",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.2",
+        "title": "3 Stochastic Complexity for",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.3",
+        "title": "Multinomials",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.4",
+        "title": "4 Stochastic Complexity based",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.5",
+        "title": "Conditional Independence",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.6",
+        "title": "5 Experiments",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.7",
+        "title": "6 Conclusion",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown"
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.17",
+    "creator": "TeX",
+    "creation_date": "2019-02-25T17:34:42+01",
+    "mod_date": "2019-02-25T17:34:42+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 10,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 499819,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) kpathsea version 6.2.2"
+    }
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "HTJRHZ+CMBX12",
@@ -1259,7 +1368,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -1384,6 +1493,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 15.5,
       "detail": "350 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-29T00:32:35Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 43.3,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-29T00:32:35Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 8.5,
+      "detail": "73 fonts, 35 math"
+    },
+    {
+      "ts": "2026-08-29T00:32:35Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 2.3,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-29T00:32:35Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 2.0,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-29T00:32:36Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 22.6,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-29T00:32:39Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3618.6,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

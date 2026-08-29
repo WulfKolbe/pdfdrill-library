@@ -6,7 +6,14 @@
     "FONTS_LAYER_KNOWN",
     "MODEL_BUILT",
     "MATHPIX_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "TOC_ABSENT",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -109,10 +116,56 @@
     ],
     "tiddlers_path": "nopi_testpagei.tiddlers.json",
     "tiddlers_count": 19,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "links": [
+      {
+        "page": 1,
+        "url": "https://plotly.com/"
+      }
+    ],
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "nopi:3000",
+    "author": "",
+    "producer": "Skia/PDF m139",
+    "creator": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "creation_date": "2026-04-14T12:32:23Z",
+    "mod_date": "2026-04-14T12:32:23Z",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": true,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 1,
+    "encrypted": false,
+    "page_size": "841.92 x 594.96 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 86402,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "nopi2026",
+    "title": "nopi:3000",
+    "author": "",
+    "year": "2026",
+    "pages": 1,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -131,7 +184,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -214,6 +267,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 0.8,
       "detail": "19 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-29T00:33:09Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 40.9,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-08-29T00:33:09Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "1 fonts, 0 math"
+    },
+    {
+      "ts": "2026-08-29T00:33:09Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 35.4,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-29T00:33:09Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 19.1,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-29T00:33:09Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 35.4,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-29T00:33:09Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 37.1,
+      "detail": "citekey=nopi2026"
+    },
+    {
+      "ts": "2026-08-29T00:33:10Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 929.5,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -7,7 +7,14 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 19,
@@ -138,12 +145,52 @@
     ],
     "tiddlers_path": "mixedarea2010.tiddlers.json",
     "tiddlers_count": 318,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.10b",
+    "creator": "TeX",
+    "creation_date": "2009-05-04T17:50:00Z",
+    "mod_date": null,
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 19,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 634968,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "wallner2009",
+    "title": "ORIENTED MIXED AREA AND DISCRETE MINIMAL SURFACES",
+    "author": "CHRISTIAN MÜLLER AND JOHANNES WALLNER",
+    "year": "2009",
+    "pages": 19,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "MYQLBW+CMBX12",
@@ -370,7 +417,88 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 15,
+      "x0": 71.43,
+      "y0": 101.0,
+      "x1": 238.22,
+      "y1": 256.95,
+      "w_pt": 166.79,
+      "h_pt": 155.95,
+      "name": "R8",
+      "imagemask": false,
+      "width_px": 924,
+      "height_px": 864,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 399,
+      "y_ppi": 399,
+      "size_bytes": 120832,
+      "object_id": "151 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 15,
+      "x0": 246.44,
+      "y0": 103.01,
+      "x1": 488.31,
+      "y1": 256.94,
+      "w_pt": 241.87,
+      "h_pt": 153.93,
+      "name": "R8",
+      "imagemask": false,
+      "width_px": 1037,
+      "height_px": 660,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 309,
+      "y_ppi": 309,
+      "size_bytes": 108544,
+      "object_id": "155 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 16,
+      "x0": 243.1,
+      "y0": 100.93,
+      "x1": 523.65,
+      "y1": 226.04,
+      "w_pt": 280.55,
+      "h_pt": 125.11,
+      "name": "R8",
+      "imagemask": false,
+      "width_px": 1146,
+      "height_px": 511,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 294,
+      "y_ppi": 294,
+      "size_bytes": 99532,
+      "object_id": "169 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 16,
+      "x0": 107.15,
+      "y0": 101.21,
+      "x1": 231.79,
+      "y1": 226.04,
+      "w_pt": 124.64,
+      "h_pt": 124.83,
+      "name": "R8",
+      "imagemask": false,
+      "width_px": 698,
+      "height_px": 699,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 403,
+      "y_ppi": 403,
+      "size_bytes": 73523,
+      "object_id": "165 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -461,6 +589,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 20.0,
       "detail": "318 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-29T00:32:47Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 42.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-29T00:32:47Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "16 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-29T00:32:48Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 37.2,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-29T00:32:48Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 39.1,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-29T00:32:48Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 21.6,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-29T00:32:48Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 22.7,
+      "detail": "citekey=wallner2009"
+    },
+    {
+      "ts": "2026-08-29T00:32:51Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3097.2,
+      "detail": "4 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {
