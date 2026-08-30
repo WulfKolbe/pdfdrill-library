@@ -7,7 +7,12 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -128,10 +133,57 @@
     ],
     "tiddlers_path": "qft2_Exercise1-1.tiddlers.json",
     "tiddlers_count": 77,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "links": [
+      {
+        "page": 1,
+        "url": "http://www.thp.uni-koeln.de/∼jinhong/qft2",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.18",
+    "creator": "TeX",
+    "creation_date": "2019-10-10T13:31:03+02",
+    "mod_date": "2019-10-10T13:31:03+02",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 2,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 121812,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) kpathsea version 6.2.3"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2019",
+    "title": "",
+    "author": "",
+    "year": "2019",
+    "pages": 2,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -290,7 +342,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -373,6 +425,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.5,
       "detail": "77 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T00:34:42Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 45.5,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-30T00:34:42Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "11 fonts, 5 math"
+    },
+    {
+      "ts": "2026-08-30T00:34:42Z",
+      "node": "links",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 58.0,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-30T00:34:42Z",
+      "node": "bibtex",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 47.0,
+      "detail": "citekey=unknown2019"
+    },
+    {
+      "ts": "2026-08-30T00:34:42Z",
+      "node": "images",
+      "from": "BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 427.3,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

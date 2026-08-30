@@ -2,7 +2,12 @@
   "pdf": "Massenformel_nach_B_Heim_1982.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "NEEDS_VISION_OCR",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -29,7 +34,34 @@
     },
     "page_count_text": 10,
     "font_count": 7,
-    "image_count": 0
+    "image_count": 0,
+    "bibkey": "Massenformel_nach_B_Heim_1982",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 10,
+      "Citation": 1,
+      "ListItem": 6,
+      "Paragraph": 10,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "bibliography_entries": 0,
+    "bibliography_with_year": 0,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 0,
+    "bibliography_cites": 0,
+    "tiddlers_path": "Massenformel_nach_B_Heim_1982.tiddlers.json",
+    "tiddlers_count": 44,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -47,6 +79,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2105.1,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-29T23:05:17Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 58.4,
+      "detail": "28 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-29T23:05:17Z",
+      "node": "bibliography",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "0 entries, 0+0 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-29T23:05:17Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 2.3,
+      "detail": "44 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-29T23:05:17Z",
+      "node": "reporttex",
+      "from": "BIBLIOGRAPHY_BUILT,IMAGES_LAYER_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "0 equations, 0 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Massenformel_nach_B_Heim_1982/Massenformel_nach_B_Heim_1982.lines.json": "sha256:190c547a0f72febf4532a8ef9c14df9a781d32c76a4a1b46f21d9859a7ea95e9"
+      },
+      "params_hash": "sha256:b5993b8ef6b42d7bd8a54ea5094e5d3c3845411361081e7a7c8e9cbddc6a0ef2",
+      "algo": "sha256",
+      "ts": "2026-08-29T23:05:17Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

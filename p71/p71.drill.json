@@ -8,7 +8,13 @@
     "SIZE_KNOWN",
     "MD_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "mathpix_pdf_id": "2bdebdaa-b56b-4b85-80a9-7794ca227b66",
@@ -155,12 +161,101 @@
       "PDF version": "1.4"
     },
     "page_count_text": 16,
-    "image_count": 0
+    "image_count": 0,
+    "abstract": "This article presents the Quasar system for question answering over unstructured text, structured tables, and knowledge graphs, with unified treatment of all sources. The system adopts a RAG-based architecture, with a pipeline of evidence retrieval followed by answer generation, with the latter powered by a moderate-sized language model. Additionally and uniquely, Quasar has components for question understanding, to derive crisper input for evidence retrieval, and for re-ranking and filtering the retrieved evidence before feeding the most informative pieces into the answer generation. Experiments with three different benchmarks demonstrate the high answering quality of our approach, being on par with or better than large GPT models, while keeping the computational cost and energy consumption orders of magnitude lower.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "RAG-based Question Answering",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "over Heterogeneous Data and Text",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "3",
+        "title": "Abstract",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4.1",
+        "title": "..",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "5",
+        "title": "2 Related Work",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "6",
+        "title": "3 Methodology",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "7",
+        "title": "4 Experiments",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "8",
+        "title": "5 Insights, Limitations, and Challenges",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "9",
+        "title": "References",
+        "page": "",
+        "level": 1
+      }
+    ],
+    "toc_search_scope": "markdown"
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "macOS Version 14.6.1 (Build 23G93) Quartz PDFContext",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2025-01-23T10:49:04Z",
+    "mod_date": "2025-01-23T10:49:04Z",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 16,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 959179,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "AAAAAB+SFRM1728",
@@ -583,7 +678,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -700,6 +795,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 8.0,
       "detail": "153 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T00:34:05Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 56.2,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-30T00:34:05Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "30 fonts, 4 math"
+    },
+    {
+      "ts": "2026-08-30T00:34:05Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 2.7,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-30T00:34:05Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 1.2,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-30T00:34:05Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 21.3,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-30T00:34:09Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3946.1,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

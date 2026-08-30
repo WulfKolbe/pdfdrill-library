@@ -7,7 +7,11 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 5,
@@ -144,9 +148,35 @@
     ],
     "tiddlers_path": "qft2_Exercise2-6_solutions.tiddlers.json",
     "tiddlers_count": 158,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "MiKTeX pdfTeX-1.40.20",
+    "creator": "TeX",
+    "creation_date": "2020-01-31T13:33:13+01",
+    "mod_date": "2020-01-31T13:33:13+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 5,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 286965,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is MiKTeX-pdfTeX 2.9.7029 (1.40.20)"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -418,7 +448,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -509,6 +539,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.4,
       "detail": "158 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T00:34:46Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 53.1,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-30T00:34:46Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "19 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-30T00:34:46Z",
+      "node": "links",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 113.0,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-30T00:34:47Z",
+      "node": "images",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1298.6,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

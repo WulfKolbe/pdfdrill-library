@@ -8,7 +8,11 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -163,9 +167,41 @@
       "PDF version": "1.4"
     },
     "page_count_text": 12,
-    "image_count": 0
+    "image_count": 0,
+    "links": [
+      {
+        "page": 8,
+        "url": "http://www.sigkdd.org/kddcup/index",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.10",
+    "creator": "TeX",
+    "creation_date": "2013-04-21T20:09:14+02",
+    "mod_date": "2013-06-27T08:17:48+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 12,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 395289,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.1415926-1.40.10-2.2 (TeX Live 2009/Debian) kpathsea version 5.0.0"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -605,7 +641,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -730,6 +766,38 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 23.5,
       "detail": "410 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T00:34:03Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 46.9,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-30T00:34:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "31 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-30T00:34:03Z",
+      "node": "links",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 181.3,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-08-30T00:34:08Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4057.4,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

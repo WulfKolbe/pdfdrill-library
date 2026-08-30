@@ -8,7 +8,13 @@
     "SIZE_KNOWN",
     "MD_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "mathpix_pdf_id": "c6312c49-cc35-4170-8687-56320fd0b73c",
@@ -152,10 +158,106 @@
       "PDF version": "1.5"
     },
     "page_count_text": 5,
-    "image_count": 2
+    "image_count": 2,
+    "toc": [
+      {
+        "number": "1",
+        "title": "Towards Leveraging Commonsense Knowledge",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "for Autonomous Driving",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "2 Commonsense Knowledge for Autonomous Driving",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "3 Results",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.4",
+        "title": "4 Conclusion",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 2,
+        "url": "https://github.com/boschresearch/ad",
+        "kind": "text"
+      },
+      {
+        "page": 2,
+        "url": "https://scale.com/open-datasets/pandaset",
+        "kind": "text"
+      },
+      {
+        "page": 4,
+        "url": "https://github.com/Accenture/AmpliGraph",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.21",
+    "creator": "TeX",
+    "creation_date": "2021-09-05T14:22:50Z",
+    "mod_date": "2021-09-05T14:22:50Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 5,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 418058,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "towards2021",
+    "title": "Towards Leveraging Commonsense Knowledge for Autonomous Driving",
+    "author": "",
+    "year": "2021",
+    "pages": 5,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "for this paper by its authors. Use permitted under Creative",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -524,7 +626,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 0.0,
+      "y0": 159.54,
+      "x1": 612.0,
+      "y1": 632.45,
+      "w_pt": 612.0,
+      "h_pt": 472.91,
+      "name": "R10",
+      "imagemask": false,
+      "width_px": 3300,
+      "height_px": 2550,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 388,
+      "y_ppi": 388,
+      "size_bytes": 22732,
+      "object_id": "67 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -649,6 +772,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 5.2,
       "detail": "104 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T00:34:14Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 44.9,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-30T00:34:14Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "26 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-30T00:34:14Z",
+      "node": "toc",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 0.8,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-30T00:34:14Z",
+      "node": "links",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 73.0,
+      "detail": "3 external urls"
+    },
+    {
+      "ts": "2026-08-30T00:34:14Z",
+      "node": "bibtex",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 46.1,
+      "detail": "citekey=towards2021"
+    },
+    {
+      "ts": "2026-08-30T00:34:15Z",
+      "node": "images",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 963.1,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

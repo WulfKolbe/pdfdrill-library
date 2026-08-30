@@ -10,7 +10,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "MATHPIX_KNOWN"
+    "MATHPIX_KNOWN",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "pages": 28,
@@ -212,7 +215,16 @@
     "retracted_layers": [
       "bibliography",
       "tiddlers"
-    ]
+    ],
+    "bibliography_entries": 41,
+    "bibliography_with_year": 40,
+    "bibliography_numeric_citations": 5,
+    "bibliography_authoryear_citations": 32,
+    "bibliography_cites": 33,
+    "tiddlers_path": "2410.10630v1.tiddlers.json",
+    "tiddlers_count": 297,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": {
     "title": "",
@@ -2775,6 +2787,30 @@
       "to": "MODEL_BUILT",
       "cost_ms": 283.6,
       "detail": "540 objects, 7 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-29T10:35:34Z",
+      "node": "bibliography",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "41 entries, 5+32 cites detected, 33 linked"
+    },
+    {
+      "ts": "2026-08-29T10:35:34Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 16.4,
+      "detail": "297 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-29T10:35:34Z",
+      "node": "reporttex",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "7 equations, 59 formulas"
     }
   ],
   "capabilities": {

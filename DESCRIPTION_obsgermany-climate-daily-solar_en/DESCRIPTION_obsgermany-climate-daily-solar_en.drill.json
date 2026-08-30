@@ -11,7 +11,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -72,7 +75,27 @@
         "page": 3,
         "url": "https://www.dwd.de/copyright"
       }
-    ]
+    ],
+    "bibkey": "DESCRIPTION_obsgermany-climate-daily-solar_en",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 3,
+      "Paragraph": 3,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "DESCRIPTION_obsgermany-climate-daily-solar_en.tiddlers.json",
+    "tiddlers_count": 23,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": {
     "title": "",
@@ -296,6 +319,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 808.3,
       "detail": "3 images, 3 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-29T18:48:48Z",
+      "node": "model",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "MODEL_BUILT",
+      "cost_ms": 38.9,
+      "detail": "7 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-29T18:48:48Z",
+      "node": "tiddlers",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_ABSENT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.2,
+      "detail": "23 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-29T18:48:48Z",
+      "node": "reporttex",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "0 equations, 0 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/DESCRIPTION_obsgermany-climate-daily-solar_en/DESCRIPTION_obsgermany-climate-daily-solar_en.lines.json": "sha256:3b677d128328c1bb1b99ed7f84d4f734c4ee1ac4bf9eb02bdce9fe54627696e9"
+      },
+      "params_hash": "sha256:97389ea59ed8fcc9e3297d437b4a0a3a97a3510161b4a1720c8dd9d1e034e975",
+      "algo": "sha256",
+      "ts": "2026-08-29T18:48:48Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

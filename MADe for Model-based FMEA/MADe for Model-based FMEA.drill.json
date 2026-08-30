@@ -4,7 +4,10 @@
   "facts": [
     "PDFINFO_KNOWN",
     "SIZE_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -37,7 +40,28 @@
     "producer": "Adobe PDF Library 15.0",
     "creator": "Adobe InDesign CC 2015 (Macintosh)",
     "encrypted": false,
-    "text_layer": true
+    "text_layer": true,
+    "bibkey": "MADe for Model-based FMEA",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "ListItem": 6,
+      "Paragraph": 4,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "pdfminer-chars",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "\nNOTE: 9 unmapped private-use character(s) remain (U+F084×9) — font-private glyphs with no verified plain-text equivalent; they are kept verbatim. Add them to text_normalize.OPENSYMBOL_PUA once identified.",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "pdfminer-chars"
+    },
+    "tiddlers_path": "MADe for Model-based FMEA.tiddlers.json",
+    "tiddlers_count": 29,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": {
     "title": "",
@@ -407,6 +431,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 990.3,
       "detail": "16 images, 14 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-29T23:04:32Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 35.7,
+      "detail": "13 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-29T23:04:32Z",
+      "node": "tiddlers",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 1.0,
+      "detail": "29 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-29T23:04:32Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "0 equations, 0 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/MADe for Model-based FMEA/MADe for Model-based FMEA.lines.json": "sha256:07e6f430ec0ef9dce68d80cf392a2b2551897aaf266719d667674d96eeae5e1b"
+      },
+      "params_hash": "sha256:c2c364e3902dd4bf11451058239228973028691b3ecbcd8dcafc750355074f26",
+      "algo": "sha256",
+      "ts": "2026-08-29T23:04:32Z",
+      "provenance": "pdfminer-chars"
+    }
+  }
 }

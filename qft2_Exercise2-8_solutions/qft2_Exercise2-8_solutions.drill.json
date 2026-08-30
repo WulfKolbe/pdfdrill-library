@@ -7,7 +7,13 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -138,12 +144,53 @@
     ],
     "tiddlers_path": "qft2_Exercise2-8_solutions.tiddlers.json",
     "tiddlers_count": 87,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.16",
+    "creator": "TeX",
+    "creation_date": "2019-12-07T11:53:54+01",
+    "mod_date": "2019-12-07T11:53:54+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 2,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 219701,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) kpathsea version 6.2.1"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "lohani2019",
+    "title": "Solution to Exercise 8: Quantum Phase Transition",
+    "author": "Vivek Lohani",
+    "year": "2019",
+    "pages": 2,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "BJWLPQ+LMRoman17-Regular",
@@ -398,7 +445,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -489,6 +536,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 3.3,
       "detail": "87 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T00:34:47Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 54.1,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-30T00:34:47Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "18 fonts, 8 math"
+    },
+    {
+      "ts": "2026-08-30T00:34:47Z",
+      "node": "links",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 59.4,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-30T00:34:47Z",
+      "node": "dests",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 25.5,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-30T00:34:47Z",
+      "node": "bibtex",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 24.9,
+      "detail": "citekey=lohani2019"
+    },
+    {
+      "ts": "2026-08-30T00:34:48Z",
+      "node": "images",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 509.4,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

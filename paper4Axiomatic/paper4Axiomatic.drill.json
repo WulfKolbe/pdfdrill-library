@@ -7,7 +7,12 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 14,
@@ -156,9 +161,47 @@
       "PDF version": "1.5"
     },
     "page_count_text": 14,
-    "image_count": 2
+    "image_count": 2,
+    "abstract_search_scope": "markdown",
+    "links": [
+      {
+        "page": 1,
+        "url": "http://amir-workshop.org/",
+        "kind": "text"
+      },
+      {
+        "page": 6,
+        "url": "https://code.google.com/archive/p/word2vec/",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "Investigating Retrieval Method Selection with Axiomatic Features",
+    "author": "",
+    "producer": "pdfTeX-1.40.19",
+    "creator": "TeX",
+    "creation_date": "2019-04-05T12:47:11+01",
+    "mod_date": "2019-05-13T11:29:38+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 14,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 505881,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) kpathsea version 6.3.1/dev"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -640,7 +683,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 0.0,
+      "y0": 159.54,
+      "x1": 612.0,
+      "y1": 632.45,
+      "w_pt": 612.0,
+      "h_pt": 472.91,
+      "name": "R10",
+      "imagemask": false,
+      "width_px": 3300,
+      "height_px": 2550,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 388,
+      "y_ppi": 388,
+      "size_bytes": 24064,
+      "object_id": "71 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -749,6 +813,46 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 7.8,
       "detail": "163 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T00:34:14Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 40.7,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-08-30T00:34:14Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "34 fonts, 6 math"
+    },
+    {
+      "ts": "2026-08-30T00:34:14Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 1.2,
+      "detail": "scope=markdown method=none"
+    },
+    {
+      "ts": "2026-08-30T00:34:15Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 116.5,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-08-30T00:34:17Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2168.2,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

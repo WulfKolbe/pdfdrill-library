@@ -7,7 +7,13 @@
     "MATHPIX_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -118,9 +124,87 @@
       "PDF version": "1.5"
     },
     "page_count_text": 6,
-    "image_count": 2
+    "image_count": 2,
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Supporting Exploratory Search Through User",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "Modeling",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "1 Introduction",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "2 Related Work",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "3 Information-Seeking Behaviors and Intent Visualization",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.4",
+        "title": "4 Distinguish Exploration from Navigational Search",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.5",
+        "title": "5 Interaction Model to Predict Stages of Exploration",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.6",
+        "title": "6 Future Contributions",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.14",
+    "creator": "TeX",
+    "creation_date": "2014-05-14T14:58:30Z",
+    "mod_date": "2014-05-14T14:58:30Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 6,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 107113,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) kpathsea version 6.1.1"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -210,7 +294,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 4,
+      "x0": 137.59,
+      "y0": 347.96,
+      "x1": 477.76,
+      "y1": 475.52,
+      "w_pt": 340.17,
+      "h_pt": 127.56,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 480,
+      "height_px": 386,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 102,
+      "y_ppi": 218,
+      "size_bytes": 384,
+      "object_id": "18 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -319,6 +424,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 4.5,
       "detail": "73 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T00:34:23Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 38.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-30T00:34:23Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "6 fonts, 2 math"
+    },
+    {
+      "ts": "2026-08-30T00:34:24Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 0.9,
+      "detail": "scope=markdown method=none"
+    },
+    {
+      "ts": "2026-08-30T00:34:24Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 1.2,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-30T00:34:24Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 77.2,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-30T00:34:25Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1045.5,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

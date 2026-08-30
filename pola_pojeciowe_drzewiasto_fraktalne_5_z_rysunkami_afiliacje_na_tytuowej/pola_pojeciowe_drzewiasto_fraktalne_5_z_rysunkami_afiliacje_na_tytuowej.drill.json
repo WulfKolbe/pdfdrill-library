@@ -8,7 +8,14 @@
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 26,
@@ -159,12 +166,55 @@
     "bibliography_cites": 6,
     "tiddlers_path": "pola_pojeciowe_drzewiasto_fraktalne_5_z_rysunkami_afiliacje_na_tytuowej.tiddlers.json",
     "tiddlers_count": 551,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "MiKTeX pdfTeX-1.40.16",
+    "creator": "TeX",
+    "creation_date": "2017-10-31T19:21:18+01",
+    "mod_date": "2017-10-31T19:21:18+01",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 26,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 383860,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is MiKTeX-pdfTeX 2.9.5700 (1.40.16)",
+      "rgid": "PB:320739726_AS:555589548085248@1509474278249"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "mroz2017",
+    "title": "A CLASS OF CONCEPTUAL SPACES CONSISTING OF BOUNDARIES OF INFINITE \\(p\\)-ARY TREES",
+    "author": "ROMAN URBAN AND SIMONA MRÓZ",
+    "year": "2017",
+    "pages": 26,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "SourceSansPro-Regular CID",
@@ -503,7 +553,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 39.87,
+      "y0": 231.91,
+      "x1": 59.8,
+      "y1": 251.84,
+      "w_pt": 19.93,
+      "h_pt": 19.93,
+      "name": "X7",
+      "imagemask": false,
+      "width_px": 64,
+      "height_px": 64,
+      "encoding": "jpeg",
+      "color": "rgb",
+      "x_ppi": 231,
+      "y_ppi": 231,
+      "size_bytes": 1732,
+      "object_id": "38 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -602,6 +673,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 17.4,
       "detail": "551 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T00:34:30Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 45.5,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-30T00:34:30Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 8.3,
+      "detail": "24 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-30T00:34:30Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 30.4,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-30T00:34:30Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 33.8,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-30T00:34:30Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 25.0,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-30T00:34:30Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 53.0,
+      "detail": "citekey=mroz2017"
+    },
+    {
+      "ts": "2026-08-30T00:34:34Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 3674.1,
+      "detail": "1 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {

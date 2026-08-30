@@ -8,7 +8,14 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -163,12 +170,1123 @@
       "PDF version": "1.4"
     },
     "page_count_text": 12,
-    "image_count": 1
+    "image_count": 1,
+    "abstract": "Temporal annotations of facts are a key component both for building a high-accuracy knowledge base and for answering queries over the resulting temporal knowledge base with high precision and recall. In this paper, we present a temporalprobabilistic database model for cleaning uncertain temporal facts obtained from information extraction methods. Specifically, we consider a combination of temporal deduction rules, temporal consistency constraints and probabilistic inference based on the common possible-worlds semantics with data lineage, and we study the theoretical properties of this data model. We further develop a query engine which is capable of scaling to very large temporal knowledge bases, with nearly interactive query response times over millions of uncertain facts and hundreds of thousands of grounded rules. Our experiments over two real-world datasets demonstrate the increased robustness of our approach compared to related techniques based on constraint solving via Integer Linear Programming (ILP) and probabilistic inference via Markov Logic Networks (MLNs). We are also able to show that our runtime performance is more than competitive to current ILP solvers and the fastest available, probabilistic but non-temporal, database engines.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "A Temporal Probabi",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "for Informat",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "Maximilian Dylla Iris",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.2",
+        "title": "mdylla@mpi inf.mpg.de miliaraki@",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "2.3",
+        "title": "1. INTRODUCTION",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "3",
+        "title": "listic Database Model",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4",
+        "title": "ion Extraction",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4.1",
+        "title": "Miliaraki Martin Theobald",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.2",
+        "title": "martin.theobald@ua.ac.be",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.3",
+        "title": "mpi inf.mpg.de",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.4",
+        "title": "2. RELATEDWORK",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.5",
+        "title": "3. PRELIMINARIES",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.5.1",
+        "title": "3.1 Temporal Database",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.5.2",
+        "title": "3.2 Probabilistic Database",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.5.3",
+        "title": "3.3 Conditioning a Probabilistic Database",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.6",
+        "title": "4. TEMPORAL PROBABILISTIC",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.7",
+        "title": "DATABASE MODEL",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.7.1",
+        "title": "4.1 Temporal Deduction Rules",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.7.2",
+        "title": "4.2 Temporal Consistency Constraints",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.7.3",
+        "title": "4.3 Temporal Probabilistic Database",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.7.4",
+        "title": "4.4 Queries",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.8",
+        "title": "5. PROPERTIES",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.9",
+        "title": "6. ALGORITHMS",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.9.1",
+        "title": "6.1 Grounding",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.9.2",
+        "title": "6.2 Deduplicating Facts",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.9.3",
+        "title": "6.3 Confidence Computations",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.9.4",
+        "title": "6.4 Lineage Decompositions",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.10",
+        "title": "7. EXPERIMENTS",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.10.1",
+        "title": "7.1 Extraction Quality",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.10.2",
+        "title": "7.2 Query Answering Task",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.10.3",
+        "title": "7.3 Knowledge Base Building Task",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.10.4",
+        "title": "7.4 Detailed Runtime Analysis",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.11",
+        "title": "8. CONCLUSIONS",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.12",
+        "title": "APPENDIX",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.13",
+        "title": "A. NEGATIONS IN DEDUCTION RULES",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.14",
+        "title": "B. GROUNDING DEDUCTION RULES",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.15",
+        "title": "C. CLOSURE AND COMPLETENESS",
+        "page": "",
+        "level": 2
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 9,
+        "url": "http://www.mpi-inf.mpg.de/~mdylla/tpdbSupplementary.pdf"
+      },
+      {
+        "page": 9,
+        "url": "http://www.gurobi.com"
+      },
+      {
+        "page": 9,
+        "url": "https://code.google.com/p/thebeast/"
+      },
+      {
+        "page": 9,
+        "url": "http://alchemy.cs.washington.edu/"
+      },
+      {
+        "page": 9,
+        "url": "http://hazy.cs.wisc.edu/hazy/tuffy/download/"
+      },
+      {
+        "page": 9,
+        "url": "http://nlp.stanford.edu/ner/"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "MiKTeX-xdvipdfmx (0.7.8)",
+    "creator": "LaTeX with hyperref package",
+    "creation_date": "2013-09-15T10:51:54+01",
+    "mod_date": "2013-09-27T09:52:58+01",
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 12,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 682633,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 582.0,
+      "name": "Doc-Start",
+      "kind": "anchor"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 161.0,
+      "name": "copyrightbox.caption.1",
+      "kind": "other"
+    },
+    {
+      "page": 1,
+      "x": 53.0,
+      "y": 776.0,
+      "name": "page.",
+      "kind": "page_anchor"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 586.0,
+      "name": "section*.2",
+      "kind": "section"
+    },
+    {
+      "page": 1,
+      "x": 54.0,
+      "y": 320.0,
+      "name": "section.1",
+      "kind": "section"
+    },
+    {
+      "page": 2,
+      "x": 54.0,
+      "y": 291.0,
+      "name": "equation.1.1",
+      "kind": "equation"
+    },
+    {
+      "page": 2,
+      "x": 58.0,
+      "y": 214.0,
+      "name": "equation.1.2",
+      "kind": "equation"
+    },
+    {
+      "page": 2,
+      "x": 98.0,
+      "y": 113.0,
+      "name": "equation.1.3",
+      "kind": "equation"
+    },
+    {
+      "page": 2,
+      "x": 345.0,
+      "y": 642.0,
+      "name": "equation.1.4",
+      "kind": "equation"
+    },
+    {
+      "page": 2,
+      "x": 128.0,
+      "y": 624.0,
+      "name": "example.1",
+      "kind": "example"
+    },
+    {
+      "page": 2,
+      "x": 317.0,
+      "y": 257.0,
+      "name": "section.2",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 317.0,
+      "y": 539.0,
+      "name": "section.3",
+      "kind": "section"
+    },
+    {
+      "page": 3,
+      "x": 317.0,
+      "y": 462.0,
+      "name": "subsection.3.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 3,
+      "x": 317.0,
+      "y": 191.0,
+      "name": "subsection.3.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 510.0,
+      "y": 633.0,
+      "name": "definition.1",
+      "kind": "definition"
+    },
+    {
+      "page": 4,
+      "x": 97.0,
+      "y": 532.0,
+      "name": "equation.3.5",
+      "kind": "equation"
+    },
+    {
+      "page": 4,
+      "x": 114.0,
+      "y": 309.0,
+      "name": "equation.3.6",
+      "kind": "equation"
+    },
+    {
+      "page": 4,
+      "x": 120.0,
+      "y": 241.0,
+      "name": "equation.3.7",
+      "kind": "equation"
+    },
+    {
+      "page": 4,
+      "x": 321.0,
+      "y": 582.0,
+      "name": "equation.4.8",
+      "kind": "equation"
+    },
+    {
+      "page": 4,
+      "x": 54.0,
+      "y": 177.0,
+      "name": "section.4",
+      "kind": "section"
+    },
+    {
+      "page": 4,
+      "x": 54.0,
+      "y": 465.0,
+      "name": "subsection.3.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 4,
+      "x": 317.0,
+      "y": 686.0,
+      "name": "subsection.4.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 5,
+      "x": 237.0,
+      "y": 423.0,
+      "name": "definition.2",
+      "kind": "definition"
+    },
+    {
+      "page": 5,
+      "x": 288.0,
+      "y": 141.0,
+      "name": "definition.3",
+      "kind": "definition"
+    },
+    {
+      "page": 5,
+      "x": 506.0,
+      "y": 524.0,
+      "name": "definition.4",
+      "kind": "definition"
+    },
+    {
+      "page": 5,
+      "x": 386.0,
+      "y": 388.0,
+      "name": "equation.4.10",
+      "kind": "equation"
+    },
+    {
+      "page": 5,
+      "x": 376.0,
+      "y": 421.0,
+      "name": "equation.4.9",
+      "kind": "equation"
+    },
+    {
+      "page": 5,
+      "x": 54.0,
+      "y": 362.0,
+      "name": "example.2",
+      "kind": "example"
+    },
+    {
+      "page": 5,
+      "x": 546.0,
+      "y": 251.0,
+      "name": "example.3",
+      "kind": "example"
+    },
+    {
+      "page": 5,
+      "x": 317.0,
+      "y": 743.0,
+      "name": "figure.caption.3",
+      "kind": "figure"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 157.0,
+      "name": "corollary.1",
+      "kind": "corollary"
+    },
+    {
+      "page": 6,
+      "x": 284.0,
+      "y": 624.0,
+      "name": "definition.5",
+      "kind": "definition"
+    },
+    {
+      "page": 6,
+      "x": 291.0,
+      "y": 302.0,
+      "name": "definition.6",
+      "kind": "definition"
+    },
+    {
+      "page": 6,
+      "x": 527.0,
+      "y": 562.0,
+      "name": "definition.7",
+      "kind": "definition"
+    },
+    {
+      "page": 6,
+      "x": 124.0,
+      "y": 228.0,
+      "name": "equation.4.11",
+      "kind": "equation"
+    },
+    {
+      "page": 6,
+      "x": 115.0,
+      "y": 167.0,
+      "name": "equation.4.12",
+      "kind": "equation"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 686.0,
+      "name": "example.4",
+      "kind": "example"
+    },
+    {
+      "page": 6,
+      "x": 503.0,
+      "y": 365.0,
+      "name": "example.5",
+      "kind": "example"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 283.0,
+      "name": "section.5",
+      "kind": "section"
+    },
+    {
+      "page": 6,
+      "x": 54.0,
+      "y": 698.0,
+      "name": "subsection.4.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 584.0,
+      "name": "subsection.4.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 317.0,
+      "y": 470.0,
+      "name": "subsection.4.4",
+      "kind": "subsection"
+    },
+    {
+      "page": 6,
+      "x": 550.0,
+      "y": 250.0,
+      "name": "theorem.1",
+      "kind": "theorem"
+    },
+    {
+      "page": 7,
+      "x": 529.0,
+      "y": 549.0,
+      "name": "example.6",
+      "kind": "example"
+    },
+    {
+      "page": 7,
+      "x": 191.0,
+      "y": 707.0,
+      "name": "lemma.1",
+      "kind": "lemma"
+    },
+    {
+      "page": 7,
+      "x": 54.0,
+      "y": 455.0,
+      "name": "section.6",
+      "kind": "section"
+    },
+    {
+      "page": 7,
+      "x": 54.0,
+      "y": 379.0,
+      "name": "subsection.6.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 317.0,
+      "y": 377.0,
+      "name": "subsection.6.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 7,
+      "x": 260.0,
+      "y": 576.0,
+      "name": "theorem.2",
+      "kind": "theorem"
+    },
+    {
+      "page": 8,
+      "x": 317.0,
+      "y": 459.0,
+      "name": "definition.8",
+      "kind": "definition"
+    },
+    {
+      "page": 8,
+      "x": 62.0,
+      "y": 413.0,
+      "name": "equation.6.13",
+      "kind": "equation"
+    },
+    {
+      "page": 8,
+      "x": 58.0,
+      "y": 138.0,
+      "name": "equation.6.14",
+      "kind": "equation"
+    },
+    {
+      "page": 8,
+      "x": 98.0,
+      "y": 85.0,
+      "name": "equation.6.15",
+      "kind": "equation"
+    },
+    {
+      "page": 8,
+      "x": 525.0,
+      "y": 335.0,
+      "name": "example.10",
+      "kind": "example"
+    },
+    {
+      "page": 8,
+      "x": 279.0,
+      "y": 665.0,
+      "name": "example.7",
+      "kind": "example"
+    },
+    {
+      "page": 8,
+      "x": 253.0,
+      "y": 307.0,
+      "name": "example.8",
+      "kind": "example"
+    },
+    {
+      "page": 8,
+      "x": 530.0,
+      "y": 718.0,
+      "name": "example.9",
+      "kind": "example"
+    },
+    {
+      "page": 8,
+      "x": 54.0,
+      "y": 525.0,
+      "name": "subsection.6.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 8,
+      "x": 317.0,
+      "y": 563.0,
+      "name": "subsection.6.4",
+      "kind": "subsection"
+    },
+    {
+      "page": 9,
+      "x": 54.0,
+      "y": 467.0,
+      "name": "example.11",
+      "kind": "example"
+    },
+    {
+      "page": 9,
+      "x": 54.0,
+      "y": 336.0,
+      "name": "section.7",
+      "kind": "section"
+    },
+    {
+      "page": 9,
+      "x": 317.0,
+      "y": 738.0,
+      "name": "subsection.7.1",
+      "kind": "subsection"
+    },
+    {
+      "page": 10,
+      "x": 54.0,
+      "y": 743.0,
+      "name": "figure.caption.4",
+      "kind": "figure"
+    },
+    {
+      "page": 10,
+      "x": 64.0,
+      "y": 723.0,
+      "name": "subfigure.2.1",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 211.0,
+      "y": 738.0,
+      "name": "subfigure.2.2",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 348.0,
+      "y": 738.0,
+      "name": "subfigure.2.3",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 54.0,
+      "y": 527.0,
+      "name": "subfigure.5.1",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 189.0,
+      "y": 461.0,
+      "name": "subfigure.5.2",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 310.0,
+      "y": 461.0,
+      "name": "subfigure.5.3",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 431.0,
+      "y": 461.0,
+      "name": "subfigure.5.4",
+      "kind": "other"
+    },
+    {
+      "page": 10,
+      "x": 317.0,
+      "y": 415.0,
+      "name": "subsection.7.2",
+      "kind": "subsection"
+    },
+    {
+      "page": 11,
+      "x": 317.0,
+      "y": 724.0,
+      "name": "appendix.A",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 317.0,
+      "y": 536.0,
+      "name": "appendix.B",
+      "kind": "other"
+    },
+    {
+      "page": 11,
+      "x": 317.0,
+      "y": 742.0,
+      "name": "section*.5",
+      "kind": "section"
+    },
+    {
+      "page": 11,
+      "x": 54.0,
+      "y": 215.0,
+      "name": "section.8",
+      "kind": "section"
+    },
+    {
+      "page": 11,
+      "x": 54.0,
+      "y": 678.0,
+      "name": "subsection.7.3",
+      "kind": "subsection"
+    },
+    {
+      "page": 11,
+      "x": 54.0,
+      "y": 481.0,
+      "name": "subsection.7.4",
+      "kind": "subsection"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 379.0,
+      "name": "SECTION*.6",
+      "kind": "section"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 494.0,
+      "name": "appendix.C",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 127.0,
+      "name": "cite.ACL12yafang",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 185.0,
+      "name": "cite.Cafarella:2008",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 184.0,
+      "name": "cite.CoTS",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 530.0,
+      "name": "cite.ConstraintLanguages",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 261.0,
+      "name": "cite.DBLP:conf/pods/ArenasBC99",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 212.0,
+      "name": "cite.DBLP:conf/sigmod/BoulosDMMRS05",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 241.0,
+      "name": "cite.DBLP:journals/vldb/BenjellounSHTW08",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 474.0,
+      "name": "cite.DBencyclopedia",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 324.0,
+      "name": "cite.Daedalus",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 138.0,
+      "name": "cite.Dalvi:2007:EQE:1285882.1285906",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 156.0,
+      "name": "cite.DalviDichotomyConjQuerSharpP",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 680.0,
+      "name": "cite.HandbookTempReasAI",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 577.0,
+      "name": "cite.JhaCompilation",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 549.0,
+      "name": "cite.Ji:2011:KBP:2002472.2002618",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 661.0,
+      "name": "cite.KBA2012",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 512.0,
+      "name": "cite.KochConditioningPDB",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 287.0,
+      "name": "cite.MLN",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 99.0,
+      "name": "cite.MUD2010",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 380.0,
+      "name": "cite.OlteanuHK09",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 352.0,
+      "name": "cite.OlteanuHK10",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 202.0,
+      "name": "cite.PDBbook",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 455.0,
+      "name": "cite.Patty",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 249.0,
+      "name": "cite.Sarma:2010:LLV:1876037.1876072",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 231.0,
+      "name": "cite.SenDG10",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 492.0,
+      "name": "cite.TIE",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 165.0,
+      "name": "cite.TempEval2",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 91.0,
+      "name": "cite.TemporalAlignment",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 119.0,
+      "name": "cite.TemporalPDBalgebra",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 324.0,
+      "name": "cite.TimeML",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 146.0,
+      "name": "cite.Vila:1994:STR:196108.196111",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 626.0,
+      "name": "cite.Yago2",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 364.0,
+      "name": "cite.abiteboul-book",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 343.0,
+      "name": "cite.allensInterval",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 54.0,
+      "y": 287.0,
+      "name": "cite.antova2008",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 738.0,
+      "name": "cite.dylla13",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 596.0,
+      "name": "cite.jensenPhdthesis",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 398.0,
+      "name": "cite.olteanu2008using",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 268.0,
+      "name": "cite.riedel08",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 427.0,
+      "name": "cite.tuffy2011",
+      "kind": "other"
+    },
+    {
+      "page": 12,
+      "x": 317.0,
+      "y": 708.0,
+      "name": "cite.uncertainSpatioTemporal",
+      "kind": "other"
+    }
+  ],
   "fonts_layer": [
     {
       "name": "BNAGBI+NimbusSanL-Bold",
@@ -605,7 +1723,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 5,
+      "x0": 330.29,
+      "y0": 54.72,
+      "x1": 542.51,
+      "y1": 188.18,
+      "w_pt": 212.22,
+      "h_pt": 133.47,
+      "name": "R8",
+      "imagemask": false,
+      "width_px": 706,
+      "height_px": 444,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 240,
+      "y_ppi": 240,
+      "size_bytes": 14745,
+      "object_id": "221 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -730,6 +1869,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 22.2,
       "detail": "561 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T00:34:02Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 48.4,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-30T00:34:02Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "31 fonts, 11 math"
+    },
+    {
+      "ts": "2026-08-30T00:34:02Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 0.9,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-30T00:34:02Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 2.1,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-30T00:34:02Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 28.9,
+      "detail": "6 external urls"
+    },
+    {
+      "ts": "2026-08-30T00:34:02Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 23.2,
+      "detail": "119 dests across 12 kinds"
+    },
+    {
+      "ts": "2026-08-30T00:34:10Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 7932.4,
+      "detail": "1 images, 1 pix2latex candidates"
     }
   ],
   "capabilities": {
