@@ -5,7 +5,10 @@
     "PDFINFO_KNOWN",
     "SIZE_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -38,7 +41,28 @@
     "producer": "LuaTeX-1.18.0",
     "creator": "TeX",
     "encrypted": false,
-    "text_layer": true
+    "text_layer": true,
+    "bibkey": "example",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "Abstract": 1,
+      "Paragraph": 2,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "example.tiddlers.json",
+    "tiddlers_count": 21,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": {
     "title": "",
@@ -112,6 +136,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 583.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T12:49:20Z",
+      "node": "model",
+      "from": "BIBTEX_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 33.6,
+      "detail": "5 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T12:49:20Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 0.7,
+      "detail": "21 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T12:49:20Z",
+      "node": "reporttex",
+      "from": "BIBTEX_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "0 equations, 0 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/example/example.lines.json": "sha256:4f82739c011396142dd59611d06917c50d2017ddb119b3115fba87cbae54df0c"
+      },
+      "params_hash": "sha256:69cc8e7d67a112cc6af92f145258082c7d5ae5e652c31a406278b5962cd77442",
+      "algo": "sha256",
+      "ts": "2026-08-30T12:49:20Z",
+      "provenance": "mathpix"
+    }
+  }
 }

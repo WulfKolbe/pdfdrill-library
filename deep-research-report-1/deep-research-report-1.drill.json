@@ -7,7 +7,10 @@
     "LINKS_KNOWN",
     "PDFINFO_KNOWN",
     "SIZE_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -68,7 +71,35 @@
     "producer": "LuaTeX-1.24.0",
     "creator": "LaTeX via pandoc",
     "encrypted": false,
-    "text_layer": true
+    "text_layer": true,
+    "bibkey": "deep-research-report-1",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "Table": 2,
+      "TableRow": 11,
+      "TableCell": 54,
+      "Diagram": 6,
+      "CodeListing": 6,
+      "Section": 15,
+      "ListItem": 35,
+      "Formula": 79,
+      "Paragraph": 66,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "deep-research-report-1.tiddlers.json",
+    "tiddlers_count": 228,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": {
     "title": "",
@@ -258,6 +289,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1489.8,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T12:44:11Z",
+      "node": "model",
+      "from": "FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 119.0,
+      "detail": "281 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T12:44:11Z",
+      "node": "tiddlers",
+      "from": "FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 13.6,
+      "detail": "228 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T12:44:11Z",
+      "node": "reporttex",
+      "from": "FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "0 equations, 80 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/deep-research-report-1/deep-research-report-1.lines.json": "sha256:0b92fa2a8ccbc05c0ed1ac6350179a21a5bd4e82e5736ee79cefb553fec2a812"
+      },
+      "params_hash": "sha256:ef8273e3d596f2130562da6333a41a1b1408d9f680cec3e035aa9e3ac234b0dd",
+      "algo": "sha256",
+      "ts": "2026-08-30T12:44:11Z",
+      "provenance": "mathpix"
+    }
+  }
 }

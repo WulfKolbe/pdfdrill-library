@@ -2,9 +2,71 @@
   "pdf": "dlrg.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
-  "evidence": {},
+  "evidence": {
+    "probe_version": 3,
+    "pdfinfo_fields": {
+      "Title": "",
+      "Subject": "",
+      "Keywords": "",
+      "Author": "",
+      "Creator": "LaTeX with hyperref",
+      "Producer": "LuaTeX-1.22.0",
+      "CreationDate": "Sat Mar 15 00:04:26 2025 CET",
+      "ModDate": "Sat Mar 15 00:04:26 2025 CET",
+      "Custom Metadata": "yes",
+      "Metadata Stream": "no",
+      "Tagged": "no",
+      "UserProperties": "no",
+      "Suspects": "no",
+      "Form": "none",
+      "JavaScript": "no",
+      "Pages": "22",
+      "Encrypted": "no",
+      "Page size": "595.276 x 841.89 pts (A4)",
+      "Page rot": "0",
+      "File size": "317461 bytes",
+      "Optimized": "no",
+      "PDF version": "1.7"
+    },
+    "page_count_text": 22,
+    "font_count": 13,
+    "image_count": 2,
+    "bibkey": "dlrg",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 22,
+      "Table": 3,
+      "TableRow": 9,
+      "TableCell": 27,
+      "Sidenote": 2,
+      "Toc": 1,
+      "Diagram": 92,
+      "CodeListing": 85,
+      "Section": 38,
+      "ListItem": 8,
+      "Formula": 5,
+      "Paragraph": 113,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "dlrg.tiddlers.json",
+    "tiddlers_count": 301,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
+  },
   "pdfinfo": null,
   "bibtex": null,
   "urls": null,
@@ -62,6 +124,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 4704.4,
       "detail": "2 images, 2 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T12:44:42Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 136.9,
+      "detail": "406 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T12:44:42Z",
+      "node": "tiddlers",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 14.1,
+      "detail": "301 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T12:44:42Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "0 equations, 5 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/dlrg/dlrg.lines.json": "sha256:ae8623cdadb2cc4ec0b1dc83598f6c88db69362a2a9d49a5f4e53acac9bf58e0"
+      },
+      "params_hash": "sha256:5367567726598c57fd8cffb6a51849df985a67855f21efceee2cad7d76758ab0",
+      "algo": "sha256",
+      "ts": "2026-08-30T12:44:42Z",
+      "provenance": "mathpix"
+    }
+  }
 }

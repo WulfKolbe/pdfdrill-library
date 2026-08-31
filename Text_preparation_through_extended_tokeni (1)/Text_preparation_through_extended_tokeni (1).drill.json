@@ -14,7 +14,8 @@
     "ABSTRACT_KNOWN",
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "pages": 10,
@@ -164,7 +165,8 @@
     "toc_search_scope": "first3pages",
     "abstract": "Tokenization is commonly understood as the first step of any kind of nat-\nural language text preparation. The major goal of this early (pre-linguistic)\ntask is to convert a stream of characters into a stream of processing units\ncalled tokens. Beyond the text mining community this job is taken for\ngranted. Commonly it is seen as an already solved problem comprising\nthe identification of word borders and punctuation marks separated by\nspaces and line breaks. But in our sense it should manage language related\nword dependencies, incorporate domain specific knowledge, and handle mor-\nphosyntactically relevant linguistic specificities. Therefore, we propose rule-\nbased Extended Tokenization including all sorts of linguistic knowledge\n(e.g., grammar rules, dictionaries). The core features of our implementa-\ntion are identification and disambiguation of all kinds of linguistic markers,\ndetection and expansion of abbreviations, treatment of special formats, and\ntyping of tokens including single- and multi-tokens. To improve the quality\nof text mining we suggest linguistically-based tokenization as a necessary\nstep preceeding further text processing tasks. In this paper, we focus on the\ntask of improving the quality of standard tagging.\n   Keywords: text preparation, natural language processing, tokenization, tag-\nging improvement, tokenization prototype\n\f1 Introduction\nNearly all researchers concerned with text mining presuppose tokenizing as\nfirst step during text preparation [1, 2, 3, 4, 5]. Good surveys about tok-\nenization techniques are provided by Frakes, Baeza-Yates, and Ribeiro-Neto\nin [6, 7], and Manning and Schütze in [8, pp.124–136]. But – as we know –\nonly very few reflect tokenization as a task of multi-language text process-\ning with far-reaching impact [9]. This involves language-related knowledge\nabout linguistically motivated and domain specific patterns on many levels\nof linguistic analysis (i.e. sentence border disambiguation, composita iden-\ntification, abbreviation handling) [10, 11].\n   Extended Tokenization in our sense does not only separate strings into\nbasic processing units, but also interprets and groups isolated tokens to\ncreate higher level tokens. This is done by exploiting so-called token types\nassigned through an elaborated machinery of heuristic and linguistically\nmotivated rules, and – if available – minimized dictionary knowledge. The\nearly identification of multi-tokens (see Sec. 2) partially covers the well\nknown “named entity recognition” task based on an empirically motivated\ncategorization of proper names as defined by MUC-61 and MUC-72 , also\nstandardized through the TEI3 Guidelines4 .\n   Our implementation (see Sec. 4) provides a language independent core\ntokenizer which is easily adaptable for language specific needs through incre-\nmental rule set expansion. Operating on plain text data only, it supports\nany kind of regular expression pattern matching and several methods for\ncontext dependent constraint checking. Thus, the complexity of subsequent\nprocessing tasks (e.g., tagging, chunking) is reduced dramatically by early\nmade decisions.\n   Figure 1 shows where Extended Tokenization is located within the text\npreparation and processing framework. First, raw texts are preprocessed\nand segmented into textual units. This step comprises cleansing and filter-\ning (e.g., whitespace collapsing, stripping extraneous control characters) [12]\nand removal of all kinds of structural or layout relevant markup (e.g., XML\ntags). Then, Extended Tokenization segments the plain text into appropri-\nate processing units. Subsequent tasks like tagging are applied on the tok-",
     "abstract_method": "pdftotext-2pages",
-    "abstract_search_scope": "first2pages"
+    "abstract_search_scope": "first2pages",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": {
     "title": "",
@@ -1312,6 +1314,14 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2804.8,
       "detail": "35 images, 16 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T11:04:25Z",
+      "node": "reporttex",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "0 equations, 46 formulas"
     }
   ],
   "capabilities": {

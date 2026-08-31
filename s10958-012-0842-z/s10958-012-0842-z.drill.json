@@ -9,7 +9,13 @@
     "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "REPORTTEX_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 13,
@@ -157,9 +163,35 @@
     "bibliography_cites": 66,
     "tiddlers_path": "s10958-012-0842-z.tiddlers.json",
     "tiddlers_count": 426,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages",
+    "links": []
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "Acrobat Distiller 6.0 (Windows)",
+    "creator": "dvips(k) 5.90a Copyright 2002 Radical Eye Software",
+    "creation_date": "2012-04-23T13:33:23+03",
+    "mod_date": "2012-05-16T12:19:57+08",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 13,
+    "encrypted": false,
+    "page_size": "595.276 x 793.701 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 228023,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -501,7 +533,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -600,6 +632,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 10.1,
       "detail": "426 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:12:02Z",
+      "node": "reporttex",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "58 equations, 185 formulas"
+    },
+    {
+      "ts": "2026-08-31T00:35:16Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 40.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-31T00:35:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "24 fonts, 9 math"
+    },
+    {
+      "ts": "2026-08-31T00:35:16Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 37.3,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-31T00:35:16Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 135.9,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-31T00:35:19Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2446.2,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

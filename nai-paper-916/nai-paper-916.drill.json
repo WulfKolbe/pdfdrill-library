@@ -16,7 +16,8 @@
     "DESTS_KNOWN",
     "BIBTEX_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "pages": 20,
@@ -168,7 +169,8 @@
     "abstract": "Progress in AI is hindered by the lack of a programming language with all the requisite\nfeatures. Libraries like PyTorch and TensorFlow provide automatic differentiation and\nefficient GPU implementation, but are additions to Python, which was never intended\nfor AI. Their lack of support for automated reasoning and knowledge acquisition has\nled to a long and costly series of hacky attempts to tack them on. On the other hand,\nAI languages like LISP and Prolog lack scalability and support for learning. This paper\nproposes tensor logic, a language that solves these problems by unifying neural and\nsymbolic AI at a fundamental level. The sole construct in tensor logic is the tensor\nequation, based on the observation that logical rules and Einstein summation are\nessentially the same operation, and all else can be reduced to them. I show how to\nelegantly implement key forms of neural, symbolic and statistical AI in tensor logic,\nincluding transformers, formal reasoning, kernel machines and graphical models. Most\nimportantly, tensor logic makes new directions possible, such as sound reasoning in\nembedding space. This combines the scalability and learnability of neural networks\nwith the reliability and transparency of symbolic reasoning, and is potentially a basis\nfor the wider adoption of AI.",
     "abstract_method": "pdftotext-2pages",
     "abstract_search_scope": "first2pages",
-    "toc_search_scope": "first3pages"
+    "toc_search_scope": "first3pages",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": {
     "title": "",
@@ -735,6 +737,14 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2905.0,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T13:05:54Z",
+      "node": "reporttex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "45 equations, 140 formulas"
     }
   ],
   "capabilities": {

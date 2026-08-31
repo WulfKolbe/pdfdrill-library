@@ -7,7 +7,10 @@
     "PDFINFO_KNOWN",
     "SIZE_KNOWN",
     "BIBTEX_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "toc": [
@@ -167,7 +170,34 @@
     "producer": "pdfTeX-1.40.12",
     "creator": "LaTeX with hyperref package",
     "encrypted": false,
-    "text_layer": true
+    "text_layer": true,
+    "bibkey": "VLDS2012_p21_Bienvenu",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 4,
+      "Sidenote": 8,
+      "Abstract": 1,
+      "Diagram": 4,
+      "CodeListing": 4,
+      "Section": 9,
+      "ListItem": 15,
+      "Formula": 8,
+      "Paragraph": 23,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "VLDS2012_p21_Bienvenu.tiddlers.json",
+    "tiddlers_count": 90,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": {
     "title": "",
@@ -575,6 +605,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2480.3,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T12:27:56Z",
+      "node": "model",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 131.7,
+      "detail": "77 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T12:27:56Z",
+      "node": "tiddlers",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TOC_KNOWN",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 11.0,
+      "detail": "90 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T12:27:56Z",
+      "node": "reporttex",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "0 equations, 8 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/VLDS2012_p21_Bienvenu/VLDS2012_p21_Bienvenu.lines.json": "sha256:2add6bdfe56b262f1ac7f35ed9238040a67255a75e20b333fd9d6845a9eb0471"
+      },
+      "params_hash": "sha256:a107723bac070c0a17e9f8e7d412927806a5c73c29e23665cd0f5848705dcefb",
+      "algo": "sha256",
+      "ts": "2026-08-30T12:27:56Z",
+      "provenance": "mathpix"
+    }
+  }
 }

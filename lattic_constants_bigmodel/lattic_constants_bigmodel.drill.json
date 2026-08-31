@@ -2,7 +2,10 @@
   "pdf": "lattic_constants_bigmodel.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -28,7 +31,31 @@
     },
     "page_count_text": 4,
     "font_count": 11,
-    "image_count": 0
+    "image_count": 0,
+    "bibkey": "lattic_constants_bigmodel",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 4,
+      "Section": 13,
+      "ListItem": 15,
+      "Equation": 9,
+      "Formula": 30,
+      "Paragraph": 22,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 9,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "lattic_constants_bigmodel.tiddlers.json",
+    "tiddlers_count": 111,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -46,6 +73,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1169.7,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T13:01:34Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 86.7,
+      "detail": "94 objects, 9 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T13:01:34Z",
+      "node": "tiddlers",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.0,
+      "detail": "111 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:01:34Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "9 equations, 30 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/lattic_constants_bigmodel/lattic_constants_bigmodel.lines.json": "sha256:f55225cd6bf7a66c58f2faa4a9b594433cd3a1d26ca507549e145340078e43e3"
+      },
+      "params_hash": "sha256:277d374216aa579de36b86b3d7fd3489a83f3da86b0d031d763de6335919859c",
+      "algo": "sha256",
+      "ts": "2026-08-30T13:01:34Z",
+      "provenance": "mathpix"
+    }
+  }
 }

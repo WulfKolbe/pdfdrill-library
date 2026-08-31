@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -30,7 +33,32 @@
     },
     "page_count_text": 14,
     "font_count": 11,
-    "image_count": 10
+    "image_count": 10,
+    "bibkey": "math-ph_0403019",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 14,
+      "Abstract": 1,
+      "Section": 9,
+      "ListItem": 11,
+      "Equation": 32,
+      "Formula": 52,
+      "Paragraph": 52,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 32,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "math-ph_0403019.tiddlers.json",
+    "tiddlers_count": 189,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -387,6 +415,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1423.5,
       "detail": "20 images, 10 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T13:03:49Z",
+      "node": "model",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 105.6,
+      "detail": "172 objects, 32 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T13:03:49Z",
+      "node": "tiddlers",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 12.0,
+      "detail": "189 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:03:49Z",
+      "node": "reporttex",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "32 equations, 52 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/math-ph_0403019/math-ph_0403019.lines.json": "sha256:19dd6e9b3b685757effd39cae633897a23cb69ef61a3e7cba656d83f127e4899"
+      },
+      "params_hash": "sha256:04d5b1e9d9552ee542629133c7f85c0a00d2ec309acff95df52ff584165a32d9",
+      "algo": "sha256",
+      "ts": "2026-08-30T13:03:49Z",
+      "provenance": "mathpix"
+    }
+  }
 }

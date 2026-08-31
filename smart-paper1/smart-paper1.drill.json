@@ -8,7 +8,13 @@
     "SIZE_KNOWN",
     "MD_BUILT",
     "TIDDLERS_BUILT",
-    "FONTS_LAYER_KNOWN"
+    "FONTS_LAYER_KNOWN",
+    "REPORTTEX_BUILT",
+    "PDFINFO_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "mathpix_pdf_id": "d3cce787-fe3e-4506-8c41-aa68f18a5499",
@@ -178,9 +184,377 @@
       "PDF subtype": "PDF/A-1a:2005"
     },
     "page_count_text": 14,
-    "image_count": 6
+    "image_count": 6,
+    "reporttex_path": "report.tex",
+    "abstract": "Curated knowledge bases (KBs) contain billions of facts with millions of entities and thousands of predicates. Question answering (QA) systems are supposed to access this knowledge to answer users’ factoid questions. Entity linking and relation linking are integral ingredients of many such QA systems, and aim to link mentions in the question to concepts in the KB. The quality of these linking modules is of high importance: a single error in linking can result in a failure for the whole QA system. The SMART 2022 Task poses challenges for entity and relation linking to evaluate the performance of different approaches. In this work, we adapt and extend our prior work CLOCQ. CLOCQ computes top-𝑘 linkings for each mention to make up for potential errors, with 𝑘 set automatically based on an ambiguity score. As an extension, we design a module that prunes linkings for irrelevant mentions which helps to improve precision. We found that there is a trade-off between recall and precision: higher 𝑘 boosts recall (up to 0.87 for entity linking), while lower 𝑘 leads to high precision performance. The best choice for the linking modules may highly depend on the specific QA system, and whether it can make use of higher recall in the presence of noise.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Question Entity and Relation Linking to Knowledge",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "Bases via CLOCQ",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2.1",
+        "title": "Keywords",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "3",
+        "title": "1. Introduction",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "3.1",
+        "title": "Motivation and problem",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "3.2",
+        "title": "Approach and contribution",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "3.3",
+        "title": "“Who plays Viserys in GRRM’s latest HBO series?”",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "3.4",
+        "title": "Figure 1:",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4",
+        "title": "2. The CLOCQ linking process",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "4.0.1",
+        "title": "2.1. Retrieving disambiguation candidates",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.0.2",
+        "title": "2.2. Scoring candidates",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.1",
+        "title": "Coherence",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.2",
+        "title": "Connectivity",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.3",
+        "title": "Question relatedness",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.4",
+        "title": "Termmatch",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4.4.1",
+        "title": "2.3. Finding top-𝑘 across sorted lists",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "4.4.2",
+        "title": "2.4. Automatically setting 𝑘",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "5",
+        "title": "3. Adapting CLOCQ to linking tasks",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "5.0.1",
+        "title": "3.1. Post-hoc pruning module for entity linking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "5.1",
+        "title": "Training",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "5.2",
+        "title": "Inference",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "5.3",
+        "title": "Table 1",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "5.4",
+        "title": "Table 2",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "5.4.1",
+        "title": "3.2. Increasing 𝑘 for relation linking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "6",
+        "title": "4. Experiments",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "6.0.1",
+        "title": "4.1. Experimental setup",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "6.1",
+        "title": "SMART 2022 tasks",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.2",
+        "title": "Metrics",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.3",
+        "title": "Initialization of CLOCQ",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.4",
+        "title": "Initialization of pruning module",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.5",
+        "title": "CLOCQ variants",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.5.1",
+        "title": "4.2. Entity linking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "6.6",
+        "title": "Table 3",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.7",
+        "title": "Entity Linking",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.8",
+        "title": "System Precision Recall F1 No. of entities",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.9",
+        "title": "CLOCQ (𝑘=1) 0.281 0.766 0.399 3.40",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.10",
+        "title": "CLOCQ (𝑘=AUTO) 0.147 0.870 0.240 8.37",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.11",
+        "title": "CLOCQ (𝑘=1) + pruning 0.714 0.732 0.708 1.34",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.12",
+        "title": "CLOCQ (𝑘=AUTO) + pruning 0.410 0.831 0.500 3.52",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.12.1",
+        "title": "4.3. Relation linking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "6.13",
+        "title": "Table 4",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.14",
+        "title": "Relation Linking",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.15",
+        "title": "System Precision Recall F1 No. of relations",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.16",
+        "title": "CLOCQ (top-ranked relation) 0.380 0.365 0.352 1.69",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.17",
+        "title": "CLOCQ (all relations) 0.266 0.414 0.279 4.40",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "7",
+        "title": "5. Related work",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "7.0.1",
+        "title": "5.1. Entity linking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "7.0.2",
+        "title": "5.2. Relation linking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "7.0.3",
+        "title": "5.3. Joint entity and relation linking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "8",
+        "title": "6. Conclusion",
+        "page": "",
+        "level": 1
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 1,
+        "url": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "page": 1,
+        "url": "http://ceur-ws.org"
+      },
+      {
+        "page": 2,
+        "url": "https://smart-task.github.io/2022/"
+      },
+      {
+        "page": 2,
+        "url": "https://clocq.mpi-inf.mpg.de"
+      },
+      {
+        "page": 9,
+        "url": "https://github.com/smart-task/smart-2022-datasets"
+      },
+      {
+        "page": 9,
+        "url": "https://github.com/PhilippChr/wikidata-core-for-QA"
+      },
+      {
+        "page": 9,
+        "url": "https://huggingface.co/facebook/bart-base"
+      },
+      {
+        "page": 9,
+        "url": "https://github.com/PhilippChr/CLOCQ-pruning-module"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "ISO 19005 - Electronic document file format for long-term preservation (PDF/A)",
+    "author": "",
+    "producer": "LuaTeX",
+    "creator": "LaTeX with hyperref",
+    "creation_date": "2022-11-16T07:59:33Z",
+    "mod_date": "2022-11-16T07:59:33Z",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 14,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 538176,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {
+      "GTS_PDFA1Version": "PDF/A-1a:2005",
+      "PTEX.FullBanner": "This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)",
+      "Subject": "CEUR Workshop Proceedings (CEUR-WS.org)"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -704,7 +1078,68 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 0.0,
+      "y0": 190.95,
+      "x1": 595.28,
+      "y1": 650.94,
+      "w_pt": 595.28,
+      "h_pt": 459.99,
+      "name": "R10",
+      "imagemask": false,
+      "width_px": 3300,
+      "height_px": 2550,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 399,
+      "y_ppi": 399,
+      "size_bytes": 22937,
+      "object_id": "128 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 1,
+      "x0": 0.0,
+      "y0": 190.95,
+      "x1": 595.28,
+      "y1": 650.94,
+      "w_pt": 595.28,
+      "h_pt": 459.99,
+      "name": "R10",
+      "imagemask": false,
+      "width_px": 3300,
+      "height_px": 2550,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 399,
+      "y_ppi": 399,
+      "size_bytes": 22937,
+      "object_id": "122 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 1,
+      "x0": 0.0,
+      "y0": 190.95,
+      "x1": 595.28,
+      "y1": 650.94,
+      "w_pt": 595.28,
+      "h_pt": 459.99,
+      "name": "R10",
+      "imagemask": false,
+      "width_px": 3300,
+      "height_px": 2550,
+      "encoding": "image",
+      "color": "gray",
+      "x_ppi": 399,
+      "y_ppi": 399,
+      "size_bytes": 22937,
+      "object_id": "116 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -829,6 +1264,54 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 11.3,
       "detail": "225 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:14:15Z",
+      "node": "reporttex",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "6 equations, 72 formulas"
+    },
+    {
+      "ts": "2026-08-31T00:36:10Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 43.2,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-08-31T00:36:10Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 2.7,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-08-31T00:36:10Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 2.4,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-08-31T00:36:10Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 21.8,
+      "detail": "8 external urls"
+    },
+    {
+      "ts": "2026-08-31T00:36:12Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2492.0,
+      "detail": "3 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

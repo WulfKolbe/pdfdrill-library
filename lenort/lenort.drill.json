@@ -2,7 +2,10 @@
   "pdf": "lenort.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -32,7 +35,28 @@
     },
     "page_count_text": 1,
     "font_count": 3,
-    "image_count": 0
+    "image_count": 0,
+    "bibkey": "lenort",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "ListItem": 1,
+      "Paragraph": 1,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "lenort.tiddlers.json",
+    "tiddlers_count": 20,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -50,6 +74,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 244.5,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T13:01:50Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 35.9,
+      "detail": "4 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T13:01:50Z",
+      "node": "tiddlers",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 0.7,
+      "detail": "20 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:01:50Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "0 equations, 0 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/lenort/lenort.lines.json": "sha256:1e183f7ad2b0bd0c6153e1e45ced64cd6702c501cf3ca2157fbe61e983e4e306"
+      },
+      "params_hash": "sha256:8bd5ae926fad68ac52e4697c94f106bdbe301fef00be2f22a2de4f12fe6eab76",
+      "algo": "sha256",
+      "ts": "2026-08-30T13:01:50Z",
+      "provenance": "mathpix"
+    }
+  }
 }

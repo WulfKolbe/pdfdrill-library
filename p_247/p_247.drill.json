@@ -2,7 +2,10 @@
   "pdf": "p_247.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -31,7 +34,38 @@
     },
     "page_count_text": 6,
     "font_count": 23,
-    "image_count": 10
+    "image_count": 10,
+    "bibkey": "p_247",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "Footnote": 7,
+      "Table": 1,
+      "TableRow": 2,
+      "TableCell": 10,
+      "Sidenote": 12,
+      "Abstract": 1,
+      "Diagram": 2,
+      "Section": 16,
+      "ListItem": 13,
+      "Equation": 29,
+      "Formula": 85,
+      "Paragraph": 66,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 29,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "p_247.tiddlers.json",
+    "tiddlers_count": 256,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -250,6 +284,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 1906.3,
       "detail": "10 images, 10 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T13:08:12Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 212.0,
+      "detail": "251 objects, 29 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T13:08:12Z",
+      "node": "tiddlers",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 15.6,
+      "detail": "256 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:08:12Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "29 equations, 85 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/p_247/p_247.lines.json": "sha256:88fcd2439c3d7bde57f21591cbdb0d939df82d665f1360ffd3ef8f58bc4918c8"
+      },
+      "params_hash": "sha256:a0784acda9a67be71720d5a36f3e3f228d0385f0ee2bb18c8ab19c51c733e5fd",
+      "algo": "sha256",
+      "ts": "2026-08-30T13:08:12Z",
+      "provenance": "mathpix"
+    }
+  }
 }

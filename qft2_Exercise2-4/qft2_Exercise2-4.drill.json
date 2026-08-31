@@ -2,7 +2,10 @@
   "pdf": "qft2_Exercise2-4.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -28,7 +31,32 @@
     },
     "page_count_text": 3,
     "font_count": 29,
-    "image_count": 0
+    "image_count": 0,
+    "bibkey": "qft2_Exercise2-4",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 3,
+      "Diagram": 1,
+      "Section": 5,
+      "ListItem": 10,
+      "Equation": 13,
+      "Formula": 36,
+      "Paragraph": 24,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 13,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "qft2_Exercise2-4.tiddlers.json",
+    "tiddlers_count": 110,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -46,6 +74,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 559.6,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T13:10:40Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 73.1,
+      "detail": "93 objects, 13 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T13:10:40Z",
+      "node": "tiddlers",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.4,
+      "detail": "110 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:10:40Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "13 equations, 36 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/qft2_Exercise2-4/qft2_Exercise2-4.lines.json": "sha256:01544b7af249455b6ddd51b75ab13c43877fa9981990bf52d6ebb42a69a863d4"
+      },
+      "params_hash": "sha256:93770865b6c1434137c899c713c10f0daac871971e0ff630e12d61a198057ff7",
+      "algo": "sha256",
+      "ts": "2026-08-30T13:10:40Z",
+      "provenance": "mathpix"
+    }
+  }
 }

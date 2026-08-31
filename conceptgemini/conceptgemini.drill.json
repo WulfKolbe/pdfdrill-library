@@ -2,7 +2,10 @@
   "pdf": "conceptgemini.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -32,7 +35,36 @@
     },
     "page_count_text": 6,
     "font_count": 12,
-    "image_count": 0
+    "image_count": 0,
+    "bibkey": "conceptgemini",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 6,
+      "Table": 1,
+      "TableRow": 11,
+      "TableCell": 33,
+      "Toc": 1,
+      "Abstract": 1,
+      "Diagram": 1,
+      "CodeListing": 1,
+      "Section": 16,
+      "ListItem": 13,
+      "Paragraph": 23,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 0,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": false,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "conceptgemini.tiddlers.json",
+    "tiddlers_count": 79,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -50,6 +82,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 895.8,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T12:43:44Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 76.2,
+      "detail": "108 objects, 0 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T12:43:44Z",
+      "node": "tiddlers",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 3.6,
+      "detail": "79 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T12:43:44Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "0 equations, 0 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/conceptgemini/conceptgemini.lines.json": "sha256:e3d9686ebd005938fdb06a7ed932e231d68672badb2e9ad9e42015c77d58f4aa"
+      },
+      "params_hash": "sha256:c918980bf10b964c581c0e5b5b3acd8ad224413fd1e318b37ea054a8e84cd491",
+      "algo": "sha256",
+      "ts": "2026-08-30T12:43:44Z",
+      "provenance": "mathpix"
+    }
+  }
 }

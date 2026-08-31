@@ -7,7 +7,14 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT",
+    "PDFINFO_KNOWN",
+    "LINKS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 16,
@@ -165,10 +172,78 @@
     ],
     "tiddlers_path": "s00006-020-1046-0.tiddlers.json",
     "tiddlers_count": 314,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex",
+    "links": [
+      {
+        "page": 1,
+        "url": "http://crossmark.crossref.org/dialog/?doi=10.1007/s00006-020-1046-0&domain=pdf"
+      },
+      {
+        "page": 1,
+        "url": "http://orcid.org/0000-0002-8208-6332"
+      },
+      {
+        "page": 10,
+        "url": "https://royalsocietypublishing.org/doi/full/10.1098/rsos.180526#disqus_thread"
+      },
+      {
+        "page": 15,
+        "url": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "A 1d Up Approach to Conformal Geometric Algebra: Applications in Line Fitting and Quantum Mechanics",
+    "author": "Anthony N. Lasenby",
+    "producer": "Acrobat Distiller 10.1.8 (Windows)",
+    "creator": "Springer",
+    "creation_date": "2020-02-20T13:24:15+05:30",
+    "mod_date": "2020-04-04T20:16:01+05:30",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "AcroForm",
+    "javascript": false,
+    "pages": 16,
+    "encrypted": false,
+    "page_size": "439.37 x 666.142 pts",
+    "page_rot": 0.0,
+    "size_in_bytes": 1044444,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.6",
+    "custom_fields": {
+      "CrossMarkDomains[1]": "springer.com",
+      "CrossMarkDomains[2]": "springerlink.com",
+      "CrossmarkDomainExclusive": "true",
+      "CrossmarkMajorVersionDate": "2010-04-23",
+      "Keywords": "Conformal geometric algebra,Computer vision,Quantum theory",
+      "Subject": "Advances in Applied Clifford Algebras, https://doi.org/10.1007/s00006-020-1046-0",
+      "doi": "10.1007/s00006-020-1046-0",
+      "robots": "noindex"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "lasenby2020",
+    "title": "A 1d Up Approach to Conformal Geometric Algebra: Applications in Line Fitting and Quantum Mechanics",
+    "author": "Anthony N. Lasenby",
+    "year": "2020",
+    "pages": 16,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -593,7 +668,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 4,
+      "x0": 148.53,
+      "y0": 59.45,
+      "x1": 290.4,
+      "y1": 249.92,
+      "w_pt": 141.88,
+      "h_pt": 190.48,
+      "name": "Im1",
+      "imagemask": false,
+      "width_px": 591,
+      "height_px": 794,
+      "encoding": "image",
+      "color": "icc",
+      "x_ppi": 300,
+      "y_ppi": 300,
+      "size_bytes": 54169,
+      "object_id": "34 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -676,6 +772,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 11.8,
       "detail": "314 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:11:56Z",
+      "node": "reporttex",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "56 equations, 133 formulas"
+    },
+    {
+      "ts": "2026-08-31T00:35:12Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 44.1,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-08-31T00:35:12Z",
+      "node": "links",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 32.2,
+      "detail": "4 external urls"
+    },
+    {
+      "ts": "2026-08-31T00:35:13Z",
+      "node": "abstract",
+      "from": "FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 170.3,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-31T00:35:13Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 166.4,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-31T00:35:13Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "citekey=lasenby2020"
+    },
+    {
+      "ts": "2026-08-31T00:35:22Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 9210.2,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

@@ -9,7 +9,15 @@
     "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "REPORTTEX_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -151,10 +159,52 @@
     "bibliography_cites": 0,
     "tiddlers_path": "sdisoth2013.tiddlers.json",
     "tiddlers_count": 313,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.10b",
+    "creator": "TeX",
+    "creation_date": "2010-03-09T07:41:00Z",
+    "mod_date": null,
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 12,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 670783,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "wallner2010",
+    "title": "SEMI-DISCRETE ISOTHERMIC SURFACES",
+    "author": "CHRISTIAN MÜLLER AND JOHANNES WALLNER",
+    "year": "2010",
+    "pages": 12,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -453,7 +503,48 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 8,
+      "x0": 107.15,
+      "y0": 505.08,
+      "x1": 257.07,
+      "y1": 638.41,
+      "w_pt": 149.92,
+      "h_pt": 133.34,
+      "name": "Im2",
+      "imagemask": false,
+      "width_px": 624,
+      "height_px": 555,
+      "encoding": "jpeg",
+      "color": "gray",
+      "x_ppi": 300,
+      "y_ppi": 300,
+      "size_bytes": 225280,
+      "object_id": "84 0",
+      "candidate_pix2latex": true
+    },
+    {
+      "page": 8,
+      "x0": 277.12,
+      "y0": 513.41,
+      "x1": 523.84,
+      "y1": 638.41,
+      "w_pt": 246.72,
+      "h_pt": 125.01,
+      "name": "Im3",
+      "imagemask": false,
+      "width_px": 975,
+      "height_px": 494,
+      "encoding": "jpeg",
+      "color": "gray",
+      "x_ppi": 285,
+      "y_ppi": 285,
+      "size_bytes": 256000,
+      "object_id": "85 0",
+      "candidate_pix2latex": true
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -552,6 +643,70 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 8.8,
       "detail": "313 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:13:40Z",
+      "node": "reporttex",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "47 equations, 146 formulas"
+    },
+    {
+      "ts": "2026-08-31T00:35:59Z",
+      "node": "pdfinfo",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 41.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-08-31T00:35:59Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "21 fonts, 10 math"
+    },
+    {
+      "ts": "2026-08-31T00:35:59Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 48.0,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-31T00:36:00Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 44.8,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-31T00:36:00Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 133.8,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-08-31T00:36:00Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 25.6,
+      "detail": "citekey=wallner2010"
+    },
+    {
+      "ts": "2026-08-31T00:36:02Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1858.5,
+      "detail": "2 images, 2 pix2latex candidates"
     }
   ],
   "capabilities": {

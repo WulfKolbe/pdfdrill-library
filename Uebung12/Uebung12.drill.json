@@ -3,7 +3,10 @@
   "pdfdrill_version": "0.4.0",
   "facts": [
     "DESTS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -33,7 +36,31 @@
     },
     "page_count_text": 2,
     "font_count": 14,
-    "image_count": 0
+    "image_count": 0,
+    "bibkey": "Uebung12",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 2,
+      "Section": 1,
+      "ListItem": 4,
+      "Equation": 13,
+      "Formula": 73,
+      "Paragraph": 19,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 13,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "Uebung12.tiddlers.json",
+    "tiddlers_count": 130,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -158,6 +185,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 788.2,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T12:14:53Z",
+      "node": "model",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 63.0,
+      "detail": "113 objects, 13 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T12:14:53Z",
+      "node": "tiddlers",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 8.9,
+      "detail": "130 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T12:14:53Z",
+      "node": "reporttex",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "13 equations, 73 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/Uebung12/Uebung12.lines.json": "sha256:f85823993c2f9e575481f4901e49b9a57bb31d8fa09c0198759d49e9f99b2c8e"
+      },
+      "params_hash": "sha256:fa66a200a4d0746071e86588aa04127d6094621b6226dd1b31703449569de240",
+      "algo": "sha256",
+      "ts": "2026-08-30T12:14:53Z",
+      "provenance": "mathpix"
+    }
+  }
 }

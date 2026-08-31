@@ -2,7 +2,11 @@
   "pdf": "main (2).pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "INK_CONVERTED",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -31,7 +35,38 @@
     },
     "page_count_text": 22,
     "font_count": 18,
-    "image_count": 18
+    "image_count": 18,
+    "bibkey": "main (2)",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 22,
+      "Footnote": 5,
+      "Table": 5,
+      "TableRow": 37,
+      "TableCell": 227,
+      "Sidenote": 2,
+      "Abstract": 1,
+      "Diagram": 9,
+      "Section": 23,
+      "ListItem": 16,
+      "Equation": 65,
+      "Formula": 136,
+      "Paragraph": 124,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 65,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "main (2).tiddlers.json",
+    "tiddlers_count": 426,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -290,6 +325,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2778.0,
       "detail": "12 images, 12 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T13:03:18Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN,INK_CONVERTED",
+      "to": "MODEL_BUILT",
+      "cost_ms": 647.3,
+      "detail": "673 objects, 65 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T13:03:18Z",
+      "node": "tiddlers",
+      "from": "IMAGES_LAYER_KNOWN,INK_CONVERTED,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 18.8,
+      "detail": "426 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:03:18Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,INK_CONVERTED,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "65 equations, 136 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/main (2)/main (2).lines.json": "sha256:22632afc6a565b872d9db0f2ad58fac63ba7efa014541de3386fa06a7b9bcec1"
+      },
+      "params_hash": "sha256:c3f974b507c9c4ccbf490869419b3a2f4bf605c93634c2ad6eb32a078492a6de",
+      "algo": "sha256",
+      "ts": "2026-08-30T13:03:18Z",
+      "provenance": "mathpix"
+    }
+  }
 }

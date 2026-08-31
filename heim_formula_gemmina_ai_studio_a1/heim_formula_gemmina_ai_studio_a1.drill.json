@@ -2,7 +2,10 @@
   "pdf": "heim_formula_gemmina_ai_studio_a1.pdf",
   "pdfdrill_version": "0.4.0",
   "facts": [
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "MODEL_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -28,7 +31,32 @@
     },
     "page_count_text": 1,
     "font_count": 12,
-    "image_count": 0
+    "image_count": 0,
+    "bibkey": "heim_formula_gemmina_ai_studio_a1",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 1,
+      "Diagram": 1,
+      "Section": 6,
+      "ListItem": 3,
+      "Equation": 3,
+      "Formula": 21,
+      "Paragraph": 5,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 3,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "tiddlers_path": "heim_formula_gemmina_ai_studio_a1.tiddlers.json",
+    "tiddlers_count": 58,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -46,6 +74,42 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 799.3,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T12:58:03Z",
+      "node": "model",
+      "from": "IMAGES_LAYER_KNOWN",
+      "to": "MODEL_BUILT",
+      "cost_ms": 52.7,
+      "detail": "41 objects, 3 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T12:58:03Z",
+      "node": "tiddlers",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 10.9,
+      "detail": "58 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T12:58:04Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "3 equations, 21 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/heim_formula_gemmina_ai_studio_a1/heim_formula_gemmina_ai_studio_a1.lines.json": "sha256:1f1f19925b95210c3dd1c00946e6cdfd38661d6ba3bc27e5e15b122f4d5c6457"
+      },
+      "params_hash": "sha256:af4362ad4ed7a0a49050185b49d33fcf4eb21bc4273fdce60cf1aeaa89918c7f",
+      "algo": "sha256",
+      "ts": "2026-08-30T12:58:03Z",
+      "provenance": "mathpix"
+    }
+  }
 }

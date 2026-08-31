@@ -7,7 +7,14 @@
     "MODEL_BUILT",
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
-    "TIDDLERS_BUILT"
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "DESTS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 3,
@@ -135,12 +142,38 @@
     ],
     "tiddlers_path": "set6.tiddlers.json",
     "tiddlers_count": 101,
-    "tiddlers_svg_mode": "inline"
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "set6.dvi",
+    "author": "",
+    "producer": "GPL Ghostscript 9.19",
+    "creator": "dvips(k) 5.994 Copyright 2014 Radical Eye Software",
+    "creation_date": "2016-05-25T09:14:47+02",
+    "mod_date": "2016-05-25T09:14:47+02",
+    "custom_metadata": false,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 3,
+    "encrypted": false,
+    "page_size": "595 x 842 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 115397,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "RJLYZL+MnSymbol12",
@@ -325,7 +358,28 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 3,
+      "x0": 163.48,
+      "y0": 76.89,
+      "x1": 431.59,
+      "y1": 274.87,
+      "w_pt": 268.11,
+      "h_pt": 197.99,
+      "name": "R42",
+      "imagemask": false,
+      "width_px": 910,
+      "height_px": 672,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 244,
+      "y_ppi": 244,
+      "size_bytes": 54988,
+      "object_id": "42 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -416,6 +470,62 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 2.7,
       "detail": "101 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:13:57Z",
+      "node": "reporttex",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "9 equations, 49 formulas"
+    },
+    {
+      "ts": "2026-08-31T00:36:03Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 51.1,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-08-31T00:36:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "13 fonts, 7 math"
+    },
+    {
+      "ts": "2026-08-31T00:36:03Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 37.1,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-08-31T00:36:03Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 37.8,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-08-31T00:36:03Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 20.4,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-08-31T00:36:04Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 502.4,
+      "detail": "1 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

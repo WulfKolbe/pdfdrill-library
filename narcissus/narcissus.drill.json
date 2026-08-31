@@ -4,7 +4,11 @@
   "facts": [
     "DESTS_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "MODEL_BUILT",
+    "BIBLIOGRAPHY_BUILT",
+    "TIDDLERS_BUILT",
+    "REPORTTEX_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -34,7 +38,45 @@
     },
     "page_count_text": 29,
     "font_count": 29,
-    "image_count": 0
+    "image_count": 0,
+    "bibkey": "narcissus",
+    "model_path": "model.docmodel.json",
+    "model_object_counts": {
+      "Page": 29,
+      "Footnote": 5,
+      "Citation": 21,
+      "Table": 1,
+      "TableRow": 7,
+      "TableCell": 28,
+      "Sidenote": 3,
+      "Diagram": 38,
+      "CodeListing": 29,
+      "Section": 16,
+      "Picture": 8,
+      "ListItem": 35,
+      "Equation": 11,
+      "Formula": 125,
+      "Paragraph": 89,
+      "Document": 1
+    },
+    "model_equations_with_cdn": 11,
+    "model_source": "mathpix",
+    "lines_upgraded_from_ocr": false,
+    "pua_note": "",
+    "model_caps": {
+      "geometry": true,
+      "math": true,
+      "source": "mathpix"
+    },
+    "bibliography_entries": 18,
+    "bibliography_with_year": 17,
+    "bibliography_numeric_citations": 0,
+    "bibliography_authoryear_citations": 16,
+    "bibliography_cites": 0,
+    "tiddlers_path": "narcissus.tiddlers.json",
+    "tiddlers_count": 432,
+    "tiddlers_svg_mode": "inline",
+    "reporttex_path": "report.tex"
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -1531,6 +1573,50 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 7581.1,
       "detail": "0 images, 0 pix2latex candidates"
+    },
+    {
+      "ts": "2026-08-30T13:05:57Z",
+      "node": "model",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED",
+      "to": "MODEL_BUILT",
+      "cost_ms": 602.7,
+      "detail": "446 objects, 11 eq w/ cdn"
+    },
+    {
+      "ts": "2026-08-30T13:05:58Z",
+      "node": "bibliography",
+      "from": "DESTS_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,MODEL_BUILT",
+      "to": "BIBLIOGRAPHY_BUILT",
+      "cost_ms": 0,
+      "detail": "18 entries, 0+16 cites detected, 0 linked"
+    },
+    {
+      "ts": "2026-08-30T13:05:58Z",
+      "node": "tiddlers",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,MODEL_BUILT",
+      "to": "TIDDLERS_BUILT",
+      "cost_ms": 21.8,
+      "detail": "432 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-08-30T13:06:06Z",
+      "node": "reporttex",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "11 equations, 125 formulas"
     }
-  ]
+  ],
+  "capabilities": {
+    "MODEL_BUILT": {
+      "produced_by": "model",
+      "inputs": {
+        "/home/wkolbe/pdfdrill-library/narcissus/narcissus.lines.json": "sha256:70659b8d17e95688b40904931a5b3d860e0ed5e5d13af36a746ebba504d0d90b"
+      },
+      "params_hash": "sha256:3ed9cf8e6aa3403e6331271ab7727dd3f46fa535937f1de6a80768d1ae98dc91",
+      "algo": "sha256",
+      "ts": "2026-08-30T13:05:57Z",
+      "provenance": "mathpix"
+    }
+  }
 }
