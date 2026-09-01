@@ -8,7 +8,13 @@
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -146,9 +152,98 @@
     "tiddlers_path": "vlhcc13.tiddlers.json",
     "tiddlers_count": 128,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 1,
+        "url": "http://www.omg.org/spec/DD/1.0/",
+        "kind": "text"
+      },
+      {
+        "page": 1,
+        "url": "http://www.eclipse.org/graphiti/",
+        "kind": "text"
+      },
+      {
+        "page": 1,
+        "url": "http://office.microsoft.com/visio/",
+        "kind": "text"
+      },
+      {
+        "page": 2,
+        "url": "http://www.yworks.com/de/products_yed_about.html",
+        "kind": "text"
+      },
+      {
+        "page": 2,
+        "url": "http://plantuml.sourceforge.net/",
+        "kind": "text"
+      },
+      {
+        "page": 2,
+        "url": "http://www.umlet.com/",
+        "kind": "text"
+      },
+      {
+        "page": 2,
+        "url": "http://www.eclipse.org/gef/zest/",
+        "kind": "text"
+      },
+      {
+        "page": 2,
+        "url": "http://koehnlein.blogspot.de/2012/01/discovery-diagrams-for-generic.html",
+        "kind": "text"
+      },
+      {
+        "page": 2,
+        "url": "http://www.xtend-lang.org",
+        "kind": "text"
+      },
+      {
+        "page": 6,
+        "url": "http://www.eclipse.org/papyrus/",
+        "kind": "text"
+      },
+      {
+        "page": 8,
+        "url": "http://git.rtsys.informatik.uni-kiel.de/projects/KIELER/repos/pragmatics/",
+        "kind": "text"
+      },
+      {
+        "page": 8,
+        "url": "http://menges.informatik.uni-kiel.de/",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "pdfTeX-1.40.12",
+    "creator": "TeX",
+    "creation_date": "2013-06-28T17:28:18+02",
+    "mod_date": "2013-06-28T17:28:18+02",
+    "custom_metadata": true,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 8,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 257939,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) kpathsea version 6.0.1"
+    }
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -532,7 +627,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -623,6 +718,54 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "0 equations, 4 formulas"
+    },
+    {
+      "ts": "2026-09-01T00:33:09Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 47.6,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-09-01T00:33:10Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "27 fonts, 3 math"
+    },
+    {
+      "ts": "2026-09-01T00:33:10Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 40.1,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-09-01T00:33:10Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 40.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-01T00:33:10Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 113.3,
+      "detail": "12 external urls"
+    },
+    {
+      "ts": "2026-09-01T00:33:13Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 2630.5,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

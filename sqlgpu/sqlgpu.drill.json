@@ -8,7 +8,13 @@
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "PDFINFO_KNOWN",
+    "ABSTRACT_KNOWN",
+    "LINKS_KNOWN",
+    "TOC_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 12,
@@ -193,10 +199,90 @@
     "tiddlers_path": "sqlgpu.tiddlers.json",
     "tiddlers_count": 316,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "In machine learning, continuously retraining a model guarantees                                                          Database System\naccurate predictions based on the latest data as training input. But\nto retrieve the latest data from a database, time-consuming extrac-                                          Optimal Weights\n                                                                                                                                           GPU 1\ntion is necessary as database systems have rarely been used for\noperations such as matrix algebra and gradient descent.                                                     Gradient Descent\n   In this work, we demonstrate that SQL with recursive tables                                                     𝜋                       GPU 2\nmakes it possible to express a complete machine learning pipeline                                                  𝜎\nout of data preprocessing, model training and its validation. To                                                Table Scan\nfacilitate the specification of loss functions, we extend the code-\ngenerating database system Umbra by an operator for automatic\n                                                                                                Figure 1: In-database machine learning: gradient descent\ndifferentiation for use within recursive tables: With the loss function\n                                                                                                with GPU support, embedded in a query plan.\nexpressed in SQL as a lambda function, Umbra generates machine\ncode for each partial derivative. We further use automatic differen-\ntiation for a dedicated gradient descent operator, which generates                              its deployment on unlabelled data [64]—are embedded in Python\nLLVM code to train a user-specified model on GPUs. We fine-tune                                 scripts that call up specialised tools such as NumPy, TensorFlow,\nGPU kernels at hardware level to allow a higher throughput and                                  Theano or Pytorch. Hereby, especially tensor operations and model\npropose non-blocking synchronisation of multiple units.                                         training are co-processed on graphical processing units (GPUs) or\n   In our evaluation, automatic differentiation accelerated the run-                            tensor processing units (TPUs) developed for this purpose.\ntime by the number of cached subexpressions compared to compil-                                    Integrating machine learning pipelines into database systems is\ning each derivative separately. Our GPU kernels with independent                                a promising approach for data-driven applications [1, 15, 19, 57, 62].\nmodels allowed maximal throughput even for small batch sizes,                                   Even though specialised tools will outperform general-purpose solu-\nmaking machine learning pipelines within SQL more competitive.                                  tions, we argue that an integration in database systems will simplify\n                                                                                                data provenance and its lineage, and allows complex queries as in-\nKEYWORDS                                                                                        put. So far, machine learning pipelines inside of database queries\nIn-Database Machine Learning, Automatic Differentiation, GPU                                    are assembled from user-defined functions [13, 30, 41, 54, 65] and\nACM Reference Format:                                                                           operators of an extended relational algebra. This brings the model\nMaximilian E. Schüle, Harald Lang, Maximilian Springer, Alfons Kemper,                          close to the data source [58] with SQL [2] as the only query lan-\nThomas Neumann, and Stephan Günnemann. 2021. In-Database Machine                                guage. As modern HTAP main-memory database systems such\nLearning with SQL on GPUs. In 33rd International Conference on Scien-                           as SAP HANA [38], HyPer [20, 27, 39, 46] and Umbra [26, 40, 45]\ntific and Statistical Database Management (SSDBM 2021), July 6–7, 2021,                         are designed for transactional and analytical workload, this allows\nTampa, FL, USA. ACM, New York, NY, USA, 12 pages. https://doi.org/10.                           the latest database state to be queried [24, 43]. But for continuous\n1145/3468791.3468840                                                                            machine learning based on the latest tuples, only stand-alone so-\n                                                                                                lutions exist [3, 11] whose pipelines retrain weights for a model",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "links": [
+      {
+        "page": 1,
+        "url": "https://doi.org/10.1145/3468791.3468840"
+      },
+      {
+        "page": 2,
+        "url": "https://developer.nvidia.com/cudnn"
+      },
+      {
+        "page": 6,
+        "url": "https://docs.nvidia.com/cuda/cublas"
+      },
+      {
+        "page": 8,
+        "url": "https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page"
+      }
+    ],
+    "toc": [
+      {
+        "number": "1",
+        "title": "INTRODUCTION                                                                              partially [31] when new input data is available.",
+        "page": ""
+      },
+      {
+        "number": "2",
+        "title": "RELATED WORK                                                                                     𝑤® ∞ ≈ lim 𝑤® 𝑡 .",
+        "page": ""
+      },
+      {
+        "number": "3.3",
+        "title": "Neural Networks in SQL",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "In-Database Machine Learning with SQL on GPUs",
+    "author": "",
+    "producer": "pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+    "creator": "LaTeX with acmart 2020/09/13 v1.73 Typesetting articles for the Association for Computing Machinery and hyperref 2020-05-15 v7.00e Hypertext links for LaTeX",
+    "creation_date": "2021-05-29T12:18:44+02",
+    "mod_date": "2021-05-29T12:18:44+02",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 12,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 1010529,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.5",
+    "custom_fields": {
+      "PTEX.Fullbanner": "This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2",
+      "Subject": ""
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "indatabase2021",
+    "title": "In-Database Machine Learning with SQL on GPUs",
+    "author": "",
+    "year": "2021",
+    "pages": 12,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "Copyright held by the owner/author(s). Publication rights licensed to ACM",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -985,7 +1071,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -1084,6 +1170,54 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "3 equations, 81 formulas"
+    },
+    {
+      "ts": "2026-09-01T00:32:03Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 39.8,
+      "detail": "title=True author=False"
+    },
+    {
+      "ts": "2026-09-01T00:32:03Z",
+      "node": "abstract",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 57.7,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-09-01T00:32:03Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 28.4,
+      "detail": "4 external urls"
+    },
+    {
+      "ts": "2026-09-01T00:32:03Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 74.4,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-01T00:32:03Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 98.3,
+      "detail": "citekey=indatabase2021"
+    },
+    {
+      "ts": "2026-09-01T00:32:08Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 4785.3,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

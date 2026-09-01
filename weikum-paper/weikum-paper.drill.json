@@ -8,7 +8,13 @@
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
     "FONTS_LAYER_KNOWN",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_KNOWN",
+    "LINKS_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 9,
@@ -140,9 +146,153 @@
     },
     "page_count_text": 9,
     "image_count": 0,
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "The proliferation of knowledge-sharing communities like Wikipedia and the advances in automated information extraction from Web pages enable the construction of large knowledge bases with facts about entities and their relationships. The facts can be represented in the RDF data model, as so-called subject-property-object triples, and can thus be queried by structured query languages like SPARQL. In principle, this allows precise querying in the database spirit. However, RDF data may be highly diverse and queries may return way too many results, so that ranking by informativeness measures is crucial to avoid overwhelming users. Moreover, as facts are extracted from textual contexts or have community-provided annotations, it can be beneficial to consider also keywords for formulating search requests. This paper gives an overview of recent and ongoing work on ranked retrieval of RDF data with keyword-augmented structured queries. The ranking method is based on statistical language models, the state-of-the-art paradigm in information retrieval. The paper develops a novel form of language models for the structured, but schema-less setting of RDF triples and extended SPARQL queries.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Searching RDF Graphs with SPARQL and Keywords",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "2",
+        "title": "Abstract",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "3",
+        "title": "1 Motivation and Background",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "3.1",
+        "title": "Bulletin of the IEEE Computer Society Technical Committee on Data Engineering",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "4",
+        "title": "2 Extending the SPARQL Query Language",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "5",
+        "title": "3 Ranking with Statistical Language Models",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "5.0.1",
+        "title": "3.1 Entity-Relationship Ranking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "5.0.2",
+        "title": "3.2 Estimating the Query LM",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "5.1",
+        "title": "# Triple (ti) c(ti) PQ(ti)",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "5.2",
+        "title": "The Query LM for Keyword-Augmented Structured Queries.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "5.2.1",
+        "title": "3.3 Result LM and Ranking",
+        "page": "",
+        "level": 3
+      },
+      {
+        "number": "6",
+        "title": "4 Experimental Studies",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "6.1",
+        "title": "ID SPARQL Query NDCG",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.2",
+        "title": "ID SPARQL Query NDCG",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.3",
+        "title": "Q. ID Rank Result Rel.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "6.4",
+        "title": "Q. ID Rank Result Rel.",
+        "page": "",
+        "level": 2
+      },
+      {
+        "number": "7",
+        "title": "5 Future Directions",
+        "page": "",
+        "level": 1
+      },
+      {
+        "number": "8",
+        "title": "References",
+        "page": "",
+        "level": 1
+      }
+    ],
+    "toc_search_scope": "markdown",
+    "links": [
+      {
+        "page": 9,
+        "url": "http://www.uniprot.org/",
+        "kind": "text"
+      }
+    ]
   },
-  "pdfinfo": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "",
+    "producer": "MiKTeX-dvipdfmx (20090708 svn texlive 14695)",
+    "creator": "TeX output 2010.03.16:1032",
+    "creation_date": "2010-03-16T11:01:13-08",
+    "mod_date": null,
+    "custom_metadata": false,
+    "metadata_stream": false,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 9,
+    "encrypted": false,
+    "page_size": "612 x 792 pts (letter)",
+    "page_rot": 0.0,
+    "size_in_bytes": 87208,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.4",
+    "custom_fields": {}
+  },
   "bibtex": null,
   "urls": null,
   "dests": null,
@@ -386,7 +536,7 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "pix2tex_results": null,
   "tsv_layer": null,
   "layers": {
@@ -511,6 +661,54 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "6 equations, 47 formulas"
+    },
+    {
+      "ts": "2026-09-01T00:33:23Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 48.8,
+      "detail": "title=False author=False"
+    },
+    {
+      "ts": "2026-09-01T00:33:23Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "17 fonts, 8 math"
+    },
+    {
+      "ts": "2026-09-01T00:33:23Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 9.0,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-09-01T00:33:23Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 1.4,
+      "detail": "scope=markdown"
+    },
+    {
+      "ts": "2026-09-01T00:33:23Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 93.8,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-09-01T00:33:25Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1774.6,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

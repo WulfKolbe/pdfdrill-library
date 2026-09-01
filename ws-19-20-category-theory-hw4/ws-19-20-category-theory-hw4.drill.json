@@ -9,7 +9,15 @@
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
     "INK_CONVERTED",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -123,12 +131,62 @@
     "tiddlers_path": "ws-19-20-category-theory-hw4.tiddlers.json",
     "tiddlers_count": 61,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages",
+    "links": []
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "Homework for Introduction to Category Theory (week 4)",
+    "author": "Joshua Moerman",
+    "producer": "LuaTeX-2.00",
+    "creator": "LuaTeX 2.00 20191029 + ConTeXt MkIV 2019.10.29 15:09",
+    "creation_date": "2019-11-14T10:33:43+01",
+    "mod_date": "2019-11-14T10:33:43+01",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": false,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 2,
+    "encrypted": false,
+    "page_size": "595.276 x 841.89 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 31799,
+    "linearized": false,
+    "optimized": false,
+    "pdf_version": "1.7",
+    "custom_fields": {
+      "ConTeXt.Jobname": "ws-19-20-category-theory-hw4",
+      "ConTeXt.LMTX": "0.10",
+      "ConTeXt.Support": "contextgarden.net",
+      "ConTeXt.Time": "2019-11-14 10:33",
+      "ConTeXt.Url": "www.pragma-ade.com",
+      "ConTeXt.Version": "2019.10.29 15:09",
+      "ID": "ws-19-20-category-theory-hw4 | 2019-11-14T10:33:43+01:00",
+      "TeX.Support": "tug.org"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "moerman2019",
+    "title": "Homework for Introduction to Category Theory (week 4)",
+    "author": "Joshua Moerman",
+    "year": "2019",
+    "pages": 2,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "TIHVMC+TeXGyrePagella-Regular CID",
@@ -173,7 +231,7 @@
       "is_italic": true
     }
   ],
-  "images_layer": null,
+  "images_layer": [],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -264,6 +322,70 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "3 equations, 26 formulas"
+    },
+    {
+      "ts": "2026-09-01T00:33:29Z",
+      "node": "pdfinfo",
+      "from": "FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 42.2,
+      "detail": "title=True author=True"
+    },
+    {
+      "ts": "2026-09-01T00:33:29Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "3 fonts, 1 math"
+    },
+    {
+      "ts": "2026-09-01T00:33:29Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 31.1,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-09-01T00:33:29Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 33.1,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-01T00:33:29Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 47.3,
+      "detail": "0 external urls"
+    },
+    {
+      "ts": "2026-09-01T00:33:29Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 21.0,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-09-01T00:33:29Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "citekey=moerman2019"
+    },
+    {
+      "ts": "2026-09-01T00:33:30Z",
+      "node": "images",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 466.3,
+      "detail": "0 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {
