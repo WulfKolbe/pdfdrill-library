@@ -15,7 +15,10 @@
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
     "REPORTTEX_BUILT",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 25,
@@ -212,7 +215,8 @@
     "tiddlers_path": "0609399.tiddlers.json",
     "tiddlers_count": 582,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages"
   },
   "pdfinfo": {
     "title": "",
@@ -241,7 +245,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "zorich2018",
+    "title": "Geodesics on Flat Surfaces Introduction: Families of Flat Surfaces as Moduli Spaces of Abelian Differentials",
+    "author": "Anton Zorich*",
+    "year": "2018",
+    "pages": 25,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": [
     {
@@ -8594,6 +8613,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "29 equations, 338 formulas"
+    },
+    {
+      "ts": "2026-09-02T00:34:44Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "34 fonts, 14 math"
+    },
+    {
+      "ts": "2026-09-02T00:34:44Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 41.1,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-09-02T00:34:45Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 47.5,
+      "detail": "citekey=zorich2018"
     }
   ],
   "capabilities": {

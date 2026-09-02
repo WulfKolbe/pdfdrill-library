@@ -13,7 +13,10 @@
     "EQNUMS_FUSED",
     "GEOMETRY_FUSED",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "INK_CONVERTED",
+    "TABLES_KNOWN",
+    "REPORT_BUILT"
   ],
   "evidence": {
     "pages": 57,
@@ -222,7 +225,11 @@
     "latex_source_path": "/home/wkolbe/pdfdrill-library/1510.06699/1510.06699.tgz",
     "latex_source_kind": "arxiv-eprint (author .tgz)",
     "inspect_path": "1510.06699.inspect.html",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "tables_count": 7,
+    "tables_gold": 7,
+    "tables_path": "tables.json",
+    "report_path": "formula-report.html"
   },
   "pdfinfo": {
     "title": "",
@@ -13990,6 +13997,38 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "279 equations, 1063 formulas"
+    },
+    {
+      "ts": "2026-09-01T14:02:06Z",
+      "node": "reporttex",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "279 equations, 0 formulas"
+    },
+    {
+      "ts": "2026-09-01T14:08:50Z",
+      "node": "reporttex",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,INK_CONVERTED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "279 equations, 0 formulas"
+    },
+    {
+      "ts": "2026-09-01T14:09:07Z",
+      "node": "tables",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,INK_CONVERTED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TABLES_KNOWN",
+      "cost_ms": 11422.1,
+      "detail": "7 gold + 0 pdfplumber"
+    },
+    {
+      "ts": "2026-09-01T14:09:08Z",
+      "node": "report",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,INK_CONVERTED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TABLES_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORT_BUILT",
+      "cost_ms": 0,
+      "detail": "1062 inline, 279 equations"
     }
   ],
   "capabilities": {

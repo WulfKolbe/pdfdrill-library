@@ -14,7 +14,10 @@
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
     "REPORTTEX_BUILT",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT"
   ],
   "evidence": {
     "pages": 4,
@@ -163,7 +166,11 @@
     "tiddlers_path": "0212041.tiddlers.json",
     "tiddlers_count": 123,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "Classical anti-commuting spinor fields and their dynamics are derived from the geometry of the Clifford bundle over space-\n                                          time via the BRST formulation. In conjunction with Kaluza-Klein theory, this results in a geometric description of all the fields\n                                          and dynamics of the standard model coupled to gravity and provides the starting point for a new approach to quantum gravity.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "arXiv:gr-qc/0212041v3  14 Dec 2002",
@@ -2420,6 +2427,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "22 equations, 42 formulas"
+    },
+    {
+      "ts": "2026-09-02T00:34:27Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 8.3,
+      "detail": "13 fonts, 8 math"
+    },
+    {
+      "ts": "2026-09-02T00:34:27Z",
+      "node": "abstract",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 36.9,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-09-02T00:34:27Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 44.8,
+      "detail": "scope=first3pages"
     }
   ],
   "capabilities": {

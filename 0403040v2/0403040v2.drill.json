@@ -13,7 +13,10 @@
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
     "REPORTTEX_BUILT",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT"
   ],
   "evidence": {
     "pages": 20,
@@ -184,7 +187,9 @@
     "tiddlers_path": "0403040v2.tiddlers.json",
     "tiddlers_count": 661,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -215,8 +220,8 @@
   },
   "bibtex": {
     "entry_type": "misc",
-    "citekey": "unknown2008",
-    "title": "",
+    "citekey": "the2008",
+    "title": "The Construction of Spinors in Geometric Algebra",
     "author": "",
     "year": "2008",
     "pages": 20,
@@ -10351,6 +10356,38 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "167 equations, 254 formulas"
+    },
+    {
+      "ts": "2026-09-02T00:34:32Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "31 fonts, 15 math"
+    },
+    {
+      "ts": "2026-09-02T00:34:32Z",
+      "node": "abstract",
+      "from": "BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 45.5,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-09-02T00:34:32Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 56.0,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-02T00:34:32Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 131.7,
+      "detail": "citekey=the2008"
     }
   ],
   "capabilities": {

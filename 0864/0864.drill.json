@@ -15,7 +15,9 @@
     "BIBTEX_KNOWN",
     "IMAGES_LAYER_KNOWN",
     "FONTS_LAYER_KNOWN",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN"
   ],
   "evidence": {
     "pages": 5,
@@ -530,7 +532,10 @@
     },
     "page_count_text": 5,
     "image_count": 0,
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "The reliable fraction of information is an attractive score for quantifying (functional) dependencies in high-dimensional data. In this paper, we systematically explore the algorithmic implications of using this measure for optimization. We show that the problem is NP-hard, justifying worst-case exponential-time as well as heuristic search methods. We then substantially improve the practical performance for both optimization styles by deriving a novel admissible bounding function that has an unbounded potential for additional pruning over the previously proposed one. Finally, we empirically investigate the approximation ratio of the greedy algorithm and show that it produces highly competitive results in a fraction of time needed for complete branch-and-bound style search.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown"
   },
   "pdfinfo": {
     "title": "Discovering Reliable Dependencies from Data: Hardness and Improved Algorithms",
@@ -1626,6 +1631,22 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "5 equations, 143 formulas"
+    },
+    {
+      "ts": "2026-09-02T00:34:55Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 8.5,
+      "detail": "59 fonts, 25 math"
+    },
+    {
+      "ts": "2026-09-02T00:34:55Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 2.1,
+      "detail": "scope=markdown method=markdown-heading"
     }
   ],
   "capabilities": {

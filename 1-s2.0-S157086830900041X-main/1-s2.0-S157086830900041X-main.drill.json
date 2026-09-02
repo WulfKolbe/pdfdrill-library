@@ -14,7 +14,9 @@
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT"
   ],
   "evidence": {
     "pages": 13,
@@ -179,7 +181,8 @@
     "tiddlers_path": "1-s2.0-S157086830900041X-main.tiddlers.json",
     "tiddlers_count": 544,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages"
   },
   "pdfinfo": {
     "title": "On database query languages for K-relations",
@@ -815,6 +818,22 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "16 equations, 420 formulas"
+    },
+    {
+      "ts": "2026-09-02T00:35:16Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "25 fonts, 11 math"
+    },
+    {
+      "ts": "2026-09-02T00:35:16Z",
+      "node": "abstract",
+      "from": "BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 71.6,
+      "detail": "scope=first2pages method=none"
     }
   ],
   "capabilities": {

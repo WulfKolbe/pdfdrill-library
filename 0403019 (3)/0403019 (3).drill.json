@@ -13,7 +13,10 @@
     "NEEDS_VISION_OCR",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 14,
@@ -144,7 +147,10 @@
     "tiddlers_path": "0403019 (3).tiddlers.json",
     "tiddlers_count": 170,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "This paper discusses a 7 dimensional conformal geometric algebra\n                                           model for spacetime based on the notion that spacelike and timelike\n                                           infinities are distinct. I show how naturally of the dimensions rep-\n                                           resents the lightlike infinity and appears redundant in computations,\n                                           yet usefull in interpretation.\n\f1. Introduction\n    Geometric algebra arises from a fruitfull mariage between vectoralgebra\nand Clifford algebra. It was Hestenes [1] who brought it into its presently\nmost common form and who realised the potential of this mathematical lan-\nguage for physics. Recently textbooks have started appearing [2]. Currently\ngeometric algebra, as applied in physics, comes into two forms, the straight-\nforward direct implementation as found, for example, in spacetime algebra\n[1] or the para-vector approach by Baylis [3]. A formulation that is especially\nsuited to studying geometric relations has been given by several authors [4],\nand the same formalism has also been applied to study problems in elasticity\ntheory [5].\n    Here three dimensional euclidean space E3 is modelled by means of a five\ndimensional geometric algebra, CGA5 . The model is conformal, in the sense\nthat the elements of the algebra encoding geometric properties of E3 only\nneed to be determined up to a scale. The great advantage of this way of\ndealing with E3 is that all conformal transformations can be treated identi-\ncally, almost independently of the object to be transformed. For example,\nthe transformation equations for lines, planes, circles, tangents and individ-\nual points are the same,\n                                 A′ = RAR̃ ,                              (1.1)\nwhere A is a geometric object and R is a versor, an element from the algebra\nthat represents the desired transformation.\n   In relativistic electrodynamics these transformation rules acquire a new\nuse as they can be used to represent the action of electromagnetic fields on\nproper velocity of a particle [9]. The Lorentz force equation",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages"
   },
   "pdfinfo": {
     "title": "arXiv:math-ph/0403019v1  12 Mar 2004",
@@ -170,7 +176,22 @@
     "pdf_version": "1.4",
     "custom_fields": {}
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "arxivmathphv2018",
+    "title": "arXiv:math-ph/0403019v1  12 Mar 2004",
+    "author": "",
+    "year": "2018",
+    "pages": 14,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": [],
   "fonts_layer": [
@@ -839,6 +860,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "32 equations, 52 formulas"
+    },
+    {
+      "ts": "2026-09-02T00:34:32Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "11 fonts, 4 math"
+    },
+    {
+      "ts": "2026-09-02T00:34:32Z",
+      "node": "abstract",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 28.4,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-09-02T00:34:32Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 115.0,
+      "detail": "citekey=arxivmathphv2018"
     }
   ],
   "capabilities": {

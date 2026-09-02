@@ -13,7 +13,10 @@
     "FONTS_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 19,
@@ -169,7 +172,10 @@
     "tiddlers_path": "0503219.tiddlers.json",
     "tiddlers_count": 415,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "We define a discrete Laplace-Beltrami operator for simplicial sur-\n                                                   faces (Definition 16). It depends only on the intrinsic geometry of the\n                                                   surface and its edge weights are positive. Our Laplace operator is sim-\n                                                   ilar to the well known finite-elements Laplacian (the so called “cotan\n                                                   formula”) except that it is based on the intrinsic Delaunay triangula-\n                                                   tion of the simplicial surface. This leads to new definitions of discrete\n                                                   harmonic functions, discrete mean curvature, and discrete minimal sur-\n                                                   faces. The definition of the discrete Laplace-Beltrami operator depends\n                                                   on the existence and uniqueness of Delaunay tessellations in piecewise\n                                                   flat surfaces. While the existence is known, we prove the uniqueness.\n                                                   Using Rippa’s Theorem we show that, as claimed, Musin’s harmonic\n                                                   index provides an optimality criterion for Delaunay triangulations, and\n                                                   this can be used to prove that the edge flipping algorithm terminates\n                                                   also in the setting of piecewise flat surfaces.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages"
   },
   "pdfinfo": {
     "title": "A variational principle for hyperideal circle patterns",
@@ -198,7 +204,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "springborn2008",
+    "title": "A variational principle for hyperideal circle patterns",
+    "author": "Boris A. Springborn",
+    "year": "2008",
+    "pages": 19,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": [
     {
@@ -3114,6 +3135,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "29 equations, 267 formulas"
+    },
+    {
+      "ts": "2026-09-02T00:34:32Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "23 fonts, 8 math"
+    },
+    {
+      "ts": "2026-09-02T00:34:33Z",
+      "node": "abstract",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 39.1,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-09-02T00:34:33Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=springborn2008"
     }
   ],
   "capabilities": {
