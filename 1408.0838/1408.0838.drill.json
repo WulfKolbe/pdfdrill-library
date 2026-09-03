@@ -17,7 +17,9 @@
     "GEOMETRY_FUSED",
     "TIDDLERS_BUILT",
     "REPORTTEX_BUILT",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "1408.0838",
@@ -238,7 +240,16 @@
     "trailing_punct_moved": 11,
     "latex_source_path": "/home/wkolbe/pdfdrill-library/1408.0838/1408.0838.tgz",
     "latex_source_kind": "arxiv-eprint (author .tgz)",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "Estimating a constrained relation is a fundamental problem in machine learning. Special cases are classification (the problem of estimating a map from a set of to-be-classified elements to a set of labels), clustering (the problem of estimating an equivalence relation on a set) and ranking (the problem of estimating a linear order on a set). We contribute a family of probability measures on the set of all relations between two finite, non-empty sets, which offers a joint abstraction of multi-label classification, correlation clustering and ranking by linear ordering. Estimating (learning) a maximally probable measure, given (a training set of) related and unrelated pairs, is a convex optimization problem. Estimating (inferring) a maximally probable relation, given a measure, is a 01-linear program. It is solved in linear time for maps. It is NP-hard for equivalence relations and linear orders. Practical solutions for all three cases are shown in experiments with real data. Finally, estimating a maximally probable measure and relation jointly is posed as a mixed-integer nonlinear program. This formulation suggests a mathematical programming approach to semi-supervised learning.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Estimating Maximally Probable Constrained Relations by Mathematical Programming",
+    "arxiv_authors": [
+      "Lizhen Qu",
+      "Bjoern Andres"
+    ],
+    "arxiv_primary_category": "cs.LG"
   },
   "pdfinfo": {
     "title": "Estimating Maximally Probable Constrained Relations by Mathematical Programming",
@@ -268,7 +279,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "qu2022",
+    "title": "Estimating Maximally Probable Constrained Relations by Mathematical Programming",
+    "author": "Lizhen Qu and Bjoern Andres",
+    "year": "2022",
+    "pages": 16,
+    "doi": "",
+    "arxiv_id": "1408.0838",
+    "url": "https://arxiv.org/abs/1408.0838",
+    "license": "",
+    "publisher": "",
+    "eprint": "1408.0838",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.LG"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -1201,6 +1227,14 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "32 equations, 227 formulas"
+    },
+    {
+      "ts": "2026-09-03T00:33:50Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,INK_CONVERTED,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 1.4,
+      "detail": "citekey=qu2022"
     }
   ],
   "capabilities": {

@@ -15,7 +15,11 @@
     "GEOMETRY_FUSED",
     "TIDDLERS_BUILT",
     "REPORTTEX_BUILT",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 35,
@@ -200,7 +204,14 @@
     "trailing_punct_moved": 47,
     "latex_source_path": "/home/wkolbe/pdfdrill-library/1511.00652/1511.00652.tgz",
     "latex_source_kind": "arxiv-eprint (author .tgz)",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 34,
+        "url": "http://dx.doi.org/10.14279/depositonce-4183"
+      }
+    ]
   },
   "pdfinfo": {
     "title": "",
@@ -230,7 +241,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "bobenko2017",
+    "title": "Discrete Riemann surfaces based on quadrilateral cellular decompositions",
+    "author": "Alexander I. Bobenko and Felix Günther",
+    "year": "2017",
+    "pages": 35,
+    "doi": "",
+    "arxiv_id": "1511.00652",
+    "url": "https://arxiv.org/abs/1511.00652",
+    "license": "",
+    "publisher": "",
+    "eprint": "1511.00652",
+    "archive_prefix": "arXiv",
+    "primary_class": "math.CV"
+  },
   "urls": null,
   "dests": [
     {
@@ -2019,6 +2045,38 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "78 equations, 723 formulas"
+    },
+    {
+      "ts": "2026-09-03T00:34:01Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "22 fonts, 10 math"
+    },
+    {
+      "ts": "2026-09-03T00:34:01Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,INK_CONVERTED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 42.3,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-03T00:34:01Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,INK_CONVERTED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 27.8,
+      "detail": "1 external urls"
+    },
+    {
+      "ts": "2026-09-03T00:34:01Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,IMAGES_LAYER_KNOWN,INK_CONVERTED,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "citekey=bobenko2017"
     }
   ],
   "capabilities": {

@@ -13,7 +13,12 @@
     "EQNUMS_FUSED",
     "GEOMETRY_FUSED",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "LINKS_KNOWN",
+    "TOC_ABSENT",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "IMAGES_LAYER_KNOWN"
   ],
   "evidence": {
     "pages": 5,
@@ -154,7 +159,26 @@
     "tiddlers_svg_mode": "inline",
     "latex_source_path": "/home/wkolbe/pdfdrill-library/1506.0005v1/1506.0005v1.tgz",
     "latex_source_kind": "arxiv-eprint (author .tgz)",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "links": [
+      {
+        "page": 2,
+        "url": "http://en.wikipedia.org/wiki/Discrete_Fourier_transform"
+      },
+      {
+        "page": 2,
+        "url": "http://en.wikipedia.org/wiki/Windowing_function"
+      },
+      {
+        "page": 2,
+        "url": "http://en.wikipedia.org/wiki/Sinc_filter"
+      },
+      {
+        "page": 4,
+        "url": "http://en.wikipedia.org/wiki/Goertzel_algorithm"
+      }
+    ],
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -180,9 +204,24 @@
     "pdf_version": "1.4",
     "custom_fields": {}
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "marinacci2015",
+    "title": "The large-scale properties of simulated cosmic magnetic fields",
+    "author": "Federico Marinacci and Mark Vogelsberger and Philip Mocz and Ruediger Pakmor",
+    "year": "2015",
+    "pages": 5,
+    "doi": "",
+    "arxiv_id": "1506.0005v1",
+    "url": "https://arxiv.org/abs/1506.0005v1",
+    "license": "",
+    "publisher": "",
+    "eprint": "1506.0005v1",
+    "archive_prefix": "arXiv",
+    "primary_class": "astro-ph.CO"
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "BAAAAA+TimesNewRomanPS-BoldMT",
@@ -269,7 +308,68 @@
       "is_italic": false
     }
   ],
-  "images_layer": null,
+  "images_layer": [
+    {
+      "page": 1,
+      "x0": 365.4,
+      "y0": 395.9,
+      "x1": 538.6,
+      "y1": 604.4,
+      "w_pt": 173.2,
+      "h_pt": 208.5,
+      "name": "Im4",
+      "imagemask": false,
+      "width_px": 231,
+      "height_px": 278,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 96,
+      "y_ppi": 96,
+      "size_bytes": 3744,
+      "object_id": "4 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 3,
+      "x0": 297.1,
+      "y0": 90.2,
+      "x1": 538.6,
+      "y1": 246.2,
+      "w_pt": 241.5,
+      "h_pt": 156.0,
+      "name": "Im13",
+      "imagemask": false,
+      "width_px": 322,
+      "height_px": 208,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 96,
+      "y_ppi": 96,
+      "size_bytes": 5843,
+      "object_id": "13 0",
+      "candidate_pix2latex": false
+    },
+    {
+      "page": 3,
+      "x0": 263.1,
+      "y0": 606.5,
+      "x1": 538.6,
+      "y1": 780.6,
+      "w_pt": 275.5,
+      "h_pt": 174.1,
+      "name": "Im12",
+      "imagemask": false,
+      "width_px": 459,
+      "height_px": 290,
+      "encoding": "image",
+      "color": "rgb",
+      "x_ppi": 120,
+      "y_ppi": 120,
+      "size_bytes": 10649,
+      "object_id": "12 0",
+      "candidate_pix2latex": false
+    }
+  ],
   "tsv_layer": null,
   "layers": {},
   "transitions": [
@@ -512,6 +612,46 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "1 equations, 37 formulas"
+    },
+    {
+      "ts": "2026-09-03T00:33:59Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 18.9,
+      "detail": "4 external urls"
+    },
+    {
+      "ts": "2026-09-03T00:33:59Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 36.5,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-03T00:33:59Z",
+      "node": "dests",
+      "from": "ABSTRACT_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 19.2,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-09-03T00:33:59Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "citekey=marinacci2015"
+    },
+    {
+      "ts": "2026-09-03T00:34:00Z",
+      "node": "images",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,EQNUMS_FUSED,FONTS_KNOWN,FONTS_LAYER_KNOWN,GEOMETRY_FUSED,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "IMAGES_LAYER_KNOWN",
+      "cost_ms": 1051.3,
+      "detail": "3 images, 0 pix2latex candidates"
     }
   ],
   "capabilities": {

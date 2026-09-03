@@ -14,7 +14,9 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -178,7 +180,15 @@
     "tiddlers_path": "1605.02019.tiddlers.json",
     "tiddlers_count": 148,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "Distributed dense word vectors have been shown to be effective at capturing token-level semantic and syntactic regularities in language, while topic models can form interpretable representations over documents. In this work, we describe lda2vec, a model that learns dense word vectors jointly with Dirichlet-distributed latent document-level mixtures of topic vectors. In contrast to continuous dense document representations, this formulation produces sparse, interpretable document mixtures through a non-negative simplex constraint. Our method is simple to incorporate into existing automatic differentiation frameworks and allows for unsupervised document representations geared for use by scientists while simultaneously learning word vectors and the linear relationships between them.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Mixing Dirichlet Topic Models and Word Embeddings to Make lda2vec",
+    "arxiv_authors": [
+      "Christopher E Moody"
+    ],
+    "arxiv_primary_category": "cs.CL"
   },
   "pdfinfo": {
     "title": "",
@@ -206,7 +216,22 @@
       "PTEX.Fullbanner": "This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) kpathsea version 6.0.1"
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "moody2016",
+    "title": "Mixing Dirichlet Topic Models and Word Embeddings to Make lda2vec",
+    "author": "Christopher E Moody",
+    "year": "2016",
+    "pages": 8,
+    "doi": "",
+    "arxiv_id": "1605.02019",
+    "url": "https://arxiv.org/abs/1605.02019",
+    "license": "",
+    "publisher": "",
+    "eprint": "1605.02019",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.CL"
+  },
   "urls": null,
   "dests": [],
   "fonts_layer": [
@@ -731,6 +756,14 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "4 equations, 49 formulas"
+    },
+    {
+      "ts": "2026-09-03T00:34:09Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LATEX_INGESTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=moody2016"
     }
   ],
   "capabilities": {
