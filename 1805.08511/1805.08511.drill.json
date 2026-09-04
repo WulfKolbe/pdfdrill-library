@@ -12,7 +12,10 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "LINKS_KNOWN",
+    "TOC_ABSENT"
   ],
   "evidence": {
     "pages": 11,
@@ -189,7 +192,18 @@
     "tiddlers_path": "1805.08511.tiddlers.json",
     "tiddlers_count": 285,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "links": [
+      {
+        "page": 6,
+        "url": "https://ivrl.epfl.ch/research-2/research-current/research-superpixels/#SLICO"
+      },
+      {
+        "page": 6,
+        "url": "http://cvlab.hanyang.ac.kr/tracker_benchmark/"
+      }
+    ],
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -2737,6 +2751,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "6 equations, 106 formulas"
+    },
+    {
+      "ts": "2026-09-04T00:35:11Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "27 fonts, 11 math"
+    },
+    {
+      "ts": "2026-09-04T00:35:12Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 26.0,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-09-04T00:35:12Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 44.0,
+      "detail": "scope=first3pages"
     }
   ],
   "capabilities": {

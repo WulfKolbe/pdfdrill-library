@@ -14,7 +14,9 @@
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
     "REPORTTEX_BUILT",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "FONTS_KNOWN",
+    "TOC_ABSENT"
   ],
   "evidence": {
     "source_arxiv_id": "1705.09391",
@@ -228,7 +230,8 @@
     "tiddlers_path": "1705.09391.tiddlers.json",
     "tiddlers_count": 377,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "Discovering Reliable Approximate Functional Dependencies",
@@ -1999,6 +2002,22 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "22 equations, 245 formulas"
+    },
+    {
+      "ts": "2026-09-04T00:35:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.7,
+      "detail": "67 fonts, 0 math"
+    },
+    {
+      "ts": "2026-09-04T00:35:03Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 62.8,
+      "detail": "scope=first3pages"
     }
   ],
   "capabilities": {

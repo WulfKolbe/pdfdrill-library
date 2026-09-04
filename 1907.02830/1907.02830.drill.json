@@ -11,7 +11,10 @@
     "ABSTRACT_KNOWN",
     "LINKS_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 31,
@@ -160,7 +163,8 @@
     },
     "page_count_text": 31,
     "image_count": 7,
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -190,7 +194,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "karpenkov2021",
+    "title": "Geometric criteria for realizability of tensegrities in higher dimensions",
+    "author": "Oleg Karpenkov and Christian Müller",
+    "year": "2021",
+    "pages": 31,
+    "doi": "",
+    "arxiv_id": "1907.02830",
+    "url": "https://arxiv.org/abs/1907.02830",
+    "license": "",
+    "publisher": "",
+    "eprint": "1907.02830",
+    "archive_prefix": "arXiv",
+    "primary_class": "math.CO"
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -815,6 +834,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "59 equations, 69 formulas"
+    },
+    {
+      "ts": "2026-09-04T00:35:33Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 8.4,
+      "detail": "26 fonts, 12 math"
+    },
+    {
+      "ts": "2026-09-04T00:35:33Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 48.0,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-04T00:35:33Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.2,
+      "detail": "citekey=karpenkov2021"
     }
   ],
   "capabilities": {
