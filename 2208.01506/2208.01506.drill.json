@@ -12,7 +12,10 @@
     "LINKS_KNOWN",
     "DESTS_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "BIBTEX_KNOWN",
+    "TOC_ABSENT"
   ],
   "evidence": {
     "pages": 63,
@@ -194,7 +197,8 @@
     },
     "page_count_text": 63,
     "image_count": 20,
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -223,7 +227,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "yaylali2022",
+    "title": "Notes on derived algebraic geometry",
+    "author": "Can Yaylali",
+    "year": "2022",
+    "pages": 63,
+    "doi": "",
+    "arxiv_id": "2208.01506",
+    "url": "https://arxiv.org/abs/2208.01506",
+    "license": "",
+    "publisher": "",
+    "eprint": "2208.01506",
+    "archive_prefix": "arXiv",
+    "primary_class": "math.AG"
+  },
   "urls": null,
   "dests": [
     {
@@ -3771,6 +3790,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "129 equations, 182 formulas"
+    },
+    {
+      "ts": "2026-09-06T04:08:48Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "32 fonts, 14 math"
+    },
+    {
+      "ts": "2026-09-06T04:08:49Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "citekey=yaylali2022"
+    },
+    {
+      "ts": "2026-09-06T04:08:49Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 53.6,
+      "detail": "scope=first3pages"
     }
   ],
   "capabilities": {

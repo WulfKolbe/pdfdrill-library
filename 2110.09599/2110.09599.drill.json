@@ -15,7 +15,9 @@
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
     "REPORTTEX_BUILT",
-    "INK_CONVERTED"
+    "INK_CONVERTED",
+    "FONTS_KNOWN",
+    "TOC_ABSENT"
   ],
   "evidence": {
     "source_arxiv_id": "2110.09599",
@@ -215,7 +217,8 @@
     "tiddlers_path": "2110.09599.tiddlers.json",
     "tiddlers_count": 357,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -1716,6 +1719,22 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "12 equations, 168 formulas"
+    },
+    {
+      "ts": "2026-09-06T04:08:37Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "30 fonts, 14 math"
+    },
+    {
+      "ts": "2026-09-06T04:08:37Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 52.4,
+      "detail": "scope=first3pages"
     }
   ],
   "capabilities": {

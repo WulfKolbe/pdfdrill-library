@@ -12,7 +12,10 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "LINKS_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 9,
@@ -182,7 +185,17 @@
     "tiddlers_path": "2112.13375.tiddlers.json",
     "tiddlers_count": 258,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "links": [
+      {
+        "page": 1,
+        "url": "http://arxiv.org/abs/2112.13375v1"
+      },
+      {
+        "page": 9,
+        "url": "https://kconrad.math.uconn.edu/blurbs/gradnumthy/hensel.pdf"
+      }
+    ]
   },
   "pdfinfo": {
     "title": "",
@@ -211,7 +224,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "baier2021",
+    "title": "Solving $p$-adic polynomial equations using Jarratt&#39;s Method",
+    "author": "Stephan Baier and Swarup Kumar Das and Saayan Mukherjee",
+    "year": "2021",
+    "pages": 9,
+    "doi": "",
+    "arxiv_id": "2112.13375",
+    "url": "https://arxiv.org/abs/2112.13375",
+    "license": "",
+    "publisher": "",
+    "eprint": "2112.13375",
+    "archive_prefix": "arXiv",
+    "primary_class": "math.NT"
+  },
   "urls": null,
   "dests": [
     {
@@ -4045,6 +4073,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "46 equations, 115 formulas"
+    },
+    {
+      "ts": "2026-09-06T04:08:40Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "22 fonts, 12 math"
+    },
+    {
+      "ts": "2026-09-06T04:08:40Z",
+      "node": "links",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 24.9,
+      "detail": "2 external urls"
+    },
+    {
+      "ts": "2026-09-06T04:08:40Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "citekey=baier2021"
     }
   ],
   "capabilities": {

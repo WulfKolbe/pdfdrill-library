@@ -12,7 +12,10 @@
     "DESTS_KNOWN",
     "LINKS_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 61,
@@ -173,7 +176,8 @@
     },
     "page_count_text": 61,
     "image_count": 16,
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -202,7 +206,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "keevash2023",
+    "title": "The existence of subspace designs",
+    "author": "Peter Keevash and Ashwin Sah and Mehtaab Sawhney",
+    "year": "2023",
+    "pages": 61,
+    "doi": "",
+    "arxiv_id": "2212.00870",
+    "url": "https://arxiv.org/abs/2212.00870",
+    "license": "",
+    "publisher": "",
+    "eprint": "2212.00870",
+    "archive_prefix": "arXiv",
+    "primary_class": "math.CO"
+  },
   "urls": null,
   "dests": [
     {
@@ -2729,6 +2748,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "135 equations, 240 formulas"
+    },
+    {
+      "ts": "2026-09-06T04:08:52Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "31 fonts, 14 math"
+    },
+    {
+      "ts": "2026-09-06T04:08:52Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 52.0,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-06T04:08:52Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 1.5,
+      "detail": "citekey=keevash2023"
     }
   ],
   "capabilities": {

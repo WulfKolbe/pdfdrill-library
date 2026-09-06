@@ -13,7 +13,9 @@
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "source_arxiv_id": "2103.02280",
@@ -228,7 +230,20 @@
     },
     "page_count_text": 8,
     "image_count": 4,
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "Managing the data for Information Retrieval (IR) experiments can be challenging. Dataset documentation is scattered across the Internet and once one obtains a copy of the data, there are numerous different data formats to work with. Even basic formats can have subtle dataset-specific nuances that need to be considered for proper use. To help mitigate these challenges, we introduce a new robust and lightweight tool (ir_datasets) for acquiring, managing, and performing typical operations over datasets used in IR. We primarily focus on textual datasets used for ad-hoc search. This tool provides both a Python and command line interface to numerous IR datasets and benchmarks. To our knowledge, this is the most extensive tool of its kind. Integrations with popular IR indexing and experimentation toolkits demonstrate the tool&#39;s utility. We also provide documentation of these datasets through the ir_datasets catalog: this https URL . The catalog acts as a hub for information on datasets used in IR, providing core information about what data each benchmark provides as well as links to more detailed information. We welcome community contributions and intend to continue to maintain and grow this tool.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Simplified Data Wrangling with ir_datasets",
+    "arxiv_authors": [
+      "Sean MacAvaney",
+      "Andrew Yates",
+      "Sergey Feldman",
+      "Doug Downey",
+      "Arman Cohan",
+      "Nazli Goharian"
+    ],
+    "arxiv_primary_category": "cs.IR"
   },
   "pdfinfo": {
     "title": "Simplified Data Wrangling with ir_datasets",
@@ -257,7 +272,22 @@
       "Subject": "-  Information systems  ->  Information retrieval."
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "macavaney2021",
+    "title": "Simplified Data Wrangling with ir_datasets",
+    "author": "Sean MacAvaney and Andrew Yates and Sergey Feldman and Doug Downey and Arman Cohan and Nazli Goharian",
+    "year": "2021",
+    "pages": 8,
+    "doi": "",
+    "arxiv_id": "2103.02280",
+    "url": "https://arxiv.org/abs/2103.02280",
+    "license": "",
+    "publisher": "",
+    "eprint": "2103.02280",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.IR"
+  },
   "urls": null,
   "dests": [
     {
@@ -1922,6 +1952,14 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "0 equations, 0 formulas"
+    },
+    {
+      "ts": "2026-09-06T04:08:26Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "citekey=macavaney2021"
     }
   ],
   "capabilities": {
