@@ -12,7 +12,9 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "TOC_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 8,
@@ -178,7 +180,39 @@
     "tiddlers_path": "2405.08011v1.tiddlers.json",
     "tiddlers_count": 194,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc": [
+      {
+        "number": "2",
+        "title": "PRELIMINARIES AND TAXONOMY                                          • LLMs as Prefix. LLMs first process graph data with textual",
+        "page": ""
+      },
+      {
+        "number": "2.1",
+        "title": "Definitions                                                         alignment with GNNs, and also build LLM-based agents to inter-",
+        "page": ""
+      },
+      {
+        "number": "2.2",
+        "title": "Taxonomy                                                          in-context heterogeneous graph tokenizer with LLMs, solving the",
+        "page": ""
+      },
+      {
+        "number": "3.1.2",
+        "title": "Graph-level Tokenization. On the other hand, to adapt",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages",
+    "arxiv_title": "A Survey of Large Language Models for Graphs",
+    "arxiv_authors": [
+      "Xubin Ren",
+      "Jiabin Tang",
+      "Dawei Yin",
+      "Nitesh Chawla",
+      "Chao Huang"
+    ],
+    "arxiv_primary_category": "cs.LG"
   },
   "pdfinfo": {
     "title": "A Survey of Large Language Models for Graphs",
@@ -208,7 +242,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "ren2024",
+    "title": "A Survey of Large Language Models for Graphs",
+    "author": "Xubin Ren and Jiabin Tang and Dawei Yin and Nitesh Chawla and Chao Huang",
+    "year": "2024",
+    "pages": 8,
+    "doi": "",
+    "arxiv_id": "2405.08011v1",
+    "url": "https://arxiv.org/abs/2405.08011v1",
+    "license": "",
+    "publisher": "",
+    "eprint": "2405.08011v1",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.LG"
+  },
   "urls": null,
   "dests": [
     {
@@ -1693,6 +1742,22 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "3 equations, 16 formulas"
+    },
+    {
+      "ts": "2026-09-07T00:32:23Z",
+      "node": "toc",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 62.3,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-07T00:32:23Z",
+      "node": "bibtex",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 49.1,
+      "detail": "citekey=ren2024"
     }
   ],
   "capabilities": {

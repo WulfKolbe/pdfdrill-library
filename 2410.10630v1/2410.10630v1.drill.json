@@ -13,7 +13,9 @@
     "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 28,
@@ -224,7 +226,20 @@
     "tiddlers_path": "2410.10630v1.tiddlers.json",
     "tiddlers_count": 297,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "LLMs are typically trained to answer user questions or follow instructions similarly to how human experts respond. However, in the standard alignment framework they lack the basic ability of explicit thinking before answering. Thinking is important for complex questions that require reasoning and planning -- but can be applied to any task. We propose a training method for equipping existing LLMs with such thinking abilities for general instruction following without use of additional human data. We achieve this by an iterative search and optimization procedure that explores the space of possible thought generations, allowing the model to learn how to think without direct supervision. For each instruction, the thought candidates are scored using a judge model to evaluate their responses only, and then optimized via preference optimization. We show that this procedure leads to superior performance on AlpacaEval and Arena-Hard, and shows gains from thinking on non-reasoning categories such as marketing, health and general knowledge, in addition to more traditional reasoning &amp; problem-solving tasks.",
+    "abstract_method": "arxiv-abs-page",
+    "abstract_search_scope": "arxiv",
+    "arxiv_title": "Thinking LLMs: General Instruction Following with Thought Generation",
+    "arxiv_authors": [
+      "Tianhao Wu",
+      "Janice Lan",
+      "Weizhe Yuan",
+      "Jiantao Jiao",
+      "Jason Weston",
+      "Sainbayar Sukhbaatar"
+    ],
+    "arxiv_primary_category": "cs.CL"
   },
   "pdfinfo": {
     "title": "",
@@ -254,7 +269,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "wu2024",
+    "title": "Thinking LLMs: General Instruction Following with Thought Generation",
+    "author": "Tianhao Wu and Janice Lan and Weizhe Yuan and Jiantao Jiao and Jason Weston and Sainbayar Sukhbaatar",
+    "year": "2024",
+    "pages": 28,
+    "doi": "",
+    "arxiv_id": "2410.10630v1",
+    "url": "https://arxiv.org/abs/2410.10630v1",
+    "license": "",
+    "publisher": "",
+    "eprint": "2410.10630v1",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.CL"
+  },
   "urls": null,
   "dests": [
     {
@@ -2811,6 +2841,14 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "7 equations, 59 formulas"
+    },
+    {
+      "ts": "2026-09-07T00:32:30Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "citekey=wu2024"
     }
   ],
   "capabilities": {

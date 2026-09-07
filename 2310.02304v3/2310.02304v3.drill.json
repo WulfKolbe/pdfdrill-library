@@ -13,7 +13,9 @@
     "IMAGES_LAYER_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 46,
@@ -255,7 +257,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "zelikman2024",
+    "title": "Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation",
+    "author": "Eric Zelikman and Eliana Lorch and Lester Mackey and Adam Tauman Kalai",
+    "year": "2024",
+    "pages": 46,
+    "doi": "",
+    "arxiv_id": "2310.02304v3",
+    "url": "https://arxiv.org/abs/2310.02304v3",
+    "license": "",
+    "publisher": "",
+    "eprint": "2310.02304v3",
+    "archive_prefix": "arXiv",
+    "primary_class": "cs.CL"
+  },
   "urls": null,
   "dests": [
     {
@@ -11800,6 +11817,22 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "6 equations, 86 formulas"
+    },
+    {
+      "ts": "2026-09-07T00:32:10Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "27 fonts, 7 math"
+    },
+    {
+      "ts": "2026-09-07T00:32:10Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 0.3,
+      "detail": "citekey=zelikman2024"
     }
   ],
   "capabilities": {

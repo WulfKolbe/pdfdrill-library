@@ -15,7 +15,9 @@
     "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "TOC_ABSENT"
   ],
   "evidence": {
     "source_arxiv_id": "2305.16755",
@@ -225,7 +227,8 @@
     "tiddlers_path": "2305.16755.tiddlers.json",
     "tiddlers_count": 184,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "ISO 19005 - Electronic document file format for long-term preservation (PDF/A)",
@@ -1186,6 +1189,22 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "0 equations, 12 formulas"
+    },
+    {
+      "ts": "2026-09-07T00:32:04Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "22 fonts, 3 math"
+    },
+    {
+      "ts": "2026-09-07T00:32:04Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,BIBLIOGRAPHY_BUILT,BIBSOURCE_BUILT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 82.4,
+      "detail": "scope=first3pages"
     }
   ],
   "capabilities": {
