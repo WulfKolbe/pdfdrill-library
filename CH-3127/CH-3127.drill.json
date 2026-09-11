@@ -12,7 +12,11 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_KNOWN",
+    "TOC_ABSENT",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 45,
@@ -190,7 +194,11 @@
     "tiddlers_path": "CH-3127.tiddlers.json",
     "tiddlers_count": 218,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "The purpose of this project is to study the read performance of transparent\ndatabase-backed file systems, a meld between two technologies with seem-\ningly similar purposes, in relation to conventional file systems. Systems such\nas the ARC middleware relies on reading several millions of files every day,\nand as the number of files increases, the performance suffers. To study the\ncapabilities of a database-backed file system, a candidate is chosen and put\ninto test. The candidate, ultimately being Database File System (DBFS), is\nOracle Database using FUSE to create a transparent file system interface.\nDBFS is put into test by storing millions of small files in its datafile and\nexecuting a scanning process of the ARC software. With the performance\ndata gathered from these tests, it was concluded that DBFS, while perform-\ning well on an HDD when compared to ext4 in terms of scalability and read\nperformance, is simply outperformed by XFS with small (from 50 000 files)\nand large (up to 1 600 000 files) directories.",
+    "abstract_method": "pdftotext-2pages",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -220,7 +228,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "scalability2017",
+    "title": "Scalability study of database-backed file systems for High Throughput Computing",
+    "author": "",
+    "year": "2017",
+    "pages": 45,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": [
     {
@@ -2185,6 +2208,38 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "0 equations, 5 formulas"
+    },
+    {
+      "ts": "2026-09-11T00:38:08Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "37 fonts, 2 math"
+    },
+    {
+      "ts": "2026-09-11T00:38:08Z",
+      "node": "abstract",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 35.9,
+      "detail": "scope=first2pages method=pdftotext-2pages"
+    },
+    {
+      "ts": "2026-09-11T00:38:08Z",
+      "node": "toc",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 29.8,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-11T00:38:09Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 84.0,
+      "detail": "citekey=scalability2017"
     }
   ],
   "capabilities": {

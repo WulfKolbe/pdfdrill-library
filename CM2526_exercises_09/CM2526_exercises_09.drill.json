@@ -14,7 +14,10 @@
     "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 2,
@@ -153,7 +156,8 @@
     "tiddlers_path": "CM2526_exercises_09.tiddlers.json",
     "tiddlers_count": 67,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages"
   },
   "pdfinfo": {
     "title": "",
@@ -183,7 +187,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "unknown2025",
+    "title": "",
+    "author": "",
+    "year": "2025",
+    "pages": 2,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": [
     {
@@ -673,6 +692,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "4 equations, 27 formulas"
+    },
+    {
+      "ts": "2026-09-11T00:38:19Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "12 fonts, 5 math"
+    },
+    {
+      "ts": "2026-09-11T00:38:19Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 40.7,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-09-11T00:38:19Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 8.7,
+      "detail": "citekey=unknown2025"
     }
   ],
   "capabilities": {

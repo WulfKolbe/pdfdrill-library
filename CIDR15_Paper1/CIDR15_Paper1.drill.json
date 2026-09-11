@@ -14,7 +14,9 @@
     "DESTS_KNOWN",
     "PDFINFO_KNOWN",
     "IMAGES_LAYER_KNOWN",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "ABSTRACT_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 11,
@@ -372,7 +374,10 @@
         "url": "http://geonames.org"
       }
     ],
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract": "We present YAGO3, an extension of the YAGO knowledge base that combines the information from the Wikipedias in multiple languages. Our technique fuses the multilingual information with the English WordNet to build one coherent knowledge base. We make use of the categories, the infoboxes, and Wikidata, and learn the meaning of infobox attributes across languages. We run our method on 10 different languages, and achieve a precision of 95%-100% in the attribute mapping. Our technique enlarges YAGO by 1m new entities and 7m new facts.",
+    "abstract_method": "markdown-heading",
+    "abstract_search_scope": "markdown"
   },
   "pdfinfo": {
     "title": "",
@@ -402,7 +407,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "yago2014",
+    "title": "YAGO3: A Knowledge Base from Multilingual Wikipedias",
+    "author": "",
+    "year": "2014",
+    "pages": 11,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": [
     {
@@ -1407,6 +1427,22 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "7 equations, 86 formulas"
+    },
+    {
+      "ts": "2026-09-11T00:38:13Z",
+      "node": "abstract",
+      "from": "DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "ABSTRACT_KNOWN",
+      "cost_ms": 1.5,
+      "detail": "scope=markdown method=markdown-heading"
+    },
+    {
+      "ts": "2026-09-11T00:38:13Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MD_BUILT,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 112.2,
+      "detail": "citekey=yago2014"
     }
   ],
   "capabilities": {
