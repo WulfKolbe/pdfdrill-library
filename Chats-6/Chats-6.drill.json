@@ -13,7 +13,11 @@
     "MATHPIX_KNOWN",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -144,7 +148,26 @@
     "tiddlers_path": "Chats-6.tiddlers.json",
     "tiddlers_count": 224,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages",
+    "toc": [
+      {
+        "number": "1",
+        "title": "Chats",
+        "page": ""
+      },
+      {
+        "number": "1.1",
+        "title": "You",
+        "page": ""
+      },
+      {
+        "number": "1.2",
+        "title": "Gemini",
+        "page": ""
+      }
+    ],
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -174,7 +197,22 @@
       "Subject": ""
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "koeln2026",
+    "title": "Lösungsvorschläge zu Übungsblatt 10",
+    "author": "Analysis III - Universität zu Köln",
+    "year": "2026",
+    "pages": 6,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": [
     {
@@ -628,6 +666,38 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "23 equations, 115 formulas"
+    },
+    {
+      "ts": "2026-09-12T06:21:03Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.4,
+      "detail": "7 fonts, 3 math"
+    },
+    {
+      "ts": "2026-09-12T06:21:03Z",
+      "node": "abstract",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 27.7,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-09-12T06:21:03Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_KNOWN",
+      "cost_ms": 29.7,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-12T06:21:04Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_KNOWN",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 8.6,
+      "detail": "citekey=koeln2026"
     }
   ],
   "capabilities": {

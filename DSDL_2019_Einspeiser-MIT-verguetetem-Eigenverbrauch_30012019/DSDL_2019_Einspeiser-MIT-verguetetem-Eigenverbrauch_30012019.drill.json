@@ -11,7 +11,11 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "PDFINFO_KNOWN",
+    "FONTS_KNOWN",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 4,
@@ -128,10 +132,51 @@
     "tiddlers_svg_mode": "inline",
     "reporttex_path": "report.tex"
   },
-  "pdfinfo": null,
-  "bibtex": null,
+  "pdfinfo": {
+    "title": "",
+    "author": "Nadja Strebl",
+    "producer": "Adobe PDF Library 19.10.96",
+    "creator": "Acrobat PDFMaker 19 für Word",
+    "creation_date": "2019-01-30T12:31:06+01",
+    "mod_date": "2019-01-30T12:31:07+01",
+    "custom_metadata": true,
+    "metadata_stream": true,
+    "tagged": true,
+    "user_properties": false,
+    "suspects": false,
+    "form": "none",
+    "javascript": false,
+    "pages": 4,
+    "encrypted": false,
+    "page_size": "595.32 x 841.92 pts (A4)",
+    "page_rot": 0.0,
+    "size_in_bytes": 161532,
+    "linearized": false,
+    "optimized": true,
+    "pdf_version": "1.6",
+    "custom_fields": {
+      "Company": "",
+      "SourceModified": "D:20190130112932"
+    }
+  },
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "strebl2019",
+    "title": "",
+    "author": "Nadja Strebl",
+    "year": "2019",
+    "pages": 4,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "KZJRRT+Calibri",
@@ -343,6 +388,38 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "0 equations, 0 formulas"
+    },
+    {
+      "ts": "2026-09-12T06:24:39Z",
+      "node": "pdfinfo",
+      "from": "ABSTRACT_ABSENT,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "PDFINFO_KNOWN",
+      "cost_ms": 52.5,
+      "detail": "title=False author=True"
+    },
+    {
+      "ts": "2026-09-12T06:24:40Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 8.2,
+      "detail": "5 fonts, 0 math"
+    },
+    {
+      "ts": "2026-09-12T06:24:40Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 21.8,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-09-12T06:24:40Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 29.4,
+      "detail": "citekey=strebl2019"
     }
   ],
   "capabilities": {
