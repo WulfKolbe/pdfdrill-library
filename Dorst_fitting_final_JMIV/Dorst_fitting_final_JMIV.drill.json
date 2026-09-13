@@ -11,7 +11,11 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "ABSTRACT_ABSENT",
+    "TOC_ABSENT",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 22,
@@ -223,7 +227,9 @@
     "tiddlers_path": "Dorst_fitting_final_JMIV.tiddlers.json",
     "tiddlers_count": 747,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "abstract_search_scope": "first2pages",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -254,7 +260,22 @@
       "rgid": "PB:266149530_AS:281658579275796@1444164046605"
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "dorst2014",
+    "title": "Total Least Squares Fitting of \\(k\\)-Spheres in \\(n\\)-D Euclidean Space Using an \\((n+2)\\)-D Isometric Representation",
+    "author": "Leo Dorst",
+    "year": "2014",
+    "pages": 22,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": null,
   "fonts_layer": [
@@ -1079,6 +1100,38 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "64 equations, 352 formulas"
+    },
+    {
+      "ts": "2026-09-13T07:41:25Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "30 fonts, 14 math"
+    },
+    {
+      "ts": "2026-09-13T07:41:25Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 41.6,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-09-13T07:41:25Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 42.6,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-13T07:41:26Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 94.8,
+      "detail": "citekey=dorst2014"
     }
   ],
   "capabilities": {

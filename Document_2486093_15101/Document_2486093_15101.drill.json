@@ -13,7 +13,9 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "TOC_ABSENT",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 6,
@@ -199,7 +201,8 @@
     "tiddlers_path": "Document_2486093_15101.tiddlers.json",
     "tiddlers_count": 159,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -227,7 +230,22 @@
       "rgid": "PB:5655348_AS:173619233697792@1418405459970"
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "fraas2002",
+    "title": "Concentrated and piped sunlight for indoor illumination",
+    "author": "L. M. Fraas, W. R. Pyle, and P. R. Ryason",
+    "year": "2002",
+    "pages": 6,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "Optical Society of America",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
   "dests": [],
   "fonts_layer": [
@@ -806,6 +824,22 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "0 equations, 53 formulas"
+    },
+    {
+      "ts": "2026-09-13T07:41:23Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 38.2,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-13T07:41:23Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 21.1,
+      "detail": "citekey=fraas2002"
     }
   ],
   "capabilities": {
