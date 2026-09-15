@@ -12,7 +12,10 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "LINKS_KNOWN"
   ],
   "evidence": {
     "pages": 1,
@@ -149,7 +152,18 @@
     "tiddlers_path": "Google Gemini.tiddlers.json",
     "tiddlers_count": 22,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages",
+    "links": [
+      {
+        "page": 1,
+        "url": "https://support.google.com/gemini?p=privacy_notice"
+      },
+      {
+        "page": 1,
+        "url": "https://accounts.google.com/SignOutOptions?hl=en&continue=https://gemini.google.com/app/a5c77c7d054c02d9&ec=GBRAkgU"
+      }
+    ]
   },
   "pdfinfo": {
     "title": "Google Gemini",
@@ -802,6 +816,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "0 equations, 1 formulas"
+    },
+    {
+      "ts": "2026-09-15T04:00:00Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.5,
+      "detail": "21 fonts, 9 math"
+    },
+    {
+      "ts": "2026-09-15T04:00:00Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 37.1,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-15T04:00:00Z",
+      "node": "links",
+      "from": "ABSTRACT_ABSENT,BIBTEX_KNOWN,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "LINKS_KNOWN",
+      "cost_ms": 19.9,
+      "detail": "2 external urls"
     }
   ],
   "capabilities": {
