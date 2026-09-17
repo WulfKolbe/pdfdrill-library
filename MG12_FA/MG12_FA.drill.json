@@ -12,7 +12,11 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "TOC_ABSENT",
+    "ABSTRACT_ABSENT",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 13,
@@ -156,7 +160,9 @@
     "tiddlers_path": "MG12_FA.tiddlers.json",
     "tiddlers_count": 128,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages",
+    "abstract_search_scope": "first2pages"
   },
   "pdfinfo": {
     "title": "",
@@ -184,9 +190,24 @@
       "PTEX.Fullbanner": "This is pdfTeX, Version 3.141592-1.40.3-2.2 (Web2C 7.5.6) kpathsea version 3.5.6"
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "the2010",
+    "title": "The Fascinating TeV Sky",
+    "author": "",
+    "year": "2010",
+    "pages": 13,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "YOKSZA+CMSS8",
@@ -791,6 +812,38 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "0 equations, 39 formulas"
+    },
+    {
+      "ts": "2026-09-17T01:56:41Z",
+      "node": "toc",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 34.0,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-17T01:56:41Z",
+      "node": "abstract",
+      "from": "FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "ABSTRACT_ABSENT",
+      "cost_ms": 29.4,
+      "detail": "scope=first2pages method=none"
+    },
+    {
+      "ts": "2026-09-17T01:56:41Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 20.8,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-09-17T01:56:41Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 76.4,
+      "detail": "citekey=the2010"
     }
   ],
   "capabilities": {

@@ -12,7 +12,11 @@
     "IMAGES_LAYER_KNOWN",
     "MATHPIX_KNOWN",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "FONTS_KNOWN",
+    "TOC_ABSENT",
+    "DESTS_KNOWN",
+    "BIBTEX_KNOWN"
   ],
   "evidence": {
     "pages": 13,
@@ -149,7 +153,8 @@
     "tiddlers_path": "Loesungsvorschlag Nachklausur Analysis II-SS21.tiddlers.json",
     "tiddlers_count": 328,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "toc_search_scope": "first3pages"
   },
   "pdfinfo": {
     "title": "",
@@ -177,9 +182,24 @@
       "PTEX.Fullbanner": "This is MiKTeX-pdfTeX 4.6.1 (1.40.22)"
     }
   },
-  "bibtex": null,
+  "bibtex": {
+    "entry_type": "misc",
+    "citekey": "nachklausur2021",
+    "title": "Nachklausur zur Analysis II Sommersemester 2021 Lösungen und Bewertungsschlüssel",
+    "author": "",
+    "year": "2021",
+    "pages": 13,
+    "doi": "",
+    "arxiv_id": "",
+    "url": "",
+    "license": "",
+    "publisher": "",
+    "eprint": "",
+    "archive_prefix": "",
+    "primary_class": ""
+  },
   "urls": null,
-  "dests": null,
+  "dests": [],
   "fonts_layer": [
     {
       "name": "F30",
@@ -660,6 +680,38 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "58 equations, 139 formulas"
+    },
+    {
+      "ts": "2026-09-17T01:56:10Z",
+      "node": "fonts",
+      "from": "SIZE_KNOWN",
+      "to": "FONTS_KNOWN",
+      "cost_ms": 0.6,
+      "detail": "19 fonts, 8 math"
+    },
+    {
+      "ts": "2026-09-17T01:56:10Z",
+      "node": "toc",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "TOC_ABSENT",
+      "cost_ms": 44.3,
+      "detail": "scope=first3pages"
+    },
+    {
+      "ts": "2026-09-17T01:56:10Z",
+      "node": "dests",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "DESTS_KNOWN",
+      "cost_ms": 18.2,
+      "detail": "0 dests across 0 kinds"
+    },
+    {
+      "ts": "2026-09-17T01:56:11Z",
+      "node": "bibtex",
+      "from": "ABSTRACT_ABSENT,DESTS_KNOWN,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT,TOC_ABSENT",
+      "to": "BIBTEX_KNOWN",
+      "cost_ms": 117.4,
+      "detail": "citekey=nachklausur2021"
     }
   ],
   "capabilities": {
