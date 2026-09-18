@@ -14,7 +14,8 @@
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "REPORT_BUILT"
   ],
   "evidence": {
     "pages": 13,
@@ -178,6 +179,11 @@
         "url": "http://xxx.lanl.gov",
         "kind": "text"
       }
+    ],
+    "inspect_path": "zorich_square_tiled.inspect.html",
+    "residuals_path": "residuals.pdf",
+    "evidence_kinds": [
+      "equation"
     ]
   },
   "pdfinfo": {
@@ -4615,6 +4621,30 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2065.6,
       "detail": "238 images, 119 pix2latex candidates"
+    },
+    {
+      "ts": "2026-09-17T23:23:28Z",
+      "node": "reporttex",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "16 equations, 140 formulas"
+    },
+    {
+      "ts": "2026-09-17T23:24:03Z",
+      "node": "reporttex",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "16 equations, 0 formulas"
+    },
+    {
+      "ts": "2026-09-17T23:24:25Z",
+      "node": "evidence",
+      "from": "ABSTRACT_ABSENT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORT_BUILT",
+      "cost_ms": 0,
+      "detail": "123 inline, 16 equations"
     }
   ],
   "capabilities": {

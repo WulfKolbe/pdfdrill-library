@@ -8,7 +8,8 @@
     "MODEL_BUILT",
     "BIBLIOGRAPHY_BUILT",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "REPORT_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -76,7 +77,12 @@
     "tiddlers_path": "narcissus.tiddlers.json",
     "tiddlers_count": 431,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "inspect_path": "narcissus.inspect.html",
+    "residuals_path": "residuals.pdf",
+    "evidence_kinds": [
+      "equation"
+    ]
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -1613,6 +1619,30 @@
       "to": "TIDDLERS_BUILT",
       "cost_ms": 33.3,
       "detail": "431 tiddlers, svg=inline"
+    },
+    {
+      "ts": "2026-09-18T00:14:11Z",
+      "node": "reporttex",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "11 equations, 125 formulas"
+    },
+    {
+      "ts": "2026-09-18T00:14:31Z",
+      "node": "reporttex",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "11 equations, 0 formulas"
+    },
+    {
+      "ts": "2026-09-18T00:15:04Z",
+      "node": "evidence",
+      "from": "BIBLIOGRAPHY_BUILT,DESTS_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,MODEL_BUILT,REPORTTEX_BUILT,TIDDLERS_BUILT",
+      "to": "REPORT_BUILT",
+      "cost_ms": 0,
+      "detail": "125 inline, 11 equations"
     }
   ],
   "capabilities": {

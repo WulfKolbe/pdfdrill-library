@@ -15,7 +15,8 @@
     "FONTS_KNOWN",
     "ABSTRACT_ABSENT",
     "LINKS_KNOWN",
-    "IMAGES_LAYER_KNOWN"
+    "IMAGES_LAYER_KNOWN",
+    "REPORT_BUILT"
   ],
   "evidence": {
     "pages": 11,
@@ -164,7 +165,12 @@
     "tiddlers_svg_mode": "inline",
     "reporttex_path": "report.tex",
     "abstract_search_scope": "first2pages",
-    "links": []
+    "links": [],
+    "inspect_path": "volovich1.inspect.html",
+    "residuals_path": "residuals.pdf",
+    "evidence_kinds": [
+      "equation"
+    ]
   },
   "pdfinfo": {
     "title": "",
@@ -1077,6 +1083,30 @@
       "to": "IMAGES_LAYER_KNOWN",
       "cost_ms": 2725.7,
       "detail": "22 images, 14 pix2latex candidates"
+    },
+    {
+      "ts": "2026-09-18T00:22:52Z",
+      "node": "reporttex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "26 equations, 99 formulas"
+    },
+    {
+      "ts": "2026-09-18T00:23:07Z",
+      "node": "reporttex",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "26 equations, 0 formulas"
+    },
+    {
+      "ts": "2026-09-18T00:23:25Z",
+      "node": "evidence",
+      "from": "ABSTRACT_ABSENT,BIBLIOGRAPHY_BUILT,FONTS_KNOWN,FONTS_LAYER_KNOWN,IMAGES_LAYER_KNOWN,INK_CONVERTED,LINKS_KNOWN,MATHPIX_KNOWN,MODEL_BUILT,NEEDS_VISION_OCR,PDFINFO_KNOWN,REPORTTEX_BUILT,SIZE_KNOWN,TIDDLERS_BUILT",
+      "to": "REPORT_BUILT",
+      "cost_ms": 0,
+      "detail": "99 inline, 26 equations"
     }
   ],
   "capabilities": {

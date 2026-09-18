@@ -5,7 +5,9 @@
     "IMAGES_LAYER_KNOWN",
     "MODEL_BUILT",
     "TIDDLERS_BUILT",
-    "REPORTTEX_BUILT"
+    "REPORTTEX_BUILT",
+    "INK_CONVERTED",
+    "REPORT_BUILT"
   ],
   "evidence": {
     "probe_version": 3,
@@ -65,7 +67,12 @@
     "tiddlers_path": "p_247.tiddlers.json",
     "tiddlers_count": 256,
     "tiddlers_svg_mode": "inline",
-    "reporttex_path": "report.tex"
+    "reporttex_path": "report.tex",
+    "inspect_path": "p_247.inspect.html",
+    "residuals_path": "residuals.pdf",
+    "evidence_kinds": [
+      "equation"
+    ]
   },
   "pdfinfo": null,
   "bibtex": null,
@@ -308,6 +315,30 @@
       "to": "REPORTTEX_BUILT",
       "cost_ms": 0,
       "detail": "29 equations, 85 formulas"
+    },
+    {
+      "ts": "2026-09-17T23:59:58Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "29 equations, 85 formulas"
+    },
+    {
+      "ts": "2026-09-18T00:00:20Z",
+      "node": "reporttex",
+      "from": "IMAGES_LAYER_KNOWN,INK_CONVERTED,MODEL_BUILT,TIDDLERS_BUILT",
+      "to": "REPORTTEX_BUILT",
+      "cost_ms": 0,
+      "detail": "29 equations, 0 formulas"
+    },
+    {
+      "ts": "2026-09-18T00:00:37Z",
+      "node": "evidence",
+      "from": "IMAGES_LAYER_KNOWN,INK_CONVERTED,MODEL_BUILT,REPORTTEX_BUILT,TIDDLERS_BUILT",
+      "to": "REPORT_BUILT",
+      "cost_ms": 0,
+      "detail": "84 inline, 29 equations"
     }
   ],
   "capabilities": {
